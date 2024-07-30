@@ -15,55 +15,66 @@
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.1.1</span><span class="period">.</span>
 </h4>
 <div class="para logical">
-<div class="para">A <dfn class="terminology">Euclidean vector</dfn> is an ordered list of real numbers</div>
+<div class="para">A <dfn class="terminology">matrix</dfn> is an <span class="process-math">\(m\times n\)</span> array of real numbers with <span class="process-math">\(m\)</span> rows and <span class="process-math">\(n\)</span> columns:</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\left[\begin{array}{c}
-a_1 \\
-a_2 \\
-\vdots \\
-a_n
-\end{array}\right]\text{.}
+\left[\begin{array}{cccc}
+a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n} \\
+a_{21} &amp; a_{22} &amp; \cdots &amp; a_{2n} \\
+\vdots &amp; \vdots &amp; \ddots &amp; \vdots \\
+a_{m1} &amp; a_{m2} &amp; \cdots &amp; a_{mn} \\
+\end{array}\right]
+=
+\left[\begin{array}{cccc} \vec v_1 &amp; \vec v_2 &amp; \cdots &amp; \vec v_n\end{array}\right]\text{.}
 \end{equation*}
 </div>
-<div class="para">We will find it useful to almost always typeset Euclidean vectors vertically, but the notation <span class="process-math">\(\left[\begin{array}{cccc}a_1 &amp; a_2 &amp; \cdots &amp; a_n\end{array}\right]^T\)</span> is also valid when vertical typesetting is inconvenient. The set of all Euclidean vectors with <span class="process-math">\(n\)</span> components is denoted as <span class="process-math">\(\mathbb R^n\text{,}\)</span> and vectors are often described using the notation <span class="process-math">\(\vec v\text{.}\)</span>
-</div>
-</div> <div class="para logical">
-<div class="para">Each number in the list is called a <dfn class="terminology">component</dfn>, and we use the following definitions for the sum of two vectors, and the product of a real number and a vector:</div>
+<div class="para">Frequently we will use matrices to describe an ordered list of its <dfn class="terminology">column vectors</dfn>:</div>
 <div class="displaymath process-math">
 \begin{equation*}
 \left[\begin{array}{c}
-a_1 \\
-a_2 \\
+a_{11}  \\
+a_{21}  \\
 \vdots \\
-a_n
-\end{array}\right]+
+a_{m1} \\
+\end{array}\right],
 \left[\begin{array}{c}
-b_1 \\
-b_2 \\
+a_{12}  \\
+a_{22}  \\
 \vdots \\
-b_n
-\end{array}\right]=
+a_{m2} \\
+\end{array}\right],\cdots,
 \left[\begin{array}{c}
-a_1+b_1 \\
-a_2+b_2 \\
+a_{1n}  \\
+a_{2n}  \\
 \vdots \\
-a_n+b_n
-\end{array}\right]
-\hspace{3em}
-c
+a_{mn} \\
+\end{array}\right] =
+\vec v_1, \vec v_2, \cdots, \vec v_n\text{.}
+\end{equation*}
+</div>
+<div class="para">When order is irrelevant, we will use set notation:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\left\{
 \left[\begin{array}{c}
-a_1 \\
-a_2 \\
+a_{11}  \\
+a_{21}  \\
 \vdots \\
-a_n
-\end{array}\right]=
+a_{m1} \\
+\end{array}\right],
 \left[\begin{array}{c}
-ca_1 \\
-ca_2 \\
+a_{12}  \\
+a_{22}  \\
 \vdots \\
-ca_n
-\end{array}\right]
+a_{m2} \\
+\end{array}\right],\cdots,
+\left[\begin{array}{c}
+a_{1n}  \\
+a_{2n}  \\
+\vdots \\
+a_{mn} \\
+\end{array}\right]\right\} =
+\{\vec v_1, \vec v_2, \cdots, \vec v_n\}\text{.}
 \end{equation*}
 </div>
 </div></article><span class="incontext"><a class="internal" href="LE1.html#LE1-3-2">in-context</a></span>

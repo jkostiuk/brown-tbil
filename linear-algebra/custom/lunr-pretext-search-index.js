@@ -37,13 +37,22 @@ var ptx_lunr_docs = [
   "body": " Video Resources  Videos are available at the end of each section. A complete playlist of videos aligned with this text is available on YouTube .  "
 },
 {
+  "id": "sec-Syllabus",
+  "level": "1",
+  "url": "sec-Syllabus.html",
+  "type": "Section",
+  "number": "1",
+  "title": "Syllabus",
+  "body": " Syllabus  Some text.  "
+},
+{
   "id": "LE1",
   "level": "1",
   "url": "LE1.html",
   "type": "Section",
   "number": "1.1",
   "title": "Linear Systems, Vector Equations, and Augmented Matrices (LE1)",
-  "body": " Linear Systems, Vector Equations, and Augmented Matrices (LE1)     Translate back and forth between a system of linear equations, a vector equation, and the corresponding augmented matrix.     Class Activities    A Euclidean vector Euclidean vector vector Euclidean is an ordered list of real numbers . We will find it useful to almost always typeset Euclidean vectors vertically, but the notation is also valid when vertical typesetting is inconvenient. The set of all Euclidean vectors with components is denoted as , and vectors are often described using the notation .  Each number in the list is called a component , and we use the following definitions for the sum of two vectors, and the product of a real number and a vector:      Following are some examples of addition and scalar multiplication in .       A linear equation linear equation is an equation of the variables of the form .  A solution for a linear equation is a Euclidean vector that satisfies (that is, a Euclidean vector whose components can be plugged into the equation).  linear equation solution     In previous classes you likely used the variables in equations. However, since this course often deals with equations of four or more variables, we will often write our variables as , and assume when convenient.      A system of linear equations (or a linear system for short) is a collection of one or more linear equations.  Its solution set solution set is given by . system of linear equations linear system    When variables in a large linear system are missing, we prefer to write the system in one of the following standard forms:   Original linear system:   Verbose standard form:   Concise standard form:        It will often be convenient to think of a system of equations as a vector equation. vector equation   By applying vector operations and equating components, it is straightforward to see that the vector equation is equivalent to the system of equations       A linear system is consistent linear system consistent if its solution set is non-empty (that is, there exists a solution for the system). Otherwise it is inconsistent . linear system inconsistent       All linear systems are one of the following:   Consistent with one solution: its solution set contains a single vector, e.g.    Consistent with infinitely-many solutions : its solution set contains infinitely many vectors, e.g.   Inconsistent : its solution set is the empty set, denoted by either or .       All inconsistent linear systems contain a logical contradiction . Find a contradiction in this system to show that its solution set is the empty set.       Consider the following consistent linear system.    Find three different solutions for this system.  Let where is an arbitrary real number, then find an expression for in terms of . Use this to write the solution set for the linear system.     Consider the following linear system.   Describe the solution set to the linear system by setting and , and then solving for and .      Solving linear systems of two variables by graphing or substitution is reasonable for two-variable systems, but these simple techniques won't usually cut it for equations with more than two variables or more than two equations. For example, has the exact same solution set as the system in the previous activity, but we'll want to learn new techniques to compute these solutions efficiently.      The only important information in a linear system are its coefficients and constants.   Original linear system:   Verbose standard form:   Coefficients\/constants:        A system of linear equations with variables is often represented by writing its coefficients and constants in an augmented matrix . augmented matrix         The corresponding augmented matrix for this system is obtained by simply writing the coefficients and constants in matrix form.   Linear system:   Augmented matrix:    Vector equation:       Videos      Video: Converting between systems, vector equations, and augmented matrices     Exercises available at .    Mathematical Writing Explorations    Choose a value for the real constant such that the following system has one, many, or no solutions. In each case, write the solution set.  Consider the linear system:        Consider the linear system:  Assume and are arbitrary real numbers.  Choose values for , and , such that . Show that this system is inconsistent.  Prove that, if , the system is consistent with exactly one solution.       Given a set , we can define a relation between two arbitrary elements . If the two elements are related, we denote this .  Any relation on a set that satisfies the properties below is an equivalence relation equivalence relation .  Reflexive : For any  Symmetric : For , if , then  Transitive: for any   For each of the following relations, show that it is or is not an equivalence relation.  For , if an only if .  For , if an only if .     Sample Problem and Solution  Sample problem .   "
+  "body": " Linear Systems, Vector Equations, and Augmented Matrices (LE1)     Translate back and forth between a system of linear equations, a vector equation, and the corresponding augmented matrix.     Class Activities    A matrix matrix is an array of real numbers with rows and columns: . Frequently we will use matrices to describe an ordered list of its column vectors : . When order is irrelevant, we will use set notation: .      A Euclidean vector Euclidean vector vector Euclidean is an ordered list of real numbers . We will find it useful to almost always typeset Euclidean vectors vertically, but the notation is also valid when vertical typesetting is inconvenient. The set of all Euclidean vectors with components is denoted as , and vectors are often described using the notation .  Each number in the list is called a component , and we use the following definitions for the sum of two vectors, and the product of a real number and a vector:      Following are some examples of addition and scalar multiplication in .       A linear equation linear equation is an equation of the variables of the form .  A solution for a linear equation is a Euclidean vector that satisfies (that is, a Euclidean vector whose components can be plugged into the equation).  linear equation solution     In previous classes you likely used the variables in equations. However, since this course often deals with equations of four or more variables, we will often write our variables as , and assume when convenient.      A system of linear equations (or a linear system for short) is a collection of one or more linear equations.  Its solution set solution set is given by . system of linear equations linear system    When variables in a large linear system are missing, we prefer to write the system in one of the following standard forms:   Original linear system:   Verbose standard form:   Concise standard form:        It will often be convenient to think of a system of equations as a vector equation. vector equation   By applying vector operations and equating components, it is straightforward to see that the vector equation is equivalent to the system of equations       A linear system is consistent linear system consistent if its solution set is non-empty (that is, there exists a solution for the system). Otherwise it is inconsistent . linear system inconsistent       All linear systems are one of the following:   Consistent with one solution: its solution set contains a single vector, e.g.    Consistent with infinitely-many solutions : its solution set contains infinitely many vectors, e.g.   Inconsistent : its solution set is the empty set, denoted by either or .       All inconsistent linear systems contain a logical contradiction . Find a contradiction in this system to show that its solution set is the empty set.       Consider the following consistent linear system.    Find three different solutions for this system.  Let where is an arbitrary real number, then find an expression for in terms of . Use this to write the solution set for the linear system.     Consider the following linear system.   Describe the solution set to the linear system by setting and , and then solving for and .      Solving linear systems of two variables by graphing or substitution is reasonable for two-variable systems, but these simple techniques won't usually cut it for equations with more than two variables or more than two equations. For example, has the exact same solution set as the system in the previous activity, but we'll want to learn new techniques to compute these solutions efficiently.      The only important information in a linear system are its coefficients and constants.   Original linear system:   Verbose standard form:   Coefficients\/constants:        A system of linear equations with variables is often represented by writing its coefficients and constants in an augmented matrix augmented matrix : the matrix of its coefficients augmented with the constant values as a final column.        The corresponding augmented matrix for this system is obtained by simply writing the coefficients and constants in matrix form.   Linear system:   Augmented matrix:    Vector equation:       In the case we need to only analyze the coefficients of a linear system, we will use a coefficient matrix rather than the full augmented matrix:        Videos      Video: Converting between systems, vector equations, and augmented matrices     Exercises available at .    Mathematical Writing Explorations    Choose a value for the real constant such that the following system has one, many, or no solutions. In each case, write the solution set.  Consider the linear system:        Consider the linear system:  Assume and are arbitrary real numbers.  Choose values for , and , such that . Show that this system is inconsistent.  Prove that, if , the system is consistent with exactly one solution.       Given a set , we can define a relation between two arbitrary elements . If the two elements are related, we denote this .  Any relation on a set that satisfies the properties below is an equivalence relation equivalence relation .  Reflexive : For any  Symmetric : For , if , then  Transitive: for any   For each of the following relations, show that it is or is not an equivalence relation.  For , if an only if .  For , if an only if .     Sample Problem and Solution  Sample problem .   "
 },
 {
   "id": "LE1-2",
@@ -61,52 +70,52 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "1.1.1",
   "title": "",
-  "body": "  A Euclidean vector Euclidean vector vector Euclidean is an ordered list of real numbers . We will find it useful to almost always typeset Euclidean vectors vertically, but the notation is also valid when vertical typesetting is inconvenient. The set of all Euclidean vectors with components is denoted as , and vectors are often described using the notation .  Each number in the list is called a component , and we use the following definitions for the sum of two vectors, and the product of a real number and a vector:    "
+  "body": "  A matrix matrix is an array of real numbers with rows and columns: . Frequently we will use matrices to describe an ordered list of its column vectors : . When order is irrelevant, we will use set notation: .   "
 },
 {
   "id": "LE1-3-3",
   "level": "2",
   "url": "LE1.html#LE1-3-3",
-  "type": "Example",
+  "type": "Definition",
   "number": "1.1.2",
   "title": "",
-  "body": " Following are some examples of addition and scalar multiplication in .    "
+  "body": "  A Euclidean vector Euclidean vector vector Euclidean is an ordered list of real numbers . We will find it useful to almost always typeset Euclidean vectors vertically, but the notation is also valid when vertical typesetting is inconvenient. The set of all Euclidean vectors with components is denoted as , and vectors are often described using the notation .  Each number in the list is called a component , and we use the following definitions for the sum of two vectors, and the product of a real number and a vector:    "
 },
 {
   "id": "LE1-3-4",
   "level": "2",
   "url": "LE1.html#LE1-3-4",
-  "type": "Definition",
+  "type": "Example",
   "number": "1.1.3",
   "title": "",
-  "body": "  A linear equation linear equation is an equation of the variables of the form .  A solution for a linear equation is a Euclidean vector that satisfies (that is, a Euclidean vector whose components can be plugged into the equation).  linear equation solution  "
+  "body": " Following are some examples of addition and scalar multiplication in .    "
 },
 {
   "id": "LE1-3-5",
   "level": "2",
   "url": "LE1.html#LE1-3-5",
-  "type": "Remark",
+  "type": "Definition",
   "number": "1.1.4",
   "title": "",
-  "body": "  In previous classes you likely used the variables in equations. However, since this course often deals with equations of four or more variables, we will often write our variables as , and assume when convenient.   "
+  "body": "  A linear equation linear equation is an equation of the variables of the form .  A solution for a linear equation is a Euclidean vector that satisfies (that is, a Euclidean vector whose components can be plugged into the equation).  linear equation solution  "
 },
 {
   "id": "LE1-3-6",
   "level": "2",
   "url": "LE1.html#LE1-3-6",
-  "type": "Definition",
+  "type": "Remark",
   "number": "1.1.5",
   "title": "",
-  "body": "  A system of linear equations (or a linear system for short) is a collection of one or more linear equations.  Its solution set solution set is given by . system of linear equations linear system "
+  "body": "  In previous classes you likely used the variables in equations. However, since this course often deals with equations of four or more variables, we will often write our variables as , and assume when convenient.   "
 },
 {
   "id": "LE1-3-7",
   "level": "2",
   "url": "LE1.html#LE1-3-7",
-  "type": "Remark",
+  "type": "Definition",
   "number": "1.1.6",
   "title": "",
-  "body": "  When variables in a large linear system are missing, we prefer to write the system in one of the following standard forms:   Original linear system:   Verbose standard form:   Concise standard form:     "
+  "body": "  A system of linear equations (or a linear system for short) is a collection of one or more linear equations.  Its solution set solution set is given by . system of linear equations linear system "
 },
 {
   "id": "LE1-3-8",
@@ -115,14 +124,23 @@ var ptx_lunr_docs = [
   "type": "Remark",
   "number": "1.1.7",
   "title": "",
-  "body": "  It will often be convenient to think of a system of equations as a vector equation. vector equation   By applying vector operations and equating components, it is straightforward to see that the vector equation is equivalent to the system of equations    "
+  "body": "  When variables in a large linear system are missing, we prefer to write the system in one of the following standard forms:   Original linear system:   Verbose standard form:   Concise standard form:     "
 },
 {
   "id": "LE1-3-9",
   "level": "2",
   "url": "LE1.html#LE1-3-9",
-  "type": "Definition",
+  "type": "Remark",
   "number": "1.1.8",
+  "title": "",
+  "body": "  It will often be convenient to think of a system of equations as a vector equation. vector equation   By applying vector operations and equating components, it is straightforward to see that the vector equation is equivalent to the system of equations    "
+},
+{
+  "id": "LE1-3-10",
+  "level": "2",
+  "url": "LE1.html#LE1-3-10",
+  "type": "Definition",
+  "number": "1.1.9",
   "title": "",
   "body": "  A linear system is consistent linear system consistent if its solution set is non-empty (that is, there exists a solution for the system). Otherwise it is inconsistent . linear system inconsistent    "
 },
@@ -131,18 +149,9 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "LE1.html#linearsystemsfact",
   "type": "Fact",
-  "number": "1.1.9",
-  "title": "",
-  "body": "  All linear systems are one of the following:   Consistent with one solution: its solution set contains a single vector, e.g.    Consistent with infinitely-many solutions : its solution set contains infinitely many vectors, e.g.   Inconsistent : its solution set is the empty set, denoted by either or .    "
-},
-{
-  "id": "LE1-3-11",
-  "level": "2",
-  "url": "LE1.html#LE1-3-11",
-  "type": "Activity",
   "number": "1.1.10",
   "title": "",
-  "body": "  All inconsistent linear systems contain a logical contradiction . Find a contradiction in this system to show that its solution set is the empty set.    "
+  "body": "  All linear systems are one of the following:   Consistent with one solution: its solution set contains a single vector, e.g.    Consistent with infinitely-many solutions : its solution set contains infinitely many vectors, e.g.   Inconsistent : its solution set is the empty set, denoted by either or .    "
 },
 {
   "id": "LE1-3-12",
@@ -151,7 +160,7 @@ var ptx_lunr_docs = [
   "type": "Activity",
   "number": "1.1.11",
   "title": "",
-  "body": "  Consider the following consistent linear system.    Find three different solutions for this system.  Let where is an arbitrary real number, then find an expression for in terms of . Use this to write the solution set for the linear system.  "
+  "body": "  All inconsistent linear systems contain a logical contradiction . Find a contradiction in this system to show that its solution set is the empty set.    "
 },
 {
   "id": "LE1-3-13",
@@ -160,43 +169,61 @@ var ptx_lunr_docs = [
   "type": "Activity",
   "number": "1.1.12",
   "title": "",
-  "body": "  Consider the following linear system.   Describe the solution set to the linear system by setting and , and then solving for and .   "
+  "body": "  Consider the following consistent linear system.    Find three different solutions for this system.  Let where is an arbitrary real number, then find an expression for in terms of . Use this to write the solution set for the linear system.  "
 },
 {
   "id": "LE1-3-14",
   "level": "2",
   "url": "LE1.html#LE1-3-14",
-  "type": "Observation",
+  "type": "Activity",
   "number": "1.1.13",
   "title": "",
-  "body": "  Solving linear systems of two variables by graphing or substitution is reasonable for two-variable systems, but these simple techniques won't usually cut it for equations with more than two variables or more than two equations. For example, has the exact same solution set as the system in the previous activity, but we'll want to learn new techniques to compute these solutions efficiently.   "
+  "body": "  Consider the following linear system.   Describe the solution set to the linear system by setting and , and then solving for and .   "
 },
 {
   "id": "LE1-3-15",
   "level": "2",
   "url": "LE1.html#LE1-3-15",
-  "type": "Remark",
+  "type": "Observation",
   "number": "1.1.14",
   "title": "",
-  "body": "  The only important information in a linear system are its coefficients and constants.   Original linear system:   Verbose standard form:   Coefficients\/constants:     "
+  "body": "  Solving linear systems of two variables by graphing or substitution is reasonable for two-variable systems, but these simple techniques won't usually cut it for equations with more than two variables or more than two equations. For example, has the exact same solution set as the system in the previous activity, but we'll want to learn new techniques to compute these solutions efficiently.   "
 },
 {
   "id": "LE1-3-16",
   "level": "2",
   "url": "LE1.html#LE1-3-16",
-  "type": "Definition",
+  "type": "Remark",
   "number": "1.1.15",
   "title": "",
-  "body": "  A system of linear equations with variables is often represented by writing its coefficients and constants in an augmented matrix . augmented matrix      "
+  "body": "  The only important information in a linear system are its coefficients and constants.   Original linear system:   Verbose standard form:   Coefficients\/constants:     "
 },
 {
   "id": "LE1-3-17",
   "level": "2",
   "url": "LE1.html#LE1-3-17",
-  "type": "Example",
+  "type": "Definition",
   "number": "1.1.16",
   "title": "",
+  "body": "  A system of linear equations with variables is often represented by writing its coefficients and constants in an augmented matrix augmented matrix : the matrix of its coefficients augmented with the constant values as a final column.     "
+},
+{
+  "id": "LE1-3-18",
+  "level": "2",
+  "url": "LE1.html#LE1-3-18",
+  "type": "Example",
+  "number": "1.1.17",
+  "title": "",
   "body": "  The corresponding augmented matrix for this system is obtained by simply writing the coefficients and constants in matrix form.   Linear system:   Augmented matrix:    Vector equation:    "
+},
+{
+  "id": "LE1-def-coefficient-matrix",
+  "level": "2",
+  "url": "LE1.html#LE1-def-coefficient-matrix",
+  "type": "Definition",
+  "number": "1.1.18",
+  "title": "",
+  "body": "  In the case we need to only analyze the coefficients of a linear system, we will use a coefficient matrix rather than the full augmented matrix:     "
 },
 {
   "id": "LE1-4-2",
@@ -212,7 +239,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "LE1.html#LE1-6-2",
   "type": "Exploration",
-  "number": "1.1.17",
+  "number": "1.1.19",
   "title": "",
   "body": "  Choose a value for the real constant such that the following system has one, many, or no solutions. In each case, write the solution set.  Consider the linear system:    "
 },
@@ -221,7 +248,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "LE1.html#LE1-6-3",
   "type": "Exploration",
-  "number": "1.1.18",
+  "number": "1.1.20",
   "title": "",
   "body": "   Consider the linear system:  Assume and are arbitrary real numbers.  Choose values for , and , such that . Show that this system is inconsistent.  Prove that, if , the system is consistent with exactly one solution.    "
 },
@@ -230,7 +257,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "LE1.html#equiv_relation",
   "type": "Exploration",
-  "number": "1.1.19",
+  "number": "1.1.21",
   "title": "",
   "body": "  Given a set , we can define a relation between two arbitrary elements . If the two elements are related, we denote this .  Any relation on a set that satisfies the properties below is an equivalence relation equivalence relation .  Reflexive : For any  Symmetric : For , if , then  Transitive: for any   For each of the following relations, show that it is or is not an equivalence relation.  For , if an only if .  For , if an only if .  "
 },
@@ -241,7 +268,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.2",
   "title": "Row Reduction of Matrices (LE2)",
-  "body": " Row Reduction of Matrices (LE2)     Explain why a matrix isn’t in reduced row echelon form, and put a matrix in reduced row echelon form.     Class Activities    Two systems of linear equations (and their corresponding augmented matrices) are said to be equivalent equivalent matrices if they have the same solution set.  For example, both of these systems share the same solution set .          Therefore these augmented matrices are equivalent (even though they're not equal ), which we denote with :        Consider whether these matrix manipulations (A) must keep or (B) could change the solution set for the corresponding linear system.    Swapping two rows, for example:            Swapping two columns, for example:            Add a constant to every term of a row, for example:            Multiply a row by a nonzero constant, for example:            Add a constant multiple of one row to another row, for example:            Replace a column with zeros, for example:            Replace a row with zeros, for example:              The following three row operations row operations produce equivalent augmented matrices.  Swap two rows, for example, :     Multiply a row by a nonzero constant, for example, :    Add a constant multiple of one row to another row, for example, :      Observe that we will use the following notation: (Combination of old rows) (New row).      Each of the following linear systems has the same solution set.   A)   B)   C)     D)   E)   F)    Sort these six equivalent linear systems from most complicated to simplest (in your opinion).      Here we've written the sorted linear systems from as augmented matrices.   Assign the following row operations to each step used to manipulate each matrix to the next:               A matrix is in reduced row echelon form ( RREF ) Reduced row echelon form if   The leftmost nonzero term of each row is 1. We call these terms pivots . pivot   Each pivot is to the right of every higher pivot.  Each term that is either above or below a pivot is 0.  All zero rows (rows whose terms are all 0) are at the bottom of the matrix.   Every matrix has a unique reduced row echelon form. If is a matrix, we write for the reduced row echelon form of that matrix.      Recall that a matrix is in reduced row echelon form ( RREF ) if   The leftmost nonzero term of each row is 1. We call these terms pivots .  Each pivot is to the right of every higher pivot.  Each term that is either above or below a pivot is 0.  All zero rows (rows whose terms are all 0) are at the bottom of the matrix.   For each matrix, mark the leading terms, and label it as RREF or not RREF. For the ones not in RREF, determine which rule is violated and how it might be fixed.           Recall that a matrix is in reduced row echelon form ( RREF ) if   The leftmost nonzero term of each row is 1. We call these terms pivots .  Each pivot is to the right of every higher pivot.  Each term that is either above or below a pivot is 0.  All zero rows (rows whose terms are all 0) are at the bottom of the matrix.   For each matrix, mark the leading terms, and label it as RREF or not RREF. For the ones not in RREF, determine which rule is violated and how it might be fixed.           In practice, if we simply need to convert a matrix into reduced row echelon form, we use technology to do so.  However, it is also important to understand the Gauss-Jordan elimination Gauss-Jordan elimination algorithm that a computer or calculator uses to convert a matrix (augmented or not) into reduced row echelon form. Understanding this algorithm will help us better understand how to interpret the results in many applications we use it for in .      Consider the matrix Which row operation is the best choice for the first move in converting to RREF?   Add row 3 to row 2 ( )  Add row 2 to row 3 ( )  Swap row 1 to row 2 ( )  Add -2 row 2 to row 1 ( )       Consider the matrix Which row operation is the best choice for the next move in converting to RREF?   Add row 1 to row 3 ( )  Add -2 row 1 to row 2 ( )  Add 2 row 2 to row 3 ( )  Add 2 row 3 to row 2 ( )       Consider the matrix Which row operation is the best choice for the next move in converting to RREF?   Add row 1 to row 2 ( )  Add -1 row 3 to row 2 ( )  Add -1 row 2 to row 3 ( )  Add row 2 to row 1 ( )      The steps for the Gauss-Jordan elimination algorithm may be summarized as follows:   Ignoring any rows that already have marked pivots, identify the leftmost column with a nonzero entry.    Use row operations to obtain a pivot of value in the topmost row that does not already have a marked pivot.    Mark this pivot, then use row operations to change all values above and below the marked pivot to .    Repeat these steps until the matrix is in RREF.     In particular, once a pivot is marked, it should remain in the same position . This will keep you from undoing your progress towards an RREF matrix.     Complete the following RREF calculation (multiple row operations may be needed for certain steps):        Consider the matrix   Compute .      Consider the non-augmented and augmented matrices   Can be used to find ?  Yes, and are exactly the same.  Yes, may be slightly modified to find .  No, a new calculuation is required.        Free browser-based technologies for mathematical computation are available online.   Go to .   In the dropdown on the right, you can select a number of different languages. Select \"Octave\" for the Matlab-compatible syntax used by this text.   Type rref([1,3,2;2,5,7]) and then press the Evaluate button to compute the of .        In the HTML version of this text, code cells are often embedded for your convenience when RREFs need to be computed.  Try this out to compute .       Videos      Video: Row reduction     Exercises available at .    Mathematical Writing Explorations    Prove that Gauss-Jordan Elimination preserves the solution set of a system of linear equations in variables. Make sure your proof includes each of the following. Just because I've used bullet points here does not mean you should use bullet points in your proof.  Write an arbitrary system of linear equations in variables. Your notation should be unambiguous.  Label an element of your solution set. You won't know what it is exactly, so you'll have to use a variable. Remember what it means (by definition!) to be in the solution set.  Describe the three operations used in Gauss-Jordan Elimination.  Consider all three operations in Gauss-Jordan Elimination. After each one is used, show that the element of the solution set you picked still satisfies the definition.        Let indicate the set of all matrices with real entries. Show that equivalence of matrices as defined in this section is an equivalence relation, as in exploration     Sample Problem and Solution  Sample problem .   "
+  "body": " Row Reduction of Matrices (LE2)     Explain why a matrix isn’t in reduced row echelon form, and put a matrix in reduced row echelon form.      Warm Up    Consider the following matrices:     Write down a linear system whose augmented matrix is . Can you write down another?    Write down a linear system whose coefficient matrix is . Can you write down another?     Class Activities    Two systems of linear equations (and their corresponding augmented matrices) are said to be equivalent equivalent matrices if they have the same solution set.  For example, both of these systems share the same solution set .          Therefore these augmented matrices are equivalent (even though they're not equal ), which we denote with :        Consider whether these matrix manipulations (A) must keep or (B) could change the solution set for the corresponding linear system.    Swapping two rows, for example:            Swapping two columns, for example:            Add a constant to every term of a row, for example:            Multiply a row by a nonzero constant, for example:            Add a constant multiple of one row to another row, for example:            Replace a column with zeros, for example:            Replace a row with zeros, for example:              The following three row operations row operations produce equivalent augmented matrices.  Swap two rows, for example, :     Multiply a row by a nonzero constant, for example, :    Add a constant multiple of one row to another row, for example, :      Observe that we will use the following notation: (Combination of old rows) (New row).      Each of the following linear systems has the same solution set.   A)   B)   C)     D)   E)   F)    Sort these six equivalent linear systems from most complicated to simplest (in your opinion).      Here we've written the sorted linear systems from as augmented matrices.   Assign the following row operations to each step used to manipulate each matrix to the next:               A matrix is in reduced row echelon form ( RREF ) Reduced row echelon form if   The leftmost nonzero term of each row is 1. We call these terms pivots . pivot   Each pivot is to the right of every higher pivot.  Each term that is either above or below a pivot is 0.  All zero rows (rows whose terms are all 0) are at the bottom of the matrix.   Every matrix has a unique reduced row echelon form. If is a matrix, we write for the reduced row echelon form of that matrix.      Recall that a matrix is in reduced row echelon form ( RREF ) if   The leftmost nonzero term of each row is 1. We call these terms pivots .  Each pivot is to the right of every higher pivot.  Each term that is either above or below a pivot is 0.  All zero rows (rows whose terms are all 0) are at the bottom of the matrix.   For each matrix, mark the leading terms, and label it as RREF or not RREF. For the ones not in RREF, determine which rule is violated and how it might be fixed.           Recall that a matrix is in reduced row echelon form ( RREF ) if   The leftmost nonzero term of each row is 1. We call these terms pivots .  Each pivot is to the right of every higher pivot.  Each term that is either above or below a pivot is 0.  All zero rows (rows whose terms are all 0) are at the bottom of the matrix.   For each matrix, mark the leading terms, and label it as RREF or not RREF. For the ones not in RREF, determine which rule is violated and how it might be fixed.           In practice, if we simply need to convert a matrix into reduced row echelon form, we use technology to do so.  However, it is also important to understand the Gauss-Jordan elimination Gauss-Jordan elimination algorithm that a computer or calculator uses to convert a matrix (augmented or not) into reduced row echelon form. Understanding this algorithm will help us better understand how to interpret the results in many applications we use it for in .      Consider the matrix Which row operation is the best choice for the first move in converting to RREF?   Add row 3 to row 2 ( )  Add row 2 to row 3 ( )  Swap row 1 to row 2 ( )  Add -2 row 2 to row 1 ( )       Consider the matrix Which row operation is the best choice for the next move in converting to RREF?   Add row 1 to row 3 ( )  Add -2 row 1 to row 2 ( )  Add 2 row 2 to row 3 ( )  Add 2 row 3 to row 2 ( )       Consider the matrix Which row operation is the best choice for the next move in converting to RREF?   Add row 1 to row 2 ( )  Add -1 row 3 to row 2 ( )  Add -1 row 2 to row 3 ( )  Add row 2 to row 1 ( )      The steps for the Gauss-Jordan elimination algorithm may be summarized as follows:   Ignoring any rows that already have marked pivots, identify the leftmost column with a nonzero entry.    Use row operations to obtain a pivot of value in the topmost row that does not already have a marked pivot.    Mark this pivot, then use row operations to change all values above and below the marked pivot to .    Repeat these steps until the matrix is in RREF.     In particular, once a pivot is marked, it should remain in the same position . This will keep you from undoing your progress towards an RREF matrix.     Complete the following RREF calculation (multiple row operations may be needed for certain steps):        Consider the matrix   Compute .      Consider the non-augmented and augmented matrices   Can be used to find ?  Yes, and are exactly the same.  Yes, may be slightly modified to find .  No, a new calculuation is required.        Free browser-based technologies for mathematical computation are available online.   Go to .   In the dropdown on the right, you can select a number of different languages. Select \"Octave\" for the Matlab-compatible syntax used by this text.   Type rref([1,3,2;2,5,7]) and then press the Evaluate button to compute the of .        In the HTML version of this text, code cells are often embedded for your convenience when RREFs need to be computed.  Try this out to compute .       Cool Down   Find three examples of linear systems for which the RREF of their augmented matrices is equal to      Which of the following matrices are not in RREF?           Videos      Video: Row reduction     Exercises available at .    Mathematical Writing Explorations    Prove that Gauss-Jordan Elimination preserves the solution set of a system of linear equations in variables. Make sure your proof includes each of the following. Just because I've used bullet points here does not mean you should use bullet points in your proof.  Write an arbitrary system of linear equations in variables. Your notation should be unambiguous.  Label an element of your solution set. You won't know what it is exactly, so you'll have to use a variable. Remember what it means (by definition!) to be in the solution set.  Describe the three operations used in Gauss-Jordan Elimination.  Consider all three operations in Gauss-Jordan Elimination. After each one is used, show that the element of the solution set you picked still satisfies the definition.        Let indicate the set of all matrices with real entries. Show that equivalence of matrices as defined in this section is an equivalence relation, as in exploration     Sample Problem and Solution  Sample problem .   "
 },
 {
   "id": "LE2-2",
@@ -256,26 +283,35 @@ var ptx_lunr_docs = [
   "id": "LE2-3-2",
   "level": "2",
   "url": "LE2.html#LE2-3-2",
-  "type": "Definition",
+  "type": "Activity",
   "number": "1.2.1",
+  "title": "",
+  "body": "  Consider the following matrices:     Write down a linear system whose augmented matrix is . Can you write down another?    Write down a linear system whose coefficient matrix is . Can you write down another?   "
+},
+{
+  "id": "LE2-4-2",
+  "level": "2",
+  "url": "LE2.html#LE2-4-2",
+  "type": "Definition",
+  "number": "1.2.2",
   "title": "",
   "body": "  Two systems of linear equations (and their corresponding augmented matrices) are said to be equivalent equivalent matrices if they have the same solution set.  For example, both of these systems share the same solution set .          Therefore these augmented matrices are equivalent (even though they're not equal ), which we denote with :     "
 },
 {
-  "id": "LE2-3-3",
+  "id": "LE2-4-3",
   "level": "2",
-  "url": "LE2.html#LE2-3-3",
+  "url": "LE2.html#LE2-4-3",
   "type": "Activity",
-  "number": "1.2.2",
+  "number": "1.2.3",
   "title": "",
   "body": "  Consider whether these matrix manipulations (A) must keep or (B) could change the solution set for the corresponding linear system.    Swapping two rows, for example:            Swapping two columns, for example:            Add a constant to every term of a row, for example:            Multiply a row by a nonzero constant, for example:            Add a constant multiple of one row to another row, for example:            Replace a column with zeros, for example:            Replace a row with zeros, for example:           "
 },
 {
-  "id": "LE2-3-4",
+  "id": "LE2-4-4",
   "level": "2",
-  "url": "LE2.html#LE2-3-4",
+  "url": "LE2.html#LE2-4-4",
   "type": "Definition",
-  "number": "1.2.3",
+  "number": "1.2.4",
   "title": "",
   "body": "  The following three row operations row operations produce equivalent augmented matrices.  Swap two rows, for example, :     Multiply a row by a nonzero constant, for example, :    Add a constant multiple of one row to another row, for example, :      Observe that we will use the following notation: (Combination of old rows) (New row).   "
 },
@@ -284,115 +320,115 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "LE2.html#LE2-activity-sort",
   "type": "Activity",
-  "number": "1.2.4",
+  "number": "1.2.5",
   "title": "",
   "body": "  Each of the following linear systems has the same solution set.   A)   B)   C)     D)   E)   F)    Sort these six equivalent linear systems from most complicated to simplest (in your opinion).   "
 },
 {
-  "id": "LE2-3-6",
+  "id": "LE2-4-6",
   "level": "2",
-  "url": "LE2.html#LE2-3-6",
+  "url": "LE2.html#LE2-4-6",
   "type": "Activity",
-  "number": "1.2.5",
+  "number": "1.2.6",
   "title": "",
   "body": "  Here we've written the sorted linear systems from as augmented matrices.   Assign the following row operations to each step used to manipulate each matrix to the next:            "
 },
 {
-  "id": "LE2-3-7",
+  "id": "LE2-4-7",
   "level": "2",
-  "url": "LE2.html#LE2-3-7",
+  "url": "LE2.html#LE2-4-7",
   "type": "Definition",
-  "number": "1.2.6",
+  "number": "1.2.7",
   "title": "",
   "body": "  A matrix is in reduced row echelon form ( RREF ) Reduced row echelon form if   The leftmost nonzero term of each row is 1. We call these terms pivots . pivot   Each pivot is to the right of every higher pivot.  Each term that is either above or below a pivot is 0.  All zero rows (rows whose terms are all 0) are at the bottom of the matrix.   Every matrix has a unique reduced row echelon form. If is a matrix, we write for the reduced row echelon form of that matrix.   "
 },
 {
-  "id": "LE2-3-8",
+  "id": "LE2-4-8",
   "level": "2",
-  "url": "LE2.html#LE2-3-8",
-  "type": "Activity",
-  "number": "1.2.7",
-  "title": "",
-  "body": "  Recall that a matrix is in reduced row echelon form ( RREF ) if   The leftmost nonzero term of each row is 1. We call these terms pivots .  Each pivot is to the right of every higher pivot.  Each term that is either above or below a pivot is 0.  All zero rows (rows whose terms are all 0) are at the bottom of the matrix.   For each matrix, mark the leading terms, and label it as RREF or not RREF. For the ones not in RREF, determine which rule is violated and how it might be fixed.        "
-},
-{
-  "id": "LE2-3-9",
-  "level": "2",
-  "url": "LE2.html#LE2-3-9",
+  "url": "LE2.html#LE2-4-8",
   "type": "Activity",
   "number": "1.2.8",
   "title": "",
   "body": "  Recall that a matrix is in reduced row echelon form ( RREF ) if   The leftmost nonzero term of each row is 1. We call these terms pivots .  Each pivot is to the right of every higher pivot.  Each term that is either above or below a pivot is 0.  All zero rows (rows whose terms are all 0) are at the bottom of the matrix.   For each matrix, mark the leading terms, and label it as RREF or not RREF. For the ones not in RREF, determine which rule is violated and how it might be fixed.        "
 },
 {
-  "id": "LE2-3-10",
+  "id": "LE2-4-9",
   "level": "2",
-  "url": "LE2.html#LE2-3-10",
-  "type": "Remark",
+  "url": "LE2.html#LE2-4-9",
+  "type": "Activity",
   "number": "1.2.9",
+  "title": "",
+  "body": "  Recall that a matrix is in reduced row echelon form ( RREF ) if   The leftmost nonzero term of each row is 1. We call these terms pivots .  Each pivot is to the right of every higher pivot.  Each term that is either above or below a pivot is 0.  All zero rows (rows whose terms are all 0) are at the bottom of the matrix.   For each matrix, mark the leading terms, and label it as RREF or not RREF. For the ones not in RREF, determine which rule is violated and how it might be fixed.        "
+},
+{
+  "id": "LE2-4-10",
+  "level": "2",
+  "url": "LE2.html#LE2-4-10",
+  "type": "Remark",
+  "number": "1.2.10",
   "title": "",
   "body": "  In practice, if we simply need to convert a matrix into reduced row echelon form, we use technology to do so.  However, it is also important to understand the Gauss-Jordan elimination Gauss-Jordan elimination algorithm that a computer or calculator uses to convert a matrix (augmented or not) into reduced row echelon form. Understanding this algorithm will help us better understand how to interpret the results in many applications we use it for in .   "
 },
 {
-  "id": "LE2-3-11",
+  "id": "LE2-4-11",
   "level": "2",
-  "url": "LE2.html#LE2-3-11",
+  "url": "LE2.html#LE2-4-11",
   "type": "Activity",
-  "number": "1.2.10",
+  "number": "1.2.11",
   "title": "",
   "body": "  Consider the matrix Which row operation is the best choice for the first move in converting to RREF?   Add row 3 to row 2 ( )  Add row 2 to row 3 ( )  Swap row 1 to row 2 ( )  Add -2 row 2 to row 1 ( )    "
 },
 {
-  "id": "LE2-3-12",
+  "id": "LE2-4-12",
   "level": "2",
-  "url": "LE2.html#LE2-3-12",
+  "url": "LE2.html#LE2-4-12",
   "type": "Activity",
-  "number": "1.2.11",
+  "number": "1.2.12",
   "title": "",
   "body": "  Consider the matrix Which row operation is the best choice for the next move in converting to RREF?   Add row 1 to row 3 ( )  Add -2 row 1 to row 2 ( )  Add 2 row 2 to row 3 ( )  Add 2 row 3 to row 2 ( )    "
 },
 {
-  "id": "LE2-3-13",
+  "id": "LE2-4-13",
   "level": "2",
-  "url": "LE2.html#LE2-3-13",
+  "url": "LE2.html#LE2-4-13",
   "type": "Activity",
-  "number": "1.2.12",
+  "number": "1.2.13",
   "title": "",
   "body": "  Consider the matrix Which row operation is the best choice for the next move in converting to RREF?   Add row 1 to row 2 ( )  Add -1 row 3 to row 2 ( )  Add -1 row 2 to row 3 ( )  Add row 2 to row 1 ( )    "
 },
 {
-  "id": "LE2-3-14",
+  "id": "LE2-4-14",
   "level": "2",
-  "url": "LE2.html#LE2-3-14",
+  "url": "LE2.html#LE2-4-14",
   "type": "Observation",
-  "number": "1.2.13",
+  "number": "1.2.14",
   "title": "",
   "body": " The steps for the Gauss-Jordan elimination algorithm may be summarized as follows:   Ignoring any rows that already have marked pivots, identify the leftmost column with a nonzero entry.    Use row operations to obtain a pivot of value in the topmost row that does not already have a marked pivot.    Mark this pivot, then use row operations to change all values above and below the marked pivot to .    Repeat these steps until the matrix is in RREF.     In particular, once a pivot is marked, it should remain in the same position . This will keep you from undoing your progress towards an RREF matrix.  "
 },
 {
-  "id": "LE2-3-15",
+  "id": "LE2-4-15",
   "level": "2",
-  "url": "LE2.html#LE2-3-15",
+  "url": "LE2.html#LE2-4-15",
   "type": "Activity",
-  "number": "1.2.14",
+  "number": "1.2.15",
   "title": "",
   "body": "  Complete the following RREF calculation (multiple row operations may be needed for certain steps):     "
 },
 {
-  "id": "LE2-3-16",
+  "id": "LE2-4-16",
   "level": "2",
-  "url": "LE2.html#LE2-3-16",
+  "url": "LE2.html#LE2-4-16",
   "type": "Activity",
-  "number": "1.2.15",
+  "number": "1.2.16",
   "title": "",
   "body": "  Consider the matrix   Compute .   "
 },
 {
-  "id": "LE2-3-17",
+  "id": "LE2-4-17",
   "level": "2",
-  "url": "LE2.html#LE2-3-17",
+  "url": "LE2.html#LE2-4-17",
   "type": "Activity",
-  "number": "1.2.16",
+  "number": "1.2.17",
   "title": "",
   "body": "  Consider the non-augmented and augmented matrices   Can be used to find ?  Yes, and are exactly the same.  Yes, may be slightly modified to find .  No, a new calculuation is required.     "
 },
@@ -401,43 +437,61 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "LE2.html#LE2-rref-tech",
   "type": "Activity",
-  "number": "1.2.17",
+  "number": "1.2.18",
   "title": "",
   "body": "  Free browser-based technologies for mathematical computation are available online.   Go to .   In the dropdown on the right, you can select a number of different languages. Select \"Octave\" for the Matlab-compatible syntax used by this text.   Type rref([1,3,2;2,5,7]) and then press the Evaluate button to compute the of .     "
 },
 {
-  "id": "LE2-3-19",
+  "id": "LE2-4-19",
   "level": "2",
-  "url": "LE2.html#LE2-3-19",
+  "url": "LE2.html#LE2-4-19",
   "type": "Activity",
-  "number": "1.2.18",
+  "number": "1.2.19",
   "title": "",
   "body": "  In the HTML version of this text, code cells are often embedded for your convenience when RREFs need to be computed.  Try this out to compute .   "
 },
 {
-  "id": "LE2-4-2",
+  "id": "LE2-5-2",
   "level": "2",
-  "url": "LE2.html#LE2-4-2",
+  "url": "LE2.html#LE2-5-2",
+  "type": "Activity",
+  "number": "1.2.20",
+  "title": "",
+  "body": " Find three examples of linear systems for which the RREF of their augmented matrices is equal to   "
+},
+{
+  "id": "LE2-5-3",
+  "level": "2",
+  "url": "LE2.html#LE2-5-3",
+  "type": "Activity",
+  "number": "1.2.21",
+  "title": "",
+  "body": "  Which of the following matrices are not in RREF?        "
+},
+{
+  "id": "LE2-6-2",
+  "level": "2",
+  "url": "LE2.html#LE2-6-2",
   "type": "Figure",
   "number": "2",
   "title": "",
   "body": "    Video: Row reduction  "
 },
 {
-  "id": "LE2-6-2",
+  "id": "LE2-8-2",
   "level": "2",
-  "url": "LE2.html#LE2-6-2",
+  "url": "LE2.html#LE2-8-2",
   "type": "Exploration",
-  "number": "1.2.19",
+  "number": "1.2.22",
   "title": "",
   "body": "  Prove that Gauss-Jordan Elimination preserves the solution set of a system of linear equations in variables. Make sure your proof includes each of the following. Just because I've used bullet points here does not mean you should use bullet points in your proof.  Write an arbitrary system of linear equations in variables. Your notation should be unambiguous.  Label an element of your solution set. You won't know what it is exactly, so you'll have to use a variable. Remember what it means (by definition!) to be in the solution set.  Describe the three operations used in Gauss-Jordan Elimination.  Consider all three operations in Gauss-Jordan Elimination. After each one is used, show that the element of the solution set you picked still satisfies the definition.     "
 },
 {
-  "id": "LE2-6-3",
+  "id": "LE2-8-3",
   "level": "2",
-  "url": "LE2.html#LE2-6-3",
+  "url": "LE2.html#LE2-8-3",
   "type": "Exploration",
-  "number": "1.2.20",
+  "number": "1.2.23",
   "title": "",
   "body": "  Let indicate the set of all matrices with real entries. Show that equivalence of matrices as defined in this section is an equivalence relation, as in exploration  "
 },
@@ -448,7 +502,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.3",
   "title": "Counting Solutions for Linear Systems (LE3)",
-  "body": " Counting Solutions for Linear Systems (LE3)     Determine the number of solutions for a system of linear equations or a vector equation.      Warm Up    Without referring to your Activity Book, which of the four criteria for a matrix to be in Reduced Row Echelon Form (RREF) can you recall?    Which, if any, of the following matrices are in RREF? You may refer to the Activity Book now for criteria that you may have forgotten.          Class Activities    We will frequently need to know the reduced row echelon form of matrices during the remainder of this course, so unless you're told otherwise, feel free to use technology (see ) to compute RREFs efficiently.      Consider the following system of equations.  .  Convert this to an augmented matrix and use technology to compute its reduced row echelon form:   Use the matrix to write a linear system equivalent to the original system.  How many solutions must this system have?   Zero    Only one    Infinitely-many        Consider the vector equation    Convert this to an augmented matrix and use technology to compute its reduced row echelon form:  Use the matrix to write a linear system equivalent to the original system.  How many solutions must this system have?   Zero    Only one    Infinitely-many        What contradictory equations besides may be obtained from the RREF of an augmented matrix?   is an obtainable contradiction  is an obtainable contradiction  is an obtainable contradiction  is the only obtainable contradiction       Consider the following linear system.    Find its corresponding augmented matrix and find .  Use the matrix to write a linear system equivalent to the original system.  How many solutions must this system have?   Zero    One    Infinitely-many        We will see in that the intuition established here generalizes: a consistent system with more variables than equations (ignoring ) will always have infinitely many solutions.      By finding from a linear system's corresponding augmented matrix , we can immediately tell how many solutions the system has.    If the linear system given by includes the contradiction , that is, the row , then the system is inconsistent , which means it has zero solutions and its solution set is written as or .    If the linear system given by sets each variable of the system to a single value; that is, , , and so on; then the system is consistent with exactly one solution , and its solution set is .    Otherwise, the system must have more variables than non-trivial equations (equations other than ). This means it is consistent with infinitely-many different solutions. We'll learn how to find such solution sets in .        For each vector equation, write an explanation for whether each solution set has no solutions, one solution, or infinitely-many solutions. If the set is finite, describe it using set notation.                Cool Down    In , we stated, but did not prove the assertion that all linear systems are one of the following:  Consistent with one solution: its solution set contains a single vector, e.g.    Consistent with infinitely-many solutions : its solution set contains infinitely many vectors, e.g.   Inconsistent : its solution set is the empty set, denoted by either or .      Explain why this fact is a consequence of above.      Videos      Video: Finding the number of solutions for a system     Exercises available at .    Mathematical Writing Explorations    A system of equations with all constants equal to 0 is called homogeneous . These are addressed in detail in section   Choose three systems of equations from this chapter that you have already solved. Replace the constants with 0 to make the systems homogeneous. Solve the homogeneous systems and make a conjecture about the relationship between the earlier solutions you found and the associated homogeneous systems.  Prove or disprove. A system of linear equations is homogeneous if an only if it has the the zero vector as a solution.      Sample Problem and Solution  Sample problem .   "
+  "body": " Counting Solutions for Linear Systems (LE3)     Determine the number of solutions for a system of linear equations or a vector equation.      Warm Up    Without referring to your Activity Book, which of the four criteria for a matrix to be in Reduced Row Echelon Form (RREF) can you recall?    Which, if any, of the following matrices are in RREF? You may refer to the Activity Book now for criteria that you may have forgotten.          Class Activities    We will frequently need to know the reduced row echelon form of matrices during the remainder of this course, so unless you're told otherwise, feel free to use technology (see ) to compute RREFs efficiently.      Consider the following system of equations.  .  Convert this to an augmented matrix and use technology to compute its reduced row echelon form:   Use the matrix to write a linear system equivalent to the original system.  How many solutions must this system have?   Zero    Only one    Infinitely-many        Consider the vector equation    Convert this to an augmented matrix and use technology to compute its reduced row echelon form:  Use the matrix to write a linear system equivalent to the original system.  How many solutions must this system have?   Zero    Only one    Infinitely-many        What contradictory equations besides may be obtained from the RREF of an augmented matrix?   is an obtainable contradiction  is an obtainable contradiction  is an obtainable contradiction  is the only obtainable contradiction       Consider the following linear system.    Find its corresponding augmented matrix and find .  Use the matrix to write a linear system equivalent to the original system.  How many solutions must this system have?   Zero    One    Infinitely-many        We will see in that the intuition established here generalizes: a consistent system with more variables than equations (ignoring ) will always have infinitely many solutions.      By finding from a linear system's corresponding augmented matrix , we can immediately tell how many solutions the system has.    If the linear system given by includes the contradiction , that is, the row , then the system is inconsistent , which means it has zero solutions and its solution set is written as or .    If the linear system given by sets each variable of the system to a single value; that is, , , and so on through ; then the system is consistent with exactly one solution , and its solution set is .    Otherwise, the system must have more variables than non-trivial equations (equations other than ). This means it is consistent with infinitely-many different solutions. We'll learn how to find such solution sets in .        For each vector equation, write an explanation for whether each solution set has no solutions, one solution, or infinitely-many solutions. If the set is finite, describe it using set notation.                Cool Down    In , we stated, but did not prove the assertion that all linear systems are one of the following:  Consistent with one solution: its solution set contains a single vector, e.g.    Consistent with infinitely-many solutions : its solution set contains infinitely many vectors, e.g.   Inconsistent : its solution set is the empty set, denoted by either or .      Explain why this fact is a consequence of above.      Videos      Video: Finding the number of solutions for a system     Exercises available at .    Mathematical Writing Explorations    A system of equations with all constants equal to 0 is called homogeneous . These are addressed in detail in section   Choose three systems of equations from this chapter that you have already solved. Replace the constants with 0 to make the systems homogeneous. Solve the homogeneous systems and make a conjecture about the relationship between the earlier solutions you found and the associated homogeneous systems.  Prove or disprove. A system of linear equations is homogeneous if an only if it has the the zero vector as a solution.      Sample Problem and Solution  Sample problem .   "
 },
 {
   "id": "LE3-2",
@@ -529,7 +583,7 @@ var ptx_lunr_docs = [
   "type": "Fact",
   "number": "1.3.8",
   "title": "",
-  "body": "  By finding from a linear system's corresponding augmented matrix , we can immediately tell how many solutions the system has.    If the linear system given by includes the contradiction , that is, the row , then the system is inconsistent , which means it has zero solutions and its solution set is written as or .    If the linear system given by sets each variable of the system to a single value; that is, , , and so on; then the system is consistent with exactly one solution , and its solution set is .    Otherwise, the system must have more variables than non-trivial equations (equations other than ). This means it is consistent with infinitely-many different solutions. We'll learn how to find such solution sets in .     "
+  "body": "  By finding from a linear system's corresponding augmented matrix , we can immediately tell how many solutions the system has.    If the linear system given by includes the contradiction , that is, the row , then the system is inconsistent , which means it has zero solutions and its solution set is written as or .    If the linear system given by sets each variable of the system to a single value; that is, , , and so on through ; then the system is consistent with exactly one solution , and its solution set is .    Otherwise, the system must have more variables than non-trivial equations (equations other than ). This means it is consistent with infinitely-many different solutions. We'll learn how to find such solution sets in .     "
 },
 {
   "id": "LE3-4-12",
@@ -2116,9 +2170,9 @@ var ptx_lunr_docs = [
   "body": "  Let be the linear transformation given by    Compute , , and .  Find the standard matrix for .  "
 },
 {
-  "id": "AT3-standard-matrix-fact",
+  "id": "AT2-standard-matrix-fact",
   "level": "2",
-  "url": "AT2.html#AT3-standard-matrix-fact",
+  "url": "AT2.html#AT2-standard-matrix-fact",
   "type": "Fact",
   "number": "3.2.11",
   "title": "",
@@ -4381,7 +4435,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "6.2",
   "title": "Projections (ON2)",
-  "body": " Projections (ON2)     Compute the orthogonal projection of Euclidean vector onto a line.      Class Activities    Let be a subspace of and let be a vector in . Then we can write uniquely as where is the closest vector to on and is in       Let be a subspace of and let be a vector in . The orthogonal decompostion of is the decomposition of given by . The orthogonal projection of is .      Let be a the -plane in .    have them find a simple orthogonal decomposition      Let be a linear transformation with standard matrix . Let be the image of , that is, is spanned by the columns of . Then for any in , the matrix equation is consistent, and for any solution .      Videos     Exercises available at checkit.clontz.org .   "
+  "body": " Projections (ON2)     Compute the orthogonal projection of Euclidean vector onto a line.      Class Activities    Let be a subspace of and let be a vector in . Then we can write uniquely as where is the closest vector to on and is in       Let be a subspace of and let be a vector in . The orthogonal decompostion of is the decomposition of given by . The orthogonal projection of is .      Let be a the -plane in .    have them find a simple orthogonal decomposition      Let be a linear transformation with standard matrix . Let be the image of , that is, is spanned by the columns of . Then for any in , the matrix equation is consistent, and for any solution .      When the image of a linear transformation is one-dimensional, then its standard matrix only has one column , and for any vector ,      Videos     Exercises available at checkit.clontz.org .   "
 },
 {
   "id": "ON2-2",
@@ -4427,6 +4481,15 @@ var ptx_lunr_docs = [
   "number": "6.2.4",
   "title": "",
   "body": "  Let be a linear transformation with standard matrix . Let be the image of , that is, is spanned by the columns of . Then for any in , the matrix equation is consistent, and for any solution .   "
+},
+{
+  "id": "ON2-subsec-class-activities-6",
+  "level": "2",
+  "url": "ON2.html#ON2-subsec-class-activities-6",
+  "type": "Observation",
+  "number": "6.2.5",
+  "title": "",
+  "body": " When the image of a linear transformation is one-dimensional, then its standard matrix only has one column , and for any vector ,   "
 },
 {
   "id": "ON3",
