@@ -4516,7 +4516,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "5.1",
   "title": "Substitution Method (TI1)",
-  "body": " Substitution Method (TI1)     Evaluate various integrals via the substitution method.      Activities   Answer the following.  Using the chain rule, which of these is the derivative of with respect to ?       Based on this result, which of these would you suspect to equal ?          Recall that if is a function of , then by the Chain Rule ( ).  For each question, choose from the following.          What is ?    What is ?    What is ?      Based on these activities, which of these choices seems to be a viable strategy for integration?   Memorize an integration formula for every possible function.  Attempt to rewrite the integral in the form .  Keep differentiating functions until you come across the function you want to integrate.       By the chain rule, . There is a dual integration technique reversing this process, known as the substitution method .  This technique involves choosing an appropriate function in terms of to rewrite the integral as follows: .      Recall that , and so . This allows for the following common notation: .  Therefore, rather than dealing with equations like , we will prefer to write .      Consider , which we conjectured earlier to be .  Suppose we decided to let .   Compute , and rewrite it as .  This doesn't appear in exactly, so use algebra to solve for in terms of .  Replace and with terms to rewrite as .  Solve in terms of , then replace with to confirm our original conjecture.     Here is how one might write out the explanation of how to find from start to finish:       Which step of the previous example do you think was the most important?    Choosing .    Finding and .    Substituting with .    Integrating .    Unsubstituting to get .        Below are two correct solutions to the same integral, using two different choices for . Which method would you prefer to use yourself?              Suppose we wanted to try the substitution method to find . Which of these choices for appears to be most useful?     , so      , so      , so      , so      , so         Complete the following solution using your choice from the previous activity to find .       Complete the following integration by substitution to find .       Given that , what is the value of ?            What's wrong with the following computation?     The wrong substitution was made.    The antiderivative of was wrong.    The values were plugged in for the variable .        Here's one way to show the computation of this definite integral by tracking values in the bounds.       Instead of unsubstituting values for values, definite integrals may be computed by also substituting values in the bounds with values. Use this idea to complete the following solution:       Here is how one might write out the explanation of how to find from start to finish by leaving bounds in terms of instead:       Use substitution to show that .      Use substitution to show that .      Use substitution to show that .      Consider .   Solve this integral using substitution.  Replace with in the original integral, the solve using the reverse power rule.  Which method did you prefer?     Consider .   Replace in the integral with a fraction involving sine and cosine.  Use substitution to solve the integral.     Videos    Video: Evaluate various integrals via the substitution method   Note: a was accidentally forgotten in the last example shown in the video above.    Exercises  Exercises available at     "
+  "body": " Substitution Method (TI1)     Evaluate various integrals via the substitution method.      Activities   Answer the following.  Using the chain rule, which of these is the derivative of with respect to ?       Based on this result, which of these would you suspect to equal ?          Recall that if is a function of , then by the Chain Rule ( ).  For each question, choose from the following.          What is ?    What is ?    What is ?      Based on these activities, which of these choices seems to be a viable strategy for integration?   Memorize an integration formula for every possible function.  Attempt to rewrite the integral in the form .  Keep differentiating functions until you come across the function you want to integrate.       By the chain rule, . There is a dual integration technique reversing this process, known as the substitution method .  This technique involves choosing an appropriate function in terms of to rewrite the integral as follows: .      Recall that , and so . This allows for the following common notation: .  Therefore, rather than dealing with equations like , we will prefer to write .      Consider , which we conjectured earlier to be .  Suppose we decided to let .   Compute , and rewrite it as .  This doesn't appear in exactly, so use algebra to solve for in terms of .  Replace and with terms to rewrite as .  Solve in terms of , then replace with to confirm our original conjecture.     Here is how one might write out the explanation of how to find from start to finish:       Which step of the previous example do you think was the most important?    Choosing .    Finding and .    Substituting with .    Integrating .    Unsubstituting to get .        Below are two correct solutions to the same integral, using two different choices for . Which method would you prefer to use yourself?              Suppose we wanted to try the substitution method to find . Which of these choices for appears to be most useful?     , so      , so      , so      , so      , so         Complete the following solution using your choice from the previous activity to find .        What's wrong with the following computation?     The wrong substitution was made.    The antiderivative of was wrong.    The values were plugged in for the variable .        Here's one way to show the computation of this definite integral by tracking values in the bounds.       Instead of unsubstituting values for values, definite integrals may be computed by also substituting values in the bounds with values. Use this idea to complete the following solution:       Here is how one might write out the explanation of how to find from start to finish by leaving bounds in terms of instead:       Individual Practice    Use substitution to show that .      Use substitution to show that .      Use substitution to show that .      Consider .   Solve this integral using substitution.  Replace with in the original integral, the solve using the reverse power rule.  Which method did you prefer?     Consider .   Replace in the integral with a fraction involving sine and cosine.  Use substitution to solve the integral.     Videos    Video: Evaluate various integrals via the substitution method   Note: a was accidentally forgotten in the last example shown in the video above.    Exercises  Exercises available at     "
 },
 {
   "id": "TI1-2",
@@ -4633,25 +4633,25 @@ var ptx_lunr_docs = [
   "type": "Activity",
   "number": "5.1.12",
   "title": "",
-  "body": "  Complete the following integration by substitution to find .    "
+  "body": "  What's wrong with the following computation?     The wrong substitution was made.    The antiderivative of was wrong.    The values were plugged in for the variable .     "
 },
 {
   "id": "TI1-3-14",
   "level": "2",
   "url": "TI1.html#TI1-3-14",
-  "type": "Activity",
+  "type": "Example",
   "number": "5.1.13",
   "title": "",
-  "body": "  Given that , what is the value of ?         "
+  "body": "  Here's one way to show the computation of this definite integral by tracking values in the bounds.    "
 },
 {
   "id": "TI1-3-15",
   "level": "2",
   "url": "TI1.html#TI1-3-15",
-  "type": "Activity",
+  "type": "Example",
   "number": "5.1.14",
   "title": "",
-  "body": "  What's wrong with the following computation?     The wrong substitution was made.    The antiderivative of was wrong.    The values were plugged in for the variable .     "
+  "body": "  Instead of unsubstituting values for values, definite integrals may be computed by also substituting values in the bounds with values. Use this idea to complete the following solution:    "
 },
 {
   "id": "TI1-3-16",
@@ -4660,75 +4660,57 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "5.1.15",
   "title": "",
-  "body": "  Here's one way to show the computation of this definite integral by tracking values in the bounds.    "
-},
-{
-  "id": "TI1-3-17",
-  "level": "2",
-  "url": "TI1.html#TI1-3-17",
-  "type": "Example",
-  "number": "5.1.16",
-  "title": "",
-  "body": "  Instead of unsubstituting values for values, definite integrals may be computed by also substituting values in the bounds with values. Use this idea to complete the following solution:    "
-},
-{
-  "id": "TI1-3-18",
-  "level": "2",
-  "url": "TI1.html#TI1-3-18",
-  "type": "Example",
-  "number": "5.1.17",
-  "title": "",
   "body": "  Here is how one might write out the explanation of how to find from start to finish by leaving bounds in terms of instead:    "
 },
 {
-  "id": "TI1-3-19",
+  "id": "subsec-Individual Practice-2",
   "level": "2",
-  "url": "TI1.html#TI1-3-19",
+  "url": "TI1.html#subsec-Individual Practice-2",
+  "type": "Activity",
+  "number": "5.1.16",
+  "title": "",
+  "body": "  Use substitution to show that .   "
+},
+{
+  "id": "subsec-Individual Practice-3",
+  "level": "2",
+  "url": "TI1.html#subsec-Individual Practice-3",
+  "type": "Activity",
+  "number": "5.1.17",
+  "title": "",
+  "body": "  Use substitution to show that .   "
+},
+{
+  "id": "subsec-Individual Practice-4",
+  "level": "2",
+  "url": "TI1.html#subsec-Individual Practice-4",
   "type": "Activity",
   "number": "5.1.18",
   "title": "",
   "body": "  Use substitution to show that .   "
 },
 {
-  "id": "TI1-3-20",
+  "id": "subsec-Individual Practice-5",
   "level": "2",
-  "url": "TI1.html#TI1-3-20",
+  "url": "TI1.html#subsec-Individual Practice-5",
   "type": "Activity",
   "number": "5.1.19",
-  "title": "",
-  "body": "  Use substitution to show that .   "
-},
-{
-  "id": "TI1-3-21",
-  "level": "2",
-  "url": "TI1.html#TI1-3-21",
-  "type": "Activity",
-  "number": "5.1.20",
-  "title": "",
-  "body": "  Use substitution to show that .   "
-},
-{
-  "id": "TI1-3-22",
-  "level": "2",
-  "url": "TI1.html#TI1-3-22",
-  "type": "Activity",
-  "number": "5.1.21",
   "title": "",
   "body": "  Consider .   Solve this integral using substitution.  Replace with in the original integral, the solve using the reverse power rule.  Which method did you prefer?  "
 },
 {
-  "id": "TI1-3-23",
+  "id": "subsec-Individual Practice-6",
   "level": "2",
-  "url": "TI1.html#TI1-3-23",
+  "url": "TI1.html#subsec-Individual Practice-6",
   "type": "Activity",
-  "number": "5.1.22",
+  "number": "5.1.20",
   "title": "",
   "body": "  Consider .   Replace in the integral with a fraction involving sine and cosine.  Use substitution to solve the integral.  "
 },
 {
-  "id": "TI1-4-2",
+  "id": "TI1-5-2",
   "level": "2",
-  "url": "TI1.html#TI1-4-2",
+  "url": "TI1.html#TI1-5-2",
   "type": "Figure",
   "number": "109",
   "title": "",
@@ -4741,7 +4723,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "5.2",
   "title": "Integration by Parts (TI2)",
-  "body": " Integration by Parts (TI2)     Compute integrals using integration by parts.      Activities   Answer the following.  Using the product rule, which of these is derivative of with respect to ?       Based on this result, which of these would you suspect to equal ?         Answer the following.  Which differentiation rule is easier to implement?  Product Rule  Chain Rule   Which differentiation strategy do you expect to be easier to reverse?  Product Rule  Chain Rule     Answer the following.  Which of the following equations is equivalent to the formula ?       Which of these is the most concise result of integrating both sides with respect to ?          By the product rule, and, subsequently, . There is a dual integration technique reversing this process, known as integration by parts .  This technique involves using algebra to rewrite an integral of a product of functions in the form and then using the equality .      Consider . Suppose we decided to let .   Compute , and rewrite it as .  What is the best candidate for ?       Given that , find .  Show why may now be rewritten as .  Solve , and then give the most general antiderivative of .     Here is how one might write out the explanation of how to find from start to finish:       Which step of the previous example do you think was the most important?    Choosing and .    Finding and .    Applying integration by parts to rewrite as .    Integrating to get .        Consider the integral . Suppose we proceed using integration by parts. We choose and .  What is ?  What is ?  What do you get when plugging these pieces into integration by parts?  Does the new integral seem easier or harder to compute than the original integral ?  The original integral is easier to compute.  The new integral is easier to compute.  Neither integral seems harder than the other one.       Consider the integral once more. Suppose we still proceed using integration by parts. However, this time we choose and . Do you prefer this choice or the choice we made in ?   We prefer the substitution choice of and .  We prefer the substitution choice of and .  We do not have a strong preference, since these choices are of the same difficulty.       Consider the integral . Suppose we proceed using integration by parts. Which of the following candidates for and would best allow you to evaluate this integral?    ,    ,    ,    ,        Evaluate the integral using integration by parts.      Now use integration by parts to evaluate the integral .      Consider the integral . Suppose we proceed using integration by parts. Which of the following candidates for and would best allow you to evaluate this integral?    ,    ,    ,    ,        Consider the integral . Suppose we proceed using integration by parts. Which of the following candidates for and would best allow you to evaluate this integral?    ,    ,    ,    ,        Suppose we started using integration by parts to solve the integral as follows:   We will have to use integration by parts a second time to evaluate the integral . Which of the following candidates for and would best allow you to continue evaluating the original integral ?    ,    ,    ,    ,        Use integration by parts to show that .      Consider the integral .   Use the substitution to rewrite the integral in terms of .  Use integration by parts to evaluate the integral in terms of .  Replace with to finish evaluating the original integral.     Use integration by parts to show that .      Given that that , evaluate .      Consider the antiderivative    Noting that and letting , what equality does integration by parts yield?        Use the fact that to rewrite the above equality.  Solve algebraically for      Modifying the approach from , use parts to find       Videos      Video: Compute integrals using integration by parts     Exercises  Exercises available at     "
+  "body": " Integration by Parts (TI2)     Compute integrals using integration by parts.      Activities   Answer the following.  Using the product rule, which of these is derivative of with respect to ?       Based on this result, which of these would you suspect to equal ?         Answer the following.  Which differentiation rule is easier to implement?  Product Rule  Chain Rule   Which differentiation strategy do you expect to be easier to reverse?  Product Rule  Chain Rule     Answer the following.  Which of the following equations is equivalent to the formula ?       Which of these is the most concise result of integrating both sides with respect to ?          By the product rule, and, subsequently, . There is a dual integration technique reversing this process, known as integration by parts .  This technique involves using algebra to rewrite an integral of a product of functions in the form and then using the equality .      Consider . Suppose we decided to let .   Compute , and rewrite it as .  What is the best candidate for ?       Given that , find .  Show why may now be rewritten as .  Solve , and then give the most general antiderivative of .     Here is how one might write out the explanation of how to find from start to finish:       Which step of the previous example do you think was the most important?    Choosing and .    Finding and .    Applying integration by parts to rewrite as .    Integrating to get .        Consider the integral . Suppose we proceed using integration by parts. We choose and .  What is ?  What is ?  What do you get when plugging these pieces into integration by parts?  Does the new integral seem easier or harder to compute than the original integral ?  The original integral is easier to compute.  The new integral is easier to compute.  Neither integral seems harder than the other one.       Consider the integral once more. Suppose we still proceed using integration by parts. However, this time we choose and . Do you prefer this choice or the choice we made in ?   We prefer the substitution choice of and .  We prefer the substitution choice of and .  We do not have a strong preference, since these choices are of the same difficulty.       Consider the integral . Suppose we proceed using integration by parts. Which of the following candidates for and would best allow you to evaluate this integral?    ,    ,    ,    ,        Consider the integral . Suppose we proceed using integration by parts. Which of the following candidates for and would best allow you to evaluate this integral?    ,    ,    ,    ,         Suppose we started using integration by parts to solve the integral as follows:   Using integration by parts again on the integral we get: Putting this all together:   Have these computations helped us make progress?    No. We are still no closer to evaluating .    Yes. This equation is helpful in evaluating .        Use integration by parts to show that .      Consider the antiderivative    Noting that and letting , what equality does integration by parts yield?        Use the fact that to rewrite the above equality.  Solve algebraically for      Individual Practice    Evaluate the integral using integration by parts.      Now use integration by parts to evaluate the integral .      Use integration by parts to show that .      Consider the integral .   Use the substitution to rewrite the integral in terms of .  Use integration by parts to evaluate the integral in terms of .  Replace with to finish evaluating the original integral.     Given that that , evaluate .      Modifying the approach from , use parts to find       Videos      Video: Compute integrals using integration by parts     Exercises  Exercises available at     "
 },
 {
   "id": "TI2-2",
@@ -4843,38 +4825,11 @@ var ptx_lunr_docs = [
   "body": "  Consider the integral . Suppose we proceed using integration by parts. Which of the following candidates for and would best allow you to evaluate this integral?    ,    ,    ,    ,     "
 },
 {
-  "id": "activity-TI2LinearCosineProduct",
-  "level": "2",
-  "url": "TI2.html#activity-TI2LinearCosineProduct",
-  "type": "Activity",
-  "number": "5.2.11",
-  "title": "",
-  "body": "  Evaluate the integral using integration by parts.   "
-},
-{
-  "id": "activity-TI2DefiniteLinearCosineProduct",
-  "level": "2",
-  "url": "TI2.html#activity-TI2DefiniteLinearCosineProduct",
-  "type": "Activity",
-  "number": "5.2.12",
-  "title": "",
-  "body": "  Now use integration by parts to evaluate the integral .   "
-},
-{
   "id": "activity-TI2ExtensionArctangent",
   "level": "2",
   "url": "TI2.html#activity-TI2ExtensionArctangent",
   "type": "Activity",
-  "number": "5.2.13",
-  "title": "",
-  "body": "  Consider the integral . Suppose we proceed using integration by parts. Which of the following candidates for and would best allow you to evaluate this integral?    ,    ,    ,    ,     "
-},
-{
-  "id": "activity-TI2ExtensionExpTrigStep1",
-  "level": "2",
-  "url": "TI2.html#activity-TI2ExtensionExpTrigStep1",
-  "type": "Activity",
-  "number": "5.2.14",
+  "number": "5.2.11",
   "title": "",
   "body": "  Consider the integral . Suppose we proceed using integration by parts. Which of the following candidates for and would best allow you to evaluate this integral?    ,    ,    ,    ,     "
 },
@@ -4883,16 +4838,52 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "TI2.html#activity-TI2ExtensionExpTrigStep2",
   "type": "Activity",
+  "number": "5.2.12",
+  "title": "",
+  "body": "  Suppose we started using integration by parts to solve the integral as follows:   Using integration by parts again on the integral we get: Putting this all together:   Have these computations helped us make progress?    No. We are still no closer to evaluating .    Yes. This equation is helpful in evaluating .     "
+},
+{
+  "id": "activity-TI2ExtensionNatLog",
+  "level": "2",
+  "url": "TI2.html#activity-TI2ExtensionNatLog",
+  "type": "Activity",
+  "number": "5.2.13",
+  "title": "",
+  "body": "  Use integration by parts to show that .   "
+},
+{
+  "id": "activity-partssinsquare",
+  "level": "2",
+  "url": "TI2.html#activity-partssinsquare",
+  "type": "Activity",
+  "number": "5.2.14",
+  "title": "",
+  "body": "  Consider the antiderivative    Noting that and letting , what equality does integration by parts yield?        Use the fact that to rewrite the above equality.  Solve algebraically for   "
+},
+{
+  "id": "activity-TI2LinearCosineProduct",
+  "level": "2",
+  "url": "TI2.html#activity-TI2LinearCosineProduct",
+  "type": "Activity",
   "number": "5.2.15",
   "title": "",
-  "body": "  Suppose we started using integration by parts to solve the integral as follows:   We will have to use integration by parts a second time to evaluate the integral . Which of the following candidates for and would best allow you to continue evaluating the original integral ?    ,    ,    ,    ,     "
+  "body": "  Evaluate the integral using integration by parts.   "
+},
+{
+  "id": "activity-TI2DefiniteLinearCosineProduct",
+  "level": "2",
+  "url": "TI2.html#activity-TI2DefiniteLinearCosineProduct",
+  "type": "Activity",
+  "number": "5.2.16",
+  "title": "",
+  "body": "  Now use integration by parts to evaluate the integral .   "
 },
 {
   "id": "activity-TI2DefiniteSinePoly",
   "level": "2",
   "url": "TI2.html#activity-TI2DefiniteSinePoly",
   "type": "Activity",
-  "number": "5.2.16",
+  "number": "5.2.17",
   "title": "",
   "body": "  Use integration by parts to show that .   "
 },
@@ -4901,18 +4892,9 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "TI2.html#activity-TI2ExtensionProductChain",
   "type": "Activity",
-  "number": "5.2.17",
-  "title": "",
-  "body": "  Consider the integral .   Use the substitution to rewrite the integral in terms of .  Use integration by parts to evaluate the integral in terms of .  Replace with to finish evaluating the original integral.  "
-},
-{
-  "id": "activity-TI2ExtensionNatLog",
-  "level": "2",
-  "url": "TI2.html#activity-TI2ExtensionNatLog",
-  "type": "Activity",
   "number": "5.2.18",
   "title": "",
-  "body": "  Use integration by parts to show that .   "
+  "body": "  Consider the integral .   Use the substitution to rewrite the integral in terms of .  Use integration by parts to evaluate the integral in terms of .  Replace with to finish evaluating the original integral.  "
 },
 {
   "id": "activity-TI2ExtensionNatLogSquared",
@@ -4924,27 +4906,18 @@ var ptx_lunr_docs = [
   "body": "  Given that that , evaluate .   "
 },
 {
-  "id": "activity-partssinsquare",
+  "id": "subsec-Individual Practice-7",
   "level": "2",
-  "url": "TI2.html#activity-partssinsquare",
+  "url": "TI2.html#subsec-Individual Practice-7",
   "type": "Activity",
   "number": "5.2.20",
-  "title": "",
-  "body": "  Consider the antiderivative    Noting that and letting , what equality does integration by parts yield?        Use the fact that to rewrite the above equality.  Solve algebraically for   "
-},
-{
-  "id": "TI2-3-22",
-  "level": "2",
-  "url": "TI2.html#TI2-3-22",
-  "type": "Activity",
-  "number": "5.2.21",
   "title": "",
   "body": "  Modifying the approach from , use parts to find    "
 },
 {
-  "id": "TI2-4-2",
+  "id": "TI2-5-2",
   "level": "2",
-  "url": "TI2.html#TI2-4-2",
+  "url": "TI2.html#TI2-5-2",
   "type": "Figure",
   "number": "110",
   "title": "",
@@ -9278,6 +9251,60 @@ var ptx_lunr_docs = [
   "number": "A.1",
   "title": "Problem Set Success Guide",
   "body": " Problem Set Success Guide   What are Problem Sets?  The term Problem Set is used commonly in STEM courses at Brown and, generally, means some form of written assignment in which students solve problems. While this term may be familiar, the experience of working on a problem set varies greatly between courses because different courses may have different expectations for quality and style of writing, and there may be different expectations surrounding the types of problems that students are expected to solve.  The purpose of this brief guide is to clarify expectations around Problem Sets in this course. Your Problem Sets make up a significant portion of your grade and, as such, are expected to take a significant amount of time and effort to do well on them.    What Kinds of Problems Will Appear on Problem Sets?  Different types of problems assess different learning outcomes and promote the development of different skills and habits. To help you better understand the kind of problems that you will encounter your problem set (and why you are encountering them), it is instructive to examine the basic types of problems that make up this TBIL course, as described in Team-Based Inquiry Learning .  Broadly speaking, the problems that you encounter in this course (both inside and outside of the classroom) fall into the following types:    Scaffolded Exploration problems introduce you to a new concept through a sequence of carefully scaffolded activities. These activities include exploratory activities to motivate an entire line of thinking; working a series of examples to have students realize the need for a new definition; and working a carefully scaffolded problem to develop a general algorithm for solving similar problems, for example.     Fluency Builders are designed to help you develop fluency in a new concept. You will work on such problems both in-class with your teammates after learning a new concepts, but also outside of class while you study. All of the problems that you will see on Fluency Assessments are Fluency Builders.     Flexible Extensions are problems that require you to apply a concept in a new setting. These problems can take a variety of forms and include: checking if something satisfies a new definition; extending an idea from its natural setting to something more general; or, a true application to another field or topic. In these activities, the emphasis is on developing a flexible mindset when faced with new problems.     The most common types of problems that you will work on in class are Scaffolded Explorations and Fluency Builders. In contrast, your Problem Sets will largely prioritize Flexible Extensions because these are exactly the types of problems that allow you develop your ability to knowledge-transfer.    How Will You Be Evaluated?  Each Problem Set in this course will contain five (5) problems. For each problem, your task is to solve the problem and prepare a written solution to it. You will then upload your solutions to Gradescope as a single .pdf file, as instruced on Canvas.   Written solutions are more than just answers. A complete solution to a problem:   clearly states what the answer to the problem is;    explains why the claimed answer is indeed the correct answer;    is grounded in sound mathematical reasoning that builds on and\/or refers directly to results, Facts, or Activities that we have explored in class;    is written for an audience of a typical classmate; that is, someone who is generally new to these ideas and has the resources and experiences provided in this Activity Book.     For each problem on your problem set, you will receive a total score of at most 5 points; three (3) of those points are for Problem Solving and two (2) of those points are for Communication .   Problem Solving (3 Points)   The solution uses methods covered in class, is grounded in mathematical reasoning, and solves the problem, when executed accurately.    All key ideas required to solve the problem are introduced in a clear and concise manner.       Communication (2 Points)   The solution is well-written, audience appropriate, and follows principles of good mathematical writing (explained more below).    Mathematical terms and notations are used correctly, and Theorem and Facts are cited appropriately.    Solutions are uploaded to gradescope properly with all relevant pages selected for each question.      In order to grade your work fairly and consistently among our varied sections, the teaching team will meet prior to assessing the Problem Sets in order to decide how to interpret these criteria for each problem on your Problem Set.  After your Problem Set is returned to you, you will be provided an opportunity to reflect on the feedback that you were given and earn one (1) additional point on your Problem Set .    Writing Mathematics Well  Writing Mathematics well is a skill that you can and will develop over time. Like other forms of writing, it will take a lot of practice, and the incorporation of feedback from peers and those with more expertise. While it may feel like it at the beginning, we want to stress that our goal is not to have you write the exact same way that we do. Rather, we want you to be able to express yourself precisely, so that you may share your ideas and perspectives accurately with the greater community .  The writing guide depicted below (by Francis Su of Harvey Mudd College) is a great resource that covers the basic principles of good mathematical writing. A PDF is also avaialble. Use it a checklist when writing your solutions. Almost every deduction we give for communication is a result of work that violates at least one of these principles .  The single greatest piece of advice I can give is: write for a hypothetical student who is anxious about the material. With this audience in mind, take care not ensure that all details are explained well and that you are using ideas and terminology that we have used in class. At the same, work to remove any unnecessary text that does not help with the readability.    This is a short guide to writing mathematics well by Francis Su (Harvey Mudd College). A PDF is also avaialble. Use it a checklist when writing your solutions. Almost every deduction we give for communication is a result of work that violates at least one of these principles .      Getting the Most Out of Your Problem Sets  Out of everything you do in this course, the Problem Sets will take up the most of your effort. They are also where the most significant and lasting learning will happen, provided that you invest the time and resources into yourself for this learning to occur. Take pride in the work you submit this semester it represents the culmination of a lot of time, energy, and creativity on your part, even though you will inevitably experience the ebb and flow of joy and frustration as you get stuck on challenging problems.  Here are some tips to help you get the most of your experience:   Begin your Problem Set early!   They are designed with the intention of them being completed over a period of around 10 days.       Identify key terms in each problem and locate the relevant Activity Book sections.    Identify which learning outcome(s) are aligned with each problem.   These alignments may help you solve the problem.     Every problem you encounter will be aligned with at least one outcome even if it doesn't look like it!       Practice getting unstuck:   Go for a walk, grab a snack, or engage in a hobby.    Talk to a friend, or member of the teaching team in Office Hours.       Avoid external resources (like Youtube, etc.), and rely on internal ones.   These problems are designed to be solved with the concepts and ideas that are introduced in class.    While external resources can be helpful for learning, they may also serve as a crutch and rob you of an opportunity to strengthen an area of weakness.         "
+},
+{
+  "id": "sec-pset1-calc",
+  "level": "1",
+  "url": "sec-pset1-calc.html",
+  "type": "Section",
+  "number": "A.2",
+  "title": "Problem Set 1",
+  "body": " Problem Set 1   Instructions  Prior to beginning this problem set, consider reading the Problem Set Success Guide for advice and clarity around expectations for Problem Sets in this course. Upload your solutions to all problems on this page to gradescope as a single .pdf file, remembering to assign pages appropriately for each question. Complete instructions for Problem Sets are available on Canvas.      The purpose of this problem is practice correctly implementing a given -substitution.   Consider the integral . For each of the following choices of , explain how to use -substitution to re-write the integral completely in terms of . Do not evaluate the resulting integrals! .    ;     ;     .   Of the three -integrals you've written down, which of them would you consider your best option for continuing to evaluate and why?       This problem asks you to expand on the ideas in .   Explain and demonstrate how to use integration by parts to show that .    Explain and demonstrate how to use a similar method to evaluate .    More generally, let , where a positive integer. Use integration by parts to explain why    While you do not need to turn it in, consider finding an analogous formula relating the integrals .    Follow the suggestions in and be prepared to do some trial-and-error with your integration-by-parts.       The formula that you established in is an example of a reduction formula : a formula that that reduces the computation of an integral to that of a simpler integral.   Explain and demonstrate how to use the reduction formula in to evaluate .    Explain and demonstrate how to evaluate using a -substitution.    Which method do you prefer and why?        In , we developed strategies to evaluate integrals of the form . Similar strategies often work for integrals of the form . Before exploring this further, we need to understand how to evaluate two foundational integrals; this Problem asks you to do just that.   Explain and demonstrate how to use an appropriate -substitution to show that .    Explain why by first multiplying and dividing the integrand by .    While the above trick might seem elusive (because it is!), try using a similar trick to evaluate the integral .   From now on, you may use these results in future problems without having to reproduce them.       Building off of and using ideas that we discussed in , try using substitutions of the form and , along with the identity , to evaluate the following integrals:    .     .     .   Based on your explorations here, do you think substitution and trig identities alone will help you evaluate ?    "
+},
+{
+  "id": "sec-pset1-calc-3",
+  "level": "2",
+  "url": "sec-pset1-calc.html#sec-pset1-calc-3",
+  "type": "Problem",
+  "number": "A.2.1",
+  "title": "",
+  "body": "   The purpose of this problem is practice correctly implementing a given -substitution.   Consider the integral . For each of the following choices of , explain how to use -substitution to re-write the integral completely in terms of . Do not evaluate the resulting integrals! .    ;     ;     .   Of the three -integrals you've written down, which of them would you consider your best option for continuing to evaluate and why?    "
+},
+{
+  "id": "reducformula-motivation",
+  "level": "2",
+  "url": "sec-pset1-calc.html#reducformula-motivation",
+  "type": "Problem",
+  "number": "A.2.2",
+  "title": "",
+  "body": "  This problem asks you to expand on the ideas in .   Explain and demonstrate how to use integration by parts to show that .    Explain and demonstrate how to use a similar method to evaluate .    More generally, let , where a positive integer. Use integration by parts to explain why    While you do not need to turn it in, consider finding an analogous formula relating the integrals .    Follow the suggestions in and be prepared to do some trial-and-error with your integration-by-parts.    "
+},
+{
+  "id": "sec-pset1-calc-5",
+  "level": "2",
+  "url": "sec-pset1-calc.html#sec-pset1-calc-5",
+  "type": "Problem",
+  "number": "A.2.3",
+  "title": "",
+  "body": "  The formula that you established in is an example of a reduction formula : a formula that that reduces the computation of an integral to that of a simpler integral.   Explain and demonstrate how to use the reduction formula in to evaluate .    Explain and demonstrate how to evaluate using a -substitution.    Which method do you prefer and why?     "
+},
+{
+  "id": "tansecsub-motivation",
+  "level": "2",
+  "url": "sec-pset1-calc.html#tansecsub-motivation",
+  "type": "Problem",
+  "number": "A.2.4",
+  "title": "",
+  "body": "  In , we developed strategies to evaluate integrals of the form . Similar strategies often work for integrals of the form . Before exploring this further, we need to understand how to evaluate two foundational integrals; this Problem asks you to do just that.   Explain and demonstrate how to use an appropriate -substitution to show that .    Explain why by first multiplying and dividing the integrand by .    While the above trick might seem elusive (because it is!), try using a similar trick to evaluate the integral .   From now on, you may use these results in future problems without having to reproduce them.    "
+},
+{
+  "id": "sec-pset1-calc-7",
+  "level": "2",
+  "url": "sec-pset1-calc.html#sec-pset1-calc-7",
+  "type": "Problem",
+  "number": "A.2.5",
+  "title": "",
+  "body": "  Building off of and using ideas that we discussed in , try using substitutions of the form and , along with the identity , to evaluate the following integrals:    .     .     .   Based on your explorations here, do you think substitution and trig identities alone will help you evaluate ?   "
 },
 {
   "id": "integral-table",
