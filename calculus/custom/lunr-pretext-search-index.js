@@ -4663,45 +4663,45 @@ var ptx_lunr_docs = [
   "body": "  Here is how one might write out the explanation of how to find from start to finish by leaving bounds in terms of instead:    "
 },
 {
-  "id": "subsec-Individual Practice-2",
+  "id": "TI1-4-2",
   "level": "2",
-  "url": "TI1.html#subsec-Individual Practice-2",
+  "url": "TI1.html#TI1-4-2",
   "type": "Activity",
   "number": "5.1.16",
   "title": "",
   "body": "  Use substitution to show that .   "
 },
 {
-  "id": "subsec-Individual Practice-3",
+  "id": "TI1-4-3",
   "level": "2",
-  "url": "TI1.html#subsec-Individual Practice-3",
+  "url": "TI1.html#TI1-4-3",
   "type": "Activity",
   "number": "5.1.17",
   "title": "",
   "body": "  Use substitution to show that .   "
 },
 {
-  "id": "subsec-Individual Practice-4",
+  "id": "TI1-4-4",
   "level": "2",
-  "url": "TI1.html#subsec-Individual Practice-4",
+  "url": "TI1.html#TI1-4-4",
   "type": "Activity",
   "number": "5.1.18",
   "title": "",
   "body": "  Use substitution to show that .   "
 },
 {
-  "id": "subsec-Individual Practice-5",
+  "id": "TI1-4-5",
   "level": "2",
-  "url": "TI1.html#subsec-Individual Practice-5",
+  "url": "TI1.html#TI1-4-5",
   "type": "Activity",
   "number": "5.1.19",
   "title": "",
   "body": "  Consider .   Solve this integral using substitution.  Replace with in the original integral, the solve using the reverse power rule.  Which method did you prefer?  "
 },
 {
-  "id": "subsec-Individual Practice-6",
+  "id": "TI1-4-6",
   "level": "2",
-  "url": "TI1.html#subsec-Individual Practice-6",
+  "url": "TI1.html#TI1-4-6",
   "type": "Activity",
   "number": "5.1.20",
   "title": "",
@@ -4906,9 +4906,9 @@ var ptx_lunr_docs = [
   "body": "  Given that that , evaluate .   "
 },
 {
-  "id": "subsec-Individual Practice-7",
+  "id": "TI2-4-7",
   "level": "2",
-  "url": "TI2.html#subsec-Individual Practice-7",
+  "url": "TI2.html#TI2-4-7",
   "type": "Activity",
   "number": "5.2.20",
   "title": "",
