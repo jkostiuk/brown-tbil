@@ -5074,7 +5074,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "5.4",
   "title": "Trigonometric Substitution (TI4)",
-  "body": " Trigonometric Substitution (TI4)     Use trigonometric substitution to compute indefinite integrals.      Activities    Consider . Which substitution would you choose to evaluate this integral?     Substitution is not effective        To find , we will need a more advanced substitution. Which of these candidates is most reasonable?  Let satisfy .  Let satisfy .  Let satisfy .  Let satisfy .        Fill in the missing s for the following calculation.        From we may find .  Use this to continue your work in the previous activity and complete the integration by trigonometric substitution.        Use similar reasoning to complete the following proof that .        Substitutions of the form are made possible due to the Pythagorean identity .  Which two of these four identities can be obtained from dividing both sides of by and rearranging?                In summary, certain quadratic expressions inside an integral may be substituted with trigonometric functions to take advantage of trigonometric identities and simplify the integrand:         Complete the following trigonometric substitution to find .        Complete the following trigonometric substitution to find .        Use appropriate trigonometric substitutions and the given trigonometric integrals to find each of the following.                     Consider the unit circle . Find a function so that is the graph of the upper-half semicircle of the unit circle.     Find the area under the curve from .  How does this value compare to what we know about areas of circles?     Videos      Video: Use trigonometric substitution to compute indefinite integrals     Exercises  Exercises available at     "
+  "body": " Trigonometric Substitution (TI4)     Use trigonometric substitution to compute indefinite integrals.      Activities    Consider . Which substitution would you choose to evaluate this integral?     Substitution is not effective         To solve , we will consider a different kind of substitution.    Consider a substitution of the form and the following calculations that demonstrate how the integral transforms:    Which of the following do you think were most helpful about our substitution ?    With this choice of , the expression is a perfect square.    It was possible to compute from the information available to us.    The integral can be solved using our strategies we've seen.      Let us continue our calculation above. Using strategies from , we can compute . This allows to continue as follows:  To complete our integration, we need to re-write this anti-derivative in terms of . Given that , explain and demonstrate how to solve for the following: Use this to express the final answer as a function of .       Use the substitution and similar ideas to above show that          The identity can always be used to help us re-write expressions of the form as perfect squares:   More generally, the identities and help us re-write the following expression as perfect squares:  A substitution of this kind is called a trigonometric substitution .       Use to make an appropriate trigonometric substitution and show that       Use to make an appropriate trigonometric substitution and show that        Use appropriate trigonometric substitutions and the given trigonometric integrals to find each of the following.                     Consider the unit circle . Find a function so that is the graph of the upper-half semicircle of the unit circle.     Find the area under the curve from .  How does this value compare to what we know about areas of circles?     Videos      Video: Use trigonometric substitution to compute indefinite integrals     Exercises  Exercises available at     "
 },
 {
   "id": "TI4-2",
@@ -5095,31 +5095,31 @@ var ptx_lunr_docs = [
   "body": "  Consider . Which substitution would you choose to evaluate this integral?     Substitution is not effective     "
 },
 {
-  "id": "activity-TI4intropythagoras",
+  "id": "TI4-3-3",
   "level": "2",
-  "url": "TI4.html#activity-TI4intropythagoras",
+  "url": "TI4.html#TI4-3-3",
   "type": "Activity",
   "number": "5.4.2",
   "title": "",
-  "body": "  To find , we will need a more advanced substitution. Which of these candidates is most reasonable?  Let satisfy .  Let satisfy .  Let satisfy .  Let satisfy .     "
+  "body": "  To solve , we will consider a different kind of substitution.    Consider a substitution of the form and the following calculations that demonstrate how the integral transforms:    Which of the following do you think were most helpful about our substitution ?    With this choice of , the expression is a perfect square.    It was possible to compute from the information available to us.    The integral can be solved using our strategies we've seen.      Let us continue our calculation above. Using strategies from , we can compute . This allows to continue as follows:  To complete our integration, we need to re-write this anti-derivative in terms of . Given that , explain and demonstrate how to solve for the following: Use this to express the final answer as a function of .   "
 },
 {
-  "id": "activity-TI4sinsub",
+  "id": "TI4-3-4",
   "level": "2",
-  "url": "TI4.html#activity-TI4sinsub",
+  "url": "TI4.html#TI4-3-4",
   "type": "Activity",
   "number": "5.4.3",
   "title": "",
-  "body": "  Fill in the missing s for the following calculation.     "
+  "body": "  Use the substitution and similar ideas to above show that     "
 },
 {
-  "id": "activity-TI4sinsubrewrite",
+  "id": "TrigSubObservation",
   "level": "2",
-  "url": "TI4.html#activity-TI4sinsubrewrite",
-  "type": "Activity",
+  "url": "TI4.html#TrigSubObservation",
+  "type": "Observation",
   "number": "5.4.4",
   "title": "",
-  "body": "  From we may find .  Use this to continue your work in the previous activity and complete the integration by trigonometric substitution.     "
+  "body": "  The identity can always be used to help us re-write expressions of the form as perfect squares:   More generally, the identities and help us re-write the following expression as perfect squares:  A substitution of this kind is called a trigonometric substitution .   "
 },
 {
   "id": "TI4-3-6",
@@ -5128,7 +5128,7 @@ var ptx_lunr_docs = [
   "type": "Activity",
   "number": "5.4.5",
   "title": "",
-  "body": "  Use similar reasoning to complete the following proof that .     "
+  "body": "  Use to make an appropriate trigonometric substitution and show that    "
 },
 {
   "id": "TI4-3-7",
@@ -5137,41 +5137,14 @@ var ptx_lunr_docs = [
   "type": "Activity",
   "number": "5.4.6",
   "title": "",
-  "body": "  Substitutions of the form are made possible due to the Pythagorean identity .  Which two of these four identities can be obtained from dividing both sides of by and rearranging?             "
+  "body": "  Use to make an appropriate trigonometric substitution and show that    "
 },
 {
   "id": "TI4-3-8",
   "level": "2",
   "url": "TI4.html#TI4-3-8",
-  "type": "Observation",
+  "type": "Activity",
   "number": "5.4.7",
-  "title": "",
-  "body": "  In summary, certain quadratic expressions inside an integral may be substituted with trigonometric functions to take advantage of trigonometric identities and simplify the integrand:      "
-},
-{
-  "id": "TI4-3-9",
-  "level": "2",
-  "url": "TI4.html#TI4-3-9",
-  "type": "Activity",
-  "number": "5.4.8",
-  "title": "",
-  "body": "  Complete the following trigonometric substitution to find .     "
-},
-{
-  "id": "TI4-3-10",
-  "level": "2",
-  "url": "TI4.html#TI4-3-10",
-  "type": "Activity",
-  "number": "5.4.9",
-  "title": "",
-  "body": "  Complete the following trigonometric substitution to find .     "
-},
-{
-  "id": "TI4-3-11",
-  "level": "2",
-  "url": "TI4.html#TI4-3-11",
-  "type": "Activity",
-  "number": "5.4.10",
   "title": "",
   "body": "  Use appropriate trigonometric substitutions and the given trigonometric integrals to find each of the following.                  "
 },
@@ -5180,7 +5153,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "TI4.html#activity-TI4semicircle",
   "type": "Activity",
-  "number": "5.4.11",
+  "number": "5.4.8",
   "title": "",
   "body": "  Consider the unit circle . Find a function so that is the graph of the upper-half semicircle of the unit circle.   "
 },
@@ -5189,7 +5162,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "TI4.html#activity-TI4semicirclearea",
   "type": "Activity",
-  "number": "5.4.12",
+  "number": "5.4.9",
   "title": "",
   "body": " Find the area under the curve from .  How does this value compare to what we know about areas of circles?  "
 },
