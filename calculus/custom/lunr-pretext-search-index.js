@@ -5074,7 +5074,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "5.4",
   "title": "Trigonometric Substitution (TI4)",
-  "body": " Trigonometric Substitution (TI4)     Use trigonometric substitution to compute indefinite integrals.      Activities    Consider . Which substitution would you choose to evaluate this integral?     Substitution is not effective         To solve , we will consider a different kind of substitution.    Consider a substitution of the form and the following calculations that demonstrate how the integral transforms:    Which of the following do you think were most helpful about our substitution ?    With this choice of , the expression is a perfect square.    It was possible to compute from the information available to us.    The integral can be solved using our strategies we've seen.      Let us continue our calculation above. Using strategies from , we can compute . This allows to continue as follows:  To complete our integration, we need to re-write this anti-derivative in terms of . Given that , explain and demonstrate how to solve for the following: Use this to express the final answer as a function of .       Use the substitution and similar ideas to above show that          The identity can always be used to help us re-write expressions of the form as perfect squares:   More generally, the identities and help us re-write the following expression as perfect squares:  A substitution of this kind is called a trigonometric substitution .       Use to make an appropriate trigonometric substitution and show that       Use to make an appropriate trigonometric substitution and show that        Use appropriate trigonometric substitutions and the given trigonometric integrals to find each of the following.                     Consider the unit circle . Find a function so that is the graph of the upper-half semicircle of the unit circle.     Find the area under the curve from .  How does this value compare to what we know about areas of circles?     Videos      Video: Use trigonometric substitution to compute indefinite integrals     Exercises  Exercises available at     "
+  "body": " Trigonometric Substitution (TI4)     Use trigonometric substitution to compute indefinite integrals.      Activities    Consider . Which substitution would you choose to evaluate this integral?     Substitution is not effective         To solve , we will consider a different kind of substitution.    Consider a substitution of the form and the following calculations that demonstrate how the integral transforms:    Which of the following do you think were most helpful about our substitution ?    With this choice of , the expression is a perfect square.    It was possible to compute from the information available to us.    The integral can be solved using our strategies we've seen.      Let us continue our calculation above. Using strategies from , we can compute . This allows to continue as follows:  To complete our integration, we need to re-write this anti-derivative in terms of . Given that , explain and demonstrate how to solve for the following: Use this to express the final answer as a function of .       Use the substitution and similar ideas to above show that          The identity can always be used to help us re-write expressions of the form as perfect squares:   More generally, the identities and help us re-write the following expression as perfect squares:  A substitution of this kind is called a trigonometric substitution .       Use to make an appropriate trigonometric substitution and show that       Use to make an appropriate trigonometric substitution and show that        Use appropriate trigonometric substitutions and the given trigonometric integrals to find each of the following.                     Use an appropriate trigonometric substitution to solve , given that .    Here, given the form of the quadratic under the square-root, I will try . With this choice, we have: We can then transform and integrate as follows: Since , we solve for and as: and so our integral expressed in terms of is:       Consider the unit circle . Find a function so that is the graph of the upper-half semicircle of the unit circle.     Find the area under the curve from .  How does this value compare to what we know about areas of circles?     Videos      Video: Use trigonometric substitution to compute indefinite integrals     Exercises  Exercises available at     "
 },
 {
   "id": "TI4-2",
@@ -5149,11 +5149,20 @@ var ptx_lunr_docs = [
   "body": "  Use appropriate trigonometric substitutions and the given trigonometric integrals to find each of the following.                  "
 },
 {
+  "id": "TI4-3-9",
+  "level": "2",
+  "url": "TI4.html#TI4-3-9",
+  "type": "Example",
+  "number": "5.4.8",
+  "title": "",
+  "body": "  Use an appropriate trigonometric substitution to solve , given that .    Here, given the form of the quadratic under the square-root, I will try . With this choice, we have: We can then transform and integrate as follows: Since , we solve for and as: and so our integral expressed in terms of is:    "
+},
+{
   "id": "activity-TI4semicircle",
   "level": "2",
   "url": "TI4.html#activity-TI4semicircle",
   "type": "Activity",
-  "number": "5.4.8",
+  "number": "5.4.9",
   "title": "",
   "body": "  Consider the unit circle . Find a function so that is the graph of the upper-half semicircle of the unit circle.   "
 },
@@ -5162,7 +5171,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "TI4.html#activity-TI4semicirclearea",
   "type": "Activity",
-  "number": "5.4.9",
+  "number": "5.4.10",
   "title": "",
   "body": " Find the area under the curve from .  How does this value compare to what we know about areas of circles?  "
 },
