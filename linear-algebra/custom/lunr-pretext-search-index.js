@@ -4582,6 +4582,78 @@ var ptx_lunr_docs = [
   "body": "  Consider the following statement: It is possible for two consistent linear systems to have the same underlying coefficient matrix, but have different numbers of free variables . Determine if this statement is true or false. If you think it is true, provide an example that demonstrates as such; if you think it is false, explain why it is not possible to find two such systems.    "
 },
 {
+  "id": "sec-pset2-linear",
+  "level": "1",
+  "url": "sec-pset2-linear.html",
+  "type": "Section",
+  "number": "A.3",
+  "title": "Problem Set 2",
+  "body": " Problem Set 2   Instructions  Prior to beginning this problem set, consider reading the Problem Set Success Guide for advice and clarity around expectations for Problem Sets in this course. Upload your solutions to all problems on this page to gradescope as a single .pdf file, remembering to assign pages appropriately for each question. Complete instructions for Problem Sets are available on Canvas.    (Problem 1): Application to Traffic Modelling   You are working for a traffic consulting firm that is deciding how best to build a bike line in downtown Banff, Canada. The centre that you are studying is depicted below; every street is a one-way street with directions as shown, and there are six intersections denoted by and . The numbers on the perimeter denote the total number of vehicles through the given direction in rush-hour and were obtained by using historical data from the City of Banff. In order to provide the City of Banff with the most informed options, you need to determine the unknown traffic flows labelled below.   Traffic flow counts for a portion of a map of the City of Banff.    Traffic flow counts for a portion of a map of the City of Banff.     For each of the six intersections depicted in , the total number of vehicles entering the intersection is equal to the total number of vehicles leaving the intersection. For instance, looking at intersection , we find:    Write down the system of linear equations that arises from considering all six intersections.    Are you able to say definitively what the values of are? If so, explain and demonstrate how to find them. If not, what additional information do you need to ask the City of Banff to collect or otherwise provide for you in order to best inform their design?      (Problem 2)   Let The set is a subspace. Below are two attempted proofs of the fact that is closed under vector addition. Both of them are invalid; explain why.   Let Then both are elements of . Their sum is and since it follows that is also in and so is closed under vector addition.    If are in , we need to show that is also in W. To be in , we need Well, if then we know that by moving everything over to the left hand side. Since we are assumming that and , it follows that , which is true, which proves that vector addition is closed.      (Problem 3)   Consider vectors living inside .   If , explain why it is impossible for these vectors to span all of . That is, prove .    If , explain why it is impossible for these vectors to be linearly independent.      Background Information: The Dot-Product  The purpose of the next few problems are to introduce you to some new definitions and concepts, namely, that of dot product and orthogonality. In doing so, you are being asked to practice working with new definitions and to explore ideas related to them. This short section contains all of the background information you need to complete the problems and you'll get the most learning benefit by working on these exercises without consulting further outside sources.    Given two Euclidean vectors and , the dot product of and is defined to be: In particular, note that the dot product of two Euclidean vectors is a real number.  The dot product satisfies the following properties for any Euclidean vectors and scalar :                   and, the only way we can have is if      The length (or norm) of a vector is denoted by and is given by: Interpreting the vector as an arrow starting at the origin and point in the direction of , this norm agrees with our usual notion of length.  Lastly, the dot product can be used to calculate the angle between two vectors. Consider two vectors and and interpret them as arrows with their tails at the origin. If denotes the angle between these vectors, then it is computed by using the following formula: In particular, it follows that the vectors are perpendicular (or orthogonal) if and only if    Angle between two vectors.    The angle measured from to        Consider working on the following exercise to practice these terms before attempting the next few problems. Answers are provided here for you to check your work; do not include answers to this exercise in your Problem Set solutions.    Let . Calculate , , and determine the angle between and .    Explain why for every choice of Euclidean vector .     Using the formulae in , we compute:  To determine the angle between and , we first calculate the following: This allows us to see that It follows that     If and then by using , we find that On the other hand, if we compute , we get: Since it doesn't matter what order we multiply two real numbers in, these two expressions represent the same quantity.      (Problem 4)    Use the properties of dot products in to prove that the following equation is true for all :     There are several equivalent ways to describe planes in . One way to do so is to provide its equation: where . Another way to describe a plane is to pick a point on the plane and a normal vector  ; then, the plane is described as the set of all vectors for which is perpendicular to .  If you are given a normal vector and a point , explain how to find an algebraic equation for the plane that with normal vector passing through .    Continuing from the above, suppose instead you are given an algebraic equation for a plane: Explain and demonstrate how to find a point on the plane and its normal vector.      (Problem 5)   Let be a subspace. If is orthogonal to all vectors in , we will say that is orthogonal to . The set of all vectors that are orthogonal to is called the orthogonal complement of and is denoted by ; in other words, we have   For example, if , then lives in since it's perpendicular to any multiple of , but the vector does not live in . The set is always a subspace, as you will prove below.   Prove tha is always a subspace of .    If , explain why saying that is the same as saying that is orthogonal to each of the vectors individually.    Suppose that . Find a set of vectors that spans .     "
+},
+{
+  "id": "sec-pset2-linear-3",
+  "level": "2",
+  "url": "sec-pset2-linear.html#sec-pset2-linear-3",
+  "type": "Problem",
+  "number": "A.3.1",
+  "title": "(Problem 1): Application to Traffic Modelling.",
+  "body": " (Problem 1): Application to Traffic Modelling   You are working for a traffic consulting firm that is deciding how best to build a bike line in downtown Banff, Canada. The centre that you are studying is depicted below; every street is a one-way street with directions as shown, and there are six intersections denoted by and . The numbers on the perimeter denote the total number of vehicles through the given direction in rush-hour and were obtained by using historical data from the City of Banff. In order to provide the City of Banff with the most informed options, you need to determine the unknown traffic flows labelled below.   Traffic flow counts for a portion of a map of the City of Banff.    Traffic flow counts for a portion of a map of the City of Banff.     For each of the six intersections depicted in , the total number of vehicles entering the intersection is equal to the total number of vehicles leaving the intersection. For instance, looking at intersection , we find:    Write down the system of linear equations that arises from considering all six intersections.    Are you able to say definitively what the values of are? If so, explain and demonstrate how to find them. If not, what additional information do you need to ask the City of Banff to collect or otherwise provide for you in order to best inform their design?    "
+},
+{
+  "id": "sec-pset2-linear-4",
+  "level": "2",
+  "url": "sec-pset2-linear.html#sec-pset2-linear-4",
+  "type": "Problem",
+  "number": "A.3.2",
+  "title": "(Problem 2).",
+  "body": " (Problem 2)   Let The set is a subspace. Below are two attempted proofs of the fact that is closed under vector addition. Both of them are invalid; explain why.   Let Then both are elements of . Their sum is and since it follows that is also in and so is closed under vector addition.    If are in , we need to show that is also in W. To be in , we need Well, if then we know that by moving everything over to the left hand side. Since we are assumming that and , it follows that , which is true, which proves that vector addition is closed.    "
+},
+{
+  "id": "sec-pset2-linear-5",
+  "level": "2",
+  "url": "sec-pset2-linear.html#sec-pset2-linear-5",
+  "type": "Problem",
+  "number": "A.3.3",
+  "title": "(Problem 3).",
+  "body": " (Problem 3)   Consider vectors living inside .   If , explain why it is impossible for these vectors to span all of . That is, prove .    If , explain why it is impossible for these vectors to be linearly independent.    "
+},
+{
+  "id": "def-Dot-Product",
+  "level": "2",
+  "url": "sec-pset2-linear.html#def-Dot-Product",
+  "type": "Definition",
+  "number": "A.3.4",
+  "title": "",
+  "body": "  Given two Euclidean vectors and , the dot product of and is defined to be: In particular, note that the dot product of two Euclidean vectors is a real number.  The dot product satisfies the following properties for any Euclidean vectors and scalar :                   and, the only way we can have is if      The length (or norm) of a vector is denoted by and is given by: Interpreting the vector as an arrow starting at the origin and point in the direction of , this norm agrees with our usual notion of length.  Lastly, the dot product can be used to calculate the angle between two vectors. Consider two vectors and and interpret them as arrows with their tails at the origin. If denotes the angle between these vectors, then it is computed by using the following formula: In particular, it follows that the vectors are perpendicular (or orthogonal) if and only if    Angle between two vectors.    The angle measured from to       "
+},
+{
+  "id": "sec-pset2-linear-6-5",
+  "level": "2",
+  "url": "sec-pset2-linear.html#sec-pset2-linear-6-5",
+  "type": "Checkpoint",
+  "number": "A.3.5",
+  "title": "",
+  "body": "  Let . Calculate , , and determine the angle between and .    Explain why for every choice of Euclidean vector .     Using the formulae in , we compute:  To determine the angle between and , we first calculate the following: This allows us to see that It follows that     If and then by using , we find that On the other hand, if we compute , we get: Since it doesn't matter what order we multiply two real numbers in, these two expressions represent the same quantity.   "
+},
+{
+  "id": "sec-pset2-linear-7",
+  "level": "2",
+  "url": "sec-pset2-linear.html#sec-pset2-linear-7",
+  "type": "Problem",
+  "number": "A.3.6",
+  "title": "(Problem 4).",
+  "body": " (Problem 4)    Use the properties of dot products in to prove that the following equation is true for all :     There are several equivalent ways to describe planes in . One way to do so is to provide its equation: where . Another way to describe a plane is to pick a point on the plane and a normal vector  ; then, the plane is described as the set of all vectors for which is perpendicular to .  If you are given a normal vector and a point , explain how to find an algebraic equation for the plane that with normal vector passing through .    Continuing from the above, suppose instead you are given an algebraic equation for a plane: Explain and demonstrate how to find a point on the plane and its normal vector.    "
+},
+{
+  "id": "sec-pset2-linear-8",
+  "level": "2",
+  "url": "sec-pset2-linear.html#sec-pset2-linear-8",
+  "type": "Problem",
+  "number": "A.3.7",
+  "title": "(Problem 5).",
+  "body": " (Problem 5)   Let be a subspace. If is orthogonal to all vectors in , we will say that is orthogonal to . The set of all vectors that are orthogonal to is called the orthogonal complement of and is denoted by ; in other words, we have   For example, if , then lives in since it's perpendicular to any multiple of , but the vector does not live in . The set is always a subspace, as you will prove below.   Prove tha is always a subspace of .    If , explain why saying that is the same as saying that is orthogonal to each of the vectors individually.    Suppose that . Find a set of vectors that spans .    "
+},
+{
   "id": "truss",
   "level": "1",
   "url": "truss.html",

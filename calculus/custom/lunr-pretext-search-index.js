@@ -9289,6 +9289,60 @@ var ptx_lunr_docs = [
   "body": "  Building off of and using ideas that we discussed in , try using substitutions of the form and , along with the identity , to evaluate the following integrals:    .     .     .   Based on your explorations here, do you think substitution and trig identities alone will help you evaluate ?    "
 },
 {
+  "id": "sec-pset2-calc",
+  "level": "1",
+  "url": "sec-pset2-calc.html",
+  "type": "Section",
+  "number": "A.3",
+  "title": "Problem Set 2",
+  "body": " Problem Set 2   Instructions  Prior to beginning this problem set, consider reading the Problem Set Success Guide for advice and clarity around expectations for Problem Sets in this course. Upload your solutions to all problems on this page to gradescope as a single .pdf file, remembering to assign pages appropriately for each question. Complete instructions for Problem Sets are available on Canvas.     Explain and demonstrate how to evaluate the following integrals:                     Recall that the standard equation of an ellipse is given by:    Explain and demonstrate how to find an integral that computes the area of the ellipse whose equation is given above.    Use an appropriate technique of integration to evaluate the integral you found above to derive a formula for the area of the ellipse.    Explain how your formula can be applied to derive the area of a circle of radius .       Trigonometric substitution is a valued technique of integration because it can often transform expressions involving quadratic terms into more manageable trigonometric integrals which we have more tools for. More generally, if is an integral, then an inverse substitution is a substitution of the form where is some variable we introduce. If , then and so: Trigonometric substitution is the special case where , depending on the context.   Explain and demonstrate how to evaluate using the inverse substitution . To aid in your calculation, you may use the fact that if you would find it useful.    Explain and demonstrate how to evaluate by using an inverse substitution of the from for some suitable choice of real number .       The Weierstrass Substitution is an example of an inverse substitution that transforms trigonometric integrals into integrals of rational functions. If we are given , then the Weierstrass substitution is given by . Explore this in the following steps:   Given that , use the Pythagorean theorem and trig identities as needed to explain why the following formulae are true:     Explain and demonstrate how to use this substitution to evaluate     Explain and demonstrate how to use this substitution to evaluate      For part (a), start by letting and drawing the right triangle that expresses .      If is function defined for all real numbers, then we define the improper integral as follows: Fix some real number ; if both integrals and coverge, then we say that converges and set    Explain and demonstrate how to decide if converges or diverges.    Explain and demonstrate how to decide if converges or diverges.     "
+},
+{
+  "id": "sec-pset2-calc-3",
+  "level": "2",
+  "url": "sec-pset2-calc.html#sec-pset2-calc-3",
+  "type": "Problem",
+  "number": "A.3.1",
+  "title": "",
+  "body": "  Explain and demonstrate how to evaluate the following integrals:                  "
+},
+{
+  "id": "sec-pset2-calc-4",
+  "level": "2",
+  "url": "sec-pset2-calc.html#sec-pset2-calc-4",
+  "type": "Problem",
+  "number": "A.3.2",
+  "title": "",
+  "body": "  Recall that the standard equation of an ellipse is given by:    Explain and demonstrate how to find an integral that computes the area of the ellipse whose equation is given above.    Use an appropriate technique of integration to evaluate the integral you found above to derive a formula for the area of the ellipse.    Explain how your formula can be applied to derive the area of a circle of radius .    "
+},
+{
+  "id": "sec-pset2-calc-5",
+  "level": "2",
+  "url": "sec-pset2-calc.html#sec-pset2-calc-5",
+  "type": "Problem",
+  "number": "A.3.3",
+  "title": "",
+  "body": "  Trigonometric substitution is a valued technique of integration because it can often transform expressions involving quadratic terms into more manageable trigonometric integrals which we have more tools for. More generally, if is an integral, then an inverse substitution is a substitution of the form where is some variable we introduce. If , then and so: Trigonometric substitution is the special case where , depending on the context.   Explain and demonstrate how to evaluate using the inverse substitution . To aid in your calculation, you may use the fact that if you would find it useful.    Explain and demonstrate how to evaluate by using an inverse substitution of the from for some suitable choice of real number .    "
+},
+{
+  "id": "sec-pset2-calc-6",
+  "level": "2",
+  "url": "sec-pset2-calc.html#sec-pset2-calc-6",
+  "type": "Problem",
+  "number": "A.3.4",
+  "title": "",
+  "body": "  The Weierstrass Substitution is an example of an inverse substitution that transforms trigonometric integrals into integrals of rational functions. If we are given , then the Weierstrass substitution is given by . Explore this in the following steps:   Given that , use the Pythagorean theorem and trig identities as needed to explain why the following formulae are true:     Explain and demonstrate how to use this substitution to evaluate     Explain and demonstrate how to use this substitution to evaluate      For part (a), start by letting and drawing the right triangle that expresses .   "
+},
+{
+  "id": "sec-pset2-calc-7",
+  "level": "2",
+  "url": "sec-pset2-calc.html#sec-pset2-calc-7",
+  "type": "Problem",
+  "number": "A.3.5",
+  "title": "",
+  "body": "  If is function defined for all real numbers, then we define the improper integral as follows: Fix some real number ; if both integrals and coverge, then we say that converges and set    Explain and demonstrate how to decide if converges or diverges.    Explain and demonstrate how to decide if converges or diverges.    "
+},
+{
   "id": "integral-table",
   "level": "1",
   "url": "integral-table.html",
