@@ -184,7 +184,30 @@
                 </statement>
             </task>
         </introduction>
-        
+        <solution>
+            <task>
+                <statement>
+                    <p>
+                        To decide if the set of vectors <m>\left\{\vec{v}_1,\dots, \vec{v}_n\right\}</m> spans all of <m>\IR^m</m>, we can use <xref ref="EV2-span-fact"/>. 
+                        Consider the matrix <m>\RREF[\vec{v}_1\cdots\vec{v}_n]</m>. 
+                        This matrix will have <m>m</m> rows and <m>n</m> columns. 
+                        If we assume that <m>n &lt; m</m>, then the maximum number of pivots that can appear in <m>\RREF[\vec{v}_1\cdots\vec{v}_n]</m> is equal to <m>n</m> since each pivot is in a unique row and column. 
+                        It follows that there must be at least one row in <m>\RREF[\vec{v}_1\cdots\vec{v}_n]</m> that is missing a pivot and, therefore, these vectors cannot span all of <m>\IR^m</m>.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        To decide if the set of vectors <m>\left\{\vec{v}_1,\dots, \vec{v}_n\right\}</m> is linearly independent, we can use <xref ref="EV4-lindep-fact"/>.
+                        Consider the matrix <m>\RREF[\vec{v}_1\cdots\vec{v}_n]</m>. 
+                        This matrix will have <m>m</m> rows and <m>n</m> columns. 
+                        If we assume that <m>m &lt; n</m>, then the maximum number of pivots that can appear in <m>\RREF[\vec{v}_1\cdots\vec{v}_n]</m> is equal to <m>m</m> since each pivot is in a unique row and column. 
+                        It follows that there must be at least one column in <m>\RREF[\vec{v}_1\cdots\vec{v}_n]</m> that is missing a pivot and, therefore, these vectors cannot be linearly independent.
+                    </p>
+                </statement>
+            </task>
+        </solution>
     </problem>
 
     <subsection>
