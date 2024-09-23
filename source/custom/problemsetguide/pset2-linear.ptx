@@ -51,6 +51,50 @@
                 </statement>
             </task>
         </introduction>
+        <solution>
+            <task>
+                <statement>
+                    <p>
+                        Following the procedure at each intersection, we obtain the following six equations:
+                        <md >
+                            <mrow>A:\  \amp  410+x_5\amp = 200+x_1</mrow>
+                            <mrow>B: \ \amp 350+x_1\amp = x_2+x_6</mrow>
+                            <mrow>C: \ \amp x_2+x_7\amp = 300+500</mrow>
+                            <mrow>D: \ \amp x_3\amp= x_5+280</mrow>
+                            <mrow>E: \ \amp x_4+x_6\amp= x_3</mrow>
+                            <mrow>F: \ \amp 520\amp = x_4+x_7.</mrow>
+                        </md>
+                        Re-writing as a system of linear equations (moving the constants to the right hand side), we get:
+                        <md alignment="alignat" alignat-columns="8">
+                           <mrow>-x_1 \amp \amp\amp \amp \amp \amp \amp \amp\,+\, \amp x_5\amp\amp \amp \amp \amp\,=\,\amp -210</mrow>
+                           <mrow>x_1 \amp\,-\,\amp x_2\amp\amp \amp \amp\amp\amp\amp \amp\,-\,\amp x_6\amp\amp\amp\,=\,\amp -350</mrow>
+                           <mrow>\amp\amp x_2\amp\amp \amp \amp\amp \amp\amp \amp\amp \amp\,+\,\amp x_7\amp\,=\,\amp 800</mrow>
+                           <mrow>\amp\amp \amp\amp x_3\amp \amp\amp \amp\,-\,\amp x_5\amp\amp \amp\amp \amp\,=\,\amp 280</mrow>
+                           <mrow> \amp\amp \amp\amp -x_3\amp \amp\,+\,\amp x_4\amp\amp\amp\,+\,\amp x_6\amp\amp \amp\,=\,\amp 0</mrow>
+                           <mrow>\amp\amp \amp\amp \amp \amp\amp x_4\amp\amp \amp\amp \amp\,+\,\amp x_7\amp\,=\,\amp 520.</mrow>
+                        </md>
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Using Octave to calculate the corresponding RREF, we find that <m>x_6,x_7</m> are free variables and, after setting <m>x_6=a,x_7=b</m> and solving for the bound variables, we get:
+                        <md>
+                            <mrow>x_1 \amp \,=\,\amp 450+a-b</mrow>
+                            <mrow>x_2 \amp \,=\,\amp 800-b</mrow>
+                            <mrow>x_3 \amp \,=\,\amp 520+a-b</mrow>
+                            <mrow>x_4 \amp \,=\,\amp 520-b</mrow>
+                            <mrow>x_5 \amp \,=\,\amp 240+a-b</mrow>
+                            <mrow>x_6 \amp \,=\,\amp a</mrow>
+                            <mrow>x_7 \amp \,=\,\amp b</mrow>
+                        </md>
+                        In particular, the equations are consistent, but there isn't a unique solution, which means we need additional information or constraints from the City of Banff to pin down our data. 
+                        One way to do this is ask the City of Banff for specific values of <m>x_6,x_7</m> based on historical data, or to send an intern out at the corresponding streets to collect this information. 
+                    </p>
+                </statement>
+            </task>
+        </solution>
     </problem>
 
     <problem>
