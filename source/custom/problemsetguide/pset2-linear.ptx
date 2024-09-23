@@ -131,6 +131,34 @@
             </statement>
         </task>
         </introduction>
+        <solution>
+            <task>
+                <statement>
+                    <p>
+                        While the calculations in the attempted proof are valid, they only indicate that a specific example of two vectors <m>\vec{u},\vec{v}</m> satisfy the given condition. 
+                        That is, the argument is not general: a correct proof would have to argue that <m>\vec{u}+\vec{v}\in W</m> for <em>any</em> choice of <m>\vec{u},\vec{v}</m> and not just these two choices. 
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        The author begins by starting with the assumption that 
+                        <me>(x+a)+(y+b)=3(z+c)+2(w+d),</me>
+                        and then concludes that <m>0=0</m>. 
+                        This isn't what we want to do for two reasons: Firstly, we already know that <m>0=0</m>, so we haven't learned anything new. 
+                        More importantly, we <em>do not yet know that</em> the equation
+                        <me>(x+a)+(y+b)=3(z+c)+2(w+d)</me>
+                        is actually true! 
+                    </p>
+                    <p>
+                        To correctly prove this statement, we could start with our assumptions <m>x+y-3z-2w=0</m> and <m>a+b-3c-2d=0</m> and explain how to manipulate them in order to show that
+                        <me>(x+a)+(y+b)=3(z+c)+2(w+d)</me>
+                        is true. 
+                    </p>
+                </statement>
+            </task>
+        </solution>
     </problem>
 
 
