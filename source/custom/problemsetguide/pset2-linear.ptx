@@ -462,6 +462,96 @@
                 </statement>
             </task>
         </introduction>
-        
+        <solution>
+            <task>
+                <statement>
+                    <p>
+                        Referring to the definition of subspace, we have to check that <m>W^\perp</m> satisfies all three conditions:
+                        <ol>
+                            <li>
+                                <p>
+                                    First, we check that <m>\vec{0}\in W^\perp</m>. 
+                                    Since <m>\vec{0}\bullet\vec{w}</m> for all <m>\vec{w}\in W</m>, it follows that, indeed, we have <m>\vec{0}\in W^\perp</m>. 
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Next, we check closure under addition.
+                                    Suppose that we have two vectors <m>\vec{u},\vec{v}</m> and that we know that <m>\vec{u},\vec{v}</m> both live in <m>W^\perp</m>. 
+                                    By definition, it means that we know that
+                                    <me>\vec{u}\bullet\vec{w}=0\ \text{and } \vec{v}\bullet\vec{w}=0</me>
+                                    for all <m>\vec{w}\in W</m>.  
+                                </p>
+                                <p>
+                                    Using these equations, we then find that
+                                    <me>(\vec{u}+\vec{v})\bullet\vec{w}=\vec{u}\bullet\vec{w}+\vec{v}\bullet\vec{w}=0+0</me>
+                                    for all <m>\vec{w}\in W</m> and so <m>\vec{u}+\vec{v}</m> lives in <m>W^\perp</m>.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Lastly, we check closure under scalar multiplication.
+                                    Suppose that we have a <m>\vec{u}</m> and that we know that <m>\vec{u}</m> lives in <m>W^\perp</m>. 
+                                    By definition, it means that we know that
+                                    <me>\vec{u}\bullet\vec{w}=0</me>
+                                    for all <m>\vec{w}\in W</m>.  
+                                </p>
+                                <p>
+                                    Using this fact, we then find that if <m>c\in \IR</m>, then:
+                                    <me>(c\vec{u})\bullet\vec{w}=c(\vec{u}\bullet\vec{w})=0</me>
+                                    for all <m>\vec{w}\in W</m> and so <m>c\vec{u}</m> lives in <m>W^\perp</m>.
+                                </p>
+                            </li>
+                        </ol>
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Most critically, we must explain two things separately. 
+                        First, we need to explain why, if <m>\vec{u}\in W^\perp</m>, then <m>\vec{u}</m> is perpendicular to the vectors in the set <m>\{\vec{v}_1,\dots, \vec{v}_n\}</m>. 
+                        Secondly, we also have to explain why, if <m>\vec{u}</m> is perpendicular to the vectors in <m>\{\vec{v}_1,\dots, \vec{v}_n\}</m>, then we can conclude that <m>\vec{u}\in W^\perp</m>. 
+                    </p>
+                    <p>
+                        Let's deal with the first statement first. 
+                        If we know that <m>\vec{u}\in W^\perp</m>, then <m>\vec{u}</m> is perpendicular to all vectors in <m>W</m>. 
+                        Okay, but all the vectors in the set <m>\{\vec{v}_1,\dots, \vec{v}_n\}</m> live in <m>W</m> and so <m>\vec{u}</m> must therefore be perpendicular to them. 
+                    </p>
+                    <p>
+                        Now let's deal with the second statement. 
+                        Suppose all we know is that <m>\vec{u}</m> is perpendicular to <m>\vec{v}_1,\dots, \vec{v}_n</m>. 
+                        If we take some arbitrary vector <m>\vec{w}\in W</m>, we now need to argue that <m>\vec{u}</m> is perpendicular to it as well. 
+                        For this, since we are given that <m>W=\vspan\{\vec{v}_1,\dots, \vec{v}_n\}</m>, it follows that we can find scalars <m>c_1,\dots, c_n</m> for which
+                        <me>\vec{w}=c_1\vec{v}_1+\cdots+c_n\vec{v}_n.</me>
+                        But then:
+                        <md>
+                            <mrow>\vec{u}\bullet\vec{v} \amp\,=\,\amp \vec{u}\bullet(c_1\vec{v}_1+\cdots+c_n\vec{v}_n) </mrow>
+                            <mrow> \amp \,=\, \amp c_1(\vec{u}\bullet\vec{v}_1)+\cdots+c_n(\vec{u}\bullet\vec{v}_n)</mrow>
+                            <mrow> \amp \,=\,\amp 0+\cdots +0</mrow>
+                            <mrow> \amp \,=\,\amp 0.</mrow>
+                        </md>
+                        It follows that <m>\vec{u}</m> is perpendicular to <m>\vec{w}</m> and since <m>\vec{w}</m> was arbitrary, <m>\vec{u}\in W^\perp</m>.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Well, if <m>\vec{u}=\left[\begin{array}{c}x\\y\\z\end{array}\right]\in W^\perp</m>, then we know by part (b) that this is the same as saying that <m>\vec{u}</m> is perpendicular to our two vectors individually. 
+                        That is, we know that
+                        <me>\vec{u}\bullet\left[\begin{array}{c}2\\-1\\1\end{array}\right]=2x-y+z=0</me>
+                        and
+                        <me>\vec{u}\bullet\left[\begin{array}{c}0\\-3\\7\end{array}\right]=-3y+7z=0.</me> 
+                        Thus, this gives us a system of linear equations to solve!
+                    </p>
+                    <p>
+                        Using our methods from <xref ref="LE"/> to solve this system, we find that the solution set is given by 
+                        <me>\left\{\left[\begin{array}{c}2z\\7z\\3z\end{array}\right]|\ z\in\IR\right\},</me>
+                        which means that <m>W^\perp=\vspan\left\{\left[\begin{array}{c}2\\7\\3\end{array}\right]\right\}.</m>
+                    </p>
+                </statement>
+            </task>
+        </solution>
     </problem>
 </section>
