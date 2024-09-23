@@ -367,6 +367,63 @@
                 </statement>
             </task>
         </introduction>
+        <solution>
+            <task>
+                <statement>
+                    <p>
+                        Using a combination of our dot product properties, the following chain of equalities explains the result:
+                        <md>
+                            <mrow>||\vec{u} -\vec{v}||^2\amp \,=\,\amp (\vec{u}-\vec{v})\bullet(\vec{u}-\vec{v})</mrow>
+                            <mrow> \text{Property 2} \amp\,=\,\amp \vec{u}\bullet(\vec{u}-\vec{v})+(-\vec{v})\bullet(\vec{u}-\vec{v}) </mrow>
+                            <mrow> \text{Property 2}\amp\,=\,\amp \vec{u}\bullet\vec{u}+\vec{u}\bullet(-\vec{v})+(-\vec{v})\bullet\vec{u}+(-\vec{v})\bullet(-\vec{v}) </mrow>
+                            <mrow>\text{Property 1 and 3} \amp\,=\,\amp \vec{u}\bullet\vec{u}-\vec{u}\bullet\vec{v}-\vec{u}\bullet\vec{v}+\vec{v}\bullet\vec{v} </mrow>
+                            <mrow> \amp \,=\,\amp \vec{u}\bullet\vec{u}-2\vec{u}\bullet\vec{v}+\vec{v}\bullet\vec{v}</mrow>
+                            <mrow> \amp \,=\,\amp ||\vec{u}||^2+||\vec{v}||^2-2\vec{u}\bullet\vec{v}.</mrow>
+                        </md>
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Suppose that we are given a normal vector <m>\vec{n}=\left[\begin{array}{c}a\\b\\c\end{array}\right]</m> and that <m>\vec{p}=\left[\begin{array}{c}x_0\\y_0\\z_0\end{array}\right]</m>.
+                        We are given that a plane is described by consider all vectors <m>\vec{x}=\left[\begin{array}{c}x\\y\\z\end{array}\right]</m> for which <m>\vec{n}</m> is perpendicular to <m>\vec{x}-\vec{p}</m>. 
+                        It follows, then, that
+                        <me>\vec{n}\bullet(\vec{x}-\vec{p})=0,</me>
+                        by our dot-product results above. 
+                    </p>
+                    <p>
+                        Expanding this out, we get
+                        <md>
+                            <mrow>\vec{n}\bullet(\vec{x}-\vec{p})\amp \,=\,\amp 0</mrow>
+                            <mrow>a(x-x_0)+b(y-y_0)+c(z-z_0) \amp \,=\, \amp 0</mrow>
+                            <mrow>ax+by+cz \amp\,=\,\amp d, </mrow>
+                        </md>
+                        where <m>d=ax_0+by_0+cz_0</m>.
+                        Thus, we've recovered an algebraic equation for the plane.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        To find a point <m>(x_0,y_0,z_0)</m>, we can basically guess and check. 
+                        At least one of the coefficients <m>a,b,c</m> must be non-zero. 
+                        For sake of argument, if we assume that <m>a\neq 0</m>, then the point <m>(\frac{d}{a},0,0)</m> satisfies the equation and thus lies on the plane. 
+                    </p>
+                    <p>
+                        For the second part, if <m>(x_0,y_0,z_0)</m> is some specific point on the plane and <m>(x,y,z)</m> is some other general point, then we know the following are true:
+                        <md>
+                            <mrow>ax+by+cz \amp =d</mrow>
+                            <mrow>ax_0+by_0+cz_0 \amp =d.</mrow>
+                        </md>
+                        Subtracting, we find
+                        <me>a(x-x_0)+b(y-y_0)+c(z-z_0)=0,</me>
+                        from which it follows that the vector <m>\vec{n}=\left[\begin{array}{c}a\\b\\c\end{array}\right]</m> works as the normal vector. 
+                    </p>
+                </statement>
+            </task>
+        </solution>
     </problem>
 
     <problem>
