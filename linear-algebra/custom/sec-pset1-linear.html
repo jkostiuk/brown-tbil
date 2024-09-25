@@ -650,6 +650,12 @@ window.MathJax = {
 #sec-pset1-linear-3-1-3-1-1-4 { counter-set: sec-pset1-linear-3-1-3-1-1-4 0; }
 #sec-pset1-linear-3-1-3-1-1-4 > li::marker { content: ""counter(sec-pset1-linear-3-1-3-1-1-4,decimal)"."; }
 #sec-pset1-linear-3-1-3-1-1-4 > li { counter-increment: sec-pset1-linear-3-1-3-1-1-4; }
+#sec-pset1-linear-3-3-1-1 { counter-set: sec-pset1-linear-3-3-1-1 0; }
+#sec-pset1-linear-3-3-1-1 > li::marker { content: ""counter(sec-pset1-linear-3-3-1-1,decimal)"."; }
+#sec-pset1-linear-3-3-1-1 > li { counter-increment: sec-pset1-linear-3-3-1-1; }
+#sec-pset1-linear-3-3-2-1 { counter-set: sec-pset1-linear-3-3-2-1 0; }
+#sec-pset1-linear-3-3-2-1 > li::marker { content: ""counter(sec-pset1-linear-3-3-2-1,decimal)"."; }
+#sec-pset1-linear-3-3-2-1 > li { counter-increment: sec-pset1-linear-3-3-2-1; }
 #def-Dot-Product-1-2-3 { counter-set: def-Dot-Product-1-2-3 0; }
 #def-Dot-Product-1-2-3 > li::marker { content: ""counter(def-Dot-Product-1-2-3,decimal)"."; }
 #def-Dot-Product-1-2-3 > li { counter-increment: def-Dot-Product-1-2-3; }
@@ -1257,7 +1263,66 @@ x_1 - x_2 &amp;\,=\,&amp; 1\\
 <li id="sec-pset1-linear-3-1-3-1-1-4-2"><div class="para" id="sec-pset1-linear-3-1-3-1-1-4-2-1">Provide an alternative explanation using geometry.</div></li>
 </ol>
 </div></article>
-</div> <details id="sec-pset1-linear-3-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="sec-pset1-linear-3-2-1">Interpret each equation as defining a line in the plane. How do the lines vary as <span class="process-math">\(k\)</span> varies?</div></div></details> </article><article class="problem example-like" id="sec-pset1-linear-4"><h3 class="heading">
+</div> <details id="sec-pset1-linear-3-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="sec-pset1-linear-3-2-1">Interpret each equation as defining a line in the plane. How do the lines vary as <span class="process-math">\(k\)</span> varies?</div></div></details> <details id="sec-pset1-linear-3-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<article class="task exercise-like" id="sec-pset1-linear-3-3-1"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<ol class="decimal" id="sec-pset1-linear-3-3-1-1">
+<li id="sec-pset1-linear-3-3-1-1-1"><div class="para logical" id="sec-pset1-linear-3-3-1-1-1-1">
+<div class="para">One algebraic approach is to first consider the corresponding augmented matrix:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/LE3-fact-scenarios.html">
+\begin{equation*}
+\left[\begin{array}{cc|c}1 &amp; -1 &amp; 1\\
+3&amp; -3&amp; k\end{array}\right].
+\end{equation*}
+</div>
+<div class="para">Using row operations, the corresponding RREF is equal to:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/LE3-fact-scenarios.html">
+\begin{equation*}
+\left[\begin{array}{cc|c}1 &amp; -1 &amp; 1\\
+0 &amp; 0&amp; k-3\end{array}\right].
+\end{equation*}
+</div>
+<div class="para">Then, by <a href="LE3.html#LE3-fact-scenarios" class="internal" title="Fact 1.3.7">Fact 1.3.7</a>, the linear system is inconsistent when <span class="process-math">\(k=3\)</span> and is consistent with infinitely many solutions whenever <span class="process-math">\(k\neq 3\text{.}\)</span>
+</div>
+</div></li>
+<li id="sec-pset1-linear-3-3-1-1-2"><div class="para logical" id="sec-pset1-linear-3-3-1-1-2-1">
+<div class="para">Geometrically, each of the given linear equations describe lines in the <span class="process-math">\(x_1x_2\)</span>-plane. Re-writing the equations as follows:</div>
+<div class="displaymath process-math" id="sec-pset1-linear-3-3-1-1-2-1-2">
+\begin{alignat*}{2}
+x_1 &amp;\,=\,&amp; 1+x_2\\
+x_1 &amp;\,=\,&amp;\frac{k}{3}+x_2,
+\end{alignat*}
+</div>
+<div class="para">we see that the lines have the same slopes, i.e., they are parallel. It follows that the lines must be identical (in which case the corresponding) solution is infinite, or else they do not intersect at all, in which case there are no solutions. This corresponds to the case where <span class="process-math">\(k=3\)</span> and <span class="process-math">\(k\neq 3\)</span> respectively.</div>
+</div></li>
+</ol></article> <article class="task exercise-like" id="sec-pset1-linear-3-3-2"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<ol class="decimal" id="sec-pset1-linear-3-3-2-1">
+<li id="sec-pset1-linear-3-3-2-1-1"><div class="para logical" id="sec-pset1-linear-3-3-2-1-1-1">
+<div class="para">One algebraic approach is to first consider the corresponding augmented matrix:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/LE3-fact-scenarios.html">
+\begin{equation*}
+\left[\begin{array}{cc|c}1 &amp; -1 &amp; 1\\
+3&amp; -k&amp; 3\end{array}\right].
+\end{equation*}
+</div>
+<div class="para">Using row operations, the corresponding equivalent to:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/LE3-fact-scenarios.html">
+\begin{equation*}
+\left[\begin{array}{cc|c}1 &amp; -1 &amp; 1\\
+0 &amp; k-3&amp; 0\end{array}\right].
+\end{equation*}
+</div>
+<div class="para">If <span class="process-math">\(k=3\text{,}\)</span> then this augmented matrix is in RREF and by <a href="LE3.html#LE3-fact-scenarios" class="internal" title="Fact 1.3.7">Fact 1.3.7</a>, the system has infinitely many solutions. Otherwise, when <span class="process-math">\(k\neq 3\text{,}\)</span> then the RREF is given by:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/LE3-fact-scenarios.html">
+\begin{equation*}
+\left[\begin{array}{cc|c}1 &amp; 0 &amp; 1\\
+0 &amp; 1&amp; 0\end{array}\right]
+\end{equation*}
+</div>
+<div class="para">and the linear system is consistent with a unique solution.</div>
+</div></li>
+<li id="sec-pset1-linear-3-3-2-1-2"><div class="para" id="sec-pset1-linear-3-3-2-1-2-1">In the <span class="process-math">\(x_1x_2\)</span>-plane, the first equation describes the line passing through <span class="process-math">\((1,0)\)</span> with slope equal to <span class="process-math">\(1\text{.}\)</span> The second line corresponds to the line passing through <span class="process-math">\((1,0)\)</span> with slope equal to <span class="process-math">\(\frac{k}{3}\text{.}\)</span> Two lines passing through the same point are either equal or intersect in a single point (the point of common intersection). This happens when <span class="process-math">\(k=3\)</span> and <span class="process-math">\(k\neq 3\)</span> respectively, which correspond to the system having infinitely many solutions or a single solution, as desired.</div></li>
+</ol></article>
+</div></details></article><article class="problem example-like" id="sec-pset1-linear-4"><h3 class="heading">
 <span class="type">Problem</span><span class="space"> </span><span class="codenumber">A.2.2</span><span class="period">.</span>
 </h3>
 <div class="introduction" id="sec-pset1-linear-4-1">
@@ -1296,7 +1361,19 @@ B=\left[\begin{array}{ccccc|c}
 </div></article> <article class="task exercise-like" id="sec-pset1-linear-4-1-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
 <div class="para" id="sec-pset1-linear-4-1-4-1-1">The variables <span class="process-math">\(x_3,x_5\)</span> are free. Setting them equal to <span class="process-math">\(a,b\)</span> respectively and solving for the bound variables, the solution set to the linear system is given by <span class="process-math">\(\left\{ \left[\begin{array}{c} a + b - 3 \\ -3 \, a - 2 \, b + 1 \\ b - 3 \end{array}\right] \,\middle|\, a,b \in\mathbb R \right\}\text{.}\)</span>
 </div></article>
-</div> </article><article class="problem example-like" id="sec-pset1-linear-5"><h3 class="heading">
+</div> <details id="sec-pset1-linear-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<article class="task exercise-like" id="sec-pset1-linear-4-2-1"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="sec-pset1-linear-4-2-1-1-1">A matrix is not an equation, or even a system of equations; a matrix an array of real numbers. Therefore, it does not make sense to say that <span class="process-math">\(B\)</span> is consistent/inconsistent, let alone speak to how many solutions it has.</div> <div class="para" id="sec-pset1-linear-4-2-1-1-2">The given features of <span class="process-math">\(\RREF(B)\text{,}\)</span> together with <a href="LE3.html#LE3-fact-scenarios" class="internal" title="Fact 1.3.7">Fact 1.3.7</a> indicate that the linear system we were provided is consistent with infinitely many solutions.</div></article> <article class="task exercise-like" id="sec-pset1-linear-4-2-2"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para logical" id="sec-pset1-linear-4-2-2-1-1">
+<div class="para">The given expression is a single vector with parameters, for which we are not told anything about. The correct way to express the solution set of this system of equations is:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\left\{ \left[\begin{array}{c} a + b - 3 \\ -3 \, a - 2 \, b + 1 \\a\\ b - 3\\b \end{array}\right] \,\middle|\, a,b \in\mathbb R \right\}.
+\end{equation*}
+</div>
+</div></article> <article class="task exercise-like" id="sec-pset1-linear-4-2-3"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="sec-pset1-linear-4-2-3-1-1">The variables <span class="process-math">\(x_3,x_5\)</span> are indeed free variables and the components of the vectors supplied are the correct expressions for the bound variables <span class="process-math">\(x_1,x_2,x_4\)</span> in terms of the free ones. However, solutions to the linear system have five components (our variables are <span class="process-math">\(x_1,x_2,x_3,x_4,x_5\)</span>) and so our solution set must consist of vectors in <span class="process-math">\(\IR^5\text{.}\)</span> The correct solution set is given above in part (b).</div></article>
+</div></details></article><article class="problem example-like" id="sec-pset1-linear-5"><h3 class="heading">
 <span class="type">Problem</span><span class="space"> </span><span class="codenumber">A.2.3</span><span class="period">.</span>
 </h3>
 <div class="introduction" id="sec-pset1-linear-5-1">
@@ -1320,7 +1397,77 @@ B=\left[\begin{array}{ccccc|c}
 </div>
 <div class="para">What do the three matrices you found have in common? Based on this, what do you think might be true of an arbitrary matrix for which its RREF is the matrix given above?</div>
 </div></article>
-</div> </article><article class="problem example-like" id="sec-pset1-linear-6"><h3 class="heading">
+</div> <details id="sec-pset1-linear-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<article class="task exercise-like" id="sec-pset1-linear-5-2-1"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="sec-pset1-linear-5-2-1-1">Note that solutions will undoubtedly vary because there are lots of different choices for valid examples! Here is what came to my mind:</div>
+<ul class="disc" id="sec-pset1-linear-5-2-1-2"><li id="sec-pset1-linear-5-2-1-2-1"><div class="para logical" id="sec-pset1-linear-5-2-1-2-1-1">
+<div class="para">The following system has no free variables:</div>
+<div class="displaymath process-math" id="sec-pset1-linear-5-2-1-2-1-1-1">
+\begin{alignat*}{4}
+x_1 &amp; &amp;\,=\,&amp; 1\\
+&amp;x_2 &amp;\,=\,&amp; 2\\
+&amp;&amp;x_3\,=\,&amp;3. 
+\end{alignat*}
+</div>
+<div class="para">Its solution set is <span class="process-math">\(\left\{\left[\begin{array}{c}1\\2\\3\end{array}\right]\right\}\text{.}\)</span>
+</div>
+</div></li></ul>
+<ul class="disc" id="sec-pset1-linear-5-2-1-3"><li id="sec-pset1-linear-5-2-1-3-1"><div class="para logical" id="sec-pset1-linear-5-2-1-3-1-1">
+<div class="para">The following system has 1 free variable (namely, <span class="process-math">\(x_3\)</span>):</div>
+<div class="displaymath process-math" id="sec-pset1-linear-5-2-1-3-1-1-2">
+\begin{alignat*}{4}
+x_1 &amp; &amp;\,=\,&amp; 1\\
+&amp;x_2 &amp;\,=\,&amp; 2\\
+&amp;&amp;0\,=\,&amp;0. 
+\end{alignat*}
+</div>
+<div class="para">Its solution set is <span class="process-math">\(\left\{\left[\begin{array}{c}1\\2\\b\end{array}\right]\,\middle|\, b \in\mathbb R\right\}\text{.}\)</span>
+</div>
+</div></li></ul>
+<ul class="disc" id="sec-pset1-linear-5-2-1-4"><li id="sec-pset1-linear-5-2-1-4-1"><div class="para logical" id="sec-pset1-linear-5-2-1-4-1-1">
+<div class="para">The following system has 2 free variable (namely, <span class="process-math">\(x_2,x_3\)</span>):</div>
+<div class="displaymath process-math" id="sec-pset1-linear-5-2-1-4-1-1-2">
+\begin{alignat*}{4}
+x_1 &amp; &amp;\,=\,&amp; 1\\
+&amp; &amp;0\,=\,&amp; 0\\
+&amp;&amp;0\,=\,&amp;0. 
+\end{alignat*}
+</div>
+<div class="para">Its solution set is <span class="process-math">\(\left\{\left[\begin{array}{c}1\\a\\b\end{array}\right]\,\middle|\, a,b \in\mathbb R\right\}\text{.}\)</span>
+</div>
+</div></li></ul>
+<ul class="disc" id="sec-pset1-linear-5-2-1-5"><li id="sec-pset1-linear-5-2-1-5-1"><div class="para logical" id="sec-pset1-linear-5-2-1-5-1-1">
+<div class="para">In the following system, all three of <span class="process-math">\(x_1,x_2,x_3\)</span> are free:</div>
+<div class="displaymath process-math" id="sec-pset1-linear-5-2-1-5-1-1-2">
+\begin{alignat*}{4}
+&amp; &amp;0\,=\,&amp; 0\\
+&amp; &amp;0\,=\,&amp; 0\\
+&amp;&amp;0\,=\,&amp;0. 
+\end{alignat*}
+</div>
+<div class="para">Its solution set is <span class="process-math">\(\IR^3\)</span> because these equations are valid no matter what.</div>
+</div></li></ul></article> <article class="task exercise-like" id="sec-pset1-linear-5-2-2"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para logical" id="sec-pset1-linear-5-2-2-1-1">
+<div class="para">The RREF of the following matrices are all equal to the given matrix:</div>
+<ul class="disc" id="sec-pset1-linear-5-2-2-1-1-1">
+<li id="sec-pset1-linear-5-2-2-1-1-1-1"><div class="para logical" id="sec-pset1-linear-5-2-2-1-1-1-1-1"><div class="displaymath process-math">
+\begin{equation*}
+\left[\begin{array}{ccc|c} 2 &amp; 8 &amp; 4 &amp; -8 \\ 0 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0 \end{array}\right];
+\end{equation*}
+</div></div></li>
+<li id="sec-pset1-linear-5-2-2-1-1-1-2"><div class="para logical" id="sec-pset1-linear-5-2-2-1-1-1-2-1"><div class="displaymath process-math">
+\begin{equation*}
+\left[\begin{array}{ccc|c} 1 &amp; 4 &amp; 2 &amp; -4 \\ 2 &amp; 8 &amp; 4 &amp; -8 \\ 0 &amp; 0 &amp; 0 &amp; 0 \end{array}\right];
+\end{equation*}
+</div></div></li>
+<li id="sec-pset1-linear-5-2-2-1-1-1-3"><div class="para logical" id="sec-pset1-linear-5-2-2-1-1-1-3-1"><div class="displaymath process-math">
+\begin{equation*}
+\left[\begin{array}{ccc|c} 1 &amp; 4 &amp; 2 &amp; -4 \\ 2 &amp; 8 &amp; 4 &amp; -8 \\ 3 &amp; 12 &amp; 6 &amp; -12 \end{array}\right].
+\end{equation*}
+</div></div></li>
+</ul>
+</div> <div class="para" id="sec-pset1-linear-5-2-2-1-2">All of these matrices satisfy the following property: each row is a multiple of the first (and only) non-zero row of the matrix that was given to us. In general, any matrix that we can find that is equivalent to our given matrix must be obtained by apply row operations. If we start with a matrix, such as this, with only one non-zero row, then our row operations can only create rows that are multiples of this original row, which means that this phenomena was not a coincidence of the examples we wrote down but, rather, will happen generally.</div></article>
+</div></details></article><article class="problem example-like" id="sec-pset1-linear-6"><h3 class="heading">
 <span class="type">Problem</span><span class="space"> </span><span class="codenumber">A.2.4</span><span class="period">.</span>
 </h3>
 <div class="introduction" id="sec-pset1-linear-6-1"><div class="para logical" id="sec-pset1-linear-6-1-1">
@@ -1330,10 +1477,38 @@ B=\left[\begin{array}{ccccc|c}
 <li id="sec-pset1-linear-6-1-1-1-2"><div class="para" id="p-derived-sec-pset1-linear-6-1-1-1-2">If a system of equations having four equations and three unknowns is consistent, then the solution is unique.</div></li>
 <li id="sec-pset1-linear-6-1-1-1-3"><div class="para" id="p-derived-sec-pset1-linear-6-1-1-1-3">Suppose that a linear system has five equations and three unknowns and that the coefficient matrix has a pivot in every column. Then the linear system is consistent and has a unique solution.</div></li>
 </ul>
-</div></div> </article><article class="problem example-like" id="sec-pset1-linear-7"><h3 class="heading">
+</div></div> <details id="sec-pset1-linear-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec-pset1-linear-6-2-1">
+<ul class="disc" id="sec-pset1-linear-6-2-1-1"><li id="sec-pset1-linear-6-2-1-1-1"><div class="para logical" id="sec-pset1-linear-6-2-1-1-1-1">
+<div class="para">This statement is false. Consider the following augmented matrix:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\left[\begin{array}{cc|c}1&amp; 0&amp; 4\\0&amp;1&amp; 3\end{array}\right].
+\end{equation*}
+</div>
+<div class="para">Then, all columns of the coefficient matrix have a pivot (in particular the right-most), but the system is consistent because the rightmost column of the <em class="emphasis">augmented</em> matrix does not contain a pivot.</div>
+</div></li></ul>
+<ul class="disc" id="sec-pset1-linear-6-2-1-2"><li id="sec-pset1-linear-6-2-1-2-1"><div class="para logical" id="sec-pset1-linear-6-2-1-2-1-1">
+<div class="para">This statement is false. Consider the following augmented matrix:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\left[\begin{array}{ccc|c}1&amp; 0&amp; 0&amp; 1\\0&amp; 0&amp;0&amp; 0\\0&amp;0&amp; 0&amp;0\end{array}\right].
+\end{equation*}
+</div>
+<div class="para">This matrix corresponds to a linear system that is consistent and for which <span class="process-math">\(x_2,x_3\)</span> are free variables; in particular, the solution set is infinite.</div>
+</div></li></ul>
+<ul class="disc" id="sec-pset1-linear-6-2-1-3"><li id="sec-pset1-linear-6-2-1-3-1"><div class="para logical" id="sec-pset1-linear-6-2-1-3-1-1">
+<div class="para">This statement is also false. The assumptions tell us that, if the system were consistent, then there would be no free variable and, therefore, any solution would be unique. However, the assumptions do not rule out a system corresponding to the following augmented matrix:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\left[\begin{array}{ccc|c}1&amp;0&amp;0&amp;1\\0&amp;1&amp;0&amp;2\\0&amp;0&amp;1&amp;5\\0&amp;0&amp;0&amp;1\\0&amp;0&amp;0&amp;0\end{array}\right].
+\end{equation*}
+</div>
+<div class="para">This augmented matrix corresponds to a linear system that is inconsistent, despite the coefficient matrix having a pivot in each of its columns.</div>
+</div></li></ul>
+</div></div></details></article><article class="problem example-like" id="sec-pset1-linear-7"><h3 class="heading">
 <span class="type">Problem</span><span class="space"> </span><span class="codenumber">A.2.5</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="sec-pset1-linear-7-1"><div class="para" id="sec-pset1-linear-7-1-1">Consider the following statement: “It is possible for two consistent linear systems to have the same underlying coefficient matrix, but have different numbers of free variables”. Determine if this statement is true or false. If you think it is true, provide an example that demonstrates as such; if you think it is false, explain why it is not possible to find two such systems.</div></div> </article></section></div>
+<div class="introduction" id="sec-pset1-linear-7-1"><div class="para" id="sec-pset1-linear-7-1-1">Consider the following statement: “It is possible for two consistent linear systems to have the same underlying coefficient matrix, but have different numbers of free variables”. Determine if this statement is true or false. If you think it is true, provide an example that demonstrates as such; if you think it is false, explain why it is not possible to find two such systems.</div></div> <details id="sec-pset1-linear-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="sec-pset1-linear-7-2-1">This statement is false. Indeed, because we are told that the two systems are consistent, the number of free and bound variables is completely determined by the number of columns that contain pivots in their <em class="emphasis">coefficient</em> matrices. Since we’re assuming the two systems have the same coefficient matrices, these values must be the same for both systems, even if their right-hand sides are different.</div></div></details></article></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="pset-intro.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-pset2-linear.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
