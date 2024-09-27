@@ -650,6 +650,12 @@ window.MathJax = {
 #sec-pset1-linear-3-1-3-1-1-4 { counter-set: sec-pset1-linear-3-1-3-1-1-4 0; }
 #sec-pset1-linear-3-1-3-1-1-4 > li::marker { content: ""counter(sec-pset1-linear-3-1-3-1-1-4,decimal)"."; }
 #sec-pset1-linear-3-1-3-1-1-4 > li { counter-increment: sec-pset1-linear-3-1-3-1-1-4; }
+#sec-pset1-linear-3-3-1-1 { counter-set: sec-pset1-linear-3-3-1-1 0; }
+#sec-pset1-linear-3-3-1-1 > li::marker { content: ""counter(sec-pset1-linear-3-3-1-1,decimal)"."; }
+#sec-pset1-linear-3-3-1-1 > li { counter-increment: sec-pset1-linear-3-3-1-1; }
+#sec-pset1-linear-3-3-2-1 { counter-set: sec-pset1-linear-3-3-2-1 0; }
+#sec-pset1-linear-3-3-2-1 > li::marker { content: ""counter(sec-pset1-linear-3-3-2-1,decimal)"."; }
+#sec-pset1-linear-3-3-2-1 > li { counter-increment: sec-pset1-linear-3-3-2-1; }
 #def-Dot-Product-1-2-3 { counter-set: def-Dot-Product-1-2-3 0; }
 #def-Dot-Product-1-2-3 > li::marker { content: ""counter(def-Dot-Product-1-2-3,decimal)"."; }
 #def-Dot-Product-1-2-3 > li { counter-increment: def-Dot-Product-1-2-3; }
@@ -686,15 +692,6 @@ window.MathJax = {
 #sample-LE4-2-2 { counter-set: sample-LE4-2-2 0; }
 #sample-LE4-2-2 > li::marker { content: ""counter(sample-LE4-2-2,decimal)"."; }
 #sample-LE4-2-2 > li { counter-increment: sample-LE4-2-2; }
-#sample-EV1-2-1 { counter-set: sample-EV1-2-1 0; }
-#sample-EV1-2-1 > li::marker { content: ""counter(sample-EV1-2-1,decimal)"."; }
-#sample-EV1-2-1 > li { counter-increment: sample-EV1-2-1; }
-#sample-EV2-2-1 { counter-set: sample-EV2-2-1 0; }
-#sample-EV2-2-1 > li::marker { content: ""counter(sample-EV2-2-1,decimal)"."; }
-#sample-EV2-2-1 > li { counter-increment: sample-EV2-2-1; }
-#sample-EV4-2-1 { counter-set: sample-EV4-2-1 0; }
-#sample-EV4-2-1 > li::marker { content: ""counter(sample-EV4-2-1,decimal)"."; }
-#sample-EV4-2-1 > li { counter-increment: sample-EV4-2-1; }
 #sample-EV5-2-1 { counter-set: sample-EV5-2-1 0; }
 #sample-EV5-2-1 > li::marker { content: ""counter(sample-EV5-2-1,decimal)"."; }
 #sample-EV5-2-1 > li { counter-increment: sample-EV5-2-1; }
@@ -1619,548 +1616,340 @@ a \\
 </div></div></details></div></article><article class="example example-like" id="sample-EV1"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">C.1.5</span><span class="period">.</span><span class="space"> </span><span class="title">EV1.</span>
 </h3>
-<ol class="decimal" id="sample-EV1-2-1">
-<li id="sample-EV1-2-1-1">
-<div class="para" id="sample-EV1-2-1-1-1">Write a statement involving the solutions of a vector equation that’s equivalent to each claim below.</div>
-<ul class="disc" id="sample-EV1-2-1-1-2">
-<li id="sample-EV1-2-1-1-2-1"><div class="para" id="sample-EV1-2-1-1-2-1-1">
-<span class="process-math">\(\left[\begin{array}{c}
--13 \\
-3 \\
--13
-\end{array}\right]\)</span>is a linear combination of the vectors <span class="process-math">\(\left[\begin{array}{c}
-1 \\
-0 \\
-1
-\end{array}\right] , \left[\begin{array}{c}
-2 \\
-0 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
-3 \\
-0 \\
-3
-\end{array}\right] , \text{ and } \left[\begin{array}{c}
--5 \\
-1 \\
--5
-\end{array}\right]\text{.}\)</span>
-</div></li>
-<li id="sample-EV1-2-1-1-2-2"><div class="para" id="sample-EV1-2-1-1-2-2-1">
-<span class="process-math">\(\left[\begin{array}{c}
--13 \\
-3 \\
--15
-\end{array}\right]\)</span>is a linear combination of the vectors <span class="process-math">\(\left[\begin{array}{c}
-1 \\
-0 \\
-1
-\end{array}\right] , \left[\begin{array}{c}
-2 \\
-0 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
-3 \\
-0 \\
-3
-\end{array}\right] , \text{ and } \left[\begin{array}{c}
--5 \\
-1 \\
--5
-\end{array}\right]\text{.}\)</span>
-</div></li>
-</ul>
-</li>
-<li id="sample-EV1-2-1-2"><div class="para" id="sample-EV1-2-1-2-1">Use these statements to determine if each vector is or is not a linear combination. If it is, give an example of such a linear combination.</div></li>
-</ol>
-<div class="solutions"><details id="sample-EV1-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><ul class="disc" id="sample-EV1-3-1">
-<li id="sample-EV1-3-1-1"><div class="para logical" id="sample-EV1-3-1-1-1">
-<div class="para">
-<span class="process-math">\(\left[\begin{array}{c}
--13 \\
-3 \\
--13
-\end{array}\right]\)</span>is a linear combination of the vectors <span class="process-math">\(\left[\begin{array}{c}
-1 \\
-0 \\
-1
-\end{array}\right] , \left[\begin{array}{c}
-2 \\
-0 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
-3 \\
-0 \\
-3
-\end{array}\right] , \text{ and } \left[\begin{array}{c}
--5 \\
-1 \\
--5
-\end{array}\right]\)</span> exactly when the vector equation</div>
+<div class="introduction" id="sample-EV1-2"><div class="para" id="sample-EV1-2-1">Consider each of these claims about a vector equation.</div></div>
+<article class="task exercise-like" id="sample-EV1-3"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="introduction" id="sample-EV1-3-1"><div class="para" id="sample-EV1-3-1-1">
+<span class="process-math">\(\left[\begin{array}{c} -13 \\ 3 \\ -15 \end{array}\right]\)</span> is a linear combination of the vectors <span class="process-math">\(\left[\begin{array}{c} 1 \\ 0 \\ 1 \end{array}\right] , 
+\left[\begin{array}{c} 2 \\ 0 \\ 2 \end{array}\right] , 
+\left[\begin{array}{c} 3 \\ 0 \\ 3 \end{array}\right] , \text{ and } 
+\left[\begin{array}{c} -5 \\ 1 \\ -5 \end{array}\right]\text{.}\)</span>
+</div></div>
+<article class="task exercise-like" id="sample-EV1-3-2"><h5 class="heading"><span class="codenumber">(i)</span></h5>
+<div class="para" id="sample-EV1-3-2-1-1">Write a statement involving the solutions of a vector equation that’s equivalent to this claim.</div>
+<div class="solutions"><details id="sample-EV1-3-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="sample-EV1-3-2-2-1">“The vector equation<div class="displaymath process-math">
+\begin{equation*}
+x_1\left[\begin{array}{c} 1 \\ 0 \\ 1 \end{array}\right]  +
+x_2\left[\begin{array}{c} 2 \\ 0 \\ 2 \end{array}\right]  +
+x_3\left[\begin{array}{c} 3 \\ 0 \\ 3 \end{array}\right]  +
+x_4\left[\begin{array}{c} -5 \\ 1 \\ -5 \end{array}\right]  =
+\left[\begin{array}{c} -13 \\ 3 \\ -15 \end{array}\right]
+\end{equation*}
+</div>has at least one solution.”</div></div></details></div></article><article class="task exercise-like" id="sample-EV1-3-3"><h5 class="heading"><span class="codenumber">(ii)</span></h5>
+<div class="para" id="sample-EV1-3-3-1-1">Determine if the statement you wrote is true or false.</div>
+<div class="solutions"><details id="sample-EV1-3-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="sample-EV1-3-3-2-1"><span class="process-math">\(\mathrm{RREF}\, \left[\begin{array}{cccc|c} 1 &amp; 2 &amp; 3 &amp; -5 &amp; -13 \\ 0 &amp; 0 &amp; 0 &amp; 1 &amp; 3 \\ 1 &amp; 2 &amp; 3 &amp; -5 &amp; -15 \end{array}\right] = \left[\begin{array}{cccc|c} 1 &amp; 2 &amp; 3 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \end{array}\right]\)</span></div> <div class="para" id="sample-EV1-3-3-2-2">The bottom row requires <span class="process-math">\(0=1\text{.}\)</span> Therefore the vector equation has no solutions, so <span class="process-math">\(\left[\begin{array}{c} -13 \\ 3 \\ -15 \end{array}\right]\)</span> is not a linear combination.</div>
+</div></details></div></article><article class="task exercise-like" id="sample-EV1-3-4"><h5 class="heading"><span class="codenumber">(iii)</span></h5>
+<div class="para" id="sample-EV1-3-4-1-1">If your statement was true, explain and demonstrate how to construct a specific linear combination of <span class="process-math">\(\left[\begin{array}{c} 1 \\ 0 \\ 1 \end{array}\right] , \left[\begin{array}{c} 2 \\ 0 \\ 2 \end{array}\right] , \left[\begin{array}{c} 3 \\ 0 \\ 3 \end{array}\right] , \text{ and } \left[\begin{array}{c} -5 \\ 1 \\ -5 \end{array}\right]\)</span> that equals <span class="process-math">\(\left[\begin{array}{c} -13 \\ 3 \\ -15 \end{array}\right]\text{.}\)</span>
+</div>
+<div class="solutions"><details id="sample-EV1-3-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="sample-EV1-3-4-2-1">N/A</div></div></details></div></article></article><article class="task exercise-like" id="sample-EV1-4"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="introduction" id="sample-EV1-4-1"><div class="para" id="sample-EV1-4-1-1">
+<span class="process-math">\(\left[\begin{array}{c} -13 \\ 3 \\ -13 \end{array}\right]\)</span>is a linear combination of the vectors <span class="process-math">\(\left[\begin{array}{c} 1 \\ 0 \\ 1 \end{array}\right] , \left[\begin{array}{c} 2 \\ 0 \\ 2 \end{array}\right] , \left[\begin{array}{c} 3 \\ 0 \\ 3 \end{array}\right] , \text{ and } \left[\begin{array}{c} -5 \\ 1 \\ -5 \end{array}\right]\text{.}\)</span>
+</div></div>
+<article class="task exercise-like" id="sample-EV1-4-2"><h5 class="heading"><span class="codenumber">(i)</span></h5>
+<div class="para" id="sample-EV1-4-2-1-1">Write a statement involving the solutions of a vector equation that’s equivalent to this claim.</div>
+<div class="solutions"><details id="sample-EV1-4-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="sample-EV1-4-2-2-1">“The vector equation<div class="displaymath process-math">
+\begin{equation*}
+x_1\left[\begin{array}{c} 1 \\ 0 \\ 1 \end{array}\right]  +
+x_2\left[\begin{array}{c} 2 \\ 0 \\ 2 \end{array}\right]  +
+x_3\left[\begin{array}{c} 3 \\ 0 \\ 3 \end{array}\right]  +
+x_4\left[\begin{array}{c} -5 \\ 1 \\ -5 \end{array}\right]  =
+\left[\begin{array}{c} -13 \\ 3 \\ -13 \end{array}\right]
+\end{equation*}
+</div>has at least one solution.”</div></div></details></div></article><article class="task exercise-like" id="sample-EV1-4-3"><h5 class="heading"><span class="codenumber">(ii)</span></h5>
+<div class="para" id="sample-EV1-4-3-1-1">Determine if the statement you wrote is true or false.</div>
+<div class="solutions"><details id="sample-EV1-4-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="sample-EV1-4-3-2-1"><span class="process-math">\(\mathrm{RREF}\, \left[\begin{array}{cccc|c} 1 &amp; 2 &amp; 3 &amp; -5 &amp; -13 \\ 0 &amp; 0 &amp; 0 &amp; 1 &amp; 3 \\ 1 &amp; 2 &amp; 3 &amp; -5 &amp; -13 \end{array}\right] = \left[\begin{array}{cccc|c} 1 &amp; 2 &amp; 3 &amp; 0 &amp; 2 \\ 0 &amp; 0 &amp; 0 &amp; 1 &amp; 3 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \end{array}\right]\)</span></div> <div class="para" id="sample-EV1-4-3-2-2">No row requires <span class="process-math">\(0=1\text{.}\)</span> Therefore vector equation has at least one solution, so <span class="process-math">\(\left[\begin{array}{c} -13 \\ 3 \\ -13 \end{array}\right]\)</span> is a linear combination.</div>
+</div></details></div></article><article class="task exercise-like" id="sample-EV1-4-4"><h5 class="heading"><span class="codenumber">(iii)</span></h5>
+<div class="para" id="sample-EV1-4-4-1-1">If your statement was true, explain and demonstrate how to construct a specific linear combination of <span class="process-math">\(\left[\begin{array}{c} 1 \\ 0 \\ 1 \end{array}\right] , \left[\begin{array}{c} 2 \\ 0 \\ 2 \end{array}\right] , \left[\begin{array}{c} 3 \\ 0 \\ 3 \end{array}\right] , \text{ and } \left[\begin{array}{c} -5 \\ 1 \\ -5 \end{array}\right]\)</span> that equals <span class="process-math">\(\left[\begin{array}{c} -13 \\ 3 \\ -13 \end{array}\right]\text{.}\)</span>
+</div>
+<div class="solutions">
+<details id="sample-EV1-4-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sample-EV1-4-4-2-1">
+<div class="para">By setting the free variables <span class="process-math">\(x_2=0\)</span> and <span class="process-math">\(x_3=0\text{,}\)</span> we obtain the equations <span class="process-math">\(x_1=2\)</span> and <span class="process-math">\(x_4=3\text{.}\)</span> Therefore we may construct</div>
 <div class="displaymath process-math">
 \begin{equation*}
-x_1\left[\begin{array}{c}
-1 \\
-0 \\
-1
-\end{array}\right] +x_2 \left[\begin{array}{c}
-2 \\
-0 \\
-2
-\end{array}\right] +x_3 \left[\begin{array}{c}
-3 \\
-0 \\
-3
-\end{array}\right] +x_4 \left[\begin{array}{c}
--5 \\
-1 \\
--5
-\end{array}\right] = \left[\begin{array}{c}
--13 \\
-3 \\
--13
-\end{array}\right]
+2 \left[\begin{array}{c} 1 \\ 0 \\ 1 \end{array}\right] + 3 \left[\begin{array}{c} -5 \\ 1 \\ -5 \end{array}\right] = \left[\begin{array}{c} -13 \\ 3 \\ -13 \end{array}\right]\text{.}
 \end{equation*}
 </div>
-<div class="para">has a solution.  To solve this vector equation, we compute</div>
+</div></div></details><details id="sample-EV1-4-4-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sample-EV1-4-4-3-1">
+<div class="para">By trial and error, we may find that</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\mathrm{RREF}\, \left[\begin{array}{cccc|c}
-1 &amp; 2 &amp; 3 &amp; -5 &amp; -13 \\
-0 &amp; 0 &amp; 0 &amp; 1 &amp; 3 \\
-1 &amp; 2 &amp; 3 &amp; -5 &amp; -13
-\end{array}\right] = \left[\begin{array}{cccc|c}
-1 &amp; 2 &amp; 3 &amp; 0 &amp; 2 \\
-0 &amp; 0 &amp; 0 &amp; 1 &amp; 3 \\
-0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
-\end{array}\right]\text{.}
+1 \left[\begin{array}{c} 2 \\ 0 \\ 2 \end{array}\right] + 
+3 \left[\begin{array}{c} -5 \\ 1 \\ -5 \end{array}\right] = 
+\left[\begin{array}{c} 2-15 \\ 0+3 \\ 2-15 \end{array}\right] = 
+\left[\begin{array}{c} -13 \\ 3 \\ -13 \end{array}\right]\text{.}
 \end{equation*}
 </div>
-<div class="para">We see that this vector equation has solution set <span class="process-math">\(\left\{\left[\begin{array}{c}2-2a-3b \\ a \\ b \\ 3 \end{array}\right]\ \middle|\ a,b \in \mathbb{R}\right\}\text{,}\)</span> so <span class="process-math">\(\left[\begin{array}{c}
--13 \\
-3 \\
--13
-\end{array}\right]\)</span> is a linear combination; for example, <span class="process-math">\(2 \left[\begin{array}{c}
-1 \\
-0 \\
-1
-\end{array}\right] + 3 \left[\begin{array}{c}
--5 \\
-1 \\
--5
-\end{array}\right] = \left[\begin{array}{c}
--13 \\
-3 \\
--13
-\end{array}\right]\)</span>
-</div>
-</div></li>
-<li id="sample-EV1-3-1-2"><div class="para logical" id="sample-EV1-3-1-2-1">
-<div class="para">
-<span class="process-math">\(\left[\begin{array}{c}
--13 \\
-3 \\
--15
-\end{array}\right]\)</span> is a linear combination of the vectors <span class="process-math">\(\left[\begin{array}{c}
-1 \\
-0 \\
-1
-\end{array}\right] , \left[\begin{array}{c}
-2 \\
-0 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
-3 \\
-0 \\
-3
-\end{array}\right] , \text{ and } \left[\begin{array}{c}
--5 \\
-1 \\
--5
-\end{array}\right]\)</span> exactly when the vector equation</div>
-<div class="displaymath process-math">
-\begin{equation*}
-x_1\left[\begin{array}{c}
-1 \\
-0 \\
-1
-\end{array}\right] +x_2 \left[\begin{array}{c}
-2 \\
-0 \\
-2
-\end{array}\right] +x_3 \left[\begin{array}{c}
-3 \\
-0 \\
-3
-\end{array}\right] +x_4  \left[\begin{array}{c}
--5 \\
-1 \\
--5
-\end{array}\right] = \left[\begin{array}{c}
--13 \\
-3 \\
--15
-\end{array}\right] 
-\end{equation*}
-</div>
-<div class="para">has a solution.  To solve this vector equation, we compute</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\mathrm{RREF}\, \left[\begin{array}{cccc|c}
-1 &amp; 2 &amp; 3 &amp; -5 &amp; -13 \\
-0 &amp; 0 &amp; 0 &amp; 1 &amp; 3 \\
-1 &amp; 2 &amp; 3 &amp; -5 &amp; -15
-\end{array}\right] = \left[\begin{array}{cccc|c}
-1 &amp; 2 &amp; 3 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 0 &amp; 1
-\end{array}\right]\text{.}
-\end{equation*}
-</div>
-<div class="para">This vector equation has no solution, so <span class="process-math">\(\left[\begin{array}{c}
--13 \\
-3 \\
--15
-\end{array}\right]\)</span> is not a linear combination.</div>
-</div></li>
-</ul></div></details></div></article><article class="example example-like" id="sample-EV2"><h3 class="heading">
+</div></div></details>
+</div></article></article></article><article class="example example-like" id="sample-EV2"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">C.1.6</span><span class="period">.</span><span class="space"> </span><span class="title">EV2.</span>
 </h3>
-<ol class="decimal" id="sample-EV2-2-1">
-<li id="sample-EV2-2-1-1">
-<div class="para" id="sample-EV2-2-1-1-1">Write a statement involving the solutions of a vector equation that’s equivalent to each claim below.</div>
-<ul class="disc" id="sample-EV2-2-1-1-2">
-<li id="sample-EV2-2-1-1-2-1"><div class="para" id="sample-EV2-2-1-1-2-1-1">The set of vectors <span class="process-math">\(\left\{ \left[\begin{array}{c}
-1 \\
--1 \\
-2 \\
-0
-\end{array}\right] , \left[\begin{array}{c}
-3 \\
--2 \\
-3 \\
-3
-\end{array}\right] , \left[\begin{array}{c}
-10 \\
--7 \\
-11 \\
-9
-\end{array}\right] , \left[\begin{array}{c}
--6 \\
-3 \\
--3 \\
--9
-\end{array}\right] \right\}\)</span> <em class="emphasis">spans</em> <span class="process-math">\(\mathbb R^4\text{.}\)</span>
-</div></li>
-<li id="sample-EV2-2-1-1-2-2"><div class="para" id="sample-EV2-2-1-1-2-2-1">The set of vectors <span class="process-math">\(\left\{ \left[\begin{array}{c}
-1 \\
--1 \\
-2 \\
-0
-\end{array}\right] , \left[\begin{array}{c}
-3 \\
--2 \\
-3 \\
-3
-\end{array}\right] , \left[\begin{array}{c}
-10 \\
--7 \\
-11 \\
-9
-\end{array}\right] , \left[\begin{array}{c}
--6 \\
-3 \\
--3 \\
--9
-\end{array}\right] \right\}\)</span> does <em class="emphasis">not</em> span <span class="process-math">\(\mathbb R^4\text{.}\)</span>
-</div></li>
-</ul>
-</li>
-<li id="sample-EV2-2-1-2"><div class="para" id="sample-EV2-2-1-2-1">Explain how to determine which of these statements is true.</div></li>
-</ol>
-<div class="solutions"><details id="sample-EV2-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sample-EV2-3-1">
-<div class="para">The set of vectors <span class="process-math">\(\left\{ \left[\begin{array}{c}
-1 \\
--1 \\
-2 \\
-0
-\end{array}\right] , \left[\begin{array}{c}
-3 \\
--2 \\
-3 \\
-3
-\end{array}\right] , \left[\begin{array}{c}
-10 \\
--7 \\
-11 \\
-9
-\end{array}\right] , \left[\begin{array}{c}
--6 \\
-3 \\
--3 \\
--9
-\end{array}\right] \right\}\)</span>  spans <span class="process-math">\(\mathbb{R}^4\)</span> exactly when the vector equation</div>
+<article class="task exercise-like" id="sample-EV2-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="introduction" id="sample-EV2-2-1"><div class="para logical" id="sample-EV2-2-1-1">
+<div class="para">Consider the set of vectors</div>
 <div class="displaymath process-math">
 \begin{equation*}
-x_1 \left[\begin{array}{c}
-1 \\
--1 \\
-2 \\
-0
-\end{array}\right] +x_2 \left[\begin{array}{c}
-3 \\
--2 \\
-3 \\
-3
-\end{array}\right] +x_3 \left[\begin{array}{c}
-10 \\
--7 \\
-11 \\
-9
-\end{array}\right] +x_4 \left[\begin{array}{c}
--6 \\
-3 \\
--3 \\
--9
-\end{array}\right] =\vec{v}
+\left\{ \left[\begin{array}{c} -1 \\ 1 \\ 0 \\ 2 \end{array}\right] , 
+\left[\begin{array}{c} 0 \\ -1 \\ 1 \\ -3 \end{array}\right] , 
+\left[\begin{array}{c} 2 \\ -2 \\ 1 \\ -2 \end{array}\right] , 
+\left[\begin{array}{c} -3 \\ -1 \\ 4 \\ -5 \end{array}\right] , 
+\left[\begin{array}{c} 7 \\ 8 \\ -15 \\ 28 \end{array}\right] \right\}
 \end{equation*}
 </div>
-<div class="para">has a solution <em class="emphasis">for all</em> <span class="process-math">\(\vec{v} \in \mathbb{R}^4\text{.}\)</span> If there is <em class="emphasis">some</em> vector <span class="process-math">\(\vec{v} \in \mathbb{R}^4\)</span> for which this vector equation has no solution, then the set does not span <span class="process-math">\(\mathbb{R}^4\text{.}\)</span> To answer this, we compute</div>
+</div></div>
+<article class="task exercise-like" id="sample-EV2-2-2"><h5 class="heading"><span class="codenumber">(i)</span></h5>
+<div class="para" id="sample-EV2-2-2-1">Write a statement involving the solutions of a vector equation that’s equivalent to this claim: “The set of vectors spans <span class="process-math">\(\mathbb R^4\text{.}\)</span>”</div>
+<details id="sample-EV2-2-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="sample-EV2-2-2-2-1">“The vector equation<div class="displaymath process-math">
+\begin{equation*}
+x_1 \left[\begin{array}{c} -1 \\ 1 \\ 0 \\ 2 \end{array}\right] +
+x_2 \left[\begin{array}{c} 0 \\ -1 \\ 1 \\ -3 \end{array}\right] +
+x_3 \left[\begin{array}{c} 2 \\ -2 \\ 1 \\ -2 \end{array}\right] +
+x_4 \left[\begin{array}{c} -3 \\ -1 \\ 4 \\ -5 \end{array}\right] +
+x_5 \left[\begin{array}{c} 7 \\ 8 \\ -15 \\ 28 \end{array}\right] = \vec w
+\end{equation*}
+</div>has at least one solution for every <span class="process-math">\(\vec w\in\mathbb R^4\text{.}\)</span>”</div></div></details></article><article class="task exercise-like" id="sample-EV2-2-3"><h5 class="heading"><span class="codenumber">(ii)</span></h5>
+<div class="para" id="sample-EV2-2-3-1-1">Explain and demonstrate how to determine whether or not this statement is true.</div>
+<div class="solutions"><details id="sample-EV2-2-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="sample-EV2-2-3-2-1">Note that <span class="process-math">\(\mathrm{RREF}\, \left[\begin{array}{ccccc} -1 &amp; 0 &amp; 2 &amp; -3 &amp; 7 \\ 
+1 &amp; -1 &amp; -2 &amp; -1 &amp; 8 \\ 0 &amp; 1 &amp; 1 &amp; 4 &amp; -15 \\ 
+2 &amp; -3 &amp; -2 &amp; -5 &amp; 28 \end{array}\right] = 
+\left[\begin{array}{ccccc} 1 &amp; 0 &amp; 0 &amp; 0 &amp; 2 \\ 
+0 &amp; 1 &amp; 0 &amp; 0 &amp; -3 \\ 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; -3 \end{array}\right]\)</span> has no row of zeros that would allow a <span class="process-math">\(0=1\)</span> contradiction.</div> <div class="para" id="sample-EV2-2-3-2-2">Therefore the vector equation has solutions for every <span class="process-math">\(\vec w\text{,}\)</span> and thus the set of vectors  <em class="emphasis">does</em> span   <span class="process-math">\(\mathbb{R}^4\text{.}\)</span>
+</div>
+</div></details></div></article></article><article class="task exercise-like" id="sample-EV2-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="introduction" id="sample-EV2-3-1"><div class="para logical" id="sample-EV2-3-1-1">
+<div class="para">Consider the set of vectors</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\mathrm{RREF}\, \left[\begin{array}{cccc}
-1 &amp; 3 &amp; 10 &amp; -6 \\
--1 &amp; -2 &amp; -7 &amp; 3 \\
-2 &amp; 3 &amp; 11 &amp; -3 \\
-0 &amp; 3 &amp; 9 &amp; -9
-\end{array}\right] = \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 1 &amp; 3 \\
-0 &amp; 1 &amp; 3 &amp; -3 \\
-0 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 0
-\end{array}\right]\text{.}
+\left\{ \left[\begin{array}{c} 1 \\ 1 \\ -2 \\ 0 \end{array}\right] , 
+\left[\begin{array}{c} 0 \\ 1 \\ -2 \\ 3 \end{array}\right] , 
+\left[\begin{array}{c} -4 \\ -2 \\ 5 \\ 5 \end{array}\right] , 
+\left[\begin{array}{c} 12 \\ 3 \\ -9 \\ -24 \end{array}\right] \right\}
 \end{equation*}
 </div>
-<div class="para">We see that for some <span class="process-math">\(\vec{v} \in \mathbb{R}^4\text{,}\)</span> this vector equation will not have a solution, so the set of vectors <span class="process-math">\(\left\{ \left[\begin{array}{c}
-1 \\
--1 \\
-2 \\
-0
-\end{array}\right] , \left[\begin{array}{c}
-3 \\
--2 \\
-3 \\
-3
-\end{array}\right] , \left[\begin{array}{c}
-10 \\
--7 \\
-11 \\
-9
-\end{array}\right] , \left[\begin{array}{c}
--6 \\
-3 \\
--3 \\
--9
-\end{array}\right] \right\}\)</span> does <em class="emphasis">not</em> span <span class="process-math">\(\mathbb{R}^4\text{.}\)</span>
+</div></div>
+<article class="task exercise-like" id="sample-EV2-3-2"><h5 class="heading"><span class="codenumber">(i)</span></h5>
+<div class="para" id="sample-EV2-3-2-1">Write a statement involving the solutions of a vector equation that’s equivalent to this claim: “The set of vectors spans <span class="process-math">\(\mathbb R^4\text{.}\)</span>”</div>
+<details id="sample-EV2-3-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="sample-EV2-3-2-2-1">“The vector equation<div class="displaymath process-math">
+\begin{equation*}
+x_1 \left[\begin{array}{c} 1 \\ 1 \\ -2 \\ 0 \end{array}\right] +
+x_2 \left[\begin{array}{c} 0 \\ 1 \\ -2 \\ 3 \end{array}\right] +
+x_3 \left[\begin{array}{c} -4 \\ -2 \\ 5 \\ 5 \end{array}\right] +
+x_4 \left[\begin{array}{c} 12 \\ 3 \\ -9 \\ -24 \end{array}\right] = \vec w
+\end{equation*}
+</div>has at least one solution for every <span class="process-math">\(\vec w\in\mathbb R^4\text{.}\)</span>”</div></div></details></article><article class="task exercise-like" id="sample-EV2-3-3"><h5 class="heading"><span class="codenumber">(ii)</span></h5>
+<div class="para" id="sample-EV2-3-3-1-1">Explain and demonstrate how to determine whether or not this statement is true.</div>
+<div class="solutions"><details id="sample-EV2-3-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="sample-EV2-3-3-2-1">Note that <span class="process-math">\(\mathrm{RREF}\, \left[\begin{array}{cccc} 1 &amp; 0 &amp; -4 &amp; 12 \\ 
+1 &amp; 1 &amp; -2 &amp; 3 \\ -2 &amp; -2 &amp; 5 &amp; -9 \\ 
+0 &amp; 3 &amp; 5 &amp; -24 \end{array}\right] = 
+\left[\begin{array}{cccc} 1 &amp; 0 &amp; 0 &amp; 0 \\ 
+0 &amp; 1 &amp; 0 &amp; -3 \\ 0 &amp; 0 &amp; 1 &amp; -3 \\ 
+0 &amp; 0 &amp; 0 &amp; 0 \end{array}\right]\)</span> has a row of zeros that makes a <span class="process-math">\(0=1\)</span> contradiction possible.</div> <div class="para" id="sample-EV2-3-3-2-2">Therefore the vector equation will not have solutions for every <span class="process-math">\(\vec w\text{,}\)</span> and thus the set of vectors does <em class="emphasis">not</em> span <span class="process-math">\(\mathbb{R}^4\text{.}\)</span>
 </div>
-</div></div></details></div></article><article class="example example-like" id="sample-EV3"><h3 class="heading">
+</div></details></div></article></article><article class="task exercise-like" id="sample-EV2-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="introduction" id="sample-EV2-4-1"><div class="para logical" id="sample-EV2-4-1-1">
+<div class="para">Consider the set of vectors</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\left\{ \left[\begin{array}{c} 1 \\ 0 \\ 1 \\ 1 \end{array}\right] , 
+\left[\begin{array}{c} -5 \\ 1 \\ -5 \\ -2 \end{array}\right] ,
+\left[\begin{array}{c} 12 \\ -2 \\ 12 \\ 6 \end{array}\right] \right\}
+\end{equation*}
+</div>
+</div></div>
+<article class="task exercise-like" id="sample-EV2-4-2"><h5 class="heading"><span class="codenumber">(i)</span></h5>
+<div class="para" id="sample-EV2-4-2-1-1">Write a statement involving the solutions of a vector equation that’s equivalent to this claim: “The set of vectors spans <span class="process-math">\(\mathbb R^4\text{.}\)</span>”</div>
+<div class="solutions"><details id="sample-EV2-4-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="sample-EV2-4-2-2-1">“The vector equation<div class="displaymath process-math">
+\begin{equation*}
+x_1 \left[\begin{array}{c} 1 \\ 0 \\ 1 \\ 1 \end{array}\right] +
+x_2 \left[\begin{array}{c} -5 \\ 1 \\ -5 \\ -2 \end{array}\right] +
+x_3 \left[\begin{array}{c} 12 \\ -2 \\ 12 \\ 6 \end{array}\right] = \vec w
+\end{equation*}
+</div>has at least one solution for every <span class="process-math">\(\vec w\in\mathbb R^4\text{.}\)</span>”</div></div></details></div></article><article class="task exercise-like" id="sample-EV2-4-3"><h5 class="heading"><span class="codenumber">(ii)</span></h5>
+<div class="para" id="sample-EV2-4-3-1-1">Explain and demonstrate how to determine whether or not this statement is true.</div>
+<div class="solutions">
+<details id="sample-EV2-4-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="sample-EV2-4-3-2-1">Note that <span class="process-math">\(\mathrm{RREF}\, \left[\begin{array}{ccc} 1 &amp; -5 &amp; 12 \\ 
+0 &amp; 1 &amp; -2 \\ 
+1 &amp; -5 &amp; 12 \\ 
+1 &amp; -2 &amp; 6 \end{array}\right] = 
+\left[\begin{array}{ccc} 1 &amp; 0 &amp; 2 \\ 
+0 &amp; 1 &amp; -2 \\ 
+0 &amp; 0 &amp; 0 \\ 
+0 &amp; 0 &amp; 0 \end{array}\right]\)</span> has a row of zeros that makes a <span class="process-math">\(0=1\)</span> contradiction possible.</div> <div class="para" id="sample-EV2-4-3-2-2">Therefore the vector equation will not have solutions for every <span class="process-math">\(\vec w\text{,}\)</span> and thus the set of vectors does <em class="emphasis">not</em> span <span class="process-math">\(\mathbb{R}^4\text{.}\)</span>
+</div>
+</div></details><details id="sample-EV2-4-3-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="sample-EV2-4-3-3-1">It takes at least <span class="process-math">\(4\)</span> vectors to span <span class="process-math">\(\mathbb R^4\text{,}\)</span> so the equation cannot always have solutions and the set cannot span.</div></div></details>
+</div></article></article></article><article class="example example-like" id="sample-EV3"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">C.1.7</span><span class="period">.</span><span class="space"> </span><span class="title">EV3.</span>
 </h3>
-<div class="para logical" id="sample-EV3-2-1">
-<div class="para">Consider the following two sets of Euclidean vectors.</div>
+<div class="introduction" id="sample-EV3-2"><div class="para" id="sample-EV3-2-1">Answer the following questions about Euclidean subspaces.</div></div>
+<article class="task exercise-like" id="sample-EV3-3"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para logical" id="sample-EV3-3-1-1">
+<div class="para">Consider the following subsets of Euclidean space <span class="process-math">\(\mathbb R^4\)</span> defined by</div>
 <div class="displaymath process-math">
 \begin{equation*}
-W = \setBuilder{\left[\begin{array}{c} x \\ y \\ z \\ w \end{array}\right] }{x+y=3z+2w}
-\hspace{3em}
-U = \setBuilder{\left[\begin{array}{c} x \\ y \\ z \\ w \end{array}\right]}{x+y=3z+w^2}
+U=\left\{ \left[\begin{array}{c} x \\ y \\ z \\ w \end{array}\right] \middle| 
+y^{2} - 7 \, z^{2} = x \right\} \hspace{1em} \text{and} 
+\hspace{1em} W=\left\{ \left[\begin{array}{c} x \\ y \\ z \\ w \end{array}\right] \middle| 
+-5 \, w - 7 \, x - y = -7 \, z \right\}
 \end{equation*}
 </div>
-<div class="para">Explain why one of these sets is a subspace of <span class="process-math">\(\IR^3\text{,}\)</span> and why the other is not.</div>
+<div class="para">Without writing a proof, explain why only one of these subsets is likely to be a subspace.</div>
 </div>
-<div class="solutions"><details id="sample-EV3-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="sample-EV3-3-1">To show that <span class="process-math">\(W\)</span> is a subspace, first note that it is nonempty as <span class="process-math">\(\left[\begin{array}{c} 0 \\ 0 \\ 0 \\ 0 \end{array}\right] \in W\text{,}\)</span> since <span class="process-math">\(0+0=3(0)+3(0)\text{.}\)</span> Then let <span class="process-math">\(\vec v=\left[\begin{array}{c} x_1 \\y_1 \\ z_1 \\ w_1 \end{array}\right]\in W\)</span> and <span class="process-math">\(\vec w=\left[\begin{array}{c} x_2 \\y_2 \\ z_2 \\ w_2 \end{array}\right] \in W
-\text{,}\)</span> so we know that <span class="process-math">\(x_1+y_1=3z_1+2w_1\)</span> and <span class="process-math">\(x_2+y_2=3z_2+2w_2\text{.}\)</span>
-</div> <div class="para logical" id="sample-EV3-3-2">
-<div class="para">Consider</div>
+<div class="solutions"><details id="sample-EV3-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="sample-EV3-3-2-1">
+<span class="process-math">\(W\)</span> appears to be a subspace as its equation is a linear combination of variables and constant scalars, and <span class="process-math">\(U\)</span> is likely not due to its equation having squared terms.</div></div></details></div></article><article class="task exercise-like" id="sample-EV3-4"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para logical" id="sample-EV3-4-1-1">
+<div class="para">Consider the following subset of Euclidean space <span class="process-math">\(\mathbb R^3\)</span>
+</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\left[\begin{array}{c} x_1 \\y_1 \\ z_1 \\ w_1\end{array}\right]
-+\left[\begin{array}{c} x_2 \\y_2 \\ z_2 \\ w_2 \end{array}\right]
-=\left[\begin{array}{c} x_1+x_2 \\y_1+y_2 \\ z_1+z_2 \\w_1+w_2 \end{array}\right]
-.
+Q=\left\{ \left[\begin{array}{c} x \\ y \\ z \end{array}\right] \middle| 
+0 = 5 \, y^{2} - 5 \, x + 3 \, z \right\}
 \end{equation*}
 </div>
-<div class="para">To see if <span class="process-math">\(\vec{v}+\vec{w} \in W\text{,}\)</span> we need to check if <span class="process-math">\((x_1+x_2)+(y_1+y_2) = 3(z_1+z_2)+2(w_1+w_2)\text{.}\)</span> We compute</div>
-<div class="displaymath process-math" id="sample-EV3-3-2-4">
+<div class="para">Prove that <span class="process-math">\(Q\)</span> <em class="emphasis">is not</em> a subspace.</div>
+</div>
+<div class="solutions"><details id="sample-EV3-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sample-EV3-4-2-1">
+<div class="para">Note that <span class="process-math">\(\left[\begin{array}{c} 0 \\ 3 \\ -15 \end{array}\right]\)</span> belongs to <span class="process-math">\(Q\text{,}\)</span> since</div>
+<div class="displaymath process-math">
+\begin{equation*}
+5(3)^2-5(0)+3(-15)=45-45=0\text{,}
+\end{equation*}
+</div>
+<div class="para">but <span class="process-math">\(2\left[\begin{array}{c} 0 \\ 3 \\ -15 \end{array}\right]=
+\left[\begin{array}{c} 0 \\ 6 \\ -30 \end{array}\right]\)</span> does not, since</div>
+<div class="displaymath process-math">
+\begin{equation*}
+5(6)^2-5(0)+3(-30)=180-90=90\not=0\text{.}
+\end{equation*}
+</div>
+</div></div></details></div></article><article class="task exercise-like" id="sample-EV3-5"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para logical" id="sample-EV3-5-1-1">
+<div class="para">Consider the following subset of Euclidean space <span class="process-math">\(\mathbb R^3\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+R=\left\{ \left[\begin{array}{c} x \\ y \\ z \end{array}\right] \middle| 
+5 \, x - 5 \, y = -4 \, z \right\}
+\end{equation*}
+</div>
+<div class="para">Prove that <span class="process-math">\(R\)</span> <em class="emphasis">is</em> a subspace.</div>
+</div>
+<div class="solutions"><details id="sample-EV3-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sample-EV3-5-2-1"><ul class="disc" id="sample-EV3-5-2-1-1">
+<li id="sample-EV3-5-2-1-1-1"><div class="para" id="sample-EV3-5-2-1-1-1-1">First, note that <span class="process-math">\(\left[\begin{array}{c} 0 \\ 0 \\ 0 \end{array}\right]\in R\)</span> since <span class="process-math">\(5(0)-5(0)=0\)</span> and <span class="process-math">\(-4(0)=0\)</span> as well.</div></li>
+<li id="sample-EV3-5-2-1-1-2"><div class="para logical" id="sample-EV3-5-2-1-1-2-1">
+<div class="para">Let <span class="process-math">\(\left[\begin{array}{c} x \\ y \\ z \end{array}\right]\in R\)</span> so that <span class="process-math">\(5 \, x - 5 \, y = -4 \, z\text{,}\)</span> and let <span class="process-math">\(\left[\begin{array}{c} a \\ b \\ c \end{array}\right]\in R\)</span> so that <span class="process-math">\(5 \, a - 5 \, b = -4 \, c\text{.}\)</span> We may then compute</div>
+<div class="displaymath process-math" id="sample-EV3-5-2-1-1-2-1-5">
 \begin{align*}
-(x_1+x_2)+(y_1+y_2) &amp;= (x_1+y_1)+(x_2+y_2) &amp;\text{by regrouping}\\
-&amp;= (3z_1+2w_1)+(3z_2+2w_2) &amp; \text{since }\\
-&amp;=3(z_1+z_2)+2(w_1+w_2) &amp; \text{by regrouping.}
+5(x+a)-5(y+b) &amp;= 5x+5a-5y-5b\\
+&amp;= (5x-5y)+(5a-5b)\\
+&amp;= (-4z)+(-4c)\\
+&amp;= -4(z+c)
 \end{align*}
 </div>
-<div class="para">Thus <span class="process-math">\(\vec v+\vec w\in W\text{,}\)</span> so <span class="process-math">\(W\)</span> is closed under vector addition.</div>
-</div> <div class="para logical" id="sample-EV3-3-3">
-<div class="para">Now consider</div>
-<div class="displaymath process-math">
-\begin{equation*}
-c\vec v
-=\left[\begin{array}{c} cx_1 \\cy_1 \\ cz_1 \\ cw_1 \end{array}\right]
-.
-\end{equation*}
-</div>
-<div class="para">Similarly, to check that <span class="process-math">\(c\vec{v} \in W\text{,}\)</span> we need to check if <span class="process-math">\(cx_1+cy_1=3(cz_1)+2(cw_1)\text{,}\)</span> so we compute</div>
-<div class="displaymath process-math" id="sample-EV3-3-3-4">
+<div class="para">So <span class="process-math">\(5(x+a)-5(y+b) = -4(z+c)\)</span> and therefore <span class="process-math">\(\left[\begin{array}{c} x \\ y \\ z \end{array}\right]+
+\left[\begin{array}{c} a \\ b \\ c \end{array}\right]=
+\left[\begin{array}{c} x+a \\ y+b \\ z+c \end{array}\right]\in R\text{,}\)</span> showing <span class="process-math">\(R\)</span> is closed under addition.</div>
+</div></li>
+<li id="sample-EV3-5-2-1-1-3"><div class="para logical" id="sample-EV3-5-2-1-1-3-1">
+<div class="para">Let <span class="process-math">\(\left[\begin{array}{c} x \\ y \\ z \end{array}\right]\in R\)</span> so that <span class="process-math">\(5 \, x - 5 \, y = -4 \, z\text{,}\)</span> and let <span class="process-math">\(k\in\mathbb R\)</span> be a scalar. We may then compute</div>
+<div class="displaymath process-math" id="sample-EV3-5-2-1-1-3-1-4">
 \begin{align*}
-cx_1+cy_1 &amp; = c(x_1+y_1) &amp;\text{by factoring}\\
-&amp;=c(3z_1+2w_1) &amp;\text{since }\\
-&amp;=3(cz_1)+2(cw_1) &amp;\text{by regrouping}
+5x - 5y &amp;= -4z\\
+\Rightarrow k[5x-5y]&amp;= k[-4z]\\
+\Rightarrow 5kx-5ky &amp;= -4kz\\
+\Rightarrow 5(kx)-5(ky)&amp;= -4(kz)
 \end{align*}
 </div>
-<div class="para">and we see that <span class="process-math">\(c\vec v\in W\text{,}\)</span> so <span class="process-math">\(W\)</span> is closed under scalar multiplication. Therefore <span class="process-math">\(W\)</span> is a subspace of <span class="process-math">\(\IR^3\text{.}\)</span>
-</div>
-</div> <div class="para" id="sample-EV3-3-4">Now, to show <span class="process-math">\(U\)</span> is not a subspace, we will show that it is not closed under vector addition.</div> <ul class="disc" id="sample-EV3-3-5">
-<li id="sample-EV3-3-5-1">
-<div class="para" id="sample-EV3-3-5-1-1">(Solution Method 1) Now let <span class="process-math">\(\vec v=\left[\begin{array}{c} x_1 \\y_1 \\ z_1 \\ w_1 \end{array}\right]\in U\)</span> and <span class="process-math">\(\vec w=\left[\begin{array}{c} x_2 \\y_2 \\ z_2 \\ w_2 \end{array}\right] \in U
-\text{,}\)</span> so we know that <span class="process-math">\(x_1+y_1=3z_1+w_1^2\)</span> and <span class="process-math">\(x_2+y_2=3z_2+w_2^2\text{.}\)</span>
-</div>
-<div class="para logical" id="sample-EV3-3-5-1-2">
-<div class="para">Consider</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\vec{v}+\vec{w}=
-\left[\begin{array}{c} x_1 \\y_1 \\ z_1 \\ w_1\end{array}\right]
-+\left[\begin{array}{c} x_2 \\y_2 \\ z_2 \\ w_2 \end{array}\right]
-=\left[\begin{array}{c} x_1+x_2 \\y_1+y_2 \\ z_1+z_2 \\w_1+w_2 \end{array}\right]
-.
-\end{equation*}
-</div>
-<div class="para">To see if <span class="process-math">\(\vec{v}+\vec{w} \in U\text{,}\)</span> we need to check if <span class="process-math">\((x_1+x_2)+(y_1+y_2) = 3(z_1+z_2)+(w_1+w_2)^2\text{.}\)</span> We compute</div>
-<div class="displaymath process-math" id="sample-EV3-3-5-1-2-4">
-\begin{align*}
-(x_1+x_2)+(y_1+y_2) &amp;= (x_1+y_1)+(x_2+y_2) &amp;\text{by regrouping}\\
-&amp;= (3z_1+w_1^2)+(3z_2+w_2^2) &amp;\text{since }\\
-&amp;=3(z_1+z_2)+(w_1^2+w_2^2) &amp;\text{by regrouping}
-\end{align*}
-</div>
-<div class="para">and thus <span class="process-math">\(\vec v+\vec w\in U\)</span> \textbf{only when} <span class="process-math">\(w_1^2+w_2^2=(w_1+w_2)^2\text{.}\)</span> Since this is not true in general, <span class="process-math">\(U\)</span> is not closed under vector addition, and thus cannot be a subspace.</div>
-</div>
-</li>
-<li id="sample-EV3-3-5-2"><div class="para" id="sample-EV3-3-5-2-1">(Solution Method 2) Note that the vector <span class="process-math">\(\vec v=\left[\begin{array}{c} 0\\1\\0\\1\end{array}\right] \)</span> belongs to <span class="process-math">\(U\)</span> since <span class="process-math">\(0+1=3(0)+1^2\text{.}\)</span> However, the vector <span class="process-math">\(2\vec v=\left[\begin{array}{c} 0\\2\\0\\2\end{array}\right] \)</span> does not belong to <span class="process-math">\(U\)</span> since <span class="process-math">\(0+2\not=3(0)+2^2\text{.}\)</span> Therefore <span class="process-math">\(U\)</span> is not closed under scalar multiplication, and thus is not a subspace.</div></li>
-</ul>
-</div></details></div></article><article class="example example-like" id="sample-EV4"><h3 class="heading">
+<div class="para">and therefore <span class="process-math">\(k\left[\begin{array}{c} x \\ y \\ z \end{array}\right]
+=\left[\begin{array}{c} kx \\ ky \\ kz \end{array}\right]\in R\text{,}\)</span> showing <span class="process-math">\(R\)</span> is closed under scalar multiplication.</div>
+</div></li>
+</ul></div></div></details></div></article></article><article class="example example-like" id="sample-EV4"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">C.1.8</span><span class="period">.</span><span class="space"> </span><span class="title">EV4.</span>
 </h3>
-<ol class="decimal" id="sample-EV4-2-1">
-<li id="sample-EV4-2-1-1">
-<div class="para" id="sample-EV4-2-1-1-1">Write a statement involving the solutions of a vector equation that’s equivalent to each claim below.</div>
-<ul class="disc" id="sample-EV4-2-1-1-2">
-<li id="sample-EV4-2-1-1-2-1"><div class="para" id="sample-EV4-2-1-1-2-1-1">The set of vectors <span class="process-math">\(\left\{ \left[\begin{array}{c}
-1 \\
-3 \\
-4 \\
--4
-\end{array}\right] , \left[\begin{array}{c}
--1 \\
--3 \\
--4 \\
-4
-\end{array}\right] , \left[\begin{array}{c}
-0 \\
-1 \\
-3 \\
--3
-\end{array}\right] \right\}\)</span> is linearly <em class="emphasis">independent</em>.</div></li>
-<li id="sample-EV4-2-1-1-2-2"><div class="para" id="sample-EV4-2-1-1-2-2-1">The set of vectors <span class="process-math">\(\left\{ \left[\begin{array}{c}
-1 \\
-3 \\
-4 \\
--4
-\end{array}\right] , \left[\begin{array}{c}
--1 \\
--3 \\
--4 \\
-4
-\end{array}\right] , \left[\begin{array}{c}
-0 \\
-1 \\
-3 \\
--3
-\end{array}\right] \right\}\)</span> is linearly <em class="emphasis">dependent</em>.</div></li>
-</ul>
-</li>
-<li id="sample-EV4-2-1-2"><div class="para" id="sample-EV4-2-1-2-1">Explain how to determine which of these statements is true.</div></li>
-</ol>
-<div class="solutions"><details id="sample-EV4-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para logical" id="sample-EV4-3-1">
-<div class="para">The set of vectors <span class="process-math">\(\left\{ \left[\begin{array}{c}
-1 \\
-3 \\
-4 \\
--4
-\end{array}\right] , \left[\begin{array}{c}
--1 \\
--3 \\
--4 \\
-4
-\end{array}\right] , \left[\begin{array}{c}
-0 \\
-1 \\
-3 \\
--3
-\end{array}\right] \right\}\)</span> is linearly independent exactly when the vector equation</div>
+<article class="task exercise-like" id="sample-EV4-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="introduction" id="sample-EV4-2-1"><div class="para logical" id="sample-EV4-2-1-1">
+<div class="para">Consider the set of vectors</div>
 <div class="displaymath process-math">
 \begin{equation*}
-x_1 \left[\begin{array}{c}
-1 \\
-3 \\
-4 \\
--4
-\end{array}\right] +x_2 \left[\begin{array}{c}
--1 \\
--3 \\
--4 \\
-4
-\end{array}\right] +x_3 \left[\begin{array}{c}
-0 \\
-1 \\
-3 \\
--3
-\end{array}\right] =\left[\begin{array}{c}0 \\ 0 \\ 0 \\ 0 \end{array}\right]
+\left\{ \left[\begin{array}{c} -3 \\ 3 \\ 3 \\ -4 \end{array}\right] , 
+\left[\begin{array}{c} 9 \\ -9 \\ -9 \\ 12 \end{array}\right] , 
+\left[\begin{array}{c} 1 \\ -2 \\ -3 \\ 2 \end{array}\right] , 
+\left[\begin{array}{c} -11 \\ 13 \\ 15 \\ -16 \end{array}\right] \right\}\text{.}
 \end{equation*}
 </div>
-<div class="para">has no non-trivial (i.e. nonzero) solutions. The set is linearly <em class="emphasis">dependent</em> when there exists a nontrivial (i.e. nonzero) solution.  We compute</div>
+</div></div>
+<article class="task exercise-like" id="sample-EV4-2-2"><h5 class="heading"><span class="codenumber">(i)</span></h5>
+<div class="para" id="sample-EV4-2-2-1-1">Write a statement involving the solutions of a vector equation that’s equivalent to this claim: “The set of vectors is linearly independent.”</div>
+<div class="solutions"><details id="sample-EV4-2-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="sample-EV4-2-2-2-1">“The vector equation<div class="displaymath process-math">
+\begin{equation*}
+x_1\left[\begin{array}{c} -3 \\ 3 \\ 3 \\ -4 \end{array}\right] + 
+x_2\left[\begin{array}{c} 9 \\ -9 \\ -9 \\ 12 \end{array}\right] + 
+x_3\left[\begin{array}{c} 1 \\ -2 \\ -3 \\ 2 \end{array}\right] + 
+x_4\left[\begin{array}{c} -11 \\ 13 \\ 15 \\ -16 \end{array}\right] =
+\left[\begin{array}{c} 0 \\ 0 \\ 0 \\ 0 \end{array}\right]
+\end{equation*}
+</div>has exactly one solution: <span class="process-math">\(\left[\begin{array}{c} 0 \\ 0 \\ 0 \\ 0 \end{array}\right]\text{.}\)</span>”</div></div></details></div></article><article class="task exercise-like" id="sample-EV4-2-3"><h5 class="heading"><span class="codenumber">(ii)</span></h5>
+<div class="para" id="sample-EV4-2-3-1-1">Explain and demonstrate how to determine whether or not this statement is true.</div>
+<div class="solutions"><details id="sample-EV4-2-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="sample-EV4-2-3-2-1"><span class="process-math">\(\mathrm{RREF}\, \left[\begin{array}{cccc} -3 &amp; 9 &amp; 1 &amp; -11 \\ 3 &amp; -9 &amp; -2 &amp; 13 \\ 3 &amp; -9 &amp; -3 &amp; 15 \\ -4 &amp; 12 &amp; 2 &amp; -16 \end{array}\right] = \left[\begin{array}{cccc} 1 &amp; -3 &amp; 0 &amp; 3 \\ 0 &amp; 0 &amp; 1 &amp; -2 \\ 0 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0 \end{array}\right]\)</span></div> <div class="para" id="sample-EV4-2-3-2-2">Since the RREF matrix has two non-pivot columns (the second and fourth), the solution set has free variables and thus there are more than one solution. This means the set is linearly <em class="emphasis">dependent</em>.</div>
+</div></details></div></article></article><article class="task exercise-like" id="sample-EV4-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="introduction" id="sample-EV4-3-1"><div class="para logical" id="sample-EV4-3-1-1">
+<div class="para">Consider the set of vectors</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\mathrm{RREF}\, \left[\begin{array}{ccc}
-1 &amp; -1 &amp; 0 \\
-3 &amp; -3 &amp; 1 \\
-4 &amp; -4 &amp; 3 \\
--4 &amp; 4 &amp; -3
-\end{array}\right] = \left[\begin{array}{ccc}
-1 &amp; -1 &amp; 0 \\
-0 &amp; 0 &amp; 1 \\
-0 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 0
-\end{array}\right]\text{.}
+\left\{ \left[\begin{array}{c} 1 \\ -1 \\ 0 \\ 1 \end{array}\right] , 
+\left[\begin{array}{c} -3 \\ 4 \\ 3 \\ 1 \end{array}\right] , 
+\left[\begin{array}{c} -5 \\ 5 \\ 1 \\ -2 \end{array}\right] , 
+\left[\begin{array}{c} -15 \\ 17 \\ 8 \\ -1 \end{array}\right] , 
+\left[\begin{array}{c} 2 \\ -5 \\ -7 \\ -4 \end{array}\right] \right\}\text{.}
 \end{equation*}
 </div>
-</div> <div class="para" id="sample-EV4-3-2">Thus, this vector equation has a solution set <span class="process-math">\(\left\{ \left[\begin{array}{c}a \\ a \\ 0 \end{array}\right]\ \middle|\ a \in \mathbb{R}\right\}\text{.}\)</span> Since there are nontrivial solutions, we conclude that the set of vectors <span class="process-math">\(\left\{ \left[\begin{array}{c}
-1 \\
-3 \\
-4 \\
--4
-\end{array}\right] , \left[\begin{array}{c}
--1 \\
--3 \\
--4 \\
-4
-\end{array}\right] , \left[\begin{array}{c}
-0 \\
-1 \\
-3 \\
--3
-\end{array}\right] \right\}\)</span> is linearly <em class="emphasis">dependent</em>.</div>
-</div></details></div></article><article class="example example-like" id="sample-EV5"><h3 class="heading">
+</div></div>
+<article class="task exercise-like" id="sample-EV4-3-2"><h5 class="heading"><span class="codenumber">(i)</span></h5>
+<div class="para" id="sample-EV4-3-2-1-1">Write a statement involving the solutions of a vector equation that’s equivalent to this claim: “The set of vectors is linearly independent.”</div>
+<div class="solutions"><details id="sample-EV4-3-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="sample-EV4-3-2-2-1">“The vector equation<div class="displaymath process-math">
+\begin{equation*}
+x_1\left[\begin{array}{c} 1 \\ -1 \\ 0 \\ 1 \end{array}\right] + 
+x_2\left[\begin{array}{c}  -3 \\ 4 \\ 3 \\ 1 \end{array}\right] + 
+x_3\left[\begin{array}{c} -5 \\ 5 \\ 1 \\ -2 \end{array}\right] + 
+x_4\left[\begin{array}{c} -15 \\ 17 \\ 8 \\ -1 \end{array}\right] +
+x_5\left[\begin{array}{c}  2 \\ -5 \\ -7 \\ -4 \end{array}\right]=
+\left[\begin{array}{c} 0 \\ 0 \\ 0 \\ 0 \end{array}\right]
+\end{equation*}
+</div>has exactly one solution: <span class="process-math">\(\left[\begin{array}{c} 0 \\ 0 \\ 0 \\ 0 \\ 0 \end{array}\right]\text{.}\)</span>”</div></div></details></div></article><article class="task exercise-like" id="sample-EV4-3-3"><h5 class="heading"><span class="codenumber">(ii)</span></h5>
+<div class="para" id="sample-EV4-3-3-1-1">Explain and demonstrate how to determine whether or not this statement is true.</div>
+<div class="solutions">
+<details id="sample-EV4-3-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="sample-EV4-3-3-2-1"><span class="process-math">\(\mathrm{RREF}\, \left[\begin{array}{ccccc} 1 &amp; -3 &amp; -5 &amp; -15 &amp; 2 \\ -1 &amp; 4 &amp; 5 &amp; 17 &amp; -5 \\ 0 &amp; 3 &amp; 1 &amp; 8 &amp; -7 \\ 1 &amp; 1 &amp; -2 &amp; -1 &amp; -4 \end{array}\right] = \left[\begin{array}{ccccc} 1 &amp; 0 &amp; 0 &amp; 1 &amp; 3 \\ 0 &amp; 1 &amp; 0 &amp; 2 &amp; -3 \\ 0 &amp; 0 &amp; 1 &amp; 2 &amp; 2 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \end{array}\right]\)</span></div> <div class="para" id="sample-EV4-3-3-2-2">Since the RREF matrix has two non-pivot columns (the fourth and fifth), the solution set has free variables and thus there are more than one solution. This means the set is linearly <em class="emphasis">dependent</em>.</div>
+</div></details><details id="sample-EV4-3-3-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="sample-EV4-3-3-3-1">Since these vectors are from <span class="process-math">\(\mathbb R^4\)</span> and there are more than <span class="process-math">\(4\)</span> vectors, the equation must have infinitely-many solutions and the set must be linearly <em class="emphasis">dependent</em>.</div></div></details>
+</div></article></article><article class="task exercise-like" id="sample-EV4-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="introduction" id="sample-EV4-4-1"><div class="para logical" id="sample-EV4-4-1-1">
+<div class="para">Consider the set of vectors</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\left\{ \left[\begin{array}{c} -3 \\ 2 \\ 1 \\ 0 \end{array}\right] , 
+\left[\begin{array}{c} -2 \\ 1 \\ 0 \\ 0 \end{array}\right] , 
+\left[\begin{array}{c} 5 \\ -5 \\ -4 \\ -2 \end{array}\right] \right\}
+\end{equation*}
+</div>
+</div></div>
+<article class="task exercise-like" id="sample-EV4-4-2"><h5 class="heading"><span class="codenumber">(i)</span></h5>
+<div class="para" id="sample-EV4-4-2-1-1">Write a statement involving the solutions of a vector equation that’s equivalent to this claim: “The set of vectors is linearly independent.”</div>
+<div class="solutions"><details id="sample-EV4-4-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="sample-EV4-4-2-2-1">“The vector equation<div class="displaymath process-math">
+\begin{equation*}
+x_1\left[\begin{array}{c} -3 \\ 2 \\ 1 \\ 0 \end{array}\right] + 
+x_2\left[\begin{array}{c} -2 \\ 1 \\ 0 \\ 0 \end{array}\right] + 
+x_3\left[\begin{array}{c} 5 \\ -5 \\ -4 \\ -2 \end{array}\right] =
+\left[\begin{array}{c} 0 \\ 0 \\ 0 \\ 0 \end{array}\right]
+\end{equation*}
+</div>has exactly one solution: <span class="process-math">\(\left[\begin{array}{c} 0 \\ 0 \\ 0 \end{array}\right]\text{.}\)</span>”</div></div></details></div></article><article class="task exercise-like" id="sample-EV4-4-3"><h5 class="heading"><span class="codenumber">(ii)</span></h5>
+<div class="para" id="sample-EV4-4-3-1-1">Explain and demonstrate how to determine whether or not this statement is true.</div>
+<div class="solutions"><details id="sample-EV4-4-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="sample-EV4-4-3-2-1"><span class="process-math">\(\mathrm{RREF}\, \left[\begin{array}{ccc} -3 &amp; -2 &amp; 5 \\ 2 &amp; 1 &amp; -5 \\ 1 &amp; 0 &amp; -4 \\ 0 &amp; 0 &amp; -2 \end{array}\right] = \left[\begin{array}{ccc} 1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1 \\ 0 &amp; 0 &amp; 0 \end{array}\right]\)</span></div> <div class="para" id="sample-EV4-4-3-2-2">Since the RREF matrix has all pivot columns, the solution set lacks free variables and thus there is exactly one solution. This means the set is linearly <em class="emphasis">independent</em>.</div>
+</div></details></div></article></article></article><article class="example example-like" id="sample-EV5"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">C.1.9</span><span class="period">.</span><span class="space"> </span><span class="title">EV5.</span>
 </h3>
 <ol class="decimal" id="sample-EV5-2-1">

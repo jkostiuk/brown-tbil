@@ -14,87 +14,88 @@
 <article class="example example-like"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">C.1.7</span><span class="period">.</span><span class="space"> </span><span class="title">EV3.</span>
 </h3>
+<div class="introduction"><div class="para">Answer the following questions about Euclidean subspaces.</div></div>
+<article class="task exercise-like"><h4 class="heading"><span class="codenumber">(a)</span></h4>
 <div class="para logical">
-<div class="para">Consider the following two sets of Euclidean vectors.</div>
+<div class="para">Consider the following subsets of Euclidean space <span class="process-math">\(\mathbb R^4\)</span> defined by</div>
 <div class="displaymath process-math">
 \begin{equation*}
-W = \setBuilder{\left[\begin{array}{c} x \\ y \\ z \\ w \end{array}\right] }{x+y=3z+2w}
-\hspace{3em}
-U = \setBuilder{\left[\begin{array}{c} x \\ y \\ z \\ w \end{array}\right]}{x+y=3z+w^2}
+U=\left\{ \left[\begin{array}{c} x \\ y \\ z \\ w \end{array}\right] \middle| 
+y^{2} - 7 \, z^{2} = x \right\} \hspace{1em} \text{and} 
+\hspace{1em} W=\left\{ \left[\begin{array}{c} x \\ y \\ z \\ w \end{array}\right] \middle| 
+-5 \, w - 7 \, x - y = -7 \, z \right\}
 \end{equation*}
 </div>
-<div class="para">Explain why one of these sets is a subspace of <span class="process-math">\(\IR^3\text{,}\)</span> and why the other is not.</div>
+<div class="para">Without writing a proof, explain why only one of these subsets is likely to be a subspace.</div>
 </div>
-<div class="solutions"><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para">To show that <span class="process-math">\(W\)</span> is a subspace, first note that it is nonempty as <span class="process-math">\(\left[\begin{array}{c} 0 \\ 0 \\ 0 \\ 0 \end{array}\right] \in W\text{,}\)</span> since <span class="process-math">\(0+0=3(0)+3(0)\text{.}\)</span> Then let <span class="process-math">\(\vec v=\left[\begin{array}{c} x_1 \\y_1 \\ z_1 \\ w_1 \end{array}\right]\in W\)</span> and <span class="process-math">\(\vec w=\left[\begin{array}{c} x_2 \\y_2 \\ z_2 \\ w_2 \end{array}\right] \in W
-\text{,}\)</span> so we know that <span class="process-math">\(x_1+y_1=3z_1+2w_1\)</span> and <span class="process-math">\(x_2+y_2=3z_2+2w_2\text{.}\)</span>
-</div> <div class="para logical">
-<div class="para">Consider</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\left[\begin{array}{c} x_1 \\y_1 \\ z_1 \\ w_1\end{array}\right]
-+\left[\begin{array}{c} x_2 \\y_2 \\ z_2 \\ w_2 \end{array}\right]
-=\left[\begin{array}{c} x_1+x_2 \\y_1+y_2 \\ z_1+z_2 \\w_1+w_2 \end{array}\right]
-.
-\end{equation*}
-</div>
-<div class="para">To see if <span class="process-math">\(\vec{v}+\vec{w} \in W\text{,}\)</span> we need to check if <span class="process-math">\((x_1+x_2)+(y_1+y_2) = 3(z_1+z_2)+2(w_1+w_2)\text{.}\)</span> We compute</div>
-<div class="displaymath process-math">
-\begin{align*}
-(x_1+x_2)+(y_1+y_2) &amp;= (x_1+y_1)+(x_2+y_2) &amp;\text{by regrouping}\\
-&amp;= (3z_1+2w_1)+(3z_2+2w_2) &amp; \text{since }\\
-&amp;=3(z_1+z_2)+2(w_1+w_2) &amp; \text{by regrouping.}
-\end{align*}
-</div>
-<div class="para">Thus <span class="process-math">\(\vec v+\vec w\in W\text{,}\)</span> so <span class="process-math">\(W\)</span> is closed under vector addition.</div>
-</div> <div class="para logical">
-<div class="para">Now consider</div>
-<div class="displaymath process-math">
-\begin{equation*}
-c\vec v
-=\left[\begin{array}{c} cx_1 \\cy_1 \\ cz_1 \\ cw_1 \end{array}\right]
-.
-\end{equation*}
-</div>
-<div class="para">Similarly, to check that <span class="process-math">\(c\vec{v} \in W\text{,}\)</span> we need to check if <span class="process-math">\(cx_1+cy_1=3(cz_1)+2(cw_1)\text{,}\)</span> so we compute</div>
-<div class="displaymath process-math">
-\begin{align*}
-cx_1+cy_1 &amp; = c(x_1+y_1) &amp;\text{by factoring}\\
-&amp;=c(3z_1+2w_1) &amp;\text{since }\\
-&amp;=3(cz_1)+2(cw_1) &amp;\text{by regrouping}
-\end{align*}
-</div>
-<div class="para">and we see that <span class="process-math">\(c\vec v\in W\text{,}\)</span> so <span class="process-math">\(W\)</span> is closed under scalar multiplication. Therefore <span class="process-math">\(W\)</span> is a subspace of <span class="process-math">\(\IR^3\text{.}\)</span>
-</div>
-</div> <div class="para">Now, to show <span class="process-math">\(U\)</span> is not a subspace, we will show that it is not closed under vector addition.</div> <ul class="disc" id="sample-EV3-3-5">
-<li>
-<div class="para">(Solution Method 1) Now let <span class="process-math">\(\vec v=\left[\begin{array}{c} x_1 \\y_1 \\ z_1 \\ w_1 \end{array}\right]\in U\)</span> and <span class="process-math">\(\vec w=\left[\begin{array}{c} x_2 \\y_2 \\ z_2 \\ w_2 \end{array}\right] \in U
-\text{,}\)</span> so we know that <span class="process-math">\(x_1+y_1=3z_1+w_1^2\)</span> and <span class="process-math">\(x_2+y_2=3z_2+w_2^2\text{.}\)</span>
-</div>
+<div class="solutions"><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para">
+<span class="process-math">\(W\)</span> appears to be a subspace as its equation is a linear combination of variables and constant scalars, and <span class="process-math">\(U\)</span> is likely not due to its equation having squared terms.</div></div></details></div></article><article class="task exercise-like"><h4 class="heading"><span class="codenumber">(b)</span></h4>
 <div class="para logical">
-<div class="para">Consider</div>
+<div class="para">Consider the following subset of Euclidean space <span class="process-math">\(\mathbb R^3\)</span>
+</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\vec{v}+\vec{w}=
-\left[\begin{array}{c} x_1 \\y_1 \\ z_1 \\ w_1\end{array}\right]
-+\left[\begin{array}{c} x_2 \\y_2 \\ z_2 \\ w_2 \end{array}\right]
-=\left[\begin{array}{c} x_1+x_2 \\y_1+y_2 \\ z_1+z_2 \\w_1+w_2 \end{array}\right]
-.
+Q=\left\{ \left[\begin{array}{c} x \\ y \\ z \end{array}\right] \middle| 
+0 = 5 \, y^{2} - 5 \, x + 3 \, z \right\}
 \end{equation*}
 </div>
-<div class="para">To see if <span class="process-math">\(\vec{v}+\vec{w} \in U\text{,}\)</span> we need to check if <span class="process-math">\((x_1+x_2)+(y_1+y_2) = 3(z_1+z_2)+(w_1+w_2)^2\text{.}\)</span> We compute</div>
+<div class="para">Prove that <span class="process-math">\(Q\)</span> <em class="emphasis">is not</em> a subspace.</div>
+</div>
+<div class="solutions"><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical">
+<div class="para">Note that <span class="process-math">\(\left[\begin{array}{c} 0 \\ 3 \\ -15 \end{array}\right]\)</span> belongs to <span class="process-math">\(Q\text{,}\)</span> since</div>
+<div class="displaymath process-math">
+\begin{equation*}
+5(3)^2-5(0)+3(-15)=45-45=0\text{,}
+\end{equation*}
+</div>
+<div class="para">but <span class="process-math">\(2\left[\begin{array}{c} 0 \\ 3 \\ -15 \end{array}\right]=
+\left[\begin{array}{c} 0 \\ 6 \\ -30 \end{array}\right]\)</span> does not, since</div>
+<div class="displaymath process-math">
+\begin{equation*}
+5(6)^2-5(0)+3(-30)=180-90=90\not=0\text{.}
+\end{equation*}
+</div>
+</div></div></details></div></article><article class="task exercise-like"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para logical">
+<div class="para">Consider the following subset of Euclidean space <span class="process-math">\(\mathbb R^3\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+R=\left\{ \left[\begin{array}{c} x \\ y \\ z \end{array}\right] \middle| 
+5 \, x - 5 \, y = -4 \, z \right\}
+\end{equation*}
+</div>
+<div class="para">Prove that <span class="process-math">\(R\)</span> <em class="emphasis">is</em> a subspace.</div>
+</div>
+<div class="solutions"><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical"><ul class="disc" id="sample-EV3-5-2-1-1">
+<li><div class="para">First, note that <span class="process-math">\(\left[\begin{array}{c} 0 \\ 0 \\ 0 \end{array}\right]\in R\)</span> since <span class="process-math">\(5(0)-5(0)=0\)</span> and <span class="process-math">\(-4(0)=0\)</span> as well.</div></li>
+<li><div class="para logical">
+<div class="para">Let <span class="process-math">\(\left[\begin{array}{c} x \\ y \\ z \end{array}\right]\in R\)</span> so that <span class="process-math">\(5 \, x - 5 \, y = -4 \, z\text{,}\)</span> and let <span class="process-math">\(\left[\begin{array}{c} a \\ b \\ c \end{array}\right]\in R\)</span> so that <span class="process-math">\(5 \, a - 5 \, b = -4 \, c\text{.}\)</span> We may then compute</div>
 <div class="displaymath process-math">
 \begin{align*}
-(x_1+x_2)+(y_1+y_2) &amp;= (x_1+y_1)+(x_2+y_2) &amp;\text{by regrouping}\\
-&amp;= (3z_1+w_1^2)+(3z_2+w_2^2) &amp;\text{since }\\
-&amp;=3(z_1+z_2)+(w_1^2+w_2^2) &amp;\text{by regrouping}
+5(x+a)-5(y+b) &amp;= 5x+5a-5y-5b\\
+&amp;= (5x-5y)+(5a-5b)\\
+&amp;= (-4z)+(-4c)\\
+&amp;= -4(z+c)
 \end{align*}
 </div>
-<div class="para">and thus <span class="process-math">\(\vec v+\vec w\in U\)</span> \textbf{only when} <span class="process-math">\(w_1^2+w_2^2=(w_1+w_2)^2\text{.}\)</span> Since this is not true in general, <span class="process-math">\(U\)</span> is not closed under vector addition, and thus cannot be a subspace.</div>
+<div class="para">So <span class="process-math">\(5(x+a)-5(y+b) = -4(z+c)\)</span> and therefore <span class="process-math">\(\left[\begin{array}{c} x \\ y \\ z \end{array}\right]+
+\left[\begin{array}{c} a \\ b \\ c \end{array}\right]=
+\left[\begin{array}{c} x+a \\ y+b \\ z+c \end{array}\right]\in R\text{,}\)</span> showing <span class="process-math">\(R\)</span> is closed under addition.</div>
+</div></li>
+<li><div class="para logical">
+<div class="para">Let <span class="process-math">\(\left[\begin{array}{c} x \\ y \\ z \end{array}\right]\in R\)</span> so that <span class="process-math">\(5 \, x - 5 \, y = -4 \, z\text{,}\)</span> and let <span class="process-math">\(k\in\mathbb R\)</span> be a scalar. We may then compute</div>
+<div class="displaymath process-math">
+\begin{align*}
+5x - 5y &amp;= -4z\\
+\Rightarrow k[5x-5y]&amp;= k[-4z]\\
+\Rightarrow 5kx-5ky &amp;= -4kz\\
+\Rightarrow 5(kx)-5(ky)&amp;= -4(kz)
+\end{align*}
 </div>
-</li>
-<li><div class="para">(Solution Method 2) Note that the vector <span class="process-math">\(\vec v=\left[\begin{array}{c} 0\\1\\0\\1\end{array}\right] \)</span> belongs to <span class="process-math">\(U\)</span> since <span class="process-math">\(0+1=3(0)+1^2\text{.}\)</span> However, the vector <span class="process-math">\(2\vec v=\left[\begin{array}{c} 0\\2\\0\\2\end{array}\right] \)</span> does not belong to <span class="process-math">\(U\)</span> since <span class="process-math">\(0+2\not=3(0)+2^2\text{.}\)</span> Therefore <span class="process-math">\(U\)</span> is not closed under scalar multiplication, and thus is not a subspace.</div></li>
-</ul>
-</div></details></div></article><span class="incontext"><a class="internal" href="sample-exercises.html#sample-EV3">in-context</a></span>
+<div class="para">and therefore <span class="process-math">\(k\left[\begin{array}{c} x \\ y \\ z \end{array}\right]
+=\left[\begin{array}{c} kx \\ ky \\ kz \end{array}\right]\in R\text{,}\)</span> showing <span class="process-math">\(R\)</span> is closed under scalar multiplication.</div>
+</div></li>
+</ul></div></div></details></div></article></article><span class="incontext"><a class="internal" href="sample-exercises.html#sample-EV3">in-context</a></span>
 </body>
 </html>
