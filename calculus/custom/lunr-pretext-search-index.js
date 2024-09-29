@@ -5605,7 +5605,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "5.8",
   "title": "Improper Integrals (TI8)",
-  "body": " Improper Integrals (TI8)     I can compute improper integrals.      Activities   Recall . Compute the following definite integrals.       What do you notice about as approached 0 in ?   approaches .  approaches a finite constant greater than .  approaches .  There is not enough information.     Compute the following definite integrals, again using .       What do you notice about as approached in ?   approaches .  approaches a finite constant greater than .  approaches .  There is not enough information.     Recall . Compute the following definite integrals.       What do you notice about the integral as approached 0 in ?  approaches .  approaches a finite constant greater than .  approaches .  There is not enough information.   How does this compare to what you found in ?    Compute the following definite integrals using .       What do you notice about the integral as approached in ?  approaches .  approaches a finite constant greater than .  approaches .  There is not enough information.   How does this compare to what you found in ?    For a function and a constant , we let denote . If this limit is a defined real number, then we say is convergent . Otherwise, it is divergent .  Similarly,    Which of these limits is equal to ?      All of these.     Given the result of , what is ?          Does converge or diverge?   Converges because converges.  Diverges because diverges.  Converges because converges.  Diverges because diverges.     For a function with a vertical asymptote at , we let denote .  For a function with a vertical asymptote at , we let denote .    Which of these limits is equal to ?      All of these.     Given the this result, what is ?          Does converge or diverge?   Converges because converges.  Diverges because diverges.  Converges because converges.  Diverges because diverges.      Explain and demonstrate how to write each of the following improper integrals as a limit, and why this limit converges or diverges.                          Suppose that and . Applying the integration power rule gives us the indefinite integral .     If , which of the following statements must be true? Select all that apply.     converges.  diverges.   If , which of the following statements must be true? Select all that apply.     converges.  diverges.     If , which of the following statements must be true?  converges.  diverges.   If , which of the following statements must be true?  converges.  diverges.     Consider when . Then and .  What can we conclude about ?  converges.  diverges.  There is not enough information to determine whether this integral converges or diverges.   What can we conclude about ?  converges.  diverges.  There is not enough information to determine whether this integral converges or diverges.      Let .   converges if and only if .     converges if and only if .       Consider the plots of where .   Plots of   Plots of positive functions f(x), g(x) where f(x) is an upper bound of g(x).     If is convergent, what can we say about ?  and are both convergent.  and are both divergent.  Whether or not and are convergent or divergent cannot be determined.  is convergent and is divergent.  is convergent and could be either convergent or divergent.      Consider the plots of where .  Plots of   Plots of positive functions f(x), g(x) where f(x) is an upper bound of g(x).    If is divergent, what can we say about ?  and are both convergent.  and are both divergent.  Whether or not and are convergent or divergent cannot be determined.  could be either convergent or divergent and is divergent.  is convergent and is divergent.      Consider the plots of where .  Plots of   Plots of positive functions f(x), g(x) and h(x).    If is convergent, what can we say about and ?  and are both convergent.  and are both divergent.  Whether or not and are convergent or divergent cannot be determined.  is convergent and is divergent.  is convergent and can either be convergent or divergent.      Consider the plots of where .  Plots of   Plots of positive functions f(x), g(x) and h(x).    If is divergent, what can we say about and ?  and are both convergent.  and are both divergent.  Whether or not and are convergent or divergent cannot be determined.  can be either convergent or divergent and is divergent.  is convergent and is divergent.      Let be functions such that for , . Then . In particular:  If converges, so does the smaller .  If diverges, so does the bigger .       Compare to one of the following functions where and use this to determine if is convergent or divergent.            Comparing to which of the following functions where allows you to determine that converges?           Find .  Which of the following is true about ?  is convergent.  is divergent.  More information is needed.      Videos      Video: I can compute improper integrals,       Video: I can compute improper integrals,     Exercises  Exercises available at     "
+  "body": " Improper Integrals (TI8)     I can compute improper integrals.      Activities   Recall . Compute the following definite integrals.       What do you notice about as approached 0 in ?   approaches .  approaches a finite constant greater than .  approaches .  There is not enough information.     Compute the following definite integrals, again using .       What do you notice about as approached in ?   approaches .  approaches a finite constant greater than .  approaches .  There is not enough information.     Recall . Compute the following definite integrals.       What do you notice about the integral as approached 0 in ?  approaches .  approaches a finite constant greater than .  approaches .  There is not enough information.   How does this compare to what you found in ?    Compute the following definite integrals using .       What do you notice about the integral as approached in ?  approaches .  approaches a finite constant greater than .  approaches .  There is not enough information.   How does this compare to what you found in ?    For a function and a constant , we let denote . If this limit is a defined real number, then we say is convergent . Otherwise, it is divergent .  Similarly,    Which of these limits is equal to ?      All of these.     Given the result of , what is ?          Does converge or diverge?   Converges because converges.  Diverges because diverges.  Converges because converges.  Diverges because diverges.     For a function with a vertical asymptote at , we let denote .  For a function with a vertical asymptote at , we let denote .    Which of these limits is equal to ?      All of these.     Given the this result, what is ?          Does converge or diverge?   Converges because converges.  Diverges because diverges.  Converges because converges.  Diverges because diverges.      Explain and demonstrate how to write each of the following improper integrals as a limit, and why this limit converges or diverges.                          Suppose that and . Applying the integration power rule gives us the indefinite integral .       Let .   converges if and only if .     converges if and only if .      Suppose first that . To evaluate , we consider the limit: Now, if , then is:   positive    negative   Accordingly, the limit :   does not exist as a finite number    is equal to    On the other hand, if , then is:   positive    negative   In this case, the limit :   does not exist as a finite number    is equal to    Summing up, we have shown that the integral converges when and diverges when .  Using similar logic, but this time consider limits as , one can show that the integral diverges when and converges when .  Finally, when , we have . In this case, since both and it follows that both integrals and diverge.     Consider the plots of where .   Plots of   Plots of positive functions f(x), g(x) where f(x) is an upper bound of g(x).     If is convergent, what can we say about ?  and are both convergent.  and are both divergent.  Whether or not and are convergent or divergent cannot be determined.  is convergent and is divergent.  is convergent and could be either convergent or divergent.      Consider the plots of where .  Plots of   Plots of positive functions f(x), g(x) where f(x) is an upper bound of g(x).    If is divergent, what can we say about ?  and are both convergent.  and are both divergent.  Whether or not and are convergent or divergent cannot be determined.  could be either convergent or divergent and is divergent.  is convergent and is divergent.      Consider the plots of where .  Plots of   Plots of positive functions f(x), g(x) and h(x).    If is convergent, what can we say about and ?  and are both convergent.  and are both divergent.  Whether or not and are convergent or divergent cannot be determined.  is convergent and is divergent.  is convergent and can either be convergent or divergent.      Consider the plots of where .  Plots of   Plots of positive functions f(x), g(x) and h(x).    If is divergent, what can we say about and ?  and are both convergent.  and are both divergent.  Whether or not and are convergent or divergent cannot be determined.  can be either convergent or divergent and is divergent.  is convergent and is divergent.      Let be functions such that for , . Then . In particular:  If converges, so does the smaller .  If diverges, so does the bigger .       Compare to one of the following functions where and use this to determine if is convergent or divergent.             Videos      Video: I can compute improper integrals,       Video: I can compute improper integrals,     Exercises  Exercises available at     "
 },
 {
   "id": "TI8-2",
@@ -5779,47 +5779,20 @@ var ptx_lunr_docs = [
   "body": "  Suppose that and . Applying the integration power rule gives us the indefinite integral .   "
 },
 {
-  "id": "activity-TI8prule1",
-  "level": "2",
-  "url": "TI8.html#activity-TI8prule1",
-  "type": "Activity",
-  "number": "5.8.19",
-  "title": "",
-  "body": " If , which of the following statements must be true? Select all that apply.     converges.  diverges.   If , which of the following statements must be true? Select all that apply.     converges.  diverges.   "
-},
-{
-  "id": "activity-TI8prule2",
-  "level": "2",
-  "url": "TI8.html#activity-TI8prule2",
-  "type": "Activity",
-  "number": "5.8.20",
-  "title": "",
-  "body": " If , which of the following statements must be true?  converges.  diverges.   If , which of the following statements must be true?  converges.  diverges.   "
-},
-{
-  "id": "activity-TI8prule3",
-  "level": "2",
-  "url": "TI8.html#activity-TI8prule3",
-  "type": "Activity",
-  "number": "5.8.21",
-  "title": "",
-  "body": " Consider when . Then and .  What can we conclude about ?  converges.  diverges.  There is not enough information to determine whether this integral converges or diverges.   What can we conclude about ?  converges.  diverges.  There is not enough information to determine whether this integral converges or diverges.   "
-},
-{
   "id": "fact-TI8prule",
   "level": "2",
   "url": "TI8.html#fact-TI8prule",
   "type": "Fact",
-  "number": "5.8.22",
+  "number": "5.8.19",
   "title": "",
-  "body": "  Let .   converges if and only if .     converges if and only if .     "
+  "body": "  Let .   converges if and only if .     converges if and only if .      Suppose first that . To evaluate , we consider the limit: Now, if , then is:   positive    negative   Accordingly, the limit :   does not exist as a finite number    is equal to    On the other hand, if , then is:   positive    negative   In this case, the limit :   does not exist as a finite number    is equal to    Summing up, we have shown that the integral converges when and diverges when .  Using similar logic, but this time consider limits as , one can show that the integral diverges when and converges when .  Finally, when , we have . In this case, since both and it follows that both integrals and diverge.   "
 },
 {
   "id": "activity-TI8finfinitybounded",
   "level": "2",
   "url": "TI8.html#activity-TI8finfinitybounded",
   "type": "Activity",
-  "number": "5.8.23",
+  "number": "5.8.20",
   "title": "",
   "body": " Consider the plots of where .   Plots of   Plots of positive functions f(x), g(x) where f(x) is an upper bound of g(x).     If is convergent, what can we say about ?  and are both convergent.  and are both divergent.  Whether or not and are convergent or divergent cannot be determined.  is convergent and is divergent.  is convergent and could be either convergent or divergent.    "
 },
@@ -5828,7 +5801,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "TI8.html#activity-TI8finfinityunbounded",
   "type": "Activity",
-  "number": "5.8.24",
+  "number": "5.8.21",
   "title": "",
   "body": " Consider the plots of where .  Plots of   Plots of positive functions f(x), g(x) where f(x) is an upper bound of g(x).    If is divergent, what can we say about ?  and are both convergent.  and are both divergent.  Whether or not and are convergent or divergent cannot be determined.  could be either convergent or divergent and is divergent.  is convergent and is divergent.    "
 },
@@ -5837,7 +5810,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "TI8.html#activity-TI8zerobounded",
   "type": "Activity",
-  "number": "5.8.25",
+  "number": "5.8.22",
   "title": "",
   "body": " Consider the plots of where .  Plots of   Plots of positive functions f(x), g(x) and h(x).    If is convergent, what can we say about and ?  and are both convergent.  and are both divergent.  Whether or not and are convergent or divergent cannot be determined.  is convergent and is divergent.  is convergent and can either be convergent or divergent.    "
 },
@@ -5846,7 +5819,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "TI8.html#activity-TI8zerounbounded",
   "type": "Activity",
-  "number": "5.8.26",
+  "number": "5.8.23",
   "title": "",
   "body": " Consider the plots of where .  Plots of   Plots of positive functions f(x), g(x) and h(x).    If is divergent, what can we say about and ?  and are both convergent.  and are both divergent.  Whether or not and are convergent or divergent cannot be determined.  can be either convergent or divergent and is divergent.  is convergent and is divergent.    "
 },
@@ -5855,7 +5828,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "TI8.html#fact-TI8Comparison",
   "type": "Fact",
-  "number": "5.8.27",
+  "number": "5.8.24",
   "title": "",
   "body": " Let be functions such that for , . Then . In particular:  If converges, so does the smaller .  If diverges, so does the bigger .    "
 },
@@ -5864,27 +5837,9 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "TI8.html#activity-TI8comparison",
   "type": "Activity",
-  "number": "5.8.28",
+  "number": "5.8.25",
   "title": "",
   "body": "  Compare to one of the following functions where and use this to determine if is convergent or divergent.         "
-},
-{
-  "id": "activity-TI8comparison2",
-  "level": "2",
-  "url": "TI8.html#activity-TI8comparison2",
-  "type": "Activity",
-  "number": "5.8.29",
-  "title": "",
-  "body": "  Comparing to which of the following functions where allows you to determine that converges?         "
-},
-{
-  "id": "activity-T8Fcos",
-  "level": "2",
-  "url": "TI8.html#activity-T8Fcos",
-  "type": "Activity",
-  "number": "5.8.30",
-  "title": "",
-  "body": " Find .  Which of the following is true about ?  is convergent.  is divergent.  More information is needed.   "
 },
 {
   "id": "TI8-4-2",
