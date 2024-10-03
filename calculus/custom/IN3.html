@@ -14,7 +14,7 @@
 <meta property="og:type" content="book">
 <meta property="book:title" content="Calculus for Team-Based Inquiry Learning">
 <meta property="book:author" content="TBIL Community">
-<script>
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>
 var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
   "tex": {
@@ -41,7 +41,24 @@ window.MathJax = {
   },
   "options": {
     "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
-    "processHtmlClass": "process-math"
+    "processHtmlClass": "process-math",
+    "renderActions": {
+      "findScript": [
+        10,
+        function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        },
+        ""
+      ]
+    }
   },
   "chtml": {
     "scale": 0.98,
@@ -1706,9 +1723,9 @@ window.MathJax = {
 #pset-intro-4-3-2 { counter-set: pset-intro-4-3-2 0; }
 #pset-intro-4-3-2 > li::marker { content: ""counter(pset-intro-4-3-2,decimal)"."; }
 #pset-intro-4-3-2 > li { counter-increment: pset-intro-4-3-2; }
-#lcB { counter-set: lcB 0; }
-#lcB > li::marker { content: ""counter(lcB,lower-alpha)"."; }
-#lcB > li { counter-increment: lcB; }
+#integral-table-2-1 { counter-set: integral-table-2-1 0; }
+#integral-table-2-1 > li::marker { content: ""counter(integral-table-2-1,lower-alpha)"."; }
+#integral-table-2-1 > li { counter-increment: integral-table-2-1; }
 #trig-table-2 { counter-set: trig-table-2 0; }
 #trig-table-2 > li::marker { content: ""counter(trig-table-2,lower-alpha)"."; }
 #trig-table-2 > li { counter-increment: trig-table-2; }
@@ -2386,6 +2403,7 @@ window.MathJax = {
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="pset-intro.html" class="internal"><span class="codenumber">A.1</span> <span class="title">Problem Set Success Guide</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-pset1-calc.html" class="internal"><span class="codenumber">A.2</span> <span class="title">Problem Set 1</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-pset2-calc.html" class="internal"><span class="codenumber">A.3</span> <span class="title">Problem Set 2</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-pset3-calc.html" class="internal"><span class="codenumber">A.4</span> <span class="title">Problem Set 3</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-appendix"><div class="toc-title-box"><a href="integral-table.html" class="internal"><span class="codenumber">B</span> <span class="title">A Short Table of Integrals</span></a></div></li>
@@ -2403,7 +2421,7 @@ window.MathJax = {
 <article class="definition definition-like" id="def-antiderivative"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">4.3.1</span><span class="period">.</span>
 </h4>
-<div class="para" id="ctJ" data-permid="ctJ">If <span class="process-math">\(g\)</span> and <span class="process-math">\(G\)</span> are functions such that <span class="process-math">\(G' = g\text{,}\)</span> we say that <span class="process-math">\(G\)</span> is an <dfn class="terminology">antiderivative</dfn>  of <span class="process-math">\(g\text{.}\)</span>
+<div class="para" id="def-antiderivative-1-1">If <span class="process-math">\(g\)</span> and <span class="process-math">\(G\)</span> are functions such that <span class="process-math">\(G' = g\text{,}\)</span> we say that <span class="process-math">\(G\)</span> is an <dfn class="terminology">antiderivative</dfn>  of <span class="process-math">\(g\text{.}\)</span>
 </div> <div class="para logical" id="def-antiderivative-1-2">
 <div class="para">The collection of all antiderivatives of <span class="process-math">\(g\)</span> is called the <dfn class="terminology">general antiderivative</dfn> or <dfn class="terminology">indefinite integral</dfn>, denoted by <span class="process-math">\(\int g(x)\,dx\text{.}\)</span> All antiderivatives differ by a constant <span class="process-math">\(C\)</span> (since <span class="process-math">\(\frac{d}{dx}[C]=0\)</span>), so we may write:</div>
 <div class="displaymath process-math">
@@ -2432,7 +2450,7 @@ window.MathJax = {
 </ol></article><article class="remark remark-like" id="IN3-3-5"><h4 class="heading">
 <span class="type">Remark</span><span class="space"> </span><span class="codenumber">4.3.4</span><span class="period">.</span>
 </h4>
-<div class="para logical" id="cfB" data-permid="cfB">
+<div class="para logical" id="IN3-3-5-1">
 <div class="para">We now note that whenever we know the derivative of a function, we have a <em class="emphasis">function-derivative pair</em>, so we also know the antiderivative of a function. For instance, in <a href="IN3.html#elem-antider-intro" class="xref" data-knowl="./knowl/xref/elem-antider-intro.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 4.3.2">Activity 4.3.2</a> we could use our prior knowledge that</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/elem-antider-intro.html">
 \begin{equation*}
@@ -2440,11 +2458,11 @@ window.MathJax = {
 \end{equation*}
 </div>
 <div class="para">to determine that <span class="process-math">\(F(x) = \sin(x)\)</span> is an antiderivative of <span class="process-math">\(f(x) = \cos(x)\text{.}\)</span> <span class="process-math">\(F\)</span> and <span class="process-math">\(f\)</span> together form a function-derivative pair. Every elementary derivative rule leads us to such a pair, and thus to a known antiderivative.</div>
-</div> <div class="para" id="MWD" data-permid="MWD">In the following activity, we work to build a list of basic functions whose antiderivatives we already know.</div></article><article class="activity project-like" id="ovP" data-permid="ovP"><h4 class="heading">
+</div> <div class="para" id="IN3-3-5-2">In the following activity, we work to build a list of basic functions whose antiderivatives we already know.</div></article><article class="activity project-like" id="act-4-4-2"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.3.5</span><span class="period">.</span>
 </h4>
-<div class="para" id="yUU" data-permid="yUU">Use your knowledge of derivatives of basic functions to complete <a href="IN3.html#PTf" class="xref" data-knowl="./knowl/xref/T-4-4-Act2.html" data-reveal-label="Reveal" data-close-label="Close" title="Table 90: Familiar basic functions and their antiderivatives.">Table 90</a> of antiderivatives. For each entry, your task is to find a function <span class="process-math">\(F\)</span> whose derivative is the given function <span class="process-math">\(f\text{.}\)</span>
-</div> <figure class="table table-like" id="PTf" data-permid="PTf"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">90<span class="period">.</span></span><span class="space"> </span>Familiar basic functions and their antiderivatives.</figcaption><div class="tabular-box natural-width"><table class="tabular" id="wao">
+<div class="para" id="act-4-4-2-1-1">Use your knowledge of derivatives of basic functions to complete <a href="IN3.html#T-4-4-Act2" class="xref" data-knowl="./knowl/xref/T-4-4-Act2.html" data-reveal-label="Reveal" data-close-label="Close" title="Table 90: Familiar basic functions and their antiderivatives.">Table 90</a> of antiderivatives. For each entry, your task is to find a function <span class="process-math">\(F\)</span> whose derivative is the given function <span class="process-math">\(f\text{.}\)</span>
+</div> <figure class="table table-like" id="T-4-4-Act2"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">90<span class="period">.</span></span><span class="space"> </span>Familiar basic functions and their antiderivatives.</figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr>
 <td class="l m b2 r0 l0 t1 lines">given function, <span class="process-math">\(f(x)\)</span>
 </td>

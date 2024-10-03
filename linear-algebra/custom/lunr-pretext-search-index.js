@@ -4654,6 +4654,60 @@ var ptx_lunr_docs = [
   "body": " (Problem 5)   Let be a subspace. If is orthogonal to all vectors in , we will say that is orthogonal to . The set of all vectors that are orthogonal to is called the orthogonal complement of and is denoted by ; in other words, we have   For example, if , then lives in since it's perpendicular to any multiple of , but the vector does not live in . The set is always a subspace, as you will prove below.   Prove that is always a subspace of .    If , explain why saying that is the same as saying that is orthogonal to each of the vectors individually.    Suppose that . Find a set of vectors that spans .    "
 },
 {
+  "id": "sec-pset3-linear",
+  "level": "1",
+  "url": "sec-pset3-linear.html",
+  "type": "Section",
+  "number": "A.4",
+  "title": "Problem Set 3",
+  "body": " Problem Set 3   Instructions  Prior to beginning this problem set, consider reading the Problem Set Success Guide for advice and clarity around expectations for Problem Sets in this course. Upload your solutions to all problems on this page to gradescope as a single .pdf file, remembering to assign pages appropriately for each question. Complete instructions for Problem Sets are available on Canvas.    (Problem 1)   Let and note that The following statements are all invalid for at least one reason. Determine what makes them invalid and, suggest alternative valid statements that the author may have meant instead.   The matrix is linearly independent because has a pivot in each column.    The matrix does not span because has a row of zeroes.    The set of vectors spans.    The set of vectors is a basis.      (Problem 2)   In , we found a basis for the subspace To do so, we use the results of the calculation: to conclude that the set , the set of vectors corresponding to the pivot columns of the RREF, is a basis for .   Explain why neither of the vectors are elements of .    Explain why this shows that, in general, when we calculate a basis for , the pivot columns of themselves do not form a basis for .      (Problem 3)   Let denote an matrix so that the column vectors of are vectors in and the row vectors of (i.e., the rows) are vectors in . The column space of (denoted ) is the subspace spanned by the columns of . The row space of (denoted ) is the subspace spanned by the rows of . For instance, if , then: and   In , we learned how to calculate a basis for : we row reduce to calculate and then the columns corresponding to the columns containing pivot positions in form a basis. The Problem just above demonstrates why it's important to not take the pivot columns of itself.  In contrast, the non-zero rows of will always form a basis for as you will now show:   Explain why the non-zero rows of span the same subspace as the rows of .    Explain why the non-zero rows of are always linearly independent.    Even though and are different subspaces of Euclidean vectors (in fact, unless , the vectors in each set do not even live in the same ambient space), explain why .      (Problem 4)   An matrix is non-singular non-singular if the associated homogeneous system with coefficient matrix is consistent with one solution. In what follows, assume that is a non-singular matrix.   Explain why the RREF of is the identity matrix.    Explain why, for any column vector , the system of equations given by has a unique solution.    Explain why the columns of form a basis of .      (Problem 5)   A set of vectors in is called an orthogonal set if each pair of distinct vectors are orthogonal. That is, we have whenever . If is a subspace of , then an orthogonal basis for is a basis of that is also an orthogonal set.   Suppose that is an orthogonal set of non-zero vectors. Suppose further that are scalars for which Show that, in fact, each must be equal to and conclude that must be linearly independent. In other words, show that any orthogonal set of non-zero vectors is linearly independent.    Suppose further that is an orthogonal basis for some subspace of and that . Then, since is a basis, we know that we can find unique scalars for which Explain why we can solve for these scalars as follows:     Let's put this together and practice the new terms\/concepts. Let . Verify that is an orthogonal basis of and explain and demonstrate how to write the vector as a linear combination of vectors in  without doing any row reducing or solving of linear equations (for either task).     For (a): what happens if you take the left-hand-side of the vector equation in (a) and calculate the dot-product with ?  For (b): try something similar to part (a).    "
+},
+{
+  "id": "sec-pset3-linear-3",
+  "level": "2",
+  "url": "sec-pset3-linear.html#sec-pset3-linear-3",
+  "type": "Problem",
+  "number": "A.4.1",
+  "title": "(Problem 1).",
+  "body": " (Problem 1)   Let and note that The following statements are all invalid for at least one reason. Determine what makes them invalid and, suggest alternative valid statements that the author may have meant instead.   The matrix is linearly independent because has a pivot in each column.    The matrix does not span because has a row of zeroes.    The set of vectors spans.    The set of vectors is a basis.    "
+},
+{
+  "id": "sec-pset3-linear-4",
+  "level": "2",
+  "url": "sec-pset3-linear.html#sec-pset3-linear-4",
+  "type": "Problem",
+  "number": "A.4.2",
+  "title": "(Problem 2).",
+  "body": " (Problem 2)   In , we found a basis for the subspace To do so, we use the results of the calculation: to conclude that the set , the set of vectors corresponding to the pivot columns of the RREF, is a basis for .   Explain why neither of the vectors are elements of .    Explain why this shows that, in general, when we calculate a basis for , the pivot columns of themselves do not form a basis for .    "
+},
+{
+  "id": "sec-pset3-linear-5",
+  "level": "2",
+  "url": "sec-pset3-linear.html#sec-pset3-linear-5",
+  "type": "Problem",
+  "number": "A.4.3",
+  "title": "(Problem 3).",
+  "body": " (Problem 3)   Let denote an matrix so that the column vectors of are vectors in and the row vectors of (i.e., the rows) are vectors in . The column space of (denoted ) is the subspace spanned by the columns of . The row space of (denoted ) is the subspace spanned by the rows of . For instance, if , then: and   In , we learned how to calculate a basis for : we row reduce to calculate and then the columns corresponding to the columns containing pivot positions in form a basis. The Problem just above demonstrates why it's important to not take the pivot columns of itself.  In contrast, the non-zero rows of will always form a basis for as you will now show:   Explain why the non-zero rows of span the same subspace as the rows of .    Explain why the non-zero rows of are always linearly independent.    Even though and are different subspaces of Euclidean vectors (in fact, unless , the vectors in each set do not even live in the same ambient space), explain why .    "
+},
+{
+  "id": "sec-pset3-linear-6",
+  "level": "2",
+  "url": "sec-pset3-linear.html#sec-pset3-linear-6",
+  "type": "Problem",
+  "number": "A.4.4",
+  "title": "(Problem 4).",
+  "body": " (Problem 4)   An matrix is non-singular non-singular if the associated homogeneous system with coefficient matrix is consistent with one solution. In what follows, assume that is a non-singular matrix.   Explain why the RREF of is the identity matrix.    Explain why, for any column vector , the system of equations given by has a unique solution.    Explain why the columns of form a basis of .    "
+},
+{
+  "id": "sec-pset3-linear-7",
+  "level": "2",
+  "url": "sec-pset3-linear.html#sec-pset3-linear-7",
+  "type": "Problem",
+  "number": "A.4.5",
+  "title": "(Problem 5).",
+  "body": " (Problem 5)   A set of vectors in is called an orthogonal set if each pair of distinct vectors are orthogonal. That is, we have whenever . If is a subspace of , then an orthogonal basis for is a basis of that is also an orthogonal set.   Suppose that is an orthogonal set of non-zero vectors. Suppose further that are scalars for which Show that, in fact, each must be equal to and conclude that must be linearly independent. In other words, show that any orthogonal set of non-zero vectors is linearly independent.    Suppose further that is an orthogonal basis for some subspace of and that . Then, since is a basis, we know that we can find unique scalars for which Explain why we can solve for these scalars as follows:     Let's put this together and practice the new terms\/concepts. Let . Verify that is an orthogonal basis of and explain and demonstrate how to write the vector as a linear combination of vectors in  without doing any row reducing or solving of linear equations (for either task).     For (a): what happens if you take the left-hand-side of the vector equation in (a) and calculate the dot-product with ?  For (b): try something similar to part (a).   "
+},
+{
   "id": "truss",
   "level": "1",
   "url": "truss.html",

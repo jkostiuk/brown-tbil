@@ -14,7 +14,7 @@
 <meta property="og:type" content="book">
 <meta property="book:title" content="Calculus for Team-Based Inquiry Learning">
 <meta property="book:author" content="TBIL Community">
-<script>
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>
 var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
   "tex": {
@@ -41,7 +41,24 @@ window.MathJax = {
   },
   "options": {
     "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
-    "processHtmlClass": "process-math"
+    "processHtmlClass": "process-math",
+    "renderActions": {
+      "findScript": [
+        10,
+        function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        },
+        ""
+      ]
+    }
   },
   "chtml": {
     "scale": 0.98,
@@ -69,7 +86,19 @@ window.MathJax = {
     )}
   }
 };
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><link href="_static/pretext/css/pretext_search.css" rel="stylesheet" type="text/css">
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script>// Make *any* div with class 'sagecell-sage' an executable Sage cell
+// Their results will be linked, only within language type
+sagecell.makeSagecell({
+  "inputLocation": "div.sagecell-sage",
+  "linked": true,
+  "linkKey": "linked-sage",
+  "autoeval": false,
+  "languages": [
+    "sage"
+  ],
+  "evalButtonText": "Evaluate (Sage)"
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><link href="_static/pretext/css/pretext_search.css" rel="stylesheet" type="text/css">
 <script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -1706,9 +1735,9 @@ window.MathJax = {
 #pset-intro-4-3-2 { counter-set: pset-intro-4-3-2 0; }
 #pset-intro-4-3-2 > li::marker { content: ""counter(pset-intro-4-3-2,decimal)"."; }
 #pset-intro-4-3-2 > li { counter-increment: pset-intro-4-3-2; }
-#lcB { counter-set: lcB 0; }
-#lcB > li::marker { content: ""counter(lcB,lower-alpha)"."; }
-#lcB > li { counter-increment: lcB; }
+#integral-table-2-1 { counter-set: integral-table-2-1 0; }
+#integral-table-2-1 > li::marker { content: ""counter(integral-table-2-1,lower-alpha)"."; }
+#integral-table-2-1 > li { counter-increment: integral-table-2-1; }
 #trig-table-2 { counter-set: trig-table-2 0; }
 #trig-table-2 > li::marker { content: ""counter(trig-table-2,lower-alpha)"."; }
 #trig-table-2 > li { counter-increment: trig-table-2; }
@@ -2386,6 +2415,7 @@ window.MathJax = {
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="pset-intro.html" class="internal"><span class="codenumber">A.1</span> <span class="title">Problem Set Success Guide</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-pset1-calc.html" class="internal"><span class="codenumber">A.2</span> <span class="title">Problem Set 1</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-pset2-calc.html" class="internal"><span class="codenumber">A.3</span> <span class="title">Problem Set 2</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-pset3-calc.html" class="internal"><span class="codenumber">A.4</span> <span class="title">Problem Set 3</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-appendix"><div class="toc-title-box"><a href="integral-table.html" class="internal"><span class="codenumber">B</span> <span class="title">A Short Table of Integrals</span></a></div></li>

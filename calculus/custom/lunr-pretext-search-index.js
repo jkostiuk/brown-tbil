@@ -2773,9 +2773,9 @@ var ptx_lunr_docs = [
   "body": "  A vertical cylindrical water tank has a radius of 1 meter. If water is pumped out at a rate of 3 cubic meters per minute, at what rate will the water level drop?   Draw a figure to represent the situation. Introduce variables that measure the radius of the water's surface, the water's depth in the tank, and the volume of the water. Label your diagram.  What information about rates of changes does the problem give you?  Recall that the volume of a cylinder of radius and height is . What is the related rates equation in the context of the vertical cylindrical tank? What derivative rules did you use to find this equation?             Which variable(s) have a constant value in this situation? Why?  The variable measuring the radius of the water's surface  The variable measuring the depth of the water  The variable measuring the volume of the water   Which variable(s) have a constant rate of change in this situation? Why?  The variable measuring the radius of the water's surface  The variable measuring the depth of the water  The variable measuring the volume of the water   Using your finding above, find at what rate the water level is dropping.  If the full tank contains 12 cubic meters of water, how long does it take to empty the tank?  Confirm your finding in the previous part by finding the initial water level for 12 cubic centimeters of water and determine how long it takes for the water level to reach 0.  "
 },
 {
-  "id": "DEn",
+  "id": "rel-rates-conical-tank",
   "level": "2",
-  "url": "AD3.html#DEn",
+  "url": "AD3.html#rel-rates-conical-tank",
   "type": "Activity",
   "number": "3.3.10",
   "title": "",
@@ -3241,9 +3241,9 @@ var ptx_lunr_docs = [
   "body": " Look at in . Which curve is concave up? Which one is concave down? Why? Try to explain using the graph!   Two concavity, which is which?    "
 },
 {
-  "id": "hcP",
+  "id": "concavity-and-first-derivative",
   "level": "2",
-  "url": "AD6.html#hcP",
+  "url": "AD6.html#concavity-and-first-derivative",
   "type": "Definition",
   "number": "3.6.8",
   "title": "",
@@ -3790,18 +3790,18 @@ var ptx_lunr_docs = [
   "body": "   Approximate definite integrals using Riemann sums.    "
 },
 {
-  "id": "KNr",
+  "id": "integration-riemann-1",
   "level": "2",
-  "url": "IN2.html#KNr",
+  "url": "IN2.html#integration-riemann-1",
   "type": "Activity",
   "number": "4.2.1",
   "title": "",
   "body": "  Suppose that a person is taking a walk along a long straight path and walks at a constant rate of 3 miles per hour.   On the left-hand axes provided in Figure , sketch a labeled graph of the velocity function .  At left, axes for plotting ; at right, for plotting .   Note that while the scale on the two sets of axes is the same, the units on the right-hand axes differ from those on the left. The right-hand axes will be used in question (d).  How far did the person travel during the two hours? How is this distance related to the area of a certain region under the graph of ?  Find an algebraic formula, , for the position of the person at time , assuming that . Explain your thinking.  On the right-hand axes provided in , sketch a labeled graph of the position function .  For what values of is the position function increasing? Explain why this is the case using relevant information about the velocity function .  "
 },
 {
-  "id": "gon",
+  "id": "act-4-1-1",
   "level": "2",
-  "url": "IN2.html#gon",
+  "url": "IN2.html#act-4-1-1",
   "type": "Activity",
   "number": "4.2.2",
   "title": "",
@@ -3952,9 +3952,9 @@ var ptx_lunr_docs = [
   "body": " We now note that whenever we know the derivative of a function, we have a function-derivative pair , so we also know the antiderivative of a function. For instance, in we could use our prior knowledge that , to determine that is an antiderivative of . and together form a function-derivative pair. Every elementary derivative rule leads us to such a pair, and thus to a known antiderivative.  In the following activity, we work to build a list of basic functions whose antiderivatives we already know.  "
 },
 {
-  "id": "ovP",
+  "id": "act-4-4-2",
   "level": "2",
-  "url": "IN3.html#ovP",
+  "url": "IN3.html#act-4-4-2",
   "type": "Activity",
   "number": "4.3.5",
   "title": "",
@@ -4474,9 +4474,9 @@ var ptx_lunr_docs = [
   "body": "  We now look for a general way of writing definite integrals for the area between two given curves, and . Consider this area, illustrated in .   Area between and .     How could we represent the shaded area in ?               The two definite integrals above can be rewritten as one definite integral using the sum and difference property of definite integrals: If and are continuous functions, then Use the property above to represent the shaded area in using one definite integral.               "
 },
 {
-  "id": "LKt",
+  "id": "IN8-3-6",
   "level": "2",
-  "url": "IN8.html#LKt",
+  "url": "IN8.html#IN8-3-6",
   "type": "Fact",
   "number": "4.8.5",
   "title": "",
@@ -9296,6 +9296,60 @@ var ptx_lunr_docs = [
   "number": "A.3.5",
   "title": "",
   "body": "  If is function defined for all real numbers, then we define the improper integral as follows: Fix some real number ; if both integrals and coverge, then we say that converges and set    Explain and demonstrate how to decide if converges or diverges.    Explain and demonstrate how to decide if converges or diverges.    "
+},
+{
+  "id": "sec-pset3-calc",
+  "level": "1",
+  "url": "sec-pset3-calc.html",
+  "type": "Section",
+  "number": "A.4",
+  "title": "Problem Set 3",
+  "body": " Problem Set 3   Instructions  Prior to beginning this problem set, consider reading the Problem Set Success Guide for advice and clarity around expectations for Problem Sets in this course. Upload your solutions to all problems on this page to gradescope as a single .pdf file, remembering to assign pages appropriately for each question. Complete instructions for Problem Sets are available on Canvas.    (Problem 1)   Let denote the region in the -plane that is inside the circle . If we revolve the region about the -axis, we obtain a torus , which is fancy word for doughnut.    Explain and demonstrate how to set up an integral that computes the volume of this torus using the method of cylindrical shells.    Explain and demonstrate how to set up an integral that computes the volume of this torus using the washer method.    Use Wolfram Alpha Wolfram Alpha to evaluate both of the integrals you set up to check that they both evaluate to the same answer. To help with syntax, here is an example of how one would ask Wolfram Alpha to evaluate : integral of sin(x)dx where x goes from 0 to pi\/4     After this check, explain and demonstrate how to evaluate one of the two integrals using methods of integrations we've learned in class. Why did you choose the integral you chose?      (Problem 2)   Let denote the region in 3-space that is above the -plane and contained inside the cylinders and ; this region is depicted in below.   Two intersecting cylinders above the -plane.     Explain and demonstrate how to calculate the volume of by considering cross-sections obtained by cutting with planes perpendicular to one of the three coordinate axes.    Consider all three kinds of cross-sections; which set of cross-sections seems the simplest to work with.     (Problem 3)   Let denote the region of the -plane that lies above the -axis, to the right of the line , and below the graph of .   Is the area of finite or infinite? Justify your reasoning using concepts covered in this course.    Now revolve about the -axis to obtain an infinite trumpet-like shape . Explain and demonstrate how to set up an (improper) integral that computes the volume of .    Does your integral above converge? That is, is the volume of finite?    What?????????      (Problem 4)   In class, we considered the problem of calculating the work involved in pulling a potentially leaky bucket up along a rope. Implicit in the set up of those exercises was the underlying assumption that the rope itself did not weight anything. In this exercise, you'll consider how to modify this model to accommodate a non weight-less rope.  The year is 2011 and you and your accomplice are plotting to steal a bucket of maple syrup weighing a total of 200kg from Canada's strategic Maple Syrup Supply. You'll need to pull this bucket up 10 meters and so you're using a heavy duty rope that weighs 2kg for each meter of rope.   Explain and demonstrate how to estimate the work involved in pulling the rope and bucket a height of meters using a Riemann sum if we cut the rope into pieces of equal length.    Explain and demonstrate how to estimate the work involved in pulling the rope and bucket a height of meters using a Riemann sum if we cut the rope into pieces of equal length.    Convert the Riemann sum expression you found into an integral and evaluate it to calculate the work needed exactly.      (Problem 5)   NASA wants you to do your best to calculate the length of a piece of wire shaped as the graph the over the interval .    Explain and demonstrate how to write down a definite integral that computes the arc length that NASA wants.    Think about the techniques of integration you know, and write a few sentences explaining why none of them are particularly helpful in evaluating the integral above.    You can't go back to NASA empty handed, so you wrote some code using sage to help you estimate the arc-length below. By editing the code cell below, vary (which represents the number of pieces we divide the wire into in making an estimate) find some estimates for NASA. You're reasonably confident that if you can estimate the correct length within three decimal points, this will be enough. Start with , and then trying larger numbers at your discretion. Based on your experimenting, how large do you think you should take to be and what do you think is the approximate length?      "
+},
+{
+  "id": "sec-pset3-calc-3",
+  "level": "2",
+  "url": "sec-pset3-calc.html#sec-pset3-calc-3",
+  "type": "Problem",
+  "number": "A.4.1",
+  "title": "(Problem 1).",
+  "body": " (Problem 1)   Let denote the region in the -plane that is inside the circle . If we revolve the region about the -axis, we obtain a torus , which is fancy word for doughnut.    Explain and demonstrate how to set up an integral that computes the volume of this torus using the method of cylindrical shells.    Explain and demonstrate how to set up an integral that computes the volume of this torus using the washer method.    Use Wolfram Alpha Wolfram Alpha to evaluate both of the integrals you set up to check that they both evaluate to the same answer. To help with syntax, here is an example of how one would ask Wolfram Alpha to evaluate : integral of sin(x)dx where x goes from 0 to pi\/4     After this check, explain and demonstrate how to evaluate one of the two integrals using methods of integrations we've learned in class. Why did you choose the integral you chose?    "
+},
+{
+  "id": "sec-pset3-calc-4",
+  "level": "2",
+  "url": "sec-pset3-calc.html#sec-pset3-calc-4",
+  "type": "Problem",
+  "number": "A.4.2",
+  "title": "(Problem 2).",
+  "body": " (Problem 2)   Let denote the region in 3-space that is above the -plane and contained inside the cylinders and ; this region is depicted in below.   Two intersecting cylinders above the -plane.     Explain and demonstrate how to calculate the volume of by considering cross-sections obtained by cutting with planes perpendicular to one of the three coordinate axes.    Consider all three kinds of cross-sections; which set of cross-sections seems the simplest to work with.   "
+},
+{
+  "id": "sec-pset3-calc-5",
+  "level": "2",
+  "url": "sec-pset3-calc.html#sec-pset3-calc-5",
+  "type": "Problem",
+  "number": "A.4.3",
+  "title": "(Problem 3).",
+  "body": " (Problem 3)   Let denote the region of the -plane that lies above the -axis, to the right of the line , and below the graph of .   Is the area of finite or infinite? Justify your reasoning using concepts covered in this course.    Now revolve about the -axis to obtain an infinite trumpet-like shape . Explain and demonstrate how to set up an (improper) integral that computes the volume of .    Does your integral above converge? That is, is the volume of finite?    What?????????    "
+},
+{
+  "id": "sec-pset3-calc-6",
+  "level": "2",
+  "url": "sec-pset3-calc.html#sec-pset3-calc-6",
+  "type": "Problem",
+  "number": "A.4.4",
+  "title": "(Problem 4).",
+  "body": " (Problem 4)   In class, we considered the problem of calculating the work involved in pulling a potentially leaky bucket up along a rope. Implicit in the set up of those exercises was the underlying assumption that the rope itself did not weight anything. In this exercise, you'll consider how to modify this model to accommodate a non weight-less rope.  The year is 2011 and you and your accomplice are plotting to steal a bucket of maple syrup weighing a total of 200kg from Canada's strategic Maple Syrup Supply. You'll need to pull this bucket up 10 meters and so you're using a heavy duty rope that weighs 2kg for each meter of rope.   Explain and demonstrate how to estimate the work involved in pulling the rope and bucket a height of meters using a Riemann sum if we cut the rope into pieces of equal length.    Explain and demonstrate how to estimate the work involved in pulling the rope and bucket a height of meters using a Riemann sum if we cut the rope into pieces of equal length.    Convert the Riemann sum expression you found into an integral and evaluate it to calculate the work needed exactly.    "
+},
+{
+  "id": "sec-pset3-calc-7",
+  "level": "2",
+  "url": "sec-pset3-calc.html#sec-pset3-calc-7",
+  "type": "Problem",
+  "number": "A.4.5",
+  "title": "(Problem 5).",
+  "body": " (Problem 5)   NASA wants you to do your best to calculate the length of a piece of wire shaped as the graph the over the interval .    Explain and demonstrate how to write down a definite integral that computes the arc length that NASA wants.    Think about the techniques of integration you know, and write a few sentences explaining why none of them are particularly helpful in evaluating the integral above.    You can't go back to NASA empty handed, so you wrote some code using sage to help you estimate the arc-length below. By editing the code cell below, vary (which represents the number of pieces we divide the wire into in making an estimate) find some estimates for NASA. You're reasonably confident that if you can estimate the correct length within three decimal points, this will be enough. Start with , and then trying larger numbers at your discretion. Based on your experimenting, how large do you think you should take to be and what do you think is the approximate length?     "
 },
 {
   "id": "integral-table",

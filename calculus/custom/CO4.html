@@ -14,7 +14,7 @@
 <meta property="og:type" content="book">
 <meta property="book:title" content="Calculus for Team-Based Inquiry Learning">
 <meta property="book:author" content="TBIL Community">
-<script>
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>
 var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
   "tex": {
@@ -41,7 +41,24 @@ window.MathJax = {
   },
   "options": {
     "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
-    "processHtmlClass": "process-math"
+    "processHtmlClass": "process-math",
+    "renderActions": {
+      "findScript": [
+        10,
+        function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        },
+        ""
+      ]
+    }
   },
   "chtml": {
     "scale": 0.98,
@@ -1706,9 +1723,9 @@ window.MathJax = {
 #pset-intro-4-3-2 { counter-set: pset-intro-4-3-2 0; }
 #pset-intro-4-3-2 > li::marker { content: ""counter(pset-intro-4-3-2,decimal)"."; }
 #pset-intro-4-3-2 > li { counter-increment: pset-intro-4-3-2; }
-#lcB { counter-set: lcB 0; }
-#lcB > li::marker { content: ""counter(lcB,lower-alpha)"."; }
-#lcB > li { counter-increment: lcB; }
+#integral-table-2-1 { counter-set: integral-table-2-1 0; }
+#integral-table-2-1 > li::marker { content: ""counter(integral-table-2-1,lower-alpha)"."; }
+#integral-table-2-1 > li { counter-increment: integral-table-2-1; }
 #trig-table-2 { counter-set: trig-table-2 0; }
 #trig-table-2 > li::marker { content: ""counter(trig-table-2,lower-alpha)"."; }
 #trig-table-2 > li { counter-increment: trig-table-2; }
@@ -2386,6 +2403,7 @@ window.MathJax = {
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="pset-intro.html" class="internal"><span class="codenumber">A.1</span> <span class="title">Problem Set Success Guide</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-pset1-calc.html" class="internal"><span class="codenumber">A.2</span> <span class="title">Problem Set 1</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-pset2-calc.html" class="internal"><span class="codenumber">A.3</span> <span class="title">Problem Set 2</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-pset3-calc.html" class="internal"><span class="codenumber">A.4</span> <span class="title">Problem Set 3</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-appendix"><div class="toc-title-box"><a href="integral-table.html" class="internal"><span class="codenumber">B</span> <span class="title">A Short Table of Integrals</span></a></div></li>
@@ -2403,7 +2421,7 @@ window.MathJax = {
 <article class="fact theorem-like" id="fact-CO4polar"><h4 class="heading">
 <span class="type">Fact</span><span class="space"> </span><span class="codenumber">7.4.1</span><span class="period">.</span>
 </h4>
-<div class="para" id="QCd" data-permid="QCd">“As the crow flies” is an idiom used to describe the most direct path between two points. The <dfn class="terminology">polar coordinate system</dfn> is a useful parametrization of the plane that, rather than describing horizontal and vertical position relative to the origin in the usual way, describes a point in terms of distance from the origin and direction. The origin is also known as the <dfn class="terminology">pole</dfn> (hence polar coordinates).</div>
+<div class="para" id="fact-CO4polar-1">“As the crow flies” is an idiom used to describe the most direct path between two points. The <dfn class="terminology">polar coordinate system</dfn> is a useful parametrization of the plane that, rather than describing horizontal and vertical position relative to the origin in the usual way, describes a point in terms of distance from the origin and direction. The origin is also known as the <dfn class="terminology">pole</dfn> (hence polar coordinates).</div>
 <div class="para" id="fact-CO4polar-2">Let <span class="process-math">\(\overline{OP}\)</span> be a line segment from the origin to a given point <span class="process-math">\(P\)</span> in the plane. The length of <span class="process-math">\(\overline{OP}\)</span> is the distance (or <dfn class="terminology">radius</dfn>) <span class="process-math">\(r\)</span> from the origin to <span class="process-math">\(P\text{.}\)</span> The <dfn class="terminology">polar axis</dfn> is a ray starting at the origin.</div>
 <div class="para" id="fact-CO4polar-3">To define the "direction" of <span class="process-math">\(P\text{,}\)</span> we form an angle <span class="process-math">\(\theta\)</span> by letting the polar axis serve as the initial ray and <span class="process-math">\(\overrightarrow{OP}\)</span> as the terminal ray. We will set the positive <span class="process-math">\(x\)</span>-axis as the polar axis and assume the movement in the positive direction is counter-clockwise (as in trigonometry). Notice that, unlike in the rectangular (or <em class="emphasis">Cartesian</em>) coordinate system, the polar coordinates <span class="process-math">\((r,\theta)\)</span> for a point are not unique, as we could turn either way to face a given point (or even spin around a number of times before facing that direction).</div>
 <div class="para" id="fact-CO4polar-4">Furthermore, by allowing <span class="process-math">\(r\)</span> to be negative, we can also "walk backwards" to get to a point by facing in the opposite direction. Rather than the grid lines defined by specific values for <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> in the rectangular coordinate system, specific values of <span class="process-math">\(r\)</span> correspond to circles of radius <span class="process-math">\(r\)</span> centered about the origin, and specific values of <span class="process-math">\(\theta\)</span> correspond to lines going through the pole (called <dfn class="terminology">radial lines</dfn>).</div></article><figure class="figure figure-like" id="CO4-3-3"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/polarPoint.svg" role="img" class="contained" alt="A point in the polar coordinate system."></div>
@@ -2441,13 +2459,13 @@ window.MathJax = {
 <div class="para" id="activity-CO4polarGraphs-11-1"><span class="process-math">\(r=3\sec(\theta)\)</span></div></article></article><article class="fact theorem-like" id="fact-CO4symmetryTestX"><h4 class="heading">
 <span class="type">Fact</span><span class="space"> </span><span class="codenumber">7.4.4</span><span class="period">.</span>
 </h4>
-<div class="para" id="QCd" data-permid="QCd">If a polar graph is symmetric about the <span class="process-math">\(x\)</span>-axis, then if the point <span class="process-math">\((r,\theta)\)</span> lies on the graph, then the point <span class="process-math">\((r,-\theta)\)</span> or <span class="process-math">\((-r, \pi-\theta)\)</span> also lies on the graph.</div></article><article class="fact theorem-like" id="fact-CO4symmetryTestY"><h4 class="heading">
+<div class="para" id="fact-CO4symmetryTestX-1">If a polar graph is symmetric about the <span class="process-math">\(x\)</span>-axis, then if the point <span class="process-math">\((r,\theta)\)</span> lies on the graph, then the point <span class="process-math">\((r,-\theta)\)</span> or <span class="process-math">\((-r, \pi-\theta)\)</span> also lies on the graph.</div></article><article class="fact theorem-like" id="fact-CO4symmetryTestY"><h4 class="heading">
 <span class="type">Fact</span><span class="space"> </span><span class="codenumber">7.4.5</span><span class="period">.</span>
 </h4>
-<div class="para" id="QCd" data-permid="QCd">If a polar graph is symmetric about the <span class="process-math">\(y\)</span>-axis, then if the point <span class="process-math">\((r,\theta)\)</span> lies on the graph, then the point <span class="process-math">\((r,\pi-\theta)\)</span> or <span class="process-math">\((-r,-\theta)\)</span> also lies on the graph.</div></article><article class="fact theorem-like" id="fact-CO4symmetryTestOrigin"><h4 class="heading">
+<div class="para" id="fact-CO4symmetryTestY-1">If a polar graph is symmetric about the <span class="process-math">\(y\)</span>-axis, then if the point <span class="process-math">\((r,\theta)\)</span> lies on the graph, then the point <span class="process-math">\((r,\pi-\theta)\)</span> or <span class="process-math">\((-r,-\theta)\)</span> also lies on the graph.</div></article><article class="fact theorem-like" id="fact-CO4symmetryTestOrigin"><h4 class="heading">
 <span class="type">Fact</span><span class="space"> </span><span class="codenumber">7.4.6</span><span class="period">.</span>
 </h4>
-<div class="para" id="QCd" data-permid="QCd">If a polar graph is rotationally symmetric about the origin, then if the point <span class="process-math">\((r,\theta)\)</span> lies on the graph, then the point <span class="process-math">\((-r,\theta)\)</span> or <span class="process-math">\((r,\pi+\theta)\)</span> also lies on the graph.</div></article><article class="activity project-like" id="activity-CO4polarEquation"><h4 class="heading">
+<div class="para" id="fact-CO4symmetryTestOrigin-1">If a polar graph is rotationally symmetric about the origin, then if the point <span class="process-math">\((r,\theta)\)</span> lies on the graph, then the point <span class="process-math">\((-r,\theta)\)</span> or <span class="process-math">\((r,\pi+\theta)\)</span> also lies on the graph.</div></article><article class="activity project-like" id="activity-CO4polarEquation"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">7.4.7</span><span class="period">.</span>
 </h4>
 <article class="task exercise-like" id="activity-CO4polarEquation-1"><h5 class="heading"><span class="codenumber">(a)</span></h5>

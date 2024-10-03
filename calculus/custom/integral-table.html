@@ -14,7 +14,7 @@
 <meta property="og:type" content="book">
 <meta property="book:title" content="Calculus for Team-Based Inquiry Learning">
 <meta property="book:author" content="TBIL Community">
-<script>
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>
 var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
   "tex": {
@@ -41,7 +41,24 @@ window.MathJax = {
   },
   "options": {
     "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
-    "processHtmlClass": "process-math"
+    "processHtmlClass": "process-math",
+    "renderActions": {
+      "findScript": [
+        10,
+        function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        },
+        ""
+      ]
+    }
   },
   "chtml": {
     "scale": 0.98,
@@ -1706,9 +1723,9 @@ window.MathJax = {
 #pset-intro-4-3-2 { counter-set: pset-intro-4-3-2 0; }
 #pset-intro-4-3-2 > li::marker { content: ""counter(pset-intro-4-3-2,decimal)"."; }
 #pset-intro-4-3-2 > li { counter-increment: pset-intro-4-3-2; }
-#lcB { counter-set: lcB 0; }
-#lcB > li::marker { content: ""counter(lcB,lower-alpha)"."; }
-#lcB > li { counter-increment: lcB; }
+#integral-table-2-1 { counter-set: integral-table-2-1 0; }
+#integral-table-2-1 > li::marker { content: ""counter(integral-table-2-1,lower-alpha)"."; }
+#integral-table-2-1 > li { counter-increment: integral-table-2-1; }
 #trig-table-2 { counter-set: trig-table-2 0; }
 #trig-table-2 > li::marker { content: ""counter(trig-table-2,lower-alpha)"."; }
 #trig-table-2 > li { counter-increment: trig-table-2; }
@@ -1731,7 +1748,7 @@ window.MathJax = {
 <ol id="searchresults" class="searchresults"></ol>
 </div>
 </div>
-<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-pset2-calc.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="backmatter.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="trig-table.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\markedPivot}[1]{\boxed{#1}}
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-pset3-calc.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="backmatter.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="trig-table.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\markedPivot}[1]{\boxed{#1}}
 \newcommand{\IR}{\mathbb{R}}
 \newcommand{\IC}{\mathbb{C}}
 \renewcommand{\P}{\mathcal{P}}
@@ -2386,6 +2403,7 @@ window.MathJax = {
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="pset-intro.html" class="internal"><span class="codenumber">A.1</span> <span class="title">Problem Set Success Guide</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-pset1-calc.html" class="internal"><span class="codenumber">A.2</span> <span class="title">Problem Set 1</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-pset2-calc.html" class="internal"><span class="codenumber">A.3</span> <span class="title">Problem Set 2</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-pset3-calc.html" class="internal"><span class="codenumber">A.4</span> <span class="title">Problem Set 3</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-appendix active"><div class="toc-title-box"><a href="integral-table.html" class="internal"><span class="codenumber">B</span> <span class="title">A Short Table of Integrals</span></a></div></li>
@@ -2396,21 +2414,21 @@ window.MathJax = {
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="appendix" id="integral-table"><h2 class="heading">
 <span class="type">Appendix</span><span class="space"> </span><span class="codenumber">B</span><span class="space"> </span><span class="title">A Short Table of Integrals</span>
 </h2>
-<div class="para logical" id="IzS" data-permid="IzS"><ol class="lower-alpha" id="lcB">
-<li id="RjK" data-permid="RjK"><div class="para" id="GKF" data-permid="GKF"><span class="process-math">\(\displaystyle \int \frac{du}{a^2 + u^2} = \frac{1}{a} \arctan \left( \frac{u}{a} \right) + C\)</span></div></li>
-<li id="xqT" data-permid="xqT"><div class="para" id="mRO" data-permid="mRO"><span class="process-math">\(\displaystyle \int \frac{du}{\sqrt{u^2 \pm a^2}} = \ln |u + \sqrt{u^2 \pm a^2}| + C\)</span></div></li>
-<li id="dyc" data-permid="dyc"><div class="para" id="SYX" data-permid="SYX"><span class="process-math">\(\displaystyle \int \sqrt{u^2 \pm a^2} \, du = \frac{u}{2}\sqrt{u^2 \pm a^2} \pm \frac{a^2}{2}\ln|u + \sqrt{u^2 \pm a^2}| + C\)</span></div></li>
-<li id="JFl" data-permid="JFl"><div class="para" id="zgg" data-permid="zgg"><span class="process-math">\(\displaystyle \int \frac{u^2 du}{\sqrt{u^2 \pm a^2}} = \frac{u}{2}\sqrt{u^2 \pm a^2} \mp \frac{a^2}{2}\ln|u + \sqrt{u^2 \pm a^2}| + C\)</span></div></li>
-<li id="pMu" data-permid="pMu"><div class="para" id="fnp" data-permid="fnp"><span class="process-math">\(\displaystyle \int \frac{du}{u\sqrt{u^2+a^2}} = -\frac{1}{a} \ln \left| \frac{a+\sqrt{u^2 + a^2}}{u} \right| + C\)</span></div></li>
-<li id="VTD" data-permid="VTD"><div class="para" id="Luy" data-permid="Luy"><span class="process-math">\(\displaystyle \int \frac{du}{u\sqrt{u^2-a^2}} = \frac{1}{a} \arcsec \left( \frac{u}{a} \right) + C\)</span></div></li>
-<li id="CaM" data-permid="CaM"><div class="para" id="rBH" data-permid="rBH"><span class="process-math">\(\displaystyle \int \frac{du}{\sqrt{a^2 - u^2}} = \arcsin \left( \frac{u}{a} \right) + C\)</span></div></li>
-<li id="ihV" data-permid="ihV"><div class="para" id="XIQ" data-permid="XIQ"><span class="process-math">\(\displaystyle \int \sqrt{a^2 - u^2} \, du = \frac{u}{2}\sqrt{a^2 - u^2} + \frac{a^2}{2} \arcsin \left( \frac{u}{a} \right) + C\)</span></div></li>
-<li id="Ope" data-permid="Ope"><div class="para" id="DPZ" data-permid="DPZ"><span class="process-math">\(\displaystyle \int \frac{u^2}{\sqrt{a^2 - u^2}} \, du = -\frac{u}{2}\sqrt{a^2 - u^2} + \frac{a^2}{2} \arcsin \left( \frac{u}{a} \right) + C\)</span></div></li>
-<li id="uwn" data-permid="uwn"><div class="para" id="jXi" data-permid="jXi"><span class="process-math">\(\displaystyle \int \frac{du}{u\sqrt{a^2 - u^2}} = -\frac{1}{a} \ln \left| \frac{a + \sqrt{a^2 - u^2}}{u} \right| + C\)</span></div></li>
-<li id="aDw" data-permid="aDw"><div class="para" id="Qer" data-permid="Qer"><span class="process-math">\(\displaystyle \int \frac{du}{u^2\sqrt{a^2 - u^2}} = -\frac{\sqrt{a^2-u^2}}{a^2 u} + C\)</span></div></li>
+<div class="para logical" id="integral-table-2"><ol class="lower-alpha" id="integral-table-2-1">
+<li id="integral-table-2-1-1"><div class="para" id="integral-table-2-1-1-1"><span class="process-math">\(\displaystyle \int \frac{du}{a^2 + u^2} = \frac{1}{a} \arctan \left( \frac{u}{a} \right) + C\)</span></div></li>
+<li id="integral-table-2-1-2"><div class="para" id="integral-table-2-1-2-1"><span class="process-math">\(\displaystyle \int \frac{du}{\sqrt{u^2 \pm a^2}} = \ln |u + \sqrt{u^2 \pm a^2}| + C\)</span></div></li>
+<li id="integral-table-2-1-3"><div class="para" id="integral-table-2-1-3-1"><span class="process-math">\(\displaystyle \int \sqrt{u^2 \pm a^2} \, du = \frac{u}{2}\sqrt{u^2 \pm a^2} \pm \frac{a^2}{2}\ln|u + \sqrt{u^2 \pm a^2}| + C\)</span></div></li>
+<li id="integral-table-2-1-4"><div class="para" id="integral-table-2-1-4-1"><span class="process-math">\(\displaystyle \int \frac{u^2 du}{\sqrt{u^2 \pm a^2}} = \frac{u}{2}\sqrt{u^2 \pm a^2} \mp \frac{a^2}{2}\ln|u + \sqrt{u^2 \pm a^2}| + C\)</span></div></li>
+<li id="integral-table-2-1-5"><div class="para" id="integral-table-2-1-5-1"><span class="process-math">\(\displaystyle \int \frac{du}{u\sqrt{u^2+a^2}} = -\frac{1}{a} \ln \left| \frac{a+\sqrt{u^2 + a^2}}{u} \right| + C\)</span></div></li>
+<li id="integral-table-2-1-6"><div class="para" id="integral-table-2-1-6-1"><span class="process-math">\(\displaystyle \int \frac{du}{u\sqrt{u^2-a^2}} = \frac{1}{a} \arcsec \left( \frac{u}{a} \right) + C\)</span></div></li>
+<li id="integral-table-2-1-7"><div class="para" id="integral-table-2-1-7-1"><span class="process-math">\(\displaystyle \int \frac{du}{\sqrt{a^2 - u^2}} = \arcsin \left( \frac{u}{a} \right) + C\)</span></div></li>
+<li id="integral-table-2-1-8"><div class="para" id="integral-table-2-1-8-1"><span class="process-math">\(\displaystyle \int \sqrt{a^2 - u^2} \, du = \frac{u}{2}\sqrt{a^2 - u^2} + \frac{a^2}{2} \arcsin \left( \frac{u}{a} \right) + C\)</span></div></li>
+<li id="integral-table-2-1-9"><div class="para" id="integral-table-2-1-9-1"><span class="process-math">\(\displaystyle \int \frac{u^2}{\sqrt{a^2 - u^2}} \, du = -\frac{u}{2}\sqrt{a^2 - u^2} + \frac{a^2}{2} \arcsin \left( \frac{u}{a} \right) + C\)</span></div></li>
+<li id="integral-table-2-1-10"><div class="para" id="integral-table-2-1-10-1"><span class="process-math">\(\displaystyle \int \frac{du}{u\sqrt{a^2 - u^2}} = -\frac{1}{a} \ln \left| \frac{a + \sqrt{a^2 - u^2}}{u} \right| + C\)</span></div></li>
+<li id="integral-table-2-1-11"><div class="para" id="integral-table-2-1-11-1"><span class="process-math">\(\displaystyle \int \frac{du}{u^2\sqrt{a^2 - u^2}} = -\frac{\sqrt{a^2-u^2}}{a^2 u} + C\)</span></div></li>
 </ol></div></section></div>
 <div class="ptx-content-footer">
-<a class="previous-button button" href="sec-pset2-calc.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="trig-table.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="sec-pset3-calc.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="trig-table.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">

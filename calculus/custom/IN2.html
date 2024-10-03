@@ -14,7 +14,7 @@
 <meta property="og:type" content="book">
 <meta property="book:title" content="Calculus for Team-Based Inquiry Learning">
 <meta property="book:author" content="TBIL Community">
-<script>
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>
 var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
   "tex": {
@@ -41,7 +41,24 @@ window.MathJax = {
   },
   "options": {
     "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
-    "processHtmlClass": "process-math"
+    "processHtmlClass": "process-math",
+    "renderActions": {
+      "findScript": [
+        10,
+        function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        },
+        ""
+      ]
+    }
   },
   "chtml": {
     "scale": 0.98,
@@ -1706,9 +1723,9 @@ window.MathJax = {
 #pset-intro-4-3-2 { counter-set: pset-intro-4-3-2 0; }
 #pset-intro-4-3-2 > li::marker { content: ""counter(pset-intro-4-3-2,decimal)"."; }
 #pset-intro-4-3-2 > li { counter-increment: pset-intro-4-3-2; }
-#lcB { counter-set: lcB 0; }
-#lcB > li::marker { content: ""counter(lcB,lower-alpha)"."; }
-#lcB > li { counter-increment: lcB; }
+#integral-table-2-1 { counter-set: integral-table-2-1 0; }
+#integral-table-2-1 > li::marker { content: ""counter(integral-table-2-1,lower-alpha)"."; }
+#integral-table-2-1 > li { counter-increment: integral-table-2-1; }
 #trig-table-2 { counter-set: trig-table-2 0; }
 #trig-table-2 > li::marker { content: ""counter(trig-table-2,lower-alpha)"."; }
 #trig-table-2 > li { counter-increment: trig-table-2; }
@@ -2386,6 +2403,7 @@ window.MathJax = {
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="pset-intro.html" class="internal"><span class="codenumber">A.1</span> <span class="title">Problem Set Success Guide</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-pset1-calc.html" class="internal"><span class="codenumber">A.2</span> <span class="title">Problem Set 1</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-pset2-calc.html" class="internal"><span class="codenumber">A.3</span> <span class="title">Problem Set 2</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-pset3-calc.html" class="internal"><span class="codenumber">A.4</span> <span class="title">Problem Set 3</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-appendix"><div class="toc-title-box"><a href="integral-table.html" class="internal"><span class="codenumber">B</span> <span class="title">A Short Table of Integrals</span></a></div></li>
@@ -2400,27 +2418,27 @@ window.MathJax = {
 <ul class="disc" id="IN2-2-1"><li id="IN2-2-1-1"><div class="para" id="IN2-2-1-1-1">Approximate definite integrals using Riemann sums.</div></li></ul></article><section class="subsection" id="IN2-3"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">4.2.1</span><span class="space"> </span><span class="title">Activities</span>
 </h3>
-<article class="activity project-like" id="KNr" data-permid="KNr"><h4 class="heading">
+<article class="activity project-like" id="integration-riemann-1"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.2.1</span><span class="period">.</span>
 </h4>
-<div class="introduction" id="integration-riemann-1-1"><div class="para" id="eGi" data-permid="eGi">Suppose that a person is taking a walk along a long straight path and walks at a constant rate of 3 miles per hour.</div></div>
-<article class="task exercise-like" id="IYe" data-permid="IYe"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="NHX" data-permid="NHX">On the left-hand axes provided in <a href="IN2.html#ZWp" class="xref" data-knowl="./knowl/xref/F-4-2-IN1.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 85">Figure 85</a>, sketch a labeled graph of the velocity function <span class="process-math">\(v(t) = 3\text{.}\)</span>
+<div class="introduction" id="integration-riemann-1-1"><div class="para" id="integration-riemann-1-1-1">Suppose that a person is taking a walk along a long straight path and walks at a constant rate of 3 miles per hour.</div></div>
+<article class="task exercise-like" id="integration-riemann-1-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="integration-riemann-1-2-1">On the left-hand axes provided in <a href="IN2.html#F-4-2-IN1" class="xref" data-knowl="./knowl/xref/F-4-2-IN1.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 85">Figure 85</a>, sketch a labeled graph of the velocity function <span class="process-math">\(v(t) = 3\text{.}\)</span>
 </div>
-<figure class="figure figure-like" id="ZWp" data-permid="ZWp"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/4_1_PA1.svg" role="img" class="contained"></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">85<span class="period">.</span></span><span class="space"> </span>At left, axes for plotting <span class="process-math">\(y = v(t)\text{;}\)</span> at right, for plotting <span class="process-math">\(y = s(t)\text{.}\)</span></figcaption></figure><div class="para" id="tPg" data-permid="tPg">Note that while the scale on the two sets of axes is the same, the units on the right-hand axes differ from those on the left. The right-hand axes will be used in question (d).</div></article><article class="task exercise-like" id="pfn" data-permid="pfn"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="Gdy" data-permid="Gdy">How far did the person travel during the two hours? How is this distance related to the area of a certain region under the graph of <span class="process-math">\(y = v(t)\text{?}\)</span>
-</div></article><article class="task exercise-like" id="Vmw" data-permid="Vmw"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para" id="mkH" data-permid="mkH">Find an algebraic formula, <span class="process-math">\(s(t)\text{,}\)</span> for the position of the person at time <span class="process-math">\(t\text{,}\)</span> assuming that <span class="process-math">\(s(0) = 0\text{.}\)</span> Explain your thinking.</div></article><article class="task exercise-like" id="BtF" data-permid="BtF"><h5 class="heading"><span class="codenumber">(d)</span></h5>
-<div class="para" id="SrQ" data-permid="SrQ">On the right-hand axes provided in <a href="IN2.html#ZWp" class="xref" data-knowl="./knowl/xref/F-4-2-IN1.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 85">Figure 85</a>, sketch a labeled graph of the position function <span class="process-math">\(y = s(t)\text{.}\)</span>
-</div></article><article class="task exercise-like" id="hAO" data-permid="hAO"><h5 class="heading"><span class="codenumber">(e)</span></h5>
-<div class="para" id="yyZ" data-permid="yyZ">For what values of <span class="process-math">\(t\)</span> is the position function <span class="process-math">\(s\)</span> increasing? Explain why this is the case using relevant information about the velocity function <span class="process-math">\(v\text{.}\)</span>
-</div></article></article><article class="activity project-like" id="gon" data-permid="gon"><h4 class="heading">
+<figure class="figure figure-like" id="F-4-2-IN1"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/4_1_PA1.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">85<span class="period">.</span></span><span class="space"> </span>At left, axes for plotting <span class="process-math">\(y = v(t)\text{;}\)</span> at right, for plotting <span class="process-math">\(y = s(t)\text{.}\)</span></figcaption></figure><div class="para" id="integration-riemann-1-2-3">Note that while the scale on the two sets of axes is the same, the units on the right-hand axes differ from those on the left. The right-hand axes will be used in question (d).</div></article><article class="task exercise-like" id="integration-riemann-1-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="integration-riemann-1-3-1">How far did the person travel during the two hours? How is this distance related to the area of a certain region under the graph of <span class="process-math">\(y = v(t)\text{?}\)</span>
+</div></article><article class="task exercise-like" id="integration-riemann-1-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="integration-riemann-1-4-1">Find an algebraic formula, <span class="process-math">\(s(t)\text{,}\)</span> for the position of the person at time <span class="process-math">\(t\text{,}\)</span> assuming that <span class="process-math">\(s(0) = 0\text{.}\)</span> Explain your thinking.</div></article><article class="task exercise-like" id="integration-riemann-1-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="integration-riemann-1-5-1">On the right-hand axes provided in <a href="IN2.html#F-4-2-IN1" class="xref" data-knowl="./knowl/xref/F-4-2-IN1.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 85">Figure 85</a>, sketch a labeled graph of the position function <span class="process-math">\(y = s(t)\text{.}\)</span>
+</div></article><article class="task exercise-like" id="integration-riemann-1-6"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para" id="integration-riemann-1-6-1">For what values of <span class="process-math">\(t\)</span> is the position function <span class="process-math">\(s\)</span> increasing? Explain why this is the case using relevant information about the velocity function <span class="process-math">\(v\text{.}\)</span>
+</div></article></article><article class="activity project-like" id="act-4-1-1"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.2.2</span><span class="period">.</span>
 </h4>
 <div class="introduction" id="act-4-1-1-1">
-<div class="para" id="WUB" data-permid="WUB">Suppose that a person is walking in such a way that her velocity varies slightly according to the information given in <a href="IN2.html#bEu" class="xref" data-knowl="./knowl/xref/T-4-1-Act1.html" data-reveal-label="Reveal" data-close-label="Close" title="Table 86: Velocity data for the person walking.">Table 86</a> and graph given in <a href="IN2.html#qNs" class="xref" data-knowl="./knowl/xref/F-4-1-Act1.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 87">Figure 87</a>.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:1.5%;margin-right:1.5%;">
-<div class="sbspanel fixed-width middle" style="width:48.4536082474227%;"><figure class="table table-like" id="bEu" data-permid="bEu"><table class="tabular" id="HLD">
+<div class="para" id="act-4-1-1-1-1">Suppose that a person is walking in such a way that her velocity varies slightly according to the information given in <a href="IN2.html#T-4-1-Act1" class="xref" data-knowl="./knowl/xref/T-4-1-Act1.html" data-reveal-label="Reveal" data-close-label="Close" title="Table 86: Velocity data for the person walking.">Table 86</a> and graph given in <a href="IN2.html#F-4-1-Act1" class="xref" data-knowl="./knowl/xref/F-4-1-Act1.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 87">Figure 87</a>.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:1.5%;margin-right:1.5%;">
+<div class="sbspanel fixed-width middle" style="width:48.4536082474227%;"><figure class="table table-like" id="T-4-1-Act1"><table class="tabular">
 <tr>
 <td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(t\)</span></td>
 <td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(v(t)\)</span></td>
@@ -2463,15 +2481,15 @@ window.MathJax = {
 </tr>
 </table>
 <figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">86<span class="period">.</span></span><span class="space"> </span>Velocity data for the person walking.</figcaption></figure></div>
-<div class="sbspanel middle" style="width:48.4536082474227%;"><figure class="figure figure-like" id="qNs" data-permid="qNs"><img src="external/4_1_Act1.svg" role="img" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">87<span class="period">.</span></span><span class="space"> </span>The graph of <span class="process-math">\(y = v(t)\text{.}\)</span></figcaption></figure></div>
+<div class="sbspanel middle" style="width:48.4536082474227%;"><figure class="figure figure-like" id="F-4-1-Act1"><img src="external/4_1_Act1.svg" role="img" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">87<span class="period">.</span></span><span class="space"> </span>The graph of <span class="process-math">\(y = v(t)\text{.}\)</span></figcaption></figure></div>
 </div></div>
 </div>
-<article class="task exercise-like" id="JWp" data-permid="JWp"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="Ehd" data-permid="Ehd">Using the grid, graph, and given data appropriately, estimate the distance traveled by the walker during the two hour interval from <span class="process-math">\(t = 0\)</span> to <span class="process-math">\(t = 2\text{.}\)</span> You should use time intervals of width <span class="process-math">\(\Delta t = 0.5\text{,}\)</span> choosing a way to use the function consistently to determine the height of each rectangle in order to approximate distance traveled.</div></article><article class="task exercise-like" id="qdy" data-permid="qdy"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="kom" data-permid="kom">How could you get a better approximation of the distance traveled on <span class="process-math">\([0,2]\text{?}\)</span> Explain, and then find this new estimate.</div></article><article class="task exercise-like" id="WkH" data-permid="WkH"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para" id="Qvv" data-permid="Qvv">Now suppose that you know that <span class="process-math">\(v\)</span> is given by <span class="process-math">\(v(t) = 0.5t^3-1.5t^2+1.5t+1.5\text{.}\)</span> Remember that <span class="process-math">\(v\)</span> is the derivative of the walker’s position function, <span class="process-math">\(s\text{.}\)</span> Find a formula for <span class="process-math">\(s\)</span> so that <span class="process-math">\(s' = v\text{.}\)</span>
-</div></article><article class="task exercise-like" id="CrQ" data-permid="CrQ"><h5 class="heading"><span class="codenumber">(d)</span></h5>
-<div class="para" id="wCE" data-permid="wCE">Based on your work in (c), what is the value of <span class="process-math">\(s(2) - s(0)\text{?}\)</span> What is the meaning of this quantity?</div></article></article><article class="definition definition-like" id="def-riemann-sum"><h4 class="heading">
+<article class="task exercise-like" id="act-4-1-1-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="act-4-1-1-2-1">Using the grid, graph, and given data appropriately, estimate the distance traveled by the walker during the two hour interval from <span class="process-math">\(t = 0\)</span> to <span class="process-math">\(t = 2\text{.}\)</span> You should use time intervals of width <span class="process-math">\(\Delta t = 0.5\text{,}\)</span> choosing a way to use the function consistently to determine the height of each rectangle in order to approximate distance traveled.</div></article><article class="task exercise-like" id="act-4-1-1-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="act-4-1-1-3-1">How could you get a better approximation of the distance traveled on <span class="process-math">\([0,2]\text{?}\)</span> Explain, and then find this new estimate.</div></article><article class="task exercise-like" id="act-4-1-1-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="act-4-1-1-4-1">Now suppose that you know that <span class="process-math">\(v\)</span> is given by <span class="process-math">\(v(t) = 0.5t^3-1.5t^2+1.5t+1.5\text{.}\)</span> Remember that <span class="process-math">\(v\)</span> is the derivative of the walker’s position function, <span class="process-math">\(s\text{.}\)</span> Find a formula for <span class="process-math">\(s\)</span> so that <span class="process-math">\(s' = v\text{.}\)</span>
+</div></article><article class="task exercise-like" id="act-4-1-1-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="act-4-1-1-5-1">Based on your work in (c), what is the value of <span class="process-math">\(s(2) - s(0)\text{?}\)</span> What is the meaning of this quantity?</div></article></article><article class="definition definition-like" id="def-riemann-sum"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">4.2.3</span><span class="period">.</span>
 </h4>
 <div class="para logical" id="def-riemann-sum-1-1">

@@ -14,7 +14,7 @@
 <meta property="og:type" content="book">
 <meta property="book:title" content="Calculus for Team-Based Inquiry Learning">
 <meta property="book:author" content="TBIL Community">
-<script>
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>
 var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
   "tex": {
@@ -41,7 +41,24 @@ window.MathJax = {
   },
   "options": {
     "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
-    "processHtmlClass": "process-math"
+    "processHtmlClass": "process-math",
+    "renderActions": {
+      "findScript": [
+        10,
+        function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        },
+        ""
+      ]
+    }
   },
   "chtml": {
     "scale": 0.98,
@@ -1706,9 +1723,9 @@ window.MathJax = {
 #pset-intro-4-3-2 { counter-set: pset-intro-4-3-2 0; }
 #pset-intro-4-3-2 > li::marker { content: ""counter(pset-intro-4-3-2,decimal)"."; }
 #pset-intro-4-3-2 > li { counter-increment: pset-intro-4-3-2; }
-#lcB { counter-set: lcB 0; }
-#lcB > li::marker { content: ""counter(lcB,lower-alpha)"."; }
-#lcB > li { counter-increment: lcB; }
+#integral-table-2-1 { counter-set: integral-table-2-1 0; }
+#integral-table-2-1 > li::marker { content: ""counter(integral-table-2-1,lower-alpha)"."; }
+#integral-table-2-1 > li { counter-increment: integral-table-2-1; }
 #trig-table-2 { counter-set: trig-table-2 0; }
 #trig-table-2 > li::marker { content: ""counter(trig-table-2,lower-alpha)"."; }
 #trig-table-2 > li { counter-increment: trig-table-2; }
@@ -2386,6 +2403,7 @@ window.MathJax = {
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="pset-intro.html" class="internal"><span class="codenumber">A.1</span> <span class="title">Problem Set Success Guide</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-pset1-calc.html" class="internal"><span class="codenumber">A.2</span> <span class="title">Problem Set 1</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-pset2-calc.html" class="internal"><span class="codenumber">A.3</span> <span class="title">Problem Set 2</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-pset3-calc.html" class="internal"><span class="codenumber">A.4</span> <span class="title">Problem Set 3</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-appendix"><div class="toc-title-box"><a href="integral-table.html" class="internal"><span class="codenumber">B</span> <span class="title">A Short Table of Integrals</span></a></div></li>
@@ -2412,17 +2430,17 @@ window.MathJax = {
 </ol></article><article class="fact theorem-like" id="fact-SQ5convergenceTheorem"><h4 class="heading">
 <span class="type">Fact</span><span class="space"> </span><span class="codenumber">8.5.2</span><span class="period">.</span>
 </h4>
-<div class="para" id="QCd" data-permid="QCd">If the series <span class="process-math">\(\displaystyle\sum a_n\)</span> is convergent, then  <span class="process-math">\(\displaystyle\lim_{n\rightarrow\infty} a_n=0\text{.}\)</span>
+<div class="para" id="fact-SQ5convergenceTheorem-1-1">If the series <span class="process-math">\(\displaystyle\sum a_n\)</span> is convergent, then  <span class="process-math">\(\displaystyle\lim_{n\rightarrow\infty} a_n=0\text{.}\)</span>
 </div></article><article class="fact theorem-like" id="fact-SQ5divergenceTest"><h4 class="heading">
 <span class="type">Fact</span><span class="space"> </span><span class="codenumber">8.5.3</span><span class="period">.</span><span class="space"> </span><span class="title">The Divergence (<span class="process-math">\(n^{th}\)</span> term) Test.</span>
 </h4>
-<div class="para" id="QCd" data-permid="QCd">If the  <span class="process-math">\(\displaystyle\lim_{n\rightarrow\infty} a_n\neq 0\text{,}\)</span> then <span class="process-math">\(\displaystyle\sum a_n\)</span> diverges.</div></article><article class="activity project-like" id="applyDTtoinvestigate"><h4 class="heading">
+<div class="para" id="fact-SQ5divergenceTest-2-1">If the  <span class="process-math">\(\displaystyle\lim_{n\rightarrow\infty} a_n\neq 0\text{,}\)</span> then <span class="process-math">\(\displaystyle\sum a_n\)</span> diverges.</div></article><article class="activity project-like" id="applyDTtoinvestigate"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.5.4</span><span class="period">.</span>
 </h4>
 <div class="para" id="applyDTtoinvestigate-1">Which of the series from <a href="SQ5.html#activity-SQ5investigateDivergentSeries" class="xref" data-knowl="./knowl/xref/activity-SQ5investigateDivergentSeries.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 8.5.1">Activity 8.5.1</a> diverge by <a href="SQ5.html#fact-SQ5divergenceTest" class="xref" data-knowl="./knowl/xref/fact-SQ5divergenceTest.html" data-reveal-label="Reveal" data-close-label="Close" title="Fact 8.5.3: The Divergence (n^{th} term) Test">Fact 8.5.3</a>?</div></article><article class="fact theorem-like" id="fact-SQ5boundedPartialSums"><h4 class="heading">
 <span class="type">Fact</span><span class="space"> </span><span class="codenumber">8.5.5</span><span class="period">.</span>
 </h4>
-<div class="para" id="QCd" data-permid="QCd">If <span class="process-math">\(a_n&gt;0\)</span> for all <span class="process-math">\(n\text{,}\)</span> then <span class="process-math">\(\displaystyle\sum a_n\)</span> is convergent if and only if the sequence of partial sums is bounded from above.</div></article><article class="activity project-like" id="activity-SQ5harmonicSeries"><h4 class="heading">
+<div class="para" id="fact-SQ5boundedPartialSums-1-1">If <span class="process-math">\(a_n&gt;0\)</span> for all <span class="process-math">\(n\text{,}\)</span> then <span class="process-math">\(\displaystyle\sum a_n\)</span> is convergent if and only if the sequence of partial sums is bounded from above.</div></article><article class="activity project-like" id="activity-SQ5harmonicSeries"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.5.6</span><span class="period">.</span>
 </h4>
 <div class="introduction" id="activity-SQ5harmonicSeries-1"><div class="para" id="activity-SQ5harmonicSeries-1-1">Consider the so-called <em class="emphasis">harmonic series</em>, <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \displaystyle\frac{1}{n}\text{,}\)</span> and let <span class="process-math">\(S_n\)</span> be its <span class="process-math">\(n^{th}\)</span> partial sum.</div></div>
@@ -2500,7 +2518,7 @@ window.MathJax = {
 </div></article></article><article class="fact theorem-like" id="fact-SQ5integralTest"><h4 class="heading">
 <span class="type">Fact</span><span class="space"> </span><span class="codenumber">8.5.9</span><span class="period">.</span><span class="space"> </span><span class="title">The Integral Test.</span>
 </h4>
-<div class="para" id="QCd" data-permid="QCd">Let <span class="process-math">\(\{a_n\}\)</span> be a sequence of positive numbers. If <span class="process-math">\(f(x)\)</span> is continuous, positive, and decreasing, and there is some positive integer <span class="process-math">\(N\)</span> such that <span class="process-math">\(f(n)=a_n\)</span> for all <span class="process-math">\(n\geq N\text{,}\)</span> then <span class="process-math">\(\displaystyle \sum_{n=N}^\infty a_n\)</span> and <span class="process-math">\(\displaystyle\int_N^\infty \displaystyle f(x) \, dx\)</span> both converge or both diverge.</div></article><article class="activity project-like" id="activity-SQ5pSeries"><h4 class="heading">
+<div class="para" id="fact-SQ5integralTest-2-1">Let <span class="process-math">\(\{a_n\}\)</span> be a sequence of positive numbers. If <span class="process-math">\(f(x)\)</span> is continuous, positive, and decreasing, and there is some positive integer <span class="process-math">\(N\)</span> such that <span class="process-math">\(f(n)=a_n\)</span> for all <span class="process-math">\(n\geq N\text{,}\)</span> then <span class="process-math">\(\displaystyle \sum_{n=N}^\infty a_n\)</span> and <span class="process-math">\(\displaystyle\int_N^\infty \displaystyle f(x) \, dx\)</span> both converge or both diverge.</div></article><article class="activity project-like" id="activity-SQ5pSeries"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.5.10</span><span class="period">.</span>
 </h4>
 <div class="introduction" id="activity-SQ5pSeries-1"><div class="para" id="activity-SQ5pSeries-1-1">Consider the <span class="process-math">\(p\)</span>-series <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \frac{1}{n^p}\text{.}\)</span>
@@ -2525,7 +2543,7 @@ window.MathJax = {
 </div></article></article><article class="fact theorem-like" id="fact-SQ5pTest"><h4 class="heading">
 <span class="type">Fact</span><span class="space"> </span><span class="codenumber">8.5.11</span><span class="period">.</span><span class="space"> </span><span class="title">The <span class="process-math">\(p\)</span>-Test.</span>
 </h4>
-<div class="para" id="QCd" data-permid="QCd">The series <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \displaystyle\frac{1}{n^p}\)</span> converges for <span class="process-math">\(p\gt 1\text{,}\)</span> and diverges otherwise.</div></article><article class="activity project-like" id="activity-SQ5pSeriesAlmost"><h4 class="heading">
+<div class="para" id="fact-SQ5pTest-2-1">The series <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \displaystyle\frac{1}{n^p}\)</span> converges for <span class="process-math">\(p\gt 1\text{,}\)</span> and diverges otherwise.</div></article><article class="activity project-like" id="activity-SQ5pSeriesAlmost"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.5.12</span><span class="period">.</span>
 </h4>
 <div class="introduction" id="activity-SQ5pSeriesAlmost-1"><div class="para" id="activity-SQ5pSeriesAlmost-1-1">Consider the series <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \displaystyle\frac{1}{n^2+1}\text{.}\)</span>
@@ -2561,7 +2579,7 @@ window.MathJax = {
 </div></article><article class="fact theorem-like" id="fact-SQ8alternatingSeriesTest"><h4 class="heading">
 <span class="type">Fact</span><span class="space"> </span><span class="codenumber">8.5.15</span><span class="period">.</span><span class="space"> </span><span class="title">The Alternating Series Test (Leibniz’s Theorem).</span>
 </h4>
-<div class="para logical" id="QCd" data-permid="QCd">
+<div class="para logical" id="fact-SQ8alternatingSeriesTest-2-1">
 <div class="para">The series <span class="process-math">\(\displaystyle\sum (-1)^{n+1}u_n\)</span> converges if all of the following conditions are satisfied:</div>
 <ol class="decimal" id="fact-SQ8alternatingSeriesTest-2-1-2">
 <li id="fact-SQ8alternatingSeriesTest-2-1-2-1"><div class="para" id="p-derived-fact-SQ8alternatingSeriesTest-2-1-2-1">
@@ -2594,7 +2612,7 @@ window.MathJax = {
 <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \frac{3 \, \left(-1\right)^{n}}{4 \, n}.\)</span></article></article><article class="fact theorem-like" id="fact-SQ8alternatingSeriesEstimation"><h4 class="heading">
 <span class="type">Fact</span><span class="space"> </span><span class="codenumber">8.5.18</span><span class="period">.</span><span class="space"> </span><span class="title">The Alternating Series Estimation Theorem.</span>
 </h4>
-<div class="para logical" id="QCd" data-permid="QCd">
+<div class="para logical" id="fact-SQ8alternatingSeriesEstimation-2-1">
 <div class="para">If the alternating series <span class="process-math">\(\displaystyle\sum a_n=\displaystyle\sum (-1)^{n+1}u_n\)</span> converges to <span class="process-math">\(L\)</span> and has <span class="process-math">\(n^{th}\)</span> partial sum <span class="process-math">\(S_n\text{,}\)</span> then for <span class="process-math">\(n\geq N\)</span> (as in the alternating series test):</div>
 <ol class="decimal" id="fact-SQ8alternatingSeriesEstimation-2-1-6">
 <li id="fact-SQ8alternatingSeriesEstimation-2-1-6-1"><div class="para" id="p-derived-fact-SQ8alternatingSeriesEstimation-2-1-6-1">
