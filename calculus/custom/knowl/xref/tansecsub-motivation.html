@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="problem example-like"><h3 class="heading">
+<span class="type">Problem</span><span class="space"> </span><span class="codenumber">A.2.4</span><span class="period">.</span>
+</h3>
+<div class="introduction">
+<div class="para">In <a href="TI4.html" class="internal" title="Section 5.4: Trigonometric Substitution (TI4)">Section 5.4</a>, we developed strategies to evaluate integrals of the form <span class="process-math">\(\displaystyle\int\sin^n{x}\cos^m{x}dx\text{.}\)</span> Similar strategies often work for integrals of the form <span class="process-math">\(\displaystyle \tan^n{x}dx\text{.}\)</span> Before exploring this further, we need to understand how to evaluate two foundational integrals; this Problem asks you to do just that.</div> <article class="task exercise-like"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para logical">
+<div class="para">Explain and demonstrate how to use an appropriate <span class="process-math">\(u\)</span>-substitution to show that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\displaystyle\int\tan{x}dx=\ln|\sec{x}|+C\text{.}
+\end{equation*}
+</div>
+</div></article> <article class="task exercise-like"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para logical">
+<div class="para">Explain why</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\displaystyle\int\sec{x}dx=\ln|\sec{x}+\tan{x}|+C
+\end{equation*}
+</div>
+<div class="para">by first multiplying and dividing the integrand by <span class="process-math">\(\sec{x}+\tan{x}\text{.}\)</span>
+</div>
+</div></article> <article class="task exercise-like"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para">While the above trick might seem elusive (because it is!), try using a similar trick to evaluate the integral <span class="process-math">\(\displaystyle\int\csc{x}dx\text{.}\)</span>
+</div></article> <div class="para">From now on, you may use these results in future problems without having to reproduce them.</div>
+</div> <details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<article class="task exercise-like"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para logical">
+<div class="para">Start by re-writing <span class="process-math">\(\tan{x}=\frac{\sin{x}}{\cos{x}}\)</span> and then make the substitution <span class="process-math">\(u=\cos{x}\text{:}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{align*}
+\int\tan{x}dx \amp =\amp \int\frac{\sin{x}}{\cos{x}}dx\\
+\amp =\amp \int\frac{-du}{u}\\
+\amp =\amp -\ln|u|+C\\
+\amp =\amp -\ln|\cos{x}|+C\\
+\amp =\amp \ln|\sec{x}|+C.
+\end{align*}
+</div>
+</div></article> <article class="task exercise-like"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para logical">
+<div class="para">Let’s follow the advice:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\sec{x}=\sec{x}\cdot\frac{\sec{x}+\tan{x}}{\sec{x}+\tan{x}}=\frac{\sec^2{x}+\tan{x}\sec{x}}{\sec{x}+\tan{x}}.
+\end{equation*}
+</div>
+<div class="para">From here, if we let <span class="process-math">\(u=\sec{x}+\tan{x}\text{,}\)</span> then <span class="process-math">\(du=(\sec{x}\tan{x}+sec^2{x})dx\text{.}\)</span> It follows that if we use this substitution, the integral transforms into:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int\frac{du}{u}=\ln|u|+C=\ln|\sec{x}+\tan{x}|+C.
+\end{equation*}
+</div>
+</div></article> <article class="task exercise-like"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para logical">
+<div class="para">Recall that <span class="process-math">\(\frac{d}{dx}\csc{x}=-\csc{x}\cot{x}\)</span> and <span class="process-math">\(\frac{d}{dx}\cot{x}=-\csc^2{x}\text{.}\)</span> Mimicking what we did above, let’s multiply and divide <span class="process-math">\(\csc{x}\)</span> by <span class="process-math">\(\csc{x}+\cot{x}\text{:}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\csc{x}=\frac{\csc^2{x}+\csc{x}\cot{x}}{\csc{x}+\cot{x}}.
+\end{equation*}
+</div>
+<div class="para">From here, if <span class="process-math">\(u=\csc{x}+\cot{x}\)</span> then <span class="process-math">\(du=-(\csc{x}\cot{x}+\csc^2{x})dx\)</span> which allows use to use substitution:</div>
+<div class="displaymath process-math">
+\begin{align*}
+\int\csc{x}dx \amp =\amp-\int\frac{du}{u}\\
+\amp =\amp -\ln|u|+C\\
+\amp =\amp -\ln|\cot{x}+\csc{x}|+C.
+\end{align*}
+</div>
+</div></article>
+</div></details></article><span class="incontext"><a class="internal" href="sec-pset1-calc.html#tansecsub-motivation">in-context</a></span>
+</body>
+</html>
