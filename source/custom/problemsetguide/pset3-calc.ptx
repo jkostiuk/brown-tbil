@@ -60,10 +60,73 @@
                     </p>
                 </statement>
             </task>
-            
         </introduction>
-        
+        <solution>
+            <task>
+                <statement>
+                    <p>
+                        We begin by sketching the region in the <m>xy</m>-plane and the vertical and horizontal line segments as shown in <xref ref="toruscrosssection"/>. 
+                        For a given <m>x</m>-value between <m>1</m> and <m>3</m>, the <m>y</m>-coordinates of the top and bottom of the vertical line segment are given by <m>y=\pm\sqrt{1-(x-2)^2}</m>. 
+                        Thus, as we revolve the vertical line segment about the <m>y</m>-axis, we obtain a cylindrical shell of area
+                        <me>A=2\pi rh=2\pi(x)(2\sqrt{1-(x-2)^2}).</me>
+                        It follows that volume is calculated as:
+                        <me>V=\int_1^3 2\pi rh=2\pi(x)(2\sqrt{1-(x-2)^2}) dx.</me>
+                    </p>
+                    <figure xml:id="toruscrosssection">
+                        <caption>The circle <m>(x-2)^2+y^2=1</m> and vertical and horizontal line segments.</caption>
+                        <image source="custom/torus-cross.png" width="50%">
+                        </image>
+                    </figure>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        This time, as we vary horizontal line segments with <m>y</m> between <m>-1</m> and <m>1</m>, the inner and outer radii are found by solving for <m>x</m> in the equation <m>(x-2)^2+y^2=1</m>. 
+                        We find:
+                        <me>r_{in}=2-\sqrt{1-y^2}</me>
+                        <me>r_{out}=2+\sqrt{1-y^2}.</me>
+                        For each fixed <m>y</m>, the area of the corresponding washer is then:
+                        <me>A=\pi\left(2+\sqrt{1-y^2}\right)^2-\pi\left(2-\sqrt{1-y^2}\right)^2</me>
+                        and so volume is
+                        <me>V=\int_{-1}^1\pi\left(2+\sqrt{1-y^2}\right)^2-\pi\left(2-\sqrt{1-y^2}\right)^2 dy</me>
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        When I plugged both of these integrals into Wolfram Alpha, I got <m>4\pi^2</m>.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        I am going to choose the first one. 
+                        Starting with <m>\int_1^3 2\pi rh=2\pi(x)(2\sqrt{1-(x-2)^2}) dx</m>, I substitute <m>u=x-2</m> so <m>du=dx</m> and the integral is:
+                        <md>
+                            <mrow>\int_1^3 2\pi rh=2\pi(x)(2\sqrt{1-(x-2)^2}) dx \amp =\int_{-1}^14\pi(u+2)\sqrt{1-u^2} du</mrow>
+                            <mrow> \amp =4\pi\left[\int_{-1}^1u\sqrt{1-u^2}du +2\int_{-1}^1\sqrt{1-u^2}du \right]</mrow>
+                            <mrow> \amp =4\pi(I_1+I_2);</mrow>
+                        </md>
+                        now I evaluate <m>I_1,I_2</m> separately. 
+                    </p>
+                    <p>
+                        One approach for <m>I_1</m> is to substitute <m>v=1-u^2</m>. 
+                        Another is to observe that since the function <m>u\sqrt{1-u^2}</m> is odd on <m>[-1,1]</m>, it follows that <m>I_1=0</m>. 
+                    </p>
+                    <p>
+                        For <m>I_2</m>, one can use trig sub. Alternatively, this integral represents the area of the top half of the unit disc times <m>2</m>, so <m>I_2=2\frac{\pi}{2}=\pi</m>.
+                    </p>
+                    <p>
+                        Putting it all together, the volume is <m>4\pi(I_1+I_2)=4\pi(0+\pi)=4\pi^2</m>.
+                    </p>
+                </statement>
+            </task>
+        </solution>
     </problem>
+    
 
     <problem>
         <title>(Problem 2)</title>    
@@ -85,6 +148,18 @@
                 Consider all three kinds of cross-sections; which set of cross-sections seems the simplest to work with. 
             </p>
         </hint>
+        <solution>
+            <p>
+                If we cut with planes that are parallel to the <m>xy</m>-plane, then each cross-section is a square. 
+                Using the equations that define the cylinders <m>x^2+z^2=1</m> and/or <m>y^2+z^2=1</m>, the length of the line segments forming an edge of the square are <m>2\sqrt{1-z^2}</m>. 
+                It follows the area of each cross section is:
+                <me>A=(2\sqrt{1-z^2})^2=4(1-z^2).</me>
+            </p>
+            <p>
+                It follows that
+                <me>V=\int_{0}^1 4(1-z^2) dz=\frac{8}{3}.</me>
+            </p>
+        </solution>
     </problem>
 
     <problem>
@@ -125,6 +200,41 @@
                 </statement>
             </task>
         </introduction>
+        <solution>
+            <task>
+                <statement>
+                    <p>
+                        The area of <m>R</m> would correspond to the integral <m>\int_1^\infty\frac{dx}{x}</m>.
+                        We saw in class that this integral diverges to infinity, so the area is infinite. 
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        If we revolve the region about the <m>x</m>-axis and use vertical line segments to generate cross sections, we get discs of radius <m>r=\frac{1}{x}</m>. 
+                        The area of each such cross-section is 
+                        <m>A=\pi r^2=\frac{\pi}{x^2}</m>.
+                        Thus, the volume is represented by
+                        <me>V=\pi\int_1^\infty\frac{dx}{x^2}.</me>
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        This integral converges by our analysis of the <m>p</m>-integrals in class since <m>2</m> is greater than <m>1</m>. 
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        That's pretty messed up if you ask me. 
+                    </p>
+                </statement>
+            </task>
+        </solution>
     </problem>
 
     <problem>
@@ -161,6 +271,43 @@
                 </statement>
             </task>
         </introduction>
+        <solution>
+            <task>
+                <statement>
+                    <p>
+                        One approach is to consider the work lifting the bucket and the rope separately, say <m>W_1</m> and <m>W_2</m>. 
+                        If we break up the motion into <m>4</m> evenly spaced lifts of <m>2.5m</m>, then the work needed to lift the bucket is
+                        <me>W_1=200(9.8)(2.5)+200(9.8)(2.5)200(9.8)(2.5)+200(9.8)(2.5)=19600N\cdot m.</me>
+                    </p>
+                    <p>
+                        For the work <m>W_2</m>, we think of cutting the rope into <m>4</m> equal pieces. 
+                        Each piece has mass equal to <m>(2.5)(2)=5kg</m>. 
+                        If <m>x</m> represents height off the ground, we let <m>x_0=0, x_1=2.5, x_2=5, x_3=7.5</m> with the bottom of piece <m>i</m> is at <m>x_{i-1}</m>, and then the <m>i</m>-th piece moves <m>10-x_i</m> units to get to the top. 
+                        Thus, an approximation of the work is equal to:
+                        <me>5(9.8)(10-0)+5(9.8)(10-2.5)+5(9.8)(10-5)+5(9.8)(10-7.5)=1225N\cdot m.</me>
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        If we do the same but with <m>n</m> pieces, the work for the bucket is still <m>19600N\cdot m</m> (here, the force isn't varying, so we don't need an integral).
+                        For the rope, cut it into pieces of length <m>\Delta x=\frac{10}{n}</m> and let <m>x_i</m> be the position of the bottom of the <m>i</m>-th piece. 
+                        Then, the work to move the <m>i</m>-th piece is:
+                        <me>W_i=(2)(\Delta x)(9.8)(10-x_i)</me> and the corresponding Riemann sum is then
+                        <me>\sum_{i=0}^{n-1}19.6(10-x_i)\Delta x.</me>
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        This Riemann sum corresponds to <m>\int_0^{10}19.6(10-x)dx=980</m>. Adding this to the original 19600, our work is
+                        <me>W=20580N\cdot m.</me>
+                    </p>
+                </statement>
+            </task>
+        </solution>
     </problem>
 
     <problem>
