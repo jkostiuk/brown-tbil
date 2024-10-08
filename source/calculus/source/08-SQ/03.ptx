@@ -115,7 +115,7 @@ More generally, partial sums may be defined for any starting index. Given <m>\{a
         <fact xml:id="fact-geometricsum">
             <statement>
                 <p>
-                    Provide that <m>x\neq 1</m>, we have
+                    Provided that <m>x\neq 1</m>, we have
                     <me>(1-x)(1+x+x^2+\cdots+x^n)=1-x^{n+1}.</me>
                 </p>
             </statement>
