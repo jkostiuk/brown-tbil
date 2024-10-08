@@ -366,7 +366,33 @@
                     </sage>
                 </statement>
             </task>
-        </introduction>
-        
+        </introduction>    
+        <solution>
+            <task>
+                <statement>
+                    <p>
+                        If <m>f(x)=xe^{-x^2}</m>, then <m>f'(x)=(1-2x^2)e^{-x^2}</m> and so 
+                        <me>\sqrt{1+(f'(x))^2}=\sqrt{1+e^{-2x^2}(1-2x^2)^2}</me>
+                        The arc length is thus
+                        <me>A=\int_0^2\sqrt{1+(f'(x))^2}=\sqrt{1+e^{-2x^2}(1-2x^2)^2} dx</me>
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Answers may vary. 
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        For <m>n=10,15,20</m>, I get <m>2.206,2.208,2.208</m>. If we keep going to <m>n=40</m>, we get <m>2.209</m>. 
+                        After that, numbers keep increasing a little bit, up to <m>150</m>, it didn't seem to change the first three decimals, so I'm convinced <m>2.209</m> is a good approximation. 
+                    </p>
+                </statement>
+            </task>
+        </solution>
     </problem>
 </section>
