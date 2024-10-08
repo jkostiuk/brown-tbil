@@ -76,11 +76,12 @@ More generally, partial sums may be defined for any starting index. Given <m>\{a
         </definition>
         
         <activity xml:id="activity-SQ3geompartialsum">
-            <statement>
+            <introduction>
                 <p>
-                     Let <m>a_n=\frac{2}{3^n}.</m> Find the following partial sums of the sequence <m>\{a_n\}_{n=0}^\infty</m>.
+                    Let <m>a_n=\frac{2}{3^n}</m>.
+                    Find the following partial sums of the sequence <m>\{a_n\}_{n=0}^\infty</m>.
                 </p>        
-            </statement>
+            </introduction>
             <task><m>A_0</m>.</task>
             <task><m>A_1</m>.</task>
             <task><m>A_2</m>.</task>
@@ -111,6 +112,14 @@ More generally, partial sums may be defined for any starting index. Given <m>\{a
                 </p>
             </statement>
         </activity>
+        <fact xml:id="fact-geometricsum">
+            <statement>
+                <p>
+                    Provide that <m>x\neq 1</m>, we have
+                    <me>(1-x)(1+x+x^2+\cdots+x^n)=1-x^{n+1}.</me>
+                </p>
+            </statement>
+        </fact>
         
         <activity xml:id="activity-SQ3simplifyingsum">
             <statement>
@@ -132,7 +141,7 @@ More generally, partial sums may be defined for any starting index. Given <m>\{a
             </introduction>
             <task>
                 <p>
-                     Which of the following is equal to <m>\displaystyle\left(1-\frac{1}{3}\right)A_{100}</m>?
+                    Using <xref ref="fact-geometricsum"/>, which of the following is equal to <m>\displaystyle\left(1-\frac{1}{3}\right)A_{100}</m>?
                     <ol marker="A." cols="2">
                         <li><m>\displaystyle1-\frac{1}{3^{101}}</m>.</li>
                         <li><m>\displaystyle1-\frac{1}{3^{100}}</m>.</li>
@@ -157,40 +166,26 @@ More generally, partial sums may be defined for any starting index. Given <m>\{a
             </introduction>
             <task>
                 <p>
-                     Find simple expressions for the following:
-                    <ol>
-                        <li><m>(1-(-2))B_{10}</m>.</li>
-                        <li><m>(1-(-2))B_{30}</m>.</li>
-                        <li>
-                            <p><m>(1-(-2))B_{n}</m>. Choose from the following:</p>
-                            <ol marker="A." cols="2">
-                                <li><m>1+(-2)^n</m>.</li>
-                                <li><m>1-(-2)^n</m>.</li>
-                                <li><m>1+(-2)^{n+1}</m>.</li>
-                                <li><m>1-(-2)^{n+1}</m>.</li>
-                                <li><m>1-2^n</m>.</li>
-                            </ol>
-                        </li>
-                    </ol>
-                </p>
+                    Using <xref ref="fact-geometricsum"/>, which of the follows is equal to <m>(1-(-2))B_{n}</m>?
+                    </p>
+                        <ol marker="A." cols="2">
+                            <li><m>1+(-2)^n</m>.</li>
+                            <li><m>1-(-2)^n</m>.</li>
+                            <li><m>1+(-2)^{n+1}</m>.</li>
+                            <li><m>1-(-2)^{n+1}</m>.</li>
+                            <li><m>1-2^n</m>.</li>
+                        </ol>
             </task>
             <task>
                 <p>
-                    Based on your previous answers, solve for the following:
-                    <ol>
-                        <li><m>B_{10}</m>.</li>
-                        <li><m>B_{30}</m>.</li>
-                        <li>
-                            <p><m>B_{n}</m>. Choose from the following:</p>                            
-                            <ol marker="A." cols="2">
-                                <li><m>\displaystyle \frac{1-(-2)^{n+1}}{1-(-2)}</m></li>
-                                <li><m>\displaystyle \frac{1-(-2)^{n+1}}{1-2}</m></li>
-                                <li><m>\displaystyle \frac{1-(-2)^{n+1}}{1+(-2)}</m></li>
-                                <li><m>\displaystyle \frac{1-(-2)^{n}}{1-2}</m></li>
-                                <li><m>\displaystyle \frac{1-(-2)^{n}}{1-(-2)}</m></li>
-                            </ol>
-                        </li>
-                    </ol>
+                    Based on your previous answer, which of the following is equal to <m>B_n</m>?                           
+                        <ol marker="A." cols="2">
+                            <li><m>\displaystyle \frac{1-(-2)^{n+1}}{1-(-2)}</m></li>
+                            <li><m>\displaystyle \frac{1-(-2)^{n+1}}{1-2}</m></li>
+                            <li><m>\displaystyle \frac{1-(-2)^{n+1}}{1+(-2)}</m></li>
+                            <li><m>\displaystyle \frac{1-(-2)^{n}}{1-2}</m></li>
+                            <li><m>\displaystyle \frac{1-(-2)^{n}}{1-(-2)}</m></li>
+                        </ol>
                 </p>
             </task>
                     
@@ -233,7 +228,8 @@ More generally, partial sums may be defined for any starting index. Given <m>\{a
             </task>
             <task>
                 <p>
-                    Find the closed form for the <m>n</m>th partial sum for the geometric sequence <m>C_n=\displaystyle\sum_{i=0}^n c_i=\displaystyle\sum_{i=0}^n -3\cdot \left(1.2\right)^n</m>.
+                    Explain and demonstrate why a closed form for the <m>n</m>th partial sum for the geometric sequence <m>C_n=\displaystyle\sum_{i=0}^n c_i=\displaystyle\sum_{i=0}^n -3\cdot \left(1.2\right)^n</m> is given by
+                    <me>C_n=15(1-(1.2)^{n+1}).</me>
                 </p>            
             </task>
           </activity>
