@@ -7333,7 +7333,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "8.2",
   "title": "Sequence Properties and Limits (SQ2)",
-  "body": " Sequence Properties and Limits (SQ2)     Determine if a sequence is convergent, divergent, monotonic, or bounded, and compute limits of convergent sequences.      Activities   We will consider the function .  Compute the limit .       Determine on which intervals is increasing and\/or decreasing. (Hint: compute first.)  Which statement best describes for ?  is bounded above by 4  is bounded below by 4  is bounded above and below by 4  is not bounded above  is not bounded below      Given a sequence :  is monotonically increasing if for every choice of .  is monotonically non-decreasing if for every choice of .  is monotonically decreasing if for every choice of .  is monotonically non-increasing if for every choice of .  All of these sequences would be monotonic .      Consider the sequence    Compute .  Which of the following is true about ? There can be more or less than one answer.  for every choice of .  for every choice of .  for every choice of .  for every choice of .    Which of the following (if any) describe   Monotonically increasing.  Monotonically non-decreasing.  Monotonically decreasing.  Monotonically non-increasing.       Consider the sequence    Compute .  Which of the following is true about ? There can be more or less than one answer.  for every choice of .  for every choice of .  for every choice of .  for every choice of .    Which of the following (if any) describe   Monotonically increasing.  Monotonically non-decreasing.  Monotonically decreasing.  Monotonically non-increasing.       Consider the sequence    Compute .  Which of the following is true about ? There can be more or less than one answer.  for every choice of .  for every choice of .  for every choice of .  for every choice of .    Which of the following (if any) describe   Monotonically increasing.  Monotonically non-decreasing.  Monotonically decreasing.  Monotonically non-increasing.       Consider the sequence    Compute .  Which of the following is true about ? There can be more or less than one answer.  for every choice of .  for every choice of .  for every choice of .  for every choice of .    Which of the following (if any) describe   Monotonically increasing.  Monotonically non-decreasing.  Monotonically decreasing.  Monotonically non-increasing.       A sequence is bounded if there are real numbers such that for every .      Consider the sequence from .   Is there a such that for every ? If so, what would be one such ?  Is there a such that for every ? If so, what would be one such ?  Is bounded?     Consider the sequence from .   Is there a such that for every ? If so, what would be one such ?  Is there a such that for every ? If so, what would be one such ?  Is bounded?     Consider the sequence from .   Is there a such that for every ? If so, what would be one such ?  Is there a such that for every ? If so, what would be one such ?  Is bounded?     Consider the sequence from .   Is there a such that for every ? If so, what would be one such ?  Is there a such that for every ? If so, what would be one such ?  Is bounded?     Given a sequence , we say has limit  , denoted if we can make as close to as we like by making sufficiently large. If such an exists, we say converges to . If no such exists, we say does not converge.      For each of the following, determine if the sequence converges.        Where possible, find the limit of the sequence.    Determine to what value converges.  Which of the following ia most likely true about ?  converges to 4.  converges to 0.  converges to -4.  does not converge.       For each of the following sequences, determine which of the properties: monotonic , bounded and convergent , the sequence satisfies. If a sequence is convergent, determine to what it converges.          If a sequence is monotonic and bounded, then it is convergent.       Videos      Video: Determine if a sequence is convergent, divergent, monotonic, or bounded, and compute limits of convergent sequences     Exercises  Exercises available at    "
+  "body": " Sequence Properties and Limits (SQ2)     Determine if a sequence is convergent, divergent, monotonic, or bounded, and compute limits of convergent sequences.      Activities   We will consider the function .  Compute the limit .       Determine on which intervals is increasing and\/or decreasing. (Hint: compute first.)  Which statement best describes for ?  is bounded above by 4  is bounded below by 4  is bounded above and below by 4  is not bounded above  is not bounded below      Given a sequence :  is monotonically increasing if for every choice of .  is monotonically non-decreasing if for every choice of .  is monotonically decreasing if for every choice of .  is monotonically non-increasing if for every choice of .  All of these sequences would be monotonic .      Consider the sequence    Compute .  Which of the following is true about ? There can be more or less than one answer.  for every choice of .  for every choice of .  for every choice of .  for every choice of .    Which of the following (if any) describe   Monotonically increasing.  Monotonically non-decreasing.  Monotonically decreasing.  Monotonically non-increasing.       Consider the sequence    Compute .  Which of the following is true about ? There can be more or less than one answer.  for every choice of .  for every choice of .  for every choice of .  for every choice of .    Which of the following (if any) describe   Monotonically increasing.  Monotonically non-decreasing.  Monotonically decreasing.  Monotonically non-increasing.       Consider the sequence    Compute .  Which of the following is true about ? There can be more or less than one answer.  for every choice of .  for every choice of .  for every choice of .  for every choice of .    Which of the following (if any) describe   Monotonically increasing.  Monotonically non-decreasing.  Monotonically decreasing.  Monotonically non-increasing.       Consider the sequence    Compute .  Which of the following is true about ? There can be more or less than one answer.  for every choice of .  for every choice of .  for every choice of .  for every choice of .    Which of the following (if any) describe   Monotonically increasing.  Monotonically non-decreasing.  Monotonically decreasing.  Monotonically non-increasing.       A sequence is bounded if there are real numbers such that for every .      Consider the sequence from .   Is there a such that for every ? If so, what would be one such ?  Is there a such that for every ? If so, what would be one such ?  Is bounded?     Consider the sequence from .   Is there a such that for every ? If so, what would be one such ?  Is there a such that for every ? If so, what would be one such ?  Is bounded?     Consider the sequence from .   Is there a such that for every ? If so, what would be one such ?  Is there a such that for every ? If so, what would be one such ?  Is bounded?     Consider the sequence from .   Is there a such that for every ? If so, what would be one such ?  Is there a such that for every ? If so, what would be one such ?  Is bounded?     Given a sequence , we say has limit  , denoted if we can make as close to as we like by making sufficiently large. If such an exists, we say converges to . If no such exists, we say does not converge.      For each of the following, determine if the sequence converges.        Where possible, find the limit of the sequence.    Determine to what value converges.  Which of the following is most likely true about ?  converges to 4.  converges to 0.  converges to -4.  does not converge.       For each of the following sequences, determine which of the properties: monotonic , bounded and convergent , the sequence satisfies. If a sequence is convergent, determine to what it converges.          If a sequence is monotonic and bounded, then it is convergent.       Videos      Video: Determine if a sequence is convergent, divergent, monotonic, or bounded, and compute limits of convergent sequences     Exercises  Exercises available at    "
 },
 {
   "id": "SQ2-2",
@@ -7468,7 +7468,7 @@ var ptx_lunr_docs = [
   "type": "Activity",
   "number": "8.2.14",
   "title": "",
-  "body": " Determine to what value converges.  Which of the following ia most likely true about ?  converges to 4.  converges to 0.  converges to -4.  does not converge.    "
+  "body": " Determine to what value converges.  Which of the following is most likely true about ?  converges to 4.  converges to 0.  converges to -4.  does not converge.    "
 },
 {
   "id": "SQ2-3-16",
@@ -7504,7 +7504,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "8.3",
   "title": "Partial Sum Sequence (SQ3)",
-  "body": " Partial Sum Sequence (SQ3)     Compute the first few terms of a telescoping or geometric partial sum sequence, and find a closed form for this sequence, and compute its limit.      Activities    Consider the sequence .   Find the first 5 terms of this sequence.  Compute the following:            Consider the sequence .   Find the first 5 terms of this sequence.  Compute the following:            Given a sequence define the partial sum for this sequence to be Note that is itself a sequence called the partial sum sequence .  More generally, partial sums may be defined for any starting index. Given , let       Let Find the following partial sums of the sequence .           Consider the sequence What is the best way to find the 100th partial sum ?  Sum the first 101 terms of the sequence .  Find a closed form for the partial sum sequence .        Expand the following polynomial products, and then reduce to as few summands as possible.  .  .  .  , where is any nonnegative integer.        Suppose Without actually computing this sum, which of the following is equal to ?  .  .  .        Recall from that    Which of the following is equal to ?  .  .  .  .    Based on your previous choice, write out an expression for .     Suppose that . Let be the th partial sum of .   Find simple expressions for the following:  .  .   . Choose from the following:   .  .  .  .  .      Based on your previous answers, solve for the following:  .  .   . Choose from the following:               Consider the following sequences:  .  .  .     Find the closed form for the th partial sum for the geometric sequence .  .  .  .  .  .    Find the closed form for the th partial sum for the geometric sequence .  .  .  .  .  .    Find the closed form for the th partial sum for the geometric sequence .    Given the closed forms you found in , which of the following limits are defined? If defined, what is the limit?  .  .  .       Given a sequence , we define the limit of the series where . We call an infinite series .      Which of the following series are infinite?  .  .  .  .  .        Let . Let .  Which of the following is the best strategy for evaluating ?  Compute , then evaluate the sum.  Rewrite , then simplify.        Recall from that and .  Compute the following partial sums:  .  .  .        Recall from that and .  Which of the following is equal to ?  .  .  .  .  .        Given a sequence and a sequence of the form we call the series to be a telescoping series .      Given a telescoping series , find:  .  .   Choose from the following options:               For each of the following telescoping series, find the closed form for the th partial sum.  .  .  .      Given the closed forms you found in , determine which of the following telescoping series converge. If so, to what value does it converge?   .  .  .      Consider the partial sum sequence  Find a closed form for .  Does converge? If so, to what value?     Consider the partial sum sequence  Find a closed form for .  Does converge? If so, to what value?       Videos      Video: Compute the first few terms of a telescoping or geometric partial sum sequence, and find a closed form for this sequence, and compute its limit.     Exercises  Exercises available at    "
+  "body": " Partial Sum Sequence (SQ3)     Compute the first few terms of a telescoping or geometric partial sum sequence, and find a closed form for this sequence, and compute its limit.      Activities    Consider the sequence .   Find the first 5 terms of this sequence.  Compute the following:            Consider the sequence .   Find the first 5 terms of this sequence.  Compute the following:            Given a sequence define the partial sum for this sequence to be Note that is itself a sequence called the partial sum sequence .  More generally, partial sums may be defined for any starting index. Given , let       Let . Find the following partial sums of the sequence .           Consider the sequence What is the best way to find the 100th partial sum ?  Sum the first 101 terms of the sequence .  Find a closed form for the partial sum sequence .        Expand the following polynomial products, and then reduce to as few summands as possible.  .  .  .  , where is any nonnegative integer.        Provided that , we have       Suppose Without actually computing this sum, which of the following is equal to ?  .  .  .        Recall from that    Using , which of the following is equal to ?  .  .  .  .    Based on your previous choice, write out an expression for .     Suppose that . Let be the th partial sum of .   Using , which of the follows is equal to ?  .  .  .  .  .   Based on your previous answer, which of the following is equal to ?            Consider the following sequences:  .  .  .     Find the closed form for the th partial sum for the geometric sequence .  .  .  .  .  .    Find the closed form for the th partial sum for the geometric sequence .  .  .  .  .  .    Explain and demonstrate why a closed form for the th partial sum for the geometric sequence is given by     Given the closed forms you found in , which of the following limits are defined? If defined, what is the limit?  .  .  .       Given a sequence , we define the limit of the series where . We call an infinite series .      Which of the following series are infinite?  .  .  .  .  .        Let . Let .  Which of the following is the best strategy for evaluating ?  Compute , then evaluate the sum.  Rewrite , then simplify.        Recall from that and .  Compute the following partial sums:  .  .  .        Recall from that and .  Which of the following is equal to ?  .  .  .  .  .        Given a sequence and a sequence of the form we call the series to be a telescoping series .      Given a telescoping series , find:  .  .   Choose from the following options:               For each of the following telescoping series, find the closed form for the th partial sum.  .  .  .      Given the closed forms you found in , determine which of the following telescoping series converge. If so, to what value does it converge?   .  .  .      Consider the partial sum sequence  Find a closed form for .  Does converge? If so, to what value?     Consider the partial sum sequence  Find a closed form for .  Does converge? If so, to what value?       Videos      Video: Compute the first few terms of a telescoping or geometric partial sum sequence, and find a closed form for this sequence, and compute its limit.     Exercises  Exercises available at    "
 },
 {
   "id": "SQ3-2",
@@ -7549,7 +7549,7 @@ var ptx_lunr_docs = [
   "type": "Activity",
   "number": "8.3.4",
   "title": "",
-  "body": "  Let Find the following partial sums of the sequence .        "
+  "body": "  Let . Find the following partial sums of the sequence .        "
 },
 {
   "id": "activity-SQ3closedformmotivation",
@@ -7570,11 +7570,20 @@ var ptx_lunr_docs = [
   "body": "  Expand the following polynomial products, and then reduce to as few summands as possible.  .  .  .  , where is any nonnegative integer.     "
 },
 {
+  "id": "fact-geometricsum",
+  "level": "2",
+  "url": "SQ3.html#fact-geometricsum",
+  "type": "Fact",
+  "number": "8.3.7",
+  "title": "",
+  "body": "  Provided that , we have    "
+},
+{
   "id": "activity-SQ3simplifyingsum",
   "level": "2",
   "url": "SQ3.html#activity-SQ3simplifyingsum",
   "type": "Activity",
-  "number": "8.3.7",
+  "number": "8.3.8",
   "title": "",
   "body": "  Suppose Without actually computing this sum, which of the following is equal to ?  .  .  .     "
 },
@@ -7583,34 +7592,34 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "SQ3.html#activity-SQ3particularclosedform",
   "type": "Activity",
-  "number": "8.3.8",
+  "number": "8.3.9",
   "title": "",
-  "body": "  Recall from that    Which of the following is equal to ?  .  .  .  .    Based on your previous choice, write out an expression for .  "
+  "body": "  Recall from that    Using , which of the following is equal to ?  .  .  .  .    Based on your previous choice, write out an expression for .  "
 },
 {
   "id": "activity-SQ3nthclosedform",
   "level": "2",
   "url": "SQ3.html#activity-SQ3nthclosedform",
   "type": "Activity",
-  "number": "8.3.9",
+  "number": "8.3.10",
   "title": "",
-  "body": "  Suppose that . Let be the th partial sum of .   Find simple expressions for the following:  .  .   . Choose from the following:   .  .  .  .  .      Based on your previous answers, solve for the following:  .  .   . Choose from the following:            "
+  "body": "  Suppose that . Let be the th partial sum of .   Using , which of the follows is equal to ?  .  .  .  .  .   Based on your previous answer, which of the following is equal to ?         "
 },
 {
   "id": "activity-SQ3closedformgeomhandsoff",
   "level": "2",
   "url": "SQ3.html#activity-SQ3closedformgeomhandsoff",
   "type": "Activity",
-  "number": "8.3.10",
+  "number": "8.3.11",
   "title": "",
-  "body": "  Consider the following sequences:  .  .  .     Find the closed form for the th partial sum for the geometric sequence .  .  .  .  .  .    Find the closed form for the th partial sum for the geometric sequence .  .  .  .  .  .    Find the closed form for the th partial sum for the geometric sequence .  "
+  "body": "  Consider the following sequences:  .  .  .     Find the closed form for the th partial sum for the geometric sequence .  .  .  .  .  .    Find the closed form for the th partial sum for the geometric sequence .  .  .  .  .  .    Explain and demonstrate why a closed form for the th partial sum for the geometric sequence is given by   "
 },
 {
-  "id": "SQ3-3-12",
+  "id": "SQ3-3-13",
   "level": "2",
-  "url": "SQ3.html#SQ3-3-12",
+  "url": "SQ3.html#SQ3-3-13",
   "type": "Activity",
-  "number": "8.3.11",
+  "number": "8.3.12",
   "title": "",
   "body": " Given the closed forms you found in , which of the following limits are defined? If defined, what is the limit?  .  .  .    "
 },
@@ -7619,7 +7628,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "SQ3.html#definition-SQ3serieslimit",
   "type": "Definition",
-  "number": "8.3.12",
+  "number": "8.3.13",
   "title": "",
   "body": "  Given a sequence , we define the limit of the series where . We call an infinite series .   "
 },
@@ -7628,7 +7637,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "SQ3.html#activity-SQ3geomserieslimit",
   "type": "Activity",
-  "number": "8.3.13",
+  "number": "8.3.14",
   "title": "",
   "body": "  Which of the following series are infinite?  .  .  .  .  .     "
 },
@@ -7637,7 +7646,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "SQ3.html#activity-SQ3telescopingpartialsums",
   "type": "Activity",
-  "number": "8.3.14",
+  "number": "8.3.15",
   "title": "",
   "body": "  Let . Let .  Which of the following is the best strategy for evaluating ?  Compute , then evaluate the sum.  Rewrite , then simplify.     "
 },
@@ -7646,7 +7655,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "SQ3.html#activity-SQ3telescopingpartialsumsclosed",
   "type": "Activity",
-  "number": "8.3.15",
+  "number": "8.3.16",
   "title": "",
   "body": "  Recall from that and .  Compute the following partial sums:  .  .  .     "
 },
@@ -7655,7 +7664,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "SQ3.html#activity-SQ3telescopingclosedform",
   "type": "Activity",
-  "number": "8.3.16",
+  "number": "8.3.17",
   "title": "",
   "body": "  Recall from that and .  Which of the following is equal to ?  .  .  .  .  .     "
 },
@@ -7664,7 +7673,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "SQ3.html#definition-SQ3telescoping",
   "type": "Definition",
-  "number": "8.3.17",
+  "number": "8.3.18",
   "title": "",
   "body": "  Given a sequence and a sequence of the form we call the series to be a telescoping series .   "
 },
@@ -7673,7 +7682,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "SQ3.html#activity-SQ3generaltelescoping",
   "type": "Activity",
-  "number": "8.3.18",
+  "number": "8.3.19",
   "title": "",
   "body": "  Given a telescoping series , find:  .  .   Choose from the following options:             "
 },
@@ -7682,18 +7691,9 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "SQ3.html#activity-SQ3telescopinghandsoff",
   "type": "Activity",
-  "number": "8.3.19",
-  "title": "",
-  "body": " For each of the following telescoping series, find the closed form for the th partial sum.  .  .  .    "
-},
-{
-  "id": "SQ3-3-21",
-  "level": "2",
-  "url": "SQ3.html#SQ3-3-21",
-  "type": "Activity",
   "number": "8.3.20",
   "title": "",
-  "body": " Given the closed forms you found in , determine which of the following telescoping series converge. If so, to what value does it converge?   .  .  .   "
+  "body": " For each of the following telescoping series, find the closed form for the th partial sum.  .  .  .    "
 },
 {
   "id": "SQ3-3-22",
@@ -7702,7 +7702,7 @@ var ptx_lunr_docs = [
   "type": "Activity",
   "number": "8.3.21",
   "title": "",
-  "body": "  Consider the partial sum sequence  Find a closed form for .  Does converge? If so, to what value?  "
+  "body": " Given the closed forms you found in , determine which of the following telescoping series converge. If so, to what value does it converge?   .  .  .   "
 },
 {
   "id": "SQ3-3-23",
@@ -7710,6 +7710,15 @@ var ptx_lunr_docs = [
   "url": "SQ3.html#SQ3-3-23",
   "type": "Activity",
   "number": "8.3.22",
+  "title": "",
+  "body": "  Consider the partial sum sequence  Find a closed form for .  Does converge? If so, to what value?  "
+},
+{
+  "id": "SQ3-3-24",
+  "level": "2",
+  "url": "SQ3.html#SQ3-3-24",
+  "type": "Activity",
+  "number": "8.3.23",
   "title": "",
   "body": "  Consider the partial sum sequence  Find a closed form for .  Does converge? If so, to what value?   "
 },
@@ -9304,7 +9313,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "A.4",
   "title": "Problem Set 3",
-  "body": " Problem Set 3   Instructions  Prior to beginning this problem set, consider reading the Problem Set Success Guide for advice and clarity around expectations for Problem Sets in this course. Upload your solutions to all problems on this page to gradescope as a single .pdf file, remembering to assign pages appropriately for each question. Complete instructions for Problem Sets are available on Canvas.    (Problem 1)   Let denote the region in the -plane that is inside the circle . If we revolve the region about the -axis, we obtain a torus , which is fancy word for doughnut.    Explain and demonstrate how to set up an integral that computes the volume of this torus using the method of cylindrical shells.    Explain and demonstrate how to set up an integral that computes the volume of this torus using the washer method.    Use Wolfram Alpha Wolfram Alpha to evaluate both of the integrals you set up to check that they both evaluate to the same answer. To help with syntax, here is an example of how one would ask Wolfram Alpha to evaluate : integral of sin(x)dx where x goes from 0 to pi\/4     After this check, explain and demonstrate how to evaluate one of the two integrals using methods of integrations we've learned in class. Why did you choose the integral you chose?      We begin by sketching the region in the -plane and the vertical and horizontal line segments as shown in . For a given -value between and , the -coordinates of the top and bottom of the vertical line segment are given by . Thus, as we revolve the vertical line segment about the -axis, we obtain a cylindrical shell of area It follows that volume is calculated as:    The circle and vertical and horizontal line segments.       This time, as we vary horizontal line segments with between and , the inner and outer radii are found by solving for in the equation . We find:  For each fixed , the area of the corresponding washer is then: and so volume is     When I plugged both of these integrals into Wolfram Alpha, I got .    I am going to choose the first one. Starting with , I substitute so and the integral is: now I evaluate separately.  One approach for is to substitute . Another is to observe that since the function is odd on , it follows that .  For , one can use trig sub. Alternatively, this integral represents the area of the top half of the unit disc times , so .  Putting it all together, the volume is .      (Problem 2)   Let denote the region in 3-space that is above the -plane and contained inside the cylinders and ; this region is depicted in below.   Two intersecting cylinders above the -plane.     Explain and demonstrate how to calculate the volume of by considering cross-sections obtained by cutting with planes perpendicular to one of the three coordinate axes.    Consider all three kinds of cross-sections; which set of cross-sections seems the simplest to work with.    If we cut with planes that are parallel to the -plane, then each cross-section is a square. Using the equations that define the cylinders and\/or , the length of the line segments forming an edge of the square are . It follows the area of each cross section is:   It follows that      (Problem 3)   Let denote the region of the -plane that lies above the -axis, to the right of the line , and below the graph of .   Is the area of finite or infinite? Justify your reasoning using concepts covered in this course.    Now revolve about the -axis to obtain an infinite trumpet-like shape . Explain and demonstrate how to set up an (improper) integral that computes the volume of .    Does your integral above converge? That is, is the volume of finite?    What?????????      The area of would correspond to the integral . We saw in class that this integral diverges to infinity, so the area is infinite.    If we revolve the region about the -axis and use vertical line segments to generate cross sections, we get discs of radius . The area of each such cross-section is . Thus, the volume is represented by     This integral converges by our analysis of the -integrals in class since is greater than .    That's pretty messed up if you ask me.      (Problem 4)   In class, we considered the problem of calculating the work involved in pulling a potentially leaky bucket up along a rope. Implicit in the set up of those exercises was the underlying assumption that the rope itself did not weight anything. In this exercise, you'll consider how to modify this model to accommodate a non weight-less rope.  The year is 2011 and you and your accomplice are plotting to steal a bucket of maple syrup weighing a total of 200kg from Canada's strategic Maple Syrup Supply. You'll need to pull this bucket up 10 meters and so you're using a heavy duty rope that weighs 2kg for each meter of rope.   Explain and demonstrate how to estimate the work involved in pulling the rope and bucket a height of meters using a Riemann sum if we cut the rope into pieces of equal length.    Explain and demonstrate how to estimate the work involved in pulling the rope and bucket a height of meters using a Riemann sum if we cut the rope into pieces of equal length.    Convert the Riemann sum expression you found into an integral and evaluate it to calculate the work needed exactly.      One approach is to consider the work lifting the bucket and the rope separately, say and . If we break up the motion into evenly spaced lifts of , then the work needed to lift the bucket is   For the work , we think of cutting the rope into equal pieces. Each piece has mass equal to . If represents height off the ground, we let with the bottom of piece is at , and then the -th piece moves units to get to the top. Thus, an approximation of the work is equal to:     If we do the same but with pieces, the work for the bucket is still (here, the force isn't varying, so we don't need an integral). For the rope, cut it into pieces of length and let be the position of the bottom of the -th piece. Then, the work to move the -th piece is: and the corresponding Riemann sum is then     This Riemann sum corresponds to . Adding this to the original 19600, our work is       (Problem 5)   NASA wants you to do your best to calculate the length of a piece of wire shaped as the graph the over the interval .    Explain and demonstrate how to write down a definite integral that computes the arc length that NASA wants.    Think about the techniques of integration you know, and write a few sentences explaining why none of them are particularly helpful in evaluating the integral above.    You can't go back to NASA empty handed, so you wrote some code using sage to help you estimate the arc-length below. By editing the code cell below, vary (which represents the number of pieces we divide the wire into in making an estimate) find some estimates for NASA. You're reasonably confident that if you can estimate the correct length within three decimal points, this will be enough. Start with , and then trying larger numbers at your discretion. Based on your experimenting, how large do you think you should take to be and what do you think is the approximate length?      "
+  "body": " Problem Set 3   Instructions  Prior to beginning this problem set, consider reading the Problem Set Success Guide for advice and clarity around expectations for Problem Sets in this course. Upload your solutions to all problems on this page to gradescope as a single .pdf file, remembering to assign pages appropriately for each question. Complete instructions for Problem Sets are available on Canvas.    (Problem 1)   Let denote the region in the -plane that is inside the circle . If we revolve the region about the -axis, we obtain a torus , which is fancy word for doughnut.    Explain and demonstrate how to set up an integral that computes the volume of this torus using the method of cylindrical shells.    Explain and demonstrate how to set up an integral that computes the volume of this torus using the washer method.    Use Wolfram Alpha Wolfram Alpha to evaluate both of the integrals you set up to check that they both evaluate to the same answer. To help with syntax, here is an example of how one would ask Wolfram Alpha to evaluate : integral of sin(x)dx where x goes from 0 to pi\/4     After this check, explain and demonstrate how to evaluate one of the two integrals using methods of integrations we've learned in class. Why did you choose the integral you chose?      (Problem 2)   Let denote the region in 3-space that is above the -plane and contained inside the cylinders and ; this region is depicted in below.   Two intersecting cylinders above the -plane.     Explain and demonstrate how to calculate the volume of by considering cross-sections obtained by cutting with planes perpendicular to one of the three coordinate axes.    Consider all three kinds of cross-sections; which set of cross-sections seems the simplest to work with.     (Problem 3)   Let denote the region of the -plane that lies above the -axis, to the right of the line , and below the graph of .   Is the area of finite or infinite? Justify your reasoning using concepts covered in this course.    Now revolve about the -axis to obtain an infinite trumpet-like shape . Explain and demonstrate how to set up an (improper) integral that computes the volume of .    Does your integral above converge? That is, is the volume of finite?    What?????????      (Problem 4)   In class, we considered the problem of calculating the work involved in pulling a potentially leaky bucket up along a rope. Implicit in the set up of those exercises was the underlying assumption that the rope itself did not weight anything. In this exercise, you'll consider how to modify this model to accommodate a non weight-less rope.  The year is 2011 and you and your accomplice are plotting to steal a bucket of maple syrup weighing a total of 200kg from Canada's strategic Maple Syrup Supply. You'll need to pull this bucket up 10 meters and so you're using a heavy duty rope that weighs 2kg for each meter of rope.   Explain and demonstrate how to estimate the work involved in pulling the rope and bucket a height of meters using a Riemann sum if we cut the rope into pieces of equal length.    Explain and demonstrate how to estimate the work involved in pulling the rope and bucket a height of meters using a Riemann sum if we cut the rope into pieces of equal length.    Convert the Riemann sum expression you found into an integral and evaluate it to calculate the work needed exactly.      (Problem 5)   NASA wants you to do your best to calculate the length of a piece of wire shaped as the graph the over the interval .    Explain and demonstrate how to write down a definite integral that computes the arc length that NASA wants.    Think about the techniques of integration you know, and write a few sentences explaining why none of them are particularly helpful in evaluating the integral above.    You can't go back to NASA empty handed, so you wrote some code using sage to help you estimate the arc-length below. By editing the code cell below, vary (which represents the number of pieces we divide the wire into in making an estimate) find some estimates for NASA. You're reasonably confident that if you can estimate the correct length within three decimal points, this will be enough. Start with , and then trying larger numbers at your discretion. Based on your experimenting, how large do you think you should take to be and what do you think is the approximate length?      "
 },
 {
   "id": "sec-pset3-calc-3",
@@ -9313,7 +9322,7 @@ var ptx_lunr_docs = [
   "type": "Problem",
   "number": "A.4.1",
   "title": "(Problem 1).",
-  "body": " (Problem 1)   Let denote the region in the -plane that is inside the circle . If we revolve the region about the -axis, we obtain a torus , which is fancy word for doughnut.    Explain and demonstrate how to set up an integral that computes the volume of this torus using the method of cylindrical shells.    Explain and demonstrate how to set up an integral that computes the volume of this torus using the washer method.    Use Wolfram Alpha Wolfram Alpha to evaluate both of the integrals you set up to check that they both evaluate to the same answer. To help with syntax, here is an example of how one would ask Wolfram Alpha to evaluate : integral of sin(x)dx where x goes from 0 to pi\/4     After this check, explain and demonstrate how to evaluate one of the two integrals using methods of integrations we've learned in class. Why did you choose the integral you chose?      We begin by sketching the region in the -plane and the vertical and horizontal line segments as shown in . For a given -value between and , the -coordinates of the top and bottom of the vertical line segment are given by . Thus, as we revolve the vertical line segment about the -axis, we obtain a cylindrical shell of area It follows that volume is calculated as:    The circle and vertical and horizontal line segments.       This time, as we vary horizontal line segments with between and , the inner and outer radii are found by solving for in the equation . We find:  For each fixed , the area of the corresponding washer is then: and so volume is     When I plugged both of these integrals into Wolfram Alpha, I got .    I am going to choose the first one. Starting with , I substitute so and the integral is: now I evaluate separately.  One approach for is to substitute . Another is to observe that since the function is odd on , it follows that .  For , one can use trig sub. Alternatively, this integral represents the area of the top half of the unit disc times , so .  Putting it all together, the volume is .    "
+  "body": " (Problem 1)   Let denote the region in the -plane that is inside the circle . If we revolve the region about the -axis, we obtain a torus , which is fancy word for doughnut.    Explain and demonstrate how to set up an integral that computes the volume of this torus using the method of cylindrical shells.    Explain and demonstrate how to set up an integral that computes the volume of this torus using the washer method.    Use Wolfram Alpha Wolfram Alpha to evaluate both of the integrals you set up to check that they both evaluate to the same answer. To help with syntax, here is an example of how one would ask Wolfram Alpha to evaluate : integral of sin(x)dx where x goes from 0 to pi\/4     After this check, explain and demonstrate how to evaluate one of the two integrals using methods of integrations we've learned in class. Why did you choose the integral you chose?    "
 },
 {
   "id": "sec-pset3-calc-4",
@@ -9322,7 +9331,7 @@ var ptx_lunr_docs = [
   "type": "Problem",
   "number": "A.4.2",
   "title": "(Problem 2).",
-  "body": " (Problem 2)   Let denote the region in 3-space that is above the -plane and contained inside the cylinders and ; this region is depicted in below.   Two intersecting cylinders above the -plane.     Explain and demonstrate how to calculate the volume of by considering cross-sections obtained by cutting with planes perpendicular to one of the three coordinate axes.    Consider all three kinds of cross-sections; which set of cross-sections seems the simplest to work with.    If we cut with planes that are parallel to the -plane, then each cross-section is a square. Using the equations that define the cylinders and\/or , the length of the line segments forming an edge of the square are . It follows the area of each cross section is:   It follows that    "
+  "body": " (Problem 2)   Let denote the region in 3-space that is above the -plane and contained inside the cylinders and ; this region is depicted in below.   Two intersecting cylinders above the -plane.     Explain and demonstrate how to calculate the volume of by considering cross-sections obtained by cutting with planes perpendicular to one of the three coordinate axes.    Consider all three kinds of cross-sections; which set of cross-sections seems the simplest to work with.   "
 },
 {
   "id": "sec-pset3-calc-5",
@@ -9331,7 +9340,7 @@ var ptx_lunr_docs = [
   "type": "Problem",
   "number": "A.4.3",
   "title": "(Problem 3).",
-  "body": " (Problem 3)   Let denote the region of the -plane that lies above the -axis, to the right of the line , and below the graph of .   Is the area of finite or infinite? Justify your reasoning using concepts covered in this course.    Now revolve about the -axis to obtain an infinite trumpet-like shape . Explain and demonstrate how to set up an (improper) integral that computes the volume of .    Does your integral above converge? That is, is the volume of finite?    What?????????      The area of would correspond to the integral . We saw in class that this integral diverges to infinity, so the area is infinite.    If we revolve the region about the -axis and use vertical line segments to generate cross sections, we get discs of radius . The area of each such cross-section is . Thus, the volume is represented by     This integral converges by our analysis of the -integrals in class since is greater than .    That's pretty messed up if you ask me.    "
+  "body": " (Problem 3)   Let denote the region of the -plane that lies above the -axis, to the right of the line , and below the graph of .   Is the area of finite or infinite? Justify your reasoning using concepts covered in this course.    Now revolve about the -axis to obtain an infinite trumpet-like shape . Explain and demonstrate how to set up an (improper) integral that computes the volume of .    Does your integral above converge? That is, is the volume of finite?    What?????????    "
 },
 {
   "id": "sec-pset3-calc-6",
@@ -9340,7 +9349,7 @@ var ptx_lunr_docs = [
   "type": "Problem",
   "number": "A.4.4",
   "title": "(Problem 4).",
-  "body": " (Problem 4)   In class, we considered the problem of calculating the work involved in pulling a potentially leaky bucket up along a rope. Implicit in the set up of those exercises was the underlying assumption that the rope itself did not weight anything. In this exercise, you'll consider how to modify this model to accommodate a non weight-less rope.  The year is 2011 and you and your accomplice are plotting to steal a bucket of maple syrup weighing a total of 200kg from Canada's strategic Maple Syrup Supply. You'll need to pull this bucket up 10 meters and so you're using a heavy duty rope that weighs 2kg for each meter of rope.   Explain and demonstrate how to estimate the work involved in pulling the rope and bucket a height of meters using a Riemann sum if we cut the rope into pieces of equal length.    Explain and demonstrate how to estimate the work involved in pulling the rope and bucket a height of meters using a Riemann sum if we cut the rope into pieces of equal length.    Convert the Riemann sum expression you found into an integral and evaluate it to calculate the work needed exactly.      One approach is to consider the work lifting the bucket and the rope separately, say and . If we break up the motion into evenly spaced lifts of , then the work needed to lift the bucket is   For the work , we think of cutting the rope into equal pieces. Each piece has mass equal to . If represents height off the ground, we let with the bottom of piece is at , and then the -th piece moves units to get to the top. Thus, an approximation of the work is equal to:     If we do the same but with pieces, the work for the bucket is still (here, the force isn't varying, so we don't need an integral). For the rope, cut it into pieces of length and let be the position of the bottom of the -th piece. Then, the work to move the -th piece is: and the corresponding Riemann sum is then     This Riemann sum corresponds to . Adding this to the original 19600, our work is     "
+  "body": " (Problem 4)   In class, we considered the problem of calculating the work involved in pulling a potentially leaky bucket up along a rope. Implicit in the set up of those exercises was the underlying assumption that the rope itself did not weight anything. In this exercise, you'll consider how to modify this model to accommodate a non weight-less rope.  The year is 2011 and you and your accomplice are plotting to steal a bucket of maple syrup weighing a total of 200kg from Canada's strategic Maple Syrup Supply. You'll need to pull this bucket up 10 meters and so you're using a heavy duty rope that weighs 2kg for each meter of rope.   Explain and demonstrate how to estimate the work involved in pulling the rope and bucket a height of meters using a Riemann sum if we cut the rope into pieces of equal length.    Explain and demonstrate how to estimate the work involved in pulling the rope and bucket a height of meters using a Riemann sum if we cut the rope into pieces of equal length.    Convert the Riemann sum expression you found into an integral and evaluate it to calculate the work needed exactly.    "
 },
 {
   "id": "sec-pset3-calc-7",
