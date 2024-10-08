@@ -392,5 +392,60 @@
                 For (b): try something similar to part (a). 
             </p>
         </hint>
+        <solution>
+            <task>
+                <statement>
+                    <p>
+                        Consider the vector equation
+                        <me>c_1\vec{u}_1+\cdots+c_p\vec{u}_p=\vec{0}.</me>
+                        If we take the dot-product of both sides of this equation with the vector <m>\vec{u}_i</m>, we get:
+                        <md>
+                            <mrow>c_1\vec{u}_1\bullet\vec{u}_1+\cdots+c_i\vec{u}_i\bullet\vec{u}_i+\cdots+c_p\vec{u}_p\bullet\vec{u}_p \amp =\vec{0}\bullet\vec{u}_i</mrow>
+                            <mrow>c_i(\vec{u}_i\bullet\vec{u}_i) \amp =0,</mrow>
+                        </md>
+                        since we have <m>\vec{u}_i\bullet\vec{u}_j=0</m> whenever <m>i\neq j</m>. 
+                        Since <m>\vec{u}_i\bullet\vec{u}_i\neq 0</m>, it follows that <m>c_i=0</m>. 
+                    </p>
+                    <p>
+                        Repeating this for each choice of <m>i</m>, we conclude that, in fact, <em>all</em> of the coefficient <m>c_1,\dots, c_p</m> must be equal to <m>0</m>, which shows that the set of vectors is linearly indepent. 
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Start with
+                        <me>\vec{y}=c_1\vec{u}_1+\cdots+c_p\vec{u}_p.</me>
+                        Taking the dot product with the vector <m>\vec{u}_i</m> and using similar reasoning as above, we find that
+                        <me>\vec{y}\bullet\vec{u}_i=c_i(\vec{u}_i\bullet\vec{u}_i)</me>
+                        or
+                        <me>c_i=\frac{\vec{y}\bullet\vec{u}_i}{\vec{u}_i\bullet\vec{u}_i}.</me>
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Here, let <m>S=\vspan\left\{\begin{bmatrix}1\\0\\1\end{bmatrix},\begin{bmatrix}-1\\0\\1\end{bmatrix},\begin{bmatrix}0\\1\\0\end{bmatrix}\right\}=\left\{\vec{u}_1,\vec{u}_2,\vec{u}_3\right\}.</m>
+                        Then, by computing the dot products, we find that <m>\vec{u}_1\bullet\vec{u}_2=\vec{u}_2\bullet\vec{u}_3=\vec{u}_1\bullet\vec{u}_3=0.</m>
+                        It follows that <m>S</m> is an orthogonal set and therefore linearly independent. 
+                        Since <m>S</m> has three vectors, it follows that <m>S</m> must also span <m>\IR^3</m>; therefore, <m>S</m> is an orthogonal basis. 
+                    </p>
+                    <p>
+                        Using our result above, we know that we can find the coefficients that build <m>\vec{y}</m> by computing dot products:
+                        <md>
+                            <mrow>\vec{u}_1\bullet\vec{y} \amp =4</mrow>
+                            <mrow>\vec{u}_2\bullet\vec{y} \amp =2</mrow>
+                            <mrow>\vec{u}_3\bullet\vec{y} \amp =2</mrow>
+                            <mrow>\vec{u}_1\bullet\vec{u}_1 \amp =2</mrow>
+                            <mrow>\vec{u}_2\bullet\vec{u}_2 \amp =2</mrow>
+                            <mrow>\vec{u}_3\bullet\vec{u}_3 \amp =1.</mrow>
+                        </md>
+                        It follows that 
+                        <me>\vec{y}=\frac{4}{2}\vec{u}_1+\frac{2}{2}\vec{u}_2+2\vec{u}_3=2\vec{u}_1+\vec{u}_2+2\vec{u}_3.</me>
+                    </p>
+                </statement>
+            </task>
+        </solution>
     </problem>
 </section>
