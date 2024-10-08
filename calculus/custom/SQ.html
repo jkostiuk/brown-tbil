@@ -86,7 +86,19 @@ window.MathJax = {
     )}
   }
 };
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><link href="_static/pretext/css/pretext_search.css" rel="stylesheet" type="text/css">
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script>// Make *any* div with class 'sagecell-sage' an executable Sage cell
+// Their results will be linked, only within language type
+sagecell.makeSagecell({
+  "inputLocation": "div.sagecell-sage",
+  "linked": true,
+  "linkKey": "linked-sage",
+  "autoeval": false,
+  "languages": [
+    "sage"
+  ],
+  "evalButtonText": "Evaluate (Sage)"
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><link href="_static/pretext/css/pretext_search.css" rel="stylesheet" type="text/css">
 <script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -1276,21 +1288,15 @@ window.MathJax = {
 #activity-SQ3simplifyingsum-1-1-3 { counter-set: activity-SQ3simplifyingsum-1-1-3 0; }
 #activity-SQ3simplifyingsum-1-1-3 > li::marker { content: ""counter(activity-SQ3simplifyingsum-1-1-3,upper-alpha)"."; }
 #activity-SQ3simplifyingsum-1-1-3 > li { counter-increment: activity-SQ3simplifyingsum-1-1-3; }
-#activity-SQ3particularclosedform-2-1-2 { counter-set: activity-SQ3particularclosedform-2-1-2 0; }
-#activity-SQ3particularclosedform-2-1-2 > li::marker { content: ""counter(activity-SQ3particularclosedform-2-1-2,upper-alpha)"."; }
-#activity-SQ3particularclosedform-2-1-2 > li { counter-increment: activity-SQ3particularclosedform-2-1-2; }
-#activity-SQ3nthclosedform-2-1-1 { counter-set: activity-SQ3nthclosedform-2-1-1 0; }
-#activity-SQ3nthclosedform-2-1-1 > li::marker { content: ""counter(activity-SQ3nthclosedform-2-1-1,decimal)"."; }
-#activity-SQ3nthclosedform-2-1-1 > li { counter-increment: activity-SQ3nthclosedform-2-1-1; }
-#activity-SQ3nthclosedform-2-1-1-3-2 { counter-set: activity-SQ3nthclosedform-2-1-1-3-2 0; }
-#activity-SQ3nthclosedform-2-1-1-3-2 > li::marker { content: ""counter(activity-SQ3nthclosedform-2-1-1-3-2,upper-alpha)"."; }
-#activity-SQ3nthclosedform-2-1-1-3-2 > li { counter-increment: activity-SQ3nthclosedform-2-1-1-3-2; }
-#activity-SQ3nthclosedform-3-1-1 { counter-set: activity-SQ3nthclosedform-3-1-1 0; }
-#activity-SQ3nthclosedform-3-1-1 > li::marker { content: ""counter(activity-SQ3nthclosedform-3-1-1,decimal)"."; }
-#activity-SQ3nthclosedform-3-1-1 > li { counter-increment: activity-SQ3nthclosedform-3-1-1; }
-#activity-SQ3nthclosedform-3-1-1-3-2 { counter-set: activity-SQ3nthclosedform-3-1-1-3-2 0; }
-#activity-SQ3nthclosedform-3-1-1-3-2 > li::marker { content: ""counter(activity-SQ3nthclosedform-3-1-1-3-2,upper-alpha)"."; }
-#activity-SQ3nthclosedform-3-1-1-3-2 > li { counter-increment: activity-SQ3nthclosedform-3-1-1-3-2; }
+#activity-SQ3particularclosedform-2-1-3 { counter-set: activity-SQ3particularclosedform-2-1-3 0; }
+#activity-SQ3particularclosedform-2-1-3 > li::marker { content: ""counter(activity-SQ3particularclosedform-2-1-3,upper-alpha)"."; }
+#activity-SQ3particularclosedform-2-1-3 > li { counter-increment: activity-SQ3particularclosedform-2-1-3; }
+#activity-SQ3nthclosedform-2-2 { counter-set: activity-SQ3nthclosedform-2-2 0; }
+#activity-SQ3nthclosedform-2-2 > li::marker { content: ""counter(activity-SQ3nthclosedform-2-2,upper-alpha)"."; }
+#activity-SQ3nthclosedform-2-2 > li { counter-increment: activity-SQ3nthclosedform-2-2; }
+#activity-SQ3nthclosedform-3-1-2 { counter-set: activity-SQ3nthclosedform-3-1-2 0; }
+#activity-SQ3nthclosedform-3-1-2 > li::marker { content: ""counter(activity-SQ3nthclosedform-3-1-2,upper-alpha)"."; }
+#activity-SQ3nthclosedform-3-1-2 > li { counter-increment: activity-SQ3nthclosedform-3-1-2; }
 #activity-SQ3closedformgeomhandsoff-1-1-1 { counter-set: activity-SQ3closedformgeomhandsoff-1-1-1 0; }
 #activity-SQ3closedformgeomhandsoff-1-1-1 > li::marker { content: ""counter(activity-SQ3closedformgeomhandsoff-1-1-1,decimal)"."; }
 #activity-SQ3closedformgeomhandsoff-1-1-1 > li { counter-increment: activity-SQ3closedformgeomhandsoff-1-1-1; }
@@ -1300,9 +1306,9 @@ window.MathJax = {
 #activity-SQ3closedformgeomhandsoff-3-1-3 { counter-set: activity-SQ3closedformgeomhandsoff-3-1-3 0; }
 #activity-SQ3closedformgeomhandsoff-3-1-3 > li::marker { content: ""counter(activity-SQ3closedformgeomhandsoff-3-1-3,upper-alpha)"."; }
 #activity-SQ3closedformgeomhandsoff-3-1-3 > li { counter-increment: activity-SQ3closedformgeomhandsoff-3-1-3; }
-#SQ3-3-12-1-2 { counter-set: SQ3-3-12-1-2 0; }
-#SQ3-3-12-1-2 > li::marker { content: ""counter(SQ3-3-12-1-2,upper-alpha)"."; }
-#SQ3-3-12-1-2 > li { counter-increment: SQ3-3-12-1-2; }
+#SQ3-3-13-1-2 { counter-set: SQ3-3-13-1-2 0; }
+#SQ3-3-13-1-2 > li::marker { content: ""counter(SQ3-3-13-1-2,upper-alpha)"."; }
+#SQ3-3-13-1-2 > li { counter-increment: SQ3-3-13-1-2; }
 #activity-SQ3geomserieslimit-1-1-1 { counter-set: activity-SQ3geomserieslimit-1-1-1 0; }
 #activity-SQ3geomserieslimit-1-1-1 > li::marker { content: ""counter(activity-SQ3geomserieslimit-1-1-1,upper-alpha)"."; }
 #activity-SQ3geomserieslimit-1-1-1 > li { counter-increment: activity-SQ3geomserieslimit-1-1-1; }
@@ -1324,9 +1330,9 @@ window.MathJax = {
 #activity-SQ3telescopinghandsoff-1-2 { counter-set: activity-SQ3telescopinghandsoff-1-2 0; }
 #activity-SQ3telescopinghandsoff-1-2 > li::marker { content: ""counter(activity-SQ3telescopinghandsoff-1-2,decimal)"."; }
 #activity-SQ3telescopinghandsoff-1-2 > li { counter-increment: activity-SQ3telescopinghandsoff-1-2; }
-#SQ3-3-21-2 { counter-set: SQ3-3-21-2 0; }
-#SQ3-3-21-2 > li::marker { content: ""counter(SQ3-3-21-2,upper-alpha)"."; }
-#SQ3-3-21-2 > li { counter-increment: SQ3-3-21-2; }
+#SQ3-3-22-2 { counter-set: SQ3-3-22-2 0; }
+#SQ3-3-22-2 > li::marker { content: ""counter(SQ3-3-22-2,upper-alpha)"."; }
+#SQ3-3-22-2 > li { counter-increment: SQ3-3-22-2; }
 #activity-SQ4whengeoconverge-2-1-4 { counter-set: activity-SQ4whengeoconverge-2-1-4 0; }
 #activity-SQ4whengeoconverge-2-1-4 > li::marker { content: ""counter(activity-SQ4whengeoconverge-2-1-4,upper-alpha)"."; }
 #activity-SQ4whengeoconverge-2-1-4 > li { counter-increment: activity-SQ4whengeoconverge-2-1-4; }

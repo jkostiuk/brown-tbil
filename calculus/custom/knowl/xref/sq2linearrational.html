@@ -9,6 +9,19 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
+<script>// Make *any* div with class 'sagecell-sage' an executable Sage cell
+// Their results will be linked, only within language type
+sagecell.makeSagecell({
+  "inputLocation": "div.sagecell-sage",
+  "linked": true,
+  "linkKey": "linked-sage",
+  "autoeval": false,
+  "languages": [
+    "sage"
+  ],
+  "evalButtonText": "Evaluate (Sage)"
+});
+</script>
 </head>
 <body class="ignore-math">
 <article class="activity project-like"><h4 class="heading">
@@ -18,7 +31,12 @@
 </div></div>
 <article class="task exercise-like"><h5 class="heading"><span class="codenumber">(a)</span></h5>
 <div class="para">Compute <span class="process-math">\(x_{n+1}-x_n\text{.}\)</span>
-</div></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+</div>
+<div id="sq2linearrational-2-2" class="ptx-sagecell sagecell-sage"><script type="text/x-sage">    n=var("n")
+def x(n):
+    return (n+1)/n
+(x(n+1)-x(n)).factor()
+</script></div></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(b)</span></h5>
 <div class="para logical">
 <div class="para">Which of the following is true about <span class="process-math">\(x_{n+1}-x_n\text{?}\)</span>  There can be more or less than one answer.</div>
 <ol class="upper-alpha cols2" id="sq2linearrational-3-1-2">
