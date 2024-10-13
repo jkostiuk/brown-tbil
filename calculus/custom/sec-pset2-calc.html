@@ -2416,7 +2416,106 @@ window.MathJax = {
 <div class="para" id="sec-pset2-calc-3-1-2-1-1"><span class="process-math">\(\displaystyle\int_{\ln(\frac{3}{4})}^{\ln(\frac{4}{3})}\frac{e^tdt}{\left(1+e^{2t}\right)^{\frac{3}{2}}};\)</span></div></article> <article class="task exercise-like" id="sec-pset2-calc-3-1-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
 <div class="para" id="sec-pset2-calc-3-1-3-1-1"><span class="process-math">\(\displaystyle\int\frac{\sqrt{1-(\ln(x))^2}}{x\ln(x)}dx;\)</span></div></article> <article class="task exercise-like" id="sec-pset2-calc-3-1-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
 <div class="para" id="sec-pset2-calc-3-1-4-1-1"><span class="process-math">\(\displaystyle\int\frac{\sin\theta d\theta}{\cos^2\theta+\cos\theta-2}.\)</span></div></article>
-</div></article><article class="problem example-like" id="sec-pset2-calc-4"><h3 class="heading">
+</div> <details id="sec-pset2-calc-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<article class="task exercise-like" id="sec-pset2-calc-3-2-1"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para logical" id="sec-pset2-calc-3-2-1-1-1">
+<div class="para">To begin, I will make a substitution <span class="process-math">\(u=e^t\text{.}\)</span> With this choice, we have <span class="process-math">\(du=e^tdt\)</span> and the integral transforms as follows:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\displaystyle\int_{\ln(\frac{3}{4})}^{\ln(\frac{4}{3})}\frac{e^tdt}{\left(1+e^{2t}\right)^{\frac{3}{2}}}=
+\displaystyle\int_{\frac{3}{4}}^{\frac{4}{3}}\frac{du}{(1+u^2)^\frac{3}{2}}.
+\end{equation*}
+</div>
+<div class="para">Looking at the <span class="process-math">\(1+u^2\)</span> inside the radical on the bottom, I think a trig substitution of the form <span class="process-math">\(u=\tan\theta\)</span> will be helpful. With this choice, <span class="process-math">\(du=sec^2\theta\)</span> and we can compute the <span class="process-math">\(\theta\)</span>-antiderivative as follows:</div>
+<div class="displaymath process-math" id="sec-pset2-calc-3-2-1-1-1-8">
+\begin{align*}
+\displaystyle\int\frac{du}{(1+u^2)^\frac{3}{2}} \amp\,=\,\amp \displaystyle\int\frac{\sec^2\theta}{(1+\tan^2\theta)^\frac{3}{2}}d\theta \\
+\amp\,=\, \amp \displaystyle\int\frac{\sec^2\theta}{(\sec^2\theta)^\frac{3}{2}}d\theta \\
+\amp\,=\, \amp \displaystyle\int\cos\theta d\theta \\
+\amp\,=\, \amp \sin\theta+C. 
+\end{align*}
+</div>
+<div class="para">Now, since <span class="process-math">\(u=\tan{\theta}\text{,}\)</span> it follows that <span class="process-math">\(\sin\theta=\frac{u}{\sqrt{1+u^2}}\)</span> and so our original integral is:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\displaystyle\int_{\ln(\frac{3}{4})}^{\ln(\frac{4}{3})}\frac{e^tdt}{\left(1+e^{2t}\right)^{\frac{3}{2}}}=
+\displaystyle\int_{\frac{3}{4}}^{\frac{4}{3}}\frac{du}{(1+u^2)^\frac{3}{2}}=\frac{u}{\sqrt{1+u^2}}\Big|^\frac{4}{3}_\frac{3}{4}=\frac{1}{5}.
+\end{equation*}
+</div>
+</div></article> <article class="task exercise-like" id="sec-pset2-calc-3-2-2"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para logical" id="sec-pset2-calc-3-2-2-1-1">
+<div class="para">First, I’ll start with the substitution <span class="process-math">\(u=\ln{x}\text{.}\)</span> Then, <span class="process-math">\(du=\frac{dx}{x}\)</span> and the integral becomes</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/sec-pset1-calc.html">
+\begin{equation*}
+\displaystyle\int\frac{\sqrt{1-u^2}}{u}du.
+\end{equation*}
+</div>
+<div class="para">To help with the square root, I’ll now use the trig substitution <span class="process-math">\(u=\sin\theta\text{,}\)</span> in which case <span class="process-math">\(du=\cos\theta d\theta\)</span> and then the integral transforms as follow:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/sec-pset1-calc.html" id="sec-pset2-calc-3-2-2-1-1-6">
+\begin{align*}
+\displaystyle\int\frac{\sqrt{1-u^2}}{u}du\amp \,=\,\amp  \displaystyle\int\frac{\cos^2\theta}{\sin\theta}d\theta\\
+\amp \,=\,\amp  \displaystyle\int\frac{1-\sin^2\theta}{\sin\theta}d\theta\\
+\amp \,=\,\amp  \displaystyle\int\csc\theta-\sin\theta d\theta.
+\end{align*}
+</div>
+<div class="para">From <a href="sec-pset1-calc.html" class="internal" title="Section A.2: Problem Set 1">Section A.2</a>, we know that <span class="process-math">\(\int\csc\theta d\theta=-\ln|\csc\theta+\cot\theta|+C\text{,}\)</span> which allows to continue our calculation above:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/sec-pset1-calc.html">
+\begin{equation*}
+\displaystyle\int\csc\theta-\sin\theta d\theta=-\ln|\csc\theta+\cot\theta|+\cos\theta+C.
+\end{equation*}
+</div>
+<div class="para">Given that <span class="process-math">\(u=\sin\theta\text{,}\)</span> we can either draw the corresponding right-angled triangle or use identities to determine that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/sec-pset1-calc.html">
+\begin{equation*}
+\csc\theta=\frac{1}{u},\ \ \cot\theta=\frac{\sqrt{1-u^2}}{u},
+\end{equation*}
+</div>
+<div class="para">so that the integral is finally:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/sec-pset1-calc.html">
+\begin{equation*}
+-\ln\left|\frac{1}{u}+\frac{\sqrt{1-u^2}}{u}\right|+\sqrt{1-u^2}+C=-\ln\left|\frac{1}{\ln{x}}+\frac{\sqrt{1-\ln^2{x}}}{\ln{x}}\right|+\sqrt{1-\ln^2{x}}+C.
+\end{equation*}
+</div>
+</div></article> <article class="task exercise-like" id="sec-pset2-calc-3-2-3"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para logical" id="sec-pset2-calc-3-2-3-1-1">
+<div class="para">If we start with a substitution of the form <span class="process-math">\(u=\cos\theta\text{,}\)</span> then <span class="process-math">\(du=-\sin\theta d\theta\)</span> and the integral becomes:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+-\displaystyle\int\frac{du}{u^2+u-2}=-\int\frac{du}{(u+2)(u-1)}.
+\end{equation*}
+</div>
+<div class="para">To continue, we determine the partial fraction decomposition. Given the form, we seek <span class="process-math">\(A,B\)</span> for which</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{1}{(u+2)(u-1)}=\frac{A}{u+2}+\frac{B}{u-1}.
+\end{equation*}
+</div>
+<div class="para">Clearing denominators, we get:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+1=A(u-1)+B(u+2).
+\end{equation*}
+</div>
+<div class="para">Substituting <span class="process-math">\(u=1\)</span> and <span class="process-math">\(u=-2\text{,}\)</span> in turn, yields:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+B=\frac{1}{3},\ A=-\frac{1}{3}.
+\end{equation*}
+</div>
+<div class="para">This allows us to re-write our integral above as:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+-\int\left[\frac{-\frac{1}{3}}{u+2}+\frac{\frac{1}{3}}{u-1}\right]du
+\end{equation*}
+</div>
+<div class="para">Integrating now gives:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{1}{3}\ln|u+2|-\frac{1}{3}\ln|u-1|+C=\frac{1}{3}\ln|\cos\theta+2|-\frac{1}{3}\ln|\cos\theta-1|+C.
+\end{equation*}
+</div>
+</div></article>
+</div></details></article><article class="problem example-like" id="sec-pset2-calc-4"><h3 class="heading">
 <span class="type">Problem</span><span class="space"> </span><span class="codenumber">A.3.2</span><span class="period">.</span>
 </h3>
 <div class="introduction" id="sec-pset2-calc-4-1">
@@ -2432,7 +2531,27 @@ window.MathJax = {
 <div class="para" id="sec-pset2-calc-4-1-3-1-1">Use an appropriate technique of integration to evaluate the integral you found above to derive a formula for the area of the ellipse.</div></article> <article class="task exercise-like" id="sec-pset2-calc-4-1-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
 <div class="para" id="sec-pset2-calc-4-1-4-1-1">Explain how your formula can be applied to derive the area of a circle of radius <span class="process-math">\(r\text{.}\)</span>
 </div></article>
-</div></article><article class="problem example-like" id="sec-pset2-calc-5"><h3 class="heading">
+</div> <details id="sec-pset2-calc-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<article class="task exercise-like" id="sec-pset2-calc-4-2-1"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para logical" id="sec-pset2-calc-4-2-1-1-1">
+<div class="para">Note that the area of the region above the <span class="process-math">\(x\)</span>-axis and below the graph of the function <span class="process-math">\(f(x)=b\sqrt{1-\frac{x^2}{a^2}}\)</span> is equal to half the area we seek. It follows that if <span class="process-math">\(A\)</span> denotes the area, then:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A=2\int_{-a}^a b\sqrt{1-\frac{x^2}{a^2}}dx.
+\end{equation*}
+</div>
+</div></article> <article class="task exercise-like" id="sec-pset2-calc-4-2-2"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para logical" id="sec-pset2-calc-4-2-2-1-1">
+<div class="para">To evaluate this integral, we use the trig substitution <span class="process-math">\(x=a\sin\theta\text{.}\)</span> This means that <span class="process-math">\(dx=a\cos\theta d\theta\text{.}\)</span> Since <span class="process-math">\(x\)</span> increases from <span class="process-math">\(x=-a\)</span> to <span class="process-math">\(x=a\text{,}\)</span> we need <span class="process-math">\(\theta\)</span> to increase from <span class="process-math">\(\theta=-\pi\)</span> to <span class="process-math">\(\theta=0.\)</span> This has effect of transforming the integral as:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+2\int b\sqrt{1-\frac{x^2}{a^2}}dx=2ab\int_{-\pi}^0 \cos^2\theta d\theta=ab(\theta+\cos\theta\sin\theta)|^{0}_{-\pi}=\pi ab,
+\end{equation*}
+</div>
+<div class="para">where we have used the fact that <span class="process-math">\(\int\cos^2\theta d\theta=\frac{\theta+\cos\theta \sin\theta}{2}\)</span> from Problem Set 1.</div>
+</div></article> <article class="task exercise-like" id="sec-pset2-calc-4-2-3"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="sec-pset2-calc-4-2-3-1-1">In the special case when <span class="process-math">\(a=b\text{,}\)</span> we get a circle of radius <span class="process-math">\(a\text{;}\)</span> our formula then specializes to <span class="process-math">\(\pi r^2\text{,}\)</span> which matches the standard formula for the area of a circle.</div></article>
+</div></details></article><article class="problem example-like" id="sec-pset2-calc-5"><h3 class="heading">
 <span class="type">Problem</span><span class="space"> </span><span class="codenumber">A.3.3</span><span class="period">.</span>
 </h3>
 <div class="introduction" id="sec-pset2-calc-5-1">
@@ -2456,7 +2575,43 @@ window.MathJax = {
 </div></article> <article class="task exercise-like" id="sec-pset2-calc-5-1-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
 <div class="para" id="sec-pset2-calc-5-1-3-1-1">Explain and demonstrate how to evaluate <span class="process-math">\(\int\sqrt{\frac{x}{1-x^3}}dx\)</span> by using an inverse substitution of the from <span class="process-math">\(x=u^a\)</span> for some suitable choice of real number <span class="process-math">\(a\text{.}\)</span>
 </div></article>
-</div></article><article class="problem example-like" id="sec-pset2-calc-6"><h3 class="heading">
+</div> <details id="sec-pset2-calc-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<article class="task exercise-like" id="sec-pset2-calc-5-2-1"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para logical" id="sec-pset2-calc-5-2-1-1-1">
+<div class="para">Following the suggestion, we let <span class="process-math">\(x=u^6\text{,}\)</span> in which case <span class="process-math">\(dx=6u^5du\text{.}\)</span> This has the following effect:</div>
+<div class="displaymath process-math" id="sec-pset2-calc-5-2-1-1-1-3">
+\begin{align*}
+\int\sqrt{\frac{x}{1-x^3}}dx \amp \,=\,\amp   \int\frac{\sqrt{u^6}}{1+\sqrt[3]{u^6}}\cdot 6u^5 du.\\
+\amp\,=\,\amp \int\frac{6u^8}{1+u^2}du \\
+\amp\,=\,\amp 6\int\frac{u^8}{1+u^2}du. 
+\end{align*}
+</div>
+<div class="para">Using the hint, we continue:</div>
+<div class="displaymath process-math" id="sec-pset2-calc-5-2-1-1-1-4">
+\begin{align*}
+6\int\frac{u^8}{1+u^2}du\amp \,=\, \amp 6\int u^6-u^4+u^2-1+\frac{1}{1+u^2} du\\
+\amp\,=\,\amp \frac{6u^7}{7}-\frac{6u^5}{5}+\frac{6u^3}{3}-6u+6\arctan(u)+C \\
+\amp\,=\,\amp \frac{6x^\frac{7}{6}}{7}-\frac{6x^\frac{5}{6}}{5}+2x^\frac{1}{2}-6x^\frac{1}{6}+6\arctan(x^\frac{1}{6})+C .
+\end{align*}
+</div>
+</div></article> <article class="task exercise-like" id="sec-pset2-calc-5-2-2"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para logical" id="sec-pset2-calc-5-2-2-1-1">
+<div class="para">Following the advice, let’s try <span class="process-math">\(x=u^a\)</span> and let’s see what happens. If <span class="process-math">\(x=u^a\text{,}\)</span> then <span class="process-math">\(dx=au^{a-1}du\)</span> and the integral transforms as:</div>
+<div class="displaymath process-math" id="sec-pset2-calc-5-2-2-1-1-4">
+\begin{align*}
+\displaystyle\int\sqrt{\frac{x}{1-x^3}}dx \amp\,=\,\amp \displaystyle\int\frac{\sqrt{u^a}}{\sqrt{1-u^{3a}}}au^{a-1}du \\
+\amp\,=\,\amp a\int\frac{u^\frac{a}{2}\cdot u^{a-1}}{\sqrt{1-u^{3a}}}du \\
+\amp\,=\,\amp a\int\frac{u^{\frac{3a}{2}-1}}{\sqrt{1-u^{3a}}}du 
+\end{align*}
+</div>
+<div class="para">Observe that if we were to choose <span class="process-math">\(a=\frac{2}{3}\text{,}\)</span> then the fraction exponents go away and we have:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{2}{3}\int\frac{du}{\sqrt{1-u^2}}du=\frac{2}{3}\arcsin(u)+C=\frac{2}{3}\arcsin(x^\frac{3}{2})+C.
+\end{equation*}
+</div>
+</div></article>
+</div></details></article><article class="problem example-like" id="sec-pset2-calc-6"><h3 class="heading">
 <span class="type">Problem</span><span class="space"> </span><span class="codenumber">A.3.4</span><span class="period">.</span>
 </h3>
 <div class="introduction" id="sec-pset2-calc-6-1">
@@ -2477,7 +2632,62 @@ dx \amp =\frac{2du}{1+u^2}.
 <div class="para" id="sec-pset2-calc-6-1-4-1-1">Explain and demonstrate how to use this substitution to evaluate <span class="process-math">\(\int\frac{dx}{\sin{x}+\tan{x}}\)</span>
 </div></article>
 </div> <details id="sec-pset2-calc-6-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="sec-pset2-calc-6-2-1">For part (a), start by letting <span class="process-math">\(\theta=\frac{x}{2}\)</span> and drawing the right triangle that expresses <span class="process-math">\(u=\tan(\theta)\text{.}\)</span>
-</div></div></details></article><article class="problem example-like" id="sec-pset2-calc-7"><h3 class="heading">
+</div></div></details> <details id="sec-pset2-calc-6-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<article class="task exercise-like" id="sec-pset2-calc-6-3-1"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para logical" id="sec-pset2-calc-6-3-1-1-1">
+<div class="para">There are a few ways one could go, but here’s how I did it. If we let <span class="process-math">\(\theta=\frac{x}{2}\text{,}\)</span> then <span class="process-math">\(\tan\theta=u\)</span> and, by drawing a right triangle with opposite side equal to <span class="process-math">\(u\)</span> and adjacent side equal to <span class="process-math">\(1\text{,}\)</span> the hypotenuse would be <span class="process-math">\(\sqrt{1+u^2}\)</span> and we can then solve:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\sin\theta=\frac{u}{\sqrt{1+u^2}},\ \ \cos\theta=\frac{1}{\sqrt{1+u^2}}.
+\end{equation*}
+</div>
+<div class="para">Since <span class="process-math">\(x=2\theta\text{,}\)</span> the can use the double-angle identities <span class="process-math">\(\sin(2\theta)=2\sin\theta\cos\theta\)</span> and <span class="process-math">\(\cos(2\theta)=\cos^2\theta-\sin^2\theta\)</span> to solve:</div>
+<div class="displaymath process-math" id="sec-pset2-calc-6-3-1-1-1-10">
+\begin{align*}
+\sin{x} \amp\,=\,\amp 2\cdot\frac{u}{\sqrt{1+u^2}}\cdot\frac{1}{\sqrt{1+u^2}}=\frac{2u}{1+u^2} \\
+\cos{x} \amp\,=\,\amp \frac{1}{1+u^2}-\frac{u^2}{1+u^2}=\frac{1-u^2}{1+u^2} 
+\end{align*}
+</div>
+<div class="para">From here, we can solve for <span class="process-math">\(\tan(x)\text{:}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\tan{x}=\frac{\sin{x}}{\cos{x}}=\frac{2u}{1-u^2}.
+\end{equation*}
+</div>
+<div class="para">Finally, if <span class="process-math">\(u=\tan(\frac{x}{2})\text{,}\)</span> then <span class="process-math">\(\frac{du}{dx}=\sec^2(\frac{x}{2})\frac{1}{2}=(1+\tan^2(\frac{x}{2}))\frac{1}{2}=\frac{1+u^2}{2},\)</span> so <span class="process-math">\(dx=\frac{2du}{1+u^2}.\)</span>
+</div>
+</div></article> <article class="task exercise-like" id="sec-pset2-calc-6-3-2"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para logical" id="sec-pset2-calc-6-3-2-1-1">
+<div class="para">Start with <span class="process-math">\(\int\frac{dx}{1+\sin{x}}\text{.}\)</span> Using the Weierstrass substitution <span class="process-math">\(u=\tan(x/2)\)</span> explored above, we replace <span class="process-math">\(\sin{x}=\frac{2u}{1+u^2}\)</span> and <span class="process-math">\(dx=\frac{2du}{1+u^2}\text{.}\)</span> This leaves the following integral:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int\frac{2du}{(u+1)^2}.
+\end{equation*}
+</div>
+<div class="para">But then</div>
+<div class="displaymath process-math">
+\begin{equation*}
+2\int\frac{du}{(u+1)^2}=-\frac{2}{(u+1)}+C=-\frac{2}{1+\tan(x/2)}+C.
+\end{equation*}
+</div>
+</div></article> <article class="task exercise-like" id="sec-pset2-calc-6-3-3"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para logical" id="sec-pset2-calc-6-3-3-1-1">
+<div class="para">Again, use the Weierstrass substitution <span class="process-math">\(u=\tan(x/2)\text{.}\)</span> After some algebra, the integral simplifies to:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int-\frac{u}{2}+\frac{1}{2u}du
+\end{equation*}
+</div>
+<div class="para">Then:</div>
+<div class="displaymath process-math" id="sec-pset2-calc-6-3-3-1-1-3">
+\begin{align*}
+\int-\frac{u}{2}+\frac{1}{2u}du \amp\,=\,\amp -\frac{u^2}{4}+\frac{1}{2}\ln|u|+C \\
+\amp\,=\,\amp -\frac{\tan^2(x/2)}{4}+\frac{1}{2}\ln|\tan(x/2)|+C.
+\end{align*}
+</div>
+</div></article>
+</div></details></article><article class="problem example-like" id="sec-pset2-calc-7"><h3 class="heading">
 <span class="type">Problem</span><span class="space"> </span><span class="codenumber">A.3.5</span><span class="period">.</span>
 </h3>
 <div class="introduction" id="sec-pset2-calc-7-1">
@@ -2491,7 +2701,33 @@ dx \amp =\frac{2du}{1+u^2}.
 </div> <article class="task exercise-like" id="sec-pset2-calc-7-1-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
 <div class="para" id="sec-pset2-calc-7-1-2-1-1">Explain and demonstrate how to decide if <span class="process-math">\(\int_{-\infty}^\infty \sin(x)dx\)</span> converges or diverges.</div></article> <article class="task exercise-like" id="sec-pset2-calc-7-1-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
 <div class="para" id="sec-pset2-calc-7-1-3-1-1">Explain and demonstrate how to decide if <span class="process-math">\(\int_{-\infty}^\infty \frac{xdx}{\left(x^2+4\right)^\frac{3}{2}}\)</span> converges or diverges.</div></article>
-</div></article></section></div>
+</div> <details id="sec-pset2-calc-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<article class="task exercise-like" id="sec-pset2-calc-7-2-1"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para logical" id="sec-pset2-calc-7-2-1-1-1">
+<div class="para">Consider the integral <span class="process-math">\(\int_0^\infty\sin(x)dx\text{.}\)</span> We have</div>
+<div class="displaymath process-math" id="sec-pset2-calc-7-2-1-1-1-2">
+\begin{align*}
+\int_0^\infty\sin(x)dx \amp\,=\,\lim_{a\to\infty}\int_0^a\sin(x)dx \\
+\amp\,=\,\amp \lim_{a\to\infty}-\cos(x)\Big|^a_0 \\
+\amp\,=\,\amp \lim_{a\to\infty}-\cos(a)+1, 
+\end{align*}
+</div>
+<div class="para">which doesn’t exist. Therefore, the integral <span class="process-math">\(\int_0^\infty\sin(x)dx\)</span> diverges and thus, so does <span class="process-math">\(\int_{-\infty}^\infty\sin(x)dx\)</span>
+</div>
+</div></article> <article class="task exercise-like" id="sec-pset2-calc-7-2-2"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para logical" id="sec-pset2-calc-7-2-2-1-1">
+<div class="para">Consider the integral <span class="process-math">\(\int_0^\infty\frac{xdx}{\left(x^2+4\right)^\frac{3}{2}}\text{.}\)</span> By using a substitution of the form <span class="process-math">\(u=x^2+4\text{,}\)</span> we can evaluate the integral as follows:</div>
+<div class="displaymath process-math" id="sec-pset2-calc-7-2-2-1-1-3">
+\begin{align*}
+\int_0^\infty\frac{xdx}{\left(x^2+4\right)^\frac{3}{2}} \amp\,=\,\amp \lim_{a\to\infty}\int_0^a\frac{xdx}{(x^2+4)^\frac{3}{2}} \\
+\amp\,=\,\amp \lim_{a\to\infty}\frac{1}{2}\int_{4}^{a^2+4}\frac{du}{u^\frac{3}{2}} \\
+\amp\,=\,\amp \frac{1}{2}.
+\end{align*}
+</div>
+<div class="para">Thus, <span class="process-math">\(\int_0^\infty\frac{xdx}{\left(x^2+4\right)^\frac{3}{2}}\text{.}\)</span>
+</div>
+</div> <div class="para" id="sec-pset2-calc-7-2-2-1-2">A similar calculation shows that <span class="process-math">\(\int_{-\infty}^0\frac{xdx}{\left(x^2+4\right)^\frac{3}{2}}\)</span> converges to <span class="process-math">\(-\frac{1}{2}\text{.}\)</span> Therefore, the integral <span class="process-math">\(\int_{-\infty}^\infty\frac{xdx}{\left(x^2+4\right)^\frac{3}{2}}\)</span> converges to the sum, which is <span class="process-math">\(0\)</span> in this case.</div></article>
+</div></details></article></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-pset1-calc.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-pset3-calc.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

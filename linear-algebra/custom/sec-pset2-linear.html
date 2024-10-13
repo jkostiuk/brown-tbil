@@ -659,6 +659,9 @@ window.MathJax = {
 #def-Dot-Product-1-2-3 { counter-set: def-Dot-Product-1-2-3 0; }
 #def-Dot-Product-1-2-3 > li::marker { content: ""counter(def-Dot-Product-1-2-3,decimal)"."; }
 #def-Dot-Product-1-2-3 > li { counter-increment: def-Dot-Product-1-2-3; }
+#sec-pset2-linear-8-3-1-1-1-2 { counter-set: sec-pset2-linear-8-3-1-1-1-2 0; }
+#sec-pset2-linear-8-3-1-1-1-2 > li::marker { content: ""counter(sec-pset2-linear-8-3-1-1-1-2,decimal)"."; }
+#sec-pset2-linear-8-3-1-1-1-2 > li { counter-increment: sec-pset2-linear-8-3-1-1-1-2; }
 #truss-2-3-1-4 { counter-set: truss-2-3-1-4 0; }
 #truss-2-3-1-4 > li::marker { content: ""counter(truss-2-3-1-4,decimal)"."; }
 #truss-2-3-1-4 > li { counter-increment: truss-2-3-1-4; }
@@ -1236,7 +1239,48 @@ window.MathJax = {
 </div> <article class="task exercise-like" id="sec-pset2-linear-3-2-4"><h4 class="heading"><span class="codenumber">(a)</span></h4>
 <div class="para" id="sec-pset2-linear-3-2-4-1-1">Write down the system of linear equations that arises from considering all six intersections.</div></article> <article class="task exercise-like" id="sec-pset2-linear-3-2-5"><h4 class="heading"><span class="codenumber">(b)</span></h4>
 <div class="para" id="sec-pset2-linear-3-2-5-1-1">Are you able to say definitively what the values of <span class="process-math">\(x_1,\dots, x_7\)</span> are? If so, explain and demonstrate how to find them. If not, what additional information do you need to ask the City of Banff to collect or otherwise provide for you in order to best inform their design?</div></article>
-</div></article><article class="problem example-like" id="sec-pset2-linear-4"><h3 class="heading">
+</div> <details id="sec-pset2-linear-3-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<article class="task exercise-like" id="sec-pset2-linear-3-3-1"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para logical" id="sec-pset2-linear-3-3-1-1-1">
+<div class="para">Following the procedure at each intersection, we obtain the following six equations:</div>
+<div class="displaymath process-math" id="sec-pset2-linear-3-3-1-1-1-1">
+\begin{align*}
+A:\  \amp  410+x_5\amp = 200+x_1\\
+B: \ \amp 350+x_1\amp = x_2+x_6\\
+C: \ \amp x_2+x_7\amp = 300+500\\
+D: \ \amp x_3\amp= x_5+280\\
+E: \ \amp x_4+x_6\amp= x_3\\
+F: \ \amp 520\amp = x_4+x_7.
+\end{align*}
+</div>
+<div class="para">Re-writing as a system of linear equations (moving the constants to the right hand side), we get:</div>
+<div class="displaymath process-math" id="sec-pset2-linear-3-3-1-1-1-2">
+\begin{alignat*}{8}
+-x_1 \amp \amp\amp \amp \amp \amp \amp \amp\,+\, \amp x_5\amp\amp \amp \amp \amp\,=\,\amp -210\\
+x_1 \amp\,-\,\amp x_2\amp\amp \amp \amp\amp\amp\amp \amp\,-\,\amp x_6\amp\amp\amp\,=\,\amp -350\\
+\amp\amp x_2\amp\amp \amp \amp\amp \amp\amp \amp\amp \amp\,+\,\amp x_7\amp\,=\,\amp 800\\
+\amp\amp \amp\amp x_3\amp \amp\amp \amp\,-\,\amp x_5\amp\amp \amp\amp \amp\,=\,\amp 280\\
+\amp\amp \amp\amp -x_3\amp \amp\,+\,\amp x_4\amp\amp\amp\,+\,\amp x_6\amp\amp \amp\,=\,\amp 0\\
+\amp\amp \amp\amp \amp \amp\amp x_4\amp\amp \amp\amp \amp\,+\,\amp x_7\amp\,=\,\amp 520.
+\end{alignat*}
+</div>
+</div></article> <article class="task exercise-like" id="sec-pset2-linear-3-3-2"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para logical" id="sec-pset2-linear-3-3-2-1-1">
+<div class="para">Using Octave to calculate the corresponding RREF, we find that <span class="process-math">\(x_6,x_7\)</span> are free variables and, after setting <span class="process-math">\(x_6=a,x_7=b\)</span> and solving for the bound variables, we get:</div>
+<div class="displaymath process-math" id="sec-pset2-linear-3-3-2-1-1-3">
+\begin{align*}
+x_1 \amp \,=\,\amp 450+a-b\\
+x_2 \amp \,=\,\amp 800-b\\
+x_3 \amp \,=\,\amp 520+a-b\\
+x_4 \amp \,=\,\amp 520-b\\
+x_5 \amp \,=\,\amp 240+a-b\\
+x_6 \amp \,=\,\amp a\\
+x_7 \amp \,=\,\amp b
+\end{align*}
+</div>
+<div class="para">In particular, the equations are consistent, but there isn’t a unique solution, which means we need additional information or constraints from the City of Banff to pin down our data. One way to do this is ask the City of Banff for specific values of <span class="process-math">\(x_6,x_7\)</span> based on historical data, or to send an intern out at the corresponding streets to collect this information.</div>
+</div></article>
+</div></details></article><article class="problem example-like" id="sec-pset2-linear-4"><h3 class="heading">
 <span class="type">Problem</span><span class="space"> </span><span class="codenumber">A.3.2</span><span class="period">.</span><span class="space"> </span><span class="title">(Problem 2).</span>
 </h3> <div class="introduction" id="sec-pset2-linear-4-2">
 <div class="para logical" id="sec-pset2-linear-4-2-1">
@@ -1284,14 +1328,45 @@ x+y-3z-2w+a+b-3c-2d=0
 </div>
 <div class="para">by moving everything over to the left hand side. Since we are assuming that <span class="process-math">\(x+y-3z-2w=0\)</span> and <span class="process-math">\(a+b-3c-2d=0\text{,}\)</span> it follows that <span class="process-math">\(0=0\text{,}\)</span> which is true, which proves that vector addition is closed.</div>
 </div></article>
-</div></article><article class="problem example-like" id="sec-pset2-linear-5"><h3 class="heading">
+</div> <details id="sec-pset2-linear-4-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<article class="task exercise-like" id="sec-pset2-linear-4-3-1"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="sec-pset2-linear-4-3-1-1-1">While the calculations in the attempted proof are valid, they only indicate that a specific example of two vectors <span class="process-math">\(\vec{u},\vec{v}\)</span> satisfy the given condition. That is, the argument is not general: a correct proof would have to argue that <span class="process-math">\(\vec{u}+\vec{v}\in W\)</span> for <em class="emphasis">any</em> choice of <span class="process-math">\(\vec{u},\vec{v}\)</span> and not just these two choices.</div></article> <article class="task exercise-like" id="sec-pset2-linear-4-3-2"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para logical" id="sec-pset2-linear-4-3-2-1-1">
+<div class="para">The author begins by starting with the assumption that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+(x+a)+(y+b)=3(z+c)+2(w+d),
+\end{equation*}
+</div>
+<div class="para">and then concludes that <span class="process-math">\(0=0\text{.}\)</span> This isn’t what we want to do for two reasons: Firstly, we already know that <span class="process-math">\(0=0\text{,}\)</span> so we haven’t learned anything new. More importantly, we <em class="emphasis">do not yet know that</em> the equation</div>
+<div class="displaymath process-math">
+\begin{equation*}
+(x+a)+(y+b)=3(z+c)+2(w+d)
+\end{equation*}
+</div>
+<div class="para">is actually true!</div>
+</div> <div class="para logical" id="sec-pset2-linear-4-3-2-1-2">
+<div class="para">To correctly prove this statement, we could start with our assumptions <span class="process-math">\(x+y-3z-2w=0\)</span> and <span class="process-math">\(a+b-3c-2d=0\)</span> and explain how to manipulate them in order to show that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+(x+a)+(y+b)=3(z+c)+2(w+d)
+\end{equation*}
+</div>
+<div class="para">is true.</div>
+</div></article>
+</div></details></article><article class="problem example-like" id="sec-pset2-linear-5"><h3 class="heading">
 <span class="type">Problem</span><span class="space"> </span><span class="codenumber">A.3.3</span><span class="period">.</span><span class="space"> </span><span class="title">(Problem 3).</span>
 </h3> <div class="introduction" id="sec-pset2-linear-5-2">
 <div class="para" id="sec-pset2-linear-5-2-1">Consider <span class="process-math">\(n\)</span> vectors <span class="process-math">\(\vec{v}_1,\dots, \vec{v}_n\)</span> living inside <span class="process-math">\(\IR^m\text{.}\)</span>
 </div> <article class="task exercise-like" id="sec-pset2-linear-5-2-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
 <div class="para" id="sec-pset2-linear-5-2-2-1-1">If <span class="process-math">\(n &lt;m\text{,}\)</span> explain why it is impossible for these vectors to span all of <span class="process-math">\(\IR^m\text{.}\)</span> That is, prove <a href="EV2.html#EV2-n-vectors-span" class="xref" data-knowl="./knowl/xref/EV2-n-vectors-span.html" data-reveal-label="Reveal" data-close-label="Close" title="Fact 2.2.5">Fact 2.2.5</a>.</div></article> <article class="task exercise-like" id="sec-pset2-linear-5-2-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
 <div class="para" id="sec-pset2-linear-5-2-3-1-1">If <span class="process-math">\(m &lt;n\text{,}\)</span> explain why it is impossible for these vectors to be linearly independent.</div></article>
-</div></article><section class="subsection" id="sec-pset2-linear-6"><h3 class="heading hide-type">
+</div> <details id="sec-pset2-linear-5-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<article class="task exercise-like" id="sec-pset2-linear-5-3-1"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="sec-pset2-linear-5-3-1-1-1">To decide if the set of vectors <span class="process-math">\(\left\{\vec{v}_1,\dots, \vec{v}_n\right\}\)</span> spans all of <span class="process-math">\(\IR^m\text{,}\)</span> we can use <a href="EV2.html#EV2-span-fact" class="xref" data-knowl="./knowl/xref/EV2-span-fact.html" data-reveal-label="Reveal" data-close-label="Close" title="Fact 2.2.8">Fact 2.2.8</a>. Consider the matrix <span class="process-math">\(\RREF[\vec{v}_1\cdots\vec{v}_n]\text{.}\)</span> This matrix will have <span class="process-math">\(m\)</span> rows and <span class="process-math">\(n\)</span> columns. If we assume that <span class="process-math">\(n &lt; m\text{,}\)</span> then the maximum number of pivots that can appear in <span class="process-math">\(\RREF[\vec{v}_1\cdots\vec{v}_n]\)</span> is equal to <span class="process-math">\(n\)</span> since each pivot is in a unique row and column. It follows that there must be at least one row in <span class="process-math">\(\RREF[\vec{v}_1\cdots\vec{v}_n]\)</span> that is missing a pivot and, therefore, these vectors cannot span all of <span class="process-math">\(\IR^m\text{.}\)</span>
+</div></article> <article class="task exercise-like" id="sec-pset2-linear-5-3-2"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="sec-pset2-linear-5-3-2-1-1">To decide if the set of vectors <span class="process-math">\(\left\{\vec{v}_1,\dots, \vec{v}_n\right\}\)</span> is linearly independent, we can use <a href="EV4.html#EV4-lindep-fact" class="xref" data-knowl="./knowl/xref/EV4-lindep-fact.html" data-reveal-label="Reveal" data-close-label="Close" title="Fact 2.4.5">Fact 2.4.5</a>. Consider the matrix <span class="process-math">\(\RREF[\vec{v}_1\cdots\vec{v}_n]\text{.}\)</span> This matrix will have <span class="process-math">\(m\)</span> rows and <span class="process-math">\(n\)</span> columns. If we assume that <span class="process-math">\(m &lt; n\text{,}\)</span> then the maximum number of pivots that can appear in <span class="process-math">\(\RREF[\vec{v}_1\cdots\vec{v}_n]\)</span> is equal to <span class="process-math">\(m\)</span> since each pivot is in a unique row and column. It follows that there must be at least one column in <span class="process-math">\(\RREF[\vec{v}_1\cdots\vec{v}_n]\)</span> that is missing a pivot and, therefore, these vectors cannot be linearly independent.</div></article>
+</div></details></article><section class="subsection" id="sec-pset2-linear-6"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">A.3.1</span><span class="space"> </span><span class="title">Background Information: The Dot-Product</span>
 </h3>
 <div class="para" id="sec-pset2-linear-6-2">The purpose of the next few problems are to introduce you to some new definitions and concepts, namely, that of dot product and orthogonality. In doing so, you are being asked to practice working with new definitions and to explore ideas related to them. This short section contains all of the background information you need to complete the problems and you’ll get the most learning benefit by working on these exercises without consulting further outside sources.</div>
@@ -1434,7 +1509,57 @@ ax+by+cz=d.
 </div>
 <div class="para">Explain and demonstrate how to find a point on the plane and its normal vector.</div>
 </div></article>
-</div></article><article class="problem example-like" id="sec-pset2-linear-8"><h3 class="heading">
+</div> <details id="sec-pset2-linear-7-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<article class="task exercise-like" id="sec-pset2-linear-7-3-1"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para logical" id="sec-pset2-linear-7-3-1-1-1">
+<div class="para">Using a combination of our dot product properties, the following chain of equalities explains the result:</div>
+<div class="displaymath process-math" id="sec-pset2-linear-7-3-1-1-1-1">
+\begin{align*}
+||\vec{u} -\vec{v}||^2\amp \,=\,\amp (\vec{u}-\vec{v})\bullet(\vec{u}-\vec{v})\\
+\text{Property 2} \amp\,=\,\amp \vec{u}\bullet(\vec{u}-\vec{v})+(-\vec{v})\bullet(\vec{u}-\vec{v}) \\
+\text{Property 2}\amp\,=\,\amp \vec{u}\bullet\vec{u}+\vec{u}\bullet(-\vec{v})+(-\vec{v})\bullet\vec{u}+(-\vec{v})\bullet(-\vec{v}) \\
+\text{Property 1 and 3} \amp\,=\,\amp \vec{u}\bullet\vec{u}-\vec{u}\bullet\vec{v}-\vec{u}\bullet\vec{v}+\vec{v}\bullet\vec{v} \\
+\amp \,=\,\amp \vec{u}\bullet\vec{u}-2\vec{u}\bullet\vec{v}+\vec{v}\bullet\vec{v}\\
+\amp \,=\,\amp ||\vec{u}||^2+||\vec{v}||^2-2\vec{u}\bullet\vec{v}.
+\end{align*}
+</div>
+</div></article> <article class="task exercise-like" id="sec-pset2-linear-7-3-2"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para logical" id="sec-pset2-linear-7-3-2-1-1">
+<div class="para">Suppose that we are given a normal vector <span class="process-math">\(\vec{n}=\left[\begin{array}{c}a\\b\\c\end{array}\right]\)</span> and that <span class="process-math">\(\vec{p}=\left[\begin{array}{c}x_0\\y_0\\z_0\end{array}\right]\text{.}\)</span> We are given that a plane is described by consider all vectors <span class="process-math">\(\vec{x}=\left[\begin{array}{c}x\\y\\z\end{array}\right]\)</span> for which <span class="process-math">\(\vec{n}\)</span> is perpendicular to <span class="process-math">\(\vec{x}-\vec{p}\text{.}\)</span> It follows, then, that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\vec{n}\bullet(\vec{x}-\vec{p})=0,
+\end{equation*}
+</div>
+<div class="para">by our dot-product results above.</div>
+</div> <div class="para logical" id="sec-pset2-linear-7-3-2-1-2">
+<div class="para">Expanding this out, we get</div>
+<div class="displaymath process-math" id="sec-pset2-linear-7-3-2-1-2-1">
+\begin{align*}
+\vec{n}\bullet(\vec{x}-\vec{p})\amp \,=\,\amp 0\\
+a(x-x_0)+b(y-y_0)+c(z-z_0) \amp \,=\, \amp 0\\
+ax+by+cz \amp\,=\,\amp d, 
+\end{align*}
+</div>
+<div class="para">where <span class="process-math">\(d=ax_0+by_0+cz_0\text{.}\)</span> Thus, we’ve recovered an algebraic equation for the plane.</div>
+</div></article> <article class="task exercise-like" id="sec-pset2-linear-7-3-3"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="sec-pset2-linear-7-3-3-1-1">To find a point <span class="process-math">\((x_0,y_0,z_0)\text{,}\)</span> we can basically guess and check. At least one of the coefficients <span class="process-math">\(a,b,c\)</span> must be non-zero. For sake of argument, if we assume that <span class="process-math">\(a\neq 0\text{,}\)</span> then the point <span class="process-math">\((\frac{d}{a},0,0)\)</span> satisfies the equation and thus lies on the plane.</div> <div class="para logical" id="sec-pset2-linear-7-3-3-1-2">
+<div class="para">For the second part, if <span class="process-math">\((x_0,y_0,z_0)\)</span> is some specific point on the plane and <span class="process-math">\((x,y,z)\)</span> is some other general point, then we know the following are true:</div>
+<div class="displaymath process-math" id="sec-pset2-linear-7-3-3-1-2-3">
+\begin{align*}
+ax+by+cz \amp =d\\
+ax_0+by_0+cz_0 \amp =d.
+\end{align*}
+</div>
+<div class="para">Subtracting, we find</div>
+<div class="displaymath process-math">
+\begin{equation*}
+a(x-x_0)+b(y-y_0)+c(z-z_0)=0,
+\end{equation*}
+</div>
+<div class="para">from which it follows that the vector <span class="process-math">\(\vec{n}=\left[\begin{array}{c}a\\b\\c\end{array}\right]\)</span> works as the normal vector.</div>
+</div></article>
+</div></details></article><article class="problem example-like" id="sec-pset2-linear-8"><h3 class="heading">
 <span class="type">Problem</span><span class="space"> </span><span class="codenumber">A.3.7</span><span class="period">.</span><span class="space"> </span><span class="title">(Problem 5).</span>
 </h3> <div class="introduction" id="sec-pset2-linear-8-2">
 <div class="para logical" id="sec-pset2-linear-8-2-1">
@@ -1450,7 +1575,104 @@ W^\perp=\{\vec{u}\in\IR^n|\ \vec{u}\bullet {w}=0\ \textrm{for every}\ \vec{w}\in
 <div class="para" id="sec-pset2-linear-8-2-4-1-1">If <span class="process-math">\(W=\vspan\{\vec{v}_1,\dots, \vec{v}_n\}\text{,}\)</span> explain why saying that <span class="process-math">\(\vec{u}\in W^\perp\)</span> is the same as saying that <span class="process-math">\(\vec{u}\)</span> is orthogonal to each of the vectors <span class="process-math">\(\vec{v}_1,\dots, \vec{v}_n\)</span> individually.</div></article> <article class="task exercise-like" id="sec-pset2-linear-8-2-5"><h4 class="heading"><span class="codenumber">(c)</span></h4>
 <div class="para" id="sec-pset2-linear-8-2-5-1-1">Suppose that <span class="process-math">\(W=\vspan\left\{\begin{bmatrix}2\\-1\\1\end{bmatrix},\begin{bmatrix}0\\-3\\7\end{bmatrix}\right\}\text{.}\)</span> Find a set of vectors that spans <span class="process-math">\(W^\perp\text{.}\)</span>
 </div></article>
-</div></article></section></div>
+</div> <details id="sec-pset2-linear-8-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<article class="task exercise-like" id="sec-pset2-linear-8-3-1"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para logical" id="sec-pset2-linear-8-3-1-1-1">
+<div class="para">Referring to the definition of subspace, we have to check that <span class="process-math">\(W^\perp\)</span> satisfies all three conditions:</div>
+<ol class="decimal" id="sec-pset2-linear-8-3-1-1-1-2">
+<li id="sec-pset2-linear-8-3-1-1-1-2-1"><div class="para" id="sec-pset2-linear-8-3-1-1-1-2-1-1">First, we check that <span class="process-math">\(\vec{0}\in W^\perp\text{.}\)</span> Since <span class="process-math">\(\vec{0}\bullet\vec{w}\)</span> for all <span class="process-math">\(\vec{w}\in W\text{,}\)</span> it follows that, indeed, we have <span class="process-math">\(\vec{0}\in W^\perp\text{.}\)</span>
+</div></li>
+<li id="sec-pset2-linear-8-3-1-1-1-2-2">
+<div class="para logical" id="sec-pset2-linear-8-3-1-1-1-2-2-1">
+<div class="para">Next, we check closure under addition. Suppose that we have two vectors <span class="process-math">\(\vec{u},\vec{v}\)</span> and that we know that <span class="process-math">\(\vec{u},\vec{v}\)</span> both live in <span class="process-math">\(W^\perp\text{.}\)</span> By definition, it means that we know that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\vec{u}\bullet\vec{w}=0\ \text{and } \vec{v}\bullet\vec{w}=0
+\end{equation*}
+</div>
+<div class="para">for all <span class="process-math">\(\vec{w}\in W\text{.}\)</span>
+</div>
+</div>
+<div class="para logical" id="sec-pset2-linear-8-3-1-1-1-2-2-2">
+<div class="para">Using these equations, we then find that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+(\vec{u}+\vec{v})\bullet\vec{w}=\vec{u}\bullet\vec{w}+\vec{v}\bullet\vec{w}=0+0
+\end{equation*}
+</div>
+<div class="para">for all <span class="process-math">\(\vec{w}\in W\)</span> and so <span class="process-math">\(\vec{u}+\vec{v}\)</span> lives in <span class="process-math">\(W^\perp\text{.}\)</span>
+</div>
+</div>
+</li>
+<li id="sec-pset2-linear-8-3-1-1-1-2-3">
+<div class="para logical" id="sec-pset2-linear-8-3-1-1-1-2-3-1">
+<div class="para">Lastly, we check closure under scalar multiplication. Suppose that we have a <span class="process-math">\(\vec{u}\)</span> and that we know that <span class="process-math">\(\vec{u}\)</span> lives in <span class="process-math">\(W^\perp\text{.}\)</span> By definition, it means that we know that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\vec{u}\bullet\vec{w}=0
+\end{equation*}
+</div>
+<div class="para">for all <span class="process-math">\(\vec{w}\in W\text{.}\)</span>
+</div>
+</div>
+<div class="para logical" id="sec-pset2-linear-8-3-1-1-1-2-3-2">
+<div class="para">Using this fact, we then find that if <span class="process-math">\(c\in \IR\text{,}\)</span> then:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+(c\vec{u})\bullet\vec{w}=c(\vec{u}\bullet\vec{w})=0
+\end{equation*}
+</div>
+<div class="para">for all <span class="process-math">\(\vec{w}\in W\)</span> and so <span class="process-math">\(c\vec{u}\)</span> lives in <span class="process-math">\(W^\perp\text{.}\)</span>
+</div>
+</div>
+</li>
+</ol>
+</div></article> <article class="task exercise-like" id="sec-pset2-linear-8-3-2"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="sec-pset2-linear-8-3-2-1-1">Most critically, we must explain two things separately. First, we need to explain why, if <span class="process-math">\(\vec{u}\in W^\perp\text{,}\)</span> then <span class="process-math">\(\vec{u}\)</span> is perpendicular to the vectors in the set <span class="process-math">\(\{\vec{v}_1,\dots, \vec{v}_n\}\text{.}\)</span> Secondly, we also have to explain why, if <span class="process-math">\(\vec{u}\)</span> is perpendicular to the vectors in <span class="process-math">\(\{\vec{v}_1,\dots, \vec{v}_n\}\text{,}\)</span> then we can conclude that <span class="process-math">\(\vec{u}\in W^\perp\text{.}\)</span>
+</div> <div class="para" id="sec-pset2-linear-8-3-2-1-2">Let’s deal with the first statement first. If we know that <span class="process-math">\(\vec{u}\in W^\perp\text{,}\)</span> then <span class="process-math">\(\vec{u}\)</span> is perpendicular to all vectors in <span class="process-math">\(W\text{.}\)</span> Okay, but all the vectors in the set <span class="process-math">\(\{\vec{v}_1,\dots, \vec{v}_n\}\)</span> live in <span class="process-math">\(W\)</span> and so <span class="process-math">\(\vec{u}\)</span> must therefore be perpendicular to them.</div> <div class="para logical" id="sec-pset2-linear-8-3-2-1-3">
+<div class="para">Now let’s deal with the second statement. Suppose all we know is that <span class="process-math">\(\vec{u}\)</span> is perpendicular to <span class="process-math">\(\vec{v}_1,\dots, \vec{v}_n\text{.}\)</span> If we take some arbitrary vector <span class="process-math">\(\vec{w}\in W\text{,}\)</span> we now need to argue that <span class="process-math">\(\vec{u}\)</span> is perpendicular to it as well. For this, since we are given that <span class="process-math">\(W=\vspan\{\vec{v}_1,\dots, \vec{v}_n\}\text{,}\)</span> it follows that we can find scalars <span class="process-math">\(c_1,\dots, c_n\)</span> for which</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\vec{w}=c_1\vec{v}_1+\cdots+c_n\vec{v}_n.
+\end{equation*}
+</div>
+<div class="para">But then:</div>
+<div class="displaymath process-math" id="sec-pset2-linear-8-3-2-1-3-8">
+\begin{align*}
+\vec{u}\bullet\vec{v} \amp\,=\,\amp \vec{u}\bullet(c_1\vec{v}_1+\cdots+c_n\vec{v}_n) \\
+\amp \,=\, \amp c_1(\vec{u}\bullet\vec{v}_1)+\cdots+c_n(\vec{u}\bullet\vec{v}_n)\\
+\amp \,=\,\amp 0+\cdots +0\\
+\amp \,=\,\amp 0.
+\end{align*}
+</div>
+<div class="para">It follows that <span class="process-math">\(\vec{u}\)</span> is perpendicular to <span class="process-math">\(\vec{w}\)</span> and since <span class="process-math">\(\vec{w}\)</span> was arbitrary, <span class="process-math">\(\vec{u}\in W^\perp\text{.}\)</span>
+</div>
+</div></article> <article class="task exercise-like" id="sec-pset2-linear-8-3-3"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para logical" id="sec-pset2-linear-8-3-3-1-1">
+<div class="para">Well, if <span class="process-math">\(\vec{u}=\left[\begin{array}{c}x\\y\\z\end{array}\right]\in W^\perp\text{,}\)</span> then we know by part (b) that this is the same as saying that <span class="process-math">\(\vec{u}\)</span> is perpendicular to our two vectors individually. That is, we know that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\vec{u}\bullet\left[\begin{array}{c}2\\-1\\1\end{array}\right]=2x-y+z=0
+\end{equation*}
+</div>
+<div class="para">and</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\vec{u}\bullet\left[\begin{array}{c}0\\-3\\7\end{array}\right]=-3y+7z=0.
+\end{equation*}
+</div>
+<div class="para">Thus, this gives us a system of linear equations to solve!</div>
+</div> <div class="para logical" id="sec-pset2-linear-8-3-3-1-2">
+<div class="para">Using our methods from <a href="LE.html" class="internal" title="Chapter 1: Systems of Linear Equations (LE)">Chapter 1</a> to solve this system, we find that the solution set is given by</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/LE.html">
+\begin{equation*}
+\left\{\left[\begin{array}{c}2z\\7z\\3z\end{array}\right]|\ z\in\IR\right\},
+\end{equation*}
+</div>
+<div class="para">which means that <span class="process-math">\(W^\perp=\vspan\left\{\left[\begin{array}{c}2\\7\\3\end{array}\right]\right\}.\)</span>
+</div>
+</div></article>
+</div></details></article></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-pset1-linear.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-pset3-linear.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
