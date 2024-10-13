@@ -194,7 +194,7 @@ equation solvable.
 <sage language="octave">
 </sage>
 
-<fact>
+<fact xml:id="EV4-lindep-fact">
     <statement>
         <p>
   For any vector space,

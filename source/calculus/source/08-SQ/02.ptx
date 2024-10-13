@@ -68,6 +68,14 @@
             <p>
                 Compute <m>x_{n+1}-x_n</m>.
             </p>
+            <sage>
+                <input>
+                    n=var("n")
+                def x(n):
+                    return ((-1)^n)/n
+                (x(n+1)-x(n)).factor()
+                </input>
+            </sage>
         </task>
         <task>
             <p>
@@ -104,6 +112,14 @@
             <p>
                 Compute <m>x_{n+1}-x_n</m>.
             </p>
+            <sage>
+                <input>
+                    n=var("n")
+                def x(n):
+                    return (n^2+1)/n
+                (x(n+1)-x(n)).factor()
+                </input>
+            </sage>
         </task>
         <task>
             <p>
@@ -140,6 +156,14 @@
             <p>
                 Compute <m>x_{n+1}-x_n</m>.
             </p>
+            <sage>
+                <input>
+                    n=var("n")
+                def x(n):
+                    return (n+1)/n
+                (x(n+1)-x(n)).factor()
+                </input>
+            </sage>
         </task>
         <task>
             <p>
@@ -176,6 +200,14 @@
             <p>
                 Compute <m>x_{n+1}-x_n</m>.
             </p>
+            <sage>
+                <input>
+                    n=var("n")
+                def x(n):
+                    return 2/3^n
+                (x(n+1)-x(n)).factor()
+                </input>
+            </sage>
         </task>
         <task>
             <p>
@@ -350,7 +382,7 @@
         </task>
         <task>
             <p>
-                Which of the following ia most likely true about <m>\left\{\displaystyle \frac{4n(-1)^n}{n+1}\right\}_{n=0}^\infty</m>?
+                Which of the following is most likely true about <m>\left\{\displaystyle \frac{4n(-1)^n}{n+1}\right\}_{n=0}^\infty</m>?
                 <ol marker="A." cols="2">
                     <li><m>\left\{\displaystyle \frac{4n(-1)^n}{n+1}\right\}_{n=0}^\infty</m> converges to 4.</li>
                     <li><m>\left\{\displaystyle \frac{4n(-1)^n}{n+1}\right\}_{n=0}^\infty</m> converges to 0.</li>
