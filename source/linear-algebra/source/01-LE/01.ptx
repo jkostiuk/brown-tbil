@@ -507,7 +507,7 @@ expressions for <m>x_1</m> in terms of <m>a</m> satisfies both equations of the 
                 </ol>
             </p>
             </statement>
-            <answer><p>C. <m>x_1=2a-3</m></p></answer>
+            <answer><p>C. <m>x_1=2a+3</m></p></answer>
         </task>
         <task>
             <statement>
@@ -535,7 +535,7 @@ a \in \IR
 {
     \left[\begin{array}{c}
     a \\
-    2a-3
+    2a+3
 \end{array}\right]
 }{
 a \in \IR
@@ -560,7 +560,7 @@ a \in \IR
 \setBuilder
 {
     \left[\begin{array}{c}
-    2a-3 \\
+    2a+3 \\
     2b-3
 \end{array}\right]
 }{
