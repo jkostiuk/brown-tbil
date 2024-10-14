@@ -1,0 +1,178 @@
+<section xml:id="sec-pset4-linear">
+    <title>Problem Set 4</title>
+    <paragraphs>
+        <title>Instructions</title>
+        <p>
+            Prior to beginning this problem set, consider reading the Problem Set Success Guide <xref ref="pset-intro"/> for advice and clarity around expectations for Problem Sets in this course. 
+            Upload your solutions to all problems on this page to gradescope as a single .pdf file, remembering to assign pages appropriately for each question. 
+            Complete instructions for Problem Sets are available on Canvas.
+        </p>
+    </paragraphs>
+
+    <problem>
+        <title>(Problem 1)</title>
+        <introduction>
+            <p>
+                In this problem, <m>T\colon V\to W</m> denotes a linear transformation. 
+            </p>
+            <task>
+                <statement>
+                    <p>
+                        Show that if <m>\ker(T)=\{\vec{0}\}</m>, then <m>T</m> must be injective. 
+                        <em>Note:</em> we saw and used this fact in class, but we did not prove it; the point of this exercise is for you to prove it here.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Suppose that <m>\setList{\vec{v}_1,\vec{v}_2,\vec{v}_3}</m> are vectors in <m>V</m> and that the set <m>\setList{T(\vec{v}_1),T(\vec{v}_2),T(\vec{v}_3)}</m> is a linearly independent set. 
+                        Does it follows that <m>\setList{\vec{v}_1,\vec{v}_2,\vec{v}_3}</m> is also linearly independent? 
+                        If <q>yes</q>, explain why; if <q>no</q>, provide a counterexample to the claim. 
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Suppose that <m>\setList{\vec{u}_1,\vec{u}_2,\vec{u}_3}</m> are vectors in <m>V</m>. 
+                        If the set <m>\setList{T(\vec{u}_1),T(\vec{u}_2),T(\vec{u}_3)}</m> spans <m>W</m>, does it necessarily follows that <m>\setList{\vec{u}_1,\vec{u}_2,\vec{u}_3}</m> spans <m>V</m>?
+                        If <q>yes</q>, explain why; if <q>no</q>, provide a counterexample to the claim. 
+                    </p>
+                </statement>
+            </task>
+        </introduction>
+    </problem>
+
+    <problem>
+        <title>(Problem 2)</title>
+       <introduction>
+        <p>
+            Let <m>T\colon M_{2,2}\to\IR</m> denote the transformation given by the rule:
+            <me>T\left(\left[\begin{array}{cc}a&amp; b\\ c&amp; d\end{array}\right]\right)=a+d.</me>
+        </p>
+       </introduction>
+       <task>
+        <statement>
+            <p>
+                Show that <m>T</m> is a linear map. 
+            </p>
+        </statement>
+        <statement>
+            <p>
+                Explain and demonstrate how to calculate a basis for the kernel of <m>T</m> and a basis for the image of <m>T</m>.
+                Is <m>T</m> injective? Is <m>T</m> surjective?
+            </p>
+        </statement>
+       </task>
+       <task>
+        <statement>
+            <p>
+                Verify the rank-nullity theorem for this linear transformation. 
+            </p>
+        </statement>
+       </task>
+    </problem>
+
+    <problem>
+        <title>(Problem 3)</title>
+        <introduction>
+            <p>
+                Let <m>\IR^+=\{x\in\IR|\ x&gt;0\}</m> denote the set of positive real numbers. 
+                Define a new addition on <m>\mathbb{R}^+</m> by the rule <m>x\oplus y=xy</m> (so, in particular, <m>2\oplus 3=6</m>) and define scalar multiplication by <m>\alpha\odot x=x^\alpha</m>. 
+                The set <m>\mathbb{R}^+</m> with these operations is a vector space and you can verify this by checking that all 8 of our Vector Space properties are true for <m>\mathbb{R}^+</m>.
+                We won't ask you to do all of them here, but we will ask a few:
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    Explain why scalar multiplication distributes over scalar addition; that is, explain why <m>(a+b)\odot x=(a\odot x)\oplus (b\odot x)</m> for every <m>x\in\mathbb{R}^+</m> and <m>a,b\in\mathbb{R}</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Explain why an additive identity exists: that is, explain why there is some <m>z\in\mathbb{R}^+</m> for which <m>x\oplus z=x</m> for every <m>x\in\mathbb{R}^+</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Explain why additive inverses exist; that is, explain why, for each <m>y\in\mathbb{R}^+</m>, there exists an element <m>b</m> for which <m>y\oplus b=z</m>, where <m>z</m> is the additive identity you identified above.
+                </p>
+            </statement>
+        </task>
+    </problem>
+
+    <problem>
+        <title>(Problem 4)</title>
+        <introduction>
+            <p>
+                Let <m>W</m> denote the plan living in <m>\IR^5</m> that is given by the following set of equations:
+                <md>
+                    <mrow>x+y+z+w&amp;=0</mrow>
+                    <mrow>x-y+z-w&amp;=0</mrow>
+                </md>
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    Explain and demonstrate how to find two vectors <m>\vec{u},\vec{v}</m> for which <m>W=\vspan{\vec{u},\vec{v}}</m> is a basis for <m>W</m>, confirming that <m>W</m> is indeed a plane in 4-space.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Explain and demonstrate how to find an example of a linear transformation <m>T\colon\IR^3\to\IR^4</m> for which the image of <m>T</m> is equal to <m>W</m>. 
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Explain and demonstrate how to find one example of a linear transformation <m>S\colon\IR^2\to\IR^4</m> for which the image of <m>S</m> is equal to some <m>1</m>-dimensional subspace of <m>W</m>.
+                </p>
+            </statement>
+        </task>
+        
+    </problem>
+
+    <problem>
+        <title>(Problem 5)</title>
+        <introduction>
+            <p>
+                Let <m>A</m> be an <m>m\times n</m> matrix.
+                The <term>transpose</term> of <m>A</m> is the <m>n\times m</m> matrix that is obtained by reflecting the matrix <m>A</m> about the main top-left to bottom-right diagonal and is denoted by <m>A^T</m>.
+                For instance, the following is an example of a matrix <m>B</m> and its transpose <m>B^T</m>:
+                <me>B=\left[\begin{array}{ccc}1&amp; 2&amp;3\\ 1&amp; 2&amp; 4\end{array}\right],\ \ B^T=\left[\begin{array}{cc}1&amp; 1\\ 2&amp; 2\\3&amp; 4\end{array}\right].</me>
+                Now suppose <m>f\colon\mathbb{R}^n\to\mathbb{R}^m</m> is a linear transformation with standard matrix <m>A</m> and let <m>g\colon\mathbb{R}^m\to\mathbb{R}^n</m> denote the linear transformation with standard matrix <m>A^T</m>.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    With <m>A=\left[\begin{array}{cccc}1&amp; 0&amp;2&amp;-3\\3&amp; 2&amp;-1&amp;-1\\4&amp; 2&amp;1&amp;-4\end{array}\right]</m> and notation as defined above, calculate the rank and nullity of the transformations <m>f</m> and <m>g</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Explain why, in general, the rank of <m>f</m> will always be equal to the rank of <m>g</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Explain why, in general, we have <m>\textrm{null(g)}-\textrm{null(f)}=m-n</m> and conclude that <m>\textrm{null}(f)=\textrm{null}(g)</m> if and only if <m>m=n</m>.
+                </p>
+            </statement>
+        </task>
+    </problem>
+</section>
