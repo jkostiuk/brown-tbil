@@ -2131,7 +2131,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.2",
   "title": "Standard Matrices (AT2)",
-  "body": " Standard Matrices (AT2)     Translate back and forth between a linear transformation of Euclidean spaces and its standard matrix, and perform related computations.      Warm Up    Recall that a linear map satisfies     for any .     for any .    In other words, a map is linear when vector space operations can be applied before or after the transformation without affecting the result.      Can you recall the following?    Given a transformation, what do the terms domain and codomain mean?    What does the notation mean?     Class Activities    Suppose is a linear map, and you know and . What is ?                    Suppose is a linear map, and you know and . What is ?                            Suppose is a linear map, and you know and . What is ?                            Suppose is a linear map, and you know and . What piece of information would help you compute ?    The value of .    The value of .    The value of .    Any of the above.        Consider any basis for . Since every vector can be written as a linear combination of basis vectors, , we may compute as follows:   Therefore any linear transformation can be defined by just describing the values of .  Put another way, the images of the basis vectors completely determine determine the transformation .      Since a linear transformation is determined by its action on the standard basis , it is convenient to store this information in an matrix, called the standard matrix standard matrix of , given by .  For example, let be the linear map determined by the following values for applied to the standard basis of .   Then the standard matrix corresponding to is       Let be the linear transformation given by Write the standard matrix for .      Let be the linear transformation given by    Compute , , and .  Find the standard matrix for .     Because every linear map has a linear combination of the variables in each component, and thus yields exactly the coefficients of , the standard matrix for is simply an array of the coefficients of the :   Since the formula for a linear transformation and its standard matrix may both be used to compute the transformation of a vector , we will often write and interchangably:       Let be the linear transformation given by the standard matrix    Compute .  Compute .     Compute the following linear transformations of vectors given their standard matrices.         Individual Practice    Consider the linear transformation given by rotating vectors about the origin through an angle of .    If are the standard basis vectors of , calculate .    What is the standard matrix representing ?      Consider the linear transformation given by reflecting vectors across the line .    If are the standard basis vectors of , calculate .    What is the standard matrix representing ?      Videos      Video: Using the standard matrix to compute the image of a vector     Exercises available at .    Mathematical Writing Explorations  We can represent images in the plane using vectors, and manipulate those images with linear transformations. We introduce some notation in these explorations that is needed for their completion, but is not essential to the rest of the text. These have a geometric flair to them, and can be understood by thinking of geometric transformations in terms of standard matrices.  Given two vectors and , we define the dot product dot product as    For each of the following properties, determine if it is held by the dot product. Either provide a proof it the property holds, or provide a counter-example if it does not.  Distributive over addition (e.g., (  Associative?  Commutative?    Given the properties you proved in the last exploration, could the dot product take the place of as a vector space operation on ?  Is the dot product a linear operator? That is, given vectors , and , is it true that Prove or provide a counter-example.    Assume and define the length of a vector by . Prove that if an only if and are perpendicular. You may use the fact (try and prove it!) that two vectors are perpendicular if and only if their dot product is zero.       A dilation is given by by mapping a vector to some scalar multiple of .  A rotation is given by  A reflection of over a line can be found by first finding a vector along , then  Represent each of the following transformations with respect to the standard basis in .  Rotation through an angle .  Reflection over a line passing through the origin.  Dilation by some scalar .  Prove that each transformation is linear, and that your matrix representations are correct.     Sample Problem and Solution  Sample problem .   "
+  "body": " Standard Matrices (AT2)     Translate back and forth between a linear transformation of Euclidean spaces and its standard matrix, and perform related computations.      Warm Up    Recall that a linear map satisfies     for any .     for any .    In other words, a map is linear when vector space operations can be applied before or after the transformation without affecting the result.      Can you recall the following?    Given a transformation, what do the terms domain and codomain mean?    What does the notation mean?     Class Activities    Suppose is a linear map, and you know and . What is ?                    Suppose is a linear map, and you know and . What is ?                            Suppose is a linear map, and you know and . What is ?                            Suppose is a linear map, and you know and . What piece of information would help you compute ?    The value of .    The value of .    The value of .    Any of the above.       Since all three choices in create a spanning and linearly independent set along with and , they each may be used to compute :         Consider any basis for . Since every vector can be written as a linear combination of basis vectors, , we may compute as follows:   Therefore any linear transformation can be defined by just describing the values of .  Put another way, the images of the basis vectors completely determine determine the transformation .      Since a linear transformation is determined by its action on the standard basis , it is convenient to store this information in an matrix, called the standard matrix standard matrix of , given by .  For example, let be the linear map determined by the following values for applied to the standard basis of .   Then the standard matrix corresponding to is       Let be the linear transformation given by Write the standard matrix for .      Let be the linear transformation given by    Compute , , and .  Find the standard matrix for .     Because every linear map has a linear combination of the variables in each component, and thus yields exactly the coefficients of , the standard matrix for is simply an array of the coefficients of the :   Since the formula for a linear transformation and its standard matrix may both be used to compute the transformation of a vector , we will often write and interchangably:       Let be the linear transformation given by the standard matrix    Compute .  Compute .     Compute the following linear transformations of vectors given their standard matrices.         Individual Practice    Consider the linear transformation given by rotating vectors about the origin through an angle of .    If are the standard basis vectors of , calculate .    What is the standard matrix representing ?      Consider the linear transformation given by reflecting vectors across the line .    If are the standard basis vectors of , calculate .    What is the standard matrix representing ?      Videos      Video: Using the standard matrix to compute the image of a vector     Exercises available at .    Mathematical Writing Explorations  We can represent images in the plane using vectors, and manipulate those images with linear transformations. We introduce some notation in these explorations that is needed for their completion, but is not essential to the rest of the text. These have a geometric flair to them, and can be understood by thinking of geometric transformations in terms of standard matrices.  Given two vectors and , we define the dot product dot product as    For each of the following properties, determine if it is held by the dot product. Either provide a proof it the property holds, or provide a counter-example if it does not.  Distributive over addition (e.g., (  Associative?  Commutative?    Given the properties you proved in the last exploration, could the dot product take the place of as a vector space operation on ?  Is the dot product a linear operator? That is, given vectors , and , is it true that Prove or provide a counter-example.    Assume and define the length of a vector by . Prove that if an only if and are perpendicular. You may use the fact (try and prove it!) that two vectors are perpendicular if and only if their dot product is zero.       A dilation is given by by mapping a vector to some scalar multiple of .  A rotation is given by  A reflection of over a line can be found by first finding a vector along , then  Represent each of the following transformations with respect to the standard basis in .  Rotation through an angle .  Reflection over a line passing through the origin.  Dilation by some scalar .  Prove that each transformation is linear, and that your matrix representations are correct.     Sample Problem and Solution  Sample problem .   "
 },
 {
   "id": "AT2-2",
@@ -2188,9 +2188,9 @@ var ptx_lunr_docs = [
   "body": "  Suppose is a linear map, and you know and . What is ?                         "
 },
 {
-  "id": "AT2-4-5",
+  "id": "AT2-pick-a-basis",
   "level": "2",
-  "url": "AT2.html#AT2-4-5",
+  "url": "AT2.html#AT2-pick-a-basis",
   "type": "Activity",
   "number": "3.2.6",
   "title": "",
@@ -2200,28 +2200,28 @@ var ptx_lunr_docs = [
   "id": "AT2-4-6",
   "level": "2",
   "url": "AT2.html#AT2-4-6",
-  "type": "Fact",
+  "type": "Observation",
   "number": "3.2.7",
   "title": "",
-  "body": "  Consider any basis for . Since every vector can be written as a linear combination of basis vectors, , we may compute as follows:   Therefore any linear transformation can be defined by just describing the values of .  Put another way, the images of the basis vectors completely determine determine the transformation .   "
+  "body": " Since all three choices in create a spanning and linearly independent set along with and , they each may be used to compute :      "
 },
 {
   "id": "AT2-4-7",
   "level": "2",
   "url": "AT2.html#AT2-4-7",
-  "type": "Definition",
+  "type": "Fact",
   "number": "3.2.8",
   "title": "",
-  "body": "  Since a linear transformation is determined by its action on the standard basis , it is convenient to store this information in an matrix, called the standard matrix standard matrix of , given by .  For example, let be the linear map determined by the following values for applied to the standard basis of .   Then the standard matrix corresponding to is    "
+  "body": "  Consider any basis for . Since every vector can be written as a linear combination of basis vectors, , we may compute as follows:   Therefore any linear transformation can be defined by just describing the values of .  Put another way, the images of the basis vectors completely determine determine the transformation .   "
 },
 {
   "id": "AT2-4-8",
   "level": "2",
   "url": "AT2.html#AT2-4-8",
-  "type": "Activity",
+  "type": "Definition",
   "number": "3.2.9",
   "title": "",
-  "body": "  Let be the linear transformation given by Write the standard matrix for .   "
+  "body": "  Since a linear transformation is determined by its action on the standard basis , it is convenient to store this information in an matrix, called the standard matrix standard matrix of , given by .  For example, let be the linear map determined by the following values for applied to the standard basis of .   Then the standard matrix corresponding to is    "
 },
 {
   "id": "AT2-4-9",
@@ -2230,6 +2230,15 @@ var ptx_lunr_docs = [
   "type": "Activity",
   "number": "3.2.10",
   "title": "",
+  "body": "  Let be the linear transformation given by Write the standard matrix for .   "
+},
+{
+  "id": "AT2-4-10",
+  "level": "2",
+  "url": "AT2.html#AT2-4-10",
+  "type": "Activity",
+  "number": "3.2.11",
+  "title": "",
   "body": "  Let be the linear transformation given by    Compute , , and .  Find the standard matrix for .  "
 },
 {
@@ -2237,18 +2246,9 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "AT2.html#AT2-standard-matrix-fact",
   "type": "Fact",
-  "number": "3.2.11",
-  "title": "",
-  "body": "  Because every linear map has a linear combination of the variables in each component, and thus yields exactly the coefficients of , the standard matrix for is simply an array of the coefficients of the :   Since the formula for a linear transformation and its standard matrix may both be used to compute the transformation of a vector , we will often write and interchangably:    "
-},
-{
-  "id": "AT2-4-11",
-  "level": "2",
-  "url": "AT2.html#AT2-4-11",
-  "type": "Activity",
   "number": "3.2.12",
   "title": "",
-  "body": "  Let be the linear transformation given by the standard matrix    Compute .  Compute .  "
+  "body": "  Because every linear map has a linear combination of the variables in each component, and thus yields exactly the coefficients of , the standard matrix for is simply an array of the coefficients of the :   Since the formula for a linear transformation and its standard matrix may both be used to compute the transformation of a vector , we will often write and interchangably:    "
 },
 {
   "id": "AT2-4-12",
@@ -2257,6 +2257,15 @@ var ptx_lunr_docs = [
   "type": "Activity",
   "number": "3.2.13",
   "title": "",
+  "body": "  Let be the linear transformation given by the standard matrix    Compute .  Compute .  "
+},
+{
+  "id": "AT2-4-13",
+  "level": "2",
+  "url": "AT2.html#AT2-4-13",
+  "type": "Activity",
+  "number": "3.2.14",
+  "title": "",
   "body": "  Compute the following linear transformations of vectors given their standard matrices.      "
 },
 {
@@ -2264,7 +2273,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "AT2.html#AT2-5-2",
   "type": "Activity",
-  "number": "3.2.14",
+  "number": "3.2.15",
   "title": "",
   "body": "  Consider the linear transformation given by rotating vectors about the origin through an angle of .    If are the standard basis vectors of , calculate .    What is the standard matrix representing ?   "
 },
@@ -2273,7 +2282,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "AT2.html#AT2-5-3",
   "type": "Activity",
-  "number": "3.2.15",
+  "number": "3.2.16",
   "title": "",
   "body": "  Consider the linear transformation given by reflecting vectors across the line .    If are the standard basis vectors of , calculate .    What is the standard matrix representing ?   "
 },
@@ -2300,7 +2309,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "AT2.html#AT2-8-4",
   "type": "Exploration",
-  "number": "3.2.16",
+  "number": "3.2.17",
   "title": "",
   "body": " For each of the following properties, determine if it is held by the dot product. Either provide a proof it the property holds, or provide a counter-example if it does not.  Distributive over addition (e.g., (  Associative?  Commutative?   "
 },
@@ -2309,7 +2318,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "AT2.html#AT2-8-5",
   "type": "Exploration",
-  "number": "3.2.17",
+  "number": "3.2.18",
   "title": "",
   "body": "Given the properties you proved in the last exploration, could the dot product take the place of as a vector space operation on ? "
 },
@@ -2318,7 +2327,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "AT2.html#AT2-8-6",
   "type": "Exploration",
-  "number": "3.2.18",
+  "number": "3.2.19",
   "title": "",
   "body": "Is the dot product a linear operator? That is, given vectors , and , is it true that Prove or provide a counter-example. "
 },
@@ -2327,7 +2336,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "AT2.html#AT2-8-7",
   "type": "Exploration",
-  "number": "3.2.19",
+  "number": "3.2.20",
   "title": "",
   "body": "  Assume and define the length of a vector by . Prove that if an only if and are perpendicular. You may use the fact (try and prove it!) that two vectors are perpendicular if and only if their dot product is zero.   "
 },
@@ -2336,7 +2345,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "AT2.html#AT2-8-8",
   "type": "Exploration",
-  "number": "3.2.20",
+  "number": "3.2.21",
   "title": "",
   "body": "   A dilation is given by by mapping a vector to some scalar multiple of .  A rotation is given by  A reflection of over a line can be found by first finding a vector along , then  Represent each of the following transformations with respect to the standard basis in .  Rotation through an angle .  Reflection over a line passing through the origin.  Dilation by some scalar .  Prove that each transformation is linear, and that your matrix representations are correct.  "
 },
