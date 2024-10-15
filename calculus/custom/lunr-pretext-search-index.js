@@ -9361,6 +9361,60 @@ var ptx_lunr_docs = [
   "body": " (Problem 5)   NASA wants you to do your best to calculate the length of a piece of wire shaped as the graph the over the interval .    Explain and demonstrate how to write down a definite integral that computes the arc length that NASA wants.    Think about the techniques of integration you know, and write a few sentences explaining why none of them are particularly helpful in evaluating the integral above.    You can't go back to NASA empty handed, so you wrote some code using sage to help you estimate the arc-length below. By editing the code cell below, vary (which represents the number of pieces we divide the wire into in making an estimate) find some estimates for NASA. You're reasonably confident that if you can estimate the correct length within three decimal points, this will be enough. Start with , and then trying larger numbers at your discretion. Based on your experimenting, how large do you think you should take to be and what do you think is the approximate length?     "
 },
 {
+  "id": "sec-pset4-calc",
+  "level": "1",
+  "url": "sec-pset4-calc.html",
+  "type": "Section",
+  "number": "A.5",
+  "title": "Problem Set 4",
+  "body": " Problem Set 4   Instructions  Prior to beginning this problem set, consider reading the Problem Set Success Guide for advice and clarity around expectations for Problem Sets in this course. Upload your solutions to all problems on this page to gradescope as a single .pdf file, remembering to assign pages appropriately for each question. Complete instructions for Problem Sets are available on Canvas.    (Problem 1)   For each of the following sequences explain and demonstrate how to determine if they are monotonic, bounded, and whether they converge; if they converge, explain and demonstrate how to find their limit.               where .     (Problem 2)   Explain and demonstrate how to express as a fraction of two integers.    Explain and demonstrate how to express as a fraction of two integers.     (Problem 3)   For each of the following, explain and demonstrate how to find the values of for which the given series converge; explain and demonstrate how to find the sum of the series (as a function of ) for those values of .                    (Problem 4)   In this problem, you will prove that the harmonic series diverges using the definitions of partial sums instead of relying on the integral test. Recall that the harmonic series is the series . Let denote its -th partial sum:     Explain and demonstrate why the sequence is monotonically increasing.    In class, we showed that and that . Explain and demonstrate why the inequalities hold for all . Conclude that the sequence of partial sums is unbounded hence must diverge.     (Problem 5)   Suppose that is some continuous, strictly increasing function defined on an interval . These assumptions guarantee that is an invertible function, so we will let , defined on the interval denote this inverse function.    Explain why the following equation of integrals is true without doing any calculations:     Use a combination of our integration strategies to provide a second explanation for why this equation is true.    "
+},
+{
+  "id": "sec-pset4-calc-3",
+  "level": "2",
+  "url": "sec-pset4-calc.html#sec-pset4-calc-3",
+  "type": "Problem",
+  "number": "A.5.1",
+  "title": "(Problem 1).",
+  "body": " (Problem 1)   For each of the following sequences explain and demonstrate how to determine if they are monotonic, bounded, and whether they converge; if they converge, explain and demonstrate how to find their limit.               where .   "
+},
+{
+  "id": "sec-pset4-calc-4",
+  "level": "2",
+  "url": "sec-pset4-calc.html#sec-pset4-calc-4",
+  "type": "Problem",
+  "number": "A.5.2",
+  "title": "(Problem 2).",
+  "body": " (Problem 2)   Explain and demonstrate how to express as a fraction of two integers.    Explain and demonstrate how to express as a fraction of two integers.   "
+},
+{
+  "id": "sec-pset4-calc-5",
+  "level": "2",
+  "url": "sec-pset4-calc.html#sec-pset4-calc-5",
+  "type": "Problem",
+  "number": "A.5.3",
+  "title": "(Problem 3).",
+  "body": " (Problem 3)   For each of the following, explain and demonstrate how to find the values of for which the given series converge; explain and demonstrate how to find the sum of the series (as a function of ) for those values of .                  "
+},
+{
+  "id": "sec-pset4-calc-6",
+  "level": "2",
+  "url": "sec-pset4-calc.html#sec-pset4-calc-6",
+  "type": "Problem",
+  "number": "A.5.4",
+  "title": "(Problem 4).",
+  "body": " (Problem 4)   In this problem, you will prove that the harmonic series diverges using the definitions of partial sums instead of relying on the integral test. Recall that the harmonic series is the series . Let denote its -th partial sum:     Explain and demonstrate why the sequence is monotonically increasing.    In class, we showed that and that . Explain and demonstrate why the inequalities hold for all . Conclude that the sequence of partial sums is unbounded hence must diverge.   "
+},
+{
+  "id": "sec-pset4-calc-7",
+  "level": "2",
+  "url": "sec-pset4-calc.html#sec-pset4-calc-7",
+  "type": "Problem",
+  "number": "A.5.5",
+  "title": "(Problem 5).",
+  "body": " (Problem 5)   Suppose that is some continuous, strictly increasing function defined on an interval . These assumptions guarantee that is an invertible function, so we will let , defined on the interval denote this inverse function.    Explain why the following equation of integrals is true without doing any calculations:     Use a combination of our integration strategies to provide a second explanation for why this equation is true.   "
+},
+{
   "id": "integral-table",
   "level": "1",
   "url": "integral-table.html",
