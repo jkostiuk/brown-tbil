@@ -119,36 +119,36 @@
                 Let <m>A</m> denote an <m>m\times n</m> matrix so that the column vectors of <m>A</m> are vectors in <m>\IR^m</m> and the row vectors of <m>A</m> (i.e., the rows) are vectors in <m>\IR^n</m>.
                 The <term>column space</term> of <m>A</m> (denoted <m>\text{Col}(A)</m>) is the subspace spanned by the columns of <m>A</m>. 
                 The <term>row space</term> of <m>A</m> (denoted <m>\text{Row}(A)</m>) is the subspace spanned by the rows of <m>A</m>. 
-                For instance, if <m>A=\left[\begin{array}1&amp; 2&amp; 3\\ -1&amp;4&amp; 7\end{array}\right]</m>, then:
+                For instance, if <m>A=\left[\begin{array}{ccc}1&amp; 2&amp; 3\\ -1&amp;4&amp; 7\end{array}\right]</m>, then:
                 <me>\text{Col}(A)=\vspan\left\{\left[\begin{array}{c}1\\-1\end{array}\right],\left[\begin{array}{c}2\\4\end{array}\right],\left[\begin{array}{c}3\\7\end{array}\right]\right\}</me>
                 and 
                 <me>\text{Row}(A)=\vspan\left\{\left[\begin{array}{c}1\\2\\3\end{array}\right],\left[\begin{array}{c}-1\\4\\7\end{array}\right]\right\}.</me>
             </p>
             <p>
-                In <xref ref="EV6"/>, we learned how to calculate a basis for <m>\text{Col}(A)</m>: we row reduce to calculate <m>\RREF(A)</m> and then the columns <em>corresponding</em> to the columns containing pivot positions in <m>\RREF(A)</m> form a basis. 
-                The Problem just above demonstrates why it's important to not take the pivot columns of <m>\RREF(A)</m> itself. 
+                In <xref ref="EV6"/>, we learned how to calculate a basis for the column space of an arbitrary matrix <m>B</m>: we row reduce to calculate <m>\RREF(B)</m> and then the columns <em>corresponding</em> to the columns containing pivot positions in <m>\RREF(B)</m> form a basis. 
+                The Problem just above demonstrates why it's important to not take the pivot columns of <m>\RREF(B)</m> itself. 
             </p>
             <p>
-                In contrast, the non-zero rows of <m>\RREF(A)</m> will always form a basis for <m>\text{Row}(A)</m> as you will now show:
+                In contrast, the non-zero rows of <m>\RREF(B)</m> will always form a basis for <m>\text{Row}(B)</m> as you will now show:
             </p>
             <task>
                 <statement>
                     <p>
-                        Explain why the non-zero rows of <m>\RREF(A)</m> span the same subspace as the rows of <m>A</m>. 
+                        If <m>A</m> is an arbitrary matrix, explain why the non-zero rows of <m>\RREF(A)</m> span the same subspace as the rows of <m>A</m>. 
                     </p>
                 </statement>
             </task>
             <task>
                 <statement>
                     <p>
-                        Explain why the non-zero rows of <m>\RREF(A)</m> are always linearly independent. 
+                        If <m>A</m> is an arbitrary matrix, explain why the non-zero rows of <m>\RREF(A)</m> are always linearly independent. 
                     </p>
                 </statement>
             </task>
             <task>
                 <statement>
                     <p>
-                        Even though <m>\text{Row}(A)</m> and <m>\text{Col}(A)</m> are different subspaces of Euclidean vectors (in fact, unless <m>n=m</m>, the vectors in each set do not even live in the same ambient space), explain why <m>\dim(\text{Col}(A))=\dim(\text{Row}(A))</m>.
+                        Even though <m>\text{Row}(A)</m> and <m>\text{Col}(A)</m> are different subspaces of Euclidean vectors (in fact, unless <m>n=m</m>, the vectors in each set do not even live in the same ambient space), explain why <m>\dim(\text{Col}(A))=\dim(\text{Row}(A))</m> holds for any matrix <m>A</m>.
                     </p>
                 </statement>
             </task>
