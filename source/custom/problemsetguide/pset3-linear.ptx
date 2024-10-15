@@ -223,7 +223,7 @@
                 <statement>
                     <p>
                         Let's put this together and practice the new terms/concepts. 
-                        Let <m>S=\vspan\left\{\begin{bmatrix}1\\0\\1\end{bmatrix},\begin{bmatrix}-1\\0\\1\end{bmatrix},\begin{bmatrix}0\\1\\0\end{bmatrix}\right\}</m>. 
+                        Let <m>S=\left\{\begin{bmatrix}1\\0\\1\end{bmatrix},\begin{bmatrix}-1\\0\\1\end{bmatrix},\begin{bmatrix}0\\1\\0\end{bmatrix}\right\}</m>. 
                         Verify that <m>S</m> is an orthogonal basis of <m>\IR^3</m> and explain and demonstrate how to write the vector <m>\left[\begin{array}{c}1\\2\\3\end{array}\right]</m> as a linear combination of vectors in <m>S</m> <em>without</em> doing any row reducing or solving of linear equations (for either task). 
                     </p>
                 </statement>
