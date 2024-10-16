@@ -163,14 +163,15 @@
         <task>
             <statement>
                 <p>
-                    Explain why, in general, the rank of <m>f</m> will always be equal to the rank of <m>g</m>.
+                    Now suppose that <m>f\colon\mathbb{R}^n\to\mathbb{R}^m</m> is an arbitrary linear transformation, let <m>A</m> denote its standard matrix, and let <m>g</m> be the transformation corresponding to the transpose <m>B=A^T</m>.
+                    Explain why the rank of <m>f</m> will always be equal to the rank of <m>g</m>.
                 </p>
             </statement>
         </task>
         <task>
             <statement>
                 <p>
-                    Explain why, in general, we have <m>\textrm{null(g)}-\textrm{null(f)}=m-n</m> and conclude that <m>\textrm{null}(f)=\textrm{null}(g)</m> if and only if <m>m=n</m>.
+                    Notation as in (b), explain why <m>\textrm{null(g)}-\textrm{null(f)}=m-n</m> and conclude that <m>\textrm{null}(f)=\textrm{null}(g)</m> if and only if <m>m=n</m>.
                 </p>
             </statement>
         </task>
