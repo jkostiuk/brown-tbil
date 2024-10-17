@@ -450,7 +450,7 @@
             <task>
                 <statement>
                     <p>
-                        If <m>W=\vspan\{\vec{v}_1,\dots, \vec{v}_n\}</m>, explain why saying that <m>\vec{u}\in W^\perp</m> is the same as saying that <m>\vec{u}</m> is orthogonal to each of the vectors <m>\vec{v}_1,\dots, \vec{v}_n</m> individually. 
+                        If <m>W=\vspan\{\vec{v}_1,\dots, \vec{v}_n\}</m>, explain why <m>\vec{u}\in W^\perp</m> if and only if <m>\vec{u}</m> is orthogonal to each of the vectors <m>\vec{v}_1,\dots, \vec{v}_n</m> individually. 
                     </p>
                 </statement>
             </task>
@@ -463,6 +463,13 @@
                 </statement>
             </task>
         </introduction>
+        <hint>
+            <p>
+                The phrase <q>If and only if</q> in part (b) indicates that there are two statements to prove. 
+                First, you must explain why, if <m>\vec{u}\in W^\perp</m>, it follows that <m>\vec{u}</m> is perpendicular to each of the vectors in <m>\setList{\vec{v}_1,\dots, \vec{v}_n}</m>.
+                Second, you must <em>also</em> prove that, if <m>\vec{u}</m> is perpendicular to all the vectors in <m>\setList{\vec{v}_1,\dots, \vec{v}_n}</m>, then it follows that <m>\vec{u}\in W^\perp</m>. 
+            </p>
+        </hint>
         <solution>
             <task>
                 <statement>
