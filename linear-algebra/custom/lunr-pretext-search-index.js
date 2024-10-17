@@ -4717,6 +4717,60 @@ var ptx_lunr_docs = [
   "body": " (Problem 5)   A set of vectors in is called an orthogonal set if each pair of distinct vectors are orthogonal. That is, we have whenever . If is a subspace of , then an orthogonal basis for is a basis of that is also an orthogonal set.   Suppose that is an orthogonal set of non-zero vectors. Suppose further that are scalars for which Show that, in fact, each must be equal to and conclude that must be linearly independent. In other words, show that any orthogonal set of non-zero vectors is linearly independent.    Suppose further that is an orthogonal basis for some subspace of and that . Then, since is a basis, we know that we can find unique scalars for which Explain why we can solve for these scalars as follows:     Let's put this together and practice the new terms\/concepts. Let . Verify that is an orthogonal basis of and explain and demonstrate how to write the vector as a linear combination of vectors in  without doing any row reducing or solving of linear equations (for either task).     For (a): what happens if you take the left-hand-side of the vector equation in (a) and calculate the dot-product with ?  For (b): try something similar to part (a).   "
 },
 {
+  "id": "sec-pset4-linear",
+  "level": "1",
+  "url": "sec-pset4-linear.html",
+  "type": "Section",
+  "number": "A.5",
+  "title": "Problem Set 4",
+  "body": " Problem Set 4   Instructions  Prior to beginning this problem set, consider reading the Problem Set Success Guide for advice and clarity around expectations for Problem Sets in this course. Upload your solutions to all problems on this page to gradescope as a single .pdf file, remembering to assign pages appropriately for each question. Complete instructions for Problem Sets are available on Canvas.    (Problem 1)   In this problem, denotes a linear transformation.   Show that if , then must be injective. Note: we saw and used this fact in class, but we did not prove it; the point of this exercise is for you to prove it here.    Suppose that are vectors in and that the set is a linearly independent set. Does it follows that is also linearly independent? If yes , explain why; if no , provide a counterexample to the claim.    Suppose that are vectors in . If the set spans , does it necessarily follows that spans ? If yes , explain why; if no , provide a counterexample to the claim.      (Problem 2)   Let denote the transformation given by the rule:     Show that is a linear map.   Explain and demonstrate how to calculate a basis for the kernel of and a basis for the image of . Is injective? Is surjective?    Verify the rank-nullity theorem for this linear transformation.     (Problem 3)   Let denote the set of positive real numbers. Define a new addition on by the rule (so, in particular, ) and define scalar multiplication by . The set with these operations is a vector space and you can verify this by checking that all 8 of our Vector Space properties are true for . We won't ask you to do all of them here, but we will ask a few:    Explain why scalar multiplication distributes over scalar addition; that is, explain why for every and .    Explain why an additive identity exists: that is, explain why there is some for which for every .    Explain why additive inverses exist; that is, explain why, for each , there exists an element for which , where is the additive identity you identified above.     (Problem 4)   Let denote the plan living in that is given by the following set of equations:     Explain and demonstrate how to find two vectors for which is a basis for , confirming that is indeed a plane in 4-space.    Explain and demonstrate how to find an example of a linear transformation for which the image of is equal to .    Explain and demonstrate how to find one example of a linear transformation for which the image of is equal to some -dimensional subspace of .     (Problem 5)   Let be an matrix. The transpose of is the matrix that is obtained by reflecting the matrix about the main top-left to bottom-right diagonal and is denoted by . For instance, the following is an example of a matrix and its transpose : Now suppose is a linear transformation with standard matrix and let denote the linear transformation with standard matrix .    With and notation as defined above, calculate the rank and nullity of the transformations and .    Now suppose that is an arbitrary linear transformation, let denote its standard matrix, and let be the transformation corresponding to the transpose . Explain why the rank of will always be equal to the rank of .    Notation as in (b), explain why and conclude that if and only if .    "
+},
+{
+  "id": "sec-pset4-linear-3",
+  "level": "2",
+  "url": "sec-pset4-linear.html#sec-pset4-linear-3",
+  "type": "Problem",
+  "number": "A.5.1",
+  "title": "(Problem 1).",
+  "body": " (Problem 1)   In this problem, denotes a linear transformation.   Show that if , then must be injective. Note: we saw and used this fact in class, but we did not prove it; the point of this exercise is for you to prove it here.    Suppose that are vectors in and that the set is a linearly independent set. Does it follows that is also linearly independent? If yes , explain why; if no , provide a counterexample to the claim.    Suppose that are vectors in . If the set spans , does it necessarily follows that spans ? If yes , explain why; if no , provide a counterexample to the claim.    "
+},
+{
+  "id": "sec-pset4-linear-4",
+  "level": "2",
+  "url": "sec-pset4-linear.html#sec-pset4-linear-4",
+  "type": "Problem",
+  "number": "A.5.2",
+  "title": "(Problem 2).",
+  "body": " (Problem 2)   Let denote the transformation given by the rule:     Show that is a linear map.   Explain and demonstrate how to calculate a basis for the kernel of and a basis for the image of . Is injective? Is surjective?    Verify the rank-nullity theorem for this linear transformation.   "
+},
+{
+  "id": "sec-pset4-linear-5",
+  "level": "2",
+  "url": "sec-pset4-linear.html#sec-pset4-linear-5",
+  "type": "Problem",
+  "number": "A.5.3",
+  "title": "(Problem 3).",
+  "body": " (Problem 3)   Let denote the set of positive real numbers. Define a new addition on by the rule (so, in particular, ) and define scalar multiplication by . The set with these operations is a vector space and you can verify this by checking that all 8 of our Vector Space properties are true for . We won't ask you to do all of them here, but we will ask a few:    Explain why scalar multiplication distributes over scalar addition; that is, explain why for every and .    Explain why an additive identity exists: that is, explain why there is some for which for every .    Explain why additive inverses exist; that is, explain why, for each , there exists an element for which , where is the additive identity you identified above.   "
+},
+{
+  "id": "sec-pset4-linear-6",
+  "level": "2",
+  "url": "sec-pset4-linear.html#sec-pset4-linear-6",
+  "type": "Problem",
+  "number": "A.5.4",
+  "title": "(Problem 4).",
+  "body": " (Problem 4)   Let denote the plan living in that is given by the following set of equations:     Explain and demonstrate how to find two vectors for which is a basis for , confirming that is indeed a plane in 4-space.    Explain and demonstrate how to find an example of a linear transformation for which the image of is equal to .    Explain and demonstrate how to find one example of a linear transformation for which the image of is equal to some -dimensional subspace of .   "
+},
+{
+  "id": "sec-pset4-linear-7",
+  "level": "2",
+  "url": "sec-pset4-linear.html#sec-pset4-linear-7",
+  "type": "Problem",
+  "number": "A.5.5",
+  "title": "(Problem 5).",
+  "body": " (Problem 5)   Let be an matrix. The transpose of is the matrix that is obtained by reflecting the matrix about the main top-left to bottom-right diagonal and is denoted by . For instance, the following is an example of a matrix and its transpose : Now suppose is a linear transformation with standard matrix and let denote the linear transformation with standard matrix .    With and notation as defined above, calculate the rank and nullity of the transformations and .    Now suppose that is an arbitrary linear transformation, let denote its standard matrix, and let be the transformation corresponding to the transpose . Explain why the rank of will always be equal to the rank of .    Notation as in (b), explain why and conclude that if and only if .   "
+},
+{
   "id": "truss",
   "level": "1",
   "url": "truss.html",
