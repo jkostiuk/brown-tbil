@@ -659,9 +659,9 @@ window.MathJax = {
 #def-Dot-Product-1-2-3 { counter-set: def-Dot-Product-1-2-3 0; }
 #def-Dot-Product-1-2-3 > li::marker { content: ""counter(def-Dot-Product-1-2-3,decimal)"."; }
 #def-Dot-Product-1-2-3 > li { counter-increment: def-Dot-Product-1-2-3; }
-#sec-pset2-linear-8-3-1-1-1-2 { counter-set: sec-pset2-linear-8-3-1-1-1-2 0; }
-#sec-pset2-linear-8-3-1-1-1-2 > li::marker { content: ""counter(sec-pset2-linear-8-3-1-1-1-2,decimal)"."; }
-#sec-pset2-linear-8-3-1-1-1-2 > li { counter-increment: sec-pset2-linear-8-3-1-1-1-2; }
+#sec-pset2-linear-8-4-1-1-1-2 { counter-set: sec-pset2-linear-8-4-1-1-1-2 0; }
+#sec-pset2-linear-8-4-1-1-1-2 > li::marker { content: ""counter(sec-pset2-linear-8-4-1-1-1-2,decimal)"."; }
+#sec-pset2-linear-8-4-1-1-1-2 > li { counter-increment: sec-pset2-linear-8-4-1-1-1-2; }
 #truss-2-3-1-4 { counter-set: truss-2-3-1-4 0; }
 #truss-2-3-1-4 > li::marker { content: ""counter(truss-2-3-1-4,decimal)"."; }
 #truss-2-3-1-4 > li { counter-increment: truss-2-3-1-4; }
@@ -1569,18 +1569,19 @@ W^\perp=\{\vec{u}\in\IR^n|\ \vec{u}\bullet {w}=0\ \textrm{for every}\ \vec{w}\in
 </div> <div class="para" id="sec-pset2-linear-8-2-2">For example, if <span class="process-math">\(W=\textrm{span}\left\{\begin{bmatrix}1\\1\end{bmatrix}\right\}\text{,}\)</span> then <span class="process-math">\(\vec{u}=\begin{bmatrix}1\\-1\end{bmatrix}\)</span> lives in <span class="process-math">\(W^\perp\)</span> since it’s perpendicular to any multiple of <span class="process-math">\(\begin{bmatrix}1\\1\end{bmatrix}\text{,}\)</span> but the vector <span class="process-math">\(\begin{bmatrix}1\\0\end{bmatrix}\)</span> does not live in <span class="process-math">\(W^\perp\text{.}\)</span> The set <span class="process-math">\(W^\perp\)</span> is always a subspace, as you will prove below.</div> <article class="task exercise-like" id="sec-pset2-linear-8-2-3"><h4 class="heading"><span class="codenumber">(a)</span></h4>
 <div class="para" id="sec-pset2-linear-8-2-3-1-1">Prove that <span class="process-math">\(W^\perp\)</span> is always a subspace of <span class="process-math">\(\IR^n\text{.}\)</span>
 </div></article> <article class="task exercise-like" id="sec-pset2-linear-8-2-4"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="sec-pset2-linear-8-2-4-1-1">If <span class="process-math">\(W=\vspan\{\vec{v}_1,\dots, \vec{v}_n\}\text{,}\)</span> explain why saying that <span class="process-math">\(\vec{u}\in W^\perp\)</span> is the same as saying that <span class="process-math">\(\vec{u}\)</span> is orthogonal to each of the vectors <span class="process-math">\(\vec{v}_1,\dots, \vec{v}_n\)</span> individually.</div></article> <article class="task exercise-like" id="sec-pset2-linear-8-2-5"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="sec-pset2-linear-8-2-4-1-1">If <span class="process-math">\(W=\vspan\{\vec{v}_1,\dots, \vec{v}_n\}\text{,}\)</span> explain why <span class="process-math">\(\vec{u}\in W^\perp\)</span> if and only if <span class="process-math">\(\vec{u}\)</span> is orthogonal to each of the vectors <span class="process-math">\(\vec{v}_1,\dots, \vec{v}_n\)</span> individually.</div></article> <article class="task exercise-like" id="sec-pset2-linear-8-2-5"><h4 class="heading"><span class="codenumber">(c)</span></h4>
 <div class="para" id="sec-pset2-linear-8-2-5-1-1">Suppose that <span class="process-math">\(W=\vspan\left\{\begin{bmatrix}2\\-1\\1\end{bmatrix},\begin{bmatrix}0\\-3\\7\end{bmatrix}\right\}\text{.}\)</span> Find a set of vectors that spans <span class="process-math">\(W^\perp\text{.}\)</span>
 </div></article>
-</div> <details id="sec-pset2-linear-8-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<article class="task exercise-like" id="sec-pset2-linear-8-3-1"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para logical" id="sec-pset2-linear-8-3-1-1-1">
+</div> <details id="sec-pset2-linear-8-3" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="sec-pset2-linear-8-3-1">The phrase “If and only if” in part (b) indicates that there are two statements to prove. First, you must explain why, if <span class="process-math">\(\vec{u}\in W^\perp\text{,}\)</span> it follows that <span class="process-math">\(\vec{u}\)</span> is perpendicular to each of the vectors in <span class="process-math">\(\setList{\vec{v}_1,\dots, \vec{v}_n}\text{.}\)</span> Second, you must <em class="emphasis">also</em> prove that, if <span class="process-math">\(\vec{u}\)</span> is perpendicular to all the vectors in <span class="process-math">\(\setList{\vec{v}_1,\dots, \vec{v}_n}\text{,}\)</span> then it follows that <span class="process-math">\(\vec{u}\in W^\perp\text{.}\)</span>
+</div></div></details> <details id="sec-pset2-linear-8-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<article class="task exercise-like" id="sec-pset2-linear-8-4-1"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para logical" id="sec-pset2-linear-8-4-1-1-1">
 <div class="para">Referring to the definition of subspace, we have to check that <span class="process-math">\(W^\perp\)</span> satisfies all three conditions:</div>
-<ol class="decimal" id="sec-pset2-linear-8-3-1-1-1-2">
-<li id="sec-pset2-linear-8-3-1-1-1-2-1"><div class="para" id="sec-pset2-linear-8-3-1-1-1-2-1-1">First, we check that <span class="process-math">\(\vec{0}\in W^\perp\text{.}\)</span> Since <span class="process-math">\(\vec{0}\bullet\vec{w}\)</span> for all <span class="process-math">\(\vec{w}\in W\text{,}\)</span> it follows that, indeed, we have <span class="process-math">\(\vec{0}\in W^\perp\text{.}\)</span>
+<ol class="decimal" id="sec-pset2-linear-8-4-1-1-1-2">
+<li id="sec-pset2-linear-8-4-1-1-1-2-1"><div class="para" id="sec-pset2-linear-8-4-1-1-1-2-1-1">First, we check that <span class="process-math">\(\vec{0}\in W^\perp\text{.}\)</span> Since <span class="process-math">\(\vec{0}\bullet\vec{w}\)</span> for all <span class="process-math">\(\vec{w}\in W\text{,}\)</span> it follows that, indeed, we have <span class="process-math">\(\vec{0}\in W^\perp\text{.}\)</span>
 </div></li>
-<li id="sec-pset2-linear-8-3-1-1-1-2-2">
-<div class="para logical" id="sec-pset2-linear-8-3-1-1-1-2-2-1">
+<li id="sec-pset2-linear-8-4-1-1-1-2-2">
+<div class="para logical" id="sec-pset2-linear-8-4-1-1-1-2-2-1">
 <div class="para">Next, we check closure under addition. Suppose that we have two vectors <span class="process-math">\(\vec{u},\vec{v}\)</span> and that we know that <span class="process-math">\(\vec{u},\vec{v}\)</span> both live in <span class="process-math">\(W^\perp\text{.}\)</span> By definition, it means that we know that</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -1590,7 +1591,7 @@ W^\perp=\{\vec{u}\in\IR^n|\ \vec{u}\bullet {w}=0\ \textrm{for every}\ \vec{w}\in
 <div class="para">for all <span class="process-math">\(\vec{w}\in W\text{.}\)</span>
 </div>
 </div>
-<div class="para logical" id="sec-pset2-linear-8-3-1-1-1-2-2-2">
+<div class="para logical" id="sec-pset2-linear-8-4-1-1-1-2-2-2">
 <div class="para">Using these equations, we then find that</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -1601,8 +1602,8 @@ W^\perp=\{\vec{u}\in\IR^n|\ \vec{u}\bullet {w}=0\ \textrm{for every}\ \vec{w}\in
 </div>
 </div>
 </li>
-<li id="sec-pset2-linear-8-3-1-1-1-2-3">
-<div class="para logical" id="sec-pset2-linear-8-3-1-1-1-2-3-1">
+<li id="sec-pset2-linear-8-4-1-1-1-2-3">
+<div class="para logical" id="sec-pset2-linear-8-4-1-1-1-2-3-1">
 <div class="para">Lastly, we check closure under scalar multiplication. Suppose that we have a <span class="process-math">\(\vec{u}\)</span> and that we know that <span class="process-math">\(\vec{u}\)</span> lives in <span class="process-math">\(W^\perp\text{.}\)</span> By definition, it means that we know that</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -1612,7 +1613,7 @@ W^\perp=\{\vec{u}\in\IR^n|\ \vec{u}\bullet {w}=0\ \textrm{for every}\ \vec{w}\in
 <div class="para">for all <span class="process-math">\(\vec{w}\in W\text{.}\)</span>
 </div>
 </div>
-<div class="para logical" id="sec-pset2-linear-8-3-1-1-1-2-3-2">
+<div class="para logical" id="sec-pset2-linear-8-4-1-1-1-2-3-2">
 <div class="para">Using this fact, we then find that if <span class="process-math">\(c\in \IR\text{,}\)</span> then:</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -1624,9 +1625,9 @@ W^\perp=\{\vec{u}\in\IR^n|\ \vec{u}\bullet {w}=0\ \textrm{for every}\ \vec{w}\in
 </div>
 </li>
 </ol>
-</div></article> <article class="task exercise-like" id="sec-pset2-linear-8-3-2"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="sec-pset2-linear-8-3-2-1-1">Most critically, we must explain two things separately. First, we need to explain why, if <span class="process-math">\(\vec{u}\in W^\perp\text{,}\)</span> then <span class="process-math">\(\vec{u}\)</span> is perpendicular to the vectors in the set <span class="process-math">\(\{\vec{v}_1,\dots, \vec{v}_n\}\text{.}\)</span> Secondly, we also have to explain why, if <span class="process-math">\(\vec{u}\)</span> is perpendicular to the vectors in <span class="process-math">\(\{\vec{v}_1,\dots, \vec{v}_n\}\text{,}\)</span> then we can conclude that <span class="process-math">\(\vec{u}\in W^\perp\text{.}\)</span>
-</div> <div class="para" id="sec-pset2-linear-8-3-2-1-2">Let’s deal with the first statement first. If we know that <span class="process-math">\(\vec{u}\in W^\perp\text{,}\)</span> then <span class="process-math">\(\vec{u}\)</span> is perpendicular to all vectors in <span class="process-math">\(W\text{.}\)</span> Okay, but all the vectors in the set <span class="process-math">\(\{\vec{v}_1,\dots, \vec{v}_n\}\)</span> live in <span class="process-math">\(W\)</span> and so <span class="process-math">\(\vec{u}\)</span> must therefore be perpendicular to them.</div> <div class="para logical" id="sec-pset2-linear-8-3-2-1-3">
+</div></article> <article class="task exercise-like" id="sec-pset2-linear-8-4-2"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="sec-pset2-linear-8-4-2-1-1">Most critically, we must explain two things separately. First, we need to explain why, if <span class="process-math">\(\vec{u}\in W^\perp\text{,}\)</span> then <span class="process-math">\(\vec{u}\)</span> is perpendicular to the vectors in the set <span class="process-math">\(\{\vec{v}_1,\dots, \vec{v}_n\}\text{.}\)</span> Secondly, we also have to explain why, if <span class="process-math">\(\vec{u}\)</span> is perpendicular to the vectors in <span class="process-math">\(\{\vec{v}_1,\dots, \vec{v}_n\}\text{,}\)</span> then we can conclude that <span class="process-math">\(\vec{u}\in W^\perp\text{.}\)</span>
+</div> <div class="para" id="sec-pset2-linear-8-4-2-1-2">Let’s deal with the first statement first. If we know that <span class="process-math">\(\vec{u}\in W^\perp\text{,}\)</span> then <span class="process-math">\(\vec{u}\)</span> is perpendicular to all vectors in <span class="process-math">\(W\text{.}\)</span> Okay, but all the vectors in the set <span class="process-math">\(\{\vec{v}_1,\dots, \vec{v}_n\}\)</span> live in <span class="process-math">\(W\)</span> and so <span class="process-math">\(\vec{u}\)</span> must therefore be perpendicular to them.</div> <div class="para logical" id="sec-pset2-linear-8-4-2-1-3">
 <div class="para">Now let’s deal with the second statement. Suppose all we know is that <span class="process-math">\(\vec{u}\)</span> is perpendicular to <span class="process-math">\(\vec{v}_1,\dots, \vec{v}_n\text{.}\)</span> If we take some arbitrary vector <span class="process-math">\(\vec{w}\in W\text{,}\)</span> we now need to argue that <span class="process-math">\(\vec{u}\)</span> is perpendicular to it as well. For this, since we are given that <span class="process-math">\(W=\vspan\{\vec{v}_1,\dots, \vec{v}_n\}\text{,}\)</span> it follows that we can find scalars <span class="process-math">\(c_1,\dots, c_n\)</span> for which</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -1634,7 +1635,7 @@ W^\perp=\{\vec{u}\in\IR^n|\ \vec{u}\bullet {w}=0\ \textrm{for every}\ \vec{w}\in
 \end{equation*}
 </div>
 <div class="para">But then:</div>
-<div class="displaymath process-math" id="sec-pset2-linear-8-3-2-1-3-8">
+<div class="displaymath process-math" id="sec-pset2-linear-8-4-2-1-3-8">
 \begin{align*}
 \vec{u}\bullet\vec{v} \amp\,=\,\amp \vec{u}\bullet(c_1\vec{v}_1+\cdots+c_n\vec{v}_n) \\
 \amp \,=\, \amp c_1(\vec{u}\bullet\vec{v}_1)+\cdots+c_n(\vec{u}\bullet\vec{v}_n)\\
@@ -1644,8 +1645,8 @@ W^\perp=\{\vec{u}\in\IR^n|\ \vec{u}\bullet {w}=0\ \textrm{for every}\ \vec{w}\in
 </div>
 <div class="para">It follows that <span class="process-math">\(\vec{u}\)</span> is perpendicular to <span class="process-math">\(\vec{w}\)</span> and since <span class="process-math">\(\vec{w}\)</span> was arbitrary, <span class="process-math">\(\vec{u}\in W^\perp\text{.}\)</span>
 </div>
-</div></article> <article class="task exercise-like" id="sec-pset2-linear-8-3-3"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="para logical" id="sec-pset2-linear-8-3-3-1-1">
+</div></article> <article class="task exercise-like" id="sec-pset2-linear-8-4-3"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para logical" id="sec-pset2-linear-8-4-3-1-1">
 <div class="para">Well, if <span class="process-math">\(\vec{u}=\left[\begin{array}{c}x\\y\\z\end{array}\right]\in W^\perp\text{,}\)</span> then we know by part (b) that this is the same as saying that <span class="process-math">\(\vec{u}\)</span> is perpendicular to our two vectors individually. That is, we know that</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -1659,7 +1660,7 @@ W^\perp=\{\vec{u}\in\IR^n|\ \vec{u}\bullet {w}=0\ \textrm{for every}\ \vec{w}\in
 \end{equation*}
 </div>
 <div class="para">Thus, this gives us a system of linear equations to solve!</div>
-</div> <div class="para logical" id="sec-pset2-linear-8-3-3-1-2">
+</div> <div class="para logical" id="sec-pset2-linear-8-4-3-1-2">
 <div class="para">Using our methods from <a href="LE.html" class="internal" title="Chapter 1: Systems of Linear Equations (LE)">Chapter 1</a> to solve this system, we find that the solution set is given by</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/LE.html">
 \begin{equation*}
