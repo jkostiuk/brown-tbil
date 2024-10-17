@@ -1,0 +1,149 @@
+<section xml:id="sec-pset4-calc">
+    <title>Problem Set 4</title>
+    <paragraphs>
+        <title>Instructions</title>
+        <p>
+            Prior to beginning this problem set, consider reading the Problem Set Success Guide <xref ref="pset-intro"/> for advice and clarity around expectations for Problem Sets in this course. 
+            Upload your solutions to all problems on this page to gradescope as a single .pdf file, remembering to assign pages appropriately for each question. 
+            Complete instructions for Problem Sets are available on Canvas.
+        </p>
+    </paragraphs>
+
+    <problem>
+        <title>(Problem 1)</title>
+        <introduction>
+            <p>
+                For each of the following sequences explain and demonstrate how to determine if they are monotonic, bounded, and whether they converge; if they converge, explain and demonstrate how to find their limit.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>a_n=\frac{n+(-1)^n}{n}</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>a_n=(-1)^n(1-\frac{1}{n})</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>a_n=\frac{n!}{n^n}</m> where <m>n!=n\cdot(n-1)\cdots\cdot 2\cdot 1</m>.
+                </p>
+            </statement>
+        </task>
+    </problem>
+
+    <problem>
+        <title>(Problem 2)</title>    
+        <task>
+            <statement>
+                <p>
+                    Explain and demonstrate how to express <m>3.12\overline{5}=3.12555555\cdots</m> as a fraction of two integers.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Explain and demonstrate how to express <m>4.\overline{23}=4.23232323\cdots</m> as a fraction of two integers.
+                </p>
+            </statement>
+        </task>
+    </problem>
+
+    <problem>
+        <title>(Problem 3)</title>
+        <introduction>
+            <p>
+                For each of the following, explain and demonstrate how to find the values of <m>x</m> for which the given series converge; explain and demonstrate how to find the sum of the series (as a function of <m>x</m>) for those values of <m>x</m>. 
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    <m>\sum_{n=0}^\infty (-1)^nx^{-2n}</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\sum_{n=0}^\infty \left(-\frac{1}{2}\right)^n(x-3)^n</m>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    <m>\sum_{n=0}^\infty (\ln{x})^n</m>
+                </p>
+            </statement>
+        </task>
+    </problem>
+
+    <problem>
+        <title>(Problem 4)</title>
+        <introduction>
+            <p>
+                In this problem, you will prove that the harmonic series diverges using the definitions of partial sums instead of relying on the integral test. 
+                Recall that the harmonic series is the series <m>\sum_{n=0}^\infty\frac{1}{n}</m>.
+                Let <m>S_k</m> denote its <m>k</m>-th partial sum:
+                <me>S_k=\sum_{n=0}^k\frac{1}{n}=1+\frac{1}{2}+\cdots+\frac{1}{k}.</me>
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    Explain and demonstrate why the sequence <m>\{S_k\}</m> is monotonically increasing.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    In class, we showed that <m>S_4\geq S_2+\frac{1}{2}</m> and that <m>S_8\geq S_4+\frac{1}{2}</m>.
+                    Explain and demonstrate why the inequalities 
+                    <me>S_{2^n}\geq S_{2^{n-1}}+\frac{1}{2}\geq 1+\frac{n}{2}</me>
+                    hold for all <m>n\geq 2</m>.
+                    Conclude that the sequence of partial sums <m>S_{2^n}</m> is unbounded hence must diverge.
+                </p>
+            </statement>
+        </task>
+    </problem>
+
+    <problem>
+        <title>(Problem 5)</title>
+        <introduction>
+            <p>
+                Suppose that <m>y=f(x)</m> is some continuous, strictly increasing function defined on an interval <m>[a,b]</m>.
+                These assumptions guarantee that <m>f(x)</m> is an invertible function, so we will let <m>x=g(y)</m>, defined on the interval <m>[f(a),f(b)]</m> denote this inverse function.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    Explain why the following equation of integrals is true without doing any calculations:
+                    <me>\int_{f\left(a\right)}^{f\left(b\right)}\pi\left[b^2-g\left(y\right)^2\right]dy=\int_a^b2\pi x\left[f\left(x\right)-f\left(a\right)\right]dx</me>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Use a combination of our integration strategies to provide a second explanation for why this equation is true. 
+                </p>
+            </statement>
+        </task>
+    </problem>
+    <hint>
+        <p>
+            You may find drawing a picture helpful for organizing your thoughts.
+        </p>
+    </hint>
+</section>

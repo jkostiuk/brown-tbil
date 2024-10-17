@@ -5,4 +5,5 @@
     <xi:include href="pset1-calc.ptx"/>
     <xi:include href="pset2-calc.ptx"/>
     <xi:include href="pset3-calc.ptx"/>
+    <xi:include href="pset4-calc.ptx"/>
 </appendix>

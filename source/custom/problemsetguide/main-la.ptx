@@ -5,4 +5,5 @@
     <xi:include href="pset1-linear.ptx"/>
     <xi:include href="pset2-linear.ptx"/>
     <xi:include href="pset3-linear.ptx"/>
+    <xi:include href="pset4-linear.ptx"/>
 </appendix>
