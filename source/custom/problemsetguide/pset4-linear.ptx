@@ -74,7 +74,7 @@
        </task>
     </problem>
 
-    <problem>
+    <!--<problem>
         <title>(Problem 3)</title>
         <introduction>
             <p>
@@ -105,10 +105,10 @@
                 </p>
             </statement>
         </task>
-    </problem>
+    </problem>-->
 
     <problem>
-        <title>(Problem 4)</title>
+        <title>(Problem 3)</title>
         <introduction>
             <p>
                 Let <m>W</m> denote the plan living in <m>\IR^5</m> that is given by the following set of equations:
@@ -143,7 +143,7 @@
     </problem>
 
     <problem>
-        <title>(Problem 5)</title>
+        <title>(Problem 4)</title>
         <introduction>
             <p>
                 Let <m>A</m> be an <m>m\times n</m> matrix.
