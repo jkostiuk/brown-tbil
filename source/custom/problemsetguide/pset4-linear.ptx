@@ -141,6 +141,14 @@
                 </statement>
             </task>
         </introduction>
+        <sage language="octave">
+            <input>
+                
+            </input>
+            <output>
+                
+            </output>
+        </sage>
     </problem>
 
     <problem>
@@ -176,5 +184,13 @@
                 </statement>
             </task>
         </introduction>
+        <sage language="octave">
+            <input>
+                
+            </input>
+            <output>
+                
+            </output>
+        </sage>
     </problem>
 </section>
