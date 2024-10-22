@@ -204,7 +204,7 @@ More generally, partial sums may be defined for any starting index. Given <m>\{a
             </introduction>
             <task>
                 <p>
-                    Find the closed form for the <m>n</m>th partial sum for the geometric sequence <m>A_n=\displaystyle\sum_{i=0}^n a_i=\displaystyle\sum_{i=0}^n \left(-\frac{2}{3}\right)^n</m>.
+                    Find the closed form for the <m>n</m>th partial sum for the geometric sequence <m>A_n=\displaystyle\sum_{i=0}^n a_i=\displaystyle\sum_{i=0}^n \left(-\frac{2}{3}\right)^i</m>.
                     <ol marker="A." cols="2">
                         <li><m>\displaystyle \frac{3}{5}\left(1-\left(-\frac{2}{3}\right)^{n+1}\right)</m>.</li>
                         <li><m>\displaystyle \frac{5}{3}\left(1-\left(-\frac{2}{3}\right)^{n+1}\right)</m>.</li>
@@ -216,7 +216,7 @@ More generally, partial sums may be defined for any starting index. Given <m>\{a
             </task>
             <task>
                 <p>
-                    Find the closed form for the <m>n</m>th partial sum for the geometric sequence <m>B_n=\displaystyle\sum_{i=0}^n b_i=\displaystyle\sum_{i=0}^n 2\cdot\left(-1\right)^n</m>.
+                    Find the closed form for the <m>n</m>th partial sum for the geometric sequence <m>B_n=\displaystyle\sum_{i=0}^n b_i=\displaystyle\sum_{i=0}^n 2\cdot\left(-1\right)^i</m>.
                     <ol marker="A." cols="2">
                         <li><m>\displaystyle 2^{n+1}</m>.</li>
                         <li><m>\displaystyle 1-(-1)^{n+1}</m>.</li>
@@ -228,7 +228,7 @@ More generally, partial sums may be defined for any starting index. Given <m>\{a
             </task>
             <task>
                 <p>
-                    Explain and demonstrate why a closed form for the <m>n</m>th partial sum for the geometric sequence <m>C_n=\displaystyle\sum_{i=0}^n c_i=\displaystyle\sum_{i=0}^n -3\cdot \left(1.2\right)^n</m> is given by
+                    Explain and demonstrate why a closed form for the <m>n</m>th partial sum for the geometric sequence <m>C_n=\displaystyle\sum_{i=0}^n c_i=\displaystyle\sum_{i=0}^n -3\cdot \left(1.2\right)^i</m> is given by
                     <me>C_n=15(1-(1.2)^{n+1}).</me>
                 </p>            
             </task>
