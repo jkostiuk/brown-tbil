@@ -58,6 +58,8 @@
                 Show that <m>T</m> is a linear map. 
             </p>
         </statement>
+        </task>
+        <task>
         <statement>
             <p>
                 Explain and demonstrate how to calculate a basis for the kernel of <m>T</m> and a basis for the image of <m>T</m>.
@@ -111,7 +113,7 @@
         <title>(Problem 3)</title>
         <introduction>
             <p>
-                Let <m>W</m> denote the plan living in <m>\IR^5</m> that is given by the following set of equations:
+                Let <m>W</m> denote the plan living in <m>\IR^4</m> that is given by the following set of equations:
                 <md>
                     <mrow>x+y+z+w&amp;=0</mrow>
                     <mrow>x-y+z-w&amp;=0</mrow>
@@ -121,7 +123,7 @@
         <task>
             <statement>
                 <p>
-                    Explain and demonstrate how to find two vectors <m>\vec{u},\vec{v}</m> for which <m>W=\vspan{\vec{u},\vec{v}}</m> is a basis for <m>W</m>, confirming that <m>W</m> is indeed a plane in 4-space.
+                    Explain and demonstrate how to find two vectors <m>\vec{u},\vec{v}</m> for which <m>W=\vspan\{\vec{u},\vec{v}\}</m> is a basis for <m>W</m>, confirming that <m>W</m> is indeed a plane in 4-space.
                 </p>
             </statement>
         </task>
