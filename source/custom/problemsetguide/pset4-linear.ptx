@@ -51,29 +51,29 @@
             Let <m>T\colon M_{2,2}\to\IR</m> denote the transformation given by the rule:
             <me>T\left(\left[\begin{array}{cc}a&amp; b\\ c&amp; d\end{array}\right]\right)=a+d.</me>
         </p>
-       </introduction>
-       <task>
-        <statement>
-            <p>
-                Show that <m>T</m> is a linear map. 
-            </p>
-        </statement>
-        </task>
         <task>
-        <statement>
-            <p>
-                Explain and demonstrate how to calculate a basis for the kernel of <m>T</m> and a basis for the image of <m>T</m>.
-                Is <m>T</m> injective? Is <m>T</m> surjective?
-            </p>
-        </statement>
-       </task>
-       <task>
-        <statement>
-            <p>
-                Verify the rank-nullity theorem for this linear transformation. 
-            </p>
-        </statement>
-       </task>
+            <statement>
+                <p>
+                    Show that <m>T</m> is a linear map. 
+                </p>
+            </statement>
+            </task>
+            <task>
+            <statement>
+                <p>
+                    Explain and demonstrate how to calculate a basis for the kernel of <m>T</m> and a basis for the image of <m>T</m>.
+                    Is <m>T</m> injective? Is <m>T</m> surjective?
+                </p>
+            </statement>
+           </task>
+           <task>
+            <statement>
+                <p>
+                    Verify the rank-nullity theorem for this linear transformation. 
+                </p>
+            </statement>
+           </task>
+       </introduction>
     </problem>
 
     <!--<problem>
@@ -119,29 +119,28 @@
                     <mrow>x-y+z-w&amp;=0</mrow>
                 </md>
             </p>
+            <task>
+                <statement>
+                    <p>
+                        Explain and demonstrate how to find two vectors <m>\vec{u},\vec{v}</m> for which <m>W=\vspan\{\vec{u},\vec{v}\}</m> is a basis for <m>W</m>, confirming that <m>W</m> is indeed a plane in 4-space.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Explain and demonstrate how to find an example of a linear transformation <m>T\colon\IR^3\to\IR^4</m> for which the image of <m>T</m> is equal to <m>W</m>. 
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Explain and demonstrate how to find one example of a linear transformation <m>S\colon\IR^2\to\IR^4</m> for which the image of <m>S</m> is equal to some <m>1</m>-dimensional subspace of <m>W</m>.
+                    </p>
+                </statement>
+            </task>
         </introduction>
-        <task>
-            <statement>
-                <p>
-                    Explain and demonstrate how to find two vectors <m>\vec{u},\vec{v}</m> for which <m>W=\vspan\{\vec{u},\vec{v}\}</m> is a basis for <m>W</m>, confirming that <m>W</m> is indeed a plane in 4-space.
-                </p>
-            </statement>
-        </task>
-        <task>
-            <statement>
-                <p>
-                    Explain and demonstrate how to find an example of a linear transformation <m>T\colon\IR^3\to\IR^4</m> for which the image of <m>T</m> is equal to <m>W</m>. 
-                </p>
-            </statement>
-        </task>
-        <task>
-            <statement>
-                <p>
-                    Explain and demonstrate how to find one example of a linear transformation <m>S\colon\IR^2\to\IR^4</m> for which the image of <m>S</m> is equal to some <m>1</m>-dimensional subspace of <m>W</m>.
-                </p>
-            </statement>
-        </task>
-        
     </problem>
 
     <problem>
@@ -154,28 +153,28 @@
                 <me>B=\left[\begin{array}{ccc}1&amp; 2&amp;3\\ 1&amp; 2&amp; 4\end{array}\right],\ \ B^T=\left[\begin{array}{cc}1&amp; 1\\ 2&amp; 2\\3&amp; 4\end{array}\right].</me>
                 Now suppose <m>f\colon\mathbb{R}^n\to\mathbb{R}^m</m> is a linear transformation with standard matrix <m>A</m> and let <m>g\colon\mathbb{R}^m\to\mathbb{R}^n</m> denote the linear transformation with standard matrix <m>A^T</m>.
             </p>
+            <task>
+                <statement>
+                    <p>
+                        With <m>A=\left[\begin{array}{cccc}1&amp; 0&amp;2&amp;-3\\3&amp; 2&amp;-1&amp;-1\\4&amp; 2&amp;1&amp;-4\end{array}\right]</m> and notation as defined above, calculate the rank and nullity of the transformations <m>f</m> and <m>g</m>.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Now suppose that <m>f\colon\mathbb{R}^n\to\mathbb{R}^m</m> is an arbitrary linear transformation, let <m>A</m> denote its standard matrix, and let <m>g</m> be the transformation corresponding to the transpose <m>B=A^T</m>.
+                        Explain why the rank of <m>f</m> will always be equal to the rank of <m>g</m>.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Notation as in (b), explain why <m>\textrm{null(g)}-\textrm{null(f)}=m-n</m> and conclude that <m>\textrm{null}(f)=\textrm{null}(g)</m> if and only if <m>m=n</m>.
+                    </p>
+                </statement>
+            </task>
         </introduction>
-        <task>
-            <statement>
-                <p>
-                    With <m>A=\left[\begin{array}{cccc}1&amp; 0&amp;2&amp;-3\\3&amp; 2&amp;-1&amp;-1\\4&amp; 2&amp;1&amp;-4\end{array}\right]</m> and notation as defined above, calculate the rank and nullity of the transformations <m>f</m> and <m>g</m>.
-                </p>
-            </statement>
-        </task>
-        <task>
-            <statement>
-                <p>
-                    Now suppose that <m>f\colon\mathbb{R}^n\to\mathbb{R}^m</m> is an arbitrary linear transformation, let <m>A</m> denote its standard matrix, and let <m>g</m> be the transformation corresponding to the transpose <m>B=A^T</m>.
-                    Explain why the rank of <m>f</m> will always be equal to the rank of <m>g</m>.
-                </p>
-            </statement>
-        </task>
-        <task>
-            <statement>
-                <p>
-                    Notation as in (b), explain why <m>\textrm{null(g)}-\textrm{null(f)}=m-n</m> and conclude that <m>\textrm{null}(f)=\textrm{null}(g)</m> if and only if <m>m=n</m>.
-                </p>
-            </statement>
-        </task>
     </problem>
 </section>
