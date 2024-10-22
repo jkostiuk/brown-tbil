@@ -113,7 +113,7 @@
         <title>(Problem 3)</title>
         <introduction>
             <p>
-                Let <m>W</m> denote the plan living in <m>\IR^4</m> that is given by the following set of equations:
+                Let <m>W</m> denote the plane living in <m>\IR^4</m> that is given by the following set of equations:
                 <md>
                     <mrow>x+y+z+w&amp;=0</mrow>
                     <mrow>x-y+z-w&amp;=0</mrow>
