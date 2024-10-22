@@ -87,7 +87,19 @@ window.MathJax = {
     )}
   }
 };
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><link href="_static/pretext/css/pretext_search.css" rel="stylesheet" type="text/css">
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script>// Make *any* div with class 'sagecell-octave' an executable Sage cell
+// Their results will be linked, only within language type
+sagecell.makeSagecell({
+  "inputLocation": "div.sagecell-octave",
+  "linked": true,
+  "linkKey": "linked-octave",
+  "autoeval": false,
+  "languages": [
+    "octave"
+  ],
+  "evalButtonText": "Evaluate (Octave)"
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><link href="_static/pretext/css/pretext_search.css" rel="stylesheet" type="text/css">
 <script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -1248,39 +1260,40 @@ window.MathJax = {
 <div class="para" id="sec-pset4-linear-3-2-4-1-1">Suppose that <span class="process-math">\(\setList{\vec{u}_1,\vec{u}_2,\vec{u}_3}\)</span> are vectors in <span class="process-math">\(V\text{.}\)</span> If the set <span class="process-math">\(\setList{T(\vec{u}_1),T(\vec{u}_2),T(\vec{u}_3)}\)</span> spans <span class="process-math">\(W\text{,}\)</span> does it necessarily follows that <span class="process-math">\(\setList{\vec{u}_1,\vec{u}_2,\vec{u}_3}\)</span> spans <span class="process-math">\(V\text{?}\)</span> If “yes”, explain why; if “no”, provide a counterexample to the claim.</div></article>
 </div></article><article class="problem example-like" id="sec-pset4-linear-4"><h3 class="heading">
 <span class="type">Problem</span><span class="space"> </span><span class="codenumber">A.5.2</span><span class="period">.</span><span class="space"> </span><span class="title">(Problem 2).</span>
-</h3>
-<div class="introduction" id="sec-pset4-linear-4-2"><div class="para logical" id="sec-pset4-linear-4-2-1">
+</h3> <div class="introduction" id="sec-pset4-linear-4-2">
+<div class="para logical" id="sec-pset4-linear-4-2-1">
 <div class="para">Let <span class="process-math">\(T\colon M_{2,2}\to\IR\)</span> denote the transformation given by the rule:</div>
 <div class="displaymath process-math">
 \begin{equation*}
 T\left(\left[\begin{array}{cc}a&amp; b\\ c&amp; d\end{array}\right]\right)=a+d.
 \end{equation*}
 </div>
-</div></div>
-<article class="task exercise-like" id="sec-pset4-linear-4-3"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="sec-pset4-linear-4-3-1-1">Show that <span class="process-math">\(T\)</span> is a linear map.</div></article><article class="task exercise-like" id="sec-pset4-linear-4-4"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="sec-pset4-linear-4-4-1-1">Explain and demonstrate how to calculate a basis for the kernel of <span class="process-math">\(T\)</span> and a basis for the image of <span class="process-math">\(T\text{.}\)</span> Is <span class="process-math">\(T\)</span> injective? Is <span class="process-math">\(T\)</span> surjective?</div></article><article class="task exercise-like" id="sec-pset4-linear-4-5"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="para" id="sec-pset4-linear-4-5-1-1">Verify the rank-nullity theorem for this linear transformation.</div></article></article><article class="problem example-like" id="sec-pset4-linear-5"><h3 class="heading">
+</div> <article class="task exercise-like" id="sec-pset4-linear-4-2-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="sec-pset4-linear-4-2-2-1-1">Show that <span class="process-math">\(T\)</span> is a linear map.</div></article> <article class="task exercise-like" id="sec-pset4-linear-4-2-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="sec-pset4-linear-4-2-3-1-1">Explain and demonstrate how to calculate a basis for the kernel of <span class="process-math">\(T\)</span> and a basis for the image of <span class="process-math">\(T\text{.}\)</span> Is <span class="process-math">\(T\)</span> injective? Is <span class="process-math">\(T\)</span> surjective?</div></article> <article class="task exercise-like" id="sec-pset4-linear-4-2-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="sec-pset4-linear-4-2-4-1-1">Verify the rank-nullity theorem for this linear transformation.</div></article>
+</div></article><article class="problem example-like" id="sec-pset4-linear-5"><h3 class="heading">
 <span class="type">Problem</span><span class="space"> </span><span class="codenumber">A.5.3</span><span class="period">.</span><span class="space"> </span><span class="title">(Problem 3).</span>
-</h3>
-<div class="introduction" id="sec-pset4-linear-5-2"><div class="para logical" id="sec-pset4-linear-5-2-1">
-<div class="para">Let <span class="process-math">\(W\)</span> denote the plan living in <span class="process-math">\(\IR^4\)</span> that is given by the following set of equations:</div>
+</h3> <div class="introduction" id="sec-pset4-linear-5-2">
+<div class="para logical" id="sec-pset4-linear-5-2-1">
+<div class="para">Let <span class="process-math">\(W\)</span> denote the plane living in <span class="process-math">\(\IR^4\)</span> that is given by the following set of equations:</div>
 <div class="displaymath process-math" id="sec-pset4-linear-5-2-1-3">
 \begin{align*}
 x+y+z+w&amp;=0\\
 x-y+z-w&amp;=0
 \end{align*}
 </div>
-</div></div>
-<article class="task exercise-like" id="sec-pset4-linear-5-3"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="sec-pset4-linear-5-3-1-1">Explain and demonstrate how to find two vectors <span class="process-math">\(\vec{u},\vec{v}\)</span> for which <span class="process-math">\(W=\vspan\{\vec{u},\vec{v}\}\)</span> is a basis for <span class="process-math">\(W\text{,}\)</span> confirming that <span class="process-math">\(W\)</span> is indeed a plane in 4-space.</div></article><article class="task exercise-like" id="sec-pset4-linear-5-4"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="sec-pset4-linear-5-4-1-1">Explain and demonstrate how to find an example of a linear transformation <span class="process-math">\(T\colon\IR^3\to\IR^4\)</span> for which the image of <span class="process-math">\(T\)</span> is equal to <span class="process-math">\(W\text{.}\)</span>
-</div></article><article class="task exercise-like" id="sec-pset4-linear-5-5"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="para" id="sec-pset4-linear-5-5-1-1">Explain and demonstrate how to find one example of a linear transformation <span class="process-math">\(S\colon\IR^2\to\IR^4\)</span> for which the image of <span class="process-math">\(S\)</span> is equal to some <span class="process-math">\(1\)</span>-dimensional subspace of <span class="process-math">\(W\text{.}\)</span>
-</div></article></article><article class="problem example-like" id="sec-pset4-linear-6"><h3 class="heading">
+</div> <article class="task exercise-like" id="sec-pset4-linear-5-2-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="sec-pset4-linear-5-2-2-1-1">Explain and demonstrate how to find two vectors <span class="process-math">\(\vec{u},\vec{v}\)</span> for which <span class="process-math">\(W=\vspan\{\vec{u},\vec{v}\}\)</span> is a basis for <span class="process-math">\(W\text{,}\)</span> confirming that <span class="process-math">\(W\)</span> is indeed a plane in 4-space.</div></article> <article class="task exercise-like" id="sec-pset4-linear-5-2-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="sec-pset4-linear-5-2-3-1-1">Explain and demonstrate how to find an example of a linear transformation <span class="process-math">\(T\colon\IR^3\to\IR^4\)</span> for which the image of <span class="process-math">\(T\)</span> is equal to <span class="process-math">\(W\text{.}\)</span>
+</div></article> <article class="task exercise-like" id="sec-pset4-linear-5-2-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="sec-pset4-linear-5-2-4-1-1">Explain and demonstrate how to find one example of a linear transformation <span class="process-math">\(S\colon\IR^2\to\IR^4\)</span> for which the image of <span class="process-math">\(S\)</span> is equal to some <span class="process-math">\(1\)</span>-dimensional subspace of <span class="process-math">\(W\text{.}\)</span>
+</div></article>
+</div> <div id="sec-pset4-linear-5-3" class="ptx-sagecell sagecell-octave"><script type="text/x-sage">
+</script></div></article><article class="problem example-like" id="sec-pset4-linear-6"><h3 class="heading">
 <span class="type">Problem</span><span class="space"> </span><span class="codenumber">A.5.4</span><span class="period">.</span><span class="space"> </span><span class="title">(Problem 4).</span>
-</h3>
-<div class="introduction" id="sec-pset4-linear-6-2"><div class="para logical" id="sec-pset4-linear-6-2-1">
+</h3> <div class="introduction" id="sec-pset4-linear-6-2">
+<div class="para logical" id="sec-pset4-linear-6-2-1">
 <div class="para">Let <span class="process-math">\(A\)</span> be an <span class="process-math">\(m\times n\)</span> matrix. The <dfn class="terminology">transpose</dfn> of <span class="process-math">\(A\)</span> is the <span class="process-math">\(n\times m\)</span> matrix that is obtained by reflecting the matrix <span class="process-math">\(A\)</span> about the main top-left to bottom-right diagonal and is denoted by <span class="process-math">\(A^T\text{.}\)</span> For instance, the following is an example of a matrix <span class="process-math">\(B\)</span> and its transpose <span class="process-math">\(B^T\text{:}\)</span>
 </div>
 <div class="displaymath process-math">
@@ -1290,14 +1303,15 @@ B=\left[\begin{array}{ccc}1&amp; 2&amp;3\\ 1&amp; 2&amp; 4\end{array}\right],\ \
 </div>
 <div class="para">Now suppose <span class="process-math">\(f\colon\mathbb{R}^n\to\mathbb{R}^m\)</span> is a linear transformation with standard matrix <span class="process-math">\(A\)</span> and let <span class="process-math">\(g\colon\mathbb{R}^m\to\mathbb{R}^n\)</span> denote the linear transformation with standard matrix <span class="process-math">\(A^T\text{.}\)</span>
 </div>
-</div></div>
-<article class="task exercise-like" id="sec-pset4-linear-6-3"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="sec-pset4-linear-6-3-1-1">With <span class="process-math">\(A=\left[\begin{array}{cccc}1&amp; 0&amp;2&amp;-3\\3&amp; 2&amp;-1&amp;-1\\4&amp; 2&amp;1&amp;-4\end{array}\right]\)</span> and notation as defined above, calculate the rank and nullity of the transformations <span class="process-math">\(f\)</span> and <span class="process-math">\(g\text{.}\)</span>
-</div></article><article class="task exercise-like" id="sec-pset4-linear-6-4"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="sec-pset4-linear-6-4-1-1">Now suppose that <span class="process-math">\(f\colon\mathbb{R}^n\to\mathbb{R}^m\)</span> is an arbitrary linear transformation, let <span class="process-math">\(A\)</span> denote its standard matrix, and let <span class="process-math">\(g\)</span> be the transformation corresponding to the transpose <span class="process-math">\(B=A^T\text{.}\)</span> Explain why the rank of <span class="process-math">\(f\)</span> will always be equal to the rank of <span class="process-math">\(g\text{.}\)</span>
-</div></article><article class="task exercise-like" id="sec-pset4-linear-6-5"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="para" id="sec-pset4-linear-6-5-1-1">Notation as in (b), explain why <span class="process-math">\(\textrm{null(g)}-\textrm{null(f)}=m-n\)</span> and conclude that <span class="process-math">\(\textrm{null}(f)=\textrm{null}(g)\)</span> if and only if <span class="process-math">\(m=n\text{.}\)</span>
-</div></article></article></section></div>
+</div> <article class="task exercise-like" id="sec-pset4-linear-6-2-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="sec-pset4-linear-6-2-2-1-1">With <span class="process-math">\(A=\left[\begin{array}{cccc}1&amp; 0&amp;2&amp;-3\\3&amp; 2&amp;-1&amp;-1\\4&amp; 2&amp;1&amp;-4\end{array}\right]\)</span> and notation as defined above, calculate the rank and nullity of the transformations <span class="process-math">\(f\)</span> and <span class="process-math">\(g\text{.}\)</span>
+</div></article> <article class="task exercise-like" id="sec-pset4-linear-6-2-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="sec-pset4-linear-6-2-3-1-1">Now suppose that <span class="process-math">\(f\colon\mathbb{R}^n\to\mathbb{R}^m\)</span> is an arbitrary linear transformation, let <span class="process-math">\(A\)</span> denote its standard matrix, and let <span class="process-math">\(g\)</span> be the transformation corresponding to the transpose <span class="process-math">\(B=A^T\text{.}\)</span> Explain why the rank of <span class="process-math">\(f\)</span> will always be equal to the rank of <span class="process-math">\(g\text{.}\)</span>
+</div></article> <article class="task exercise-like" id="sec-pset4-linear-6-2-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="sec-pset4-linear-6-2-4-1-1">Notation as in (b), explain why <span class="process-math">\(\textrm{null(g)}-\textrm{null(f)}=m-n\)</span> and conclude that <span class="process-math">\(\textrm{null}(f)=\textrm{null}(g)\)</span> if and only if <span class="process-math">\(m=n\text{.}\)</span>
+</div></article>
+</div> <div id="sec-pset4-linear-6-3" class="ptx-sagecell sagecell-octave"><script type="text/x-sage">
+</script></div></article></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-pset3-linear.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="applications.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
