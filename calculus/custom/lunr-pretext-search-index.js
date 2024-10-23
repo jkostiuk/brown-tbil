@@ -7738,7 +7738,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "8.4",
   "title": "Geometric Series (SQ4)",
-  "body": " Geometric Series (SQ4)     Determine if a geometric series converges, and if so, the value it converges to.      Activities     Recall from that for any real numbers and that:    Using , for which values of does converges?  .  .  .  The series converges for every value of .    Where possible, determine what value converges to.     Geometric series are sums of the form , where and are real numbers. When this series converges to the value . Otherwise, the geometric series diverges.     Consider the infinite series    Complete the following rearrangement of terms.   Since , this series converges. Use the formula to find the value of this series.         Complete the following calculation, noting : What does this simplify to?           Given a series that appears to be mostly geometric such as we can always rewrite it as the sum of a standard geometric series with some finite modification, in this case:   Thus the original series converges if and only if converges.  When the series diverges as in this example, then the reason why ( ) can be seen without any modification of the original series.      For each of the following modified geometric series, determine without rewriting if they converge or diverge.   .  .  .  .     Find the value of each of the following convergent series.   .  .  .      Videos      Video: Determine if a geometric series converges, and if so, the value it converges to.     Exercises  Exercises available at    "
+  "body": " Geometric Series (SQ4)     Determine if a geometric series converges, and if so, the value it converges to.      Activities     Recall from that for any real numbers and that:    Using , for which values of does converges?  .  .  .  The series converges for every value of .    Where possible, determine what value converges to.     Geometric series are sums of the form , where and are real numbers. When this series converges to the value . Otherwise, the geometric series diverges.     Consider the infinite series    Complete the following rearrangement of terms.   Since , this series converges. Use the formula to find the value of this series.          Consider the following series:     Is this series geometric?  Yes; we have and  Yes; we have and  Yes; we have and  No, this is not geometric.      What does this series converge to?     The series does not converge         For each of the following modified geometric series, determine without rewriting if they converge or diverge.   .  .  .  .     Find the value of each of the following convergent series.   .  .  .      Videos      Video: Determine if a geometric series converges, and if so, the value it converges to.     Exercises  Exercises available at    "
 },
 {
   "id": "SQ4-2",
@@ -7783,32 +7783,23 @@ var ptx_lunr_docs = [
   "type": "Activity",
   "number": "8.4.4",
   "title": "",
-  "body": " Complete the following calculation, noting : What does this simplify to?        "
-},
-{
-  "id": "observation-SQ4modifiedgeometric",
-  "level": "2",
-  "url": "SQ4.html#observation-SQ4modifiedgeometric",
-  "type": "Observation",
-  "number": "8.4.5",
-  "title": "",
-  "body": "  Given a series that appears to be mostly geometric such as we can always rewrite it as the sum of a standard geometric series with some finite modification, in this case:   Thus the original series converges if and only if converges.  When the series diverges as in this example, then the reason why ( ) can be seen without any modification of the original series.   "
+  "body": "  Consider the following series:     Is this series geometric?  Yes; we have and  Yes; we have and  Yes; we have and  No, this is not geometric.      What does this series converge to?     The series does not converge     "
 },
 {
   "id": "activity-SQ4evaluatingmodifiedgeo",
   "level": "2",
   "url": "SQ4.html#activity-SQ4evaluatingmodifiedgeo",
   "type": "Activity",
-  "number": "8.4.6",
+  "number": "8.4.5",
   "title": "",
   "body": "  For each of the following modified geometric series, determine without rewriting if they converge or diverge.   .  .  .  .  "
 },
 {
-  "id": "SQ4-3-8",
+  "id": "SQ4-3-7",
   "level": "2",
-  "url": "SQ4.html#SQ4-3-8",
+  "url": "SQ4.html#SQ4-3-7",
   "type": "Activity",
-  "number": "8.4.7",
+  "number": "8.4.6",
   "title": "",
   "body": "  Find the value of each of the following convergent series.   .  .  .  "
 },
@@ -7828,7 +7819,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "8.5",
   "title": "Basic Convergence Tests (SQ5)",
-  "body": " Basic Convergence Tests (SQ5)     Use the divergence, alternating series, and integral tests to determine if a series converges or diverges.      Activities    Which of the following series seem(s) to diverge? It might be helpful to write out the first several terms.    .  .  .  .  .      If the series is convergent, then .     The Divergence ( term) Test   If the , then diverges.     Which of the series from diverge by ?     If for all , then is convergent if and only if the sequence of partial sums is bounded from above.      Consider the so-called harmonic series , , and let be its partial sum.   Determine which of the following inequalities hold(s).  .  .  .  .  .   Determine which of the following inequalities hold(s).  .  .  .  .  .     In , we found that and . Based on these inequalities, which statement seems most likely to hold?   The harmonic series converges.  The harmonic series diverges.      Consider the series .   We want to compare this series to an improper integral. Which of the following is the best candidate?  .  .  .  .  .   Select the true statements below.  The sum corresponds to approximating the integral chosen above using left Riemann sums where .  The sum corresponds to approximating the integral chosen above using right Riemann sums where .  The sum corresponds to approximating the integral chosen above using left Riemann sums where .  The sum corresponds to approximating the integral chosen above using right Riemann sums where .    Using the Riemann sum interpretation of the series, identify which of the following inequalities holds.  .  .  .  .   What can we say about the improper integral ?  This improper integral converges.  This improper integral diverges.    What do you think is true about the series ?  The series converges.  The series diverges.      The Integral Test   Let be a sequence of positive numbers. If is continuous, positive, and decreasing, and there is some positive integer such that for all , then and both converge or both diverge.      Consider the -series .   Recall that the harmonic series diverges. What value of corresponds to the harmonic series?  .  .  .  .  .   From , what can we conclude about the -series with ?  There is not enough information to draw a conclusion.  This series converges.  This series diverges.      The -Test   The series converges for , and diverges otherwise.      Consider the series .   If we aim to use the integral test, what is an appropriate choice for ?  .  .  .  .  .   Does the series converge or diverge by ?    Prove .    Which of the following statements seem(s) most likely to be true?  diverges.  converges.  converges.  diverges.      The Alternating Series Test (Leibniz's Theorem)   The series converges if all of the following conditions are satisfied:  is always positive,  there is an integer such that for all , and  .       What conclusions can you now make?  diverges.  converges.  converges.  diverges.       For each of the following series, use the Divergence , Alternating Summation or Integral test to determine if the series converges.        The Alternating Series Estimation Theorem   If the alternating series converges to and has partial sum , then for (as in the alternating series test):  is less than , and  has the same sign as .        Consider the so-called alternating harmonic series , .   Use the alternating series test to determine if the series converges.  If so, estimate the series using the first 3 terms.      Videos      Video: Use the divergence, alternating series, and integral tests to determine if a series converges or diverges     Exercises  Exercises available at    "
+  "body": " Basic Convergence Tests (SQ5)     Use the divergence, alternating series, and integral tests to determine if a series converges or diverges.      Activities    Which of the following series seem(s) to diverge? It might be helpful to write out the first several terms.    .  .  .  .  .      If the series is convergent, then .     The Divergence ( term) Test   If the , then diverges.     Which of the series from diverge by ?     If for all , then is convergent if and only if the sequence of partial sums is bounded from above.      Consider the so-called harmonic series , , and let be its partial sum.   Determine which of the following inequalities hold(s).  .  .  .  .  .   Determine which of the following inequalities hold(s).  .  .  .  .  .     In , we found that and . Based on these inequalities, which statement seems most likely to hold?   The harmonic series converges.  The harmonic series diverges.      Consider the series .   We want to compare this series to an improper integral. Which of the following is the best candidate?  .  .  .  .  .   Select the true statements below.  The sum corresponds to approximating the integral chosen above using left Riemann sums where .  The sum corresponds to approximating the integral chosen above using right Riemann sums where .  The sum corresponds to approximating the integral chosen above using left Riemann sums where .  The sum corresponds to approximating the integral chosen above using right Riemann sums where .    Using the Riemann sum interpretation of the series, identify which of the following inequalities holds.  .  .  .  .   What can we say about the improper integral ?  This improper integral converges.  This improper integral diverges.    What do you think is true about the series ?  The series converges.  The series diverges.      The Integral Test   Let be a sequence of positive numbers. If is continuous, positive, and decreasing, and there is some positive integer such that for all , then and both converge or both diverge.      Consider the -series .   Recall that the harmonic series diverges. What value of corresponds to the harmonic series?  .  .  .  .  .   From , what can we conclude about the -series with ?  There is not enough information to draw a conclusion.  This series converges.  This series diverges.      The -Test   The series converges for , and diverges otherwise.      Consider the series .   If we aim to use the integral test, what is an appropriate choice for ?  .  .  .  .  .   Does the series converge or diverge by ?    Prove .    Consider a sequence and its associate series . The divergence test tells us that if the series converges, then the sequence must converge to .  Our investigation of the series and illustrates why we cannot decide if a series converges by only looking at the convergence of the individual terms. Indeed, both sequences and converges to , but we argued in that the series diverges. On the other hand, the integral test told us that converged.  That is, a series doesn't converge just because its terms converge to ; we need the terms to converge to  fast enough for the sum to converges.    Based on the reasoning above, which of the following statements seem(s) most likely to be true?  diverges.  converges.  converges.  diverges.      The Alternating Series Test (Leibniz's Theorem)   The series converges if all of the following conditions are satisfied:  is always positive,  there is an integer such that for all , and  .       What conclusions can you now make?  diverges.  converges.  converges.  diverges.       For each of the following series, use the Divergence , Alternating Summation or Integral test to determine if the series converges.        The Alternating Series Estimation Theorem   If the alternating series converges to and has partial sum , then for (as in the alternating series test):  is less than , and  has the same sign as .        Consider the so-called alternating harmonic series , .   Use the alternating series test to determine if the series converges.  If so, estimate the series using the first 3 terms.      Videos      Video: Use the divergence, alternating series, and integral tests to determine if a series converges or diverges     Exercises  Exercises available at    "
 },
 {
   "id": "SQ5-2",
@@ -7960,28 +7951,28 @@ var ptx_lunr_docs = [
   "id": "SQ5-3-15",
   "level": "2",
   "url": "SQ5.html#SQ5-3-15",
-  "type": "Activity",
+  "type": "Remark",
   "number": "8.5.14",
   "title": "",
-  "body": " Which of the following statements seem(s) most likely to be true?  diverges.  converges.  converges.  diverges.    "
+  "body": " Consider a sequence and its associate series . The divergence test tells us that if the series converges, then the sequence must converge to .  Our investigation of the series and illustrates why we cannot decide if a series converges by only looking at the convergence of the individual terms. Indeed, both sequences and converges to , but we argued in that the series diverges. On the other hand, the integral test told us that converged.  That is, a series doesn't converge just because its terms converge to ; we need the terms to converge to  fast enough for the sum to converges.  "
+},
+{
+  "id": "SQ5-3-16",
+  "level": "2",
+  "url": "SQ5.html#SQ5-3-16",
+  "type": "Activity",
+  "number": "8.5.15",
+  "title": "",
+  "body": " Based on the reasoning above, which of the following statements seem(s) most likely to be true?  diverges.  converges.  converges.  diverges.    "
 },
 {
   "id": "fact-SQ8alternatingSeriesTest",
   "level": "2",
   "url": "SQ5.html#fact-SQ8alternatingSeriesTest",
   "type": "Fact",
-  "number": "8.5.15",
+  "number": "8.5.16",
   "title": "The Alternating Series Test (Leibniz’s Theorem).",
   "body": " The Alternating Series Test (Leibniz's Theorem)   The series converges if all of the following conditions are satisfied:  is always positive,  there is an integer such that for all , and  .     "
-},
-{
-  "id": "SQ5-3-17",
-  "level": "2",
-  "url": "SQ5.html#SQ5-3-17",
-  "type": "Activity",
-  "number": "8.5.16",
-  "title": "",
-  "body": " What conclusions can you now make?  diverges.  converges.  converges.  diverges.    "
 },
 {
   "id": "SQ5-3-18",
@@ -7990,6 +7981,15 @@ var ptx_lunr_docs = [
   "type": "Activity",
   "number": "8.5.17",
   "title": "",
+  "body": " What conclusions can you now make?  diverges.  converges.  converges.  diverges.    "
+},
+{
+  "id": "SQ5-3-19",
+  "level": "2",
+  "url": "SQ5.html#SQ5-3-19",
+  "type": "Activity",
+  "number": "8.5.18",
+  "title": "",
   "body": "  For each of the following series, use the Divergence , Alternating Summation or Integral test to determine if the series converges.      "
 },
 {
@@ -7997,7 +7997,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "SQ5.html#fact-SQ8alternatingSeriesEstimation",
   "type": "Fact",
-  "number": "8.5.18",
+  "number": "8.5.19",
   "title": "The Alternating Series Estimation Theorem.",
   "body": " The Alternating Series Estimation Theorem   If the alternating series converges to and has partial sum , then for (as in the alternating series test):  is less than , and  has the same sign as .     "
 },
@@ -8006,7 +8006,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "SQ5.html#activity-SQ5alternatingHarmonicSeries",
   "type": "Activity",
-  "number": "8.5.19",
+  "number": "8.5.20",
   "title": "",
   "body": "  Consider the so-called alternating harmonic series , .   Use the alternating series test to determine if the series converges.  If so, estimate the series using the first 3 terms.  "
 },
