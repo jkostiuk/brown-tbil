@@ -87,7 +87,19 @@ window.MathJax = {
     )}
   }
 };
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><link href="_static/pretext/css/pretext_search.css" rel="stylesheet" type="text/css">
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script>// Make *any* div with class 'sagecell-octave' an executable Sage cell
+// Their results will be linked, only within language type
+sagecell.makeSagecell({
+  "inputLocation": "div.sagecell-octave",
+  "linked": true,
+  "linkKey": "linked-octave",
+  "autoeval": false,
+  "languages": [
+    "octave"
+  ],
+  "evalButtonText": "Evaluate (Octave)"
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><link href="_static/pretext/css/pretext_search.css" rel="stylesheet" type="text/css">
 <script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -680,6 +692,9 @@ window.MathJax = {
 #sec-pset2-linear-8-4-1-1-1-2 { counter-set: sec-pset2-linear-8-4-1-1-1-2 0; }
 #sec-pset2-linear-8-4-1-1-1-2 > li::marker { content: ""counter(sec-pset2-linear-8-4-1-1-1-2,decimal)"."; }
 #sec-pset2-linear-8-4-1-1-1-2 > li { counter-increment: sec-pset2-linear-8-4-1-1-1-2; }
+#sec-pset3-linear-5-3-2-1-1-7 { counter-set: sec-pset3-linear-5-3-2-1-1-7 0; }
+#sec-pset3-linear-5-3-2-1-1-7 > li::marker { content: ""counter(sec-pset3-linear-5-3-2-1-1-7,decimal)"."; }
+#sec-pset3-linear-5-3-2-1-1-7 > li { counter-increment: sec-pset3-linear-5-3-2-1-1-7; }
 #truss-2-3-1-4 { counter-set: truss-2-3-1-4 0; }
 #truss-2-3-1-4 > li::marker { content: ""counter(truss-2-3-1-4,decimal)"."; }
 #truss-2-3-1-4 > li { counter-increment: truss-2-3-1-4; }
