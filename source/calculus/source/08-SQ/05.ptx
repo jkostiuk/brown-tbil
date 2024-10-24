@@ -247,9 +247,24 @@ The series <m>\displaystyle \sum_{n=1}^\infty \displaystyle\frac{1}{n^p}</m> con
     <activity>
         <p>Prove <xref ref="fact-SQ5pTest"/>.</p>
     </activity>
+
+    <remark>
+        <p>
+            Consider a sequence <m>\{a_n\}_{n=0}^\infty</m> and its associate series <m>\sum_{n=0}^\infty a_n</m>. 
+            The divergence test tells us that <em>if</em> the series <m>\sum_{n=0}^\infty</m> converges, then the sequence <m>\{a_n\}</m> must converge to <m>0</m>.
+        </p>
+        <p>
+            Our investigation of the series <m>\sum_{n=1}^\infty\frac{1}{n}</m> and <m>\sum_{n=1}^\infty\frac{1}{n^2}</m> illustrates why we cannot decide if a series converges by only looking at the convergence of the individual terms. 
+            Indeed, both sequences <m>\{\frac{1}{n}\}_{n=1}^\infty</m> and <m>\{\frac{1}{n^2}\}_{n=1}^\infty</m> converges to <m>0</m>, but we argued in <xref ref="activity-SQ5harmonicSeries"/> that the series <m>\sum_{n=1}^\infty\frac{1}{n}</m> diverges. 
+            On the other hand, the integral test told us that <m>\sum_{n=1}^\infty\frac{1}{n^2}</m> converged. 
+        </p>
+        <p>
+            That is, a series doesn't converge just because its terms converge to <m>0</m>; we need the terms to converge to <m>0</m> <em>fast enough</em> for the sum to converges.
+        </p>
+    </remark>
     
     <activity>
-        <p> Which of the following statements seem(s) most likely to be true?
+        <p> Based on the reasoning above, which of the following statements seem(s) most likely to be true?
         <ol marker="A." cols="2">
             <li><m>\displaystyle \sum_{n=1}^\infty (-1)^n \frac{1}{n}</m> diverges.</li>
             <li><m>\displaystyle \sum_{n=1}^\infty (-1)^n \frac{1}{n}</m> converges.</li>

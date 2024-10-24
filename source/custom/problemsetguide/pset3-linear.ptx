@@ -1,0 +1,451 @@
+<section xml:id="sec-pset3-linear">
+    <title>Problem Set 3</title>
+    <paragraphs>
+        <title>Instructions</title>
+        <p>
+            Prior to beginning this problem set, consider reading the Problem Set Success Guide <xref ref="pset-intro"/> for advice and clarity around expectations for Problem Sets in this course. 
+            Upload your solutions to all problems on this page to gradescope as a single .pdf file, remembering to assign pages appropriately for each question. 
+            Complete instructions for Problem Sets are available on Canvas.
+        </p>
+    </paragraphs>
+
+    <problem>
+        <title>(Problem 1)</title>
+        <introduction>
+            <p>
+                Let <m>S=\setList{
+                    \left[\begin{array}{c} -2 \\ 1 \\ 0 \\ 0\end{array}\right],
+                    \left[\begin{array}{c} -1 \\ 0 \\ -4 \\ 1 \end{array}\right],
+                    \left[\begin{array}{c} 1 \\ 0 \\ -2 \\ 3 \end{array}\right]
+                  }</m> and <m>A=\left[\begin{array}{ccc}
+                    -2 &amp; -1 &amp;1\\
+                    1 &amp; 0 &amp;0\\
+                    0 &amp; -4 &amp;-2\\
+                    0 &amp; 1 &amp;3
+                  \end{array}\right];</m> note that 
+                  <me>\RREF(A)=\left[\begin{array}{ccc}
+                    1 &amp; 0 &amp;0\\
+                    0 &amp; 1 &amp;0\\
+                    0 &amp; 0 &amp;1\\
+                    0 &amp; 0 &amp;0
+                  \end{array}\right].</me>
+                  The following statements are all <em>invalid</em> for at least one reason. Determine what makes them invalid and, suggest alternative <em>valid</em> statements that the author may have meant instead.
+            </p>
+            <task>
+                <statement>
+                    <p>
+                        The matrix <m>A</m> is linearly independent because <m>\RREF(A)</m> has a pivot in each column.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        The matrix <m>A</m> does not span <m>\IR^4</m> because <m>\RREF(A)</m> has a row of zeroes. 
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        The set of vectors <m>S</m> spans. 
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        The set of vectors <m>S</m> is a basis. 
+                    </p>
+                </statement>
+            </task>
+        </introduction>
+        <solution>
+            <task>
+                <statement>
+                    <p>
+                        Linear independence is not a property of matrices; it's a property of sets of vectors. 
+                        One possible alternative to this statement that would be valid is <q>The set <m>S</m> is linearly independent because <m>\RREF(A)</m> has a pivot in each column.</q>
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Similar to above,  <q>spanning</q> is not a property of matrices; it's a property of sets of vectors. 
+                        One possible valid alternative would be <q>The set <m>S</m> does not span <m>\IR^4</m> because <m>\RREF(A)</m> has a row of zeroes.</q>
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Here, the author needs to be more precise: what exactly do they claim <m>S</m> to span? 
+                        Based on above, we know that <m>S</m> does not span <m>\IR^4</m>. However, perhaps the author meant to say <m>S</m> spans some three-dimensional subspace. 
+                        That is, perhaps they really meant that <m>S</m> spanned the subspace <m>\vspan(S)</m>.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Likewise, we need more precision. The set <m>S</m> is not a basis for <m>\IR^4</m>, but it is a basis for the subspace <m>\vspan(S)</m>. 
+                    </p>
+                </statement>
+            </task>
+        </solution>
+    </problem>
+
+    <problem>
+        <title>(Problem 2)</title>
+        <introduction>
+                <p>
+                  In <xref ref="observation-subspace-basis"/>, we found a basis for the subspace 
+                  <me>W=\vspan\setList{
+                    \left[\begin{array}{c}1\\2\\3\end{array}\right],
+                    \left[\begin{array}{c}2\\4\\6\end{array}\right],
+                    \left[\begin{array}{c}0\\-2\\-2\end{array}\right],
+                    \left[\begin{array}{c}1\\0\\1\end{array}\right]
+                  }.</me>
+                  To do so, we use the results of the calculation: 
+                  <me>
+                    \RREF
+                    \left[\begin{array}{cccc}
+                    1 &amp; 2 &amp; 0 &amp; 1 \\
+                    2 &amp; 4 &amp; -2 &amp; 0 \\
+                    3 &amp; 6 &amp; -2 &amp; 1 \\
+                    \end{array}\right]
+                      =
+                    \left[\begin{array}{cccc}
+                      \markedPivot{1} &amp; 2 &amp; 0 &amp; 1 \\
+                      0 &amp; 0 &amp; \markedPivot{1} &amp; 1 \\
+                      0 &amp; 0 &amp; 0 &amp; 0
+                    \end{array}\right]
+                  </me>
+                  to conclude that the set <m>\setList{
+                    \left[\begin{array}{c}1\\2\\3\end{array}\right],
+                    \left[\begin{array}{c}0\\-2\\-2\end{array}\right]
+                  }</m>, the set of vectors <em>corresponding</em> to the pivot columns of the RREF, is a basis for <m>W</m>. 
+                </p>
+              <task>
+                <statement>
+                  <p>
+                    Explain why neither of the vectors <m>
+                      \left[\begin{array}{c}1\\0\\0\end{array}\right],
+                      \left[\begin{array}{c}0\\1\\0\end{array}\right]</m> are elements of <m>W</m>. 
+                  </p>
+                </statement>
+              </task>
+              <task>
+                <statement>
+                  <p>
+                    Explain why this shows that, in general, when we calculate a basis for <m>W=\vspan\{\vec{v}_1,\dots, \vec{v}_n\}</m>, the pivot columns of <m>\RREF[\vec{v}_1\dots \vec{v}_n]</m> themselves do not form a basis for <m>W</m>.
+                  </p>
+                </statement>
+              </task>
+        </introduction>
+        <solution>
+            <task>
+                <statement>
+                    <p>The following RREF calculations illustrate that neither  <m>\left[\begin{array}{c}1\\0\\0\end{array}\right]</m> nor <m>\left[\begin{array}{c}0\\1\\0\end{array}\right]</m> are linear combinations of the set <m>\setList{
+                        \left[\begin{array}{c}1\\2\\3\end{array}\right],
+                        \left[\begin{array}{c}0\\-2\\-2\end{array}\right]
+                      }</m>:
+                        <sage language="octave">
+                            <input>
+                                rref([1,0,1;2,-2,0;3,-2,0])
+                                rref([1,0,0;2,-2,1;3,-2,0])
+                            </input>
+                        </sage>
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Consider the example above. 
+                        If we take the set consisting of the pivot columns of <m>RREF[\vec{v}_1 \vec{v}_2 \vec{v}_3 \vec{v}_4]</m>, then we get two vectors that do not even live in <m>W</m>. 
+                        Thus, there is no this set is a basis for <m>W</m>. 
+                        On the other hand, the set consisting of the first and third vectors of the original set does give us a basis. 
+                    </p>
+                    <p>
+                        This example is enough to demonstrate that, in general, we wouldn't expect the pivot columns of the RREF itself to help us. 
+                    </p>
+                </statement>
+            </task>
+        </solution>
+    </problem>
+
+    <problem>
+        <title>(Problem 3)</title>
+        <introduction>
+            <p>
+                Let <m>A</m> denote an <m>m\times n</m> matrix so that the column vectors of <m>A</m> are vectors in <m>\IR^m</m> and the row vectors of <m>A</m> (i.e., the rows) are vectors in <m>\IR^n</m>.
+                The <term>column space</term> of <m>A</m> (denoted <m>\text{Col}(A)</m>) is the subspace spanned by the columns of <m>A</m>. 
+                The <term>row space</term> of <m>A</m> (denoted <m>\text{Row}(A)</m>) is the subspace spanned by the rows of <m>A</m>. 
+                For instance, if <m>A=\left[\begin{array}{ccc}1&amp; 2&amp; 3\\ -1&amp;4&amp; 7\end{array}\right]</m>, then:
+                <me>\text{Col}(A)=\vspan\left\{\left[\begin{array}{c}1\\-1\end{array}\right],\left[\begin{array}{c}2\\4\end{array}\right],\left[\begin{array}{c}3\\7\end{array}\right]\right\}</me>
+                and 
+                <me>\text{Row}(A)=\vspan\left\{\left[\begin{array}{c}1\\2\\3\end{array}\right],\left[\begin{array}{c}-1\\4\\7\end{array}\right]\right\}.</me>
+            </p>
+            <p>
+                In <xref ref="EV6"/>, we learned how to calculate a basis for the column space of an arbitrary matrix <m>B</m>: we row reduce to calculate <m>\RREF(B)</m> and then the columns <em>corresponding</em> to the columns containing pivot positions in <m>\RREF(B)</m> form a basis. 
+                The Problem just above demonstrates why it's important to not take the pivot columns of <m>\RREF(B)</m> itself. 
+            </p>
+            <p>
+                In contrast, the non-zero rows of <m>\RREF(B)</m> will always form a basis for <m>\text{Row}(B)</m> as you will now show:
+            </p>
+            <task>
+                <statement>
+                    <p>
+                        If <m>A</m> is an arbitrary matrix, explain why the non-zero rows of <m>\RREF(A)</m> span the same subspace as the rows of <m>A</m>. 
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        If <m>A</m> is an arbitrary matrix, explain why the non-zero rows of <m>\RREF(A)</m> are always linearly independent. 
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Even though <m>\text{Row}(A)</m> and <m>\text{Col}(A)</m> are different subspaces of Euclidean vectors (in fact, unless <m>n=m</m>, the vectors in each set do not even live in the same ambient space), explain why <m>\dim(\text{Col}(A))=\dim(\text{Row}(A))</m> holds for any matrix <m>A</m>.
+                    </p>
+                </statement>
+            </task>
+        </introduction>
+        <solution>
+            <task>
+                <statement>
+                    <p>
+                        Suppose that the rows of the matrix <m>A</m> are <m>\vec{R}_1,\dots, \vec{R}_m</m>.
+                        Then, <m>\text{Row}(A)=\vspan\{\vec{R}_1,\dots, \vec{R}_m\}</m>. 
+                        We claim that for each row operation we perform on <m>A</m>, the span of the row space doesn't change. 
+                        <ul>
+                            <li>
+                                <p>
+                                    <em>Row-swapping:</em> If we swap the order of any two rows, the underlying set of vectors doesn't change. 
+                                    Therefore, the two matrices would have the same row spaces, even though the rows are in different orders. 
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <em>Scaling a row by a non-zero scalar <m>c</m>:</em> Suppose we multiply row <m>\vec{R}_i</m> by <m>c\neq 0</m>. 
+                                    Then, any linear combination that can be made with <m>\{\vec{R}_1,\dots, \vec{R}_m\}</m> can be made with the set <m>\{\vec{R}_1,\dots, c\vec{R}_i,\dots, \vec{R}_m\}</m> by scaling the corresponding amount of <m>\vec{R}_i</m> needed.
+                                    So, the span will not change. 
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <em>Adding a multiple of one row to another:</em> For concreteness, let's assume we do <m>\vec{R}_1+c\vec{R}_2\to \vec{R}_1</m>. 
+                                    Then, our original row space is <m>S=\vspan\{\vec{R}_1,\dots, \vec{R}_m\}</m> and our new row space is <m>T=\vspan\{\vec{R}_1+c\vec{R}_2,\vec{R}_2,\cdots,\vec{R}_m\}</m>.
+                                    Now, since all the vectors in <m>T</m> are linear combinations of vectors in <m>S</m>, it follows that anything in the new row space actually already lives in the old row space. 
+                                    On the other hand, since we can re-build the vector <m>\vec{R}_1</m> from <m>\vec{R}_1+c\vec{R}_2</m> by subtracting <m>c\vec{R}_2</m>, it follows that that anything in the old row space can also be built of the vectors in the new row space.
+                                </p>
+                            </li>
+                        </ul>
+                        Since calculating the RREF involves a sequence of row operations and the row operations aren't changing the row space, the result follows.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Suppose we start with the matrix <m>A</m>, compute its RREF and that <m>\vec{S}_1,\dots, \vec{S}_r</m> are the non-zero rows that appear in <m>\RREF(A)</m>.
+                        For each <m>i</m>, if we read the row from the left to the right, the first non-zero entry that we will see is a <m>1</m> because that's what corresponds to the pivots. 
+                        If we were to take a linear combination of the rows <m>a_1\vec{S}_1+\cdots+a_r\vec{S}_r</m>, then the resulting vector's entries will be one of two forms:
+                        <ol>
+                            <li>
+                                <p>
+                                    If the entry corresponds to the position of a pivot column, then this entry will just be <m>a_i</m>, corresponding to the variable in front of the pivot.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Otherwise, the entry will be some linear combination of the coefficients <m>a_1,\dots, a_r</m>.
+                                </p>
+                            </li>
+                        </ol>
+                        The only way that this combination can be the zero vector is if all of the coefficients <m>a_i</m> are themselves equal to <m>0</m>; it follows that these non-zero rows are linearly independent.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        The dimension of the column space is equal to the number of pivot columns in <m>\RREF(A)</m>. 
+                        This is equal to the number of non-zero rows in <m>\RREF(A)</m>, which gives us the dimension of the row space. 
+                    </p>
+                </statement>
+            </task>
+        </solution>
+    </problem>
+
+    <problem>
+        <title>(Problem 4)</title>
+        <introduction>
+            <p> 
+                An <m>n \times n</m> matrix <m>M</m> is <term>non-singular</term><idx>non-singular</idx> if the associated homogeneous system with coefficient matrix <m>M</m> is consistent with one solution. 
+                In what follows, assume that <m>M</m> is a non-singular matrix.
+            </p> 
+            <task>
+                <statement>
+                    <p>
+                        Explain why the RREF of <m>M</m> is the identity matrix. 
+                    </p>
+                </statement>
+            </task>     
+            <task>
+                <statement>
+                    <p>
+                        Explain why, for any column vector <m>\vec{b} = \left[\begin{array}{c}b_1\\b_2\\ \vdots \\b_n \end{array}\right]</m>, the system of equations given by <m>\left[\begin{array}{c|c}M &amp; \vec{b}\end{array}
+                            \right]</m> has a unique solution.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Explain why the columns of <m>M</m> form a basis of <m>\IR^n</m>.
+                    </p>
+                </statement>
+            </task>   
+        </introduction>
+        <solution>
+            <task>
+                <statement>
+                    <p>
+                        By definition, the system <m>\left[\begin{array}{c|c}M &amp; \vec{0}\end{array}\right]</m> has a unique solution. 
+                        This means that every column of <m>M</m> is a pivot column.
+                        Since <m>M</m> is a square matrix, it follows that every row has a pivot as well, which explains why <m>M</m> is the identity matrix. 
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        In part (a), we saw that <m>\RREF(M)</m> is equal to the identity matrix. 
+                        This means that the columns of <m>M</m> span all of <m>\IR^n</m>, which tells us that the system in question is consistent no matter what <m>\vec{b}</m> is. 
+                        But we also know that each column is a pivot column, so there are no free-variables, which tells us the system is unique. 
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        This follows from Fact 2.5.15 in <xref ref="EV5"/>.
+                    </p>
+                </statement>
+            </task>
+        </solution>
+    </problem>
+
+    <problem>
+        <title>(Problem 5)</title>
+        
+        <introduction>
+            <p>
+                A set of vectors <m>\{\vec{u}_1,\dots,\vec{u}_p\}</m> in <m>\IR^n</m> is called an <em>orthogonal set</em> if each pair of distinct vectors are orthogonal. 
+                That is, we have <m>\vec{u}_i\bullet\vec{u}_j=0</m> whenever <m>i\neq j</m>. 
+                If <m>W</m> is a subspace of <m>\IR^n</m>, then an <em>orthogonal basis</em> for <m>W</m> is a basis of <m>W</m> that is also an orthogonal set.
+            </p>
+            <task>
+                <statement>
+                    <p>
+                        Suppose that <m>S=\{\vec{u}_1,\dots, \vec{u}_p\}</m> is an orthogonal set of non-zero vectors. 
+                        Suppose further that <m>c_1,\dots, c_p</m> are scalars for which 
+                        <me>c_1\vec{u}_1+\cdots+c_p\vec{u}_p=\vec{0}.</me>
+                        Show that, in fact, each <m>c_i</m> must be equal to <m>0</m> and conclude that <m>S</m> must be linearly independent.
+                        In other words, show that any orthogonal set of non-zero vectors is linearly independent. 
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Suppose further that <m>S=\{\vec{u}_1,\dots, \vec{u}_p\}</m> is an orthogonal basis for some subspace <m>W</m> of <m>\IR^n</m> and that <m>\vec{y}\in W</m>. 
+                        Then, since <m>S</m> is a basis, we know that we can find unique scalars <m>c_1,\dots, c_p</m> for which 
+                        <me>\vec{y}=c_1\vec{u}_1+\cdots+c_p\vec{u}_p.</me>
+                        Explain why we can solve for these scalars as follows: 
+                        <me>c_i=\frac{\vec{y}\bullet\vec{u}_i}{\vec{u}_i\bullet\vec{u}_i}.</me>
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Let's put this together and practice the new terms/concepts. 
+                        Let <m>S=\left\{\begin{bmatrix}1\\0\\1\end{bmatrix},\begin{bmatrix}-1\\0\\1\end{bmatrix},\begin{bmatrix}0\\1\\0\end{bmatrix}\right\}</m>. 
+                        Verify that <m>S</m> is an orthogonal basis of <m>\IR^3</m> and explain and demonstrate how to write the vector <m>\left[\begin{array}{c}1\\2\\3\end{array}\right]</m> as a linear combination of vectors in <m>S</m> <em>without</em> doing any row reducing or solving of linear equations (for either task). 
+                    </p>
+                </statement>
+            </task>
+        </introduction>
+        <hint>
+            <p>
+                For (a): what happens if you take the left-hand-side of the vector equation in (a) and calculate the dot-product with <m>\vec{u}_i</m>?
+            </p>
+            <p>
+                For (b): try something similar to part (a). 
+            </p>
+        </hint>
+        <solution>
+            <task>
+                <statement>
+                    <p>
+                        Consider the vector equation
+                        <me>c_1\vec{u}_1+\cdots+c_p\vec{u}_p=\vec{0}.</me>
+                        If we take the dot-product of both sides of this equation with the vector <m>\vec{u}_i</m>, we get:
+                        <md>
+                            <mrow>c_1\vec{u}_1\bullet\vec{u}_1+\cdots+c_i\vec{u}_i\bullet\vec{u}_i+\cdots+c_p\vec{u}_p\bullet\vec{u}_p \amp =\vec{0}\bullet\vec{u}_i</mrow>
+                            <mrow>c_i(\vec{u}_i\bullet\vec{u}_i) \amp =0,</mrow>
+                        </md>
+                        since we have <m>\vec{u}_i\bullet\vec{u}_j=0</m> whenever <m>i\neq j</m>. 
+                        Since <m>\vec{u}_i\bullet\vec{u}_i\neq 0</m>, it follows that <m>c_i=0</m>. 
+                    </p>
+                    <p>
+                        Repeating this for each choice of <m>i</m>, we conclude that, in fact, <em>all</em> of the coefficient <m>c_1,\dots, c_p</m> must be equal to <m>0</m>, which shows that the set of vectors is linearly indepent. 
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Start with
+                        <me>\vec{y}=c_1\vec{u}_1+\cdots+c_p\vec{u}_p.</me>
+                        Taking the dot product with the vector <m>\vec{u}_i</m> and using similar reasoning as above, we find that
+                        <me>\vec{y}\bullet\vec{u}_i=c_i(\vec{u}_i\bullet\vec{u}_i)</me>
+                        or
+                        <me>c_i=\frac{\vec{y}\bullet\vec{u}_i}{\vec{u}_i\bullet\vec{u}_i}.</me>
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Here, let <m>S=\vspan\left\{\begin{bmatrix}1\\0\\1\end{bmatrix},\begin{bmatrix}-1\\0\\1\end{bmatrix},\begin{bmatrix}0\\1\\0\end{bmatrix}\right\}=\left\{\vec{u}_1,\vec{u}_2,\vec{u}_3\right\}.</m>
+                        Then, by computing the dot products, we find that <m>\vec{u}_1\bullet\vec{u}_2=\vec{u}_2\bullet\vec{u}_3=\vec{u}_1\bullet\vec{u}_3=0.</m>
+                        It follows that <m>S</m> is an orthogonal set and therefore linearly independent. 
+                        Since <m>S</m> has three vectors, it follows that <m>S</m> must also span <m>\IR^3</m>; therefore, <m>S</m> is an orthogonal basis. 
+                    </p>
+                    <p>
+                        Using our result above, we know that we can find the coefficients that build <m>\vec{y}</m> by computing dot products:
+                        <md>
+                            <mrow>\vec{u}_1\bullet\vec{y} \amp =4</mrow>
+                            <mrow>\vec{u}_2\bullet\vec{y} \amp =2</mrow>
+                            <mrow>\vec{u}_3\bullet\vec{y} \amp =2</mrow>
+                            <mrow>\vec{u}_1\bullet\vec{u}_1 \amp =2</mrow>
+                            <mrow>\vec{u}_2\bullet\vec{u}_2 \amp =2</mrow>
+                            <mrow>\vec{u}_3\bullet\vec{u}_3 \amp =1.</mrow>
+                        </md>
+                        It follows that 
+                        <me>\vec{y}=\frac{4}{2}\vec{u}_1+\frac{2}{2}\vec{u}_2+2\vec{u}_3=2\vec{u}_1+\vec{u}_2+2\vec{u}_3.</me>
+                    </p>
+                </statement>
+            </task>
+        </solution>
+    </problem>
+</section>

@@ -1,0 +1,477 @@
+<section xml:id="sec-pset1-linear">
+    <title>Problem Set 1</title>
+    <paragraphs>
+        <title>Instructions</title>
+        <p>
+            Prior to beginning this problem set, consider reading the Problem Set Success Guide <xref ref="pset-intro"/> for advice and clarity around expectations for Problem Sets in this course. 
+            Upload your solutions to all problems on this page to gradescope as a single .pdf file, remembering to assign pages appropriately for each question. 
+            Complete instructions for Problem Sets are available on Canvas.
+        </p>
+    </paragraphs>
+    <problem>
+        <introduction>
+            <statement>
+                <p>
+                    In this problem, you will explore two different families of linear systems from both an algebraic and geometric perspective.
+                </p>
+            </statement>
+            <task>
+                <statement>
+                    <p>
+                        Consider the linear system:
+                        <md alignment="alignat" alignat-columns="2">
+                            <mrow>
+                                    x_1 - x_2 &amp;\,=\,&amp; 1
+                            </mrow>
+                            <mrow>
+                                    3x_1 - 3x_2 &amp;\,=\,&amp; k.
+                            </mrow>
+                        </md>
+                        This linear system is consistent with infinitely many solutions for a unique value of <m>k</m> and is inconsistent for all other values of <m>k</m>.
+                        <ol>
+                            <li>
+                                <p>
+                                    Use algebra and the concepts we've learned about in <xref ref="LE"/> to explain why the above statement is true. 
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Provide an alternative explanation using geometry. 
+                                </p>
+                            </li>
+                        </ol>
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Consider the linear system:
+                        <md alignment="alignat" alignat-columns="2">
+                            <mrow>
+                                    x_1 - x_2 &amp;\,=\,&amp; 1
+                            </mrow>
+                            <mrow>
+                                    3x_1 - kx_2 &amp;\,=\,&amp; 3.
+                            </mrow>
+                        </md>
+                        This linear system is consistent with infinitely many solutions for a unique value of <m>k</m> and is consistent with a unique solution for all other values of <m>k</m>.
+                        <ol>
+                            <li>
+                                <p>
+                                    Use algebra and the concepts we've learned about in <xref ref="LE"/> to explain why the above statement is true. 
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Provide an alternative explanation using geometry. 
+                                </p>
+                            </li>
+                        </ol>
+                    </p>
+                </statement>
+            </task>
+        </introduction>
+        <hint>
+            <p>
+                Interpret each equation as defining a line in the plane.
+                How do the lines vary as <m>k</m> varies? 
+            </p>
+        </hint>
+
+        <solution>
+            <task>
+                <ol>
+                    <li>
+                        <p>
+                            One algebraic approach is to first consider the corresponding augmented matrix:
+                            <me>\left[\begin{array}{cc|c}1 &amp; -1 &amp; 1\\
+                                3&amp; -3&amp; k\end{array}\right].</me>
+                            Using row operations, the corresponding RREF is equal to:
+                            <me>\left[\begin{array}{cc|c}1 &amp; -1 &amp; 1\\
+                               0 &amp; 0&amp; k-3\end{array}\right].</me>
+                            Then, by <xref ref="LE3-fact-scenarios"/>, the linear system is inconsistent whenever <m>k\neq 3</m> and is consistent with infinitely many solutions when <m>k=3</m>.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Geometrically, each of the given linear equations describe lines in the <m>x_1x_2</m>-plane. 
+                            Re-writing the equations as follows:
+                            <md alignment="alignat" alignat-columns="2">
+                                <mrow>
+                                        x_1 &amp;\,=\,&amp; 1+x_2
+                                </mrow>
+                                <mrow>
+                                        x_1 &amp;\,=\,&amp;\frac{k}{3}+x_2,
+                                </mrow>
+                            </md>
+                            we see that the lines have the same slopes, i.e., they are parallel. 
+                            It follows that the lines must be identical (in which case the corresponding) solution is infinite, or else they do not intersect at all, in which case there are no solutions. 
+                            This corresponds to the case where <m>k=3</m> and <m>k\neq 3</m> respectively. 
+
+                        </p>
+                    </li>
+                </ol>
+            </task>
+            <task>
+                <ol>
+                    <li>
+                        <p>
+                            One algebraic approach is to first consider the corresponding augmented matrix:
+                            <me>\left[\begin{array}{cc|c}1 &amp; -1 &amp; 1\\
+                                3&amp; -k&amp; 3\end{array}\right].</me>
+                            Using row operations, the corresponding equivalent to:
+                            <me>\left[\begin{array}{cc|c}1 &amp; -1 &amp; 1\\
+                               0 &amp; k-3&amp; 0\end{array}\right].</me>
+                            If <m>k=3</m>, then this augmented matrix is in RREF and by <xref ref="LE3-fact-scenarios"/>, the system has infinitely many solutions. 
+                            Otherwise, when <m>k\neq 3</m>, then the RREF is given by:
+                            <me>\left[\begin{array}{cc|c}1 &amp; 0 &amp; 1\\
+                                0 &amp; 1&amp; 0\end{array}\right]</me>
+                            and the linear system is consistent with a unique solution.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            In the <m>x_1x_2</m>-plane, the first equation describes the line passing through <m>(1,0)</m> with slope equal to <m>1</m>. 
+                            The second line corresponds to the line passing through <m>(1,0)</m> with slope equal to <m>\frac{k}{3}</m>. 
+                            Two lines passing through the same point are either equal or intersect in a single point (the point of common intersection). 
+                            This happens when <m>k=3</m> and <m>k\neq 3</m> respectively, which correspond to the system having infinitely many solutions or a single solution, as desired.
+
+                        </p>
+                    </li>
+                </ol>
+            </task>
+        </solution>
+    </problem>
+
+    <problem>
+        <introduction>
+            <statement>
+                <p>
+                    Consider the following linear system, its augmented matrix <m>B</m>, and <m>\RREF(B)</m>:
+                    <me>
+                        \begin{matrix} 2 \, x_{1} &amp; - &amp; 2 \, x_{2} &amp; - &amp; 8 \, x_{3} &amp; + &amp; 3 \, x_{4} &amp; - &amp; 9 \, x_{5} &amp; = &amp; -17 \\ -x_{1} &amp; &amp; &amp; + &amp; x_{3} &amp; - &amp; x_{4} &amp; + &amp; 2 \, x_{5} &amp; = &amp; 6 \\ 2 \, x_{1} &amp; - &amp; x_{2} &amp; - &amp; 5 \, x_{3} &amp; + &amp; x_{4} &amp; - &amp; 5 \, x_{5} &amp; = &amp; -10 \\ -x_{1} &amp; + &amp; 3 \, x_{2} &amp; + &amp; 10 \, x_{3} &amp; &amp; &amp; + &amp; 7 \, x_{5} &amp; = &amp; 6 \\ \end{matrix}
+                    </me>
+                    <me>
+                        B=\left[\begin{array}{ccccc|c}
+                    2 &amp; -2 &amp; -8 &amp; 3 &amp; -9 &amp; -17\\
+                    -1 &amp; 0 &amp; 1 &amp; -1 &amp; 2 &amp; 6\\
+                    2 &amp; -1 &amp; -5 &amp; 1 &amp; -5 &amp; -10\\
+                    -1 &amp; 3 &amp; 10 &amp; 0 &amp; 7 &amp; 6\\
+                    \end{array}\right]
+                    </me>
+                    <me>
+                    \RREF(B)=\left[\begin{array}{ccccc|c}
+                    1 &amp; 0 &amp; -1 &amp; 0 &amp; -1 &amp; -3\\
+                    0 &amp; 1 &amp; 3 &amp; 0 &amp; 2 &amp; 1\\
+                    0 &amp; 0 &amp; 0 &amp; 1 &amp; -1 &amp; -3\\
+                    0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\
+                    \end{array}\right].
+                    </me>
+                    All of the following statements are not accurate or otherwise incorrect; identify what is problematic about the statements and correct them.
+                </p>
+            </statement>
+        <task>
+          <statement>
+            <p>
+              The matrix <m>B</m> is consistent with infinitely many solutions. 
+            </p>
+          </statement>
+        </task>
+        <task>
+          <statement>
+            <p>
+              The solution set to the linear system is given by 
+              <m>\left[\begin{array}{c} a + b - 3 \\ -3 \, a - 2 \, b + 1 \\ a \\ b - 3 \\ b \end{array}\right]</m>.
+            </p>
+          </statement>
+        </task>
+        <task>
+          <statement>
+            <p>
+              The variables <m>x_3,x_5</m> are free. Setting them equal to <m>a,b</m> respectively and solving for the bound variables, the solution set to the linear system is given by
+              <m>\left\{ \left[\begin{array}{c} a + b - 3 \\ -3 \, a - 2 \, b + 1 \\ b - 3 \end{array}\right] \,\middle|\, a,b \in\mathbb R \right\}</m>.
+            </p>
+          </statement>
+        </task>
+        </introduction>
+
+        <solution>
+            <task>
+                <statement>
+                    <p>
+                        A matrix is not an equation, or even a system of equations; a matrix an array of real numbers. 
+                        Therefore, it does not make sense to say that <m>B</m> is consistent/inconsistent, let alone speak to how many solutions it has. 
+                    </p>
+                    <p>
+                       The given features of <m>\RREF(B)</m>, together with <xref ref="LE3-fact-scenarios"/> indicate that the linear system we were provided is consistent with infinitely many solutions.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        The given expression is a single vector with parameters, for which we are not told anything about. 
+                        The correct way to express the solution set of this system of equations is: 
+                        <me>\left\{ \left[\begin{array}{c} a + b - 3 \\ -3 \, a - 2 \, b + 1 \\a\\ b - 3\\b \end{array}\right] \,\middle|\, a,b \in\mathbb R \right\}.</me>
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        The variables <m>x_3,x_5</m> are indeed free variables and the components of the vectors supplied are the correct expressions for the bound variables <m>x_1,x_2,x_4</m> in terms of the free ones.
+                        However, solutions to the linear system have five components (our variables are <m>x_1,x_2,x_3,x_4,x_5</m>) and so our solution set must consist of vectors in <m>\IR^5</m>.
+                        The correct solution set is given above in part (b). 
+                    </p>
+                </statement>
+            </task>
+        </solution>
+    </problem>
+
+    <problem>
+        <introduction>
+            <statement>
+                <p>
+                    An important step in internalizing concepts and definitions is coming up with your own examples. 
+                    Consider how might incorporate exercises like the following as part of your regular study routines.
+                </p>
+            </statement>
+            <task>
+                    <p>
+                        Construct a system of 3 equations in 3 variables having:
+                        <ul> 
+                            <li>
+                                0 free variables
+                            </li>
+                            <li>
+                                1 free variable
+                            </li> 
+                            <li>
+                                2 free variables
+                            </li>
+                            <li>
+                                <p>
+                                    3 free variables
+                                </p>
+                            </li>
+                        </ul>
+                    In each case, solve the system you have created and write its solution-set in set-notation. 
+                    </p>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Find three examples of linear systems for which the RREF of their augmented matrices is equal to 
+                        <me>
+                            \left[\begin{array}{ccc|c} 1 &amp; 4 &amp; 2 &amp; -4 \\ 0 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0 \end{array}\right].
+                        </me>
+                        What do the three matrices you found have in common? 
+                        Based on this, what do you think might be true of an arbitrary matrix for which its RREF is the matrix given above?
+                    </p>
+                </statement>
+            </task>
+        </introduction>
+        <solution>
+            <task>
+                    <p>
+                        Note that solutions will undoubtedly vary because there are lots of different choices for valid examples!
+                        Here is what came to my mind:
+                    </p>
+                <ul>
+                    <li>
+                        <p>
+                            The following system has no free variables:
+                            <md alignment="alignat" alignat-columns="4">
+                                <mrow>
+                                        x_1 &amp; &amp;\,=\,&amp; 1
+                                </mrow>
+                                <mrow>
+                                        &amp;x_2 &amp;\,=\,&amp; 2
+                                </mrow>
+                                <mrow>
+                                    &amp;&amp;x_3\,=\,&amp;3. 
+                                </mrow>
+                            </md>
+                            Its solution set is <m>\left\{\left[\begin{array}{c}1\\2\\3\end{array}\right]\right\}</m>.
+                        </p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <p>
+                            The following system has 1 free variable (namely, <m>x_3</m>):
+                            <md alignment="alignat" alignat-columns="4">
+                                <mrow>
+                                        x_1 &amp; &amp;\,=\,&amp; 1
+                                </mrow>
+                                <mrow>
+                                        &amp;x_2 &amp;\,=\,&amp; 2
+                                </mrow>
+                                <mrow>
+                                    &amp;&amp;0\,=\,&amp;0. 
+                                </mrow>
+                            </md>
+                            Its solution set is <m>\left\{\left[\begin{array}{c}1\\2\\b\end{array}\right]\,\middle|\, b \in\mathbb R\right\}</m>.
+                        </p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <p>
+                            The following system has 2 free variable (namely, <m>x_2,x_3</m>):
+                            <md alignment="alignat" alignat-columns="4">
+                                <mrow>
+                                        x_1 &amp; &amp;\,=\,&amp; 1
+                                </mrow>
+                                <mrow>
+                                        &amp; &amp;0\,=\,&amp; 0
+                                </mrow>
+                                <mrow>
+                                    &amp;&amp;0\,=\,&amp;0. 
+                                </mrow>
+                            </md>
+                            Its solution set is <m>\left\{\left[\begin{array}{c}1\\a\\b\end{array}\right]\,\middle|\, a,b \in\mathbb R\right\}</m>.
+                        </p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <p>
+                            In the following system, all three of <m>x_1,x_2,x_3</m> are free:
+                            <md alignment="alignat" alignat-columns="4">
+                                <mrow>
+                                         &amp; &amp;0\,=\,&amp; 0
+                                </mrow>
+                                <mrow>
+                                        &amp; &amp;0\,=\,&amp; 0
+                                </mrow>
+                                <mrow>
+                                    &amp;&amp;0\,=\,&amp;0. 
+                                </mrow>
+                            </md>
+                            Its solution set is <m>\IR^3</m> because these equations are valid no matter what. 
+                        </p>
+                    </li>
+                </ul>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        The RREF of the following matrices are all equal to the given matrix:
+                        <ul>
+                            <li>
+                                <p>
+                                    <me>
+                                        \left[\begin{array}{ccc|c} 2 &amp; 8 &amp; 4 &amp; -8 \\ 0 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0 \end{array}\right];
+                                    </me>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <me>
+                                        \left[\begin{array}{ccc|c} 1 &amp; 4 &amp; 2 &amp; -4 \\ 2 &amp; 8 &amp; 4 &amp; -8 \\ 0 &amp; 0 &amp; 0 &amp; 0 \end{array}\right];
+                                    </me>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <me>
+                                        \left[\begin{array}{ccc|c} 1 &amp; 4 &amp; 2 &amp; -4 \\ 2 &amp; 8 &amp; 4 &amp; -8 \\ 3 &amp; 12 &amp; 6 &amp; -12 \end{array}\right].
+                                    </me>
+                                </p>
+                            </li>
+                        </ul>                        
+                    </p>
+                    <p>
+                        All of these matrices satisfy the following property: each row is a multiple of the first (and only) non-zero row of the matrix that was given to us.
+                        In general, any matrix that we can find that is equivalent to our given matrix must be obtained by apply row operations. 
+                        If we start with a matrix, such as this, with only one non-zero row, then our row operations can only create rows that are multiples of this original row, which means that this phenomena was not a coincidence of the examples we wrote down but, rather, will happen generally. 
+                    </p>
+                </statement>
+            </task>
+        </solution>
+    </problem>
+
+    <problem>
+        <introduction>
+            <p>
+                For each of the following statements, decide if it's true or false. 
+                If you think it's true, provide an explanation for why it is true.
+                If you think it's false, find a counterexample that demonstrates that it is false. 
+                <ul>
+                    <li>
+                        If the coefficient matrix of a system of linear equations has a pivot in the rightmost column, then the system is inconsistent.
+                    </li>
+                    <!--<li>
+                        If a system of equations has two equations and four unknowns, then it must be consistent.
+                    </li>-->
+                    <li> 
+                        If a system of equations having four equations and three unknowns is consistent, then the solution is unique.
+                    </li>
+                    <!--<li>
+                        Suppose that a linear system has four equations and four unknowns and that the coefficient matrix has four pivots. 
+                        Then the linear system is consistent and has a unique solution.
+                    </li>-->
+                    <li>
+                        Suppose that a linear system has five equations and three unknowns and that the coefficient matrix has a pivot in every column. Then the linear system is consistent and has a unique solution.
+                    </li>
+                </ul>
+            </p>
+        </introduction>
+        <solution>
+            <p>
+                <ul>
+                    <li>
+                        <p>
+                            This statement is false. 
+                            Consider the following augmented matrix:
+                            <me>\left[\begin{array}{cc|c}1&amp; 0&amp; 4\\0&amp;1&amp; 3\end{array}\right].</me>
+                            Then, all columns of the coefficient matrix have a pivot (in particular the right-most), but the system is consistent because the rightmost column of the <em>augmented</em> matrix does not contain a pivot.
+                        </p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <p>
+                            This statement is false. 
+                            Consider the following augmented matrix:
+                            <me>\left[\begin{array}{ccc|c}1&amp; 0&amp; 0&amp; 1\\0&amp; 0&amp;0&amp; 0\\0&amp;0&amp; 0&amp;0\end{array}\right].</me>
+                            This matrix corresponds to a linear system that is consistent and for which <m>x_2,x_3</m> are free variables; in particular, the solution set is infinite. 
+                        </p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <p>
+                            This statement is also false. 
+                            The assumptions tell us that, if the system were consistent, then there would be no free variable and, therefore, any solution would be unique.
+                            However, the assumptions do not rule out a system corresponding to the following augmented matrix:
+                            <me>\left[\begin{array}{ccc|c}1&amp;0&amp;0&amp;1\\0&amp;1&amp;0&amp;2\\0&amp;0&amp;1&amp;5\\0&amp;0&amp;0&amp;1\\0&amp;0&amp;0&amp;0\end{array}\right].</me>
+                            This augmented matrix corresponds to a linear system that is inconsistent, despite the coefficient matrix having a pivot in each of its columns.
+                        </p>
+                    </li>
+                </ul>
+            </p>
+        </solution>
+    </problem>
+
+    <problem>
+        <introduction>
+            <p>
+                Consider the following statement: <q>It is possible for two consistent linear systems to have the same underlying coefficient matrix, but have different numbers of free variables</q>.
+                Determine if this statement is true or false. 
+                If you think it is true, provide an example that demonstrates as such; if you think it is false, explain why it is not possible to find two such systems.
+            </p>
+        </introduction>
+        <solution>
+            <p>
+                This statement is false. 
+                Indeed, because we are told that the two systems are consistent, the number of free and bound variables is completely determined by the number of columns that contain pivots in their <em>coefficient</em> matrices. 
+                Since we're assuming the two systems have the same coefficient matrices, these values must be the same for both systems, even if their right-hand sides are different.
+            </p>
+        </solution>
+    </problem>
+
+
+</section>

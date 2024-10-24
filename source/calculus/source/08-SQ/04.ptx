@@ -66,7 +66,7 @@ What convergent series does each of the following images illustrate?
     
     <fact xml:id="geometricseriesconverge"> 
         <p>
-<term>Geometric series</term> are sums of the form <me>\sum_{n=0}^\infty ar^n=a+ar+ar^2+ar^3+\dots</me>, 
+<term>Geometric series</term> are sums of the form <me>a+ar+ar^2+ar^3+\dots</me>, 
 where <m>a</m> and <m>r</m> are real numbers. When <m>|r|&lt;1</m> this series converges to the value
 <m>\displaystyle\frac{a}{1-r}</m>. Otherwise, the geometric series diverges.
     </p>
@@ -105,24 +105,45 @@ to find the value of this series.
         
         
         <activity xml:id="activity-SQ4truncatedgeom">
+            <introduction>
                 <p>
-                    Complete the following calculation, noting <m>|0.6|&lt;1</m>:
-                    <md>
-<mrow>\sum_{n=2}^\infty 2(0.6)^n &amp;=\left(\sum_{n=0}^\infty 2(0.6)^n\right) - \unknown - \unknown </mrow>
-<mrow> &amp; = \left(\frac{\unknown}{1-\unknown}\right)- \unknown - \unknown </mrow>
-                    </md>
-                    What does this simplify to?
+                    Consider the following series:
+                    <me>
+\sum_{n=2}^\infty 2(0.6)^n.
+                    </me>
+                    
                 </p>
-                    <ol marker="A." cols="2">
-                        <li><m>1.1</m></li>
-                        <li><m>1.4</m></li>
-                        <li><m>1.8</m></li>
-                        <li><m>2.1</m></li>
-                    </ol>
+            </introduction>
+            <task>
+                <statement>
+                    <p>
+                        Is this series geometric?
+                        <ol marker="A." cols="2">
+                            <li>Yes; we have <m>a=1</m> and <m>r=0.6</m></li>
+                            <li>Yes; we have <m>a=2</m> and <m>r=(0.6)^n</m></li>
+                            <li>Yes; we have <m>a=2(0.6)^2</m> and <m>r=0.6</m></li>
+                            <li>No, this is not geometric.</li>
+                        </ol>
+                    </p>
+                </statement>
+            </task>
+                <task>
+                    <statement>
+                        <p>What does this series converge to?
+                            <ol marker="A." cols="2">
+                                <li><m>1.1</m></li>
+                                <li><m>1.4</m></li>
+                                <li><m>1.8</m></li>
+                                <li>The series does not converge</li>
+                            </ol>
+                        </p>
+                    </statement>
+                </task>
+                    
         </activity>
         
         
-        <observation xml:id="observation-SQ4modifiedgeometric">
+<!--        <observation xml:id="observation-SQ4modifiedgeometric">
             <statement>
                 <p>
                     Given a series that appears to be mostly geometric such as
@@ -139,7 +160,7 @@ When the series diverges as in this example, then the reason why (<m>|1.1|\geq 1
 seen without any modification of the original series.
                 </p>
             </statement>
-        </observation>
+        </observation>-->
         
         
         <activity xml:id="activity-SQ4evaluatingmodifiedgeo">
