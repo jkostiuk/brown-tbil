@@ -1,0 +1,194 @@
+<section xml:id="sec-pset5-linear">
+    <title>Problem Set 5</title>
+    <paragraphs>
+        <title>Instructions</title>
+        <p>
+            Prior to beginning this problem set, consider reading the Problem Set Success Guide <xref ref="pset-intro"/> for advice and clarity around expectations for Problem Sets in this course. 
+            Upload your solutions to all problems on this page to gradescope as a single .pdf file, remembering to assign pages appropriately for each question. 
+            Complete instructions for Problem Sets are available on Canvas.
+        </p>
+    </paragraphs>
+
+    <problem>
+        <title>(Problem 1)</title>
+        <introduction>
+            <p>
+                In class, we defined the inverse of a matrix in two steps. 
+                First, if <m>A</m> is a matrix, we said that <m>A</m> was invertible if the corresponding linear map <m>T\colon\IR^n\to\IR^n</m> was an invertible function. 
+                Given this, the inverse of <m>A</m>, denoted <m>A^{-1}</m> was defined to be the standard matrix of the inverse linear map <m>T^{-1}\colon\IR^\n\to\IR^n</m>. 
+            </p>
+            <p>
+                An alternative approach would be: an <m>n\times n</m> matrix <m>A</m> is invertible if we can find a matrix <m>B</m> for which <m>AB=BA=I_n</m>; in this case, <m>B</m> is unique and we define <m>A^{-1}</m> to be this matrix. 
+                For this problem (and future ones) you may decide to use either characterization you want. 
+            </p>
+          <task>
+            <statement>
+                <p>
+                    If <m>A,B</m> are both invertible matrices, explain why <m>AB</m> is also invertible and that <m>(AB)^{-1}=B^{-1}A^{-1}</m>.
+                </p>
+            </statement>
+          </task>
+          <task>
+            <statement>
+                <p>
+                    If <m>A,B</m> are <m>n\times n</m> matrices and <m>A</m> is invertible, explain and demonstrate how to solve the following matrix equations:
+                    <ol>
+                        <li>
+                            <p>
+                                <m>A^{-1}XA=B</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>AXA^{-1}=B</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>ABX=I</m>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+          </task>
+          <task>
+            <statement>
+                <p>
+                    If <m>H,G</m> are invertible matrices, is it necessarily the case that <m>(H+G)</m> is invertible? If yes, prove it; if not, provide a counterexample. 
+                </p>
+            </statement>
+          </task>
+        </introduction>
+    </problem>
+
+    <problem>
+        <title>(Problem 2)</title>
+       <introduction>
+        <p>
+            Let <m>A</m> and <m>B</m> be two matrices for which the products <m>AB</m> and <m>BA</m> are both defined. 
+            If <m>AB=BA</m>, we say that <m>A,B</m> <em>commute</em>; if <m>AB=-BA</m>, we say that <m>A</m> and <m>B</m> <em>anti-commute</em>.
+        </p>
+        <task>
+            <statement>
+                <p>
+                    Let <m>A=\left[\begin{array}{cc}1&amp; 3\\-1&amp; 1\end{array}\right]</m> and <m>S=\{X\in M_{2,2}|\ AX=XA\}</m> be the subset of <m>2\times 2</m> matrices that commute with <m>A</m>.
+                    Explain why <m>S</m> is a subspace of <m>M_{2,2}</m> and explain and demonstrate how to find a basis for <m>S</m>. 
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Let <m>B=\left[\begin{array}{cc}0&amp; 1\\-1&amp; 0\end{array}\right]</m> and <m>T=\{Y\in M_{2,2}|\ BY=-YB\}</m> be the subset of <m>2\times 2</m> matrices that anti-commute with <m>B</m>.
+                    Explain why <m>T</m> is a subspace of <m>M_{2,2}</m> and explain and demonstrate how to find a basis for <m>T</m>. 
+                </p>
+            </statement>
+        </task>
+       </introduction>
+    </problem>
+
+    <problem>
+        <title>(Problem 3)</title>
+        <introduction>
+           <p>
+                Suppose that <m>S\colon V\to W</m> and <m>T\colon W\to U</m> are two linear transformations of vector spaces.
+           </p>
+           <task>
+            <statement>
+                <p>
+                    If <m>S</m> and <m>T</m> are both surjective, explain why <m>T\circ S</m> is also surjective.
+                </p>
+            </statement>
+           </task>
+           <task>
+            <statement>
+                <p>
+                    Let <m>A</m> be an <m>m\times n</m> matrix and <m>B</m> an <m>n\times k</m> matrix.
+                    Suppose further that we know that <m>\RREF(A)</m> and <m>\RREF(B)</m> have pivot positions in each row. 
+                    Explain why each row of <m>\RREF(AB)</m> also has a pivot. 
+                </p>
+            </statement>
+           </task>
+           <task>
+            <statement>
+                <p>
+                    Again, let <m>A</m> be an <m>m\times n</m> matrix and <m>B</m> an <m>n\times k</m> matrix.
+                    Suppose we know that <m>\RREF(AB)</m> has a pivot in each row. 
+                    Explain why <m>\RREF(A)</m> must also have a pivot position in each of its rows, but show, by providing an example, that it is possible for some row of <m>\RREF(B)</m> to be missing a pivot. 
+
+                </p>
+            </statement>
+           </task>
+           <statement>
+            <p>
+                <alert>Remark:</alert> If you'd like explore further: formulate and answer a related sequence of activities involving injective transformations and products of matrices whose RREFs have pivots in each column. 
+            </p>
+           </statement>
+        </introduction>
+    </problem>
+
+    <observation>
+        <title>A Different Take on Matrix Multiplication</title>
+        <p>
+            In class, we defined the product of two matrices to be the standard matrix of the composition of the two corresponding linear transformations. 
+            Here is an alternate formula/definition for the matrix product that builds on the work you've been doing with dot-products. 
+        </p>
+
+        <p>
+            Suppose that <m>A</m> is an <m>m\times n</m> matrix and that <m>B</m> is an <m>m\times k</m> matrix. 
+            Let <m>\vec{r}_1,\dots,\vec{r}_m</m> be the rows of <m>A</m> and let <m>\vec{c}_1,\dots,\vec{c}_k</m> be the columns of <m>B</m>, so that we can write <m>A=\left[\begin{array}{c}\vec{r}_1\\\vdots\\\vec{r}_m\end{array}\right]</m> and <m>B=[\vec{c}_1\ \cdots\ \vec{c}_k]</m>.
+            Since the rows of <m>A</m> and the columns of <m>B</m> are all vectors in <m>\IR^n</m>, it makes sense to take the dot-product between them. 
+            The matrix product can then be defined by 
+            <me>AB=\left[\begin{array}{ccc}\vec{r}_1\bullet\vec{c}_1&amp;\cdots&amp;\ \vec{r}_1\bullet\vec{c}_k\\\vdots &amp;\vdots &amp; \vdots\\\vec{r}_m\bullet\vec{c}_1&amp;\cdots&amp; \vec{r}_m\bullet\vec{c}_k\end{array}\right].</me>
+            In other words, the <m>ij</m> entry of the product <m>AB</m> is the dot-product of the <m>i</m>-th row of <m>A</m> and the <m>j</m>-th column of <m>B</m>.
+        </p>
+        <p>
+            As an example, in class, we computed that:
+            <me>\left[\begin{array}{cc}1&amp;2\\0&amp;1\\3&amp;5\\-1&amp;-2\end{array}\right]\left[\begin{array}{ccc}2&amp;1&amp;-3\\5&amp;-3&amp;4\end{array}\right]=\left[\begin{array}{ccc}12&amp;-5&amp;5\\5&amp;-3&amp;4\\31&amp;-12&amp;11\\-12&amp;5&amp;-5\end{array}\right].</me>
+        </p>
+        <p>
+            Now, we can check the above as follows: we see that the <m>(3,2)</m> entry of this product is <m>-12</m>.
+            This is the same as taking the dot-product of the third row of <m>A</m> and the second column of <m>B</m>:
+            <me>\left[\begin{array}{c}3\\5\end{array}\right]\bullet\left[\begin{array}{c}1\\-3\end{array}\right]=-12.</me>
+        </p>
+    </observation>
+
+    <problem>
+        <title>(Problem 4)</title>
+        <introduction>
+        <statement>
+            <p>
+                Use the above conceptualization of matrix-product to revisit some old friends with a new perspective.
+            </p>
+        </statement>
+        <task>
+            <statement>
+                <p>
+                    Let <m>T\colon\IR^n\to\IR^m</m> be a linear transformation with <m>m\times n</m> standard matrix <m>A</m>.
+                    Explain why the kernel of <m>T</m> is equal to the orthogonal complement of the row space of <m>A</m>.
+                    That is, explain why:
+                    <me>\ker(T)=\textrm{Row}(A)^\perp.</me>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Using part (a), explain and demonstrate how to calculate a basis for <m>W^\perp</m> where:
+                    <me>W=\vspan\left\{\left[\begin{array}{c}1\\2\\-3\\2\end{array}\right],\left[\begin{array}{c}2\\7\\-1\\5\end{array}\right]\right\}.</me>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Let <m>W</m> be a subspace of <m>\IR^n</m>. 
+                    Explain, using results covered in class or in previous problems sets, why
+                    <me>\dim(W)+\dim(W^\perp)=n.</me>
+                </p>
+            </statement>
+        </task>
+        </introduction>
+    </problem>
+</section>
