@@ -31,19 +31,7 @@
                 </p>
             </task>
 
-    <fact xml:id="fact-SQ6sumAndMultipleRules">
-            <statement>
-      <p permid="QCd">
-        If <m>\displaystyle\sum a_n=A</m>,
-          <m>\displaystyle\sum b_n=B</m>, and
-          <m>c</m> is a real number, then
-          <ol>
-          <li><m>\displaystyle\sum ca_n=c\displaystyle\sum a_n=cA</m>, and</li>
-          <li><m>\displaystyle\sum (a_n+b_n)=\sum a_n+\displaystyle\sum b_n=A+B</m>.</li>
-              </ol>
-      </p>
-                </statement>
-        </fact>
+ 
             
         <task>
                 <p>
@@ -57,6 +45,20 @@
                 </p>
             </task>
         </activity>
+
+        <fact xml:id="fact-SQ6sumAndMultipleRules">
+            <statement>
+            <p>
+            If <m>\displaystyle\sum a_n=A</m>,
+            <m>\displaystyle\sum b_n=B</m>, and
+            <m>c</m> is a real number, then
+            <ol>
+                <li><m>\displaystyle\sum ca_n=c\displaystyle\sum a_n=cA</m>, and</li>
+                <li><m>\displaystyle\sum (a_n+b_n)=\sum a_n+\displaystyle\sum b_n=A+B</m>.</li>
+            </ol>
+            </p>
+            </statement>
+        </fact>
         
         
         <activity xml:id="activity-SQ6sortofmultiplesequence">
@@ -144,60 +146,26 @@
                 </statement>
         </fact>
         
-        
-        <activity xml:id="activity-SQ6conversenottrue">
+        <example>
             <introduction>
                 <p>
-                    Recall that <me>\displaystyle \sum_{n=1}^\infty \frac{1}{2^n}</me> converges.
+                    Above, we considered the series <m>\sum_{n=0}^\infty a_n=\sum_{n=0}^\infty \frac{3}{2^n}</m> and <m>\sum_{n=0}^\infty b_n=\sum_{n=0}^\infty \frac{(3+\left(0.1 \right)^n)}{2^n}</m>.
+                    Use the Limit Comparison Test to confirm our intuition. 
                 </p>
             </introduction>
-            <task>
+            <solution>
                 <p>
-               Let <m>b_n=\frac{1}{n}</m>. Compute <m>\displaystyle \lim_{n\to\infty}\frac{\frac{1}{n}}{\frac{1}{2^n}}</m>.
+                    Notation as above, we have
+                    <me>\frac{b_n}{a_n}=\frac{\frac{3+(0.1)^n}{2^n}}{\frac{3}{2^n}}=\frac{3+(0.1)^n}{3}.</me>
+                    As <m>n\to\infty</m>, this approaches <m>1</m>, so the Limit Comparison Test says these two series have the same convergence behaviour.  
                 </p>
-                <ol marker="A." cols="2">
-                    <li><m>-\infty</m>.</li>
-                    <li><m>0</m>.</li>
-                    <li><m>\displaystyle \frac{1}{2}</m>.</li>
-                    <li><m>1</m>.</li>
-                    <li><m>\infty</m>.</li>
-                </ol>
-            </task>
-            <task>
                 <p>
-                    Does <m>\displaystyle\sum_{n=1}^\infty \frac{1}{n}</m> converge or diverge?
+                    Since the series <m>\sum_{n=0}^\infty a_n</m> is a multiple of a geometric series with common ratio <m>\frac{1}{2}</m>, it converges; therefore, so does <m>\sum_{n=0}^\infty b_n</m>
                 </p>
-            </task>
-            <task>
-                <p>
-                    Let <m>\displaystyle b_n=\frac{1}{n^2}</m>.  Compute <m>\displaystyle \lim_{n\to\infty}\frac{\frac{1}{n^2}}{\frac{1}{2^n}}</m>.
-                </p>
-                <ol marker="A." cols="2">
-                    <li><m>\infty</m>.</li> 
-                    <li><m>\ln(2)</m>.</li>
-                    <li><m>1</m>.</li>                    
-                    <li><m>\displaystyle \frac{1}{2}</m>.</li>
-                    <li><m>-\infty</m>.</li>                    
-                </ol>               
-            </task>
-            <task>
-                <p>
-                    Does <m>\displaystyle\sum_{n=1}^\infty \frac{1}{n^2}</m> converge or diverge?
-                </p>
-            </task>
-            <task>
-                <p>
-                    Let <m>\displaystyle\sum a_n</m> and <m>\displaystyle\sum b_n</m> be series with positive terms.
-        If
-        <me>
-          \lim_{n \to \infty} \frac{b_n}{a_n}
-        </me>
-                    diverges, can we conclude that <m>\displaystyle \sum b_n</m> converges or diverges?
-                </p>
-            </task>
-        </activity>
-        
-        
+            </solution>
+        </example>
+
+
         <activity xml:id="activity-SQ6useLCT">
             <introduction>
                 <p>
@@ -272,8 +240,63 @@
             </task>
         </activity>
         
+        <activity xml:id="activity-SQ6conversenottrue">
+            <introduction>
+                <p>
+                    Recall that <me>\displaystyle \sum_{n=1}^\infty \frac{1}{2^n}</me> converges.
+                </p>
+            </introduction>
+            <task>
+                <p>
+               Let <m>b_n=\frac{1}{n}</m>. Compute <m>\displaystyle \lim_{n\to\infty}\frac{\frac{1}{n}}{\frac{1}{2^n}}</m>.
+                </p>
+                <ol marker="A." cols="2">
+                    <li><m>-\infty</m>.</li>
+                    <li><m>0</m>.</li>
+                    <li><m>\displaystyle \frac{1}{2}</m>.</li>
+                    <li><m>1</m>.</li>
+                    <li><m>\infty</m>.</li>
+                </ol>
+            </task>
+            <task>
+                <p>
+                    Does <m>\displaystyle\sum_{n=1}^\infty \frac{1}{n}</m> converge or diverge?
+                </p>
+            </task>
+            <task>
+                <p>
+                    Let <m>\displaystyle b_n=\frac{1}{n^2}</m>.  Compute <m>\displaystyle \lim_{n\to\infty}\frac{\frac{1}{n^2}}{\frac{1}{2^n}}</m>.
+                </p>
+                <ol marker="A." cols="2">
+                    <li><m>\infty</m>.</li> 
+                    <li><m>\ln(2)</m>.</li>
+                    <li><m>1</m>.</li>                    
+                    <li><m>\displaystyle \frac{1}{2}</m>.</li>
+                    <li><m>-\infty</m>.</li>                    
+                </ol>               
+            </task>
+            <task>
+                <p>
+                    Does <m>\displaystyle\sum_{n=1}^\infty \frac{1}{n^2}</m> converge or diverge?
+                </p>
+            </task>
+            <task>
+                <p>
+                    Let <m>\displaystyle\sum a_n</m> and <m>\displaystyle\sum b_n</m> be series with positive terms.
+        If
+        <me>
+          \lim_{n \to \infty} \frac{b_n}{a_n}
+        </me>
+                    diverges, can we conclude that <m>\displaystyle \sum b_n</m> converges or diverges?
+                </p>
+            </task>
+        </activity>
         
-        <activity xml:id="activity-SQ6pickandcompare2">
+        
+        
+        
+        
+        <!--<activity xml:id="activity-SQ6pickandcompare2">
             <introduction>
                 <p>
                     We wish to determine if <m>\displaystyle \sum_{n=1}^\infty \frac{3}{n^2+8n+5}</m> converges or diverges using <xref ref="fact-SQ6limitcomparisontest"/>.
@@ -301,7 +324,7 @@
         <p>
             Use <xref ref="fact-SQ6limitcomparisontest"/> to determine if the series <m>\displaystyle \sum_{n=5}^\infty \frac{2}{4^n}</m> converges or diverges.
         </p>
-    </activity>
+    </activity>-->
         
         <activity xml:id="activity-SQ6comparesequences">
             <introduction>
