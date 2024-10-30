@@ -11,7 +11,18 @@
     </objectives>
   <subsection>
     <title>Activities</title>
-
+    <observation>
+        <statement>
+            <p>
+                Recall that a geometric series was a series of the form:
+                <me>a+ar+ar^2+\cdots</me>
+                for some <em>initial value</em> <m>a</m> and common ratio <m>r</m>. 
+            </p>
+            <p>
+                Given any series <m>\sum_{n=0}^\infty a_n</m>, it is geometric only if <m>\frac{a_{n+1}}{a_n}</m> is a constant<mdash/>this constant <m>r</m> will then be the <em>common</em> ratio.
+            </p>
+        </statement>
+    </observation>
     
     <activity>
         <introduction>
@@ -22,22 +33,24 @@
         </introduction>
         <task>
             <p>
-                Which of these series most closely resembles <m>\displaystyle \sum_{n=0}^\infty \frac{2^n}{3^n-2}</m>?
+                Notice that <m>\frac{a_{n+1}}{a_n}=\frac{\frac{2^{n+1}}{3^{n+1}-2}}{\frac{2^n}{3^n-2}}=\frac{2^{n+1}(3^n-2)}{(3^{n+1}-2)2^n}=\frac{2\cdot 2^{n}(3^n-2)}{3(3^{n}-\frac{2}{3})2^n}.</m>
+                Based on this calculation, is this series geometric?
                 <ol marker="A." cols="2">
-                    <li><m>\displaystyle \sum_{n=0}^\infty \frac{2}{3}</m>.</li>
-                    <li><m>\displaystyle \sum_{n=0}^\infty \frac{2}{3}n</m>.</li>
-                    <li><m>\displaystyle \sum_{n=0}^\infty \left(\frac{2}{3}\right)^n</m>.</li>
+                    <li><p>
+                        Yes.
+                    </p></li>
+                    <li><p>
+                        No.
+                    </p></li>
+                    <li><p>
+                        More information is needed.
+                    </p></li>
                 </ol>
             </p>
         </task>
         <task>
             <p>
-                Based on your previous choice, do we think this series is more likely to converge or diverge?
-            </p>
-        </task>
-        <task>
-            <p>
-                Find <m>\displaystyle \lim_{n\to\infty} \frac{\frac{2^{n+1}}{3^{n+1}-2}}{\frac{2^n}{3^n-2}}=\lim_{n\to\infty}\frac{2^{n+1}(3^n-2)}{(3^{n+1}-2)2^n}=\lim_{n\to\infty}\frac{2\cdot 2^{n}(3^n-2)}{3(3^{n}-\frac{2}{3})2^n}.</m>
+                What is <m>\displaystyle \lim_{n\to\infty}\frac{a_{n+1}}{a_n}=\lim_{n\to\infty} \frac{\frac{2^{n+1}}{3^{n+1}-2}}{\frac{2^n}{3^n-2}}=\lim_{n\to\infty}\frac{2\cdot 2^{n}(3^n-2)}{3(3^{n}-\frac{2}{3})2^n}</m>?
                 <ol marker="A." cols="2">
                     <li><m>\displaystyle \lim_{n\to\infty} \frac{\frac{2^{n+1}}{3^{n+1}-2}}{\frac{2^n}{3^n-2}}=0</m>.</li>
                     <li><m>\displaystyle \lim_{n\to\infty} \frac{\frac{2^{n+1}}{3^{n+1}-2}}{\frac{2^n}{3^n-2}}=\frac{2}{3}</m>.</li>
@@ -47,6 +60,21 @@
                 </ol>
             </p>
         </task>
+        <task>
+            <p>
+                While our series is not geometric, our calculation suggests that our series may behave like a geometric series whose common ratio is equal to the value of the limit you found above. 
+                Based on this reasoning, which conclusion do you think is more likely?
+                <ol marker="A." cols="2">
+                    <li><p>
+                        The series converges.
+                    </p></li>
+                    <li><p>
+                        The series diverges.
+                    </p></li>
+                </ol>
+            </p>
+        </task>
+        
     </activity>
     
     <activity>
@@ -270,9 +298,12 @@
     </activity>
     
     <activity>
-        <p>
-            Consider the series <m>\displaystyle \sum_{n=1}^\infty \frac{n^n}{9^n}.</m>
-        </p>            
+        <introduction>
+            <p>
+                Consider the series <m>\displaystyle \sum_{n=1}^\infty \frac{n^n}{9^n}.</m>
+            </p>
+        </introduction>
+                    
             <task>
                 <p>What is <m>a_n</m>?</p>
             </task>
