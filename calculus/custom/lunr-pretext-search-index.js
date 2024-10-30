@@ -7333,7 +7333,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "8.2",
   "title": "Sequence Properties and Limits (SQ2)",
-  "body": " Sequence Properties and Limits (SQ2)     Determine if a sequence is convergent, divergent, monotonic, or bounded, and compute limits of convergent sequences.      Activities   We will consider the function .  Compute the limit .       Determine on which intervals is increasing and\/or decreasing. (Hint: compute first.)  Which statement best describes for ?  is bounded above by 4  is bounded below by 4  is bounded above and below by 4  is not bounded above  is not bounded below      Given a sequence :  is monotonically increasing if for every choice of .  is monotonically non-decreasing if for every choice of .  is monotonically decreasing if for every choice of .  is monotonically non-increasing if for every choice of .  All of these sequences would be monotonic .      Consider the sequence    Compute .  Which of the following is true about ? There can be more or less than one answer.  for every choice of .  for every choice of .  for every choice of .  for every choice of .    Which of the following (if any) describe   Monotonically increasing.  Monotonically non-decreasing.  Monotonically decreasing.  Monotonically non-increasing.       Consider the sequence    Compute .  Which of the following is true about ? There can be more or less than one answer.  for every choice of .  for every choice of .  for every choice of .  for every choice of .    Which of the following (if any) describe   Monotonically increasing.  Monotonically non-decreasing.  Monotonically decreasing.  Monotonically non-increasing.       Consider the sequence    Compute .  Which of the following is true about ? There can be more or less than one answer.  for every choice of .  for every choice of .  for every choice of .  for every choice of .    Which of the following (if any) describe   Monotonically increasing.  Monotonically non-decreasing.  Monotonically decreasing.  Monotonically non-increasing.       Consider the sequence    Compute .  Which of the following is true about ? There can be more or less than one answer.  for every choice of .  for every choice of .  for every choice of .  for every choice of .    Which of the following (if any) describe   Monotonically increasing.  Monotonically non-decreasing.  Monotonically decreasing.  Monotonically non-increasing.       A sequence is bounded if there are real numbers such that for every .      Consider the sequence from .   Is there a such that for every ? If so, what would be one such ?  Is there a such that for every ? If so, what would be one such ?  Is bounded?     Consider the sequence from .   Is there a such that for every ? If so, what would be one such ?  Is there a such that for every ? If so, what would be one such ?  Is bounded?     Consider the sequence from .   Is there a such that for every ? If so, what would be one such ?  Is there a such that for every ? If so, what would be one such ?  Is bounded?     Consider the sequence from .   Is there a such that for every ? If so, what would be one such ?  Is there a such that for every ? If so, what would be one such ?  Is bounded?     Given a sequence , we say has limit  , denoted if we can make as close to as we like by making sufficiently large. If such an exists, we say converges to . If no such exists, we say does not converge.      For each of the following, determine if the sequence converges.        Where possible, find the limit of the sequence.    Determine to what value converges.  Which of the following is most likely true about ?  converges to 4.  converges to 0.  converges to -4.  does not converge.       For each of the following sequences, determine which of the properties: monotonic , bounded and convergent , the sequence satisfies. If a sequence is convergent, determine to what it converges.          If a sequence is monotonic and bounded, then it is convergent.       Videos      Video: Determine if a sequence is convergent, divergent, monotonic, or bounded, and compute limits of convergent sequences     Exercises  Exercises available at    "
+  "body": " Sequence Properties and Limits (SQ2)     Determine if a sequence is convergent, divergent, monotonic, or bounded, and compute limits of convergent sequences.      Activities   We will consider the function .  Compute the limit .       Determine on which intervals is increasing and\/or decreasing. (Hint: compute first.)  Which statement best describes for ?  is bounded above by 4  is bounded below by 4  is bounded above and below by 4  is not bounded above  is not bounded below      Given a sequence :  is monotonically increasing if for every choice of .  is monotonically non-decreasing if for every choice of .  is monotonically decreasing if for every choice of .  is monotonically non-increasing if for every choice of .  All of these sequences would be monotonic .      Consider the sequence    Compute .  Which of the following is true about ? There can be more or less than one answer.  for every choice of .  for every choice of .  for every choice of .  for every choice of .    Which of the following (if any) describe   Monotonically increasing.  Monotonically non-decreasing.  Monotonically decreasing.  Monotonically non-increasing.       Consider the sequence    Compute .  Which of the following is true about ? There can be more or less than one answer.  for every choice of .  for every choice of .  for every choice of .  for every choice of .    Which of the following (if any) describe   Monotonically increasing.  Monotonically non-decreasing.  Monotonically decreasing.  Monotonically non-increasing.       Consider the sequence    Compute .  Which of the following is true about ? There can be more or less than one answer.  for every choice of .  for every choice of .  for every choice of .  for every choice of .    Which of the following (if any) describe   Monotonically increasing.  Monotonically non-decreasing.  Monotonically decreasing.  Monotonically non-increasing.       Consider the sequence    Compute .  Which of the following is true about ? There can be more or less than one answer.  for every choice of .  for every choice of .  for every choice of .  for every choice of .    Which of the following (if any) describe   Monotonically increasing.  Monotonically non-decreasing.  Monotonically decreasing.  Monotonically non-increasing.       A sequence is bounded if there are real numbers such that for every .      Consider the sequence from .   Is there a such that for every ? If so, what would be one such ?  Is there a such that for every ? If so, what would be one such ?  Is bounded?     Consider the sequence from .   Is there a such that for every ? If so, what would be one such ?  Is there a such that for every ? If so, what would be one such ?  Is bounded?     Consider the sequence from .   Is there a such that for every ? If so, what would be one such ?  Is there a such that for every ? If so, what would be one such ?  Is bounded?     Consider the sequence from .   Is there a such that for every ? If so, what would be one such ?  Is there a such that for every ? If so, what would be one such ?  Is bounded?     Given a sequence , we say has limit  , denoted if we can make as close to as we like by making sufficiently large. If such an exists, we say  converges to . If no such exists, we say  diverges .     For each of the following, determine if the sequence converges.        Where possible, find the limit of the sequence.    Determine to what value converges.  Which of the following is most likely true about ?  converges to 4.  converges to 0.  converges to -4.  does not converge.       For each of the following sequences, determine which of the properties: monotonic , bounded and convergent , the sequence satisfies. If a sequence is convergent, determine to what it converges.          If a sequence is monotonic and bounded, then it is convergent.       Videos      Video: Determine if a sequence is convergent, divergent, monotonic, or bounded, and compute limits of convergent sequences     Exercises  Exercises available at    "
 },
 {
   "id": "SQ2-2",
@@ -7450,7 +7450,7 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "8.2.12",
   "title": "",
-  "body": "  Given a sequence , we say has limit  , denoted if we can make as close to as we like by making sufficiently large. If such an exists, we say converges to . If no such exists, we say does not converge.    "
+  "body": "  Given a sequence , we say has limit  , denoted if we can make as close to as we like by making sufficiently large. If such an exists, we say  converges to . If no such exists, we say  diverges .   "
 },
 {
   "id": "SQ2-3-14",
@@ -7503,8 +7503,8 @@ var ptx_lunr_docs = [
   "url": "SQ3.html",
   "type": "Section",
   "number": "8.3",
-  "title": "Partial Sum Sequence (SQ3)",
-  "body": " Partial Sum Sequence (SQ3)     Compute the first few terms of a telescoping or geometric partial sum sequence, and find a closed form for this sequence, and compute its limit.      Activities    Consider the sequence .   Find the first 5 terms of this sequence.  Compute the following:            Consider the sequence .   Find the first 5 terms of this sequence.  Compute the following:            Given a sequence define the partial sum for this sequence to be Note that is itself a sequence called the partial sum sequence .  More generally, partial sums may be defined for any starting index. Given , let       Let . Find the following partial sums of the sequence .   .  .  .  .  .     Consider the sequence What is the best way to find the 100th partial sum ?  Sum the first 101 terms of the sequence .  Find a closed form for the partial sum sequence .        Expand the following polynomial products, and then reduce to as few summands as possible.  .  .  .  , where is any nonnegative integer.        Provided that , we have       Suppose Without actually computing this sum, which of the following is equal to ?  .  .  .        Recall from that    Using , which of the following is equal to ?  .  .  .  .    Based on your previous choice, write out an expression for .     Suppose that . Let be the th partial sum of .   Using , which of the follows is equal to ?  .  .  .  .  .   Based on your previous answer, which of the following is equal to ?            Consider the following sequences:  .  .  .     Find the closed form for the th partial sum for the geometric sequence .  .  .  .  .  .    Find the closed form for the th partial sum for the geometric sequence .  .  .  .  .  .    Explain and demonstrate why a closed form for the th partial sum for the geometric sequence is given by     Given the closed forms you found in , which of the following limits are defined? If defined, what is the limit?  .  .  .       Given a sequence , we define the limit of the series where . We call an infinite series .      Which of the following series are infinite?  .  .  .  .  .        Let . Let .  Which of the following is the best strategy for evaluating ?  Compute , then evaluate the sum.  Rewrite , then simplify.        Recall from that and .  Compute the following partial sums:  .  .  .        Recall from that and .  Which of the following is equal to ?  .  .  .  .  .        Given a sequence and a sequence of the form we call the series to be a telescoping series .      Given a telescoping series , find:  .  .   Choose from the following options:               For each of the following telescoping series, find the closed form for the th partial sum.  .  .  .      Given the closed forms you found in , determine which of the following telescoping series converge. If so, to what value does it converge?   .  .  .      Consider the partial sum sequence  Find a closed form for .  Does converge? If so, to what value?     Consider the partial sum sequence  Find a closed form for .  Does converge? If so, to what value?       Videos      Video: Compute the first few terms of a telescoping or geometric partial sum sequence, and find a closed form for this sequence, and compute its limit.     Exercises  Exercises available at    "
+  "title": "Partial Sums and Series (SQ3)",
+  "body": " Partial Sums and Series (SQ3)     Compute the first few terms of a telescoping or geometric series, find a closed form for this sequence, and compute its limit.      Activities    Consider the sequence .   Find the first 5 terms of this sequence.  Compute the following:            Consider the sequence .   Find the first 5 terms of this sequence.  Compute the following:            Given a sequence define the partial sum for this sequence to be   More generally, partial sums may be defined for any starting index. Given , let       Let . Find the following partial sums of the sequence .   .  .  .  .  .     Consider the sequence What is the best way to find the 100th partial sum ?  Sum the first 101 terms of the sequence .  Find a closed form for the partial sum sequence .        Expand the following polynomial products, and then reduce to as few summands as possible.  .  .  .  , where is any nonnegative integer.        Provided that , we have       Suppose Without actually computing this sum, which of the following is equal to ?  .  .  .        Recall from that    Using , which of the following is equal to ?  .  .  .  .    Based on your previous choice, write out an expression for .     Suppose that . Let be the th partial sum of .   Using , which of the follows is equal to ?  .  .  .  .  .   Based on your previous answer, which of the following is equal to ?            Consider the following sequences:  .  .  .     Find the closed form for the th partial sum for the geometric sequence .  .  .  .  .  .    Find the closed form for the th partial sum for the geometric sequence .  .  .  .  .  .    Explain and demonstrate why a closed form for the th partial sum for the geometric sequence is given by     Given the closed forms you found in , which of the following limits are defined? If defined, what is the limit?  .  .  .       Given a sequence , we define its infinite series (or just series ) to be its sequence of its partial sums and often use the notation to represent it. We will also write for short when the starting index is either known from context or irrelevant.  When the series (the sequence of partial sums) converges to a limit, we say the series is convergent and this limit is the value of the series, and write: . When the series (the sequence of partial sums) diverges, we say the series is divergent .      Which of the following series are infinite?  .  .  .  .  .        Let . Let .  Which of the following is the best strategy for evaluating ?  Compute , then evaluate the sum.  Rewrite , then simplify.        Recall from that and .  Compute the following partial sums:  .  .  .        Recall from that and .  Which of the following is equal to ?  .  .  .  .  .        Given a sequence and a sequence of the form we call the series to be a telescoping series .      Given a telescoping series , find:  .  .   Choose from the following options:               For each of the following telescoping series, find the closed form for the th partial sum.  .  .  .      Given the closed forms you found in , determine which of the following telescoping series converge. If so, to what value does it converge?   .  .  .      Consider the partial sum sequence  Find a closed form for .  Does converge? If so, to what value?     Consider the partial sum sequence  Find a closed form for .  Does converge? If so, to what value?       Videos      Video: Compute the first few terms of a telescoping or geometric partial sum sequence, and find a closed form for this sequence, and compute its limit.     Exercises  Exercises available at    "
 },
 {
   "id": "SQ3-2",
@@ -7513,7 +7513,7 @@ var ptx_lunr_docs = [
   "type": "Learning Outcomes",
   "number": "8.3",
   "title": "",
-  "body": "   Compute the first few terms of a telescoping or geometric partial sum sequence, and find a closed form for this sequence, and compute its limit.    "
+  "body": "   Compute the first few terms of a telescoping or geometric series, find a closed form for this sequence, and compute its limit.    "
 },
 {
   "id": "activity-SQ3intropartialsumsgeometric",
@@ -7540,7 +7540,7 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "8.3.3",
   "title": "",
-  "body": "  Given a sequence define the partial sum for this sequence to be Note that is itself a sequence called the partial sum sequence .  More generally, partial sums may be defined for any starting index. Given , let    "
+  "body": "  Given a sequence define the partial sum for this sequence to be   More generally, partial sums may be defined for any starting index. Given , let    "
 },
 {
   "id": "activity-SQ3geompartialsum",
@@ -7630,7 +7630,7 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "8.3.13",
   "title": "",
-  "body": "  Given a sequence , we define the limit of the series where . We call an infinite series .   "
+  "body": "  Given a sequence , we define its infinite series (or just series ) to be its sequence of its partial sums and often use the notation to represent it. We will also write for short when the starting index is either known from context or irrelevant.  When the series (the sequence of partial sums) converges to a limit, we say the series is convergent and this limit is the value of the series, and write: . When the series (the sequence of partial sums) diverges, we say the series is divergent .   "
 },
 {
   "id": "activity-SQ3geomserieslimit",
@@ -8026,7 +8026,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "8.6",
   "title": "Comparison Tests (SQ6)",
-  "body": " Comparison Tests (SQ6)     Use the direct comparison and limit comparison tests to determine if a series converges or diverges.      Activities    Let be a sequence, with infinite series . Suppose is a sequence where each , whith infinite series .   If what can be said about ?  converges but the value cannot be determined.  converges to .  converges to some value other than 15.  diverges.  It cannot be determined whether converges or diverges.      If , , and is a real number, then  , and  .      If diverges, what can be said about ?  converges but the value cannot be determined.  converges and the value can be determined.  diverges.  It cannot be determined whether converges or diverges.       Using , we know the geometric series    What can we say about the series   converges to .  converges to some value other than 6.  diverges.    What do you think we can say about the series   converges to .  converges to some value other than 6.  diverges.       From , we know diverges.   What can we say about the series   converges to a known value we can compute.  converges to some unknown value.  diverges.    What do you think we can say about the series   converges to a known value we can compute.  converges to some unknown value.  diverges.      The Limit Comparison Test   Let and be series with positive terms. If for some positive (finite) constant , then and either both converge or both diverge.      Recall that converges.   Let . Compute .  .  .  .  .  .   Does converge or diverge?  Let . Compute .  .  .  .  .  .   Does converge or diverge?  Let and be series with positive terms. If diverges, can we conclude that converges or diverges?     We wish to determine if converges or diverges using .   Compute   Does the geometric series converge or diverge by ?  Does converge or diverge?     We wish to determine if converges or diverges using .   To which of the following should we compare ?  .  .  .  .    Compute .  Compute .  What is true about and ?  Their values are reciprocals.  Their values negative reciprocals.  They are both positive finite constants.  Only one value is a finite positive constant.  One value is and the other value is infinite.    Does the series converge or diverge?  Using your chosen sequence and , does converge or diverge?     We wish to determine if converges or diverges using .   To which of the following should we compare ?  .  .  .  .    Using your chosen sequence and , does converge or diverge?    Use to determine if the series converges or diverges.     Consider sequences where .  Plots of   Plots of sequences where .       Suppose that converges. What could be said about ?  converges.  diverges.  Whether or not converges or diverges cannot be determined with this information.    Suppose that which diverges. Which of the following statements are true?  for each and is a convergent -series where .  for each and is a divergent -series where .    Suppose that was some series that diverges. What could be said about ?  converges.  diverges.  Whether or not converges or diverges cannot be determined with this information.    Suppose that diverges. What could be said about ?  converges.  diverges.  Whether or not converges or diverges cannot be determined with this information.    Suppose that which converges. Which of the following statements are true?  for each and is a convergent geometric series where .  for each and diverges by the Divergence Test.    Suppose that was some series that converges. What could be said about ?  converges.  diverges.  Whether or not converges or diverges cannot be determined with this information.       Supppose we have sequences so that for some we have that for each . Then we have the following results:  If converges, then so does .  If diverges, then so does .        Suppose that you were handed positive sequences . For the first few values , but after that what happens is unclear until . Then for any we have that .  Plots of   Plots of sequences where initially but eventually .       How might we best utilize to determine the convergence of or ?  Since is sometimes greater than, and sometimes less than , there is no way to utilize .  Since initially, we have , we can utilize by assuming .  Since we can rewrite and and are necessarily finite, we can compare with .      The Direct Comparison Test   Let and be series with positive terms. If there is a such that for each , then:  If converges, then so does .  If diverges, then so does .        Suppose we wish to determine if converged using .   Does converge or diverge?  For which value is for each ?  for each .  for each .  for each .  for each .  There is no for which for each .    Use and compare to to determine if converges or diverges.     Suppose we wish to determine if converged using .   Which series should we compare to best utilize ?  .  .  .  .  .  .    Using your chosen series and , does converge or diverge?     For each of the following series, determine if it converges or diverges, and explain your choice.         Videos      Video: Use the direct comparison and limit comparison tests to determine if a series converges or diverges     Exercises  Exercises available at    "
+  "body": " Comparison Tests (SQ6)     Use the direct comparison and limit comparison tests to determine if a series converges or diverges.      Activities    Let be a sequence, with infinite series . Suppose is a sequence where each , whith infinite series .   If what can be said about ?  converges but the value cannot be determined.  converges to .  converges to some value other than 15.  diverges.  It cannot be determined whether converges or diverges.    If diverges, what can be said about ?  converges but the value cannot be determined.  converges and the value can be determined.  diverges.  It cannot be determined whether converges or diverges.       If , , and is a real number, then  , and  .        Using , we know the geometric series    What can we say about the series   converges to .  converges to some value other than 6.  diverges.    What do you think we can say about the series   converges to .  converges to some value other than 6.  diverges.       From , we know diverges.   What can we say about the series   converges to a known value we can compute.  converges to some unknown value.  diverges.    What do you think we can say about the series   converges to a known value we can compute.  converges to some unknown value.  diverges.      The Limit Comparison Test   Let and be series with positive terms. If for some positive (finite) constant , then and either both converge or both diverge.      Above, we considered the series and . Use the Limit Comparison Test to confirm our intuition.    Notation as above, we have As , this approaches , so the Limit Comparison Test says these two series have the same convergence behaviour.  Since the series is a multiple of a geometric series with common ratio , it converges; therefore, so does       We wish to determine if converges or diverges using .   Compute   Does the geometric series converge or diverge by ?  Does converge or diverge?     We wish to determine if converges or diverges using .   To which of the following should we compare ?  .  .  .  .    Compute .  Compute .  What is true about and ?  Their values are reciprocals.  Their values negative reciprocals.  They are both positive finite constants.  Only one value is a finite positive constant.  One value is and the other value is infinite.    Does the series converge or diverge?  Using your chosen sequence and , does converge or diverge?     Recall that converges.   Let . Compute .  .  .  .  .  .   Does converge or diverge?  Let . Compute .  .  .  .  .  .   Does converge or diverge?  Let and be series with positive terms. If diverges, can we conclude that converges or diverges?      Consider sequences where .  Plots of   Plots of sequences where .       Suppose that converges. What could be said about ?  converges.  diverges.  Whether or not converges or diverges cannot be determined with this information.    Suppose that which diverges. Which of the following statements are true?  for each and is a convergent -series where .  for each and is a divergent -series where .    Suppose that was some series that diverges. What could be said about ?  converges.  diverges.  Whether or not converges or diverges cannot be determined with this information.    Suppose that diverges. What could be said about ?  converges.  diverges.  Whether or not converges or diverges cannot be determined with this information.    Suppose that which converges. Which of the following statements are true?  for each and is a convergent geometric series where .  for each and diverges by the Divergence Test.    Suppose that was some series that converges. What could be said about ?  converges.  diverges.  Whether or not converges or diverges cannot be determined with this information.       Supppose we have sequences so that for some we have that for each . Then we have the following results:  If converges, then so does .  If diverges, then so does .        Suppose that you were handed positive sequences . For the first few values , but after that what happens is unclear until . Then for any we have that .  Plots of   Plots of sequences where initially but eventually .       How might we best utilize to determine the convergence of or ?  Since is sometimes greater than, and sometimes less than , there is no way to utilize .  Since initially, we have , we can utilize by assuming .  Since we can rewrite and and are necessarily finite, we can compare with .      The Direct Comparison Test   Let and be series with positive terms. If there is a such that for each , then:  If converges, then so does .  If diverges, then so does .        Suppose we wish to determine if converged using .   Does converge or diverge?  For which value is for each ?  for each .  for each .  for each .  for each .  There is no for which for each .    Use and compare to to determine if converges or diverges.     Suppose we wish to determine if converged using .   Which series should we compare to best utilize ?  .  .  .  .  .  .    Using your chosen series and , does converge or diverge?     For each of the following series, determine if it converges or diverges, and explain your choice.         Videos      Video: Use the direct comparison and limit comparison tests to determine if a series converges or diverges     Exercises  Exercises available at    "
 },
 {
   "id": "SQ6-2",
@@ -8044,7 +8044,16 @@ var ptx_lunr_docs = [
   "type": "Activity",
   "number": "8.6.1",
   "title": "",
-  "body": "  Let be a sequence, with infinite series . Suppose is a sequence where each , whith infinite series .   If what can be said about ?  converges but the value cannot be determined.  converges to .  converges to some value other than 15.  diverges.  It cannot be determined whether converges or diverges.      If , , and is a real number, then  , and  .      If diverges, what can be said about ?  converges but the value cannot be determined.  converges and the value can be determined.  diverges.  It cannot be determined whether converges or diverges.    "
+  "body": "  Let be a sequence, with infinite series . Suppose is a sequence where each , whith infinite series .   If what can be said about ?  converges but the value cannot be determined.  converges to .  converges to some value other than 15.  diverges.  It cannot be determined whether converges or diverges.    If diverges, what can be said about ?  converges but the value cannot be determined.  converges and the value can be determined.  diverges.  It cannot be determined whether converges or diverges.    "
+},
+{
+  "id": "fact-SQ6sumAndMultipleRules",
+  "level": "2",
+  "url": "SQ6.html#fact-SQ6sumAndMultipleRules",
+  "type": "Fact",
+  "number": "8.6.2",
+  "title": "",
+  "body": "  If , , and is a real number, then  , and  .     "
 },
 {
   "id": "activity-SQ6sortofmultiplesequence",
@@ -8074,13 +8083,13 @@ var ptx_lunr_docs = [
   "body": " The Limit Comparison Test   Let and be series with positive terms. If for some positive (finite) constant , then and either both converge or both diverge.   "
 },
 {
-  "id": "activity-SQ6conversenottrue",
+  "id": "SQ6-3-7",
   "level": "2",
-  "url": "SQ6.html#activity-SQ6conversenottrue",
-  "type": "Activity",
+  "url": "SQ6.html#SQ6-3-7",
+  "type": "Example",
   "number": "8.6.6",
   "title": "",
-  "body": "  Recall that converges.   Let . Compute .  .  .  .  .  .   Does converge or diverge?  Let . Compute .  .  .  .  .  .   Does converge or diverge?  Let and be series with positive terms. If diverges, can we conclude that converges or diverges?  "
+  "body": "  Above, we considered the series and . Use the Limit Comparison Test to confirm our intuition.    Notation as above, we have As , this approaches , so the Limit Comparison Test says these two series have the same convergence behaviour.  Since the series is a multiple of a geometric series with common ratio , it converges; therefore, so does    "
 },
 {
   "id": "activity-SQ6useLCT",
@@ -8101,29 +8110,20 @@ var ptx_lunr_docs = [
   "body": "  We wish to determine if converges or diverges using .   To which of the following should we compare ?  .  .  .  .    Compute .  Compute .  What is true about and ?  Their values are reciprocals.  Their values negative reciprocals.  They are both positive finite constants.  Only one value is a finite positive constant.  One value is and the other value is infinite.    Does the series converge or diverge?  Using your chosen sequence and , does converge or diverge?  "
 },
 {
-  "id": "activity-SQ6pickandcompare2",
+  "id": "activity-SQ6conversenottrue",
   "level": "2",
-  "url": "SQ6.html#activity-SQ6pickandcompare2",
+  "url": "SQ6.html#activity-SQ6conversenottrue",
   "type": "Activity",
   "number": "8.6.9",
   "title": "",
-  "body": "  We wish to determine if converges or diverges using .   To which of the following should we compare ?  .  .  .  .    Using your chosen sequence and , does converge or diverge?  "
-},
-{
-  "id": "SQ6-3-10",
-  "level": "2",
-  "url": "SQ6.html#SQ6-3-10",
-  "type": "Activity",
-  "number": "8.6.10",
-  "title": "",
-  "body": " Use to determine if the series converges or diverges.  "
+  "body": "  Recall that converges.   Let . Compute .  .  .  .  .  .   Does converge or diverge?  Let . Compute .  .  .  .  .  .   Does converge or diverge?  Let and be series with positive terms. If diverges, can we conclude that converges or diverges?  "
 },
 {
   "id": "activity-SQ6comparesequences",
   "level": "2",
   "url": "SQ6.html#activity-SQ6comparesequences",
   "type": "Activity",
-  "number": "8.6.11",
+  "number": "8.6.10",
   "title": "",
   "body": "  Consider sequences where .  Plots of   Plots of sequences where .       Suppose that converges. What could be said about ?  converges.  diverges.  Whether or not converges or diverges cannot be determined with this information.    Suppose that which diverges. Which of the following statements are true?  for each and is a convergent -series where .  for each and is a divergent -series where .    Suppose that was some series that diverges. What could be said about ?  converges.  diverges.  Whether or not converges or diverges cannot be determined with this information.    Suppose that diverges. What could be said about ?  converges.  diverges.  Whether or not converges or diverges cannot be determined with this information.    Suppose that which converges. Which of the following statements are true?  for each and is a convergent geometric series where .  for each and diverges by the Divergence Test.    Suppose that was some series that converges. What could be said about ?  converges.  diverges.  Whether or not converges or diverges cannot be determined with this information.    "
 },
@@ -8132,7 +8132,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "SQ6.html#fact-SQ6comparesequence",
   "type": "Fact",
-  "number": "8.6.12",
+  "number": "8.6.11",
   "title": "",
   "body": "  Supppose we have sequences so that for some we have that for each . Then we have the following results:  If converges, then so does .  If diverges, then so does .     "
 },
@@ -8141,7 +8141,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "SQ6.html#activity-SQ6partialcompare",
   "type": "Activity",
-  "number": "8.6.13",
+  "number": "8.6.12",
   "title": "",
   "body": "  Suppose that you were handed positive sequences . For the first few values , but after that what happens is unclear until . Then for any we have that .  Plots of   Plots of sequences where initially but eventually .       How might we best utilize to determine the convergence of or ?  Since is sometimes greater than, and sometimes less than , there is no way to utilize .  Since initially, we have , we can utilize by assuming .  Since we can rewrite and and are necessarily finite, we can compare with .    "
 },
@@ -8150,7 +8150,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "SQ6.html#fact-SQ6directcomparisontest",
   "type": "Fact",
-  "number": "8.6.14",
+  "number": "8.6.13",
   "title": "The Direct Comparison Test.",
   "body": " The Direct Comparison Test   Let and be series with positive terms. If there is a such that for each , then:  If converges, then so does .  If diverges, then so does .     "
 },
@@ -8159,7 +8159,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "SQ6.html#activity-SQ6useDCT",
   "type": "Activity",
-  "number": "8.6.15",
+  "number": "8.6.14",
   "title": "",
   "body": "  Suppose we wish to determine if converged using .   Does converge or diverge?  For which value is for each ?  for each .  for each .  for each .  for each .  There is no for which for each .    Use and compare to to determine if converges or diverges.  "
 },
@@ -8168,7 +8168,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "SQ6.html#activity-SQ6useDCT2",
   "type": "Activity",
-  "number": "8.6.16",
+  "number": "8.6.15",
   "title": "",
   "body": "  Suppose we wish to determine if converged using .   Which series should we compare to best utilize ?  .  .  .  .  .  .    Using your chosen series and , does converge or diverge?  "
 },
@@ -8177,7 +8177,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "SQ6.html#SQ6-3-17",
   "type": "Activity",
-  "number": "8.6.17",
+  "number": "8.6.16",
   "title": "",
   "body": "  For each of the following series, determine if it converges or diverges, and explain your choice.     "
 },
@@ -9413,51 +9413,6 @@ var ptx_lunr_docs = [
   "number": "A.5.5",
   "title": "Practice: Do Not Turn In.",
   "body": " Practice: Do Not Turn In   Suppose that is some continuous, strictly increasing function defined on an interval . These assumptions guarantee that is an invertible function, so we will let , defined on the interval denote this inverse function.    Explain why the following equation of integrals is true without doing any calculations:     Use a combination of our integration strategies to provide a second explanation for why this equation is true.   "
-},
-{
-  "id": "sec-pset5-calc",
-  "level": "1",
-  "url": "sec-pset5-calc.html",
-  "type": "Section",
-  "number": "A.6",
-  "title": "Problem Set 5",
-  "body": " Problem Set 5   Instructions  Prior to beginning this problem set, consider reading the Problem Set Success Guide for advice and clarity around expectations for Problem Sets in this course. Upload your solutions to all problems on this page to gradescope as a single .pdf file, remembering to assign pages appropriately for each question. Complete instructions for Problem Sets are available on Canvas.    (Problem 1)  For each of the following series, decide if they converge or not, justifying your reasoning:                          (Problem 2)   For each of the following series, determine if they converge or not, justifying your reasoning. For those that do converge, determine if the convergence is conditional or absolute.                           (Problem 3)   Suppose that is some sequence of positive numbers that converges to . Determine which, if any, of the following series converge, justifying your reasoning:                             We saw in class that the alternating harmonic series converges by the alternating series test.    Estimate the value of this series by using the first 10 terms to compute the -th partial sum .    Start with the expression Now multiply everything by and explain and demonstrate how to rearrange the terms of this new series in order to get the original alternating harmonic series that you started with.    Reflect: You should indeed feel very weird about your result in (b). What you are discovering is that we cannot always rearrange terms in a series and expect to get the same value. This is part of why absolute convergence is so important: in a series that converges absolutely, we can always rearrange the terms without changing the value of the sum.    "
-},
-{
-  "id": "sec-pset5-calc-3",
-  "level": "2",
-  "url": "sec-pset5-calc.html#sec-pset5-calc-3",
-  "type": "Problem",
-  "number": "A.6.1",
-  "title": "(Problem 1).",
-  "body": " (Problem 1)  For each of the following series, decide if they converge or not, justifying your reasoning:                        "
-},
-{
-  "id": "sec-pset5-calc-4",
-  "level": "2",
-  "url": "sec-pset5-calc.html#sec-pset5-calc-4",
-  "type": "Problem",
-  "number": "A.6.2",
-  "title": "(Problem 2).",
-  "body": " (Problem 2)   For each of the following series, determine if they converge or not, justifying your reasoning. For those that do converge, determine if the convergence is conditional or absolute.                         "
-},
-{
-  "id": "sec-pset5-calc-5",
-  "level": "2",
-  "url": "sec-pset5-calc.html#sec-pset5-calc-5",
-  "type": "Problem",
-  "number": "A.6.3",
-  "title": "(Problem 3).",
-  "body": " (Problem 3)   Suppose that is some sequence of positive numbers that converges to . Determine which, if any, of the following series converge, justifying your reasoning:                         "
-},
-{
-  "id": "sec-pset5-calc-6",
-  "level": "2",
-  "url": "sec-pset5-calc.html#sec-pset5-calc-6",
-  "type": "Problem",
-  "number": "A.6.4",
-  "title": "",
-  "body": "   We saw in class that the alternating harmonic series converges by the alternating series test.    Estimate the value of this series by using the first 10 terms to compute the -th partial sum .    Start with the expression Now multiply everything by and explain and demonstrate how to rearrange the terms of this new series in order to get the original alternating harmonic series that you started with.    Reflect: You should indeed feel very weird about your result in (b). What you are discovering is that we cannot always rearrange terms in a series and expect to get the same value. This is part of why absolute convergence is so important: in a series that converges absolutely, we can always rearrange the terms without changing the value of the sum.   "
 },
 {
   "id": "integral-table",

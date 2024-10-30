@@ -15,13 +15,29 @@
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">8.3.13</span><span class="period">.</span>
 </h4>
 <div class="para logical">
-<div class="para">Given a sequence <span class="process-math">\(a_n\text{,}\)</span> we define the limit of the series</div>
+<div class="para">Given a sequence <span class="process-math">\(\{a_n\}_{n=k}^\infty\text{,}\)</span> we define its <dfn class="terminology">infinite series</dfn> (or just <dfn class="terminology">series</dfn>) to be its sequence of its partial sums</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\displaystyle\sum_{n=k}^\infty a_n:=\lim_{n\to \infty} A_n
+\left\{A_n\right\}_{n=k}^\infty=\left\{\sum_{i=k}^n a_i\right\}_{n=k}^\infty
+=\left\{a_k,a_k+a_{k+1},a_k+a_{k+1}+a_{k+2},\dots\right\}
 \end{equation*}
 </div>
-<div class="para">where <span class="process-math">\(A_n=\displaystyle \sum_{i=k}^n a_i\text{.}\)</span>  We call <span class="process-math">\(\displaystyle\sum_{n=k}^\infty a_n\)</span> an <em class="emphasis">infinite series</em>.</div>
+<div class="para">and often use the notation</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\sum_{i=k}^\infty a_i = a_k+a_{k+1}+a_{k+2}+\dots
+\end{equation*}
+</div>
+<div class="para">to represent it. We will also write <span class="process-math">\(\sum a_i\)</span> for short when the starting index <span class="process-math">\(n=k\)</span> is either known from context or irrelevant.</div>
+</div> <div class="para logical">
+<div class="para">When the series (the sequence of partial sums) converges to a limit, we say the series is <dfn class="terminology">convergent</dfn> and this limit is the <dfn class="terminology">value</dfn> of the series, and write:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\sum_{i=k}^\infty a_i = a_k+a_{k+1}+a_{k+2}+\dots =
+\lim_{n\to\infty} \sum_{i=k}^n a_i\text{.}
+\end{equation*}
+</div>
+<div class="para">When the series (the sequence of partial sums) diverges, we say the series is <dfn class="terminology">divergent</dfn>.</div>
 </div></article><span class="incontext"><a class="internal" href="SQ3.html#definition-SQ3serieslimit">in-context</a></span>
 </body>
 </html>
