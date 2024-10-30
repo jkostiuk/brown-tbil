@@ -7504,7 +7504,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "8.3",
   "title": "Partial Sum Sequence (SQ3)",
-  "body": " Partial Sum Sequence (SQ3)     Compute the first few terms of a telescoping or geometric partial sum sequence, and find a closed form for this sequence, and compute its limit.      Activities    Consider the sequence .   Find the first 5 terms of this sequence.  Compute the following:            Consider the sequence .   Find the first 5 terms of this sequence.  Compute the following:            Given a sequence define the partial sum for this sequence to be Note that is itself a sequence called the partial sum sequence .  More generally, partial sums may be defined for any starting index. Given , let       Let . Find the following partial sums of the sequence .           Consider the sequence What is the best way to find the 100th partial sum ?  Sum the first 101 terms of the sequence .  Find a closed form for the partial sum sequence .        Expand the following polynomial products, and then reduce to as few summands as possible.  .  .  .  , where is any nonnegative integer.        Provided that , we have       Suppose Without actually computing this sum, which of the following is equal to ?  .  .  .        Recall from that    Using , which of the following is equal to ?  .  .  .  .    Based on your previous choice, write out an expression for .     Suppose that . Let be the th partial sum of .   Using , which of the follows is equal to ?  .  .  .  .  .   Based on your previous answer, which of the following is equal to ?            Consider the following sequences:  .  .  .     Find the closed form for the th partial sum for the geometric sequence .  .  .  .  .  .    Find the closed form for the th partial sum for the geometric sequence .  .  .  .  .  .    Explain and demonstrate why a closed form for the th partial sum for the geometric sequence is given by     Given the closed forms you found in , which of the following limits are defined? If defined, what is the limit?  .  .  .       Given a sequence , we define the limit of the series where . We call an infinite series .      Which of the following series are infinite?  .  .  .  .  .        Let . Let .  Which of the following is the best strategy for evaluating ?  Compute , then evaluate the sum.  Rewrite , then simplify.        Recall from that and .  Compute the following partial sums:  .  .  .        Recall from that and .  Which of the following is equal to ?  .  .  .  .  .        Given a sequence and a sequence of the form we call the series to be a telescoping series .      Given a telescoping series , find:  .  .   Choose from the following options:               For each of the following telescoping series, find the closed form for the th partial sum.  .  .  .      Given the closed forms you found in , determine which of the following telescoping series converge. If so, to what value does it converge?   .  .  .      Consider the partial sum sequence  Find a closed form for .  Does converge? If so, to what value?     Consider the partial sum sequence  Find a closed form for .  Does converge? If so, to what value?       Videos      Video: Compute the first few terms of a telescoping or geometric partial sum sequence, and find a closed form for this sequence, and compute its limit.     Exercises  Exercises available at    "
+  "body": " Partial Sum Sequence (SQ3)     Compute the first few terms of a telescoping or geometric partial sum sequence, and find a closed form for this sequence, and compute its limit.      Activities    Consider the sequence .   Find the first 5 terms of this sequence.  Compute the following:            Consider the sequence .   Find the first 5 terms of this sequence.  Compute the following:            Given a sequence define the partial sum for this sequence to be Note that is itself a sequence called the partial sum sequence .  More generally, partial sums may be defined for any starting index. Given , let       Let . Find the following partial sums of the sequence .   .  .  .  .  .     Consider the sequence What is the best way to find the 100th partial sum ?  Sum the first 101 terms of the sequence .  Find a closed form for the partial sum sequence .        Expand the following polynomial products, and then reduce to as few summands as possible.  .  .  .  , where is any nonnegative integer.        Provided that , we have       Suppose Without actually computing this sum, which of the following is equal to ?  .  .  .        Recall from that    Using , which of the following is equal to ?  .  .  .  .    Based on your previous choice, write out an expression for .     Suppose that . Let be the th partial sum of .   Using , which of the follows is equal to ?  .  .  .  .  .   Based on your previous answer, which of the following is equal to ?            Consider the following sequences:  .  .  .     Find the closed form for the th partial sum for the geometric sequence .  .  .  .  .  .    Find the closed form for the th partial sum for the geometric sequence .  .  .  .  .  .    Explain and demonstrate why a closed form for the th partial sum for the geometric sequence is given by     Given the closed forms you found in , which of the following limits are defined? If defined, what is the limit?  .  .  .       Given a sequence , we define the limit of the series where . We call an infinite series .      Which of the following series are infinite?  .  .  .  .  .        Let . Let .  Which of the following is the best strategy for evaluating ?  Compute , then evaluate the sum.  Rewrite , then simplify.        Recall from that and .  Compute the following partial sums:  .  .  .        Recall from that and .  Which of the following is equal to ?  .  .  .  .  .        Given a sequence and a sequence of the form we call the series to be a telescoping series .      Given a telescoping series , find:  .  .   Choose from the following options:               For each of the following telescoping series, find the closed form for the th partial sum.  .  .  .      Given the closed forms you found in , determine which of the following telescoping series converge. If so, to what value does it converge?   .  .  .      Consider the partial sum sequence  Find a closed form for .  Does converge? If so, to what value?     Consider the partial sum sequence  Find a closed form for .  Does converge? If so, to what value?       Videos      Video: Compute the first few terms of a telescoping or geometric partial sum sequence, and find a closed form for this sequence, and compute its limit.     Exercises  Exercises available at    "
 },
 {
   "id": "SQ3-2",
@@ -7549,7 +7549,7 @@ var ptx_lunr_docs = [
   "type": "Activity",
   "number": "8.3.4",
   "title": "",
-  "body": "  Let . Find the following partial sums of the sequence .        "
+  "body": "  Let . Find the following partial sums of the sequence .   .  .  .  .  .  "
 },
 {
   "id": "activity-SQ3closedformmotivation",
@@ -9413,6 +9413,51 @@ var ptx_lunr_docs = [
   "number": "A.5.5",
   "title": "Practice: Do Not Turn In.",
   "body": " Practice: Do Not Turn In   Suppose that is some continuous, strictly increasing function defined on an interval . These assumptions guarantee that is an invertible function, so we will let , defined on the interval denote this inverse function.    Explain why the following equation of integrals is true without doing any calculations:     Use a combination of our integration strategies to provide a second explanation for why this equation is true.   "
+},
+{
+  "id": "sec-pset5-calc",
+  "level": "1",
+  "url": "sec-pset5-calc.html",
+  "type": "Section",
+  "number": "A.6",
+  "title": "Problem Set 5",
+  "body": " Problem Set 5   Instructions  Prior to beginning this problem set, consider reading the Problem Set Success Guide for advice and clarity around expectations for Problem Sets in this course. Upload your solutions to all problems on this page to gradescope as a single .pdf file, remembering to assign pages appropriately for each question. Complete instructions for Problem Sets are available on Canvas.    (Problem 1)  For each of the following series, decide if they converge or not, justifying your reasoning:                          (Problem 2)   For each of the following series, determine if they converge or not, justifying your reasoning. For those that do converge, determine if the convergence is conditional or absolute.                           (Problem 3)   Suppose that is some sequence of positive numbers that converges to . Determine which, if any, of the following series converge, justifying your reasoning:                             We saw in class that the alternating harmonic series converges by the alternating series test.    Estimate the value of this series by using the first 10 terms to compute the -th partial sum .    Start with the expression Now multiply everything by and explain and demonstrate how to rearrange the terms of this new series in order to get the original alternating harmonic series that you started with.    Reflect: You should indeed feel very weird about your result in (b). What you are discovering is that we cannot always rearrange terms in a series and expect to get the same value. This is part of why absolute convergence is so important: in a series that converges absolutely, we can always rearrange the terms without changing the value of the sum.    "
+},
+{
+  "id": "sec-pset5-calc-3",
+  "level": "2",
+  "url": "sec-pset5-calc.html#sec-pset5-calc-3",
+  "type": "Problem",
+  "number": "A.6.1",
+  "title": "(Problem 1).",
+  "body": " (Problem 1)  For each of the following series, decide if they converge or not, justifying your reasoning:                        "
+},
+{
+  "id": "sec-pset5-calc-4",
+  "level": "2",
+  "url": "sec-pset5-calc.html#sec-pset5-calc-4",
+  "type": "Problem",
+  "number": "A.6.2",
+  "title": "(Problem 2).",
+  "body": " (Problem 2)   For each of the following series, determine if they converge or not, justifying your reasoning. For those that do converge, determine if the convergence is conditional or absolute.                         "
+},
+{
+  "id": "sec-pset5-calc-5",
+  "level": "2",
+  "url": "sec-pset5-calc.html#sec-pset5-calc-5",
+  "type": "Problem",
+  "number": "A.6.3",
+  "title": "(Problem 3).",
+  "body": " (Problem 3)   Suppose that is some sequence of positive numbers that converges to . Determine which, if any, of the following series converge, justifying your reasoning:                         "
+},
+{
+  "id": "sec-pset5-calc-6",
+  "level": "2",
+  "url": "sec-pset5-calc.html#sec-pset5-calc-6",
+  "type": "Problem",
+  "number": "A.6.4",
+  "title": "",
+  "body": "   We saw in class that the alternating harmonic series converges by the alternating series test.    Estimate the value of this series by using the first 10 terms to compute the -th partial sum .    Start with the expression Now multiply everything by and explain and demonstrate how to rearrange the terms of this new series in order to get the original alternating harmonic series that you started with.    Reflect: You should indeed feel very weird about your result in (b). What you are discovering is that we cannot always rearrange terms in a series and expect to get the same value. This is part of why absolute convergence is so important: in a series that converges absolutely, we can always rearrange the terms without changing the value of the sum.   "
 },
 {
   "id": "integral-table",
