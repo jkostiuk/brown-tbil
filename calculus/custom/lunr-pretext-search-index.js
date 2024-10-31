@@ -8197,7 +8197,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "8.7",
   "title": "Ratio and Root Tests (SQ7)",
-  "body": " Ratio and Root Tests (SQ7)     Use the ratio and root tests to determine if a series converges or diverges.      Activities    Recall that a geometric series was a series of the form: for some initial value  and common ratio .  Given any series , it is geometric only if is a constant this constant will then be the common ratio.      Consider the series    Notice that Based on this calculation, is this series geometric?  Yes.  No.  More information is needed.    What is ?  .  .  .  .  .    While our series is not geometric, our calculation suggests that our series may behave like a geometric series whose common ratio is equal to the value of the limit you found above. Based on this reasoning, which conclusion do you think is more likely?  The series converges.  The series diverges.       Consider the series .   Does converge?  Find .  .  .  .  .  .    Find   .  .  .  .  .       Consider the series .   Does converge?  Find .  .  .  .  .  .    Find   .  .  .  .  .       Consider the series .   Does converge?  Find .  Find      Consider the series .   Does converge?  Find .  Find     The Ratio Test   Let be a series and suppose that . Then  converges if is less than 1, and  diverges if is greater than 1.  If , we cannot determine if converges or diverges with this method .       The Root Test   Let be an integer and let be a series with for , and suppose that . Then  converges if is less than 1, and  diverges if is greater than 1.  If , we cannot determine if converges or diverges with this method .        Consider the series .   Which of the following is ?  .  .  .    Which of the following is ?  .  .  .  .  .    Which of the following is ?  .  .  .  .    Using the fact , simplify as much as possible.  Find .  Does converge?     Consider the series    What is ?  Which of the following is ?  .  .  .  .  .    Find .  Does converge?     For each series, use the ratio or root test to determine if the series converges or diverges.                  Consider the series .   Use the root test to check for convergence of this series.  Use the ratio test to check for convergence of this series.  Use the comparison (or limit comparison) test to check for convergence of this series.  Find the sum of this series.     Consider . Recall that    Let . Find .  Recall that Find .  Find .  Does converge?     Consider the series .   Use the root test to check for convergence of this series.  Use the ratio test to check for convergence of this series.  Use the comparison (or limit comparison) test to check for convergence of this series.      Videos      Video: Use the ratio and root tests to determine if a series converges or diverges     Exercises  Exercises available at    "
+  "body": " Ratio and Root Tests (SQ7)     Use the ratio and root tests to determine if a series converges or diverges.      Activities    Recall that a geometric series was a series of the form: for some initial value  and common ratio .  Given any series , it is geometric only if is a constant this constant will then be the common ratio.      Consider the series    Notice that Based on this calculation, is this series geometric?  Yes.  No.  More information is needed.    What is ?  .  .  .  .  .    While our series is not geometric, our calculation suggests that, in the long run, our series may behave like a geometric series whose common ratio is equal to the value of the limit you found above. Based on this reasoning, which conclusion do you think is more likely?  The series converges.  The series diverges.       The Ratio Test   Let be a series and suppose that . Then  converges if is less than 1, and  diverges if is greater than 1.  If , we cannot determine if converges or diverges with this method .       The Root Test   Let be an integer and let be a series with for , and suppose that . Then  converges if is less than 1, and  diverges if is greater than 1.  If , we cannot determine if converges or diverges with this method .        Consider the series .    Which of the following is ?  .  .  .  .    Using the fact , simplify as much as possible.  Find .  Does converge?     Consider the series     Which of the following is ?  .  .  .  .  .    Find .  Does converge?      Consider the series and .   Do either of or converge?  Find and .  Find and .     The calculations above demonstrate that, when we get , the root\/ratio test is honestly inconclusive . The series might converge, or it might diverge; we will need to use other means to determine one way or the other.      For each series, use the ratio or root test to determine if the series converges or diverges.                  Consider the series .   Use the root test to check for convergence of this series.  Use the ratio test to check for convergence of this series.  Use the comparison (or limit comparison) test to check for convergence of this series.  Find the sum of this series.     We have     Notice that . Consider separately the limit . Using l'Hopital's rule, we find that . Putting this all together, then, we find that       Consider .    Find .  Does converge?     Consider the series .   Use the root test to check for convergence of this series.  Use the ratio test to check for convergence of this series.  Use the comparison (or limit comparison) test to check for convergence of this series.      Videos      Video: Use the ratio and root tests to determine if a series converges or diverges     Individual Practice    Consider the series .   Does converge?  Find .  Find      Exercises  Exercises available at    "
 },
 {
   "id": "SQ7-2",
@@ -8224,50 +8224,14 @@ var ptx_lunr_docs = [
   "type": "Activity",
   "number": "8.7.2",
   "title": "",
-  "body": "  Consider the series    Notice that Based on this calculation, is this series geometric?  Yes.  No.  More information is needed.    What is ?  .  .  .  .  .    While our series is not geometric, our calculation suggests that our series may behave like a geometric series whose common ratio is equal to the value of the limit you found above. Based on this reasoning, which conclusion do you think is more likely?  The series converges.  The series diverges.    "
-},
-{
-  "id": "SQ7-3-4",
-  "level": "2",
-  "url": "SQ7.html#SQ7-3-4",
-  "type": "Activity",
-  "number": "8.7.3",
-  "title": "",
-  "body": "  Consider the series .   Does converge?  Find .  .  .  .  .  .    Find   .  .  .  .  .    "
-},
-{
-  "id": "SQ7-3-5",
-  "level": "2",
-  "url": "SQ7.html#SQ7-3-5",
-  "type": "Activity",
-  "number": "8.7.4",
-  "title": "",
-  "body": "  Consider the series .   Does converge?  Find .  .  .  .  .  .    Find   .  .  .  .  .    "
-},
-{
-  "id": "activity-SQ7harmonic",
-  "level": "2",
-  "url": "SQ7.html#activity-SQ7harmonic",
-  "type": "Activity",
-  "number": "8.7.5",
-  "title": "",
-  "body": "  Consider the series .   Does converge?  Find .  Find   "
-},
-{
-  "id": "activity-SQ7alternatingharmonic",
-  "level": "2",
-  "url": "SQ7.html#activity-SQ7alternatingharmonic",
-  "type": "Activity",
-  "number": "8.7.6",
-  "title": "",
-  "body": "  Consider the series .   Does converge?  Find .  Find   "
+  "body": "  Consider the series    Notice that Based on this calculation, is this series geometric?  Yes.  No.  More information is needed.    What is ?  .  .  .  .  .    While our series is not geometric, our calculation suggests that, in the long run, our series may behave like a geometric series whose common ratio is equal to the value of the limit you found above. Based on this reasoning, which conclusion do you think is more likely?  The series converges.  The series diverges.    "
 },
 {
   "id": "fact-SQ7ratioTest",
   "level": "2",
   "url": "SQ7.html#fact-SQ7ratioTest",
   "type": "Fact",
-  "number": "8.7.7",
+  "number": "8.7.3",
   "title": "The Ratio Test.",
   "body": " The Ratio Test   Let be a series and suppose that . Then  converges if is less than 1, and  diverges if is greater than 1.  If , we cannot determine if converges or diverges with this method .     "
 },
@@ -8276,34 +8240,52 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "SQ7.html#fact-SQ7rootTest",
   "type": "Fact",
-  "number": "8.7.8",
+  "number": "8.7.4",
   "title": "The Root Test.",
   "body": " The Root Test   Let be an integer and let be a series with for , and suppose that . Then  converges if is less than 1, and  diverges if is greater than 1.  If , we cannot determine if converges or diverges with this method .     "
 },
 {
-  "id": "SQ7-3-10",
+  "id": "SQ7-3-6",
   "level": "2",
-  "url": "SQ7.html#SQ7-3-10",
+  "url": "SQ7.html#SQ7-3-6",
   "type": "Activity",
-  "number": "8.7.9",
+  "number": "8.7.5",
   "title": "",
-  "body": "  Consider the series .   Which of the following is ?  .  .  .    Which of the following is ?  .  .  .  .  .    Which of the following is ?  .  .  .  .    Using the fact , simplify as much as possible.  Find .  Does converge?  "
+  "body": "  Consider the series .    Which of the following is ?  .  .  .  .    Using the fact , simplify as much as possible.  Find .  Does converge?  "
 },
 {
-  "id": "SQ7-3-11",
+  "id": "SQ7-3-7",
   "level": "2",
-  "url": "SQ7.html#SQ7-3-11",
+  "url": "SQ7.html#SQ7-3-7",
   "type": "Activity",
-  "number": "8.7.10",
+  "number": "8.7.6",
   "title": "",
-  "body": "  Consider the series    What is ?  Which of the following is ?  .  .  .  .  .    Find .  Does converge?  "
+  "body": "  Consider the series     Which of the following is ?  .  .  .  .  .    Find .  Does converge?  "
+},
+{
+  "id": "activity-SQ7harmonic",
+  "level": "2",
+  "url": "SQ7.html#activity-SQ7harmonic",
+  "type": "Activity",
+  "number": "8.7.7",
+  "title": "",
+  "body": "  Consider the series and .   Do either of or converge?  Find and .  Find and .  "
+},
+{
+  "id": "SQ7-3-9",
+  "level": "2",
+  "url": "SQ7.html#SQ7-3-9",
+  "type": "Observation",
+  "number": "8.7.8",
+  "title": "",
+  "body": "  The calculations above demonstrate that, when we get , the root\/ratio test is honestly inconclusive . The series might converge, or it might diverge; we will need to use other means to determine one way or the other.   "
 },
 {
   "id": "activity-SQ7rootRatioChoices",
   "level": "2",
   "url": "SQ7.html#activity-SQ7rootRatioChoices",
   "type": "Activity",
-  "number": "8.7.11",
+  "number": "8.7.9",
   "title": "",
   "body": "  For each series, use the ratio or root test to determine if the series converges or diverges.               "
 },
@@ -8312,25 +8294,34 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "SQ7.html#activity-SQ7rootRatioComparison2",
   "type": "Activity",
-  "number": "8.7.12",
+  "number": "8.7.10",
   "title": "",
   "body": "  Consider the series .   Use the root test to check for convergence of this series.  Use the ratio test to check for convergence of this series.  Use the comparison (or limit comparison) test to check for convergence of this series.  Find the sum of this series.  "
 },
 {
-  "id": "SQ7-3-14",
+  "id": "fact-nthroot-n",
   "level": "2",
-  "url": "SQ7.html#SQ7-3-14",
-  "type": "Activity",
-  "number": "8.7.13",
+  "url": "SQ7.html#fact-nthroot-n",
+  "type": "Fact",
+  "number": "8.7.11",
   "title": "",
-  "body": "  Consider . Recall that    Let . Find .  Recall that Find .  Find .  Does converge?  "
+  "body": "  We have     Notice that . Consider separately the limit . Using l'Hopital's rule, we find that . Putting this all together, then, we find that    "
+},
+{
+  "id": "SQ7-3-13",
+  "level": "2",
+  "url": "SQ7.html#SQ7-3-13",
+  "type": "Activity",
+  "number": "8.7.12",
+  "title": "",
+  "body": "  Consider .    Find .  Does converge?  "
 },
 {
   "id": "activity-SQ7rootRatioComparison",
   "level": "2",
   "url": "SQ7.html#activity-SQ7rootRatioComparison",
   "type": "Activity",
-  "number": "8.7.14",
+  "number": "8.7.13",
   "title": "",
   "body": "  Consider the series .   Use the root test to check for convergence of this series.  Use the ratio test to check for convergence of this series.  Use the comparison (or limit comparison) test to check for convergence of this series.  "
 },
@@ -8342,6 +8333,15 @@ var ptx_lunr_docs = [
   "number": "187",
   "title": "",
   "body": "    Video: Use the ratio and root tests to determine if a series converges or diverges  "
+},
+{
+  "id": "activity-SQ7alternatingharmonic",
+  "level": "2",
+  "url": "SQ7.html#activity-SQ7alternatingharmonic",
+  "type": "Activity",
+  "number": "8.7.14",
+  "title": "",
+  "body": "  Consider the series .   Does converge?  Find .  Find   "
 },
 {
   "id": "SQ8",
