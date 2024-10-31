@@ -92,9 +92,9 @@
         <introduction>
             <p>
                 In this problem, you will prove that the harmonic series diverges using the definitions of partial sums instead of relying on the integral test. 
-                Recall that the harmonic series is the series <m>\sum_{n=0}^\infty\frac{1}{n}</m>.
+                Recall that the harmonic series is the series <m>\sum_{n=1}^\infty\frac{1}{n}</m>.
                 Let <m>S_k</m> denote its <m>k</m>-th partial sum:
-                <me>S_k=\sum_{n=0}^k\frac{1}{n}=1+\frac{1}{2}+\cdots+\frac{1}{k}.</me>
+                <me>S_k=\sum_{n=1}^k\frac{1}{n}=1+\frac{1}{2}+\cdots+\frac{1}{k}.</me>
             </p>
         </introduction>
         <task>
