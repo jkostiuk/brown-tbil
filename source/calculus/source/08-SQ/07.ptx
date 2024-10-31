@@ -312,31 +312,7 @@
             </p>
         </statement>
     </observation>
-    <!--
-    <activity xml:id="activity-SQ7alternatingharmonic">
-        <introduction>
-            <p>
-                Consider the series <m>\displaystyle \sum_{n=1}^\infty a_n=\sum_{n=1}^\infty \frac{(-1)^n}{n}</m>.
-            </p>
-        </introduction>
-        <task>
-            <p>
-                Does <m>\displaystyle \sum_{n=1}^\infty a_n=\sum_{n=1}^\infty \frac{(-1)^n}{n}</m> converge?
-            </p>
-        </task>
-        <task>
-            <p>
-                Find <m>\frac{a_{n+1}}{a_n}</m>.
-            </p>
-        </task>
-        <task>
-            <p>
-                Find <m>\displaystyle \lim_{n\to\infty} \left|\frac{a_{n+1}}{a_n}\right|.</m>
-            </p>
-        </task>
-        
-        
-    </activity>-->
+    
 
         <activity xml:id="activity-SQ7rootRatioChoices">
             <introduction>
@@ -509,6 +485,33 @@
          
         
         
+    </subsection>
+    <subsection>
+        <title>Individual Practice</title>
+        <activity xml:id="activity-SQ7alternatingharmonic">
+            <introduction>
+                <p>
+                    Consider the series <m>\displaystyle \sum_{n=1}^\infty a_n=\sum_{n=1}^\infty \frac{(-1)^n}{n}</m>.
+                </p>
+            </introduction>
+            <task>
+                <p>
+                    Does <m>\displaystyle \sum_{n=1}^\infty a_n=\sum_{n=1}^\infty \frac{(-1)^n}{n}</m> converge?
+                </p>
+            </task>
+            <task>
+                <p>
+                    Find <m>\frac{a_{n+1}}{a_n}</m>.
+                </p>
+            </task>
+            <task>
+                <p>
+                    Find <m>\displaystyle \lim_{n\to\infty} \left|\frac{a_{n+1}}{a_n}\right|.</m>
+                </p>
+            </task>
+            
+            
+        </activity>
     </subsection>
 
     <subsection>
