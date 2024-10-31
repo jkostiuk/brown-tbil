@@ -8026,7 +8026,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "8.6",
   "title": "Comparison Tests (SQ6)",
-  "body": " Comparison Tests (SQ6)     Use the direct comparison and limit comparison tests to determine if a series converges or diverges.      Activities    Let be a sequence, with infinite series . Suppose is a sequence where each , whith infinite series .   If what can be said about ?  converges but the value cannot be determined.  converges to .  converges to some value other than 15.  diverges.  It cannot be determined whether converges or diverges.    If diverges, what can be said about ?  converges but the value cannot be determined.  converges and the value can be determined.  diverges.  It cannot be determined whether converges or diverges.       If , , and is a real number, then  , and  .        Using , we know the geometric series    What can we say about the series   converges to .  converges to some value other than 6.  diverges.    What do you think we can say about the series   converges to .  converges to some value other than 6.  diverges.       From , we know diverges.   What can we say about the series   converges to a known value we can compute.  converges to some unknown value.  diverges.    What do you think we can say about the series   converges to a known value we can compute.  converges to some unknown value.  diverges.      The Limit Comparison Test   Let and be series with positive terms. If for some positive (finite) constant , then and either both converge or both diverge.      Above, we considered the series and . Use the Limit Comparison Test to confirm our intuition.    Notation as above, we have As , this approaches , so the Limit Comparison Test says these two series have the same convergence behaviour.  Since the series is a multiple of a geometric series with common ratio , it converges; therefore, so does       We wish to determine if converges or diverges using .   Compute   Does the geometric series converge or diverge by ?  Does converge or diverge?     We wish to determine if converges or diverges using .   To which of the following should we compare ?  .  .  .  .    Compute .  Compute .  What is true about and ?  Their values are reciprocals.  Their values negative reciprocals.  They are both positive finite constants.  Only one value is a finite positive constant.  One value is and the other value is infinite.    Does the series converge or diverge?  Using your chosen sequence and , does converge or diverge?     Recall that converges.   Let . Compute .  .  .  .  .  .   Does converge or diverge?  Let . Compute .  .  .  .  .  .   Does converge or diverge?  Let and be series with positive terms. If diverges, can we conclude that converges or diverges?      Consider sequences where .  Plots of   Plots of sequences where .       Suppose that converges. What could be said about ?  converges.  diverges.  Whether or not converges or diverges cannot be determined with this information.    Suppose that which diverges. Which of the following statements are true?  for each and is a convergent -series where .  for each and is a divergent -series where .    Suppose that was some series that diverges. What could be said about ?  converges.  diverges.  Whether or not converges or diverges cannot be determined with this information.    Suppose that diverges. What could be said about ?  converges.  diverges.  Whether or not converges or diverges cannot be determined with this information.    Suppose that which converges. Which of the following statements are true?  for each and is a convergent geometric series where .  for each and diverges by the Divergence Test.    Suppose that was some series that converges. What could be said about ?  converges.  diverges.  Whether or not converges or diverges cannot be determined with this information.       Supppose we have sequences so that for some we have that for each . Then we have the following results:  If converges, then so does .  If diverges, then so does .        Suppose that you were handed positive sequences . For the first few values , but after that what happens is unclear until . Then for any we have that .  Plots of   Plots of sequences where initially but eventually .       How might we best utilize to determine the convergence of or ?  Since is sometimes greater than, and sometimes less than , there is no way to utilize .  Since initially, we have , we can utilize by assuming .  Since we can rewrite and and are necessarily finite, we can compare with .      The Direct Comparison Test   Let and be series with positive terms. If there is a such that for each , then:  If converges, then so does .  If diverges, then so does .        Suppose we wish to determine if converged using .   Does converge or diverge?  For which value is for each ?  for each .  for each .  for each .  for each .  There is no for which for each .    Use and compare to to determine if converges or diverges.     Suppose we wish to determine if converged using .   Which series should we compare to best utilize ?  .  .  .  .  .  .    Using your chosen series and , does converge or diverge?     For each of the following series, determine if it converges or diverges, and explain your choice.         Videos      Video: Use the direct comparison and limit comparison tests to determine if a series converges or diverges     Exercises  Exercises available at    "
+  "body": " Comparison Tests (SQ6)     Use the direct comparison and limit comparison tests to determine if a series converges or diverges.      Activities    Let be a sequence, with infinite series . Suppose is a sequence where each , whith infinite series .   If what can be said about ?  converges but the value cannot be determined.  converges to .  converges to some value other than 15.  diverges.  It cannot be determined whether converges or diverges.    If diverges, what can be said about ?  converges but the value cannot be determined.  converges and the value can be determined.  diverges.  It cannot be determined whether converges or diverges.       If , , and is a real number, then  , and  .        Using , we know the geometric series    What can we say about the series   converges to .  converges to some value other than 6.  diverges.    What do you think we can say about the series   converges to .  converges to some value other than 6.  diverges.       From , we know diverges.   What can we say about the series   converges to a known value we can compute.  converges to some unknown value.  diverges.    What do you think we can say about the series   converges to a known value we can compute.  converges to some unknown value.  diverges.      The Limit Comparison Test   Let and be series with positive terms. If for some positive (finite) constant , then and either both converge or both diverge.      Above, we considered the series and . Use the Limit Comparison Test to confirm our intuition.    Notation as above, we have As , this approaches , so the Limit Comparison Test says these two series have the same convergence behaviour.  Since the series is a multiple of a geometric series with common ratio , it converges; therefore, so does       We wish to determine if converges or diverges using .   Compute   Does the geometric series converge or diverge by ?  Does converge or diverge?     We wish to determine if converges or diverges using .   To which of the following should we compare ?  .  .  .  .    Compute .  Compute .  What is true about and ?  Their values are reciprocals.  Their values negative reciprocals.  They are both positive finite constants.  Only one value is a finite positive constant.  One value is and the other value is infinite.    Does the series converge or diverge?  Using your chosen sequence and , does converge or diverge?     Recall that converges.   Let . Compute .  .  .  .  .  .   Does converge or diverge?  Let . Compute .  .  .  .  .  .   Does converge or diverge?  Let and be series with positive terms. If diverges, can we conclude that converges or diverges?      Consider sequences where .  Plots of   Plots of sequences where .       Suppose that converges. What could be said about ?  converges.  diverges.  Whether or not converges or diverges cannot be determined with this information.     Suppose that was some series that diverges. What could be said about ?  converges.  diverges.  Whether or not converges or diverges cannot be determined with this information.    Suppose that diverges. What could be said about ?  converges.  diverges.  Whether or not converges or diverges cannot be determined with this information.     Suppose that was some series that converges. What could be said about ?  converges.  diverges.  Whether or not converges or diverges cannot be determined with this information.       Suppose we have sequences and that for each . Then we have the following results:  If converges, then so does .  If diverges, then so does .        Suppose that you were handed positive sequences . For the first few values , but after that what happens is unclear until . Then for any we have that .  Plots of   Plots of sequences where initially but eventually .       How might we best utilize to determine the convergence of or ?  Since is sometimes greater than, and sometimes less than , there is no way to utilize .  Since initially, we have , we can utilize by assuming .  Since we can rewrite and and are necessarily finite, we can compare with .      The Direct Comparison Test   Let and be series with positive terms. If there is a such that for each , then:  If converges, then so does .  If diverges, then so does .        Suppose we wish to determine if converged using .   Does converge or diverge?  For which value is for each ?  for each .  for each .  for each .  for each .  There is no for which for each .    Use and compare to to determine if converges or diverges.     Suppose we wish to determine if converged using .   Which series should we compare to best utilize ?  .  .  .  .  .  .    Using your chosen series and , does converge or diverge?     For each of the following series, determine if it converges or diverges, and explain your choice.         Videos      Video: Use the direct comparison and limit comparison tests to determine if a series converges or diverges     Exercises  Exercises available at    "
 },
 {
   "id": "SQ6-2",
@@ -8125,7 +8125,7 @@ var ptx_lunr_docs = [
   "type": "Activity",
   "number": "8.6.10",
   "title": "",
-  "body": "  Consider sequences where .  Plots of   Plots of sequences where .       Suppose that converges. What could be said about ?  converges.  diverges.  Whether or not converges or diverges cannot be determined with this information.    Suppose that which diverges. Which of the following statements are true?  for each and is a convergent -series where .  for each and is a divergent -series where .    Suppose that was some series that diverges. What could be said about ?  converges.  diverges.  Whether or not converges or diverges cannot be determined with this information.    Suppose that diverges. What could be said about ?  converges.  diverges.  Whether or not converges or diverges cannot be determined with this information.    Suppose that which converges. Which of the following statements are true?  for each and is a convergent geometric series where .  for each and diverges by the Divergence Test.    Suppose that was some series that converges. What could be said about ?  converges.  diverges.  Whether or not converges or diverges cannot be determined with this information.    "
+  "body": "  Consider sequences where .  Plots of   Plots of sequences where .       Suppose that converges. What could be said about ?  converges.  diverges.  Whether or not converges or diverges cannot be determined with this information.     Suppose that was some series that diverges. What could be said about ?  converges.  diverges.  Whether or not converges or diverges cannot be determined with this information.    Suppose that diverges. What could be said about ?  converges.  diverges.  Whether or not converges or diverges cannot be determined with this information.     Suppose that was some series that converges. What could be said about ?  converges.  diverges.  Whether or not converges or diverges cannot be determined with this information.    "
 },
 {
   "id": "fact-SQ6comparesequence",
@@ -8134,7 +8134,7 @@ var ptx_lunr_docs = [
   "type": "Fact",
   "number": "8.6.11",
   "title": "",
-  "body": "  Supppose we have sequences so that for some we have that for each . Then we have the following results:  If converges, then so does .  If diverges, then so does .     "
+  "body": "  Suppose we have sequences and that for each . Then we have the following results:  If converges, then so does .  If diverges, then so does .     "
 },
 {
   "id": "activity-SQ6partialcompare",
@@ -8197,7 +8197,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "8.7",
   "title": "Ratio and Root Tests (SQ7)",
-  "body": " Ratio and Root Tests (SQ7)     Use the ratio and root tests to determine if a series converges or diverges.      Activities    Consider the series    Which of these series most closely resembles ?  .  .  .    Based on your previous choice, do we think this series is more likely to converge or diverge?  Find   .  .  .  .  .       Consider the series .   Does converge?  Find .  .  .  .  .  .    Find   .  .  .  .  .       Consider the series .   Does converge?  Find .  .  .  .  .  .    Find   .  .  .  .  .       Consider the series .   Does converge?  Find .  Find      Consider the series .   Does converge?  Find .  Find     The Ratio Test   Let be a series and suppose that . Then  converges if is less than 1, and  diverges if is greater than 1.  If , we cannot determine if converges or diverges with this method .       The Root Test   Let be an integer and let be a series with for , and suppose that . Then  converges if is less than 1, and  diverges if is greater than 1.  If , we cannot determine if converges or diverges with this method .        Consider the series .   Which of the following is ?  .  .  .    Which of the following is ?  .  .  .  .  .    Which of the following is ?  .  .  .  .    Using the fact , simplify as much as possible.  Find .  Does converge?    Consider the series   What is ?  Which of the following is ?  .  .  .  .  .    Find .  Does converge?     For each series, use the ratio or root test to determine if the series converges or diverges.                  Consider the series .   Use the root test to check for convergence of this series.  Use the ratio test to check for convergence of this series.  Use the comparison (or limit comparison) test to check for convergence of this series.  Find the sum of this series.     Consider . Recall that    Let . Find .  Recall that Find .  Find .  Does converge?     Consider the series .   Use the root test to check for convergence of this series.  Use the ratio test to check for convergence of this series.  Use the comparison (or limit comparison) test to check for convergence of this series.      Videos      Video: Use the ratio and root tests to determine if a series converges or diverges     Exercises  Exercises available at    "
+  "body": " Ratio and Root Tests (SQ7)     Use the ratio and root tests to determine if a series converges or diverges.      Activities    Recall that a geometric series was a series of the form: for some initial value  and common ratio .  Given any series , it is geometric only if is a constant this constant will then be the common ratio.      Consider the series    Notice that Based on this calculation, is this series geometric?  Yes.  No.  More information is needed.    What is ?  .  .  .  .  .    While our series is not geometric, our calculation suggests that our series may behave like a geometric series whose common ratio is equal to the value of the limit you found above. Based on this reasoning, which conclusion do you think is more likely?  The series converges.  The series diverges.       Consider the series .   Does converge?  Find .  .  .  .  .  .    Find   .  .  .  .  .       Consider the series .   Does converge?  Find .  .  .  .  .  .    Find   .  .  .  .  .       Consider the series .   Does converge?  Find .  Find      Consider the series .   Does converge?  Find .  Find     The Ratio Test   Let be a series and suppose that . Then  converges if is less than 1, and  diverges if is greater than 1.  If , we cannot determine if converges or diverges with this method .       The Root Test   Let be an integer and let be a series with for , and suppose that . Then  converges if is less than 1, and  diverges if is greater than 1.  If , we cannot determine if converges or diverges with this method .        Consider the series .   Which of the following is ?  .  .  .    Which of the following is ?  .  .  .  .  .    Which of the following is ?  .  .  .  .    Using the fact , simplify as much as possible.  Find .  Does converge?     Consider the series    What is ?  Which of the following is ?  .  .  .  .  .    Find .  Does converge?     For each series, use the ratio or root test to determine if the series converges or diverges.                  Consider the series .   Use the root test to check for convergence of this series.  Use the ratio test to check for convergence of this series.  Use the comparison (or limit comparison) test to check for convergence of this series.  Find the sum of this series.     Consider . Recall that    Let . Find .  Recall that Find .  Find .  Does converge?     Consider the series .   Use the root test to check for convergence of this series.  Use the ratio test to check for convergence of this series.  Use the comparison (or limit comparison) test to check for convergence of this series.      Videos      Video: Use the ratio and root tests to determine if a series converges or diverges     Exercises  Exercises available at    "
 },
 {
   "id": "SQ7-2",
@@ -8212,10 +8212,10 @@ var ptx_lunr_docs = [
   "id": "SQ7-3-2",
   "level": "2",
   "url": "SQ7.html#SQ7-3-2",
-  "type": "Activity",
+  "type": "Observation",
   "number": "8.7.1",
   "title": "",
-  "body": "  Consider the series    Which of these series most closely resembles ?  .  .  .    Based on your previous choice, do we think this series is more likely to converge or diverge?  Find   .  .  .  .  .    "
+  "body": "  Recall that a geometric series was a series of the form: for some initial value  and common ratio .  Given any series , it is geometric only if is a constant this constant will then be the common ratio.   "
 },
 {
   "id": "SQ7-3-3",
@@ -8224,7 +8224,7 @@ var ptx_lunr_docs = [
   "type": "Activity",
   "number": "8.7.2",
   "title": "",
-  "body": "  Consider the series .   Does converge?  Find .  .  .  .  .  .    Find   .  .  .  .  .    "
+  "body": "  Consider the series    Notice that Based on this calculation, is this series geometric?  Yes.  No.  More information is needed.    What is ?  .  .  .  .  .    While our series is not geometric, our calculation suggests that our series may behave like a geometric series whose common ratio is equal to the value of the limit you found above. Based on this reasoning, which conclusion do you think is more likely?  The series converges.  The series diverges.    "
 },
 {
   "id": "SQ7-3-4",
@@ -8236,11 +8236,20 @@ var ptx_lunr_docs = [
   "body": "  Consider the series .   Does converge?  Find .  .  .  .  .  .    Find   .  .  .  .  .    "
 },
 {
+  "id": "SQ7-3-5",
+  "level": "2",
+  "url": "SQ7.html#SQ7-3-5",
+  "type": "Activity",
+  "number": "8.7.4",
+  "title": "",
+  "body": "  Consider the series .   Does converge?  Find .  .  .  .  .  .    Find   .  .  .  .  .    "
+},
+{
   "id": "activity-SQ7harmonic",
   "level": "2",
   "url": "SQ7.html#activity-SQ7harmonic",
   "type": "Activity",
-  "number": "8.7.4",
+  "number": "8.7.5",
   "title": "",
   "body": "  Consider the series .   Does converge?  Find .  Find   "
 },
@@ -8249,7 +8258,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "SQ7.html#activity-SQ7alternatingharmonic",
   "type": "Activity",
-  "number": "8.7.5",
+  "number": "8.7.6",
   "title": "",
   "body": "  Consider the series .   Does converge?  Find .  Find   "
 },
@@ -8258,7 +8267,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "SQ7.html#fact-SQ7ratioTest",
   "type": "Fact",
-  "number": "8.7.6",
+  "number": "8.7.7",
   "title": "The Ratio Test.",
   "body": " The Ratio Test   Let be a series and suppose that . Then  converges if is less than 1, and  diverges if is greater than 1.  If , we cannot determine if converges or diverges with this method .     "
 },
@@ -8267,18 +8276,9 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "SQ7.html#fact-SQ7rootTest",
   "type": "Fact",
-  "number": "8.7.7",
+  "number": "8.7.8",
   "title": "The Root Test.",
   "body": " The Root Test   Let be an integer and let be a series with for , and suppose that . Then  converges if is less than 1, and  diverges if is greater than 1.  If , we cannot determine if converges or diverges with this method .     "
-},
-{
-  "id": "SQ7-3-9",
-  "level": "2",
-  "url": "SQ7.html#SQ7-3-9",
-  "type": "Activity",
-  "number": "8.7.8",
-  "title": "",
-  "body": "  Consider the series .   Which of the following is ?  .  .  .    Which of the following is ?  .  .  .  .  .    Which of the following is ?  .  .  .  .    Using the fact , simplify as much as possible.  Find .  Does converge?  "
 },
 {
   "id": "SQ7-3-10",
@@ -8287,14 +8287,23 @@ var ptx_lunr_docs = [
   "type": "Activity",
   "number": "8.7.9",
   "title": "",
-  "body": " Consider the series   What is ?  Which of the following is ?  .  .  .  .  .    Find .  Does converge?  "
+  "body": "  Consider the series .   Which of the following is ?  .  .  .    Which of the following is ?  .  .  .  .  .    Which of the following is ?  .  .  .  .    Using the fact , simplify as much as possible.  Find .  Does converge?  "
+},
+{
+  "id": "SQ7-3-11",
+  "level": "2",
+  "url": "SQ7.html#SQ7-3-11",
+  "type": "Activity",
+  "number": "8.7.10",
+  "title": "",
+  "body": "  Consider the series    What is ?  Which of the following is ?  .  .  .  .  .    Find .  Does converge?  "
 },
 {
   "id": "activity-SQ7rootRatioChoices",
   "level": "2",
   "url": "SQ7.html#activity-SQ7rootRatioChoices",
   "type": "Activity",
-  "number": "8.7.10",
+  "number": "8.7.11",
   "title": "",
   "body": "  For each series, use the ratio or root test to determine if the series converges or diverges.               "
 },
@@ -8303,16 +8312,16 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "SQ7.html#activity-SQ7rootRatioComparison2",
   "type": "Activity",
-  "number": "8.7.11",
+  "number": "8.7.12",
   "title": "",
   "body": "  Consider the series .   Use the root test to check for convergence of this series.  Use the ratio test to check for convergence of this series.  Use the comparison (or limit comparison) test to check for convergence of this series.  Find the sum of this series.  "
 },
 {
-  "id": "SQ7-3-13",
+  "id": "SQ7-3-14",
   "level": "2",
-  "url": "SQ7.html#SQ7-3-13",
+  "url": "SQ7.html#SQ7-3-14",
   "type": "Activity",
-  "number": "8.7.12",
+  "number": "8.7.13",
   "title": "",
   "body": "  Consider . Recall that    Let . Find .  Recall that Find .  Find .  Does converge?  "
 },
@@ -8321,7 +8330,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "SQ7.html#activity-SQ7rootRatioComparison",
   "type": "Activity",
-  "number": "8.7.13",
+  "number": "8.7.14",
   "title": "",
   "body": "  Consider the series .   Use the root test to check for convergence of this series.  Use the ratio test to check for convergence of this series.  Use the comparison (or limit comparison) test to check for convergence of this series.  "
 },
