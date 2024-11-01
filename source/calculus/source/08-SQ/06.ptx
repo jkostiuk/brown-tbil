@@ -383,7 +383,7 @@
             
             <task>
                 <p>
-                    Suppose that <m>\displaystyle \sum_{n=0}^\infty a_n</m> converges.  What could be said about <m>\{b_n\}</m>?
+                    Suppose that <m>\displaystyle \sum_{n=0}^\infty a_n</m> converges.  What could be said about <m>\sum_{n=0}^\infty b_n</m>?
                     <ol marker="A." cols="2">
                         <li><p><m>\displaystyle \sum_{n=0}^\infty b_n</m> converges.</p></li>
                         <li><p><m>\displaystyle \sum_{n=0}^\infty b_n</m> diverges.</p></li>
@@ -404,7 +404,7 @@
             
             <task>
                 <p>
-                    Suppose that <m>\displaystyle \sum_{n=0}^\infty a_n</m> was some series that diverges.  What could be said about <m>\{b_n\}</m>?
+                    Suppose that <m>\displaystyle \sum_{n=0}^\infty a_n</m> was some series that diverges.  What could be said about <m>\sum_{n=0}^\infty b_n</m>?
                     <ol marker="A." cols="2">
                         <li><m>\displaystyle \sum_{n=0}^\infty b_n</m> converges.</li>
                         <li><m>\displaystyle \sum_{n=0}^\infty b_n</m> diverges.</li>
@@ -417,7 +417,7 @@
             
             <task>
                 <p>
-                    Suppose that <m>\displaystyle \sum_{n=0}^\infty b_n</m> diverges.  What could be said about <m>\{a_n\}</m>?
+                    Suppose that <m>\displaystyle \sum_{n=0}^\infty b_n</m> diverges.  What could be said about <m>\sum_{n=0}^\infty a_n</m>?
                     <ol marker="A." cols="2">
                         <li><m>\displaystyle \sum_{n=0}^\infty a_n</m> converges.</li>
                         <li><m>\displaystyle \sum_{n=0}^\infty a_n</m> diverges.</li>
@@ -438,7 +438,7 @@
             
             <task>
                 <p>
-                    Suppose that <m>\displaystyle \sum_{n=0}^\infty b_n</m> was some series that converges.  What could be said about <m>\{a_n\}</m>?
+                    Suppose that <m>\displaystyle \sum_{n=0}^\infty b_n</m> was some series that converges.  What could be said about <m>\sum_{n=0}^\infty a_n</m>?
                     <ol marker="A." cols="2">
                         <li><m>\displaystyle \sum_{n=0}^\infty a_n</m> converges.</li>
                         <li><m>\displaystyle \sum_{n=0}^\infty a_n</m> diverges.</li>
