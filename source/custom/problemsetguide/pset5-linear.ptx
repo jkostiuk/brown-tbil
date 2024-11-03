@@ -15,7 +15,7 @@
             <p>
                 In class, we defined the inverse of a matrix in two steps. 
                 First, if <m>A</m> is a matrix, we said that <m>A</m> was invertible if the corresponding linear map <m>T\colon\IR^n\to\IR^n</m> was an invertible function. 
-                Given this, the inverse of <m>A</m>, denoted <m>A^{-1}</m> was defined to be the standard matrix of the inverse linear map <m>T^{-1}\colon\IR^\n\to\IR^n</m>. 
+                Given this, the inverse of <m>A</m>, denoted <m>A^{-1}</m> was defined to be the standard matrix of the inverse linear map <m>T^{-1}\colon\IR^n\to\IR^n</m>. 
             </p>
             <p>
                 An alternative approach would be: an <m>n\times n</m> matrix <m>A</m> is invertible if we can find a matrix <m>B</m> for which <m>AB=BA=I_n</m>; in this case, <m>B</m> is unique and we define <m>A^{-1}</m> to be this matrix. 
