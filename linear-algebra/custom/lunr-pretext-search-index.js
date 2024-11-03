@@ -4762,6 +4762,60 @@ var ptx_lunr_docs = [
   "body": " (Problem 4)   Let be an matrix. The transpose of is the matrix that is obtained by reflecting the matrix about the main top-left to bottom-right diagonal and is denoted by . For instance, the following is an example of a matrix and its transpose : Now suppose is a linear transformation with standard matrix and let denote the linear transformation with standard matrix .   With and notation as defined above, calculate the rank and nullity of the transformations and .    Now suppose that is an arbitrary linear transformation, let denote its standard matrix, and let be the transformation corresponding to the transpose . Explain why the rank of will always be equal to the rank of .    Notation as in (b), explain why and conclude that if and only if .     "
 },
 {
+  "id": "sec-pset5-linear",
+  "level": "1",
+  "url": "sec-pset5-linear.html",
+  "type": "Section",
+  "number": "A.6",
+  "title": "Problem Set 5",
+  "body": " Problem Set 5   Instructions  Prior to beginning this problem set, consider reading the Problem Set Success Guide for advice and clarity around expectations for Problem Sets in this course. Upload your solutions to all problems on this page to gradescope as a single .pdf file, remembering to assign pages appropriately for each question. Complete instructions for Problem Sets are available on Canvas.    (Problem 1)   In class, we defined the inverse of a matrix in two steps. First, if is a matrix, we said that was invertible if the corresponding linear map was an invertible function. Given this, the inverse of , denoted was defined to be the standard matrix of the inverse linear map .  An alternative approach would be: an matrix is invertible if we can find a matrix for which ; in this case, is unique and we define to be this matrix. For this problem (and future ones) you may decide to use either characterization you want.   If are both invertible matrices, explain why is also invertible and that .    If are matrices and is invertible, explain and demonstrate how to solve the following matrix equations:                     If are invertible matrices, is it necessarily the case that is invertible? If yes, prove it; if not, provide a counterexample.      (Problem 2)   Let and be two matrices for which the products and are both defined. If , we say that  commute ; if , we say that and  anti-commute .   Let and be the subset of matrices that commute with . Explain why is a subspace of and explain and demonstrate how to find a basis for .    Let and be the subset of matrices that anti-commute with . Explain why is a subspace of and explain and demonstrate how to find a basis for .      (Problem 3)   Suppose that and are two linear transformations of vector spaces.   If and are both surjective, explain why is also surjective.    Let be an matrix and an matrix. Suppose further that we know that and have pivot positions in each row. Explain why each row of also has a pivot.    Again, let be an matrix and an matrix. Suppose we know that has a pivot in each row. Explain why must also have a pivot position in each of its rows, but show, by providing an example, that it is possible for some row of to be missing a pivot.     Remark: If you'd like explore further: formulate and answer a related sequence of activities involving injective transformations and products of matrices whose RREFs have pivots in each column.      A Different Take on Matrix Multiplication  In class, we defined the product of two matrices to be the standard matrix of the composition of the two corresponding linear transformations. Here is an alternate formula\/definition for the matrix product that builds on the work you've been doing with dot-products.  Suppose that is an matrix and that is an matrix. Let be the rows of and let be the columns of , so that we can write and . Since the rows of and the columns of are all vectors in , it makes sense to take the dot-product between them. The matrix product can then be defined by In other words, the entry of the product is the dot-product of the -th row of and the -th column of .  As an example, in class, we computed that:   Now, we can check the above as follows: we see that the entry of this product is . This is the same as taking the dot-product of the third row of and the second column of :     (Problem 4)    Use the above conceptualization of matrix-product to revisit some old friends with a new perspective.    Let be a linear transformation with standard matrix . Explain why the kernel of is equal to the orthogonal complement of the row space of . That is, explain why:     Using part (a), explain and demonstrate how to calculate a basis for where:     Let be a subspace of . Explain, using results covered in class or in previous problems sets, why      "
+},
+{
+  "id": "sec-pset5-linear-3",
+  "level": "2",
+  "url": "sec-pset5-linear.html#sec-pset5-linear-3",
+  "type": "Problem",
+  "number": "A.6.1",
+  "title": "(Problem 1).",
+  "body": " (Problem 1)   In class, we defined the inverse of a matrix in two steps. First, if is a matrix, we said that was invertible if the corresponding linear map was an invertible function. Given this, the inverse of , denoted was defined to be the standard matrix of the inverse linear map .  An alternative approach would be: an matrix is invertible if we can find a matrix for which ; in this case, is unique and we define to be this matrix. For this problem (and future ones) you may decide to use either characterization you want.   If are both invertible matrices, explain why is also invertible and that .    If are matrices and is invertible, explain and demonstrate how to solve the following matrix equations:                     If are invertible matrices, is it necessarily the case that is invertible? If yes, prove it; if not, provide a counterexample.    "
+},
+{
+  "id": "sec-pset5-linear-4",
+  "level": "2",
+  "url": "sec-pset5-linear.html#sec-pset5-linear-4",
+  "type": "Problem",
+  "number": "A.6.2",
+  "title": "(Problem 2).",
+  "body": " (Problem 2)   Let and be two matrices for which the products and are both defined. If , we say that  commute ; if , we say that and  anti-commute .   Let and be the subset of matrices that commute with . Explain why is a subspace of and explain and demonstrate how to find a basis for .    Let and be the subset of matrices that anti-commute with . Explain why is a subspace of and explain and demonstrate how to find a basis for .    "
+},
+{
+  "id": "sec-pset5-linear-5",
+  "level": "2",
+  "url": "sec-pset5-linear.html#sec-pset5-linear-5",
+  "type": "Problem",
+  "number": "A.6.3",
+  "title": "(Problem 3).",
+  "body": " (Problem 3)   Suppose that and are two linear transformations of vector spaces.   If and are both surjective, explain why is also surjective.    Let be an matrix and an matrix. Suppose further that we know that and have pivot positions in each row. Explain why each row of also has a pivot.    Again, let be an matrix and an matrix. Suppose we know that has a pivot in each row. Explain why must also have a pivot position in each of its rows, but show, by providing an example, that it is possible for some row of to be missing a pivot.     Remark: If you'd like explore further: formulate and answer a related sequence of activities involving injective transformations and products of matrices whose RREFs have pivots in each column.    "
+},
+{
+  "id": "sec-pset5-linear-6",
+  "level": "2",
+  "url": "sec-pset5-linear.html#sec-pset5-linear-6",
+  "type": "Observation",
+  "number": "A.6.4",
+  "title": "A Different Take on Matrix Multiplication.",
+  "body": " A Different Take on Matrix Multiplication  In class, we defined the product of two matrices to be the standard matrix of the composition of the two corresponding linear transformations. Here is an alternate formula\/definition for the matrix product that builds on the work you've been doing with dot-products.  Suppose that is an matrix and that is an matrix. Let be the rows of and let be the columns of , so that we can write and . Since the rows of and the columns of are all vectors in , it makes sense to take the dot-product between them. The matrix product can then be defined by In other words, the entry of the product is the dot-product of the -th row of and the -th column of .  As an example, in class, we computed that:   Now, we can check the above as follows: we see that the entry of this product is . This is the same as taking the dot-product of the third row of and the second column of :   "
+},
+{
+  "id": "sec-pset5-linear-7",
+  "level": "2",
+  "url": "sec-pset5-linear.html#sec-pset5-linear-7",
+  "type": "Problem",
+  "number": "A.6.5",
+  "title": "(Problem 4).",
+  "body": " (Problem 4)    Use the above conceptualization of matrix-product to revisit some old friends with a new perspective.    Let be a linear transformation with standard matrix . Explain why the kernel of is equal to the orthogonal complement of the row space of . That is, explain why:     Using part (a), explain and demonstrate how to calculate a basis for where:     Let be a subspace of . Explain, using results covered in class or in previous problems sets, why     "
+},
+{
   "id": "truss",
   "level": "1",
   "url": "truss.html",

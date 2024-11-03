@@ -9424,6 +9424,51 @@ var ptx_lunr_docs = [
   "body": " Practice: Do Not Turn In   Suppose that is some continuous, strictly increasing function defined on an interval . These assumptions guarantee that is an invertible function, so we will let , defined on the interval denote this inverse function.    Explain why the following equation of integrals is true without doing any calculations:     Use a combination of our integration strategies to provide a second explanation for why this equation is true.   "
 },
 {
+  "id": "sec-pset5-calc",
+  "level": "1",
+  "url": "sec-pset5-calc.html",
+  "type": "Section",
+  "number": "A.6",
+  "title": "Problem Set 5",
+  "body": " Problem Set 5   Instructions  Prior to beginning this problem set, consider reading the Problem Set Success Guide for advice and clarity around expectations for Problem Sets in this course. Upload your solutions to all problems on this page to gradescope as a single .pdf file, remembering to assign pages appropriately for each question. Complete instructions for Problem Sets are available on Canvas.    (Problem 1)  For each of the following series, decide if they converge or not, justifying your reasoning:                          (Problem 2)   For each of the following series, determine if they converge or not, justifying your reasoning. For those that do converge, determine if the convergence is conditional or absolute.                           (Problem 3)   Suppose that is some sequence of positive numbers that converges to . Determine which, if any, of the following series converge, justifying your reasoning:                             We saw in class that the alternating harmonic series converges by the alternating series test.    Estimate the value of this series by using the first 10 terms to compute the -th partial sum .    Start with the expression Now multiply everything by and explain and demonstrate how to rearrange the terms of this new series in order to get the original alternating harmonic series that you started with.    Reflect: You should indeed feel very weird about your result in (b). What you are discovering is that we cannot always rearrange terms in a series and expect to get the same value. This is part of why absolute convergence is so important: in a series that converges absolutely, we can always rearrange the terms without changing the value of the sum.    "
+},
+{
+  "id": "sec-pset5-calc-3",
+  "level": "2",
+  "url": "sec-pset5-calc.html#sec-pset5-calc-3",
+  "type": "Problem",
+  "number": "A.6.1",
+  "title": "(Problem 1).",
+  "body": " (Problem 1)  For each of the following series, decide if they converge or not, justifying your reasoning:                        "
+},
+{
+  "id": "sec-pset5-calc-4",
+  "level": "2",
+  "url": "sec-pset5-calc.html#sec-pset5-calc-4",
+  "type": "Problem",
+  "number": "A.6.2",
+  "title": "(Problem 2).",
+  "body": " (Problem 2)   For each of the following series, determine if they converge or not, justifying your reasoning. For those that do converge, determine if the convergence is conditional or absolute.                         "
+},
+{
+  "id": "sec-pset5-calc-5",
+  "level": "2",
+  "url": "sec-pset5-calc.html#sec-pset5-calc-5",
+  "type": "Problem",
+  "number": "A.6.3",
+  "title": "(Problem 3).",
+  "body": " (Problem 3)   Suppose that is some sequence of positive numbers that converges to . Determine which, if any, of the following series converge, justifying your reasoning:                         "
+},
+{
+  "id": "sec-pset5-calc-6",
+  "level": "2",
+  "url": "sec-pset5-calc.html#sec-pset5-calc-6",
+  "type": "Problem",
+  "number": "A.6.4",
+  "title": "",
+  "body": "   We saw in class that the alternating harmonic series converges by the alternating series test.    Estimate the value of this series by using the first 10 terms to compute the -th partial sum .    Start with the expression Now multiply everything by and explain and demonstrate how to rearrange the terms of this new series in order to get the original alternating harmonic series that you started with.    Reflect: You should indeed feel very weird about your result in (b). What you are discovering is that we cannot always rearrange terms in a series and expect to get the same value. This is part of why absolute convergence is so important: in a series that converges absolutely, we can always rearrange the terms without changing the value of the sum.   "
+},
+{
   "id": "integral-table",
   "level": "1",
   "url": "integral-table.html",
