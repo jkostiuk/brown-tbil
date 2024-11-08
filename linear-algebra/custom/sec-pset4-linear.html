@@ -1265,7 +1265,35 @@ sagecell.makeSagecell({
 <div class="para" id="sec-pset4-linear-3-2-2-1-1">Show that if <span class="process-math">\(\ker(T)=\{\vec{0}\}\text{,}\)</span> then <span class="process-math">\(T\)</span> must be injective. <em class="emphasis">Note:</em> we saw and used this fact in class, but we did not prove it; the point of this exercise is for you to prove it here.</div></article> <article class="task exercise-like" id="sec-pset4-linear-3-2-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
 <div class="para" id="sec-pset4-linear-3-2-3-1-1">Suppose that <span class="process-math">\(\setList{\vec{v}_1,\vec{v}_2,\vec{v}_3}\)</span> are vectors in <span class="process-math">\(V\)</span> and that the set <span class="process-math">\(\setList{T(\vec{v}_1),T(\vec{v}_2),T(\vec{v}_3)}\)</span> is a linearly independent set. Does it follows that <span class="process-math">\(\setList{\vec{v}_1,\vec{v}_2,\vec{v}_3}\)</span> is also linearly independent? If “yes”, explain why; if “no”, provide a counterexample to the claim.</div></article> <article class="task exercise-like" id="sec-pset4-linear-3-2-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
 <div class="para" id="sec-pset4-linear-3-2-4-1-1">Suppose that <span class="process-math">\(\setList{\vec{u}_1,\vec{u}_2,\vec{u}_3}\)</span> are vectors in <span class="process-math">\(V\text{.}\)</span> If the set <span class="process-math">\(\setList{T(\vec{u}_1),T(\vec{u}_2),T(\vec{u}_3)}\)</span> spans <span class="process-math">\(W\text{,}\)</span> does it necessarily follows that <span class="process-math">\(\setList{\vec{u}_1,\vec{u}_2,\vec{u}_3}\)</span> spans <span class="process-math">\(V\text{?}\)</span> If “yes”, explain why; if “no”, provide a counterexample to the claim.</div></article>
-</div></article><article class="problem example-like" id="sec-pset4-linear-4"><h3 class="heading">
+</div> <details id="sec-pset4-linear-3-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<article class="task exercise-like" id="sec-pset4-linear-3-3-1"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="sec-pset4-linear-3-3-1-1-1">Suppose that <span class="process-math">\(T\colon V\to W\)</span> is some linear transformation. To show that <span class="process-math">\(T\)</span> is injective, we need to prove that if <span class="process-math">\(\vec{u},\vec{v}\in V\)</span> are vectors for which <span class="process-math">\(T(\vec{u})=T(\vec{v})\)</span> then, in fact, we have <span class="process-math">\(\vec{u}=\vec{v}\text{.}\)</span>
+</div> <div class="para" id="sec-pset4-linear-3-3-1-1-2">To that end, suppose that <span class="process-math">\(T(\vec{u})=T(\vec{u})\text{.}\)</span> It follows, then,  that <span class="process-math">\(T(\vec{u}-\vec{v})=T(\vec{u})-T(\vec{v})=\vec{0}\text{.}\)</span> In other words, <span class="process-math">\(\vec{u}-\vec{v}\in\ker(T)\text{.}\)</span> But since our assumption is that <span class="process-math">\(\ker(T)=\{\vec{0}\}\text{,}\)</span> it follows that <span class="process-math">\(\vec{u}-\vec{v}=\vec{0}\)</span> or <span class="process-math">\(\vec{u}=\vec{v}\text{,}\)</span> from which it follows that <span class="process-math">\(T\)</span> is injective.</div></article> <article class="task exercise-like" id="sec-pset4-linear-3-3-2"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para logical" id="sec-pset4-linear-3-3-2-1-1">
+<div class="para">Yes, it does follow. Suppose otherwise that the set <span class="process-math">\(\setList{\vec{v}_1,\vec{v}_2,\vec{v}_3}\)</span> were linearly dependent. It would then follow that one of the vectors, say <span class="process-math">\(\vec{v}_1\text{,}\)</span> is a linear combination of the others:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\vec{v}_1=a\vec{v}_2+b\vec{v}_3.
+\end{equation*}
+</div>
+<div class="para">But then, by applying the transformation <span class="process-math">\(T\text{,}\)</span> we would have</div>
+<div class="displaymath process-math">
+\begin{equation*}
+T(\vec{v}_1)=aT(\vec{v}_2)+bT(\vec{v}_3).
+\end{equation*}
+</div>
+<div class="para">But this would imply that the set <span class="process-math">\(\setList{T(\vec{v}_1),T(\vec{v}_2),T(\vec{v}_3)}\text{,}\)</span> which is contrary to our assumptions. We conclude that the set <span class="process-math">\(\setList{\vec{v}_1,\vec{v}_2,\vec{v}_3}\)</span> is therefore linearly independent.</div>
+</div></article> <article class="task exercise-like" id="sec-pset4-linear-3-3-3"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para logical" id="sec-pset4-linear-3-3-3-1-1">
+<div class="para">No, not necessarily. For instance, if <span class="process-math">\(\vec{u}_1=\vec{e}_1, \vec{u}_2=\vec{e}_2,\vec{u}_3=\vec{e}_3\)</span> denote the first three standard basis vectors in <span class="process-math">\(\IR^4\)</span> and <span class="process-math">\(T\colon\IR^4\to\IR^3\)</span> is the linear transformation given by</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\left[\begin{array}{cccc}1&amp; 0&amp;0&amp;0\\ 0&amp; 1&amp;0&amp;0\\0&amp;0&amp;1&amp;0\end{array}\right],
+\end{equation*}
+</div>
+<div class="para">then since the columns of this matrix span <span class="process-math">\(\IR^3\)</span> but the vectors <span class="process-math">\(\vec{u}_1,\vec{u}_2,\vec{u}_3\)</span> do not span the domain <span class="process-math">\((\IR^4)\text{,}\)</span> we have a counter-example.</div>
+</div></article>
+</div></details></article><article class="problem example-like" id="sec-pset4-linear-4"><h3 class="heading">
 <span class="type">Problem</span><span class="space"> </span><span class="codenumber">A.5.2</span><span class="period">.</span><span class="space"> </span><span class="title">(Problem 2).</span>
 </h3> <div class="introduction" id="sec-pset4-linear-4-2">
 <div class="para logical" id="sec-pset4-linear-4-2-1">
@@ -1279,7 +1307,46 @@ T\left(\left[\begin{array}{cc}a&amp; b\\ c&amp; d\end{array}\right]\right)=a+d.
 <div class="para" id="sec-pset4-linear-4-2-2-1-1">Show that <span class="process-math">\(T\)</span> is a linear map.</div></article> <article class="task exercise-like" id="sec-pset4-linear-4-2-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
 <div class="para" id="sec-pset4-linear-4-2-3-1-1">Explain and demonstrate how to calculate a basis for the kernel of <span class="process-math">\(T\)</span> and a basis for the image of <span class="process-math">\(T\text{.}\)</span> Is <span class="process-math">\(T\)</span> injective? Is <span class="process-math">\(T\)</span> surjective?</div></article> <article class="task exercise-like" id="sec-pset4-linear-4-2-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
 <div class="para" id="sec-pset4-linear-4-2-4-1-1">Verify the rank-nullity theorem for this linear transformation.</div></article>
-</div></article><article class="problem example-like" id="sec-pset4-linear-5"><h3 class="heading">
+</div> <details id="sec-pset4-linear-4-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<article class="task exercise-like" id="sec-pset4-linear-4-3-1"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para logical" id="sec-pset4-linear-4-3-1-1-1">
+<div class="para">Let <span class="process-math">\(A=\left[\begin{array}{cc}a&amp; b\\ c&amp; d\end{array}\right]\)</span> and <span class="process-math">\(B=\left[\begin{array}{cc}x&amp; y\\ z&amp; w\end{array}\right]\text{.}\)</span> Then, we have:</div>
+<div class="displaymath process-math" id="sec-pset4-linear-4-3-1-1-1-3">
+\begin{align*}
+T(A+B) \amp =T\left(\left[\begin{array}{cc}a+x&amp; b+y\\ c+z&amp; d+w\end{array}\right]\right)\\
+\amp =(a+x)+(d+w).
+\end{align*}
+</div>
+<div class="para">On the other hand,</div>
+<div class="displaymath process-math" id="sec-pset4-linear-4-3-1-1-1-4">
+\begin{align*}
+T(A)+T(B) \amp =(a+d)+(x+w).
+\end{align*}
+</div>
+<div class="para">These expressions agree, so we conclude that <span class="process-math">\(T(A)+T(B)=T(A+B)\)</span> for all elements of <span class="process-math">\(M_{2,2}\text{.}\)</span>
+</div>
+</div> <div class="para" id="sec-pset4-linear-4-3-1-1-2">Similarly, if <span class="process-math">\(k\)</span> is a scalar, then <span class="process-math">\(T(kA)=T(\left[\begin{array}{cc}ka&amp; kb\\ kc&amp; kd\end{array}\right])=ka+kd\text{.}\)</span> On the other hand, <span class="process-math">\(kT(A)=k(a+d)=ka+kd\text{.}\)</span> So, <span class="process-math">\(T\)</span> respects scalar multiplication as well and <span class="process-math">\(T\)</span> is linear.</div></article> <article class="task exercise-like" id="sec-pset4-linear-4-3-2"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para logical" id="sec-pset4-linear-4-3-2-1">
+<div class="para">By definition, the kernel of <span class="process-math">\(T\)</span> is the set of all matrices for which <span class="process-math">\(T(A)=0\text{.}\)</span> This can described as:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\ker(T)=\left\{\left[\begin{array}{cc}a&amp; b\\ c&amp; -a\end{array}\right]\colon a,b,c\in\IR\right\}.
+\end{equation*}
+</div>
+<div class="para">Using this description, an arbitrary element of the kernel can be written as:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+a\left[\begin{array}{cc}1&amp; 0\\ 0&amp; -1\end{array}\right]+b\left[\begin{array}{cc}0&amp; 1\\ 0&amp; 0\end{array}\right]+c\left[\begin{array}{cc}0&amp; 0\\ 1&amp; 0\end{array}\right],
+\end{equation*}
+</div>
+<div class="para">which tells us that the set <span class="process-math">\(S=\setList{\left[\begin{array}{cc}1&amp; 0\\ 0&amp; -1\end{array}\right],\left[\begin{array}{cc}0&amp; 1\\ 0&amp; 0\end{array}\right],\left[\begin{array}{cc}0&amp; 0\\ 1&amp; 0\end{array}\right]}\)</span> spans the kernel (since any element is a linear combination of the matrices in <span class="process-math">\(S\)</span>).</div>
+</div>
+<div class="para" id="sec-pset4-linear-4-3-2-2">The only way that the above linear combination of matrices is equal to the zero matrix is when <span class="process-math">\(a,b,c\)</span> are all themselves equal to <span class="process-math">\(0\text{.}\)</span> It follows that the set <span class="process-math">\(S\)</span> is linear independent and that <span class="process-math">\(S\)</span> is therefore a basis for the kernel.</div>
+<div class="para" id="sec-pset4-linear-4-3-2-3">Considering a matrix of the form <span class="process-math">\(\left[\begin{array}{cc}a&amp; 0\\ 0&amp; 0\end{array}\right]\text{.}\)</span> Applying <span class="process-math">\(T\text{,}\)</span> we get <span class="process-math">\(a\in\IR\text{,}\)</span> so the image of <span class="process-math">\(T\)</span> is all of <span class="process-math">\(\IR\text{.}\)</span> It follows that <span class="process-math">\(\{1\}\)</span> is a basis.</div>
+<div class="para" id="sec-pset4-linear-4-3-2-4">Since the kernel is non-trivial, the map is not injective. Since the image is all of <span class="process-math">\(\IR\text{,}\)</span> the map is surjective.</div></article> <article class="task exercise-like" id="sec-pset4-linear-4-3-3"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="sec-pset4-linear-4-3-3-1">By our calculations above, the rank of <span class="process-math">\(T\)</span> is equal to <span class="process-math">\(1\)</span> and the nullity is equal to <span class="process-math">\(3\text{.}\)</span> Adding these together gives <span class="process-math">\(4\text{,}\)</span> the dimension of <span class="process-math">\(M_{2,2}\)</span>
+</div></article>
+</div></details></article><article class="problem example-like" id="sec-pset4-linear-5"><h3 class="heading">
 <span class="type">Problem</span><span class="space"> </span><span class="codenumber">A.5.3</span><span class="period">.</span><span class="space"> </span><span class="title">(Problem 3).</span>
 </h3> <div class="introduction" id="sec-pset4-linear-5-2">
 <div class="para logical" id="sec-pset4-linear-5-2-1">
@@ -1295,9 +1362,28 @@ x-y+z-w&amp;=0
 <div class="para" id="sec-pset4-linear-5-2-3-1-1">Explain and demonstrate how to find an example of a linear transformation <span class="process-math">\(T\colon\IR^3\to\IR^4\)</span> for which the image of <span class="process-math">\(T\)</span> is equal to <span class="process-math">\(W\text{.}\)</span>
 </div></article> <article class="task exercise-like" id="sec-pset4-linear-5-2-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
 <div class="para" id="sec-pset4-linear-5-2-4-1-1">Explain and demonstrate how to find one example of a linear transformation <span class="process-math">\(S\colon\IR^2\to\IR^4\)</span> for which the image of <span class="process-math">\(S\)</span> is equal to some <span class="process-math">\(1\)</span>-dimensional subspace of <span class="process-math">\(W\text{.}\)</span>
-</div></article>
-</div> <div id="sec-pset4-linear-5-3" class="ptx-sagecell sagecell-octave"><script type="text/x-sage">
-</script></div></article><article class="problem example-like" id="sec-pset4-linear-6"><h3 class="heading">
+</div></article> <div id="sec-pset4-linear-5-2-5" class="ptx-sagecell sagecell-octave"><script type="text/x-sage">
+</script></div>
+</div> <details id="sec-pset4-linear-5-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<article class="task exercise-like" id="sec-pset4-linear-5-3-1"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para logical" id="sec-pset4-linear-5-3-1-1">
+<div class="para">By definition, <span class="process-math">\(W\)</span> is the solution space of the given homogeneous linear system. Using methods we are by now familiar with, a basis for this solution space is given by:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\left\{\left[\begin{array}{c}-1\\0\\1\\0\end{array}\right],\left[\begin{array}{c}0\\-1\\0\\1\end{array}\right]\right\}.
+\end{equation*}
+</div>
+</div></article> <article class="task exercise-like" id="sec-pset4-linear-5-3-2"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para logical" id="sec-pset4-linear-5-3-2-1">
+<div class="para">Methods and solutions will vary. Since the image of a linear transformation is equal to the span of the columns of the corresponding standard matrix, one approach is find a <span class="process-math">\(4\times 3\)</span> standard matrix for which its columns span exactly <span class="process-math">\(W\text{.}\)</span> One such example is:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A=\left[\begin{array}{ccc}-1&amp;0&amp;0\\0&amp;-1&amp;0\\1&amp;0&amp;0\\0&amp;1&amp;0\end{array}\right].
+\end{equation*}
+</div>
+</div></article> <article class="task exercise-like" id="sec-pset4-linear-5-3-3"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="sec-pset4-linear-5-3-3-1">Similar to above, we can search for an appropriate <span class="process-math">\(4\times 2\)</span> standard matrix. Here, we want the columns to span a line that is contained in <span class="process-math">\(W\text{.}\)</span> One way to do this is to let both columns be equal to one of the two spanning vectors.</div></article>
+</div></details></article><article class="problem example-like" id="sec-pset4-linear-6"><h3 class="heading">
 <span class="type">Problem</span><span class="space"> </span><span class="codenumber">A.5.4</span><span class="period">.</span><span class="space"> </span><span class="title">(Problem 4).</span>
 </h3> <div class="introduction" id="sec-pset4-linear-6-2">
 <div class="para logical" id="sec-pset4-linear-6-2-1">
@@ -1316,9 +1402,42 @@ B=\left[\begin{array}{ccc}1&amp; 2&amp;3\\ 1&amp; 2&amp; 4\end{array}\right],\ \
 <div class="para" id="sec-pset4-linear-6-2-3-1-1">Now suppose that <span class="process-math">\(f\colon\mathbb{R}^n\to\mathbb{R}^m\)</span> is an arbitrary linear transformation, let <span class="process-math">\(A\)</span> denote its standard matrix, and let <span class="process-math">\(g\)</span> be the transformation corresponding to the transpose <span class="process-math">\(B=A^T\text{.}\)</span> Explain why the rank of <span class="process-math">\(f\)</span> will always be equal to the rank of <span class="process-math">\(g\text{.}\)</span>
 </div></article> <article class="task exercise-like" id="sec-pset4-linear-6-2-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
 <div class="para" id="sec-pset4-linear-6-2-4-1-1">Notation as in (b), explain why <span class="process-math">\(\textrm{null(g)}-\textrm{null(f)}=m-n\)</span> and conclude that <span class="process-math">\(\textrm{null}(f)=\textrm{null}(g)\)</span> if and only if <span class="process-math">\(m=n\text{.}\)</span>
+</div></article> <div id="sec-pset4-linear-6-2-5" class="ptx-sagecell sagecell-octave"><script type="text/x-sage">
+</script></div>
+</div> <details id="sec-pset4-linear-6-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<article class="task exercise-like" id="sec-pset4-linear-6-3-1"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para logical" id="sec-pset4-linear-6-3-1-1">
+<div class="para">We start by calculating the RREF of <span class="process-math">\(A\text{:}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\RREF(A)=\left[\begin{array}{cccc}1&amp; 0 &amp;2 &amp;-3\\ 0&amp; 1&amp; 3.5 &amp;0\\0 &amp;0 &amp;0 &amp;0\end{array}\right]
+\end{equation*}
+</div>
+<div class="para">Since there are two pivot columns, the rank of <span class="process-math">\(A\)</span> is equal to <span class="process-math">\(2\text{.}\)</span> Since there are two non-pivot columns, the nullity of <span class="process-math">\(A\)</span> is equal to <span class="process-math">\(2\text{.}\)</span>
+</div>
+</div>
+<div class="para" id="sec-pset4-linear-6-3-1-2">One way to calculate the rank and nullity of <span class="process-math">\(A^T\)</span> is to calculuate the matrix <span class="process-math">\(A^T\)</span> and then calculate its RREF. Another approach to solving the problem is: since the rows of <span class="process-math">\(A\)</span> are the columns of <span class="process-math">\(A^T\)</span> and vice-versa and, since we know that dimension of the row-space of a matrix is equal to the dimension of the column space, it follows that the rank of <span class="process-math">\(g\)</span> must be the same as the rank of <span class="process-math">\(f\text{.}\)</span> Since the dimension of the domain is different (it’s <span class="process-math">\(3\)</span> in this case), the nullity of <span class="process-math">\(g\)</span> is just <span class="process-math">\(1\text{.}\)</span>
+</div></article> <article class="task exercise-like" id="sec-pset4-linear-6-3-2"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="sec-pset4-linear-6-3-2-1">In general, if <span class="process-math">\(A \)</span> is the standard matrix of a linear transformation <span class="process-math">\(f\text{,}\)</span> then its rank is the dimension of the column space of the corresponding standard matrix. Since this is always equal to the dimension of its row-space and the row-space is the same as the column space of the <em class="emphasis">transpose</em>, it follows that <span class="process-math">\(f\)</span> and <span class="process-math">\(g\)</span> have the same rank.</div></article> <article class="task exercise-like" id="sec-pset4-linear-6-3-3"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para logical" id="sec-pset4-linear-6-3-3-1">
+<div class="para">Applying the rank-nullity theorem to <span class="process-math">\(f\)</span> and <span class="process-math">\(g\)</span> yield the following equalities:</div>
+<div class="displaymath process-math" id="sec-pset4-linear-6-3-3-1-3">
+\begin{align*}
+\textrm{rank}(f)+\textrm{null(f)} \amp =n\\
+\textrm{rank}(g)+\textrm{null(g)} \amp =m.
+\end{align*}
+</div>
+<div class="para">Subtracting and using the fact that the ranks are equal gives:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\textrm{null}(g)-\textrm{null}(f)=m-n.
+\end{equation*}
+</div>
+<div class="para">In particulary, the difference is zero only when <span class="process-math">\(m=n\text{.}\)</span>
+</div>
 </div></article>
-</div> <div id="sec-pset4-linear-6-3" class="ptx-sagecell sagecell-octave"><script type="text/x-sage">
-</script></div></article></section></div>
+</div></details></article></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-pset3-linear.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-pset5-linear.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

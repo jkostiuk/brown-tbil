@@ -2401,40 +2401,148 @@ window.MathJax = {
 </h2>
 <section class="paragraphs" id="sec-pset4-calc-2"><h3 class="heading"><span class="title">Instructions.</span></h3> <div class="para" id="sec-pset4-calc-2-2">Prior to beginning this problem set, consider reading the Problem Set Success Guide <a href="pset-intro.html" class="internal" title="Section A.1: Problem Set Success Guide">Section A.1</a> for advice and clarity around expectations for Problem Sets in this course. Upload your solutions to all problems on this page to gradescope as a single .pdf file, remembering to assign pages appropriately for each question. Complete instructions for Problem Sets are available on Canvas.</div></section><article class="problem example-like" id="sec-pset4-calc-3"><h3 class="heading">
 <span class="type">Problem</span><span class="space"> </span><span class="codenumber">A.5.1</span><span class="period">.</span><span class="space"> </span><span class="title">(Problem 1).</span>
-</h3>
-<div class="introduction" id="sec-pset4-calc-3-2"><div class="para" id="sec-pset4-calc-3-2-1">For each of the following sequences explain and demonstrate how to determine if they are monotonic, bounded, and whether they converge; if they converge, explain and demonstrate how to find their limit.</div></div>
-<article class="task exercise-like" id="sec-pset4-calc-3-3"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="sec-pset4-calc-3-3-1-1"><span class="process-math">\(a_n=\frac{n+(-1)^n}{n}\)</span></div></article><article class="task exercise-like" id="sec-pset4-calc-3-4"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="sec-pset4-calc-3-4-1-1"><span class="process-math">\(a_n=(-1)^n(1-\frac{1}{n})\)</span></div></article><article class="task exercise-like" id="sec-pset4-calc-3-5"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="para" id="sec-pset4-calc-3-5-1-1">
+</h3> <div class="introduction" id="sec-pset4-calc-3-2">
+<div class="para" id="sec-pset4-calc-3-2-1">For each of the following sequences explain and demonstrate how to determine if they are monotonic, bounded, and whether they converge; if they converge, explain and demonstrate how to find their limit.</div> <article class="task exercise-like" id="sec-pset4-calc-3-2-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="sec-pset4-calc-3-2-2-1-1"><span class="process-math">\(a_n=\frac{n+(-1)^n}{n}\)</span></div></article> <article class="task exercise-like" id="sec-pset4-calc-3-2-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="sec-pset4-calc-3-2-3-1-1"><span class="process-math">\(a_n=(-1)^n(1-\frac{1}{n})\)</span></div></article> <article class="task exercise-like" id="sec-pset4-calc-3-2-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="sec-pset4-calc-3-2-4-1-1">
 <span class="process-math">\(a_n=\frac{n!}{n^n}\)</span> where <span class="process-math">\(n!=n\cdot(n-1)\cdots\cdot 2\cdot 1\text{.}\)</span>
-</div></article></article><article class="problem example-like" id="sec-pset4-calc-4"><h3 class="heading">
+</div></article>
+</div> <details id="sec-pset4-calc-3-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<article class="task exercise-like" id="sec-pset4-calc-3-3-1"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para logical" id="sec-pset4-calc-3-3-1-1">
+<div class="para">Here, we start by re-writing <span class="process-math">\(a_n=1+\frac{(-1)^n}{n}\text{.}\)</span> Then, if we calculate and simplify <span class="process-math">\(a_{n+1}-a_n\text{,}\)</span> we get:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+a_{n+1}-a_n=\frac{(-1)^{n+1}}{n(n+1)}(2n+1).
+\end{equation*}
+</div>
+<div class="para">This expression is sometimes positive and sometimes negative, so the sequence <span class="process-math">\(\{a_n\}\)</span> is not monotonic.</div>
+</div>
+<div class="para" id="sec-pset4-calc-3-3-1-2">Since <span class="process-math">\(-1\leq \frac{(-1)^n}{n}\leq 1\text{,}\)</span> it follows that <span class="process-math">\(0\leq 1+\frac{(-1)^n}{n}\leq 2\text{,}\)</span> so <span class="process-math">\(\{a_n\}\)</span> is bounded.</div>
+<div class="para" id="sec-pset4-calc-3-3-1-3">Since <span class="process-math">\(\lim_{n\to\infty}\frac{(-1)^n}{n}=0\text{,}\)</span> it follows that <span class="process-math">\(a_n\)</span> converges to <span class="process-math">\(1\text{.}\)</span>
+</div></article> <article class="task exercise-like" id="sec-pset4-calc-3-3-2"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para logical" id="sec-pset4-calc-3-3-2-1">
+<div class="para">This time, when we compute <span class="process-math">\(a_{n+1}-a_n\)</span> we get:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+a_{n+1}-a_n=\frac{(-1)^{n+1}}{n(n+1)}(2n^2-1).
+\end{equation*}
+</div>
+<div class="para">Like above, this is sometimes positive and sometimes negative, so the sequence is not monotonic.</div>
+</div>
+<div class="para" id="sec-pset4-calc-3-3-2-2">Since <span class="process-math">\(|a_n|=1-\frac{1}{n}\leq 1\text{,}\)</span> it follows that the sequence is bounded.</div>
+<div class="para" id="sec-pset4-calc-3-3-2-3">As <span class="process-math">\(n\to \infty\text{,}\)</span> the factor <span class="process-math">\(1-\frac{1}{n}\to 1\text{.}\)</span> Given this, <span class="process-math">\(a_n\)</span> itself will osscilate close to <span class="process-math">\(\pm 1\)</span> and the limit does not exist.</div></article> <article class="task exercise-like" id="sec-pset4-calc-3-3-3"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para logical" id="sec-pset4-calc-3-3-3-1">
+<div class="para">This time</div>
+<div class="displaymath process-math">
+\begin{equation*}
+a_{n+1}-a_n=\frac{n!}{n^n(n+1)^n}(n^n-(n+1)^n)&lt; 0
+\end{equation*}
+</div>
+<div class="para">is always negative, so <span class="process-math">\(\{a_n\}\)</span> is monotonic decreasing.</div>
+</div>
+<div class="para logical" id="sec-pset4-calc-3-3-3-2">
+<div class="para">Notice that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+a_n=\frac{n\cdot(n-1)\cdots(2)\cdot(1)}{n\cdot n\cdots n\cdot n}
+\end{equation*}
+</div>
+<div class="para">Since <span class="process-math">\(\frac{k}{n}\leq 1\)</span> for each <span class="process-math">\(k\leq n\text{,}\)</span> it follows that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+0\leq a_n\leq \frac{1}{n}\leq 1
+\end{equation*}
+</div>
+<div class="para">and that <span class="process-math">\(\{a_n\}\)</span> is bounded.</div>
+</div>
+<div class="para" id="sec-pset4-calc-3-3-3-3">Lastly, since we observed that <span class="process-math">\(0\leq a_n\leq \frac{1}{n}\)</span> holds for every <span class="process-math">\(n\)</span> and we know <span class="process-math">\(\frac{1}{n}\to 0\text{,}\)</span> it follows that <span class="process-math">\(a_n\to 0\)</span> as well.</div></article>
+</div></details></article><article class="problem example-like" id="sec-pset4-calc-4"><h3 class="heading">
 <span class="type">Problem</span><span class="space"> </span><span class="codenumber">A.5.2</span><span class="period">.</span><span class="space"> </span><span class="title">(Problem 2).</span>
-</h3>
-<article class="task exercise-like" id="sec-pset4-calc-4-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="sec-pset4-calc-4-2-1-1">Explain and demonstrate how to express <span class="process-math">\(3.12\overline{5}=3.12555555\cdots\)</span> as a fraction of two integers by first interpreting this expression as an infinite series, and then applying results from class as appropriate.</div></article><article class="task exercise-like" id="sec-pset4-calc-4-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="sec-pset4-calc-4-3-1-1">Explain and demonstrate how to express <span class="process-math">\(4.\overline{23}=4.23232323\cdots\)</span> as a fraction of two integers by first interpreting this expression as an infinite series, and then applying results from class as appropriate..</div></article></article><article class="problem example-like" id="sec-pset4-calc-5"><h3 class="heading">
+</h3> <div class="introduction" id="sec-pset4-calc-4-2">
+<article class="task exercise-like" id="sec-pset4-calc-4-2-1"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="sec-pset4-calc-4-2-1-1-1">Explain and demonstrate how to express <span class="process-math">\(3.12\overline{5}=3.12555555\cdots\)</span> as a fraction of two integers by first interpreting this expression as an infinite series, and then applying results from class as appropriate.</div></article> <article class="task exercise-like" id="sec-pset4-calc-4-2-2"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="sec-pset4-calc-4-2-2-1-1">Explain and demonstrate how to express <span class="process-math">\(4.\overline{23}=4.23232323\cdots\)</span> as a fraction of two integers by first interpreting this expression as an infinite series, and then applying results from class as appropriate..</div></article>
+</div> <details id="sec-pset4-calc-4-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<article class="task exercise-like" id="sec-pset4-calc-4-3-1"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para logical" id="sec-pset4-calc-4-3-1-1">
+<div class="para">The key observation is that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+3.12\overline{5}=3.12+\frac{5}{10^3}+\frac{5}{10^4}+\frac{5}{10^5}+\cdots=\frac{312}{100}+\frac{5}{10^3}+\frac{5}{10^4}+\frac{5}{10^5}+\cdots
+\end{equation*}
+</div>
+<div class="para">The sum <span class="process-math">\(\frac{5}{10^3}+\frac{5}{10^4}+\frac{5}{10^5}+\cdots\)</span> is geometric with initial term <span class="process-math">\(a=\frac{5}{10^3}\)</span> and common ratio <span class="process-math">\(r=\frac{1}{10}\text{.}\)</span> Using results from class, we know that this geometric sum is equal to</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{a}{1-r}=\frac{5}{900}.
+\end{equation*}
+</div>
+<div class="para">Adding to this <span class="process-math">\(\frac{312}{100}\text{,}\)</span> we get <span class="process-math">\(3.12\overline{5}=\frac{2813}{900}\text{.}\)</span>
+</div>
+</div></article> <article class="task exercise-like" id="sec-pset4-calc-4-3-2"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para logical" id="sec-pset4-calc-4-3-2-1">
+<div class="para">Likewise, the number <span class="process-math">\(4.\overline{23}\)</span> is equal to <span class="process-math">\(4\)</span> plus a geometric series with initial term <span class="process-math">\(a=\frac{23}{100}\)</span> and ratio <span class="process-math">\(r=\frac{1}{100}\text{.}\)</span> It is therefore equal to</div>
+<div class="displaymath process-math">
+\begin{equation*}
+4+\frac{a}{1-r}=4+\frac{23}{99}=\frac{419}{99}.
+\end{equation*}
+</div>
+</div></article>
+</div></details></article><article class="problem example-like" id="sec-pset4-calc-5"><h3 class="heading">
 <span class="type">Problem</span><span class="space"> </span><span class="codenumber">A.5.3</span><span class="period">.</span><span class="space"> </span><span class="title">(Problem 3).</span>
-</h3>
-<div class="introduction" id="sec-pset4-calc-5-2"><div class="para" id="sec-pset4-calc-5-2-1">For each of the following, explain and demonstrate how to find the values of <span class="process-math">\(x\)</span> for which the given series converge; explain and demonstrate how to find the sum of the series (as a function of <span class="process-math">\(x\)</span>) for those values of <span class="process-math">\(x\text{.}\)</span>
-</div></div>
-<article class="task exercise-like" id="sec-pset4-calc-5-3"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="sec-pset4-calc-5-3-1-1"><span class="process-math">\(\sum_{n=0}^\infty (-1)^nx^{-2n}\)</span></div></article><article class="task exercise-like" id="sec-pset4-calc-5-4"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="sec-pset4-calc-5-4-1-1"><span class="process-math">\(\sum_{n=0}^\infty \left(-\frac{1}{2}\right)^n(x-3)^n\)</span></div></article><article class="task exercise-like" id="sec-pset4-calc-5-5"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="para" id="sec-pset4-calc-5-5-1-1"><span class="process-math">\(\sum_{n=0}^\infty (\ln{x})^n\)</span></div></article></article><article class="problem example-like" id="sec-pset4-calc-6"><h3 class="heading">
+</h3> <div class="introduction" id="sec-pset4-calc-5-2">
+<div class="para" id="sec-pset4-calc-5-2-1-1">For each of the following, explain and demonstrate how to find the values of <span class="process-math">\(x\)</span> for which the given series converge; explain and demonstrate how to find the sum of the series (as a function of <span class="process-math">\(x\)</span>) for those values of <span class="process-math">\(x\text{.}\)</span>
+</div> <article class="task exercise-like" id="sec-pset4-calc-5-2-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="sec-pset4-calc-5-2-2-1-1"><span class="process-math">\(\sum_{n=0}^\infty (-1)^nx^{-2n}\)</span></div></article> <article class="task exercise-like" id="sec-pset4-calc-5-2-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="sec-pset4-calc-5-2-3-1-1"><span class="process-math">\(\sum_{n=0}^\infty \left(-\frac{1}{2}\right)^n(x-3)^n\)</span></div></article> <article class="task exercise-like" id="sec-pset4-calc-5-2-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="sec-pset4-calc-5-2-4-1-1"><span class="process-math">\(\sum_{n=0}^\infty (\ln{x})^n\)</span></div></article>
+</div> <details id="sec-pset4-calc-5-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<article class="task exercise-like" id="sec-pset4-calc-5-3-1"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para logical" id="sec-pset4-calc-5-3-1-1">
+<div class="para">This sum is geometric with initial term <span class="process-math">\(a=1\)</span> and ratio <span class="process-math">\(r=-\frac{1}{x}^2\text{.}\)</span> Therefore, it converges to</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{a}{1-r}=\frac{x^2}{x^2+1}
+\end{equation*}
+</div>
+<div class="para">whenever <span class="process-math">\(|-\frac{1}{x^2}|&lt; 1\text{;}\)</span> this happens when <span class="process-math">\(x\)</span> lives in <span class="process-math">\((-\infty,-1)\cup (1,\infty)\text{.}\)</span>
+</div>
+</div></article> <article class="task exercise-like" id="sec-pset4-calc-5-3-2"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para logical" id="sec-pset4-calc-5-3-2-1">
+<div class="para">This series is geometric with initial term <span class="process-math">\(a=1\)</span> and ratio <span class="process-math">\(r=\frac{3-x}{2}\text{.}\)</span> Therefore, it converges to:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{a}{1-r}=\frac{2}{x-1}
+\end{equation*}
+</div>
+<div class="para">whenever <span class="process-math">\(|\frac{3-x}{2}|&lt;1\text{,}\)</span> or <span class="process-math">\(1&lt; x&lt; 5\text{.}\)</span>
+</div>
+</div></article> <article class="task exercise-like" id="sec-pset4-calc-5-3-3"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para logical" id="sec-pset4-calc-5-3-3-1">
+<div class="para">This series is geometric with initial term <span class="process-math">\(a=1\)</span> and ratio <span class="process-math">\(r=\ln(x)\text{.}\)</span> Therefore, it converges to:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{a}{1-r}=\frac{1}{1-\ln(x)}
+\end{equation*}
+</div>
+<div class="para">whenever <span class="process-math">\(|\ln(x)|&lt;1\text{,}\)</span> or <span class="process-math">\(\frac{1}{e}&lt; x&lt; e\text{.}\)</span>
+</div>
+</div></article>
+</div></details></article><article class="problem example-like" id="sec-pset4-calc-6"><h3 class="heading">
 <span class="type">Problem</span><span class="space"> </span><span class="codenumber">A.5.4</span><span class="period">.</span><span class="space"> </span><span class="title">(Problem 4).</span>
-</h3>
-<div class="introduction" id="sec-pset4-calc-6-2"><div class="para logical" id="sec-pset4-calc-6-2-1">
+</h3> <div class="introduction" id="sec-pset4-calc-6-2">
+<div class="para logical" id="sec-pset4-calc-6-2-1-1">
 <div class="para">In this problem, you will prove that the harmonic series diverges using the definitions of partial sums instead of relying on the integral test. Recall that the harmonic series is the series <span class="process-math">\(\sum_{n=1}^\infty\frac{1}{n}\text{.}\)</span> Let <span class="process-math">\(S_k\)</span> denote its <span class="process-math">\(k\)</span>-th partial sum:</div>
 <div class="displaymath process-math">
 \begin{equation*}
 S_k=\sum_{n=1}^k\frac{1}{n}=1+\frac{1}{2}+\cdots+\frac{1}{k}.
 \end{equation*}
 </div>
-</div></div>
-<article class="task exercise-like" id="sec-pset4-calc-6-3"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="sec-pset4-calc-6-3-1-1">Explain and demonstrate why the sequence <span class="process-math">\(\{S_k\}\)</span> is monotonically increasing.</div></article><article class="task exercise-like" id="sec-pset4-calc-6-4"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para logical" id="sec-pset4-calc-6-4-1-1">
+</div> <article class="task exercise-like" id="sec-pset4-calc-6-2-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="sec-pset4-calc-6-2-2-1-1">Explain and demonstrate why the sequence <span class="process-math">\(\{S_k\}\)</span> is monotonically increasing.</div></article> <article class="task exercise-like" id="sec-pset4-calc-6-2-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para logical" id="sec-pset4-calc-6-2-3-1-1">
 <div class="para">In class, we showed that <span class="process-math">\(S_4\geq S_2+\frac{1}{2}\)</span> and that <span class="process-math">\(S_8\geq S_4+\frac{1}{2}\text{.}\)</span> Explain and demonstrate why the inequalities</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -2442,7 +2550,43 @@ S_{2^n}\geq S_{2^{n-1}}+\frac{1}{2}\geq 1+\frac{n}{2}
 \end{equation*}
 </div>
 <div class="para">hold for all <span class="process-math">\(n\geq 2\text{.}\)</span> Conclude that the sequence of partial sums <span class="process-math">\(S_{2^n}\)</span> is unbounded hence must diverge.</div>
-</div></article></article><article class="problem example-like" id="sec-pset4-calc-7"><h3 class="heading">
+</div></article>
+</div> <details id="sec-pset4-calc-6-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<article class="task exercise-like" id="sec-pset4-calc-6-3-1"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="sec-pset4-calc-6-3-1-1">Answers may vary. One approach is to note that <span class="process-math">\(S_{k}=S_{k-1}+\frac{1}{k}\text{.}\)</span> So, at each step, <span class="process-math">\(S_k\)</span> is obtained by adding the positive number <span class="process-math">\(\frac{1}{k}\)</span> to the number <span class="process-math">\(S_{k-1}\)</span> which increases the sum.</div>
+<div class="para" id="sec-pset4-calc-6-3-1-2">Alternatively, <span class="process-math">\(S_{k}-S_{k-1}=\frac{1}{k}&gt; 0\)</span> for each <span class="process-math">\(k\text{,}\)</span> which shows the sequence is increasing.</div></article> <article class="task exercise-like" id="sec-pset4-calc-6-3-2"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para logical" id="sec-pset4-calc-6-3-2-1">
+<div class="para">First, note that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+S_{2^n}=S_{2^{n-1}}+\frac{1}{2^{n-1}+1}+\frac{1}{2^{n-1}+2}+\cdots+\frac{1}{2^n}.
+\end{equation*}
+</div>
+<div class="para">Of the numbers <span class="process-math">\(\frac{1}{2^{n-1}+1},\frac{1}{2^{n-1}+2},\cdots,\frac{1}{2^n}\text{,}\)</span> the smallest is <span class="process-math">\(\frac{1}{2^n}\text{.}\)</span> By counting carefully, the sum</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{1}{2^{n-1}+1}+\frac{1}{2^{n-1}+2}+\cdots+\frac{1}{2^n}
+\end{equation*}
+</div>
+<div class="para">has <span class="process-math">\(2^n-2^{n-1}=2^{n-1}(2-1)=2^{n-1}\)</span> terms. It follows, then, that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{1}{2^{n-1}+1}+\frac{1}{2^{n-1}+2}+\cdots+\frac{1}{2^n}\geq \frac{1}{2^n}+\cdots+\frac{1}{2^n}=\frac{2^{n-1}}{2^n}=\frac{1}{2}.
+\end{equation*}
+</div>
+<div class="para">This shows that <span class="process-math">\(S_{2^n}\geq S_{2^{n-1}}+\frac{1}{2}\text{.}\)</span>
+</div>
+</div>
+<div class="para logical" id="sec-pset4-calc-6-3-2-2">
+<div class="para">If we repeat this <span class="process-math">\(n\)</span> times, we get</div>
+<div class="displaymath process-math">
+\begin{equation*}
+S_{2^{n-1}}+\frac{1}{2}\geq S_{2^{n-2}}+\frac{2}{2}\geq\cdots\geq S_{2^0}+\frac{n}{2}=1+\frac{n}{2}.
+\end{equation*}
+</div>
+<div class="para">Since <span class="process-math">\(\lim_{n\to\infty}1+\frac{n}{2}=\infty\text{,}\)</span> it follows that partial sums are unbounded from below.</div>
+</div></article>
+</div></details></article><article class="problem example-like" id="sec-pset4-calc-7"><h3 class="heading">
 <span class="type">Problem</span><span class="space"> </span><span class="codenumber">A.5.5</span><span class="period">.</span><span class="space"> </span><span class="title">Practice: Do Not Turn In.</span>
 </h3>
 <div class="introduction" id="sec-pset4-calc-7-2"><div class="para" id="sec-pset4-calc-7-2-1">Suppose that <span class="process-math">\(y=f(x)\)</span> is some continuous, strictly increasing function defined on an interval <span class="process-math">\([a,b]\text{.}\)</span> These assumptions guarantee that <span class="process-math">\(f(x)\)</span> is an invertible function, so we will let <span class="process-math">\(x=g(y)\text{,}\)</span> defined on the interval <span class="process-math">\([f(a),f(b)]\)</span> denote this inverse function.</div></div>
