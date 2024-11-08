@@ -42,6 +42,52 @@
                 </statement>
             </task>
         </introduction>
+        <solution>
+            <task>
+                <statement>
+                    <p>
+                        Suppose that <m>T\colon V\to W</m> is some linear transformation. 
+                        To show that <m>T</m> is injective, we need to prove that if <m>\vec{u},\vec{v}\in V</m> are vectors for which <m>T(\vec{u})=T(\vec{v})</m> then, in fact, we have <m>\vec{u}=\vec{v}</m>. 
+                    </p>
+                    <p>
+                        To that end, suppose that <m>T(\vec{u})=T(\vec{u})</m>. 
+                        It follows, then,  that <m>T(\vec{u}-\vec{v})=T(\vec{u})-T(\vec{v})=\vec{0}</m>. 
+                        In other words, <m>\vec{u}-\vec{v}\in\ker(T)</m>. 
+                        But since our assumption is that <m>\ker(T)=\{\vec{0}\}</m>, it follows that <m>\vec{u}-\vec{v}=\vec{0}</m> or <m>\vec{u}=\vec{v}</m>, from which it follows that <m>T</m> is injective.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Yes, it does follow.
+                        Suppose otherwise that the set <m>\setList{\vec{v}_1,\vec{v}_2,\vec{v}_3}</m> were linearly dependent. 
+                        It would then follow that one of the vectors, say <m>\vec{v}_1</m>, is a linear combination of the others:
+                        <me>
+                            \vec{v}_1=a\vec{v}_2+b\vec{v}_3.
+                        </me>
+                        But then, by applying the transformation <m>T</m>, we would have
+                        <me>
+                            T(\vec{v}_1)=aT(\vec{v}_2)+bT(\vec{v}_3).
+                        </me>
+                        But this would imply that the set <m>\setList{T(\vec{v}_1),T(\vec{v}_2),T(\vec{v}_3)}</m>, which is contrary to our assumptions. 
+                        We conclude that the set <m>\setList{\vec{v}_1,\vec{v}_2,\vec{v}_3}</m> is therefore linearly independent.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        No, not necessarily. 
+                        For instance, if <m>\vec{u}_1=\vec{e}_1, \vec{u}_2=\vec{e}_2,\vec{u}_3=\vec{e}_3</m> denote the first three standard basis vectors in <m>\IR^4</m> and <m>T\colon\IR^4\to\IR^3</m> is the linear transformation given by
+                        <me>
+                            \left[\begin{array}{cccc}1&amp; 0&amp;0&amp;0\\ 0&amp; 1&amp;0&amp;0\\0&amp;0&amp;1&amp;0\end{array}\right],
+                        </me>
+                        then since the columns of this matrix span <m>\IR^3</m> but the vectors <m>\vec{u}_1,\vec{u}_2,\vec{u}_3</m> do not span the domain <m>(\IR^4)</m>, we have a counter-example. 
+                    </p>
+                </statement>
+            </task>
+        </solution>
     </problem>
 
     <problem>
@@ -74,6 +120,61 @@
             </statement>
            </task>
        </introduction>
+       <solution>
+        <task>
+            <statement>
+                <p>
+                    Let <m>A=\left[\begin{array}{cc}a&amp; b\\ c&amp; d\end{array}\right]</m> and <m>B=\left[\begin{array}{cc}x&amp; y\\ z&amp; w\end{array}\right]</m>.
+                    Then, we have:
+                    <md>
+                        <mrow>T(A+B) \amp =T\left(\left[\begin{array}{cc}a+x&amp; b+y\\ c+z&amp; d+w\end{array}\right]\right)</mrow>
+                        <mrow> \amp =(a+x)+(d+w).</mrow>
+                    </md>
+                    On the other hand, 
+                    <md>
+                        <mrow>T(A)+T(B) \amp =(a+d)+(x+w).</mrow>
+                    </md>
+                    These expressions agree, so we conclude that <m>T(A)+T(B)=T(A+B)</m> for all elements of <m>M_{2,2}</m>. 
+                </p>
+                <p>
+                    Similarly, if <m>k</m> is a scalar, then <m>T(kA)=T(\left[\begin{array}{cc}ka&amp; kb\\ kc&amp; kd\end{array}\right])=ka+kd</m>.
+                    On the other hand, <m>kT(A)=k(a+d)=ka+kd</m>. So, <m>T</m> respects scalar multiplication as well and <m>T</m> is linear.  
+                </p>
+            </statement>
+        </task>
+        <task>
+            <p>
+                By definition, the kernel of <m>T</m> is the set of all matrices for which <m>T(A)=0</m>. 
+                This can described as:
+                <me>
+                    \ker(T)=\left\{\left[\begin{array}{cc}a&amp; b\\ c&amp; -a\end{array}\right]\colon a,b,c\in\IR\right\}.
+                </me>
+                Using this description, an arbitrary element of the kernel can be written as:
+                <me>
+                    a\left[\begin{array}{cc}1&amp; 0\\ 0&amp; -1\end{array}\right]+b\left[\begin{array}{cc}0&amp; 1\\ 0&amp; 0\end{array}\right]+c\left[\begin{array}{cc}0&amp; 0\\ 1&amp; 0\end{array}\right],
+                </me>
+                which tells us that the set <m>S=\setList{\left[\begin{array}{cc}1&amp; 0\\ 0&amp; -1\end{array}\right],\left[\begin{array}{cc}0&amp; 1\\ 0&amp; 0\end{array}\right],\left[\begin{array}{cc}0&amp; 0\\ 1&amp; 0\end{array}\right]}</m> spans the kernel (since any element is a linear combination of the matrices in <m>S</m>).
+            </p>
+            <p>
+                The only way that the above linear combination of matrices is equal to the zero matrix is when <m>a,b,c</m> are all themselves equal to <m>0</m>. 
+                It follows that the set <m>S</m> is linear independent and that <m>S</m> is therefore a basis for the kernel. 
+            </p>
+            <p>
+                Considering a matrix of the form <m>\left[\begin{array}{cc}a&amp; 0\\ 0&amp; 0\end{array}\right]</m>. Applying <m>T</m>, we get <m>a\in\IR</m>, so the image of <m>T</m> is all of <m>\IR</m>. 
+                It follows that <m>\{1\}</m> is a basis. 
+            </p>
+            <p>
+                Since the kernel is non-trivial, the map is not injective. 
+                Since the image is all of <m>\IR</m>, the map is surjective.
+            </p>
+        </task>
+        <task>
+            <p>
+                By our calculations above, the rank of <m>T</m> is equal to <m>1</m> and the nullity is equal to <m>3</m>. 
+                Adding these together gives <m>4</m>, the dimension of <m>M_{2,2}</m>
+            </p>
+        </task>
+       </solution>
     </problem>
 
     <!--<problem>
@@ -140,15 +241,43 @@
                     </p>
                 </statement>
             </task>
+            <sage language="octave">
+                <input>
+                    
+                </input>
+                <output>
+                    
+                </output>
+            </sage>
         </introduction>
-        <sage language="octave">
-            <input>
-                
-            </input>
-            <output>
-                
-            </output>
-        </sage>
+        
+        <solution>
+            <task>
+                <p>
+                    By definition, <m>W</m> is the solution space of the given homogeneous linear system. 
+                    Using methods we are by now familiar with, a basis for this solution space is given by:
+                    <me>\left\{\left[\begin{array}{c}-1\\0\\1\\0\end{array}\right],\left[\begin{array}{c}0\\-1\\0\\1\end{array}\right]\right\}.</me>
+                </p>
+            </task>
+            <task>
+                <p>
+                    Methods and solutions will vary.
+                    Since the image of a linear transformation is equal to the span of the columns of the corresponding standard matrix, one approach is find a <m>4\times 3</m> standard matrix for which its columns span exactly <m>W</m>. 
+                    One such example is:
+                    <me>
+                        A=\left[\begin{array}{ccc}-1&amp;0&amp;0\\0&amp;-1&amp;0\\1&amp;0&amp;0\\0&amp;1&amp;0\end{array}\right].
+                    </me>
+                    
+                </p>
+            </task>
+            <task>
+                <p>
+                    Similar to above, we can search for an appropriate <m>4\times 2</m> standard matrix. 
+                    Here, we want the columns to span a line that is contained in <m>W</m>.
+                    One way to do this is to let both columns be equal to one of the two spanning vectors. 
+                </p>
+            </task>
+        </solution>
     </problem>
 
     <problem>
@@ -183,14 +312,50 @@
                     </p>
                 </statement>
             </task>
+            <sage language="octave">
+                <input>
+                    
+                </input>
+                <output>
+                    
+                </output>
+            </sage>
         </introduction>
-        <sage language="octave">
-            <input>
-                
-            </input>
-            <output>
-                
-            </output>
-        </sage>
+        <solution>
+            <task>
+            <p>
+                We start by calculating the RREF of <m>A</m>:
+                <me>\RREF(A)=\left[\begin{array}{cccc}1&amp; 0 &amp;2 &amp;-3\\ 0&amp; 1&amp; 3.5 &amp;0\\0 &amp;0 &amp;0 &amp;0\end{array}\right]</me>
+                Since there are two pivot columns, the rank of <m>A</m> is equal to <m>2</m>. 
+                Since there are two non-pivot columns, the nullity of <m>A</m> is equal to <m>2</m>. 
+            </p>
+            <p>
+                One way to calculate the rank and nullity of <m>A^T</m> is to calculuate the matrix <m>A^T</m> and then calculate its RREF. 
+                Another approach to solving the problem is: since the rows of <m>A</m> are the columns of <m>A^T</m> and vice-versa and, since we know that dimension of the row-space of a matrix is equal to the dimension of the column space, it follows that the rank of <m>g</m> must be the same as the rank of <m>f</m>. 
+                Since the dimension of the domain is different (it's <m>3</m> in this case), the nullity of <m>g</m> is just <m>1</m>.
+            </p>
+            </task>
+            <task>
+                <p>
+                    In general, if <m>A </m> is the standard matrix of a linear transformation <m>f</m>, then its rank is the dimension of the column space of the corresponding standard matrix. 
+                    Since this is always equal to the dimension of its row-space and the row-space is the same as the column space of the <em>transpose</em>, it follows that <m>f</m> and <m>g</m> have the same rank. 
+                </p>
+            </task>
+            <task>
+                <p>
+                    Applying the rank-nullity theorem to <m>f</m> and <m>g</m> yield the following equalities:
+                    <md>
+                        <mrow>\textrm{rank}(f)+\textrm{null(f)} \amp =n</mrow>
+                        <mrow>\textrm{rank}(g)+\textrm{null(g)} \amp =m.</mrow>
+                    </md>
+                    Subtracting and using the fact that the ranks are equal gives:
+                    <me>
+                        \textrm{null}(g)-\textrm{null}(f)=m-n.
+                    </me>
+                    In particulary, the difference is zero only when <m>m=n</m>. 
+                </p>
+            </task>
+        </solution>
+       
     </problem>
 </section>

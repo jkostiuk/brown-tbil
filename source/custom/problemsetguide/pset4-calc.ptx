@@ -15,7 +15,6 @@
             <p>
                 For each of the following sequences explain and demonstrate how to determine if they are monotonic, bounded, and whether they converge; if they converge, explain and demonstrate how to find their limit.
             </p>
-        </introduction>
         <task>
             <statement>
                 <p>
@@ -37,33 +36,120 @@
                 </p>
             </statement>
         </task>
+        </introduction>
+        <solution>
+            <task>
+                <p>
+                    Here, we start by re-writing <m>a_n=1+\frac{(-1)^n}{n}</m>. 
+                    Then, if we calculate and simplify <m>a_{n+1}-a_n</m>, we get:
+                    <me>
+                        a_{n+1}-a_n=\frac{(-1)^{n+1}}{n(n+1)}(2n+1).
+                    </me>
+                    This expression is sometimes positive and sometimes negative, so the sequence <m>\{a_n\}</m> is not monotonic.
+                </p>
+                <p>
+                    Since <m>-1\leq \frac{(-1)^n}{n}\leq 1</m>, it follows that <m>0\leq 1+\frac{(-1)^n}{n}\leq 2</m>, so <m>\{a_n\}</m> is bounded.
+                </p>
+                <p>
+                    Since <m>\lim_{n\to\infty}\frac{(-1)^n}{n}=0</m>, it follows that <m>a_n</m> converges to <m>1</m>.
+                </p>
+            </task>
+            <task>
+                <p>
+                    This time, when we compute <m>a_{n+1}-a_n</m> we get:
+                    <me>
+                        a_{n+1}-a_n=\frac{(-1)^{n+1}}{n(n+1)}(2n^2-1).
+                    </me>
+                    Like above, this is sometimes positive and sometimes negative, so the sequence is not monotonic. 
+                </p>
+                <p>
+                    Since <m>|a_n|=1-\frac{1}{n}\leq 1</m>, it follows that the sequence is bounded. 
+                </p>
+                <p>
+                    As <m>n\to \infty</m>, the factor <m>1-\frac{1}{n}\to 1</m>. 
+                    Given this, <m>a_n</m> itself will osscilate close to <m>\pm 1</m> and the limit does not exist. 
+                </p>
+            </task>
+            <task>
+                <p>
+                    This time
+                    <me>
+                        a_{n+1}-a_n=\frac{n!}{n^n(n+1)^n}(n^n-(n+1)^n)&lt; 0
+                    </me>
+                    is always negative, so <m>\{a_n\}</m> is monotonic decreasing. 
+                </p>
+                <p>
+                    Notice that 
+                    <me>
+                        a_n=\frac{n\cdot(n-1)\cdots(2)\cdot(1)}{n\cdot n\cdots n\cdot n}
+                    </me>
+                    Since <m>\frac{k}{n}\leq 1</m> for each <m>k\leq n</m>, it follows that
+                    <me>
+                        0\leq a_n\leq \frac{1}{n}\leq 1
+                    </me>
+                    and that <m>\{a_n\}</m> is bounded. 
+                </p>
+                <p>
+                    Lastly, since we observed that <m>0\leq a_n\leq \frac{1}{n}</m> holds for every <m>n</m> and we know <m>\frac{1}{n}\to 0</m>, it follows that <m>a_n\to 0</m> as well.
+                </p>
+            </task>
+        </solution>
     </problem>
 
     <problem>
-        <title>(Problem 2)</title>    
-        <task>
-            <statement>
+        <title>(Problem 2)</title>
+        <introduction>
+            <task>
+                <statement>
+                    <p>
+                        Explain and demonstrate how to express <m>3.12\overline{5}=3.12555555\cdots</m> as a fraction of two integers by first interpreting this expression as an infinite series, and then applying results from class as appropriate.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Explain and demonstrate how to express <m>4.\overline{23}=4.23232323\cdots</m> as a fraction of two integers by first interpreting this expression as an infinite series, and then applying results from class as appropriate..
+                    </p>
+                </statement>
+            </task>
+        </introduction>    
+        <solution>
+            <task>
                 <p>
-                    Explain and demonstrate how to express <m>3.12\overline{5}=3.12555555\cdots</m> as a fraction of two integers by first interpreting this expression as an infinite series, and then applying results from class as appropriate.
+                    The key observation is that 
+                    <me>
+                        3.12\overline{5}=3.12+\frac{5}{10^3}+\frac{5}{10^4}+\frac{5}{10^5}+\cdots=\frac{312}{100}+\frac{5}{10^3}+\frac{5}{10^4}+\frac{5}{10^5}+\cdots
+                    </me>
+                    The sum <m>\frac{5}{10^3}+\frac{5}{10^4}+\frac{5}{10^5}+\cdots</m> is geometric with initial term <m>a=\frac{5}{10^3}</m> and common ratio <m>r=\frac{1}{10}</m>.
+                    Using results from class, we know that this geometric sum is equal to 
+                    <me>
+                        \frac{a}{1-r}=\frac{5}{900}.
+                    </me>
+                    Adding to this <m>\frac{312}{100}</m>, we get <m>3.12\overline{5}=\frac{2813}{900}</m>.
                 </p>
-            </statement>
-        </task>
-        <task>
-            <statement>
+            </task>
+            <task>
                 <p>
-                    Explain and demonstrate how to express <m>4.\overline{23}=4.23232323\cdots</m> as a fraction of two integers by first interpreting this expression as an infinite series, and then applying results from class as appropriate..
+                    Likewise, the number <m>4.\overline{23}</m> is equal to <m>4</m> plus a geometric series with initial term <m>a=\frac{23}{100}</m> and ratio <m>r=\frac{1}{100}</m>. 
+                    It is therefore equal to
+                    <me>
+                        4+\frac{a}{1-r}=4+\frac{23}{99}=\frac{419}{99}.
+                    </me>
+                    
                 </p>
-            </statement>
-        </task>
+            </task>
+        </solution>
     </problem>
 
     <problem>
         <title>(Problem 3)</title>
         <introduction>
-            <p>
-                For each of the following, explain and demonstrate how to find the values of <m>x</m> for which the given series converge; explain and demonstrate how to find the sum of the series (as a function of <m>x</m>) for those values of <m>x</m>. 
-            </p>
-        </introduction>
+            <statement>
+                <p>
+                    For each of the following, explain and demonstrate how to find the values of <m>x</m> for which the given series converge; explain and demonstrate how to find the sum of the series (as a function of <m>x</m>) for those values of <m>x</m>. 
+                </p>
+            </statement>
         <task>
             <statement>
                 <p>
@@ -85,18 +171,53 @@
                 </p>
             </statement>
         </task>
+        </introduction>
+        <solution>
+            <task>
+                <p>
+                    This sum is geometric with initial term <m>a=1</m> and ratio <m>r=-\frac{1}{x}^2</m>. 
+                    Therefore, it converges to 
+                    <me>
+                        \frac{a}{1-r}=\frac{x^2}{x^2+1}
+                    </me>
+                    whenever <m>|-\frac{1}{x^2}|&lt; 1</m>; this happens when <m>x</m> lives in <m>(-\infty,-1)\cup (1,\infty)</m>.
+                    
+                </p>
+            </task>
+            <task>
+                <p>
+                    This series is geometric with initial term <m>a=1</m> and ratio <m>r=\frac{3-x}{2}</m>. 
+                    Therefore, it converges to:
+                    <me>
+                        \frac{a}{1-r}=\frac{2}{x-1}
+                    </me>
+                    whenever <m>|\frac{3-x}{2}|&lt;1</m>, or <m>1&lt; x&lt; 5</m>.
+                </p>
+            </task>
+            <task>
+                <p>
+                    This series is geometric with initial term <m>a=1</m> and ratio <m>r=\ln(x)</m>. 
+                    Therefore, it converges to:
+                    <me>
+                        \frac{a}{1-r}=\frac{1}{1-\ln(x)}
+                    </me>
+                    whenever <m>|\ln(x)|&lt;1</m>, or <m>\frac{1}{e}&lt; x&lt; e</m>.
+                </p>
+            </task>
+        </solution>
     </problem>
 
     <problem>
         <title>(Problem 4)</title>
         <introduction>
-            <p>
-                In this problem, you will prove that the harmonic series diverges using the definitions of partial sums instead of relying on the integral test. 
-                Recall that the harmonic series is the series <m>\sum_{n=1}^\infty\frac{1}{n}</m>.
-                Let <m>S_k</m> denote its <m>k</m>-th partial sum:
-                <me>S_k=\sum_{n=1}^k\frac{1}{n}=1+\frac{1}{2}+\cdots+\frac{1}{k}.</me>
-            </p>
-        </introduction>
+            <statement>
+                <p>
+                    In this problem, you will prove that the harmonic series diverges using the definitions of partial sums instead of relying on the integral test. 
+                    Recall that the harmonic series is the series <m>\sum_{n=1}^\infty\frac{1}{n}</m>.
+                    Let <m>S_k</m> denote its <m>k</m>-th partial sum:
+                    <me>S_k=\sum_{n=1}^k\frac{1}{n}=1+\frac{1}{2}+\cdots+\frac{1}{k}.</me>
+                </p>
+            </statement>
         <task>
             <statement>
                 <p>
@@ -115,6 +236,45 @@
                 </p>
             </statement>
         </task>
+    </introduction>
+        <solution>
+            <task>
+                <p>
+                    Answers may vary. One approach is to note that <m>S_{k}=S_{k-1}+\frac{1}{k}</m>. 
+                    So, at each step, <m>S_k</m> is obtained by adding the positive number <m>\frac{1}{k}</m> to the number <m>S_{k-1}</m> which increases the sum. 
+                </p>
+                <p>
+                    Alternatively, <m>S_{k}-S_{k-1}=\frac{1}{k}&gt; 0</m> for each <m>k</m>, which shows the sequence is increasing. 
+                </p>
+            </task>
+            <task>
+                <p>
+                    First, note that
+                    <me>
+                        S_{2^n}=S_{2^{n-1}}+\frac{1}{2^{n-1}+1}+\frac{1}{2^{n-1}+2}+\cdots+\frac{1}{2^n}.
+                    </me>
+                    Of the numbers <m>\frac{1}{2^{n-1}+1},\frac{1}{2^{n-1}+2},\cdots,\frac{1}{2^n}</m>, the smallest is <m>\frac{1}{2^n}</m>. 
+                    By counting carefully, the sum
+                    <me>
+                        \frac{1}{2^{n-1}+1}+\frac{1}{2^{n-1}+2}+\cdots+\frac{1}{2^n}
+                    </me>
+                    has <m>2^n-2^{n-1}=2^{n-1}(2-1)=2^{n-1}</m> terms. 
+                    It follows, then, that
+                    <me>
+                        \frac{1}{2^{n-1}+1}+\frac{1}{2^{n-1}+2}+\cdots+\frac{1}{2^n}\geq \frac{1}{2^n}+\cdots+\frac{1}{2^n}=\frac{2^{n-1}}{2^n}=\frac{1}{2}.
+                    </me>
+                    This shows that <m>S_{2^n}\geq S_{2^{n-1}}+\frac{1}{2}</m>. 
+                    
+                </p>
+                <p>
+                    If we repeat this <m>n</m> times, we get
+                    <me>
+                        S_{2^{n-1}}+\frac{1}{2}\geq S_{2^{n-2}}+\frac{2}{2}\geq\cdots\geq S_{2^0}+\frac{n}{2}=1+\frac{n}{2}.
+                    </me>
+                    Since <m>\lim_{n\to\infty}1+\frac{n}{2}=\infty</m>, it follows that partial sums are unbounded from below. 
+                </p>
+            </task>
+        </solution>
     </problem>
 
     <problem>
