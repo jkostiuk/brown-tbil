@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<section xml:id="GT5" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Change of Basis (GT5)</title>
+    <objectives>
+        <ul>
+            <li>
+                <p>
+                    Calculate the change-of-basis matrix between two bases of <m>\IR^n</m>.
+                </p>
+            </li>
+        </ul>
+    </objectives>
+
+<subsection>
+    <title>Warm Up</title>
+    
+</subsection>
+
+<subsection><title>Class Activities</title>
+<remark>
+    <p>
+        So far, when working with the Euclidean vector space <m>\IR^n</m>, we have primarily worked with the standard basis <m>\mathcal{E}=\setList{\vec{e}_1,\dots, \vec{e}_n}</m>.
+        We can explore alternative perspectives more easily if we expand our toolkit to analyze different bases.    
+    </p>
+</remark>
+<activity>
+    <introduction>
+        <p>
+            Let <m>\cal{B}=\setList{\vec{v}_1,\vec{v}_2,\vec{v}_3}=\setList{\begin{bmatrix}1\\0\\1\end{bmatrix},\begin{bmatrix}1\\-1\\1\end{bmatrix},\begin{bmatrix}0\\1\\1\end{bmatrix}}</m>.
+        </p>
+    </introduction>        
+    <task>
+            <p>
+                Is <m>\cal{B}</m> a basis of <m>\IR^3</m>?
+            </p>
+            <p>
+                <ol marker="A.">
+                    <li>
+                        <p>
+                            Yes.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            No.
+                        </p>
+                    </li>
+                </ol>
+            </p>
+    </task>
+    <task>
+            <p>
+                Since <m>\cal{B}</m> is a basis, we know that if <m>\vec{v}\in \IR^3</m>, the following vector equation have will have a unique solution:
+                <me>x_1\vec{v}_1+x_2\vec{v}_2+x_3\vec{v}_3=\vec{v}</me>
+                Given this, we define a map <m>C_{\mathcal{B}}\colon\IR^3\to\IR^3</m> via the rule that <m>C_{\mathcal{B}}(\vec{v})</m> is equal to the unique solution to the above vector equation. 
+                The map <m>C_{\mathcal{B}}</m> is a linear map. 
+            </p>
+            <p>
+                Compute <m>C_{\mathcal{B}}\left(\begin{bmatrix}1\\1\\1\end{bmatrix}\right).</m>
+            </p>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Compute <m>C_\mathcal{B}(\vec{e}_1),C_\mathcal{B}(\vec{e}_2), C_\mathcal{B}(\vec{e}_3)</m> and, in doing so, write down the standard matrix <m>M_\mathcal{B}</m> of <m>C_\mathcal{B}</m>.
+            </p>
+        </statement>
+    </task>
+</activity>
+
+</subsection>
+
+    <subsection>
+        <title>Sample Problem and Solution</title>
+        <p>
+            Sample problem .
+        </p>
+    </subsection>
+
+</section>
