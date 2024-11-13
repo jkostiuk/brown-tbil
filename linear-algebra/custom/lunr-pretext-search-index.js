@@ -4528,6 +4528,87 @@ var ptx_lunr_docs = [
   "body": " Given a matrix , let be the eigenvectors with associated distinct eigenvalues . Prove the set of eigenvectors is linearly independent.  "
 },
 {
+  "id": "GT5",
+  "level": "1",
+  "url": "GT5.html",
+  "type": "Section",
+  "number": "5.5",
+  "title": "Change of Basis (GT5)",
+  "body": " Change of Basis (GT5)     Calculate the change-of-basis matrix between two bases of .      Warm Up   Class Activities   So far, when working with the Euclidean vector space , we have primarily worked with the standard basis . We can explore alternative perspectives more easily if we expand our toolkit to analyze different bases.     Let .   Is a basis of ?    Yes.    No.     Since is a basis, we know that if , the following vector equation have will have a unique solution: Given this, we define a map via the rule that is equal to the unique solution to the above vector equation. The map is a linear map. Compute   Compute and, in doing so, write down the standard matrix of .    Note that one way to compute is calculate the RREF of the following matrix: Thus, the matrix is the inverse of the matrix . That is:      Given a basis of , the change of basis\/coordinate transformation is the transformation defined by the property that, for any vector , the vector is the unique solution to the vector equation: Its standard matrix is denote by and it satisfies the following:   More precisely, is the change-of-coordinate map from the standard basis  to the basis ; the vector is the -coordinates of . If you work with standard coordinates, and I work with -coordinates, then to build the vector that you call , I would first compute and then build .  In particular, notation as above, we would have:       Let , and    Calculate using technology.  Use your result to calculate and express the vector as a linear combination of .    Let be a linear transformation and let denote its standard matrix. If is some other basis, then we have: In other words, the matrix is the matrix whose columns consist of -coordinate vectors of the image vectors . The matrix is called the matrix of with respect to -coordinates .     Let be basis from the previous Activity. Let denote the linear transformation whose standard matrix is given by:    Calculate the matrix .  The matrix describes how the standard basis of is transformed by the linear transformation . The matrix describes how is transformed (in -coordinates). Which of these two descriptions is easier for you to describe\/understand\/visualize and why?     Sample Problem and Solution  Sample problem .   "
+},
+{
+  "id": "GT5-2",
+  "level": "2",
+  "url": "GT5.html#GT5-2",
+  "type": "Learning Outcomes",
+  "number": "5.5",
+  "title": "",
+  "body": "   Calculate the change-of-basis matrix between two bases of .    "
+},
+{
+  "id": "GT5-4-2",
+  "level": "2",
+  "url": "GT5.html#GT5-4-2",
+  "type": "Remark",
+  "number": "5.5.1",
+  "title": "",
+  "body": " So far, when working with the Euclidean vector space , we have primarily worked with the standard basis . We can explore alternative perspectives more easily if we expand our toolkit to analyze different bases.  "
+},
+{
+  "id": "GT5-4-3",
+  "level": "2",
+  "url": "GT5.html#GT5-4-3",
+  "type": "Activity",
+  "number": "5.5.2",
+  "title": "",
+  "body": "  Let .   Is a basis of ?    Yes.    No.     Since is a basis, we know that if , the following vector equation have will have a unique solution: Given this, we define a map via the rule that is equal to the unique solution to the above vector equation. The map is a linear map. Compute   Compute and, in doing so, write down the standard matrix of .  "
+},
+{
+  "id": "GT5-4-4",
+  "level": "2",
+  "url": "GT5.html#GT5-4-4",
+  "type": "Observation",
+  "number": "5.5.3",
+  "title": "",
+  "body": " Note that one way to compute is calculate the RREF of the following matrix: Thus, the matrix is the inverse of the matrix . That is:   "
+},
+{
+  "id": "def-change-of-basis",
+  "level": "2",
+  "url": "GT5.html#def-change-of-basis",
+  "type": "Definition",
+  "number": "5.5.4",
+  "title": "",
+  "body": "  Given a basis of , the change of basis\/coordinate transformation is the transformation defined by the property that, for any vector , the vector is the unique solution to the vector equation: Its standard matrix is denote by and it satisfies the following:   More precisely, is the change-of-coordinate map from the standard basis  to the basis ; the vector is the -coordinates of . If you work with standard coordinates, and I work with -coordinates, then to build the vector that you call , I would first compute and then build .  In particular, notation as above, we would have:    "
+},
+{
+  "id": "GT5-4-6",
+  "level": "2",
+  "url": "GT5.html#GT5-4-6",
+  "type": "Activity",
+  "number": "5.5.5",
+  "title": "",
+  "body": "  Let , and    Calculate using technology.  Use your result to calculate and express the vector as a linear combination of .  "
+},
+{
+  "id": "GT5-4-7",
+  "level": "2",
+  "url": "GT5.html#GT5-4-7",
+  "type": "Observation",
+  "number": "5.5.6",
+  "title": "",
+  "body": " Let be a linear transformation and let denote its standard matrix. If is some other basis, then we have: In other words, the matrix is the matrix whose columns consist of -coordinate vectors of the image vectors . The matrix is called the matrix of with respect to -coordinates .  "
+},
+{
+  "id": "GT5-4-8",
+  "level": "2",
+  "url": "GT5.html#GT5-4-8",
+  "type": "Activity",
+  "number": "5.5.7",
+  "title": "",
+  "body": "  Let be basis from the previous Activity. Let denote the linear transformation whose standard matrix is given by:    Calculate the matrix .  The matrix describes how the standard basis of is transformed by the linear transformation . The matrix describes how is transformed (in -coordinates). Which of these two descriptions is easier for you to describe\/understand\/visualize and why?  "
+},
+{
   "id": "pset-intro",
   "level": "1",
   "url": "pset-intro.html",
@@ -4768,7 +4849,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "A.6",
   "title": "Problem Set 5",
-  "body": " Problem Set 5   Instructions  Prior to beginning this problem set, consider reading the Problem Set Success Guide for advice and clarity around expectations for Problem Sets in this course. Upload your solutions to all problems on this page to gradescope as a single .pdf file, remembering to assign pages appropriately for each question. Complete instructions for Problem Sets are available on Canvas.    (Problem 1)   In class, we defined the inverse of a matrix in two steps. First, if is a matrix, we said that was invertible if the corresponding linear map was an invertible function. Given this, the inverse of , denoted was defined to be the standard matrix of the inverse linear map .  An alternative approach would be: an matrix is invertible if we can find a matrix for which ; in this case, is unique and we define to be this matrix. For this problem (and future ones) you may decide to use either characterization you want.   If are both invertible matrices, explain why is also invertible and that .    If are matrices and is invertible, explain and demonstrate how to solve the following matrix equations for :                     If are invertible matrices, is it necessarily the case that is invertible? If yes, prove it; if not, provide a counterexample.      (Problem 2)   Let and be two matrices for which the products and are both defined. If , we say that  commute ; if , we say that and  anti-commute .   Let and be the subset of matrices that commute with . Explain why is a subspace of and explain and demonstrate how to find a basis for .    Let and be the subset of matrices that anti-commute with . Explain why is a subspace of and explain and demonstrate how to find a basis for .      (Problem 3)   Suppose that and are two linear transformations of vector spaces.   If and are both surjective, explain why is also surjective.    Let be an matrix and an matrix. Suppose further that we know that and have pivot positions in each row. Explain why each row of also has a pivot.    Again, let be an matrix and an matrix. Suppose we know that has a pivot in each row. Explain why must also have a pivot position in each of its rows, but show, by providing an example, that it is possible for some row of to be missing a pivot.     Remark: If you'd like explore further: formulate and answer a related sequence of activities involving injective transformations and products of matrices whose RREFs have pivots in each column.      A Different Take on Matrix Multiplication  In class, we defined the product of two matrices to be the standard matrix of the composition of the two corresponding linear transformations. Here is an alternate formula\/definition for the matrix product that builds on the work you've been doing with dot-products.  Suppose that is an matrix and that is an matrix. Let be the rows of and let be the columns of , so that we can write and . Since the rows of and the columns of are all vectors in , it makes sense to take the dot-product between them. The matrix product can then be defined by In other words, the entry of the product is the dot-product of the -th row of and the -th column of .  As an example, in class, we computed that:   Now, we can check the above as follows: we see that the entry of this product is . This is the same as taking the dot-product of the third row of and the second column of :     (Problem 4)    Use the above conceptualization of matrix-product to revisit some old friends with a new perspective.    Let be a linear transformation with standard matrix . Explain why the kernel of is equal to the orthogonal complement of the row space of . That is, explain why:     Using part (a), explain and demonstrate how to calculate a basis for where:     Let be a subspace of . Explain, using results covered in class or in previous problems sets, why      "
+  "body": " Problem Set 5   Instructions  Prior to beginning this problem set, consider reading the Problem Set Success Guide for advice and clarity around expectations for Problem Sets in this course. Upload your solutions to all problems on this page to gradescope as a single .pdf file, remembering to assign pages appropriately for each question. Complete instructions for Problem Sets are available on Canvas.    (Problem 1)   In class, we defined the inverse of a matrix in two steps. First, if is a matrix, we said that was invertible if the corresponding linear map was an invertible function. Given this, the inverse of , denoted was defined to be the standard matrix of the inverse linear map .  An alternative approach would be: an matrix is invertible if we can find a matrix for which ; in this case, is unique and we define to be this matrix. For this problem (and future ones) you may decide to use either characterization you want.   If are both invertible matrices, explain why is also invertible and that .    If are matrices and is invertible, explain and demonstrate how to solve the following matrix equations for :                     If are invertible matrices, is it necessarily the case that is invertible? If yes, prove it; if not, provide a counterexample.      (Problem 2)   Let and be two matrices for which the products and are both defined. If , we say that  commute ; if , we say that and  anti-commute .   Let and be the subset of matrices that commute with . Explain why is a subspace of and explain and demonstrate how to find a basis for .    Let and be the subset of matrices that anti-commute with . Explain why is a subspace of and explain and demonstrate how to find a basis for .      (Problem 3)   Suppose that and are two linear transformations of vector spaces.   If and are both surjective, explain why is also surjective.    Let be an matrix and an matrix. Suppose further that we know that and have pivot positions in each row. Explain why each row of also has a pivot.    Again, let be an matrix and an matrix. Suppose we know that has a pivot in each row. Explain why must also have a pivot position in each of its rows, but show, by providing an example, that it is possible for some row of to be missing a pivot.     Remark: If you'd like explore further: formulate and answer a related sequence of activities involving injective transformations and products of matrices whose RREFs have pivots in each column.      A Different Take on Matrix Multiplication  In class, we defined the product of two matrices to be the standard matrix of the composition of the two corresponding linear transformations. Here is an alternate formula\/definition for the matrix product that builds on the work you've been doing with dot-products.  Suppose that is an matrix and that is an matrix. Let be the rows of and let be the columns of , so that we can write and . Since the rows of and the columns of are all vectors in , it makes sense to take the dot-product between them. The matrix product can then be defined by In other words, the entry of the product is the dot-product of the -th row of and the -th column of .  As an example, in class, we computed that:   Now, we can check the above as follows: we see that the entry of this product is . This is the same as taking the dot-product of the third row of and the second column of :     (Problem 4)    Use the above conceptualization of matrix-product to revisit some old friends with a new perspective.    Let be a linear transformation with standard matrix . Explain why the kernel of is equal to the orthogonal complement of the row space of . That is, explain why:     Using part (a), explain and demonstrate how to calculate a basis for where:     Let be a subspace of . Explain, using results covered in class or in previous problems sets, why      For part (c): choose a spanning set for . That is, suppose that for some finite set of vectors.    "
 },
 {
   "id": "sec-pset5-linear-3",
@@ -4813,7 +4894,7 @@ var ptx_lunr_docs = [
   "type": "Problem",
   "number": "A.6.5",
   "title": "(Problem 4).",
-  "body": " (Problem 4)    Use the above conceptualization of matrix-product to revisit some old friends with a new perspective.    Let be a linear transformation with standard matrix . Explain why the kernel of is equal to the orthogonal complement of the row space of . That is, explain why:     Using part (a), explain and demonstrate how to calculate a basis for where:     Let be a subspace of . Explain, using results covered in class or in previous problems sets, why     "
+  "body": " (Problem 4)    Use the above conceptualization of matrix-product to revisit some old friends with a new perspective.    Let be a linear transformation with standard matrix . Explain why the kernel of is equal to the orthogonal complement of the row space of . That is, explain why:     Using part (a), explain and demonstrate how to calculate a basis for where:     Let be a subspace of . Explain, using results covered in class or in previous problems sets, why      For part (c): choose a spanning set for . That is, suppose that for some finite set of vectors.   "
 },
 {
   "id": "truss",
