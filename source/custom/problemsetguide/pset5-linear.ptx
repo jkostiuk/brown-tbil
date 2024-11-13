@@ -190,5 +190,10 @@
             </statement>
         </task>
         </introduction>
+        <hint>
+            <p>
+                For part (c): choose a spanning set for <m>W</m>. That is, suppose that <m>W=\vspan\{\vec{v}_1,\dots, \vec{v}_r\}</m> for some finite set of vectors. 
+            </p>
+        </hint>
     </problem>
 </section>
