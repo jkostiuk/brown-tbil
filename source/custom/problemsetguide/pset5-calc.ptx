@@ -94,7 +94,7 @@
                     </li>
                     <li>
                         <p>
-                            <m>\sum_{n=1}^\infty(b_n)^n.</m>
+                            <m>\sum_{n=1}^\infty\frac{1000^n}{n!+b_n}.</m>
                         </p>
                     </li>
                 </ol> 
