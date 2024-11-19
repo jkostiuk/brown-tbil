@@ -1329,19 +1329,19 @@ M_{\mathcal{B}}^{-1}=[\vec{v}_1\ \vec{v}_2\ \vec{v}_3].
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.5.4</span><span class="period">.</span>
 </h4>
 <div class="para logical" id="def-change-of-basis-1-1">
-<div class="para">Given a basis <span class="process-math">\(\cal{B}=\setList{\vec{v}_1,\dots, \vec{v}_n}\)</span> of <span class="process-math">\(\IR^n\text{,}\)</span> the <dfn class="terminology">change of basis/coordinate</dfn> transformation is the transformation <span class="process-math">\(C_\mathcal{B}\colon\IR^n\to\IR^n\)</span> defined by the property that, for any vector <span class="process-math">\(\vec{v}\in\IR^n\text{,}\)</span> the vector <span class="process-math">\(C_\mathcal{B}(\vec{v})\)</span> is the unique solution to the vector equation:</div>
+<div class="para">Given a basis <span class="process-math">\(\cal{B}=\setList{\vec{v}_1,\dots, \vec{v}_n}\)</span> of <span class="process-math">\(\IR^n\text{,}\)</span> the <dfn class="terminology">change of basis/coordinate</dfn> transformation <em class="emphasis">from</em> the standard basis <em class="emphasis">to</em> <span class="process-math">\(\mathcal{B}\)</span> is the transformation <span class="process-math">\(C_\mathcal{B}\colon\IR^n\to\IR^n\)</span> defined by the property that, for any vector <span class="process-math">\(\vec{v}\in\IR^n\text{,}\)</span> the vector <span class="process-math">\(C_\mathcal{B}(\vec{v})\)</span> is the unique solution to the vector equation:</div>
 <div class="displaymath process-math">
 \begin{equation*}
 x_1\vec{v}_1+\dots+x_n\vec{v}_n=\vec{v}.
 \end{equation*}
 </div>
-<div class="para">Its standard matrix is denote by <span class="process-math">\(M_{\mathcal{B}}\)</span> and it satisfies the following:</div>
+<div class="para">Its standard matrix is called the change-of-basis matrix from the standard basis to <span class="process-math">\(\mathcal{B}\)</span> and is denoted by <span class="process-math">\(M_{\mathcal{B}}\text{.}\)</span> It satisfies the following:</div>
 <div class="displaymath process-math">
 \begin{equation*}
 M_{\mathcal{B}}^{-1}=[\vec{v}_1\ \cdots\ \vec{v}_n].
 \end{equation*}
 </div>
-</div> <div class="para" id="def-change-of-basis-1-2">More precisely, <span class="process-math">\(C_\mathcal{B}\)</span> is the change-of-coordinate map <em class="emphasis">from</em> the standard basis <span class="process-math">\(\{\vec{e}_1,\dots, \vec{e}_n\}\)</span> <em class="emphasis">to</em> the basis <span class="process-math">\(\mathcal{B}\text{;}\)</span> the vector <span class="process-math">\(C_\mathcal{B}(\vec{v})\)</span> is the <span class="process-math">\(\mathcal{B}\)</span>-coordinates of <span class="process-math">\(\vec{v}\text{.}\)</span> If you work with standard coordinates, and I work with <span class="process-math">\(\mathcal{B}\)</span>-coordinates, then to build the vector that you call <span class="process-math">\(\vec{v}=\begin{bmatrix}a_1\\\vdots\\a_n\end{bmatrix}=a_1\vec{e}_1+\cdots+a_n\vec{e}_n\text{,}\)</span> I would first compute <span class="process-math">\(C_\mathcal{B}(\vec{v})=\begin{bmatrix}x_1\\\vdots\\x_n\end{bmatrix}\)</span> and then build <span class="process-math">\(\vec{v}=x_1\vec{v}_1+\cdots+x_n\vec{v}_n\text{.}\)</span>
+</div> <div class="para" id="def-change-of-basis-1-2">The vector <span class="process-math">\(C_\mathcal{B}(\vec{v})\)</span> is the <span class="process-math">\(\mathcal{B}\)</span>-coordinates of <span class="process-math">\(\vec{v}\text{.}\)</span> If you work with standard coordinates, and I work with <span class="process-math">\(\mathcal{B}\)</span>-coordinates, then to build the vector that you call <span class="process-math">\(\vec{v}=\begin{bmatrix}a_1\\\vdots\\a_n\end{bmatrix}=a_1\vec{e}_1+\cdots+a_n\vec{e}_n\text{,}\)</span> I would first compute <span class="process-math">\(C_\mathcal{B}(\vec{v})=\begin{bmatrix}x_1\\\vdots\\x_n\end{bmatrix}\)</span> and then build <span class="process-math">\(\vec{v}=x_1\vec{v}_1+\cdots+x_n\vec{v}_n\text{.}\)</span>
 </div> <div class="para logical" id="def-change-of-basis-1-3">
 <div class="para">In particular, notation as above, we would have:</div>
 <div class="displaymath process-math">
@@ -1391,7 +1391,55 @@ A=\begin{bmatrix}9&amp;4&amp;4\\6&amp;9&amp;2\\-18&amp;-16&amp;-9\end{bmatrix}.
 <div class="para" id="GT5-4-8-3-1">The matrix <span class="process-math">\(A\)</span> describes how the standard basis of <span class="process-math">\(\IR^3\)</span> is transformed by the linear transformation <span class="process-math">\(T\text{.}\)</span> The matrix <span class="process-math">\(M_\mathcal{B}AM_{\mathcal{B}}^{-1}\)</span> describes how <span class="process-math">\(\cal{B}\)</span> is transformed (in <span class="process-math">\(\mathcal{B}\)</span>-coordinates). Which of these two descriptions is easier for you to describe/understand/visualize and why?</div></article></article></section><section class="subsection" id="GT5-5"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">5.5.3</span><span class="space"> </span><span class="title">Sample Problem and Solution</span>
 </h3>
-<div class="para" id="GT5-5-2">Sample problem .</div></section></section></div>
+<article class="example example-like" id="GT5-5-2"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.5.8</span><span class="period">.</span>
+</h4>
+<div class="introduction" id="GT5-5-2-1">
+<div class="para" id="GT5-5-2-1-1">Let <span class="process-math">\(\mathcal{B}=\setList{\begin{bmatrix}-2\\-2\\1\end{bmatrix},\begin{bmatrix}-1\\-2\\-1\end{bmatrix},\begin{bmatrix}1\\3\\2\end{bmatrix}}\text{,}\)</span> and <span class="process-math">\(\vec{v}=\begin{bmatrix}1\\2\\3\end{bmatrix}\text{.}\)</span>
+</div> <article class="task exercise-like" id="GT5-5-2-1-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="GT5-5-2-1-2-1">Explain and demonstrate how to verify that <span class="process-math">\(\mathcal{B}\)</span> is a basis of <span class="process-math">\(\IR^3\)</span> and how to calculate <span class="process-math">\(M_\mathcal{B}\text{,}\)</span> the change-of-basis matrix from the standard basis of <span class="process-math">\(\IR^3\)</span> to <span class="process-math">\(\mathcal{B}\text{.}\)</span>
+</div></article> <article class="task exercise-like" id="GT5-5-2-1-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="GT5-5-2-1-3-1">Explain and demonstrate how to use <span class="process-math">\(M_\mathcal{B}\)</span> to express <span class="process-math">\(\vec{v}\)</span> in terms of <span class="process-math">\(\mathcal{B}\)</span>-basis vectors.</div></article>
+</div> <details id="GT5-5-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<article class="task exercise-like" id="GT5-5-2-2-1"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para logical" id="GT5-5-2-2-1-1">
+<div class="para">We can accomplish both tasks by calculating the RREF of the following matrix:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\RREF\left[\begin{array}{ccc|ccc}-2&amp;-1&amp;1&amp;1&amp;0&amp;0\\
+-2&amp;-2&amp;3&amp;0&amp;1&amp;0\\1&amp;-1&amp;2&amp;0&amp;0&amp;1\end{array}\right]
+=
+\left[\begin{array}{ccc|ccc}1&amp;0&amp;0&amp;1&amp;-1&amp;1\\
+0&amp;1&amp;0&amp;-7&amp;5&amp;-4\\
+0&amp;0&amp;1&amp;-4&amp; 3&amp;-2\end{array}\right].
+\end{equation*}
+</div>
+<div class="para">The fact that the matrix to the left of the vertical bar is the identity matrix tells that <span class="process-math">\(\mathcal{B}\)</span> is a basis. The matrix on the right hand side of the bar is equal to the change-of-basis matrix:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+M_\mathcal{B}=\left[\begin{array}{ccc}1&amp;-1&amp;1\\
+-7&amp;5&amp;-4\\
+-4&amp; 3&amp;-2\end{array}\right].
+\end{equation*}
+</div>
+</div></article> <article class="task exercise-like" id="GT5-5-2-2-2"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para logical" id="GT5-5-2-2-2-1">
+<div class="para">By definition of the change of basis matrix, if <span class="process-math">\(\vec{v}=\begin{bmatrix}1\\2\\3\end{bmatrix}\text{,}\)</span> then the coordinates of <span class="process-math">\(\vec{v}\)</span> with respect to <span class="process-math">\(\mathcal{B}\)</span> are given by:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+M_\mathcal{B}\vec{v}=M_\mathcal{B}=\left[\begin{array}{ccc}1&amp;-1&amp;1\\
+-7&amp;5&amp;-4\\
+-4&amp; 3&amp;-2\end{array}\right]\begin{bmatrix}1\\2\\3\end{bmatrix}=\begin{bmatrix}2\\-9\\-4\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para">It follows that:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{bmatrix}1\\2\\3\end{bmatrix}=2\begin{bmatrix}-2\\-2\\1\end{bmatrix} -9\begin{bmatrix}-1\\-2\\-1\end{bmatrix} -4\begin{bmatrix}1\\3\\2\end{bmatrix}. 
+\end{equation*}
+</div>
+</div></article>
+</div></details></article></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="GT4.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="backmatter.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
