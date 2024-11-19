@@ -31,7 +31,7 @@
           <task>
             <statement>
                 <p>
-                    If <m>A,B</m> are <m>n\times n</m> matrices and <m>A</m> is invertible, explain and demonstrate how to solve the following matrix equations for <m>X</m>:
+                    If <m>A,B</m> are <m>n\times n</m> matrices and <m>A,B</m> are invertible, explain and demonstrate how to solve the following matrix equations for <m>X</m>:
                     <ol>
                         <li>
                             <p>

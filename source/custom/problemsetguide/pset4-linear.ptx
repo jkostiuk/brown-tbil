@@ -70,7 +70,7 @@
                         <me>
                             T(\vec{v}_1)=aT(\vec{v}_2)+bT(\vec{v}_3).
                         </me>
-                        But this would imply that the set <m>\setList{T(\vec{v}_1),T(\vec{v}_2),T(\vec{v}_3)}</m>, which is contrary to our assumptions. 
+                        But this would imply that the set <m>\setList{T(\vec{v}_1),T(\vec{v}_2),T(\vec{v}_3)}</m> is linearly dependent, which is contrary to our assumptions. 
                         We conclude that the set <m>\setList{\vec{v}_1,\vec{v}_2,\vec{v}_3}</m> is therefore linearly independent.
                     </p>
                 </statement>
