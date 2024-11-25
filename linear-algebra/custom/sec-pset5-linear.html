@@ -689,6 +689,12 @@ window.MathJax = {
 #sec-pset5-linear-3-2-4-1-1-5 { counter-set: sec-pset5-linear-3-2-4-1-1-5 0; }
 #sec-pset5-linear-3-2-4-1-1-5 > li::marker { content: ""counter(sec-pset5-linear-3-2-4-1-1-5,decimal)"."; }
 #sec-pset5-linear-3-2-4-1-1-5 > li { counter-increment: sec-pset5-linear-3-2-4-1-1-5; }
+#sec-pset5-linear-3-3-2-1-1-1 { counter-set: sec-pset5-linear-3-3-2-1-1-1 0; }
+#sec-pset5-linear-3-3-2-1-1-1 > li::marker { content: ""counter(sec-pset5-linear-3-3-2-1-1-1,decimal)"."; }
+#sec-pset5-linear-3-3-2-1-1-1 > li { counter-increment: sec-pset5-linear-3-3-2-1-1-1; }
+#sec-pset5-linear-3-3-2-1-1-2 { counter-set: sec-pset5-linear-3-3-2-1-1-2 0; }
+#sec-pset5-linear-3-3-2-1-1-2 > li::marker { content: ""counter(sec-pset5-linear-3-3-2-1-1-2,decimal)"."; }
+#sec-pset5-linear-3-3-2-1-1-2 > li { counter-increment: sec-pset5-linear-3-3-2-1-1-2; }
 #truss-2-3-1-4 { counter-set: truss-2-3-1-4 0; }
 #truss-2-3-1-4 > li::marker { content: ""counter(truss-2-3-1-4,decimal)"."; }
 #truss-2-3-1-4 > li { counter-increment: truss-2-3-1-4; }
@@ -1274,7 +1280,62 @@ window.MathJax = {
 </ol>
 </div></article> <article class="task exercise-like" id="sec-pset5-linear-3-2-5"><h4 class="heading"><span class="codenumber">(c)</span></h4>
 <div class="para" id="sec-pset5-linear-3-2-5-1-1">If <span class="process-math">\(H,G\)</span> are invertible matrices, is it necessarily the case that <span class="process-math">\((H+G)\)</span> is invertible? If yes, prove it; if not, provide a counterexample.</div></article>
-</div></article><article class="problem example-like" id="sec-pset5-linear-4"><h3 class="heading">
+</div> <details id="sec-pset5-linear-3-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<article class="task exercise-like" id="sec-pset5-linear-3-3-1"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para logical" id="sec-pset5-linear-3-3-1-1-1">
+<div class="para">Since <span class="process-math">\(A,B\)</span> are both invertible, it follows that both <span class="process-math">\(A^{-1}\)</span> and <span class="process-math">\(B^{-1}\)</span> exist. We have:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+AB(B^{-1}A^{-1})=AI_nA^{-1}=AA^{-1}=I_n
+\end{equation*}
+</div>
+<div class="para">and</div>
+<div class="displaymath process-math">
+\begin{equation*}
+(B^{-1}A^{-1})AB=B^{-1}I_nB=I_n,
+\end{equation*}
+</div>
+<div class="para">which shows that <span class="process-math">\(AB\)</span> is invertible and its inverse is <span class="process-math">\(B^{-1}A^{-1}\)</span> by above.</div>
+</div> <div class="para" id="sec-pset5-linear-3-3-1-1-2">Alternatively: if <span class="process-math">\(S,T\)</span> denote the corresponding transformations, then the composition <span class="process-math">\(T\circ S\)</span> is invertible and its inverse is <span class="process-math">\(S^{-1}\circ T^{-1}\text{;}\)</span> the result now follows by definition of invertible matrix.</div></article> <article class="task exercise-like" id="sec-pset5-linear-3-3-2"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para logical" id="sec-pset5-linear-3-3-2-1-1">
+<ol class="decimal" id="sec-pset5-linear-3-3-2-1-1-1"><li id="sec-pset5-linear-3-3-2-1-1-1-1"><div class="para logical" id="sec-pset5-linear-3-3-2-1-1-1-1-1">
+<div class="para">Consider the following steps to solve for <span class="process-math">\(X\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="sec-pset5-linear-3-3-2-1-1-1-1-1-2">
+\begin{align*}
+A^{-1}XA \amp= B\\
+XA \amp= AB\\
+X \amp= ABA^{-1}
+\end{align*}
+</div>
+</div></li></ol>
+<ol class="decimal" id="sec-pset5-linear-3-3-2-1-1-2">
+<li id="sec-pset5-linear-3-3-2-1-1-2-1"><div class="para logical" id="sec-pset5-linear-3-3-2-1-1-2-1-1">
+<div class="para">Consider the following steps to solve for <span class="process-math">\(X\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="sec-pset5-linear-3-3-2-1-1-2-1-1-2">
+\begin{align*}
+AXA^{-1} \amp= B\\
+XA \amp= A^{-1}B\\
+X \amp= A^{-1}BA
+\end{align*}
+</div>
+</div></li>
+<li id="sec-pset5-linear-3-3-2-1-1-2-2"><div class="para logical" id="sec-pset5-linear-3-3-2-1-1-2-2-1">
+<div class="para">Consider the following steps to solve for <span class="process-math">\(X\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="sec-pset5-linear-3-3-2-1-1-2-2-1-2">
+\begin{align*}
+ABX \amp =I\\
+BX \amp =A^{-1}I\\
+X \amp =B^{-1}A^{-1}I=B^{-1}A^{-1}
+\end{align*}
+</div>
+</div></li>
+</ol>
+</div></article> <article class="task exercise-like" id="sec-pset5-linear-3-3-3"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="sec-pset5-linear-3-3-3-1-1">No. Both <span class="process-math">\(I_n\)</span> and <span class="process-math">\(-I_n\)</span> are invertible, but there sum, the zero matrix, is not.</div></article>
+</div></details></article><article class="problem example-like" id="sec-pset5-linear-4"><h3 class="heading">
 <span class="type">Problem</span><span class="space"> </span><span class="codenumber">A.6.2</span><span class="period">.</span><span class="space"> </span><span class="title">(Problem 2).</span>
 </h3> <div class="introduction" id="sec-pset5-linear-4-2">
 <div class="para" id="sec-pset5-linear-4-2-1">Let <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> be two matrices for which the products <span class="process-math">\(AB\)</span> and <span class="process-math">\(BA\)</span> are both defined. If <span class="process-math">\(AB=BA\text{,}\)</span> we say that <span class="process-math">\(A,B\)</span> <em class="emphasis">commute</em>; if <span class="process-math">\(AB=-BA\text{,}\)</span> we say that <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> <em class="emphasis">anti-commute</em>.</div> <article class="task exercise-like" id="sec-pset5-linear-4-2-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
@@ -1282,7 +1343,67 @@ window.MathJax = {
 </div></article> <article class="task exercise-like" id="sec-pset5-linear-4-2-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
 <div class="para" id="sec-pset5-linear-4-2-3-1-1">Let <span class="process-math">\(B=\left[\begin{array}{cc}0&amp; 1\\-1&amp; 0\end{array}\right]\)</span> and <span class="process-math">\(T=\{Y\in M_{2,2}|\ BY=-YB\}\)</span> be the subset of <span class="process-math">\(2\times 2\)</span> matrices that anti-commute with <span class="process-math">\(B\text{.}\)</span> Explain why <span class="process-math">\(T\)</span> is a subspace of <span class="process-math">\(M_{2,2}\)</span> and explain and demonstrate how to find a basis for <span class="process-math">\(T\text{.}\)</span>
 </div></article>
-</div></article><article class="problem example-like" id="sec-pset5-linear-5"><h3 class="heading">
+</div> <details id="sec-pset5-linear-4-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<article class="task exercise-like" id="sec-pset5-linear-4-3-1"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="sec-pset5-linear-4-3-1-1-1">Let’s begin by showing that <span class="process-math">\(S\)</span> is indeed a subspace. Firstly, if <span class="process-math">\(\vec{0}\)</span> denotes the zero matrix, then <span class="process-math">\(\vec{0}A=A\vec{0}=\vec{0}\text{,}\)</span> so <span class="process-math">\(\vec{0}\in S\text{.}\)</span>
+</div> <div class="para logical" id="sec-pset5-linear-4-3-1-1-2">
+<div class="para">Next, if <span class="process-math">\(X,Y\in S\text{,}\)</span> then we know that <span class="process-math">\(AX=XA\)</span> and <span class="process-math">\(AY=YA\text{.}\)</span> When we add them, we find</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A(X+Y)=AX+AY=XA+YA=(X+Y)A,
+\end{equation*}
+</div>
+<div class="para">so <span class="process-math">\(S\)</span> is closed under taking sums. Likewise, if <span class="process-math">\(k\)</span> is some scalar, then</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A(kX)=kAX=kXA=(kX)A
+\end{equation*}
+</div>
+<div class="para">shows closure under scalar multiplication.</div>
+</div> <div class="para logical" id="sec-pset5-linear-4-3-1-1-3">
+<div class="para">Let <span class="process-math">\(X=\left[\begin{array}{cc}a&amp;b\\c&amp;d\end{array}\right]\in M_{2,2}\text{.}\)</span> Then <span class="process-math">\(X\in S\)</span> if and only if <span class="process-math">\(AX=XA\text{;}\)</span> that is, if and only if</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\left[\begin{array}{cc}1&amp;3\\-1&amp;1\end{array}\right]\left[\begin{array}{cc}a&amp;b\\c&amp;d\end{array}\right]=\left[\begin{array}{cc}a&amp;b\\c&amp;d\end{array}\right]\left[\begin{array}{cc}1&amp;3\\-1&amp;1\end{array}\right]
+\end{equation*}
+</div>
+<div class="para">Performing the multiplication, we get:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\left[\begin{array}{cc}a+3c&amp;b+3d\\-a+c&amp;-b+d\end{array}\right]=\left[\begin{array}{cc}a-b&amp;3a+b\\c-d&amp;3c+d\end{array}\right]
+\end{equation*}
+</div>
+<div class="para">By equating each corner, we obtain a linear system of equations in the variables <span class="process-math">\(a,b,c,d\text{.}\)</span> The corresponding equivalent system obtained by taking an appropriate RREF is:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+a=d,\ \ b=-3c
+\end{equation*}
+</div>
+<div class="para">It follows that any element of <span class="process-math">\(S\)</span> can be written as:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\left[\begin{array}{cc}a&amp;b\\c&amp;d\end{array}\right]=\left[\begin{array}{cc}d&amp;-3c\\c&amp;d\end{array}\right]=d\left[\begin{array}{cc}1&amp;0\\0&amp;1\end{array}\right]+c\left[\begin{array}{cc}0&amp;-3\\1&amp;0\end{array}\right].
+\end{equation*}
+</div>
+<div class="para">This demonstrates that <span class="process-math">\(\left\{\left[\begin{array}{cc}1&amp;0\\0&amp;1\end{array}\right],\left[\begin{array}{cc}0&amp;-3\\1&amp;0\end{array}\right]\right\}\)</span> spans <span class="process-math">\(S\text{.}\)</span> Since these matrices are not multiples of each other, the set is also linearly independent and therefore a basis.</div>
+</div></article> <article class="task exercise-like" id="sec-pset5-linear-4-3-2"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="sec-pset5-linear-4-3-2-1-1">An analogous argument to that used in (a) shows that <span class="process-math">\(T\)</span> is a subspace.</div> <div class="para logical" id="sec-pset5-linear-4-3-2-1-2">
+<div class="para">By starting with an arbitrary <span class="process-math">\(Y=\left[\begin{array}{cc}x&amp;y\\z&amp;w\end{array}\right]\in M_{2,2}\)</span> and considering the equation <span class="process-math">\(BY=-YB\text{,}\)</span> one similarly obtains a system of equation in the variables <span class="process-math">\(x,y,z,w\)</span> whose solutions describe elements of <span class="process-math">\(T\text{.}\)</span> After RREFing this system, we get:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+x=-w,\ \ y=z.
+\end{equation*}
+</div>
+<div class="para">It follows that if <span class="process-math">\(Y\in T\text{,}\)</span> then</div>
+<div class="displaymath process-math">
+\begin{equation*}
+Y=\left[\begin{array}{cc}x&amp;y\\z&amp;w\end{array}\right]=\left[\begin{array}{cc}-w&amp;z\\z&amp;w\end{array}\right]=w\left[\begin{array}{cc}-1&amp;0\\0&amp;1\end{array}\right]+z\left[\begin{array}{cc}0&amp;1\\1&amp;0\end{array}\right].
+\end{equation*}
+</div>
+<div class="para">It follows, by the same reasoning in (a), that the set <span class="process-math">\(\left\{\left[\begin{array}{cc}-1&amp;0\\0&amp;1\end{array}\right],\left[\begin{array}{cc}0&amp;1\\1&amp;0\end{array}\right]\right\}\)</span> is a basis for <span class="process-math">\(T\text{.}\)</span>
+</div>
+</div></article>
+</div></details></article><article class="problem example-like" id="sec-pset5-linear-5"><h3 class="heading">
 <span class="type">Problem</span><span class="space"> </span><span class="codenumber">A.6.3</span><span class="period">.</span><span class="space"> </span><span class="title">(Problem 3).</span>
 </h3> <div class="introduction" id="sec-pset5-linear-5-2">
 <div class="para" id="sec-pset5-linear-5-2-1">Suppose that <span class="process-math">\(S\colon V\to W\)</span> and <span class="process-math">\(T\colon W\to U\)</span> are two linear transformations of vector spaces.</div> <article class="task exercise-like" id="sec-pset5-linear-5-2-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
@@ -1290,7 +1411,28 @@ window.MathJax = {
 <div class="para" id="sec-pset5-linear-5-2-3-1-1">Let <span class="process-math">\(A\)</span> be an <span class="process-math">\(m\times n\)</span> matrix and <span class="process-math">\(B\)</span> an <span class="process-math">\(n\times k\)</span> matrix. Suppose further that we know that <span class="process-math">\(\RREF(A)\)</span> and <span class="process-math">\(\RREF(B)\)</span> have pivot positions in each row. Explain why each row of <span class="process-math">\(\RREF(AB)\)</span> also has a pivot.</div></article> <article class="task exercise-like" id="sec-pset5-linear-5-2-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
 <div class="para" id="sec-pset5-linear-5-2-4-1-1">Again, let <span class="process-math">\(A\)</span> be an <span class="process-math">\(m\times n\)</span> matrix and <span class="process-math">\(B\)</span> an <span class="process-math">\(n\times k\)</span> matrix. Suppose we know that <span class="process-math">\(\RREF(AB)\)</span> has a pivot in each row. Explain why <span class="process-math">\(\RREF(A)\)</span> must also have a pivot position in each of its rows, but show, by providing an example, that it is possible for some row of <span class="process-math">\(\RREF(B)\)</span> to be missing a pivot.</div></article> <div class="para" id="sec-pset5-linear-5-2-5-1">
 <em class="alert">Remark:</em> If you’d like explore further: formulate and answer a related sequence of activities involving injective transformations and products of matrices whose RREFs have pivots in each column.</div>
-</div></article><article class="observation remark-like" id="sec-pset5-linear-6"><h3 class="heading">
+</div> <details id="sec-pset5-linear-5-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<article class="task exercise-like" id="sec-pset5-linear-5-3-1"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="sec-pset5-linear-5-3-1-1-1">To show that <span class="process-math">\(T\circ S\)</span> is surjective, we need to start with an arbitrary <span class="process-math">\(\vec{u}\in U\)</span> and explain why we can find some <span class="process-math">\(\vec{v}\in V\)</span> that maps to it. Since <span class="process-math">\(\vec{u}\in U\)</span> and <span class="process-math">\(T\)</span> is surjective, we know we can find some <span class="process-math">\(\vec{w}\in W\)</span> for which <span class="process-math">\(T(\vec{w})=\vec{u}\text{.}\)</span> Likewise, since we know that <span class="process-math">\(S\)</span> is surjective and <span class="process-math">\(\vec{w}\in W\text{,}\)</span> it follows that there is some <span class="process-math">\(\vec{v}\in V\)</span> for which <span class="process-math">\(S(\vec{v})=\vec{w}\text{.}\)</span>
+</div> <div class="para" id="sec-pset5-linear-5-3-1-1-2">But then <span class="process-math">\((T\circ S)(\vec{v})=T(S(\vec{v}))=T(\vec{w})=\vec{u}\text{.}\)</span> This shows that the composition is surjective.</div></article> <article class="task exercise-like" id="sec-pset5-linear-5-3-2"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="sec-pset5-linear-5-3-2-1-1">Notation as given in the problem, let <span class="process-math">\(S\colon \IR^k\to\IR^n\)</span> and <span class="process-math">\(T\colon\IR^n\to\IR^m\)</span> denote the linear transformations corresponding to <span class="process-math">\(B\)</span> and <span class="process-math">\(A\)</span> respectively. Since both matrices have pivots in each row, both transformations are surjective. By part (a), it follows that <span class="process-math">\(T\circ S\)</span> is surjective. Since <span class="process-math">\(T\circ S\)</span> is surjective, it follows that its standard matrix, which is <span class="process-math">\(AB\text{,}\)</span> has a pivot in each of its rows.</div></article> <article class="task exercise-like" id="sec-pset5-linear-5-3-3"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="sec-pset5-linear-5-3-3-1-1">In part (b), we were able to prove a statement about pivot positions by first translating the statement into one about transformations. Let’s see if this works in this new context.</div> <div class="para" id="sec-pset5-linear-5-3-3-1-2">I claim that if <span class="process-math">\(S\colon V\to W\)</span> and <span class="process-math">\(T\colon W\to U\)</span> are linear maps for which the composition <span class="process-math">\(T\circ S\)</span> is surjective, then it follows that <span class="process-math">\(T\)</span> must itself be surjective.</div> <div class="para" id="sec-pset5-linear-5-3-3-1-3">To see this, let <span class="process-math">\(\vec{u}\in U\text{.}\)</span> Since the composition is surjective, we are entitled to some <span class="process-math">\(\vec{v}\in V\)</span> for which <span class="process-math">\(T(S(\vec{v}))=\vec{u}\text{.}\)</span> But <span class="process-math">\(S(\vec{v})\in W\text{,}\)</span> which means some element of <span class="process-math">\(W\)</span> maps to <span class="process-math">\(\vec{u}\text{,}\)</span> showing surjectivity of <span class="process-math">\(T\text{.}\)</span>
+</div> <div class="para" id="sec-pset5-linear-5-3-3-1-4">Translating this into statements about matrices having pivots in each row, the result follows just as it did above in part (b).</div> <div class="para logical" id="sec-pset5-linear-5-3-3-1-5">
+<div class="para">One example that shows that <span class="process-math">\(B\)</span> need not have a pivot in each row is given by the following:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A=\left[\begin{array}{ccc}1&amp;2&amp;0\\0&amp;1&amp;0\end{array}\right], B=\left[\begin{array}{cc}1&amp;0\\0&amp;1\\0&amp;0\end{array}\right]
+\end{equation*}
+</div>
+<div class="para">Then, we have</div>
+<div class="displaymath process-math">
+\begin{equation*}
+AB=\left[\begin{array}{cc}1&amp;2\\0&amp;1\end{array}\right]
+\end{equation*}
+</div>
+<div class="para">The matrix <span class="process-math">\(A\)</span> has a pivot in each row, as does <span class="process-math">\(AB\text{,}\)</span> but <span class="process-math">\(B\)</span> is missing a pivot in its second row.</div>
+</div></article>
+</div></details></article><article class="observation remark-like" id="sec-pset5-linear-6"><h3 class="heading">
 <span class="type">Observation</span><span class="space"> </span><span class="codenumber">A.6.4</span><span class="period">.</span><span class="space"> </span><span class="title">A Different Take on Matrix Multiplication.</span>
 </h3> <div class="para" id="sec-pset5-linear-6-2">In class, we defined the product of two matrices to be the standard matrix of the composition of the two corresponding linear transformations. Here is an alternate formula/definition for the matrix product that builds on the work you’ve been doing with dot-products.</div> <div class="para logical" id="sec-pset5-linear-6-3">
 <div class="para">Suppose that <span class="process-math">\(A\)</span> is an <span class="process-math">\(m\times n\)</span> matrix and that <span class="process-math">\(B\)</span> is an <span class="process-math">\(m\times k\)</span> matrix. Let <span class="process-math">\(\vec{r}_1,\dots,\vec{r}_m\)</span> be the rows of <span class="process-math">\(A\)</span> and let <span class="process-math">\(\vec{c}_1,\dots,\vec{c}_k\)</span> be the columns of <span class="process-math">\(B\text{,}\)</span> so that we can write <span class="process-math">\(A=\left[\begin{array}{c}\vec{r}_1\\\vdots\\\vec{r}_m\end{array}\right]\)</span> and <span class="process-math">\(B=[\vec{c}_1\ \cdots\ \vec{c}_k]\text{.}\)</span> Since the rows of <span class="process-math">\(A\)</span> and the columns of <span class="process-math">\(B\)</span> are all vectors in <span class="process-math">\(\IR^n\text{,}\)</span> it makes sense to take the dot-product between them. The matrix product can then be defined by</div>
@@ -1344,7 +1486,37 @@ W=\vspan\left\{\left[\begin{array}{c}1\\2\\-3\\2\end{array}\right],\left[\begin{
 \end{equation*}
 </div>
 </div></article>
-</div> <details id="sec-pset5-linear-7-3" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="sec-pset5-linear-7-3-1">For part (c): choose a spanning set for <span class="process-math">\(W\text{.}\)</span> That is, suppose that <span class="process-math">\(W=\vspan\{\vec{v}_1,\dots, \vec{v}_r\}\)</span> for some finite set of vectors.</div></div></details></article></section></div>
+</div> <details id="sec-pset5-linear-7-3" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="sec-pset5-linear-7-3-1">For part (c): choose a spanning set for <span class="process-math">\(W\text{.}\)</span> That is, suppose that <span class="process-math">\(W=\vspan\{\vec{v}_1,\dots, \vec{v}_r\}\)</span> for some finite set of vectors.</div></div></details> <details id="sec-pset5-linear-7-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<article class="task exercise-like" id="sec-pset5-linear-7-4-1"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para logical" id="sec-pset5-linear-7-4-1-1-1">
+<div class="para">If <span class="process-math">\(\vec{x}=\left[\begin{array}{c}x_1\\\vdots\\x_n\end{array}\right]\in\IR^n\text{,}\)</span> then</div>
+<div class="displaymath process-math">
+\begin{equation*}
+T(\vec{x})=A\vec{x}=\left[\begin{array}{c}\vec{r}_1\bullet\vec{x}\\\vdots\\\vec{r}_m\bullet\vec{x}\end{array}\right].
+\end{equation*}
+</div>
+<div class="para">using the dot-product description of the matrix product, where <span class="process-math">\(\vec{r}_i\)</span> denotes the <span class="process-math">\(i\)</span>-th row of <span class="process-math">\(A\text{.}\)</span>
+</div>
+</div> <div class="para" id="sec-pset5-linear-7-4-1-1-2">With this description, <span class="process-math">\(T(\vec{x})=\vec{0}\)</span> if and only if <span class="process-math">\(\vec{x}\)</span> is orthogonal to every row of <span class="process-math">\(A\text{.}\)</span> Using our result from Problem Set 3 about spanning sets and orthogonal complements, this is equivalent to saying that <span class="process-math">\(\vec{x}\in\textrm{Row}(A)^\perp\text{.}\)</span>
+</div></article> <article class="task exercise-like" id="sec-pset5-linear-7-4-2"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para logical" id="sec-pset5-linear-7-4-2-1-1">
+<div class="para">By what we showed in part (a), <span class="process-math">\(W^\perp\)</span> is equal to the kernel of the linear transformation represented by the following matrix:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A=\left[\begin{array}{cccc}1&amp;2&amp;-3&amp; 2\\2&amp;7&amp;-1&amp; 5\end{array}\right].
+\end{equation*}
+</div>
+<div class="para">Using our usual methods from EV7, a basis for the solution space to the corresponding homogeneous equation is:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\left\{\left[\begin{array}{c}\frac{19}{3}\\-\frac{5}{3}\\1\\0\end{array}\right],\left[\begin{array}{c}-\frac{4}{3}\\-\frac{1}{3}\\0\\1\end{array}\right]\right\}
+\end{equation*}
+</div>
+</div></article> <article class="task exercise-like" id="sec-pset5-linear-7-4-3"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="sec-pset5-linear-7-4-3-1-1">Suppose that we have some spanning set of <span class="process-math">\(W\text{;}\)</span> that is, <span class="process-math">\(W=\vspan{\vec{v}_1,\dots, \vec{v}_r}\)</span> for some vectors <span class="process-math">\(\vec{v}_i\text{.}\)</span> As we did above, let <span class="process-math">\(A\)</span> denote the matrix whose rows are given by the <span class="process-math">\(\vec{v}_i\text{.}\)</span> Then, <span class="process-math">\(A\)</span> represents some linear transformation <span class="process-math">\(T\colon\IR^n\to\IR^r\text{.}\)</span>
+</div> <div class="para" id="sec-pset5-linear-7-4-3-1-2">The rank of <span class="process-math">\(A\)</span> is equal to <span class="process-math">\(\dim(W)\text{.}\)</span> The nullity, by part (a), is equal to <span class="process-math">\(\dim(W)^\perp\text{.}\)</span> Their sum, by the rank-nullity theorem, is <span class="process-math">\(n\text{.}\)</span>
+</div></article>
+</div></details></article></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-pset4-linear.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="applications.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
