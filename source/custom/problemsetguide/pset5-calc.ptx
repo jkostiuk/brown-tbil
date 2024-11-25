@@ -36,6 +36,72 @@
                 </li>
             </ol>
         </introduction>
+        <solution>
+            <task>
+                <statement>
+                    <p>
+                        Note that solutions may varay. 
+                        One approach is to notice that <m>e^n\leq 10+e^n</m> for all <m>n</m>. 
+                        Therefore, we have
+                        <me>
+                            \frac{1}{10+e^n}\leq \frac{1}{e^n}.
+                        </me>
+                        Squaring both sides and multiplying by <m>e^n</m> yields:
+                        <me>
+                            \frac{e^n}{(10+e^n)^2}\leq\frac{e^n}{e^{2n}}=\frac{1}{e^n}
+                        </me>
+                        Since <m>\sum_{n=1}^\infty\frac{1}{e^n}</m> is geometric with <m>r=\frac{1}{e}&lt; 1</m>, it follows that it converges. 
+                        Thus, the original series converges by the direct comparision test. 
+                    </p>
+                    <p>
+                        One could also apply the limit comparison test with the geometric series <m>\sum_{n=1}^\infty\frac{1}{e^n}</m> to conclude the same.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        We use the comparison test again. 
+                        Note that for <m>n\geq 3</m>, we have <m>\ln(n)\leq n</m>. 
+                        It follows that <m>\ln(n+1)\leq n+1</m> or
+                        <me>
+                            \frac{1}{\sqrt{n+1}}\leq\frac{1}{\ln\sqrt{n+1}}.
+                        </me>
+                        Now set <m>a_n=\frac{7}{\sqrt{n+1}\ln\sqrt{n+1}}</m>.
+                        Then, 
+                        <me>
+                            a_n\geq \frac{7}{\sqrt{n+1}\sqrt{n+1}}=\frac{7}{n+1}.
+                        </me>
+                        If <m>b_n=\frac{7}{n+1}</m>, then the series <m>\sum b_n</m> diverges by using the limit comparison test with the harmonic series. 
+                        In turn, this implies that <m>\sum a_n</m> diverges by direct comparison.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Let <m>a_n=\frac{\sin^2{n}}{2^n}</m>.
+                        Then <m>0\leq a_n\leq\frac{1}{2^n}</m> for all <m>n</m>.
+                        The series on the right converges since its geometric with common ratio small enough, and so the original series converges by the comparison test. 
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Let <m>a_n=\frac{[\ln(n)]^2}{n}</m> and set <m>f(x)=\frac{(\ln(x))^2}{x}</m>.
+                        Then we can use the integral test. 
+                    </p>
+                    <p>
+                        After using the substitution <m>u=\ln(x)</m>, we have:
+                        <me>
+                            \int_2^\infty\frac{(\ln(x))^2}{x}dx=\int_{\ln(2)}^\infty u^2du
+                        </me>
+                        The integral on the right diverges, which means so does the series.
+                    </p>
+                </statement>
+            </task>
+        </solution>
     </problem>
 
     <problem>
@@ -68,6 +134,61 @@
                 </ol>
             </p>
         </introduction>
+        <solution>
+            <task>
+                <statement>
+                    <p>
+                        One approach is to use the ratio test. 
+                        Let <m>a_n=\frac{n\ln(n)}{(-2)^n}</m>; then
+                        <me>
+                            \left|\frac{a_{n+1}}{a_n}\right|=\left|\frac{(n+1)\ln(n+1)}{(-2)^{n+1}}\frac{(-2)^n}{n\ln(n)}\right|=\frac{1}{2}\frac{n+1}{n}\frac{\ln(n+1)}{\ln(n)}
+                        </me>
+                        The limit of this expression is <m>\frac{1}{2}</m>.
+                        Since <m>\frac{1}{2}&lt; 1</m>, the series converges absolutely. 
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Once again consider the ratio test. 
+                        Let <m>a_n=\frac{n2^n(n+1)!}{3^nn!}</m>. 
+                        Then
+                        <me>
+                            \left|\frac{a_{n+1}}{a_n}\right|=\frac{(n+1)2^{n+1}(n+2)!}{3^{n+1}(n+1)!}\frac{3^nn!}{n2^n(n+1)!}=\frac{2}{3}\frac{(n+1)(n+2)}{n(n+1)}
+                        </me>
+                        the expression on the right converges to <m>\frac{2}{3}&lt; 1</m> so the series converges absolutely. 
+                    </p>
+                </statement>
+            </task>
+            <task>
+                    <p>
+                        We can use the alternating series test to test for convergence. 
+                        If <m>f(x)=\ln(1+\frac{1}{x})</m>, then <m>f'(x)=\frac{1}{1+\frac{1}{x}}(-\frac{1}{x^2})&lt;0</m>, so the function and sequence are both decreasing. 
+                        Since the sequene <m>u_n=\ln(1+\frac{1}{n})</m> converges to <m>0</m>, the series converges by the alternating series test.
+                    </p>
+                    <p>
+                        To investigate absolute convergence, we consider the series <m>\sum_{n=1}^\infty\ln(1+\frac{1}{n})</m>.
+                        Notice that <m>\ln(1+\frac{1}{n})=\ln(\frac{n+1}{n})=\ln(n+1)-\ln(n)</m>.
+                        Let <m>S_n</m> denote the <m>n</m>-th partial sum. 
+                        Then:
+                        <me>
+                            S_n=(\ln(2)-\ln(1))+(\ln(3)-\ln(2))+\cdots+(\ln(n)-\ln(n-1))=\ln(n)
+                        </me>
+                        Since <m>\lim_{n\to\infty}\ln(n)=\infty</m>, it follows the series diverges. 
+                        Since the series of absolute values diverges, it follows that the original series converges <em>conditionally</em>.
+                    </p>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Let <m>u_n=\frac{3\sqrt{n+1}}{\sqrt{n}+1}</m>. 
+                        Then <m>u_n\to 3</m>, and therefore the sequence <m>(-1)^{n+1}u_n</m> diverges (it oscilates between numbers close to <m>3</m> and <m>-3</m>).
+                        Since the indiviual terms of the series do not converge to <m>0</m>, the series diverges by the divergence test. 
+                    </p>
+                </statement>
+            </task>
+        </solution>
     </problem>
 
     <problem>
@@ -100,6 +221,61 @@
                 </ol> 
             </p>
         </introduction>
+        <solution>
+            <task>
+                <statement>
+                    <p>
+                        Let <m>a_n=\left(\frac{2}{3}\right)^\frac{1}{n}</m>.
+                        Since <m>\lim_{n\to\infty}a_n=1</m>, the series <m>\sum a_n</m> diverges. 
+                    </p>
+                    <p>
+                        On the other hand, the expression:
+                        <me>
+                            \frac{a_n}{b_n^\frac{1}{n}}=\left(\frac{2/3}{b_n}\right)^\frac{1}{n}\to 1,
+                        </me>
+                        since <m>b_n\to \frac{2}{3}</m>.
+                        It follows by the limit comparison test that <m>\sum a_n</m> and <m>\sum b_n^\frac{1}{n}</m> have the same convergence behaviour. 
+                        Since <m>\sum a_n</m> diverges, it follows that <m>\sum b_n^\frac{1}{n}</m> also diverges.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        This time, let <m>a_n=\left(\frac{3}{2}\right)^n</m> and <m>c_n=\left(\frac{3}{2}\right)^nb_n</m>.
+                        Then, <m>\frac{a_n}{c_n}=\frac{1}{b_n}\to\frac{3}{2}&gt; 0.</m>
+                        The limit comparison test then tells us that <m>\sum a_n</m> converges if and only if <m>\sum c_n</m> converges. 
+                    </p>
+                    <p>
+                        But <m>\sum a_n</m> is a geometric series with common ratio greater than <m>1</m>, so it diverges. 
+                        Thus, <m>\sum c_n</m> diverges as well. 
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Apply the root test. 
+                        We have <m>\sqrt[n]{|b_n|^n}=|b_n|\to\frac{2}{3}&lt; 1</m>, from which we conclude that the series converges.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Note that <m>0\leq \frac{1000^n}{n!+b_n}\leq\frac{1000^n}{n!}.</m>
+                    </p>
+                    <p>
+                        Consider the series <m>\sum_{n=1}^\infty\frac{1000^n}{n!}</m>. 
+                        Applying the ratio test, we find:
+                        <me>
+                            |\frac{a_{n+1}}{a_n}|=\frac{1000^{n+1}}{(n+1)!}\frac{n!}{1000^n}=\frac{1000}{n+1}\to 0
+                        </me>
+                        it follows that <m>\sum_{n=1}^\infty\frac{1000^n}{n!}</m> converges by the ratio test and, then, our original series converges by direct comparison.
+                    </p>
+                </statement>
+            </task>
+        </solution>
     </problem>
 
     <problem>
@@ -132,6 +308,41 @@
                 This is part of why absolute convergence is so important: in a series that converges absolutely, we can always rearrange the terms without changing the value of the sum. 
             </p>
         </introduction>
+        <solution>
+            <task>
+                <statement>
+                    <p>
+                        The <m>10</m>-th partial sum is:
+                        <me>
+                            S_{10}=1-\frac{1}{2}+\frac{1}{3}-\frac{1}{4}+\frac{1}{5}-\frac{1}{6}+\frac{1}{7}-\frac{1}{8}+\frac{1}{9}-\frac{1}{10}=\frac{1627}{2520}\sim 0.6456
+                        </me>
+                        
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Here is one approach. 
+                        Let <me>S=1-\frac{1}{2}+\frac{1}{3}-\frac{1}{4}+\frac{1}{5}-\frac{1}{6}+\cdots</me>
+                        Then
+                        <me>
+                            2S=2-\frac{2}{2}+\frac{2}{3}-\frac{2}{4}+\frac{2}{5}-\frac{2}{6}+\cdots
+                        </me>
+                        Examining the above expression, each time a term appears with an even denominator, let's reduce:
+                        <me>
+                            2-1+\frac{2}{3}-\frac{1}{2}+\frac{2}{5}-\frac{1}{3}+\frac{2}{7}-\frac{1}{4}+\cdots
+                        </me>
+                        Lastly, grouping terms with the same denominator, we get:
+                        <me>
+                            1-\frac{1}{2}+\frac{1}{3}-\frac{1}{4}+\cdots
+                        </me>
+                        which is equal to our original sum. 
+                    </p>
+                    In other words, we find <m>2S=S</m>. But this means that <m>S=0</m>, which seems to contradict (a)....
+                </statement>
+            </task>
+        </solution>
     </problem>
 
 </section>

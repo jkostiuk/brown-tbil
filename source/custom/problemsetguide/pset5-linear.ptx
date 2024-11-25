@@ -60,6 +60,74 @@
             </statement>
           </task>
         </introduction>
+        <solution>
+            <task>
+                <statement>
+                    <p>
+                        Since <m>A,B</m> are both invertible, it follows that both <m>A^{-1}</m> and <m>B^{-1}</m> exist. 
+                        We have:
+                        <me>
+                            AB(B^{-1}A^{-1})=AI_nA^{-1}=AA^{-1}=I_n
+                        </me>
+                        and
+                        <me>
+                            (B^{-1}A^{-1})AB=B^{-1}I_nB=I_n,
+                        </me>
+                        which shows that <m>AB</m> is invertible and its inverse is <m>B^{-1}A^{-1}</m> by above. 
+                        
+                        
+                    </p>
+                    <p>
+                        Alternatively: if <m>S,T</m> denote the corresponding transformations, then the composition <m>T\circ S</m> is invertible and its inverse is <m>S^{-1}\circ T^{-1}</m>; the result now follows by definition of invertible matrix.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        <ol>
+                            <li>
+                                <p>Consider the following steps to solve for <m>X</m>:
+                                    <md>
+                                        <mrow>A^{-1}XA \amp= B</mrow>
+                                        <mrow>XA \amp= AB</mrow>
+                                        <mrow>X \amp= ABA^{-1}</mrow>
+                                    </md>
+                                </p>
+                            </li>
+                        </ol>
+                        <ol>
+                            <li>
+                                <p>Consider the following steps to solve for <m>X</m>:
+                                    <md>
+                                        <mrow>AXA^{-1} \amp= B</mrow>
+                                        <mrow>XA \amp= A^{-1}B</mrow>
+                                        <mrow>X \amp= A^{-1}BA</mrow>
+                                    </md>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Consider the following steps to solve for <m>X</m>:
+                                    <md>
+                                        <mrow>ABX \amp =I</mrow>
+                                        <mrow>BX \amp =A^{-1}I</mrow>
+                                        <mrow>X \amp =B^{-1}A^{-1}I=B^{-1}A^{-1}</mrow>
+                                    </md>
+                                </p>
+                            </li>
+                        </ol>
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        No. Both <m>I_n</m> and <m>-I_n</m> are invertible, but there sum, the zero matrix, is not.
+                    </p>
+                </statement>
+            </task>
+        </solution>
     </problem>
 
     <problem>
@@ -86,6 +154,70 @@
             </statement>
         </task>
        </introduction>
+       <solution>
+        <task>
+            <statement>
+                <p>
+                    Let's begin by showing that <m>S</m> is indeed a subspace. 
+                    Firstly, if <m>\vec{0}</m> denotes the zero matrix, then <m>\vec{0}A=A\vec{0}=\vec{0}</m>, so <m>\vec{0}\in S</m>. 
+                </p>
+                <p>
+                    Next, if <m>X,Y\in S</m>, then we know that <m>AX=XA</m> and <m>AY=YA</m>. 
+                    When we add them, we find
+                    <me>
+                        A(X+Y)=AX+AY=XA+YA=(X+Y)A,
+                    </me>
+                    so <m>S</m> is closed under taking sums.
+                    Likewise, if <m>k</m> is some scalar, then
+                    <me>
+                        A(kX)=kAX=kXA=(kX)A
+                    </me>
+                    shows closure under scalar multiplication.
+                </p>
+                <p>
+                    Let <m>X=\left[\begin{array}{cc}a&amp;b\\c&amp;d\end{array}\right]\in M_{2,2}</m>.
+                    Then <m>X\in S</m> if and only if <m>AX=XA</m>; that is, if and only if
+                    <me>
+                        \left[\begin{array}{cc}1&amp;3\\-1&amp;1\end{array}\right]\left[\begin{array}{cc}a&amp;b\\c&amp;d\end{array}\right]=\left[\begin{array}{cc}a&amp;b\\c&amp;d\end{array}\right]\left[\begin{array}{cc}1&amp;3\\-1&amp;1\end{array}\right]
+                    </me>
+                    Performing the multiplication, we get:
+                    <me>
+                        \left[\begin{array}{cc}a+3c&amp;b+3d\\-a+c&amp;-b+d\end{array}\right]=\left[\begin{array}{cc}a-b&amp;3a+b\\c-d&amp;3c+d\end{array}\right]
+                    </me>
+                    By equating each corner, we obtain a linear system of equations in the variables <m>a,b,c,d</m>. 
+                    The corresponding equivalent system obtained by taking an appropriate RREF is: 
+                    <me>
+                        a=d,\ \ b=-3c
+                    </me>
+                    It follows that any element of <m>S</m> can be written as:
+                    <me>
+                        \left[\begin{array}{cc}a&amp;b\\c&amp;d\end{array}\right]=\left[\begin{array}{cc}d&amp;-3c\\c&amp;d\end{array}\right]=d\left[\begin{array}{cc}1&amp;0\\0&amp;1\end{array}\right]+c\left[\begin{array}{cc}0&amp;-3\\1&amp;0\end{array}\right].
+                    </me>
+                    This demonstrates that <m>\left\{\left[\begin{array}{cc}1&amp;0\\0&amp;1\end{array}\right],\left[\begin{array}{cc}0&amp;-3\\1&amp;0\end{array}\right]\right\}</m> spans <m>S</m>. 
+                    Since these matrices are not multiples of each other, the set is also linearly independent and therefore a basis.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    An analogous argument to that used in (a) shows that <m>T</m> is a subspace. 
+                </p>
+                <p>
+                    By starting with an arbitrary <m>Y=\left[\begin{array}{cc}x&amp;y\\z&amp;w\end{array}\right]\in M_{2,2}</m> and considering the equation <m>BY=-YB</m>, one similarly obtains a system of equation in the variables <m>x,y,z,w</m> whose solutions describe elements of <m>T</m>.
+                    After RREFing this system, we get:
+                    <me>
+                        x=-w,\ \ y=z.
+                    </me>
+                    It follows that if <m>Y\in T</m>, then
+                    <me>
+                        Y=\left[\begin{array}{cc}x&amp;y\\z&amp;w\end{array}\right]=\left[\begin{array}{cc}-w&amp;z\\z&amp;w\end{array}\right]=w\left[\begin{array}{cc}-1&amp;0\\0&amp;1\end{array}\right]+z\left[\begin{array}{cc}0&amp;1\\1&amp;0\end{array}\right].
+                    </me>
+                    It follows, by the same reasoning in (a), that the set <m>\left\{\left[\begin{array}{cc}-1&amp;0\\0&amp;1\end{array}\right],\left[\begin{array}{cc}0&amp;1\\1&amp;0\end{array}\right]\right\}</m> is a basis for <m>T</m>.
+                </p>
+            </statement>
+        </task>
+       </solution>
     </problem>
 
     <problem>
@@ -126,6 +258,61 @@
             </p>
            </statement>
         </introduction>
+        <solution>
+            <task>
+                <statement>
+                    <p>
+                        To show that <m>T\circ S</m> is surjective, we need to start with an arbitrary <m>\vec{u}\in U</m> and explain why we can find some <m>\vec{v}\in V</m> that maps to it. 
+                        Since <m>\vec{u}\in U</m> and <m>T</m> is surjective, we know we can find some <m>\vec{w}\in W</m> for which <m>T(\vec{w})=\vec{u}</m>. 
+                        Likewise, since we know that <m>S</m> is surjective and <m>\vec{w}\in W</m>, it follows that there is some <m>\vec{v}\in V</m> for which <m>S(\vec{v})=\vec{w}</m>. 
+                    </p>
+                    <p>
+                        But then <m>(T\circ S)(\vec{v})=T(S(\vec{v}))=T(\vec{w})=\vec{u}</m>. 
+                        This shows that the composition is surjective.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Notation as given in the problem, let <m>S\colon \IR^k\to\IR^n</m> and <m>T\colon\IR^n\to\IR^m</m> denote the linear transformations corresponding to <m>B</m> and <m>A</m> respectively. 
+                        Since both matrices have pivots in each row, both transformations are surjective. 
+                        By part (a), it follows that <m>T\circ S</m> is surjective.
+                        Since <m>T\circ S</m> is surjective, it follows that its standard matrix, which is <m>AB</m>, has a pivot in each of its rows.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        In part (b), we were able to prove a statement about pivot positions by first translating the statement into one about transformations. 
+                        Let's see if this works in this new context. 
+                    </p>
+                    <p>
+                        I claim that if <m>S\colon V\to W</m> and <m>T\colon W\to U</m> are linear maps for which the composition <m>T\circ S</m> is surjective, then it follows that <m>T</m> must itself be surjective.
+                    </p>
+                    <p>
+                        To see this, let <m>\vec{u}\in U</m>. 
+                        Since the composition is surjective, we are entitled to some <m>\vec{v}\in V</m> for which <m>T(S(\vec{v}))=\vec{u}</m>.
+                        But <m>S(\vec{v})\in W</m>, which means some element of <m>W</m> maps to <m>\vec{u}</m>, showing surjectivity of <m>T</m>.
+                    </p>
+                    <p>
+                        Translating this into statements about matrices having pivots in each row, the result follows just as it did above in part (b).
+                    </p>
+                    <p>
+                        One example that shows that <m>B</m> need not have a pivot in each row is given by the following:
+                        <me>
+                            A=\left[\begin{array}{ccc}1&amp;2&amp;0\\0&amp;1&amp;0\end{array}\right], B=\left[\begin{array}{cc}1&amp;0\\0&amp;1\\0&amp;0\end{array}\right]
+                        </me>
+                        Then, we have 
+                        <me>
+                            AB=\left[\begin{array}{cc}1&amp;2\\0&amp;1\end{array}\right]
+                        </me>
+                        The matrix <m>A</m> has a pivot in each row, as does <m>AB</m>, but <m>B</m> is missing a pivot in its second row.
+                    </p>
+                </statement>
+            </task>
+        </solution>
     </problem>
 
     <observation>
@@ -195,5 +382,51 @@
                 For part (c): choose a spanning set for <m>W</m>. That is, suppose that <m>W=\vspan\{\vec{v}_1,\dots, \vec{v}_r\}</m> for some finite set of vectors. 
             </p>
         </hint>
+        <solution>
+            <task>
+                <statement>
+                    <p>
+                        If <m>\vec{x}=\left[\begin{array}{c}x_1\\\vdots\\x_n\end{array}\right]\in\IR^n</m>, then
+                        <me>
+                            T(\vec{x})=A\vec{x}=\left[\begin{array}{c}\vec{r}_1\bullet\vec{x}\\\vdots\\\vec{r}_m\bullet\vec{x}\end{array}\right].
+                        </me>
+                        using the dot-product description of the matrix product, where <m>\vec{r}_i</m> denotes the <m>i</m>-th row of <m>A</m>.
+                    </p>
+                    <p>
+                        With this description, <m>T(\vec{x})=\vec{0}</m> if and only if <m>\vec{x}</m> is orthogonal to every row of <m>A</m>. 
+                        Using our result from Problem Set 3 about spanning sets and orthogonal complements, this is equivalent to saying that <m>\vec{x}\in\textrm{Row}(A)^\perp</m>.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        By what we showed in part (a), <m>W^\perp</m> is equal to the kernel of the linear transformation represented by the following matrix:
+                        <me>
+                            A=\left[\begin{array}{cccc}1&amp;2&amp;-3&amp; 2\\2&amp;7&amp;-1&amp; 5\end{array}\right].
+                        </me>
+                        Using our usual methods from EV7, a basis for the solution space to the corresponding homogeneous equation is:
+                        <me>
+                            \left\{\left[\begin{array}{c}\frac{19}{3}\\-\frac{5}{3}\\1\\0\end{array}\right],\left[\begin{array}{c}-\frac{4}{3}\\-\frac{1}{3}\\0\\1\end{array}\right]\right\}
+                        </me>
+                        
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Suppose that we have some spanning set of <m>W</m>; that is, <m>W=\vspan{\vec{v}_1,\dots, \vec{v}_r}</m> for some vectors <m>\vec{v}_i</m>. 
+                        As we did above, let <m>A</m> denote the matrix whose rows are given by the <m>\vec{v}_i</m>. 
+                        Then, <m>A</m> represents some linear transformation <m>T\colon\IR^n\to\IR^r</m>.
+                    </p>
+                    <p>
+                        The rank of <m>A</m> is equal to <m>\dim(W)</m>. 
+                        The nullity, by part (a), is equal to <m>\dim(W)^\perp</m>.
+                        Their sum, by the rank-nullity theorem, is <m>n</m>.
+                    </p>
+                </statement>
+            </task>
+        </solution>
     </problem>
 </section>
