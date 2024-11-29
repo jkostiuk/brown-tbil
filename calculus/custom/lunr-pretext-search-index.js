@@ -9199,6 +9199,87 @@ var ptx_lunr_docs = [
   "body": "    Video: Determine a Taylor or Maclaurin series for a function  "
 },
 {
+  "id": "PS5",
+  "level": "1",
+  "url": "PS5.html",
+  "type": "Section",
+  "number": "9.5",
+  "title": "Applications of Power Series (PS5)",
+  "body": " Applications of Power Series (PS5)    Apply power series methods in different contexts.     Activities    Recall the following power series expansions for and :     Write out the first four non-zero terms of each series.    Use your expansions above to determine the first four non-zero terms of the power series expansions for:                Use (b) to evaluate      The limit you evaluated above is an example of a limit that, despite being of the form is not actually determinable by using l'Hopital's rule.     Consider the function .    Calculate .    Use these quantities to write down the degree-2 Taylor polynomial approximating .      Here's some physics background. Newtonian mechanics, broadly, is a physical theory that describes the motions of bodies in space. One important quantity is called kinetic engergy of a body moving with velocity and mass ; it is given by   Part of Einstein's theory of relativity states that Newtonian mechanics starts to break down at speeds that get closer and closer to the speed of light. So, in relativity, we measure kinetic energy differently that in Newtonian mechanics. Specifically, we have where is the speed of light, is the mass at rest of the given body and is the relative mass given by   While these measurements looks different, we can use power series to explain why, for speeds not close to the speed of light, they mostly agree.    Re-write the expression for above to show that     Let so that . Use the degree-2 Taylor approximation you found above to write:     By only keeping the first term, we find:       The hyperbolic tangent function is defined by the following:       Polynomial long division can be extended to power series; this provides a method to calculate the power series expansion of from our known series for . For our purposes, we will only need a few terms of this expansion; the following Activity asks you to compute them.    Use technology to fill in the following table:     Use your results to write down the degree-5 Taylor polynomial approximating .    Using , evaluate        depicts a body of water with depth and waves of uniform length traveling at a velocity . If denotes the gravitational constant, these quantities are related by the following formula:     (for accessibility)       Provide an explanation of the following statement:  When the water is deep, we have:   Ground your explanation in Calculus concepts and properties of explored above.    Provide an explanation of the following statement:  When the water is shallow, we have:   Ground your explanation in Calculus concepts and properties of explored above.     "
+},
+{
+  "id": "PS5-2",
+  "level": "2",
+  "url": "PS5.html#PS5-2",
+  "type": "Learning Outcomes",
+  "number": "9.5",
+  "title": "",
+  "body": "  Apply power series methods in different contexts.   "
+},
+{
+  "id": "PS5-3-2",
+  "level": "2",
+  "url": "PS5.html#PS5-3-2",
+  "type": "Activity",
+  "number": "9.5.1",
+  "title": "",
+  "body": "  Recall the following power series expansions for and :     Write out the first four non-zero terms of each series.    Use your expansions above to determine the first four non-zero terms of the power series expansions for:                Use (b) to evaluate    "
+},
+{
+  "id": "PS5-3-3",
+  "level": "2",
+  "url": "PS5.html#PS5-3-3",
+  "type": "Remark",
+  "number": "9.5.2",
+  "title": "",
+  "body": " The limit you evaluated above is an example of a limit that, despite being of the form is not actually determinable by using l'Hopital's rule.  "
+},
+{
+  "id": "PS5-3-4",
+  "level": "2",
+  "url": "PS5.html#PS5-3-4",
+  "type": "Activity",
+  "number": "9.5.3",
+  "title": "",
+  "body": "  Consider the function .    Calculate .    Use these quantities to write down the degree-2 Taylor polynomial approximating .   "
+},
+{
+  "id": "PS5-3-5",
+  "level": "2",
+  "url": "PS5.html#PS5-3-5",
+  "type": "Activity",
+  "number": "9.5.4",
+  "title": "",
+  "body": "  Here's some physics background. Newtonian mechanics, broadly, is a physical theory that describes the motions of bodies in space. One important quantity is called kinetic engergy of a body moving with velocity and mass ; it is given by   Part of Einstein's theory of relativity states that Newtonian mechanics starts to break down at speeds that get closer and closer to the speed of light. So, in relativity, we measure kinetic energy differently that in Newtonian mechanics. Specifically, we have where is the speed of light, is the mass at rest of the given body and is the relative mass given by   While these measurements looks different, we can use power series to explain why, for speeds not close to the speed of light, they mostly agree.    Re-write the expression for above to show that     Let so that . Use the degree-2 Taylor approximation you found above to write:     By only keeping the first term, we find:    "
+},
+{
+  "id": "def-hyperbolic-tan",
+  "level": "2",
+  "url": "PS5.html#def-hyperbolic-tan",
+  "type": "Definition",
+  "number": "9.5.5",
+  "title": "",
+  "body": "  The hyperbolic tangent function is defined by the following:    "
+},
+{
+  "id": "PS5-3-7",
+  "level": "2",
+  "url": "PS5.html#PS5-3-7",
+  "type": "Activity",
+  "number": "9.5.6",
+  "title": "",
+  "body": "  Polynomial long division can be extended to power series; this provides a method to calculate the power series expansion of from our known series for . For our purposes, we will only need a few terms of this expansion; the following Activity asks you to compute them.    Use technology to fill in the following table:     Use your results to write down the degree-5 Taylor polynomial approximating .    Using , evaluate    "
+},
+{
+  "id": "PS5-3-8",
+  "level": "2",
+  "url": "PS5.html#PS5-3-8",
+  "type": "Activity",
+  "number": "9.5.7",
+  "title": "",
+  "body": "   depicts a body of water with depth and waves of uniform length traveling at a velocity . If denotes the gravitational constant, these quantities are related by the following formula:     (for accessibility)       Provide an explanation of the following statement:  When the water is deep, we have:   Ground your explanation in Calculus concepts and properties of explored above.    Provide an explanation of the following statement:  When the water is shallow, we have:   Ground your explanation in Calculus concepts and properties of explored above.   "
+},
+{
   "id": "pset-intro",
   "level": "1",
   "url": "pset-intro.html",

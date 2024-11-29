@@ -1702,6 +1702,9 @@ sagecell.makeSagecell({
 #PS4-3-6-3-3 { counter-set: PS4-3-6-3-3 0; }
 #PS4-3-6-3-3 > li::marker { content: ""counter(PS4-3-6-3-3,upper-alpha)""; }
 #PS4-3-6-3-3 > li { counter-increment: PS4-3-6-3-3; }
+#PS5-3-2-3-1-1-1 { counter-set: PS5-3-2-3-1-1-1 0; }
+#PS5-3-2-3-1-1-1 > li::marker { content: ""counter(PS5-3-2-3-1-1-1,decimal)"."; }
+#PS5-3-2-3-1-1-1 > li { counter-increment: PS5-3-2-3-1-1-1; }
 #pset-intro-3-3-1 { counter-set: pset-intro-3-3-1 0; }
 #pset-intro-3-3-1 > li::marker { content: ""counter(pset-intro-3-3-1,decimal)"."; }
 #pset-intro-3-3-1 > li { counter-increment: pset-intro-3-3-1; }
@@ -2387,6 +2390,10 @@ sagecell.makeSagecell({
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="PS4.html#PS4-5" class="internal"><span class="codenumber">9.4.3</span> <span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="PS5.html" class="internal"><span class="codenumber">9.5</span> <span class="title">Applications of Power Series (PS5)</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="PS5.html#PS5-3" class="internal"><span class="codenumber">9.5.1</span> <span class="title">Activities</span></a></div></li></ul>
+</li>
 </ul>
 </li>
 <li class="toc-item toc-backmatter contains-active">
@@ -2429,7 +2436,7 @@ p
 </div> <details id="sec-pset3-calc-3-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
 <article class="task exercise-like" id="sec-pset3-calc-3-3-1"><h4 class="heading"><span class="codenumber">(a)</span></h4>
 <div class="para logical" id="sec-pset3-calc-3-3-1-1-1">
-<div class="para">We begin by sketching the region in the <span class="process-math">\(xy\)</span>-plane and the vertical and horizontal line segments as shown in <a href="sec-pset3-calc.html#toruscrosssection" class="xref" data-knowl="./knowl/xref/toruscrosssection.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 195">Figure 195</a>. For a given <span class="process-math">\(x\)</span>-value between <span class="process-math">\(1\)</span> and <span class="process-math">\(3\text{,}\)</span> the <span class="process-math">\(y\)</span>-coordinates of the top and bottom of the vertical line segment are given by <span class="process-math">\(y=\pm\sqrt{1-(x-2)^2}\text{.}\)</span> Thus, as we revolve the vertical line segment about the <span class="process-math">\(y\)</span>-axis, we obtain a cylindrical shell of area</div>
+<div class="para">We begin by sketching the region in the <span class="process-math">\(xy\)</span>-plane and the vertical and horizontal line segments as shown in <a href="sec-pset3-calc.html#toruscrosssection" class="xref" data-knowl="./knowl/xref/toruscrosssection.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 196">Figure 196</a>. For a given <span class="process-math">\(x\)</span>-value between <span class="process-math">\(1\)</span> and <span class="process-math">\(3\text{,}\)</span> the <span class="process-math">\(y\)</span>-coordinates of the top and bottom of the vertical line segment are given by <span class="process-math">\(y=\pm\sqrt{1-(x-2)^2}\text{.}\)</span> Thus, as we revolve the vertical line segment about the <span class="process-math">\(y\)</span>-axis, we obtain a cylindrical shell of area</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/toruscrosssection.html">
 \begin{equation*}
 A=2\pi rh=2\pi(x)(2\sqrt{1-(x-2)^2}).
@@ -2442,7 +2449,7 @@ V=\int_1^3 2\pi rh=2\pi(x)(2\sqrt{1-(x-2)^2}) dx.
 \end{equation*}
 </div>
 </div> <figure class="figure figure-like" id="toruscrosssection"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/custom/torus-cross.png" class="contained"></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">195<span class="period">.</span></span><span class="space"> </span>The circle <span class="process-math">\((x-2)^2+y^2=1\)</span> and vertical and horizontal line segments.</figcaption></figure></article> <article class="task exercise-like" id="sec-pset3-calc-3-3-2"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">196<span class="period">.</span></span><span class="space"> </span>The circle <span class="process-math">\((x-2)^2+y^2=1\)</span> and vertical and horizontal line segments.</figcaption></figure></article> <article class="task exercise-like" id="sec-pset3-calc-3-3-2"><h4 class="heading"><span class="codenumber">(b)</span></h4>
 <div class="para logical" id="sec-pset3-calc-3-3-2-1-1">
 <div class="para">This time, as we vary horizontal line segments with <span class="process-math">\(y\)</span> between <span class="process-math">\(-1\)</span> and <span class="process-math">\(1\text{,}\)</span> the inner and outer radii are found by solving for <span class="process-math">\(x\)</span> in the equation <span class="process-math">\((x-2)^2+y^2=1\text{.}\)</span> We find:</div>
 <div class="displaymath process-math">
@@ -2487,8 +2494,8 @@ V=\int_{-1}^1\pi\left(2+\sqrt{1-y^2}\right)^2-\pi\left(2-\sqrt{1-y^2}\right)^2 d
 </div></details></article><article class="problem example-like" id="sec-pset3-calc-4"><h3 class="heading">
 <span class="type">Problem</span><span class="space"> </span><span class="codenumber">A.4.2</span><span class="period">.</span><span class="space"> </span><span class="title">(Problem 2).</span>
 </h3> <div class="introduction" id="sec-pset3-calc-4-2">
-<div class="para" id="sec-pset3-calc-4-2-1">Let <span class="process-math">\(S\)</span> denote the region in 3-space that is above the <span class="process-math">\(xy\)</span>-plane and contained inside the cylinders <span class="process-math">\(x^2+z^2=1\)</span> and <span class="process-math">\(y^2+z^2=1\text{;}\)</span> this region is depicted in <a href="sec-pset3-calc.html#cylinders" class="xref" data-knowl="./knowl/xref/cylinders.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 196">Figure 196</a> below.</div> <figure class="figure figure-like" id="cylinders"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/custom/intersectingcylinders.png" class="contained"></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">196<span class="period">.</span></span><span class="space"> </span>Two intersecting cylinders above the <span class="process-math">\(xy\)</span>-plane.</figcaption></figure> <div class="para" id="sec-pset3-calc-4-2-3">Explain and demonstrate how to calculate the volume of <span class="process-math">\(S\)</span> by considering cross-sections obtained by cutting <span class="process-math">\(S\)</span> with planes perpendicular to one of the three coordinate axes.</div>
+<div class="para" id="sec-pset3-calc-4-2-1">Let <span class="process-math">\(S\)</span> denote the region in 3-space that is above the <span class="process-math">\(xy\)</span>-plane and contained inside the cylinders <span class="process-math">\(x^2+z^2=1\)</span> and <span class="process-math">\(y^2+z^2=1\text{;}\)</span> this region is depicted in <a href="sec-pset3-calc.html#cylinders" class="xref" data-knowl="./knowl/xref/cylinders.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 197">Figure 197</a> below.</div> <figure class="figure figure-like" id="cylinders"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/custom/intersectingcylinders.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">197<span class="period">.</span></span><span class="space"> </span>Two intersecting cylinders above the <span class="process-math">\(xy\)</span>-plane.</figcaption></figure> <div class="para" id="sec-pset3-calc-4-2-3">Explain and demonstrate how to calculate the volume of <span class="process-math">\(S\)</span> by considering cross-sections obtained by cutting <span class="process-math">\(S\)</span> with planes perpendicular to one of the three coordinate axes.</div>
 </div> <details id="sec-pset3-calc-4-3" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="sec-pset3-calc-4-3-1">Consider all three kinds of cross-sections; which set of cross-sections seems the simplest to work with.</div></div></details> <details id="sec-pset3-calc-4-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para logical" id="sec-pset3-calc-4-4-1">
 <div class="para">If we cut with planes that are parallel to the <span class="process-math">\(xy\)</span>-plane, then each cross-section is a square. Using the equations that define the cylinders <span class="process-math">\(x^2+z^2=1\)</span> and/or <span class="process-math">\(y^2+z^2=1\text{,}\)</span> the length of the line segments forming an edge of the square are <span class="process-math">\(2\sqrt{1-z^2}\text{.}\)</span> It follows the area of each cross section is:</div>
