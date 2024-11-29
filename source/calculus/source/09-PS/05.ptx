@@ -127,6 +127,94 @@
         </task>
 
     </activity>
+
+    <definition xml:id="def-hyperbolic-tan">
+        <statement>
+            <p>
+                The <term>hyperbolic tangent</term> function is defined by the following:
+                <me>\tanh(x)=\frac{e^{2x}-1}{e^{2x}+1}.</me>
+            </p>
+        </statement>
+    </definition>
+
+    <activity>
+        <introduction>
+            <p>
+                Polynomial long division can be extended to power series; this provides a method to calculate the power series expansion of <m>\tanh(x)</m> from our known series for <m>e^x</m>. 
+                For our purposes, we will only need a few terms of this expansion; the following Activity asks you to compute them. 
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    Use technology to fill in the following table:
+                    <me>\begin{array}{c|c|c|c|c|c}
+                    f(0)&amp;f'(0)&amp;f''(0)&amp;f^{(3)}(0)&amp;f^{(4)}(0)&amp;f^{(5)}(0)\\\hline
+                    \unknown&amp;\unknown&amp;\unknown&amp;\unknown&amp;\unknown&amp;\unknown\end{array}</me>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Use your results to write down the degree-5 Taylor polynomial approximating <m>\tanh(x)</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Using <m>\tanh(x)=\frac{e^{2x}-1}{e^{2x}+1}</m>, evaluate 
+                    <me>\lim_{x\to\infty}\tanh(x).</me>
+                </p>
+            </statement>
+        </task>
+    </activity>
+
+    <activity>
+        <introduction>
+            <p>
+                <xref ref="wave-powerseries"/> depicts a body of water with depth <m>d</m> and waves of uniform length <m>L</m> traveling at a velocity <m>v</m>.
+                If <m>g</m> denotes the gravitational constant, these quantities are related by the following formula:
+                <me>v^2=\frac{gL}{2\pi}\tanh\left(\frac{2\pi d}{L}\right).</me> 
+
+                <figure xml:id="wave-powerseries">
+                    <caption></caption>
+                    <image source="custom/power-series-wave.png">
+                        <shortdescription>(for accessibility)</shortdescription>
+                    </image>
+                </figure>
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    Provide an explanation of the following statement:
+                    <blockquote>
+                        <p>
+                            When the water is deep, we have:
+                            <me>v\approx\sqrt{\frac{gL}{2\pi}}.</me>
+                        </p>
+                    </blockquote>
+                    Ground your explanation in Calculus concepts and properties of <m>\tanh(x)</m> explored above. 
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Provide an explanation of the following statement:
+                    <blockquote>
+                        <p>
+                            When the water is shallow, we have:
+                            <me>v\approx\sqrt{gd}.</me>
+                        </p>
+                    </blockquote>
+                    Ground your explanation in Calculus concepts and properties of <m>\tanh(x)</m> explored above. 
+                </p>
+            </statement>
+        </task>
+    </activity>
     
 
 </subsection>
