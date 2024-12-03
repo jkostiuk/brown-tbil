@@ -7,4 +7,5 @@
     <xi:include href="pset3-calc.ptx"/>
     <xi:include href="pset4-calc.ptx"/>
     <xi:include href="pset5-calc.ptx"/>
+    <xi:include href="capstone-calc.ptx"/>
 </appendix>
