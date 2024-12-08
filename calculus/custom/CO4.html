@@ -667,6 +667,9 @@ window.MathJax = {
 #IN-readiness-3 { counter-set: IN-readiness-3 0; }
 #IN-readiness-3 > li::marker { content: ""counter(IN-readiness-3,lower-alpha)""; }
 #IN-readiness-3 > li { counter-increment: IN-readiness-3; }
+#IN1-3-3-2 { counter-set: IN1-3-3-2 0; }
+#IN1-3-3-2 > li::marker { content: ""counter(IN1-3-3-2,upper-alpha)"."; }
+#IN1-3-3-2 > li { counter-increment: IN1-3-3-2; }
 #IN1-3-4-2 { counter-set: IN1-3-4-2 0; }
 #IN1-3-4-2 > li::marker { content: ""counter(IN1-3-4-2,upper-alpha)"."; }
 #IN1-3-4-2 > li { counter-increment: IN1-3-4-2; }
@@ -676,12 +679,15 @@ window.MathJax = {
 #IN1-3-6-2 { counter-set: IN1-3-6-2 0; }
 #IN1-3-6-2 > li::marker { content: ""counter(IN1-3-6-2,upper-alpha)"."; }
 #IN1-3-6-2 > li { counter-increment: IN1-3-6-2; }
-#IN1-3-7-2 { counter-set: IN1-3-7-2 0; }
-#IN1-3-7-2 > li::marker { content: ""counter(IN1-3-7-2,upper-alpha)"."; }
-#IN1-3-7-2 > li { counter-increment: IN1-3-7-2; }
 #IN1-3-9-1-1-1 { counter-set: IN1-3-9-1-1-1 0; }
 #IN1-3-9-1-1-1 > li::marker { content: ""counter(IN1-3-9-1-1-1,decimal)"."; }
 #IN1-3-9-1-1-1 > li { counter-increment: IN1-3-9-1-1-1; }
+#IN1-3-10-3-2 { counter-set: IN1-3-10-3-2 0; }
+#IN1-3-10-3-2 > li::marker { content: ""counter(IN1-3-10-3-2,upper-alpha)"."; }
+#IN1-3-10-3-2 > li { counter-increment: IN1-3-10-3-2; }
+#IN1-3-10-4-2 { counter-set: IN1-3-10-4-2 0; }
+#IN1-3-10-4-2 > li::marker { content: ""counter(IN1-3-10-4-2,upper-alpha)"."; }
+#IN1-3-10-4-2 > li { counter-increment: IN1-3-10-4-2; }
 #IN2-3-6-1-2 { counter-set: IN2-3-6-1-2 0; }
 #IN2-3-6-1-2 > li::marker { content: ""counter(IN2-3-6-1-2,upper-alpha)"."; }
 #IN2-3-6-1-2 > li { counter-increment: IN2-3-6-1-2; }
@@ -2417,8 +2423,8 @@ window.MathJax = {
 <div class="para" id="fact-CO4polar-2">Let <span class="process-math">\(\overline{OP}\)</span> be a line segment from the origin to a given point <span class="process-math">\(P\)</span> in the plane. The length of <span class="process-math">\(\overline{OP}\)</span> is the distance (or <dfn class="terminology">radius</dfn>) <span class="process-math">\(r\)</span> from the origin to <span class="process-math">\(P\text{.}\)</span> The <dfn class="terminology">polar axis</dfn> is a ray starting at the origin.</div>
 <div class="para" id="fact-CO4polar-3">To define the "direction" of <span class="process-math">\(P\text{,}\)</span> we form an angle <span class="process-math">\(\theta\)</span> by letting the polar axis serve as the initial ray and <span class="process-math">\(\overrightarrow{OP}\)</span> as the terminal ray. We will set the positive <span class="process-math">\(x\)</span>-axis as the polar axis and assume the movement in the positive direction is counter-clockwise (as in trigonometry). Notice that, unlike in the rectangular (or <em class="emphasis">Cartesian</em>) coordinate system, the polar coordinates <span class="process-math">\((r,\theta)\)</span> for a point are not unique, as we could turn either way to face a given point (or even spin around a number of times before facing that direction).</div>
 <div class="para" id="fact-CO4polar-4">Furthermore, by allowing <span class="process-math">\(r\)</span> to be negative, we can also "walk backwards" to get to a point by facing in the opposite direction. Rather than the grid lines defined by specific values for <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> in the rectangular coordinate system, specific values of <span class="process-math">\(r\)</span> correspond to circles of radius <span class="process-math">\(r\)</span> centered about the origin, and specific values of <span class="process-math">\(\theta\)</span> correspond to lines going through the pole (called <dfn class="terminology">radial lines</dfn>).</div></article><figure class="figure figure-like" id="CO4-3-3"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/polarPoint.svg" role="img" class="contained" alt="A point in the polar coordinate system."></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">173<span class="period">.</span></span><span class="space"> </span>A point in the polar coordinate system.</figcaption></figure><figure class="figure figure-like" id="CO4-3-4"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/polarCoord.svg" role="img" class="contained" alt="The polar grid"></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">174<span class="period">.</span></span><span class="space"> </span>The polar grid.</figcaption></figure><article class="activity project-like" id="activity-CO4pointConversions"><h4 class="heading">
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">174<span class="period">.</span></span><span class="space"> </span>A point in the polar coordinate system.</figcaption></figure><figure class="figure figure-like" id="CO4-3-4"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/polarCoord.svg" role="img" class="contained" alt="The polar grid"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">175<span class="period">.</span></span><span class="space"> </span>The polar grid.</figcaption></figure><article class="activity project-like" id="activity-CO4pointConversions"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">7.4.2</span><span class="period">.</span>
 </h4>
 <article class="task exercise-like" id="activity-CO4pointConversions-1"><h5 class="heading"><span class="codenumber">(a)</span></h5>
@@ -2472,7 +2478,7 @@ window.MathJax = {
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">7.4.2</span><span class="space"> </span><span class="title">Videos</span>
 </h3>
 <figure class="figure figure-like" id="CO4-4-2"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/KH8n4dihFNU?&amp;modestbranding=1&amp;rel=0" id="video-CO4"></iframe></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">175<span class="period">.</span></span><span class="space"> </span>Video for CO4</figcaption></figure></section><section class="subsection" id="CO4-5"><h3 class="heading hide-type">
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">176<span class="period">.</span></span><span class="space"> </span>Video for CO4</figcaption></figure></section><section class="subsection" id="CO4-5"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">7.4.3</span><span class="space"> </span><span class="title">Exercises</span>
 </h3>
 <div class="para" id="CO4-5-2">Exercises available at <a class="external" href="https://tbil.org/calculus/preview/exercises/#/bank/CO4/" target="_blank"><code class="code-inline tex2jax_ignore">https://tbil.org/calculus/preview/exercises/#/bank/CO4/</code></a>

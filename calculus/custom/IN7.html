@@ -667,6 +667,9 @@ window.MathJax = {
 #IN-readiness-3 { counter-set: IN-readiness-3 0; }
 #IN-readiness-3 > li::marker { content: ""counter(IN-readiness-3,lower-alpha)""; }
 #IN-readiness-3 > li { counter-increment: IN-readiness-3; }
+#IN1-3-3-2 { counter-set: IN1-3-3-2 0; }
+#IN1-3-3-2 > li::marker { content: ""counter(IN1-3-3-2,upper-alpha)"."; }
+#IN1-3-3-2 > li { counter-increment: IN1-3-3-2; }
 #IN1-3-4-2 { counter-set: IN1-3-4-2 0; }
 #IN1-3-4-2 > li::marker { content: ""counter(IN1-3-4-2,upper-alpha)"."; }
 #IN1-3-4-2 > li { counter-increment: IN1-3-4-2; }
@@ -676,12 +679,15 @@ window.MathJax = {
 #IN1-3-6-2 { counter-set: IN1-3-6-2 0; }
 #IN1-3-6-2 > li::marker { content: ""counter(IN1-3-6-2,upper-alpha)"."; }
 #IN1-3-6-2 > li { counter-increment: IN1-3-6-2; }
-#IN1-3-7-2 { counter-set: IN1-3-7-2 0; }
-#IN1-3-7-2 > li::marker { content: ""counter(IN1-3-7-2,upper-alpha)"."; }
-#IN1-3-7-2 > li { counter-increment: IN1-3-7-2; }
 #IN1-3-9-1-1-1 { counter-set: IN1-3-9-1-1-1 0; }
 #IN1-3-9-1-1-1 > li::marker { content: ""counter(IN1-3-9-1-1-1,decimal)"."; }
 #IN1-3-9-1-1-1 > li { counter-increment: IN1-3-9-1-1-1; }
+#IN1-3-10-3-2 { counter-set: IN1-3-10-3-2 0; }
+#IN1-3-10-3-2 > li::marker { content: ""counter(IN1-3-10-3-2,upper-alpha)"."; }
+#IN1-3-10-3-2 > li { counter-increment: IN1-3-10-3-2; }
+#IN1-3-10-4-2 { counter-set: IN1-3-10-4-2 0; }
+#IN1-3-10-4-2 > li::marker { content: ""counter(IN1-3-10-4-2,upper-alpha)"."; }
+#IN1-3-10-4-2 > li { counter-increment: IN1-3-10-4-2; }
 #IN2-3-6-1-2 { counter-set: IN2-3-6-1-2 0; }
 #IN2-3-6-1-2 > li::marker { content: ""counter(IN2-3-6-1-2,upper-alpha)"."; }
 #IN2-3-6-1-2 > li { counter-increment: IN2-3-6-1-2; }
@@ -2422,7 +2428,7 @@ window.MathJax = {
 </div>
 <div class="para">(<a href="IN5.html#definition-in5-2" class="xref" data-knowl="./knowl/xref/definition-in5-2.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 4.5.3">Definition 4.5.3</a>) defines <span class="process-math">\(\int_a^bf(x)dx\)</span> as the <dfn class="terminology">net area</dfn> between the graph of <span class="process-math">\(y=f(x)\)</span> and the <span class="process-math">\(x\)</span>-axis. By net area, we mean the area above the <span class="process-math">\(x\)</span>-axis (when <span class="process-math">\(f(x)\)</span> is positive) minus the area below the <span class="process-math">\(x\)</span>-axis (when <span class="process-math">\(f(x)\)</span> is negative).</div>
 </div> <figure class="figure figure-like" id="IN7-3-2-1-2"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/sageplot/IN7-image-integral-as-net-area.svg" role="img" class="contained" alt="As the number of subdivisions increases, the Riemann sum more closely appears to measure the net area between a curve and the x-axis."></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">104<span class="period">.</span></span><span class="space"> </span>Improving approximations of <span class="process-math">\(\int_0^5(x-2)(x-4)dx\)</span></figcaption></figure></article><article class="activity project-like" id="IN7-3-3"><h4 class="heading">
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">105<span class="period">.</span></span><span class="space"> </span>Improving approximations of <span class="process-math">\(\int_0^5(x-2)(x-4)dx\)</span></figcaption></figure></article><article class="activity project-like" id="IN7-3-3"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.7.2</span><span class="period">.</span>
 </h4>
 <article class="task exercise-like" id="IN7-3-3-1"><h5 class="heading"><span class="codenumber">(a)</span></h5>
@@ -2431,7 +2437,7 @@ window.MathJax = {
 <span class="type">Observation</span><span class="space"> </span><span class="codenumber">4.7.3</span><span class="period">.</span>
 </h4>
 <div class="para" id="IN7-3-4-1-1">In order to find the total area between a curve and the <span class="process-math">\(x\)</span>-axis, one must break up the definite integral at points where <span class="process-math">\(f(x)=0\text{,}\)</span> that is, wherever <span class="process-math">\(f(x)\)</span> may change from positive to negative, or vice versa.</div> <figure class="figure figure-like" id="IN7-3-4-1-2"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/sageplot/IN7-image-integral-as-total-area.svg" role="img" class="contained" alt="The total area is illustrated by breaking up the integral from 0 to 5 at 2 and 4 where (x-2) and (x-4) are equal to 0."></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">105<span class="period">.</span></span><span class="space"> </span>Partitioning <span class="process-math">\(\int_0^5(x-2)(x-4)dx\)</span> at <span class="process-math">\(x=2\)</span> and <span class="process-math">\(x=4\text{.}\)</span></figcaption></figure> <div class="para logical" id="IN7-3-4-1-3">
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">106<span class="period">.</span></span><span class="space"> </span>Partitioning <span class="process-math">\(\int_0^5(x-2)(x-4)dx\)</span> at <span class="process-math">\(x=2\)</span> and <span class="process-math">\(x=4\text{.}\)</span></figcaption></figure> <div class="para logical" id="IN7-3-4-1-3">
 <div class="para">Since <span class="process-math">\(f(x)=(x-2)(x-4)\)</span> is zero when <span class="process-math">\(x=2\)</span> and <span class="process-math">\(x=4\text{,}\)</span> we may compute the total area between <span class="process-math">\(y=(x-2)(x-4)\)</span> and the <span class="process-math">\(x\)</span>-axis using absolute values as follows:</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -2471,7 +2477,7 @@ window.MathJax = {
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">4.7.2</span><span class="space"> </span><span class="title">Videos</span>
 </h3>
 <figure class="figure figure-like" id="IN7-4-2"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/n05Ffx6Dm8g?&amp;modestbranding=1&amp;rel=0" id="video-IN7"></iframe></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">106<span class="period">.</span></span><span class="space"> </span>Video for IN7</figcaption></figure></section><section class="subsection" id="IN7-5"><h3 class="heading hide-type">
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">107<span class="period">.</span></span><span class="space"> </span>Video for IN7</figcaption></figure></section><section class="subsection" id="IN7-5"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">4.7.3</span><span class="space"> </span><span class="title">Exercises</span>
 </h3>
 <div class="para" id="IN7-5-2">Exercises available at <a class="external" href="https://tbil.org/calculus/preview/exercises/#/bank/IN7/" target="_blank"><code class="code-inline tex2jax_ignore">https://tbil.org/calculus/preview/exercises/#/bank/IN7/</code></a>

@@ -667,6 +667,9 @@ window.MathJax = {
 #IN-readiness-3 { counter-set: IN-readiness-3 0; }
 #IN-readiness-3 > li::marker { content: ""counter(IN-readiness-3,lower-alpha)""; }
 #IN-readiness-3 > li { counter-increment: IN-readiness-3; }
+#IN1-3-3-2 { counter-set: IN1-3-3-2 0; }
+#IN1-3-3-2 > li::marker { content: ""counter(IN1-3-3-2,upper-alpha)"."; }
+#IN1-3-3-2 > li { counter-increment: IN1-3-3-2; }
 #IN1-3-4-2 { counter-set: IN1-3-4-2 0; }
 #IN1-3-4-2 > li::marker { content: ""counter(IN1-3-4-2,upper-alpha)"."; }
 #IN1-3-4-2 > li { counter-increment: IN1-3-4-2; }
@@ -676,12 +679,15 @@ window.MathJax = {
 #IN1-3-6-2 { counter-set: IN1-3-6-2 0; }
 #IN1-3-6-2 > li::marker { content: ""counter(IN1-3-6-2,upper-alpha)"."; }
 #IN1-3-6-2 > li { counter-increment: IN1-3-6-2; }
-#IN1-3-7-2 { counter-set: IN1-3-7-2 0; }
-#IN1-3-7-2 > li::marker { content: ""counter(IN1-3-7-2,upper-alpha)"."; }
-#IN1-3-7-2 > li { counter-increment: IN1-3-7-2; }
 #IN1-3-9-1-1-1 { counter-set: IN1-3-9-1-1-1 0; }
 #IN1-3-9-1-1-1 > li::marker { content: ""counter(IN1-3-9-1-1-1,decimal)"."; }
 #IN1-3-9-1-1-1 > li { counter-increment: IN1-3-9-1-1-1; }
+#IN1-3-10-3-2 { counter-set: IN1-3-10-3-2 0; }
+#IN1-3-10-3-2 > li::marker { content: ""counter(IN1-3-10-3-2,upper-alpha)"."; }
+#IN1-3-10-3-2 > li { counter-increment: IN1-3-10-3-2; }
+#IN1-3-10-4-2 { counter-set: IN1-3-10-4-2 0; }
+#IN1-3-10-4-2 > li::marker { content: ""counter(IN1-3-10-4-2,upper-alpha)"."; }
+#IN1-3-10-4-2 > li { counter-increment: IN1-3-10-4-2; }
 #IN2-3-6-1-2 { counter-set: IN2-3-6-1-2 0; }
 #IN2-3-6-1-2 > li::marker { content: ""counter(IN2-3-6-1-2,upper-alpha)"."; }
 #IN2-3-6-1-2 > li { counter-increment: IN2-3-6-1-2; }
@@ -2414,13 +2420,19 @@ window.MathJax = {
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">4.1.1</span><span class="period">.</span>
 </h4>
 <div class="para" id="IN1-3-2-1">The <dfn class="terminology">definite integral</dfn> for a positive function <span class="process-math">\(f(x) \geq 0 \)</span> between the points <span class="process-math">\(x=a\)</span> and <span class="process-math">\(x=b\)</span> is the area between the function and the <span class="process-math">\(x\)</span>-axis. We denote this quantity as <span class="process-math">\(\displaystyle \int_a^b f(x) \, dx\)</span>
-</div></article><article class="remark remark-like" id="IN1-3-3"><h4 class="heading">
-<span class="type">Remark</span><span class="space"> </span><span class="codenumber">4.1.2</span><span class="period">.</span>
+</div></article><article class="activity project-like" id="IN1-3-3"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.1.2</span><span class="period">.</span>
 </h4>
-<div class="para" id="IN1-3-3-1">For some functions which have known geometric shapes (like pieces of lines or circles) we can already compute these area exactly and we will do so in this section. But for most functions we do not know quite yet how to compute these areas. In the next section, we will see that because we can compute the areas of rectangles quite easily, we can always try to approximate a shape with rectangles, even if this could be a very coarse approximation.</div></article><article class="activity project-like" id="IN1-3-4"><h4 class="heading">
+<div class="para" id="IN1-3-3-1">Consider the linear function <span class="process-math">\(f(x)=2x\text{.}\)</span> Sketch a graph of this function. Consider the area between the <span class="process-math">\(x\)</span>-axis and the function on the interval <span class="process-math">\([0,1]\text{.}\)</span> What is <span class="process-math">\(\int_0^1 f(x) \, dx\text{?}\)</span>
+</div> <ol class="upper-alpha cols2" id="IN1-3-3-2">
+<li id="IN1-3-3-2-1"><div class="para" id="IN1-3-3-2-1-1">1</div></li>
+<li id="IN1-3-3-2-2"><div class="para" id="IN1-3-3-2-2-1">2</div></li>
+<li id="IN1-3-3-2-3"><div class="para" id="IN1-3-3-2-3-1">3</div></li>
+<li id="IN1-3-3-2-4"><div class="para" id="IN1-3-3-2-4-1">4</div></li>
+</ol></article><article class="activity project-like" id="IN1-3-4"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.1.3</span><span class="period">.</span>
 </h4>
-<div class="para" id="IN1-3-4-1">Consider the linear function <span class="process-math">\(f(x)=2x\text{.}\)</span> Sketch a graph of this function. Consider the area between the <span class="process-math">\(x\)</span>-axis and the function on the interval <span class="process-math">\([0,1]\text{.}\)</span> What is <span class="process-math">\(\int_0^1 f(x) \, dx\text{?}\)</span>
+<div class="para" id="IN1-3-4-1">Consider the linear function <span class="process-math">\(f(x)=4x\text{.}\)</span> What is <span class="process-math">\(\int_0^1 f(x) \, dx\text{?}\)</span>
 </div> <ol class="upper-alpha cols2" id="IN1-3-4-2">
 <li id="IN1-3-4-2-1"><div class="para" id="IN1-3-4-2-1-1">1</div></li>
 <li id="IN1-3-4-2-2"><div class="para" id="IN1-3-4-2-2-1">2</div></li>
@@ -2429,7 +2441,7 @@ window.MathJax = {
 </ol></article><article class="activity project-like" id="IN1-3-5"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.1.4</span><span class="period">.</span>
 </h4>
-<div class="para" id="IN1-3-5-1">Consider the linear function <span class="process-math">\(f(x)=4x\text{.}\)</span> What is <span class="process-math">\(\int_0^1 f(x) \, dx\text{?}\)</span>
+<div class="para" id="IN1-3-5-1">Consider the linear function <span class="process-math">\(f(x)=2x +2\text{.}\)</span> Notice that on the interval <span class="process-math">\([0,1]\text{,}\)</span> the shape formed between the graph and the <span class="process-math">\(x\)</span>-axis is a trapezoid. What is <span class="process-math">\(\int_0^1 f(x) \, dx\text{?}\)</span>
 </div> <ol class="upper-alpha cols2" id="IN1-3-5-2">
 <li id="IN1-3-5-2-1"><div class="para" id="IN1-3-5-2-1-1">1</div></li>
 <li id="IN1-3-5-2-2"><div class="para" id="IN1-3-5-2-2-1">2</div></li>
@@ -2438,22 +2450,16 @@ window.MathJax = {
 </ol></article><article class="activity project-like" id="IN1-3-6"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.1.5</span><span class="period">.</span>
 </h4>
-<div class="para" id="IN1-3-6-1">Consider the linear function <span class="process-math">\(f(x)=2x +2\text{.}\)</span> Notice that on the interval <span class="process-math">\([0,1]\text{,}\)</span> the shape formed between the graph and the <span class="process-math">\(x\)</span>-axis is a trapezoid. What is <span class="process-math">\(\int_0^1 f(x) \, dx\text{?}\)</span>
+<div class="para" id="IN1-3-6-1">Consider the function <span class="process-math">\(f(x)=\sqrt{4-x^2}\text{.}\)</span> Notice that on the domain <span class="process-math">\([-2,2]\text{,}\)</span> the shape formed between the graph and the <span class="process-math">\(x\)</span>-axis is a semicircle. What is <span class="process-math">\(\int_{-2}^2 f(x) \, dx\text{?}\)</span>
 </div> <ol class="upper-alpha cols2" id="IN1-3-6-2">
-<li id="IN1-3-6-2-1"><div class="para" id="IN1-3-6-2-1-1">1</div></li>
-<li id="IN1-3-6-2-2"><div class="para" id="IN1-3-6-2-2-1">2</div></li>
-<li id="IN1-3-6-2-3"><div class="para" id="IN1-3-6-2-3-1">3</div></li>
-<li id="IN1-3-6-2-4"><div class="para" id="IN1-3-6-2-4-1">4</div></li>
-</ol></article><article class="activity project-like" id="IN1-3-7"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.1.6</span><span class="period">.</span>
+<li id="IN1-3-6-2-1"><div class="para" id="IN1-3-6-2-1-1"><span class="process-math">\(\displaystyle \pi\)</span></div></li>
+<li id="IN1-3-6-2-2"><div class="para" id="IN1-3-6-2-2-1"><span class="process-math">\(\displaystyle 2\pi\)</span></div></li>
+<li id="IN1-3-6-2-3"><div class="para" id="IN1-3-6-2-3-1"><span class="process-math">\(\displaystyle 3\pi\)</span></div></li>
+<li id="IN1-3-6-2-4"><div class="para" id="IN1-3-6-2-4-1"><span class="process-math">\(\displaystyle 4\pi\)</span></div></li>
+</ol></article><article class="remark remark-like" id="IN1-3-7"><h4 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">4.1.6</span><span class="period">.</span>
 </h4>
-<div class="para" id="IN1-3-7-1">Consider the function <span class="process-math">\(f(x)=\sqrt{4-x^2}\text{.}\)</span> Notice that on the domain <span class="process-math">\([-2,2]\text{,}\)</span> the shape formed between the graph and the <span class="process-math">\(x\)</span>-axis is a semicircle. What is <span class="process-math">\(\int_{-2}^2 f(x) \, dx\text{?}\)</span>
-</div> <ol class="upper-alpha cols2" id="IN1-3-7-2">
-<li id="IN1-3-7-2-1"><div class="para" id="IN1-3-7-2-1-1"><span class="process-math">\(\displaystyle \pi\)</span></div></li>
-<li id="IN1-3-7-2-2"><div class="para" id="IN1-3-7-2-2-1"><span class="process-math">\(\displaystyle 2\pi\)</span></div></li>
-<li id="IN1-3-7-2-3"><div class="para" id="IN1-3-7-2-3-1"><span class="process-math">\(\displaystyle 3\pi\)</span></div></li>
-<li id="IN1-3-7-2-4"><div class="para" id="IN1-3-7-2-4-1"><span class="process-math">\(\displaystyle 4\pi\)</span></div></li>
-</ol></article><article class="definition definition-like" id="IN1-3-8"><h4 class="heading">
+<div class="para" id="IN1-3-7-1">As we have seen, when we are working with the graph of a function that corresponds to a geometric shape we are familiar with, we can compute the area exactly. In the next section, we will see how to use this knowledge to approximate—and ultimately calculate—the area underneath more complicated graphs.</div></article><article class="definition definition-like" id="IN1-3-8"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">4.1.7</span><span class="period">.</span>
 </h4>
 <div class="para" id="IN1-3-8-1">If a function <span class="process-math">\(f(x) \leq 0\)</span> on <span class="process-math">\([a,b]\text{,}\)</span> then we define the integral between <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> to be</div>
@@ -2462,7 +2468,7 @@ window.MathJax = {
 \int_a^b f(x) \, dx \,  = \,  (-1) \times \text{area between the graph of  and the  axis on the interval }
 \end{equation*}
 </div>
-<div class="para" id="IN1-3-8-3">So the definite integral for a negative function is the "negative" of the area between the graph and the <span class="process-math">\(x\)</span>-axis.</div></article><article class="activity project-like" id="IN1-3-9"><h4 class="heading">
+<div class="para" id="IN1-3-8-3">So the definite integral for a negative function is the "negative" of the area between the graph and the <span class="process-math">\(x\)</span>-axis.</div> <div class="para" id="IN1-3-8-4">More broadly, if <span class="process-math">\(f(x)\)</span> is a function that is sometimes positive and sometimes negative on <span class="process-math">\([a,b]\text{,}\)</span> the definite integral <span class="process-math">\(\int_a^b f(x) dx\)</span> is the <em class="alert">signed area</em> between the graph of <span class="process-math">\(f(x)\)</span> and the <span class="process-math">\(x\)</span>-axis. This is equal to the difference of the areas between the graph of <span class="process-math">\(f(x)\)</span> and the <span class="process-math">\(x\)</span> axis that lie above and below.</div></article><article class="activity project-like" id="IN1-3-9"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.1.8</span><span class="period">.</span>
 </h4>
 <div class="para logical" id="IN1-3-9-1-1">
@@ -2488,21 +2494,43 @@ window.MathJax = {
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.1.9</span><span class="period">.</span>
 </h4>
 <div class="introduction" id="IN1-3-10-1">
-<div class="para" id="IN1-3-10-1-1">The graph of <span class="process-math">\(g(t)\)</span> and the areas <span class="process-math">\(A_1, A_2, A_3\)</span> are given below.</div> <figure class="figure figure-like" id="figure-signed-areas"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/fig2d.JPG" class="contained"></div>
+<div class="para" id="IN1-3-10-1-1">The follow graph describes the slope <span class="process-math">\(g(m)\)</span> (in ft/mi) of the terrain of a 5-mile trail race in the mountains as a function of distance <span class="process-math">\(m\)</span> (miles) ran.</div> <figure class="figure figure-like" id="figure-evlationmap-flat"><div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="external/custom/elevation1.png" class="contained"></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">83<span class="period">.</span></span><span class="space"> </span></figcaption></figure>
 </div>
 <article class="task exercise-like" id="IN1-3-10-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="IN1-3-10-2-1">Find <span class="process-math">\(\int_{3}^{3} g(t) \, dt\)</span>
-</div></article><article class="task exercise-like" id="IN1-3-10-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="IN1-3-10-3-1">Find <span class="process-math">\(\int_{3}^{6} g(t) \, dt\)</span>
-</div></article><article class="task exercise-like" id="IN1-3-10-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para" id="IN1-3-10-4-1">Find <span class="process-math">\(\int_{0}^{10} g(t) \, dt\)</span>
-</div></article><article class="task exercise-like" id="IN1-3-10-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
-<div class="para" id="IN1-3-10-5-1">Suppose that <span class="process-math">\(g(t)\)</span> gives the velocity in fps at time <span class="process-math">\(t\)</span> (in seconds) of a particle moving in the vertical direction. A positive velocity indicates that the particle is moving up, a negative velocity indicates that the particle is moving down. If the particle started at a height of 3ft, at what height would it been after 3 seconds? After 6 seconds? After 10 seconds? At what time does the particle reach the highest point in this time interval?</div></article></article></section><section class="subsection" id="IN1-4"><h3 class="heading hide-type">
+<div class="para" id="IN1-3-10-2-1">Based on this slope graph, draw a sketch of the elevation-profile of the trail race.</div></article><article class="task exercise-like" id="IN1-3-10-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="IN1-3-10-3-1">Which of the following definite integrals best represents the amount of elevation gained during the race?</div>
+<ol class="upper-alpha" id="IN1-3-10-3-2">
+<li id="IN1-3-10-3-2-1"><div class="para" id="IN1-3-10-3-2-1-1"><span class="process-math">\(\displaystyle \int_0^3g(m)dm\)</span></div></li>
+<li id="IN1-3-10-3-2-2"><div class="para" id="IN1-3-10-3-2-2-1"><span class="process-math">\(\displaystyle \int_0^2g(m)dm\)</span></div></li>
+<li id="IN1-3-10-3-2-3"><div class="para" id="IN1-3-10-3-2-3-1"><span class="process-math">\(\displaystyle \int_3^5g(m)dm\)</span></div></li>
+<li id="IN1-3-10-3-2-4"><div class="para" id="IN1-3-10-3-2-4-1"><span class="process-math">\(\displaystyle \int_0^5g(m)dm\)</span></div></li>
+</ol></article><article class="task exercise-like" id="IN1-3-10-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="IN1-3-10-4-1">Which of the following definite integrals best represents the amount of elevation lost during the race?</div>
+<ol class="upper-alpha" id="IN1-3-10-4-2">
+<li id="IN1-3-10-4-2-1"><div class="para" id="IN1-3-10-4-2-1-1"><span class="process-math">\(\displaystyle \int_0^3g(m)dm\)</span></div></li>
+<li id="IN1-3-10-4-2-2"><div class="para" id="IN1-3-10-4-2-2-1"><span class="process-math">\(\displaystyle \int_2^5g(m)dm\)</span></div></li>
+<li id="IN1-3-10-4-2-3"><div class="para" id="IN1-3-10-4-2-3-1"><span class="process-math">\(\displaystyle \int_3^5g(m)dm\)</span></div></li>
+<li id="IN1-3-10-4-2-4"><div class="para" id="IN1-3-10-4-2-4-1"><span class="process-math">\(\displaystyle \int_0^5g(m)dm\)</span></div></li>
+</ol></article><article class="task exercise-like" id="IN1-3-10-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="IN1-3-10-5-1">Assuming the start line is at point <span class="process-math">\(8000\)</span>ft above sea-level, at what elevation is the finish line?</div></article></article><article class="activity project-like" id="IN1-3-11"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.1.10</span><span class="period">.</span>
+</h4>
+<div class="introduction" id="IN1-3-11-1">
+<div class="para" id="IN1-3-11-1-1">The follow graph describes the slope <span class="process-math">\(g(m)\)</span> (in ft/mi) of the terrain of a 5-mile trail race in the mountains as a function of distance <span class="process-math">\(m\)</span> (miles) ran.</div> <figure class="figure figure-like" id="figure-elevationmap-notflat"><div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="external/custom/elevation2.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">84<span class="period">.</span></span><span class="space"> </span></figcaption></figure>
+</div>
+<article class="task exercise-like" id="IN1-3-11-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="IN1-3-11-2-1">Based on this slope graph, draw a sketch of the elevation-profile of the trail race.</div></article><article class="task exercise-like" id="IN1-3-11-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="IN1-3-11-3-1">Assuming the start line is at point <span class="process-math">\(8000\)</span>ft above sea-level, at what elevation is the finish line?</div></article></article><article class="remark remark-like" id="IN1-3-12"><h4 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">4.1.11</span><span class="period">.</span>
+</h4>
+<div class="para" id="IN1-3-12-1">The previous activities illustrate that, in the case when <span class="process-math">\(f(x)\)</span> is describing the instantaneous change of some quantity, then the definite integral <span class="process-math">\(\int_a^b f(x)dx\)</span> describes the <em class="alert">net change</em> of this quantity over the interval <span class="process-math">\([a,b]\text{.}\)</span>
+</div></article></section><section class="subsection" id="IN1-4"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">4.1.2</span><span class="space"> </span><span class="title">Videos</span>
 </h3>
 <figure class="figure figure-like" id="IN1-4-2"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/h6ur1M83jI0?&amp;modestbranding=1&amp;rel=0" id="video-IN1"></iframe></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">84<span class="period">.</span></span><span class="space"> </span>Video for IN1</figcaption></figure></section><section class="subsection" id="IN1-5"><h3 class="heading hide-type">
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">85<span class="period">.</span></span><span class="space"> </span>Video for IN1</figcaption></figure></section><section class="subsection" id="IN1-5"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">4.1.3</span><span class="space"> </span><span class="title">Exercises</span>
 </h3>
 <div class="para" id="IN1-5-2">Exercises available at <a class="external" href="https://tbil.org/calculus/preview/exercises/#/bank/IN1/" target="_blank"><code class="code-inline tex2jax_ignore">https://tbil.org/calculus/preview/exercises/#/bank/IN1/</code></a>
