@@ -16,11 +16,6 @@
     <p>The <term>definite integral</term> for a positive function <m>f(x) \geq 0 </m> between the points <m>x=a</m> and <m>x=b</m> is the area between the function and the <m>x</m>-axis. We denote this quantity as <m>\displaystyle \int_a^b f(x) \, dx</m></p>
     </definition>
     
-<remark><p>
-    For some functions which have known geometric shapes (like pieces of lines or circles) we can already compute these area exactly and we will do so in this section. But for most functions we do not know quite yet how to compute these areas. In the next section, we will see that because we can compute the areas of rectangles quite easily, we can always try to approximate a shape with rectangles, even if this could be a very coarse approximation.
-    </p></remark>    
-    
-    
 <activity>
     <p>
     Consider the linear function <m>f(x)=2x</m>. Sketch a graph of this function. Consider the area between the <m>x</m>-axis and the function on the interval <m>[0,1]</m>. What is <m>\int_0^1 f(x) \, dx</m>?  </p>
@@ -66,6 +61,14 @@
                 <li><p><m>4\pi</m></p></li>
             </ol>
     </activity>  
+
+
+    <remark>
+        <p>
+            As we have seen, when we are working with the graph of a function that corresponds to a geometric shape we are familiar with, we can compute the area exactly. 
+            In the next section, we will see how to use this knowledge to approximate<mdash/>and ultimately calculate<mdash/>the area underneath more complicated graphs.
+        </p>
+    </remark>
  
     <definition>
     <p>
@@ -73,6 +76,11 @@
     If a function <m>f(x) \leq 0</m> on <m>[a,b]</m>, then we define the integral between <m>a</m> and <m>b</m> to be  </p>
 <me> \int_a^b f(x) \, dx \,  = \,  (-1) \times \text{area between the graph of <m>f(x)</m> and the <m>x</m> axis on the interval <m>[a,b]</m>.}</me>
 <p> So the definite integral for a negative function is the "negative" of the area between the graph and the <m>x</m>-axis. </p>
+
+    <p>
+        More broadly, if <m>f(x)</m> is a function that is sometimes positive and sometimes negative on <m>[a,b]</m>, the definite integral <m>\int_a^b f(x) dx</m> is the <alert>signed area</alert> between the graph of <m>f(x)</m> and the <m>x</m>-axis. 
+        This is equal to the difference of the areas between the graph of <m>f(x)</m> and the <m>x</m> axis that lie above and below.
+    </p>
    
     </definition>
     
@@ -103,22 +111,113 @@
 
     
     
-
-
-
-<activity>
-    <introduction> <p>
-    The graph of <m>g(t)</m> and the areas <m>A_1, A_2, A_3</m> are given below. </p>
-     <figure xml:id="figure-signed-areas">
-       <image width="100%" source="fig2d.JPG" />
-         </figure>
-    </introduction>
-    <task> <p> Find <m>\int_{3}^{3} g(t) \, dt</m></p></task>
-    <task> <p> Find <m>\int_{3}^{6} g(t) \, dt</m></p></task>
-        <task> <p> Find <m>\int_{0}^{10} g(t) \, dt</m></p></task>
-        <task> <p> Suppose that <m>g(t)</m> gives the velocity in fps at time <m>t</m> (in seconds) of a particle moving in the vertical direction. A positive velocity indicates that the particle is moving up, a negative velocity indicates that the particle is moving down. If the particle started at a height of 3ft, at what height would it been after 3 seconds? After 6 seconds? After 10 seconds? At what time does the particle reach the highest point in this time interval?</p></task>
+    <activity>
+        <introduction> 
+        <p>
+            The follow graph describes the slope <m>g(m)</m> (in ft/mi) of the terrain of a 5-mile trail race in the mountains as a function of distance <m>m</m> (miles) ran. 
+        </p>
+        <figure xml:id="figure-evlationmap-flat">
+        <image width="75%" source="custom/elevation1.png" />
+            </figure>
+        </introduction>
+        <task>
+         <p>Based on this slope graph, draw a sketch of the elevation-profile of the trail race.</p>
+        </task>
+        <task>
+         <p> Which of the following definite integrals best represents the amount of elevation gained during the race?</p>
+            <ol marker="A.">
+                <li>
+                    <p>
+                        <m>\int_0^3g(m)dm</m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <m>\int_0^2g(m)dm</m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <m>\int_3^5g(m)dm</m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <m>\int_0^5g(m)dm</m> 
+                    </p>
+                </li>
+            </ol>
+        </task>
+        <task>
+         <p> Which of the following definite integrals best represents the amount of elevation lost during the race?</p>
+            <ol marker="A.">
+                <li>
+                    <p>
+                        <m>\int_0^3g(m)dm</m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <m>\int_2^5g(m)dm</m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <m>\int_3^5g(m)dm</m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <m>\int_0^5g(m)dm</m> 
+                    </p>
+                </li>
+            </ol>
+        </task>
+        <task> 
+            <p>
+                Assuming the start line is at point <m>8000</m>ft above sea-level, at what elevation is the finish line?
+            </p>
+        </task>
     </activity>
 
+    <activity>
+        <introduction> 
+        <p>
+            The follow graph describes the slope <m>g(m)</m> (in ft/mi) of the terrain of a 5-mile trail race in the mountains as a function of distance <m>m</m> (miles) ran.
+        </p>
+        <figure xml:id="figure-elevationmap-notflat">
+        <image width="75%" source="custom/elevation2.png" />
+            </figure>
+        </introduction>
+        <task>
+         <p>Based on this slope graph, draw a sketch of the elevation-profile of the trail race.</p>
+        </task>
+        <task> 
+            <p>
+                Assuming the start line is at point <m>8000</m>ft above sea-level, at what elevation is the finish line?
+            </p>
+        </task> 
+    </activity>
+
+
+    <!--<activity>
+        <introduction> <p>
+        The graph of <m>g(t)</m> and the areas <m>A_1, A_2, A_3</m> are given below. </p>
+        <figure xml:id="figure-signed-areas">
+        <image width="100%" source="fig2d.JPG" />
+            </figure>
+        </introduction>
+        <task> <p> Find <m>\int_{3}^{3} g(t) \, dt</m></p></task>
+        <task> <p> Find <m>\int_{3}^{6} g(t) \, dt</m></p></task>
+        <task> <p> Find <m>\int_{0}^{10} g(t) \, dt</m></p></task>
+        <task> <p> Suppose that <m>g(t)</m> gives the velocity in fps at time <m>t</m> (in seconds) of a particle moving in the vertical direction. A positive velocity indicates that the particle is moving up, a negative velocity indicates that the particle is moving down. If the particle started at a height of 3ft, at what height would it been after 3 seconds? After 6 seconds? After 10 seconds? At what time does the particle reach the highest point in this time interval?</p></task>
+    </activity>-->
+
+   <remark>
+    <p>
+        The previous activities illustrate that, in the case when <m>f(x)</m> is describing the instantaneous change of some quantity, then the definite integral <m>\int_a^b f(x)dx</m> describes the <alert>net change</alert> of this quantity over the interval <m>[a,b]</m>. 
+    </p>
+   </remark>
     
     </subsection>
     <subsection>
