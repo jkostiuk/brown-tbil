@@ -25,7 +25,253 @@
         </p>
     </paragraphs>
 
+<problem>
+        <title>(Problem 1)</title>
+        <introduction>
+            <p>
+                An <em>oblique cylinder</em> cylinder is a cylinder is a type of cylinder in which the top and bottom bases are parallel but not directly aligned on top of each other; it is a tilted or a slanted cylinder with its sides not necessarily parallel. 
+                A depiction is found in <xref ref="oblique-cylinder"/>. 
+            </p>
+            <figure xml:id="oblique-cylinder">
+            <caption>A sketch of an oblique cylinder.</caption>
+            <image source="custom/Oblique-Cylinder.png">
+            </image>
+        </figure>
+        </introduction> 
+        <task>
+            <statement>
+                <p>
+                    Explain and demonstrate how to use cross-sectional areas to set up and evaluate an integral that computes the volume of an ordinary cylinder of height <m>h</m> and radius <m>r</m>, confirming our known result that it is equal to <m>\pi r^2h</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Explain and demonstrate how to use cross-sectional areas to set up and evaluate an integral that computes the volume of an oblique cylinder of height <m>h</m> and radius <m>r</m>--see the figure for <m>h</m>.
+                </p>
+            </statement>
+        </task>
+    </problem>
 
+    <problem>
+        <title>(Problem 2)</title>
+        <introduction>
+            <p>
+                The Fibonnaci sequence is a famous sequence defined recursively by <m>F_0=0, F_1=1,\ F_n=F_{n-1}+F_{n-2}</m> for <m>n\geq 2</m>. 
+                So, we have <m>F_2=1,\ F_3=2,\ F_4=3,\ F_5=5</m>, etc.
+                By its construction, the sequence <m>\{F_n\}</m> is monotically non-decreasing and is increasing for <m>n\geq 3</m>. 
+            </p>
+            <task>
+            <statement>
+                <p>
+                    Consider the related sequence <m>\{a_n\}_{n=0}^\infty</m> given by <m>a_n=\frac{F_{n+1}}{F_n}</m>. 
+                    Explain why the sequence <m>a_n</m> is bounded but not monotonic. 
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    While the monotonic convergence theorem does not apply to <m>a_n</m>, the sequence <m>a_n</m> is nonetheless convergent (you do not need to explain why). 
+                    Given that the limit exists, denote it by <m>\phi</m>; that is, let <m>\phi=\lim_{n\to\infty}a_n</m>. 
+                    Explain why <m>\phi=1+\frac{1}{\phi}</m>. 
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Solve the equation <m>\phi=1+\frac{1}{\phi}</m> to compute the exact value of <m>\phi</m>. 
+                    This special number is called the <em>Golden Ratio</em>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Explain why the series <m>\sum_{n=1}^\infty\frac{1}{F_n}</m> converges. 
+                </p>
+            </statement>
+        </task>
+        </introduction>
+        <hint>
+            <p>
+               For (a), use the recursion formula to argue that <m>a_n</m> is bounded above by <m>2</m>. 
+            </p>
+            <p>
+                For (b), write <m>\frac{F_{n+1}}{F_n}=\frac{F_n+F_{n-1}}{F_n}</m>.
+            </p>
+        </hint>
+        
+    </problem>
+
+    <!--<problem>
+        <title>Arcsin</title>
+        <task>
+            <statement>
+                <p>
+                    Explain and demonstrate how to find the first 5 non-zero terms of the Taylor series expansion of <m>\frac{1}{\sqrt{1+x}}</m> about <m>x=0</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Use your result from (a) to find the first 5 non-zero terms of the Taylor series expansion of <m>\frac{1}{\sqrt{1-x^2}}</m>. 
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Give that <m>\frac{d}{dx}\arcsin{x}=\frac{1}{\sqrt{1-x^2}}</m>, explain and demonstrate how to manipulate your answer in (b) to obtain a polynomial that approximates <m>\arcsin(x)</m>. 
+                </p>
+            </statement>
+        </task>
+    </problem>-->
+
+    <problem>
+        <title>(Problem 3)</title>
+        <introduction>
+           <p>
+            The purpose of this structured exploration is for you to consider two different ways of approximating a quantity that is difficult to calculuate exactly. 
+           </p>
+           <p>
+            Consider the graph of the function <m>y=f(x)=3+\frac{t^3}{3}</m> where <m>0\leq x\leq 1</m>. 
+           </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    Explain why the arc-length <m>L</m> of this curve is given by
+                    <me>
+                        L=\int_0^1\sqrt{1+t^4}dt.
+                    </me>
+                    This integral is impossible to evaluate using elementary methods.
+                    Choose two methods of integration that you think are reasonable for someone to try here, and explain why they nonetheless don't work out. 
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Given that we cannot calculate the arc-length directly, an approximation will have to do. 
+                    Obtain an approximation of the arc-length by cutting the interval <m>[0,1]</m> into <m>8</m> equal segments and then estimating the arc-length using polygonal line segments (as we did in AI2). 
+                    Complete the following table and use it to compute an approximation of the total length. 
+                    You are very welcome (and encouraged) to use calculators; round your answers to 5 decimal places when appropriate.
+                    <tabular>
+                <row bottom="minor">
+                  <cell>
+                      <m>x_i</m>
+                  </cell>
+                  <cell>
+                      <m>(x_i,f(x_i))</m>
+                  </cell>
+                  <cell>
+                      <m>(x_i+\Delta x,f(x_i+\Delta x))</m>
+                  </cell>
+                  <cell>
+                      Length of segment
+                  </cell>
+                </row>
+                <row>
+                  <cell>
+                      <m>0</m>
+                  </cell>
+                  <cell><m>(0,3)</m></cell>
+                  <cell><m>(.25,3.00521)</m></cell>
+                  <cell><m>.25005</m></cell>
+                </row>
+                <row>
+                  <cell>
+                      <m>.25</m>
+                  </cell>
+                  <cell/>
+                  <cell/>
+                  <cell/>
+                </row>
+                <row>
+                  <cell>
+                      <m>.5</m>
+                  </cell>
+                  <cell/>
+                  <cell/>
+                  <cell/>
+                </row>
+                <row>
+                  <cell>
+                      <m>.75</m>
+                  </cell>
+                  <cell/>
+                  <cell/>
+                  <cell/>
+                </row>
+            </tabular>
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Here is a different way to approximate the arc-length. 
+                    The Taylor series for <m>\sqrt{1+x}</m> is given by 
+                    <me>
+                        \sqrt{1+x}=1+\frac{x}{2}-\frac{x^2}{8}+\cdots
+                    </me>
+                    Manipulate this power series to determine the first three non-zero terms of the Taylor series for <m>\sqrt{1+t^4}</m> and use the corresponding Taylor polynomial to approximate
+                    <m>\int_0^1\sqrt{1+t^4}dt</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Now ask wolfram alpha to calculate <m>\int_0^1\sqrt{1+t^4}dt</m>. 
+                    Which of your two approximations were closer to the result Woflram Alpha calculated? 
+                    Which of these methods would you prefer to use if you were asked to produce a more accurate approximation?
+                </p>
+            </statement>
+        </task>
+    </problem>
+
+    <problem>
+        <title>(Problem 4)</title>
+        <introduction>
+        <p>
+            Let <m>J_0(x)</m> denote the following power series function:
+            <me>
+                J_0(x)=\sum_{n=0}^\infty\frac{(-1)^nx^{2n}}{2^{2n}(n!)^2}.
+            </me>
+            
+        </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    Explain and demonstrate how to determine the interval of convergence for <m>J_0(x)</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Compute <m>J_0'(x),J''_0(x)</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Explain why:
+                    <me>
+                        x^2J_0''(x)+xJ_0'(x)+x^2J_0(x)=0
+                    </me>
+                    holds for all values of <m>x</m>. 
+                </p>
+            </statement>
+        </task>
+    </problem>
 
 
 <figure>
