@@ -3670,7 +3670,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.1",
   "title": "Geometry of Definite Integrals (IN1)",
-  "body": " Geometry of Definite Integrals (IN1)     Use geometric formulas to compute definite integrals.      Activities   The definite integral for a positive function between the points and is the area between the function and the -axis. We denote this quantity as   For some functions which have known geometric shapes (like pieces of lines or circles) we can already compute these area exactly and we will do so in this section. But for most functions we do not know quite yet how to compute these areas. In the next section, we will see that because we can compute the areas of rectangles quite easily, we can always try to approximate a shape with rectangles, even if this could be a very coarse approximation.   Consider the linear function . Sketch a graph of this function. Consider the area between the -axis and the function on the interval . What is ?   1  2  3  4     Consider the linear function . What is ?   1  2  3  4     Consider the linear function . Notice that on the interval , the shape formed between the graph and the -axis is a trapezoid. What is ?   1  2  3  4     Consider the function . Notice that on the domain , the shape formed between the graph and the -axis is a semicircle. What is ?          If a function on , then we define the integral between and to be   So the definite integral for a negative function is the \"negative\" of the area between the graph and the -axis.     Explain how to use geometric formulas for area to compute the following definite integrals. For each part, sketch the function to support your explanation.            The graph of and the areas are given below.      Find  Find  Find  Suppose that gives the velocity in fps at time (in seconds) of a particle moving in the vertical direction. A positive velocity indicates that the particle is moving up, a negative velocity indicates that the particle is moving down. If the particle started at a height of 3ft, at what height would it been after 3 seconds? After 6 seconds? After 10 seconds? At what time does the particle reach the highest point in this time interval?     Videos    Video for IN1     Exercises  Exercises available at    "
+  "body": " Geometry of Definite Integrals (IN1)     Use geometric formulas to compute definite integrals.      Activities   The definite integral for a positive function between the points and is the area between the function and the -axis. We denote this quantity as    Consider the linear function . Sketch a graph of this function. Consider the area between the -axis and the function on the interval . What is ?   1  2  3  4     Consider the linear function . What is ?   1  2  3  4     Consider the linear function . Notice that on the interval , the shape formed between the graph and the -axis is a trapezoid. What is ?   1  2  3  4     Consider the function . Notice that on the domain , the shape formed between the graph and the -axis is a semicircle. What is ?          As we have seen, when we are working with the graph of a function that corresponds to a geometric shape we are familiar with, we can compute the area exactly. In the next section, we will see how to use this knowledge to approximate and ultimately calculate the area underneath more complicated graphs.    If a function on , then we define the integral between and to be   So the definite integral for a negative function is the \"negative\" of the area between the graph and the -axis.  More broadly, if is a function that is sometimes positive and sometimes negative on , the definite integral is the signed area between the graph of and the -axis. This is equal to the difference of the areas between the graph of and the axis that lie above and below.     Explain how to use geometric formulas for area to compute the following definite integrals. For each part, sketch the function to support your explanation.            The follow graph describes the slope (in ft\/mi) of the terrain of a 5-mile trail race in the mountains as a function of distance (miles) ran.      Based on this slope graph, draw a sketch of the elevation-profile of the trail race.  Which of the following definite integrals best represents the amount of elevation gained during the race?                       Which of the following definite integrals best represents the amount of elevation lost during the race?                       Assuming the start line is at point ft above sea-level, at what elevation is the finish line?     The follow graph describes the slope (in ft\/mi) of the terrain of a 5-mile trail race in the mountains as a function of distance (miles) ran.      Based on this slope graph, draw a sketch of the elevation-profile of the trail race.  Assuming the start line is at point ft above sea-level, at what elevation is the finish line?     The previous activities illustrate that, in the case when is describing the instantaneous change of some quantity, then the definite integral describes the net change of this quantity over the interval .     Videos    Video for IN1     Exercises  Exercises available at    "
 },
 {
   "id": "IN1-2",
@@ -3694,10 +3694,10 @@ var ptx_lunr_docs = [
   "id": "IN1-3-3",
   "level": "2",
   "url": "IN1.html#IN1-3-3",
-  "type": "Remark",
+  "type": "Activity",
   "number": "4.1.2",
   "title": "",
-  "body": "For some functions which have known geometric shapes (like pieces of lines or circles) we can already compute these area exactly and we will do so in this section. But for most functions we do not know quite yet how to compute these areas. In the next section, we will see that because we can compute the areas of rectangles quite easily, we can always try to approximate a shape with rectangles, even if this could be a very coarse approximation. "
+  "body": " Consider the linear function . Sketch a graph of this function. Consider the area between the -axis and the function on the interval . What is ?   1  2  3  4   "
 },
 {
   "id": "IN1-3-4",
@@ -3706,7 +3706,7 @@ var ptx_lunr_docs = [
   "type": "Activity",
   "number": "4.1.3",
   "title": "",
-  "body": " Consider the linear function . Sketch a graph of this function. Consider the area between the -axis and the function on the interval . What is ?   1  2  3  4   "
+  "body": " Consider the linear function . What is ?   1  2  3  4   "
 },
 {
   "id": "IN1-3-5",
@@ -3715,7 +3715,7 @@ var ptx_lunr_docs = [
   "type": "Activity",
   "number": "4.1.4",
   "title": "",
-  "body": " Consider the linear function . What is ?   1  2  3  4   "
+  "body": " Consider the linear function . Notice that on the interval , the shape formed between the graph and the -axis is a trapezoid. What is ?   1  2  3  4   "
 },
 {
   "id": "IN1-3-6",
@@ -3724,16 +3724,16 @@ var ptx_lunr_docs = [
   "type": "Activity",
   "number": "4.1.5",
   "title": "",
-  "body": " Consider the linear function . Notice that on the interval , the shape formed between the graph and the -axis is a trapezoid. What is ?   1  2  3  4   "
+  "body": " Consider the function . Notice that on the domain , the shape formed between the graph and the -axis is a semicircle. What is ?        "
 },
 {
   "id": "IN1-3-7",
   "level": "2",
   "url": "IN1.html#IN1-3-7",
-  "type": "Activity",
+  "type": "Remark",
   "number": "4.1.6",
   "title": "",
-  "body": " Consider the function . Notice that on the domain , the shape formed between the graph and the -axis is a semicircle. What is ?        "
+  "body": " As we have seen, when we are working with the graph of a function that corresponds to a geometric shape we are familiar with, we can compute the area exactly. In the next section, we will see how to use this knowledge to approximate and ultimately calculate the area underneath more complicated graphs.  "
 },
 {
   "id": "IN1-3-8",
@@ -3742,7 +3742,7 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "4.1.7",
   "title": "",
-  "body": " If a function on , then we define the integral between and to be   So the definite integral for a negative function is the \"negative\" of the area between the graph and the -axis.  "
+  "body": " If a function on , then we define the integral between and to be   So the definite integral for a negative function is the \"negative\" of the area between the graph and the -axis.  More broadly, if is a function that is sometimes positive and sometimes negative on , the definite integral is the signed area between the graph of and the -axis. This is equal to the difference of the areas between the graph of and the axis that lie above and below.  "
 },
 {
   "id": "IN1-3-9",
@@ -3760,14 +3760,32 @@ var ptx_lunr_docs = [
   "type": "Activity",
   "number": "4.1.9",
   "title": "",
-  "body": "  The graph of and the areas are given below.      Find  Find  Find  Suppose that gives the velocity in fps at time (in seconds) of a particle moving in the vertical direction. A positive velocity indicates that the particle is moving up, a negative velocity indicates that the particle is moving down. If the particle started at a height of 3ft, at what height would it been after 3 seconds? After 6 seconds? After 10 seconds? At what time does the particle reach the highest point in this time interval?  "
+  "body": "  The follow graph describes the slope (in ft\/mi) of the terrain of a 5-mile trail race in the mountains as a function of distance (miles) ran.      Based on this slope graph, draw a sketch of the elevation-profile of the trail race.  Which of the following definite integrals best represents the amount of elevation gained during the race?                       Which of the following definite integrals best represents the amount of elevation lost during the race?                       Assuming the start line is at point ft above sea-level, at what elevation is the finish line?  "
+},
+{
+  "id": "IN1-3-11",
+  "level": "2",
+  "url": "IN1.html#IN1-3-11",
+  "type": "Activity",
+  "number": "4.1.10",
+  "title": "",
+  "body": "  The follow graph describes the slope (in ft\/mi) of the terrain of a 5-mile trail race in the mountains as a function of distance (miles) ran.      Based on this slope graph, draw a sketch of the elevation-profile of the trail race.  Assuming the start line is at point ft above sea-level, at what elevation is the finish line?  "
+},
+{
+  "id": "IN1-3-12",
+  "level": "2",
+  "url": "IN1.html#IN1-3-12",
+  "type": "Remark",
+  "number": "4.1.11",
+  "title": "",
+  "body": " The previous activities illustrate that, in the case when is describing the instantaneous change of some quantity, then the definite integral describes the net change of this quantity over the interval .  "
 },
 {
   "id": "IN1-4-2",
   "level": "2",
   "url": "IN1.html#IN1-4-2",
   "type": "Figure",
-  "number": "84",
+  "number": "85",
   "title": "",
   "body": "  Video for IN1  "
 },
@@ -3839,7 +3857,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "IN2.html#fig-riemann-sum-generic",
   "type": "Figure",
-  "number": "88",
+  "number": "89",
   "title": "",
   "body": " A generic Riemann sum.     "
 },
@@ -3893,7 +3911,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "IN2.html#IN2-4-2",
   "type": "Figure",
-  "number": "89",
+  "number": "90",
   "title": "",
   "body": "  Video for IN2  "
 },
@@ -3992,7 +4010,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "IN3.html#IN3-4-2",
   "type": "Figure",
-  "number": "91",
+  "number": "92",
   "title": "",
   "body": "  Video for IN3  "
 },
@@ -4091,7 +4109,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "IN4.html#IN4-4-2",
   "type": "Figure",
-  "number": "92",
+  "number": "93",
   "title": "",
   "body": "  Video for IN4  "
 },
@@ -4235,7 +4253,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "IN5.html#IN5-4-2",
   "type": "Figure",
-  "number": "102",
+  "number": "103",
   "title": "",
   "body": "  Video for IN5  "
 },
@@ -4343,7 +4361,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "IN6.html#IN6-4-2",
   "type": "Figure",
-  "number": "103",
+  "number": "104",
   "title": "",
   "body": "  Video for IN6  "
 },
@@ -4415,7 +4433,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "IN7.html#IN7-4-2",
   "type": "Figure",
-  "number": "106",
+  "number": "107",
   "title": "",
   "body": "  Video for IN7  "
 },
@@ -4505,7 +4523,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "IN8.html#IN8-4-2",
   "type": "Figure",
-  "number": "108",
+  "number": "109",
   "title": "",
   "body": "  Video for IN8  "
 },
@@ -4712,7 +4730,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "TI1.html#TI1-5-2",
   "type": "Figure",
-  "number": "109",
+  "number": "110",
   "title": "",
   "body": "  Video: Evaluate various integrals via the substitution method  "
 },
@@ -4919,7 +4937,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "TI2.html#TI2-5-2",
   "type": "Figure",
-  "number": "110",
+  "number": "111",
   "title": "",
   "body": "    Video: Compute integrals using integration by parts  "
 },
@@ -5063,7 +5081,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "TI3.html#TI3-4-2",
   "type": "Figure",
-  "number": "111",
+  "number": "112",
   "title": "",
   "body": "    Video: Compute integrals involving products of trigonometric functions  "
 },
@@ -5180,7 +5198,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "TI4.html#TI4-4-2",
   "type": "Figure",
-  "number": "112",
+  "number": "113",
   "title": "",
   "body": "    Video: Use trigonometric substitution to compute indefinite integrals  "
 },
@@ -5297,7 +5315,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "TI5.html#TI5-4-2",
   "type": "Figure",
-  "number": "113",
+  "number": "114",
   "title": "",
   "body": "    Video: I can integrate functions using a table of integrals  "
 },
@@ -5513,7 +5531,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "TI6.html#TI6-4-2",
   "type": "Figure",
-  "number": "114",
+  "number": "115",
   "title": "",
   "body": "    Video: I can integrate functions using the method of partial fractions  "
 },
@@ -5594,7 +5612,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "TI7.html#TI7-4-2",
   "type": "Figure",
-  "number": "115",
+  "number": "116",
   "title": "",
   "body": "    Video: I can select appropriate strategies for integration  "
 },
@@ -5846,7 +5864,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "TI8.html#TI8-4-2",
   "type": "Figure",
-  "number": "120",
+  "number": "121",
   "title": "",
   "body": "    Video: I can compute improper integrals,  "
 },
@@ -5855,7 +5873,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "TI8.html#TI8-4-3",
   "type": "Figure",
-  "number": "121",
+  "number": "122",
   "title": "",
   "body": "    Video: I can compute improper integrals,  "
 },
@@ -5963,7 +5981,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "AI1.html#AI1-4-2",
   "type": "Figure",
-  "number": "123",
+  "number": "124",
   "title": "",
   "body": "    Video: Compute the average value of a function on an interval  "
 },
@@ -6035,7 +6053,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "AI2.html#AI2-4-2",
   "type": "Figure",
-  "number": "128",
+  "number": "129",
   "title": "",
   "body": "    Video: Estimate the arclength of a curve with Riemann sums and find an integral which computes the arclength  "
 },
@@ -6125,7 +6143,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "AI3.html#AI3-4-2",
   "type": "Figure",
-  "number": "129",
+  "number": "130",
   "title": "",
   "body": "    Video: Compute volumes of solids of revolution, washer -axis  "
 },
@@ -6134,7 +6152,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "AI3.html#AI3-4-3",
   "type": "Figure",
-  "number": "130",
+  "number": "131",
   "title": "",
   "body": "    Video: Compute volumes of solids of revolution, shell -axis  "
 },
@@ -6143,7 +6161,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "AI3.html#AI3-4-4",
   "type": "Figure",
-  "number": "131",
+  "number": "132",
   "title": "",
   "body": "    Video: Compute volumes of solids of revolution, washer -axis  "
 },
@@ -6152,7 +6170,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "AI3.html#AI3-4-5",
   "type": "Figure",
-  "number": "132",
+  "number": "133",
   "title": "",
   "body": "    Video: Compute volumes of solids of revolution, shell -axis  "
 },
@@ -6224,7 +6242,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "AI4.html#AI4-4-2",
   "type": "Figure",
-  "number": "139",
+  "number": "140",
   "title": "",
   "body": "    Video: Compute surface areas of surfaces of revolution  "
 },
@@ -6431,7 +6449,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "AI5.html#AI5-4-2",
   "type": "Figure",
-  "number": "156",
+  "number": "157",
   "title": "",
   "body": "    Video: Set up integrals to solve problems involving density, mass, and center of mass  "
 },
@@ -6602,7 +6620,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "AI6.html#AI6-4-2",
   "type": "Figure",
-  "number": "162",
+  "number": "163",
   "title": "",
   "body": "    Video: Set up integrals to solve problems involving work, force, and\/or pressure  "
 },
@@ -6656,7 +6674,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "AI7.html#AI7-4-2",
   "type": "Figure",
-  "number": "164",
+  "number": "165",
   "title": "",
   "body": "    Video: Set up integrals to solve problems involving work, force, and\/or pressure  "
 },
@@ -6755,7 +6773,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "CO1.html#CO1-4-2",
   "type": "Figure",
-  "number": "168",
+  "number": "169",
   "title": "",
   "body": "  Video for CO1  "
 },
@@ -6818,7 +6836,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "CO2.html#CO2-4-2",
   "type": "Figure",
-  "number": "169",
+  "number": "170",
   "title": "",
   "body": "  Video for CO2  "
 },
@@ -6926,7 +6944,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "CO3.html#CO3-4-2",
   "type": "Figure",
-  "number": "172",
+  "number": "173",
   "title": "",
   "body": "  Video for CO3  "
 },
@@ -6962,7 +6980,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "CO4.html#CO4-3-3",
   "type": "Figure",
-  "number": "173",
+  "number": "174",
   "title": "",
   "body": " A point in the polar coordinate system.   A point in the polar coordinate system.    "
 },
@@ -6971,7 +6989,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "CO4.html#CO4-3-4",
   "type": "Figure",
-  "number": "174",
+  "number": "175",
   "title": "",
   "body": " The polar grid.   The polar grid    "
 },
@@ -7043,7 +7061,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "CO4.html#CO4-4-2",
   "type": "Figure",
-  "number": "175",
+  "number": "176",
   "title": "",
   "body": "  Video for CO4  "
 },
@@ -7079,7 +7097,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "CO5.html#CO5-4-2",
   "type": "Figure",
-  "number": "176",
+  "number": "177",
   "title": "",
   "body": "  Video for CO5  "
 },
@@ -7115,7 +7133,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "CO6.html#CO6-3-3",
   "type": "Figure",
-  "number": "177",
+  "number": "178",
   "title": "",
   "body": " Finding the polar area differential   Illustration of polar area differential.    "
 },
@@ -7133,7 +7151,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "CO6.html#CO6-4-2",
   "type": "Figure",
-  "number": "178",
+  "number": "179",
   "title": "",
   "body": "  Video for CO6  "
 },
@@ -7322,7 +7340,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "SQ1.html#SQ1-4-2",
   "type": "Figure",
-  "number": "179",
+  "number": "180",
   "title": "",
   "body": "    Video: Define and use explicit and recursive formulas for sequences  "
 },
@@ -7493,7 +7511,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "SQ2.html#SQ2-4-2",
   "type": "Figure",
-  "number": "180",
+  "number": "181",
   "title": "",
   "body": "    Video: Determine if a sequence is convergent, divergent, monotonic, or bounded, and compute limits of convergent sequences  "
 },
@@ -7727,7 +7745,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "SQ3.html#SQ3-4-2",
   "type": "Figure",
-  "number": "181",
+  "number": "182",
   "title": "",
   "body": "    Video: Compute the first few terms of a telescoping or geometric partial sum sequence, and find a closed form for this sequence, and compute its limit.  "
 },
@@ -7808,7 +7826,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "SQ4.html#SQ4-4-2",
   "type": "Figure",
-  "number": "182",
+  "number": "183",
   "title": "",
   "body": "    Video: Determine if a geometric series converges, and if so, the value it converges to.  "
 },
@@ -8015,7 +8033,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "SQ5.html#SQ5-4-2",
   "type": "Figure",
-  "number": "183",
+  "number": "184",
   "title": "",
   "body": "    Video: Use the divergence, alternating series, and integral tests to determine if a series converges or diverges  "
 },
@@ -8186,7 +8204,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "SQ6.html#SQ6-4-2",
   "type": "Figure",
-  "number": "186",
+  "number": "187",
   "title": "",
   "body": "    Video: Use the direct comparison and limit comparison tests to determine if a series converges or diverges  "
 },
@@ -8330,7 +8348,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "SQ7.html#SQ7-4-2",
   "type": "Figure",
-  "number": "187",
+  "number": "188",
   "title": "",
   "body": "    Video: Use the ratio and root tests to determine if a series converges or diverges  "
 },
@@ -8456,7 +8474,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "SQ8.html#SQ8-4-2",
   "type": "Figure",
-  "number": "188",
+  "number": "189",
   "title": "",
   "body": "    Video: Determine if a series converges absolutely or conditionally  "
 },
@@ -8654,7 +8672,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "SQ9.html#SQ9-4-2",
   "type": "Figure",
-  "number": "189",
+  "number": "190",
   "title": "",
   "body": "    Video: Identify appropriate convergence tests for various series  "
 },
@@ -8735,7 +8753,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "PS1.html#PS1-4-2",
   "type": "Figure",
-  "number": "191",
+  "number": "192",
   "title": "",
   "body": "    Video: Approximate functions defined as power series  "
 },
@@ -8843,7 +8861,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "PS2.html#PS2-4-2",
   "type": "Figure",
-  "number": "192",
+  "number": "193",
   "title": "",
   "body": "    Video: Determine the interval of convergence for a given power series  "
 },
@@ -9059,7 +9077,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "PS3.html#PS3-4-2",
   "type": "Figure",
-  "number": "193",
+  "number": "194",
   "title": "",
   "body": "    Video: Compute power series by manipulating known exponential\/trigonometric\/binomial power series  "
 },
@@ -9194,7 +9212,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "PS4.html#PS4-4-2",
   "type": "Figure",
-  "number": "194",
+  "number": "195",
   "title": "",
   "body": "    Video: Determine a Taylor or Maclaurin series for a function  "
 },
@@ -9599,7 +9617,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-0190-capstone-problem-set.html#sec-0190-capstone-problem-set-7",
   "type": "Figure",
-  "number": "199",
+  "number": "200",
   "title": "",
   "body": "  (for accessibility)   Manchego hopes you find his level of relaxation over Winter Break.  "
 },
