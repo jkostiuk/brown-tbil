@@ -157,7 +157,7 @@
             <statement>
                 <p>
                     Given that we cannot calculate the arc-length directly, an approximation will have to do. 
-                    Obtain an approximation of the arc-length by cutting the interval <m>[0,1]</m> into <m>8</m> equal segments and then estimating the arc-length using polygonal line segments (as we did in AI2). 
+                    Obtain an approximation of the arc-length by cutting the interval <m>[0,1]</m> into <m>4</m> equal segments and then estimating the arc-length using polygonal line segments (as we did in AI2). 
                     Complete the following table and use it to compute an approximation of the total length. 
                     You are very welcome (and encouraged) to use calculators; round your answers to 5 decimal places when appropriate.
                     <tabular>
