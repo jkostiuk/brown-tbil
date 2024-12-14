@@ -138,7 +138,7 @@
             The purpose of this structured exploration is for you to consider two different ways of approximating a quantity that is difficult to calculuate exactly. 
            </p>
            <p>
-            Consider the graph of the function <m>y=f(x)=3+\frac{t^3}{3}</m> where <m>0\leq x\leq 1</m>. 
+            Consider the graph of the function <m>y=f(x)=3+\frac{x^3}{3}</m> where <m>0\leq x\leq 1</m>. 
            </p>
         </introduction>
         <task>
