@@ -8,7 +8,7 @@
 <html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>TBIL-LA Homogeneous Linear Systems (EV7)</title>
+<title>TBIL-LA Counting Solutions for Linear Systems (LE3)</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
@@ -760,7 +760,7 @@ sagecell.makeSagecell({
 <ol id="searchresults" class="searchresults"></ol>
 </div>
 </div>
-<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="EV6.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="EV.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="AT.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\markedPivot}[1]{\boxed{#1}}
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="LE2.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="LE.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="LE4.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\markedPivot}[1]{\boxed{#1}}
 \newcommand{\IR}{\mathbb{R}}
 \newcommand{\IC}{\mathbb{C}}
 \renewcommand{\P}{\mathcal{P}}
@@ -839,9 +839,9 @@ sagecell.makeSagecell({
 <li class="toc-item toc-preface"><div class="toc-title-box"><a href="video-resources.html" class="internal"><span class="title">Video Resources</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-chapter">
+<li class="toc-item toc-chapter contains-active">
 <div class="toc-title-box"><a href="LE.html" class="internal"><span class="codenumber">1</span> <span class="title">Systems of Linear Equations (LE)</span></a></div>
-<ul class="structural toc-item-list">
+<ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="LE1.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Linear Systems, Vector Equations, and Augmented Matrices (LE1)</span></a></div>
 <ul class="structural toc-item-list">
@@ -866,7 +866,7 @@ sagecell.makeSagecell({
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="LE2.html#LE2-9" class="internal"><span class="codenumber">1.2.7</span> <span class="title">Sample Problem and Solution</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section">
+<li class="toc-item toc-section active">
 <div class="toc-title-box"><a href="LE3.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Counting Solutions for Linear Systems (LE3)</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="LE3.html#LE3-3" class="internal"><span class="codenumber">1.3.1</span> <span class="title">Warm Up</span></a></div></li>
@@ -892,9 +892,9 @@ sagecell.makeSagecell({
 </li>
 </ul>
 </li>
-<li class="toc-item toc-chapter contains-active">
+<li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="EV.html" class="internal"><span class="codenumber">2</span> <span class="title">Euclidean Vectors (EV)</span></a></div>
-<ul class="structural toc-item-list contains-active">
+<ul class="structural toc-item-list">
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="EV1.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Linear Combinations (EV1)</span></a></div>
 <ul class="structural toc-item-list">
@@ -967,7 +967,7 @@ sagecell.makeSagecell({
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="EV6.html#EV6-9" class="internal"><span class="codenumber">2.6.7</span> <span class="title">Sample Problem and Solution</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section active">
+<li class="toc-item toc-section">
 <div class="toc-title-box"><a href="EV7.html" class="internal"><span class="codenumber">2.7</span> <span class="title">Homogeneous Linear Systems (EV7)</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="EV7.html#EV7-3" class="internal"><span class="codenumber">2.7.1</span> <span class="title">Warmup</span></a></div></li>
@@ -1202,264 +1202,313 @@ sagecell.makeSagecell({
 </ul>
 </li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="EV7"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">2.7</span><span class="space"> </span><span class="title">Homogeneous Linear Systems (EV7)</span>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="LE3"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">1.3</span><span class="space"> </span><span class="title">Counting Solutions for Linear Systems (LE3)</span>
 </h2>
-<article class="objectives goal-like" id="EV7-2"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
-<ul class="disc" id="EV7-2-1"><li id="EV7-2-1-1"><div class="para" id="EV7-2-1-1-1">Find a basis for the solution set of a homogeneous system of equations.</div></li></ul></article><section class="subsection" id="EV7-3"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.7.1</span><span class="space"> </span><span class="title">Warmup</span>
+<article class="objectives goal-like" id="LE3-2"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
+<ul class="disc" id="LE3-2-1"><li id="LE3-2-1-1"><div class="para" id="LE3-2-1-1-1">Determine the number of solutions for a system of linear equations or a vector equation.</div></li></ul></article><section class="subsection" id="LE3-3"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.3.1</span><span class="space"> </span><span class="title">Warm Up</span>
 </h3>
-<article class="remark remark-like" id="EV7-3-2"><h4 class="heading">
-<span class="type">Remark</span><span class="space"> </span><span class="codenumber">2.7.1</span><span class="period">.</span>
+<article class="activity project-like" id="LE3-3-2"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.3.1</span><span class="period">.</span>
 </h4>
-<div class="para logical" id="EV7-3-2-1">
-<div class="para">Recall from <a href="EV3.html" class="internal" title="Section 2.3: Subspaces (EV3)">Section 2.3</a> that a <dfn class="terminology">homogeneous</dfn> system of linear equations is one of the form:</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/EV3.html" id="EV7-3-2-1-4">
-\begin{alignat*}{5}
-a_{11}x_1 &amp;\,+\,&amp; a_{12}x_2 &amp;\,+\,&amp; \dots  &amp;\,+\,&amp; a_{1n}x_n &amp;\,=\,&amp; 0 \\
-a_{21}x_1 &amp;\,+\,&amp; a_{22}x_2 &amp;\,+\,&amp; \dots  &amp;\,+\,&amp; a_{2n}x_n &amp;\,=\,&amp; 0 \\
-\vdots&amp;  &amp;\vdots&amp;   &amp;&amp;  &amp;\vdots&amp;&amp;\vdots\\
-a_{m1}x_1 &amp;\,+\,&amp; a_{m2}x_2 &amp;\,+\,&amp; \dots  &amp;\,+\,&amp; a_{mn}x_n &amp;\,=\,&amp; 0
-\end{alignat*}
-</div>
-</div> <div class="para logical" id="EV7-3-2-2">
-<div class="para">This system is equivalent to the vector equation:</div>
-<div class="displaymath process-math">
+<article class="task exercise-like" id="LE3-3-2-1"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="LE3-3-2-1-1-1">Without referring to your Activity Book, which of the four criteria for a matrix to be in Reduced Row Echelon Form (RREF) can you recall?</div></article><article class="task exercise-like" id="LE3-3-2-2"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="LE3-3-2-2-1-1">Which, if any, of the following matrices are in RREF? You may refer to the Activity Book now for criteria that you may have forgotten.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0.166666666666667%;margin-right:0.166666666666667%;">
+<div class="sbspanel top" style="width:33.1103678929766%;"><div class="para logical" id="LE3-3-2-2-1-2-1"><div class="displaymath process-math">
 \begin{equation*}
-x_1 \vec{v}_1 + \cdots+x_n \vec{v}_n = \vec{0}
+P=\left[\begin{array}{ccc|c} 1 &amp; 0 &amp; \frac{2}{3} &amp; -3 \\ 0 &amp; 3 &amp; 3 &amp; -\frac{3}{5} \\ 0 &amp; 0 &amp; 0 &amp; 0 \end{array}\right]
 \end{equation*}
-</div>
-<div class="para">and the augmented matrix:</div>
-<div class="displaymath process-math">
+</div></div></div>
+<div class="sbspanel top" style="width:33.1103678929766%;"><div class="para logical" id="LE3-3-2-2-1-2-2"><div class="displaymath process-math">
 \begin{equation*}
-\left[\begin{array}{cccc|c}
-a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n} &amp; 0\\
-a_{21} &amp; a_{22} &amp; \cdots &amp; a_{2n} &amp; 0\\
-\vdots &amp; \vdots &amp; \ddots &amp; \vdots &amp; \vdots\\
-a_{m1} &amp; a_{m2} &amp; \cdots &amp; a_{mn} &amp; 0
-\end{array}\right].
+Q=\left[\begin{array}{ccc|c} 0 &amp; 1 &amp; 0 &amp; 7 \\ 1 &amp; 0 &amp; 0 &amp; 4 \\ 0 &amp; 0 &amp; 0 &amp; 0 \end{array}\right]
 \end{equation*}
-</div>
-</div></article><article class="activity project-like" id="EV7-3-3"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.7.2</span><span class="period">.</span>
-</h4>
-<div class="introduction" id="EV7-3-3-1"><div class="para logical" id="EV7-3-3-1-1">
-<div class="para">In <a href="EV3.html" class="internal" title="Section 2.3: Subspaces (EV3)">Section 2.3</a>, we observed that if</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/EV3.html">
+</div></div></div>
+<div class="sbspanel top" style="width:33.1103678929766%;"><div class="para logical" id="LE3-3-2-2-1-2-3"><div class="displaymath process-math">
 \begin{equation*}
-x_1 \vec{v}_1 + \cdots+x_n \vec{v}_n = \vec{0}
+R=\left[\begin{array}{ccc|c} 1 &amp; 0 &amp; \frac{1}{2} &amp; 4 \\ 0 &amp; 1 &amp; 0 &amp; 7 \\ 0 &amp; 0 &amp; 1 &amp; 0 \end{array}\right]
 \end{equation*}
-</div>
-<div class="para">is a homogeneous vector equation, then:</div>
-<ul class="disc" id="EV7-3-3-1-1-3">
-<li id="EV7-3-3-1-1-3-1"><div class="para" id="EV7-3-3-1-1-3-1-1">The zero vector <span class="process-math">\(\vec{0}\)</span> is a solution;</div></li>
-<li id="EV7-3-3-1-1-3-2"><div class="para" id="EV7-3-3-1-1-3-2-1">The sum of any two solutions is again a solution;</div></li>
-<li id="EV7-3-3-1-1-3-3"><div class="para" id="EV7-3-3-1-1-3-3-1">Multiplying a solution by a scalar produces another solution.</div></li>
-</ul>
-</div></div> <div class="para logical" id="EV7-3-3-2">
-<div class="para">Based on this recollection, which of the following best describes the solution set to the homogeneous equation?</div>
-<ol class="upper-alpha" id="EV7-3-3-2-1">
-<li id="EV7-3-3-2-1-1"><div class="para" id="EV7-3-3-2-1-1-1">A basis for <span class="process-math">\(\IR^n\text{.}\)</span>
-</div></li>
-<li id="EV7-3-3-2-1-2"><div class="para" id="EV7-3-3-2-1-2-1">A subspace of <span class="process-math">\(\IR^n\text{.}\)</span>
-</div></li>
-<li id="EV7-3-3-2-1-3"><div class="para" id="EV7-3-3-2-1-3-1">All of <span class="process-math">\(\IR^n\text{.}\)</span>
-</div></li>
-<li id="EV7-3-3-2-1-4"><div class="para" id="EV7-3-3-2-1-4-1">The empty set.</div></li>
-</ol>
-</div></article></section><section class="subsection" id="EV7-4"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.7.2</span><span class="space"> </span><span class="title">Class Activities</span>
+</div></div></div>
+</div></div></article></article></section><section class="subsection" id="LE3-4"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.3.2</span><span class="space"> </span><span class="title">Class Activities</span>
 </h3>
-<article class="activity project-like" id="EV7-4-2"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.7.3</span><span class="period">.</span>
+<article class="remark remark-like" id="LE3-4-2"><h4 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">1.3.2</span><span class="period">.</span>
 </h4>
-<div class="introduction" id="EV7-4-2-1"><div class="para logical" id="EV7-4-2-1-1">
-<div class="para">Consider the homogeneous system of equations</div>
-<div class="displaymath process-math" id="EV7-4-2-1-1-1">
-\begin{alignat*}{5}
-x_1&amp;\,+\,&amp;2x_2&amp;\,\,&amp; &amp;\,+\,&amp; x_4 &amp;=&amp; 0\\
-2x_1&amp;\,+\,&amp;4x_2&amp;\,-\,&amp;x_3 &amp;\,-\,&amp;2 x_4 &amp;=&amp; 0\\
-3x_1&amp;\,+\,&amp;6x_2&amp;\,-\,&amp;x_3 &amp;\,-\,&amp; x_4 &amp;=&amp; 0
+<div class="para" id="LE3-4-2-1-1">We will frequently need to know the reduced row echelon form of matrices during the remainder of this course, so unless you’re told otherwise, feel free to use technology (see <a href="LE2.html#LE2-rref-tech" class="internal" title="Activity 1.2.17">Activity 1.2.17</a>) to compute RREFs efficiently.</div></article><article class="activity project-like" id="LE3-4-3"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.3.3</span><span class="period">.</span>
+</h4>
+<div class="introduction" id="LE3-4-3-1">
+<div class="para" id="LE3-4-3-1-1">Consider the following system of equations.</div>
+<div class="displaymath process-math" id="LE3-4-3-1-2">
+\begin{alignat*}{4}
+3x_1 &amp;\,-\,&amp; 2x_2 &amp;\,+\,&amp; 13x_3 &amp;\,=\,&amp; 6\\
+2x_1 &amp;\,-\,&amp; 2x_2 &amp;\,+\,&amp; 10x_3 &amp;\,=\,&amp; 2\\
+-x_1 &amp;\,+\,&amp; 3x_2 &amp;\,-\,&amp;  6x_3 &amp;\,=\,&amp; 11\\
+4x_1 &amp;\,+\,&amp; x_2 &amp;\,+\,&amp;  x_3 &amp;\,=\,&amp; 1\text{.}
 \end{alignat*}
 </div>
-</div></div>
-<article class="task exercise-like" id="EV7-4-2-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="EV7-4-2-2-1">Find its solution set (a subspace of <span class="process-math">\(\IR^4\)</span>).</div></article><article class="task exercise-like" id="EV7-4-2-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para logical" id="EV7-4-2-3-1">
-<div class="para">Rewrite this solution space in the form</div>
+</div>
+<article class="task exercise-like" id="LE3-4-3-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para logical" id="LE3-4-3-2-1">
+<div class="para">Convert this to an augmented matrix and use technology to compute its reduced row echelon form:</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\setBuilder{ a \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\end{array}\right] + b \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown \end{array}\right] }{a,b \in \IR}.
+\RREF
+\left[\begin{array}{ccc|c}
+\unknown&amp;\unknown&amp;\unknown&amp;\unknown\\ 
+\unknown&amp;\unknown&amp;\unknown&amp;\unknown\\ 
+\unknown&amp;\unknown&amp;\unknown&amp;\unknown\\ 
+\unknown&amp;\unknown&amp;\unknown&amp;\unknown\\ 
+\end{array}\right]
+=
+\left[\begin{array}{ccc|c}
+\unknown&amp;\unknown&amp;\unknown&amp;\unknown\\ 
+\unknown&amp;\unknown&amp;\unknown&amp;\unknown\\ 
+\unknown&amp;\unknown&amp;\unknown&amp;\unknown\\ 
+\unknown&amp;\unknown&amp;\unknown&amp;\unknown\\ 
+\end{array}\right]
 \end{equation*}
 </div>
-</div></article><article class="task exercise-like" id="EV7-4-2-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para logical" id="EV7-4-2-4-1-1">
-<div class="para">Which of these choices best describes the set of two vectors <span class="process-math">\(\left\{\left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\end{array}\right], \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown \end{array}\right]\right\}\)</span> used in this solution space?</div>
-<ol class="upper-alpha" id="EV7-4-2-4-1-1-2">
-<li id="EV7-4-2-4-1-1-2-1"><div class="para" id="EV7-4-2-4-1-1-2-1-1">The set is linearly dependent.</div></li>
-<li id="EV7-4-2-4-1-1-2-2"><div class="para" id="EV7-4-2-4-1-1-2-2-1">The set is linearly independent.</div></li>
-<li id="EV7-4-2-4-1-1-2-3"><div class="para" id="EV7-4-2-4-1-1-2-3-1">The set spans the solution space.</div></li>
-<li id="EV7-4-2-4-1-1-2-4"><div class="para" id="EV7-4-2-4-1-1-2-4-1">The set is a basis of the solution space.</div></li>
-</ol>
-</div>
-<div class="solutions"><details id="EV7-4-2-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="EV7-4-2-4-2-1">D.</div></div></details></div></article></article><div id="EV7-4-3" class="ptx-sagecell sagecell-octave"><script type="text/x-sage"></script></div>
-<article class="activity project-like" id="EV7-4-4"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.7.4</span><span class="period">.</span>
-</h4>
-<div class="introduction" id="EV7-4-4-1"><div class="para logical" id="EV7-4-4-1-1">
-<div class="para">Consider the homogeneous system of equations</div>
-<div class="displaymath process-math" id="EV7-4-4-1-1-1">
-\begin{alignat*}{8}
-2x_1&amp;\,+\,&amp;4x_2&amp;\,+\,&amp;2x_3 &amp;\,-\,&amp;3 x_4 &amp;\,+\,&amp;31x_5&amp;\,+\,&amp;2x_6&amp;\,-\,&amp;16x_7&amp;=&amp; 0\\
--1x_1&amp;\,-\,&amp;2x_2&amp;\,+\,&amp;4x_3 &amp;\,-\,&amp;x_4 &amp;\,+\,&amp;2x_5&amp;\,+\,&amp;9x_6&amp;\,+\,&amp;3x_7&amp;=&amp; 0\\
-x_1&amp;\,+\,&amp;2x_2&amp;\,+\,&amp;x_3 &amp;\,+\,&amp; x_4 &amp;\,+\,&amp;3x_5&amp;\,+\,&amp;6x_7&amp;\,+\,&amp;7x_7&amp;=&amp; 0
-\end{alignat*}
-</div>
-</div></div>
-<article class="task exercise-like" id="EV7-4-4-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="EV7-4-4-2-1">Find its solution set (a subspace of <span class="process-math">\(\IR^7\)</span>).</div></article><article class="task exercise-like" id="EV7-4-4-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para logical" id="EV7-4-4-3-1">
-<div class="para">Rewrite this solution space in the form</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\setBuilder{ a \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right] + b \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right]+c \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right]+d \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right] }{a,b,c,d \in \IR}.
-\end{equation*}
-</div>
-</div></article><article class="task exercise-like" id="EV7-4-4-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para logical" id="EV7-4-4-4-1-1">
-<div class="para">Which of these choices best describes the set of two vectors <span class="process-math">\(\left\{\left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right], \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right],\left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right],\left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right]\right\}\)</span> used in this solution space?</div>
-<ol class="upper-alpha" id="EV7-4-4-4-1-1-2">
-<li id="EV7-4-4-4-1-1-2-1"><div class="para" id="EV7-4-4-4-1-1-2-1-1">The set is linearly dependent.</div></li>
-<li id="EV7-4-4-4-1-1-2-2"><div class="para" id="EV7-4-4-4-1-1-2-2-1">The set is linearly independent.</div></li>
-<li id="EV7-4-4-4-1-1-2-3"><div class="para" id="EV7-4-4-4-1-1-2-3-1">The set spans the solution space.</div></li>
-<li id="EV7-4-4-4-1-1-2-4"><div class="para" id="EV7-4-4-4-1-1-2-4-1">The set is a basis for the solution space.</div></li>
-</ol>
-</div>
-<div class="solutions"><details id="EV7-4-4-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="EV7-4-4-4-2-1">D.</div></div></details></div></article></article><div id="EV7-4-5" class="ptx-sagecell sagecell-octave"><script type="text/x-sage">
+</div></article><article class="task exercise-like" id="LE3-4-3-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="LE3-4-3-3-1">Use the <span class="process-math">\(\RREF\)</span> matrix to write a linear system equivalent to the original system.</div></article><article class="task exercise-like" id="LE3-4-3-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="LE3-4-3-4-1">How many solutions must this system have?</div>
+<ol class="upper-alpha cols3" id="LE3-4-3-4-2">
+<li id="LE3-4-3-4-2-1"><div class="para" id="LE3-4-3-4-2-1-1">Zero</div></li>
+<li id="LE3-4-3-4-2-2"><div class="para" id="LE3-4-3-4-2-2-1">Only one</div></li>
+<li id="LE3-4-3-4-2-3"><div class="para" id="LE3-4-3-4-2-3-1">Infinitely-many</div></li>
+</ol></article></article><div id="LE3-4-4" class="ptx-sagecell sagecell-octave"><script type="text/x-sage">A = [ 3 -2 13  6
+      2 -2 10  2
+     -1  3 -6 11
+      4  1  1  1 ]
+
+rref(A)
 </script></div>
-<article class="fact theorem-like" id="fact-solution-space-basis"><h4 class="heading">
-<span class="type">Fact</span><span class="space"> </span><span class="codenumber">2.7.5</span><span class="period">.</span>
+<article class="activity project-like" id="LE3-4-5"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.3.4</span><span class="period">.</span>
 </h4>
-<div class="para" id="fact-solution-space-basis-1-1">The coefficients of the free variables in the solution space of a linear system always yield linearly independent vectors that span the solution space.</div> <div class="para logical" id="fact-solution-space-basis-1-2">
-<div class="para">Thus if</div>
+<div class="introduction" id="LE3-4-5-1">
+<div class="para" id="LE3-4-5-1-1">Consider the vector equation</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\setBuilder{
-a \left[\begin{array}{c} -2 \\ 1 \\ 0 \\ 0\\0\\0\\0\end{array}\right] +
-b \left[\begin{array}{c} -7 \\ 0 \\ -1 \\ 5\\1\\0\\0 \end{array}\right]+
-c \left[\begin{array}{c} -1 \\ 0 \\ -3 \\ -2\\0\\1\\0 \end{array}\right]+
-d \left[\begin{array}{c} 1 \\ 0 \\ -2 \\ -6\\0\\0\\1 \end{array}\right]
-}{
-a,b,c,d \in \IR
-} = \vspan\left\{ \left[\begin{array}{c} -2 \\ 1 \\ 0 \\ 0\\0\\0\\0\end{array}\right], 
-\left[\begin{array}{c} -7 \\ 0 \\ -1 \\ 5\\1\\0\\0 \end{array}\right],
-\left[\begin{array}{c} -1 \\ 0 \\ -3 \\ -2\\0\\1\\0 \end{array}\right],
-\left[\begin{array}{c} 1 \\ 0 \\ -2 \\ -6\\0\\0\\1 \end{array}\right] \right\}
+x_1 \left[\begin{array}{c} 3 \\ 2\\ -1 \\ 3 \end{array}\right]
++x_2 \left[\begin{array}{c}-2 \\ -2 \\ 0 \\ 7 \end{array}\right]
++x_3\left[\begin{array}{c} 13 \\ 10 \\ -3 \\ 0 \end{array}\right]
+=\left[\begin{array}{c} 6 \\ 2 \\ 1 \\ -2 \end{array}\right]
 \end{equation*}
 </div>
-<div class="para">is the solution space for a homogeneous system, then</div>
+</div>
+<article class="task exercise-like" id="LE3-4-5-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="LE3-4-5-2-1">Convert this to an augmented matrix and use technology to compute its reduced row echelon form:</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\setList{
-\left[\begin{array}{c} -2 \\ \textcolor{blue}{1} \\ 0 \\ 0\\\textcolor{blue}{0}\\\textcolor{blue}{0}\\\textcolor{blue}{0}\end{array}\right], 
-\left[\begin{array}{c} -7 \\ \textcolor{blue}{0} \\ -1 \\ 5\\\textcolor{blue}{1}\\\textcolor{blue}{0}\\\textcolor{blue}{0} \end{array}\right],
-\left[\begin{array}{c} -1 \\ \textcolor{blue}{0} \\ -3 \\ -2\\\textcolor{blue}{0}\\\textcolor{blue}{1}\\\textcolor{blue}{0} \end{array}\right],
-\left[\begin{array}{c} 1 \\ \textcolor{blue}{0} \\ -2 \\ -6\\\textcolor{blue}{0}\\\textcolor{blue}{0}\\\textcolor{blue}{1} \end{array}\right]
-}
+\RREF
+\left[\begin{array}{ccc|c}
+\unknown&amp;\unknown&amp;\unknown&amp;\unknown\\ 
+\unknown&amp;\unknown&amp;\unknown&amp;\unknown\\ 
+\unknown&amp;\unknown&amp;\unknown&amp;\unknown\\ 
+\unknown&amp;\unknown&amp;\unknown&amp;\unknown\\ 
+\end{array}\right]
+=
+\left[\begin{array}{ccc|c}
+\unknown&amp;\unknown&amp;\unknown&amp;\unknown\\ 
+\unknown&amp;\unknown&amp;\unknown&amp;\unknown\\ 
+\unknown&amp;\unknown&amp;\unknown&amp;\unknown\\ 
+\unknown&amp;\unknown&amp;\unknown&amp;\unknown\\ 
+\end{array}\right]
 \end{equation*}
-</div>
-<div class="para">is a basis for the solution space.</div>
-</div></article><article class="activity project-like" id="EV7-4-7"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.7.6</span><span class="period">.</span>
+</div></article><article class="task exercise-like" id="LE3-4-5-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="LE3-4-5-3-1">Use the <span class="process-math">\(\RREF\)</span> matrix to write a linear system equivalent to the original system.</div></article><article class="task exercise-like" id="LE3-4-5-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="LE3-4-5-4-1">How many solutions must this system have?</div>
+<ol class="upper-alpha cols3" id="LE3-4-5-4-2">
+<li id="LE3-4-5-4-2-1"><div class="para" id="LE3-4-5-4-2-1-1">Zero</div></li>
+<li id="LE3-4-5-4-2-2"><div class="para" id="LE3-4-5-4-2-2-1">Only one</div></li>
+<li id="LE3-4-5-4-2-3"><div class="para" id="LE3-4-5-4-2-3-1">Infinitely-many</div></li>
+</ol></article></article><div id="LE3-4-6" class="ptx-sagecell sagecell-octave"><script type="text/x-sage">rref([3,-2,13,6;2,-2,10,2;-1,0,-3,1;3,7,0,-2])
+</script></div>
+<article class="activity project-like" id="LE3-4-7"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.3.5</span><span class="period">.</span>
 </h4>
-<div class="introduction" id="EV7-4-7-1"><div class="para logical" id="EV7-4-7-1-1">
-<div class="para">Consider the homogeneous system of equations</div>
-<div class="displaymath process-math" id="EV7-4-7-1-1-1">
-\begin{alignat*}{5}
-x_1&amp;\,-\,&amp;3x_2&amp;\,+\,&amp; 2x_3  &amp;=&amp; 0\\
-2x_1&amp;\,+\,&amp;6x_2&amp;\,+\,&amp;4x_3  &amp;=&amp; 0\\
-x_1&amp;\,+\,&amp;6x_2&amp;\,-\,&amp;4x_3 &amp;=&amp; 0
+<div class="para" id="LE3-4-7-1-1">What contradictory equations besides <span class="process-math">\(0=1\)</span> may be obtained from the RREF of an augmented matrix?</div> <ol class="upper-alpha" id="LE3-4-7-1-2">
+<li id="LE3-4-7-1-2-1"><div class="para" id="LE3-4-7-1-2-1-1">
+<span class="process-math">\(x=0\)</span> is an obtainable contradiction</div></li>
+<li id="LE3-4-7-1-2-2"><div class="para" id="LE3-4-7-1-2-2-1">
+<span class="process-math">\(x=y\)</span> is an obtainable contradiction</div></li>
+<li id="LE3-4-7-1-2-3"><div class="para" id="LE3-4-7-1-2-3-1">
+<span class="process-math">\(0=17\)</span> is an obtainable contradiction</div></li>
+<li id="LE3-4-7-1-2-4"><div class="para" id="LE3-4-7-1-2-4-1">
+<span class="process-math">\(0=1\)</span> is the only obtainable contradiction</div></li>
+</ol></article><article class="activity project-like" id="LE3-inf"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.3.6</span><span class="period">.</span>
+</h4>
+<div class="introduction" id="LE3-inf-1">
+<div class="para" id="LE3-inf-1-1">Consider the following linear system.</div>
+<div class="displaymath process-math" id="LE3-inf-1-2">
+\begin{alignat*}{4}
+x_1 &amp;+ 2x_2 &amp;+ 3x_3 &amp;= 1\\
+2x_1 &amp;+ 4x_2 &amp;+ 8x_3 &amp;= 0\\
+3x_1 &amp;+ 6x_2 &amp;+ 11x_3 &amp;= 1\\
+x_1 &amp;+ 2x_2 &amp;+ 5x_3 &amp;= -1
 \end{alignat*}
 </div>
-</div></div>
-<article class="task exercise-like" id="EV7-4-7-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="EV7-4-7-2-1-1">Find its solution space.</div></article><article class="task exercise-like" id="EV7-4-7-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para logical" id="EV7-4-7-3-1-1">
-<div class="para">Which of these is the best choice of basis for this solution space?</div>
-<ol class="upper-alpha cols3" id="EV7-4-7-3-1-1-1">
-<li id="EV7-4-7-3-1-1-1-1"><div class="para" id="p-derived-EV7-4-7-3-1-1-1-1"><span class="process-math">\(\displaystyle \{\}\)</span></div></li>
-<li id="EV7-4-7-3-1-1-1-2"><div class="para" id="p-derived-EV7-4-7-3-1-1-1-2"><span class="process-math">\(\displaystyle \{\vec 0\}\)</span></div></li>
-<li id="EV7-4-7-3-1-1-1-3"><div class="para" id="p-derived-EV7-4-7-3-1-1-1-3">The basis does not exist</div></li>
-</ol>
 </div>
-<div class="solutions"><details id="EV7-4-7-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="EV7-4-7-3-2-1">A.</div></div></details></div></article></article><div id="EV7-4-8" class="ptx-sagecell sagecell-octave"><script type="text/x-sage"></script></div>
-<article class="activity project-like" id="EV7-4-9"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.7.7</span><span class="period">.</span>
+<article class="task exercise-like" id="LE3-inf-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="LE3-inf-2-1">Find its corresponding augmented matrix <span class="process-math">\(A\)</span> and find <span class="process-math">\(\RREF(A)\text{.}\)</span>
+</div></article><article class="task exercise-like" id="LE3-inf-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="LE3-inf-3-1">Use the <span class="process-math">\(\RREF\)</span> matrix to write a linear system equivalent to the original system.</div></article><article class="task exercise-like" id="LE3-inf-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="LE3-inf-4-1">How many solutions must this system have?</div>
+<ol class="upper-alpha cols3" id="LE3-inf-4-2">
+<li id="LE3-inf-4-2-1"><div class="para" id="LE3-inf-4-2-1-1">Zero</div></li>
+<li id="LE3-inf-4-2-2"><div class="para" id="LE3-inf-4-2-2-1">One</div></li>
+<li id="LE3-inf-4-2-3"><div class="para" id="LE3-inf-4-2-3-1">Infinitely-many</div></li>
+</ol></article></article><div id="LE3-4-9" class="ptx-sagecell sagecell-octave"><script type="text/x-sage"></script></div>
+<article class="fact theorem-like" id="LE3-fact-scenarios"><h4 class="heading">
+<span class="type">Fact</span><span class="space"> </span><span class="codenumber">1.3.7</span><span class="period">.</span>
 </h4>
-<div class="introduction" id="EV7-4-9-1"><div class="para" id="EV7-4-9-1-1">To create a computer-animated film, an animator first models a scene as a subset of <span class="process-math">\(\mathbb R^3\text{.}\)</span> Then to transform this three-dimensional visual data for display on a two-dimensional movie screen or television set, the computer could apply a linear transformation that maps visual information at the point <span class="process-math">\((x,y,z)\in\mathbb R^3\)</span> onto the pixel located at <span class="process-math">\((x+y,y-z)\in\mathbb R^2\text{.}\)</span>
-</div></div>
-<article class="task exercise-like" id="EV7-4-9-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="EV7-4-9-2-1-1">What homogeneous linear system describes the positions <span class="process-math">\((x,y,z)\)</span> within the original scene that would be aligned with the pixel <span class="process-math">\((0,0)\)</span> on the screen?</div></article><article class="task exercise-like" id="EV7-4-9-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="EV7-4-9-3-1-1">Solve this system to describe these locations.</div></article></article><div id="EV7-4-10" class="ptx-sagecell sagecell-octave"><script type="text/x-sage"></script></div></section><section class="subsection" id="EV7-5"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.7.3</span><span class="space"> </span><span class="title">Individual Practice</span>
-</h3>
-<article class="activity project-like" id="EV7-5-2"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.7.8</span><span class="period">.</span>
-</h4>
-<div class="introduction" id="EV7-5-2-1"><div class="para logical" id="EV7-5-2-1-1">
-<div class="para">Let <span class="process-math">\(S=\setList{
-\left[\begin{array}{c} -2 \\ 1 \\ 0 \\ 0\end{array}\right],
-\left[\begin{array}{c} -1 \\ 0 \\ -4 \\ 1 \end{array}\right],
-\left[\begin{array}{c} 1 \\ 0 \\ -2 \\ 3 \end{array}\right]
-}\)</span> and <span class="process-math">\(A=\left[\begin{array}{ccc}
--2 &amp; -1 &amp;1\\
-1 &amp; 0 &amp;0\\
-0 &amp; -4 &amp;-2\\
-0 &amp; 1 &amp;3
-\end{array}\right];\)</span> note that</div>
+<div class="para" id="LE3-fact-scenarios-1-1">By finding <span class="process-math">\(\RREF(A)\)</span> from a linear system’s corresponding augmented matrix <span class="process-math">\(A\text{,}\)</span> we can immediately tell how many solutions the system has.</div> <ul class="disc" id="LE3-fact-scenarios-1-2">
+<li id="LE3-fact-scenarios-1-2-1"><div class="para logical" id="LE3-fact-scenarios-1-2-1-1">
+<div class="para">If the linear system given by <span class="process-math">\(\RREF(A)\)</span> includes the contradiction</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\RREF(A)=\left[\begin{array}{ccc}
-1 &amp; 0 &amp;0\\
-0 &amp; 1 &amp;0\\
-0 &amp; 0 &amp;1\\
-0 &amp; 0 &amp;0
-\end{array}\right].
+0=1\text{,}
 \end{equation*}
 </div>
-<div class="para">The following statements are all <em class="emphasis">invalid</em> for at least one reason. Determine what makes them invalid and, suggest alternative <em class="emphasis">valid</em> statements that the author may have meant instead.</div>
-</div></div>
-<article class="task exercise-like" id="EV7-5-2-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="EV7-5-2-2-1-1">The matrix <span class="process-math">\(A\)</span> is linearly independent because <span class="process-math">\(\RREF(A)\)</span> has a pivot in each column.</div></article><article class="task exercise-like" id="EV7-5-2-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="EV7-5-2-3-1-1">The matrix <span class="process-math">\(A\)</span> does not span <span class="process-math">\(\IR^4\)</span> because <span class="process-math">\(\RREF(A)\)</span> has a row of zeroes.</div></article><article class="task exercise-like" id="EV7-5-2-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para" id="EV7-5-2-4-1-1">The set of vectors <span class="process-math">\(S\)</span> spans.</div></article><article class="task exercise-like" id="EV7-5-2-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
-<div class="para" id="EV7-5-2-5-1-1">The set of vectors <span class="process-math">\(S\)</span> is a basis.</div></article></article></section><section class="subsection" id="EV7-6"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.7.4</span><span class="space"> </span><span class="title">Videos</span>
-</h3>
-<figure class="figure figure-like" id="EV7-6-2"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/TbN3lvLaNOw?&amp;modestbranding=1&amp;rel=0" id="video-EV7"></iframe></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">18<span class="period">.</span></span><span class="space"> </span>Video: Polynomial and matrix calculations</figcaption></figure></section><section class="exercises" id="EV7-7"><h3 class="heading hide-type">
-<span class="type">Exercises</span><span class="space"> </span><span class="codenumber">2.7.5</span><span class="space"> </span><span class="title">Exercises</span>
-</h3>
-<div class="para" id="EV7-7-1">Exercises available at <a class="external" href="https://tbil.org/preview/linear-algebra/exercises/#/bank/EV7/" target="_blank"><code class="code-inline tex2jax_ignore">https://tbil.org/preview/linear-algebra/exercises/#/bank/EV7/</code></a>.</div></section><section class="subsection" id="EV7-8"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.7.6</span><span class="space"> </span><span class="title">Mathematical Writing Explorations</span>
-</h3>
-<article class="exploration project-like" id="non-singular"><h4 class="heading">
-<span class="type">Exploration</span><span class="space"> </span><span class="codenumber">2.7.9</span><span class="period">.</span>
+<div class="para">that is, the <span class="process-math">\(\RREF\)</span> matrix includes the row</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\left[\begin{array}{ccc|c}0&amp;\cdots&amp;0&amp;1\end{array}\right]\text{,}
+\end{equation*}
+</div>
+<div class="para">then the system is <em class="emphasis">inconsistent</em>, which means it has <em class="emphasis">zero</em> solutions and we may write</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{Solution set }=\{\}
+\hspace{2em}\text{or}\hspace{2em}
+\text{Solution set }=\emptyset.
+\end{equation*}
+</div>
+</div></li>
+<li id="LE3-fact-scenarios-1-2-2"><div class="para logical" id="LE3-fact-scenarios-1-2-2-1">
+<div class="para">If the linear system given by <span class="process-math">\(\RREF(A)\)</span> sets each variable of the system to a single value; that is we have:</div>
+<div class="displaymath process-math" id="LE3-fact-scenarios-1-2-2-1-2">
+\begin{alignat*}{2}
+x_1 &amp;= s_1\\
+x_2 &amp;= s_2\\
+&amp;\vdots\\
+x_n &amp;= s_n
+\end{alignat*}
+</div>
+<div class="para">(with some possible extra <span class="process-math">\(0=0\)</span> equations), then the system is <em class="emphasis">consistent</em> with exactly <em class="emphasis">one</em> solution, and we may write</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{Solution }=\left[\begin{array}{c}s_1\\s_2\\\vdots\\s_n\end{array}\right]
+\hspace{2em}\text{but}\hspace{2em}
+\text{Solution set }=
+\left\{\left[\begin{array}{c}s_1\\s_2\\\vdots\\s_n\end{array}\right]\right\}.
+\end{equation*}
+</div>
+</div></li>
+<li id="LE3-fact-scenarios-1-2-3"><div class="para" id="LE3-fact-scenarios-1-2-3-1">Otherwise, the system given by the <span class="process-math">\(\RREF\)</span> matrix must <em class="emphasis">not include a <span class="process-math">\(0=1\)</span> contradiction</em> while <em class="emphasis">including at least one equation with multiple variables</em>. This means it is <em class="emphasis">consistent</em> with <em class="emphasis">infinitely-many</em> different solutions. We’ll learn how to find such solution sets in <a href="LE4.html" class="internal" title="Section 1.4: Linear Systems with Infinitely-Many Solutions (LE4)">Section 1.4</a>.</div></li>
+</ul></article><article class="activity project-like" id="LE3-4-11"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.3.8</span><span class="period">.</span>
 </h4>
-<div class="para" id="non-singular-1-1">An <span class="process-math">\(n \times n\)</span> matrix <span class="process-math">\(M\)</span> is <dfn class="terminology">non-singular</dfn> if the associated homogeneous system with coefficient matrix <span class="process-math">\(M\)</span> is consistent with one solution. Assume the matrices in the writing explorations in this section are all non-singular.</div> <ul class="disc" id="non-singular-1-2">
-<li id="non-singular-1-2-1"><div class="para" id="p-derived-non-singular-1-2-1">Prove that the reduced row echelon form of <span class="process-math">\(M\)</span> is the identity matrix.</div></li>
-<li id="non-singular-1-2-2"><div class="para" id="p-derived-non-singular-1-2-2">Prove that, for any column vector <span class="process-math">\(\vec{b} = \left[\begin{array}{c}b_1\\b_2\\ \vdots \\b_n \end{array}\right]\text{,}\)</span> the system of equations given by <span class="process-math">\(\left[\begin{array}{c|c}M &amp; \vec{b}\end{array}
-\right]\)</span> has a unique solution.</div></li>
-<li id="non-singular-1-2-3"><div class="para" id="p-derived-non-singular-1-2-3">Prove that the columns of <span class="process-math">\(M\)</span> form a basis for <span class="process-math">\(\mathbb{R}^n\text{.}\)</span>
-</div></li>
-<li id="non-singular-1-2-4"><div class="para" id="p-derived-non-singular-1-2-4">Prove that the rank of <span class="process-math">\(M\)</span> is <span class="process-math">\(n\text{.}\)</span>
-</div></li>
-</ul></article></section><section class="subsection" id="EV7-9"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.7.7</span><span class="space"> </span><span class="title">Sample Problem and Solution</span>
+<div class="introduction" id="LE3-4-11-1"><div class="para" id="LE3-4-11-1-1">Consider each of the following systems of linear equations or vector equations.</div></div>
+<article class="task exercise-like" id="LE3-4-11-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="introduction" id="LE3-4-11-2-1"><div class="para logical" id="LE3-4-11-2-1-1"><div class="displaymath process-math">
+\begin{equation*}
+\begin{matrix} x_{1} &amp; - &amp; x_{2} &amp; - &amp; 3 \, x_{3} &amp; = &amp; 8 \\ 3 \, x_{1} &amp; - &amp; 2 \, x_{2} &amp; - &amp; 5 \, x_{3} &amp; = &amp; 17 \\ x_{1} &amp; - &amp; x_{2} &amp; - &amp; 2 \, x_{3} &amp; = &amp; 7 \\ 10 \, x_{1} &amp; - &amp; 8 \, x_{2} &amp; - &amp; 21 \, x_{3} &amp; = &amp; 65 \\ \end{matrix}
+\end{equation*}
+</div></div></div>
+<article class="task exercise-like" id="LE3-4-11-2-2"><h6 class="heading"><span class="codenumber">(i)</span></h6>
+<div class="para" id="LE3-4-11-2-2-1-1">Explain and demonstrate how to find a simpler linear system that has the same solution set.</div>
+<div class="solutions"><details id="LE3-4-11-2-2-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="LE3-4-11-2-2-2-1"><div class="displaymath process-math">
+\begin{equation*}
+\begin{matrix} x_{1} &amp; &amp; &amp; &amp; &amp; = &amp; 2 \\ &amp; &amp; x_{2} &amp; &amp; &amp; = &amp; -3 \\ &amp; &amp; &amp; &amp; x_{3} &amp; = &amp; -1 \\ &amp; &amp; &amp; &amp; 0 &amp; = &amp; 0 \\ \end{matrix}
+\end{equation*}
+</div></div></div></details></div></article><article class="task exercise-like" id="LE3-4-11-2-3"><h6 class="heading"><span class="codenumber">(ii)</span></h6>
+<div class="para" id="LE3-4-11-2-3-1-1">Explain whether this solution set has no solutions, one solution, or infinitely-many solutions. If the set is finite, describe it using set notation.</div>
+<div class="solutions"><details id="LE3-4-11-2-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="LE3-4-11-2-3-2-1">The solution set has one solution.  The solution set is <span class="process-math">\(\left\{ \left[\begin{array}{c} 2 \\ -3 \\ -1 \end{array}\right] \right\}\text{.}\)</span>
+</div></div></details></div></article></article><article class="task exercise-like" id="LE3-4-11-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="introduction" id="LE3-4-11-3-1"><div class="para logical" id="LE3-4-11-3-1-1"><div class="displaymath process-math">
+\begin{equation*}
+\begin{matrix} x_{1} &amp; - &amp; 5 \, x_{2} &amp; - &amp; 15 \, x_{3} &amp; = &amp; -8 \\ &amp; &amp; x_{2} &amp; + &amp; 3 \, x_{3} &amp; = &amp; 1 \\ x_{1} &amp; &amp; &amp; &amp; &amp; = &amp; 2 \\ 5 \, x_{1} &amp; - &amp; 7 \, x_{2} &amp; - &amp; 21 \, x_{3} &amp; = &amp; -10 \\ \end{matrix}
+\end{equation*}
+</div></div></div>
+<article class="task exercise-like" id="LE3-4-11-3-2"><h6 class="heading"><span class="codenumber">(i)</span></h6>
+<div class="para" id="LE3-4-11-3-2-1-1">Explain and demonstrate how to find a simpler linear system that has the same solution set.</div>
+<div class="solutions"><details id="LE3-4-11-3-2-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="LE3-4-11-3-2-2-1"><div class="displaymath process-math">
+\begin{equation*}
+\begin{matrix} x_{1} &amp; &amp; &amp; &amp; &amp; = &amp; 0 \\ &amp; &amp; x_{2} &amp; + &amp; 3 \, x_{3} &amp; = &amp; 0 \\ &amp; &amp; &amp; &amp; 0 &amp; = &amp; 1 \\ &amp; &amp; &amp; &amp; 0 &amp; = &amp; 0 \\ \end{matrix}
+\end{equation*}
+</div></div></div></details></div></article><article class="task exercise-like" id="LE3-4-11-3-3"><h6 class="heading"><span class="codenumber">(ii)</span></h6>
+<div class="para" id="LE3-4-11-3-3-1-1">Explain whether this solution set has no solutions, one solution, or infinitely-many solutions. If the set is finite, describe it using set notation.</div>
+<div class="solutions"><details id="LE3-4-11-3-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="LE3-4-11-3-3-2-1">The solution set has no solutions.  The solution set is <span class="process-math">\(\emptyset\text{.}\)</span>
+</div></div></details></div></article></article><article class="task exercise-like" id="LE3-4-11-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="introduction" id="LE3-4-11-4-1"><div class="para logical" id="LE3-4-11-4-1-1"><div class="displaymath process-math">
+\begin{equation*}
+\begin{matrix} -2 \, x_{1} &amp; + &amp; 2 \, x_{2} &amp; + &amp; 5 \, x_{3} &amp; = &amp; 1 \\ -x_{1} &amp; + &amp; x_{2} &amp; + &amp; 2 \, x_{3} &amp; = &amp; 1 \\ 2 \, x_{1} &amp; - &amp; 2 \, x_{2} &amp; + &amp; x_{3} &amp; = &amp; -7 \\ -2 \, x_{1} &amp; + &amp; 2 \, x_{2} &amp; + &amp; 16 \, x_{3} &amp; = &amp; -10 \\ \end{matrix}
+\end{equation*}
+</div></div></div>
+<article class="task exercise-like" id="LE3-4-11-4-2"><h6 class="heading"><span class="codenumber">(i)</span></h6>
+<div class="para" id="LE3-4-11-4-2-1-1">Explain and demonstrate how to find a simpler linear system that has the same solution set.</div>
+<div class="solutions"><details id="LE3-4-11-4-2-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="LE3-4-11-4-2-2-1"><div class="displaymath process-math">
+\begin{equation*}
+\begin{matrix} x_{1} &amp; - &amp; x_{2} &amp; &amp; &amp; = &amp; -3 \\ &amp; &amp; &amp; &amp; x_{3} &amp; = &amp; -1 \\ &amp; &amp; &amp; &amp; 0 &amp; = &amp; 0 \\ &amp; &amp; &amp; &amp; 0 &amp; = &amp; 0 \\ \end{matrix}
+\end{equation*}
+</div></div></div></details></div></article><article class="task exercise-like" id="LE3-4-11-4-3"><h6 class="heading"><span class="codenumber">(ii)</span></h6>
+<div class="para" id="LE3-4-11-4-3-1-1">Explain whether this solution set has no solutions, one solution, or infinitely-many solutions. If the set is finite, describe it using set notation.</div>
+<div class="solutions"><details id="LE3-4-11-4-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="LE3-4-11-4-3-2-1">The solution set has infinitely-many solutions.</div></div></details></div></article></article></article><div id="LE3-4-12" class="ptx-sagecell sagecell-octave"><script type="text/x-sage"></script></div></section><section class="subsection" id="LE3-5"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.3.3</span><span class="space"> </span><span class="title">Individual Practice</span>
 </h3>
-<div class="para" id="EV7-9-2">Sample problem <a href="sample-exercises.html#sample-EV7" class="internal" title="Example B.1.11: EV7">Example B.1.11</a>.</div></section></section></div>
+<article class="activity project-like" id="LE3-5-2"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.3.9</span><span class="period">.</span>
+</h4>
+<div class="para logical" id="LE3-5-2-1-1">
+<div class="para">In <a href="LE1.html#linearsystemsfact" class="internal" title="Fact 1.1.11">Fact 1.1.11</a>, we stated, but did not prove the assertion that all linear systems are one of the following:</div>
+<ol class="decimal" id="LE3-5-2-1-1-2">
+<li id="LE3-5-2-1-1-2-1"><div class="para" id="p-derived-LE3-5-2-1-1-2-1">
+<em class="emphasis">Consistent with one solution:</em> its solution set contains a single vector, e.g. <span class="process-math">\(\setList{\left[\begin{array}{c}1\\2\\3\end{array}\right]}\)</span>
+</div></li>
+<li id="LE3-5-2-1-1-2-2"><div class="para" id="p-derived-LE3-5-2-1-1-2-2">
+<em class="emphasis">Consistent with infinitely-many solutions</em>: its solution set contains infinitely many vectors, e.g. <span class="process-math">\(\setBuilder
+{
+\left[\begin{array}{c}1\\2-3a\\a\end{array}\right]
+}{
+a\in\IR
+}\)</span>
+</div></li>
+<li id="LE3-5-2-1-1-2-3"><div class="para" id="p-derived-LE3-5-2-1-1-2-3">
+<em class="emphasis">Inconsistent</em>: its solution set is the empty set, denoted by either <span class="process-math">\(\{\}\)</span> or <span class="process-math">\(\emptyset\text{.}\)</span>
+</div></li>
+</ol>
+</div>
+<div class="para" id="LE3-5-2-2-1">Explain why this fact is a consequence of <a href="LE3.html#LE3-fact-scenarios" class="internal" title="Fact 1.3.7">Fact 1.3.7</a> above.</div></article></section><section class="subsection" id="LE3-6"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.3.4</span><span class="space"> </span><span class="title">Videos</span>
+</h3>
+<figure class="figure figure-like" id="LE3-6-2"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/tkRKPBtkJcw?&amp;modestbranding=1&amp;rel=0" id="video-LE3"></iframe></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3<span class="period">.</span></span><span class="space"> </span>Video: Finding the number of solutions for a system</figcaption></figure></section><section class="exercises" id="LE3-7"><h3 class="heading hide-type">
+<span class="type">Exercises</span><span class="space"> </span><span class="codenumber">1.3.5</span><span class="space"> </span><span class="title">Exercises</span>
+</h3>
+<div class="para" id="LE3-7-1">Exercises available at <a class="external" href="https://tbil.org/preview/linear-algebra/exercises/#/bank/LE3/" target="_blank"><code class="code-inline tex2jax_ignore">https://tbil.org/preview/linear-algebra/exercises/#/bank/LE3/</code></a>.</div></section><section class="subsection" id="LE3-8"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.3.6</span><span class="space"> </span><span class="title">Mathematical Writing Explorations</span>
+</h3>
+<article class="exploration project-like" id="LE3-8-2"><h4 class="heading">
+<span class="type">Exploration</span><span class="space"> </span><span class="codenumber">1.3.10</span><span class="period">.</span>
+</h4>
+<div class="para logical" id="LE3-8-2-1-1">
+<div class="para">A system of equations with all constants equal to 0 is called <dfn class="terminology">homogeneous</dfn>. These are addressed in detail in section <a href="EV7.html" class="internal" title="Section 2.7: Homogeneous Linear Systems (EV7)">Section 2.7</a>
+</div>
+<ul class="disc" id="LE3-8-2-1-1-3">
+<li id="LE3-8-2-1-1-3-1"><div class="para" id="p-derived-LE3-8-2-1-1-3-1">Choose three systems of equations from this chapter that you have already solved. Replace the constants with 0 to make the systems homogeneous. Solve the homogeneous systems and make a conjecture about the relationship between the earlier solutions you found and the associated homogeneous systems.</div></li>
+<li id="LE3-8-2-1-1-3-2"><div class="para" id="p-derived-LE3-8-2-1-1-3-2">Prove or disprove. A system of linear equations is homogeneous if an only if it has the the zero vector as a solution.</div></li>
+</ul>
+</div></article></section><section class="subsection" id="LE3-9"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.3.7</span><span class="space"> </span><span class="title">Sample Problem and Solution</span>
+</h3>
+<div class="para" id="LE3-9-2">Sample problem <a href="sample-exercises.html#sample-LE3" class="internal" title="Example B.1.3: LE3">Example B.1.3</a>.</div></section></section></div>
 <div class="ptx-content-footer">
-<a class="previous-button button" href="EV6.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="AT.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="LE2.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="LE4.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">

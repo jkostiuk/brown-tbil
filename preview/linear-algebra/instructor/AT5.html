@@ -8,7 +8,7 @@
 <html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>TBIL-LA Homogeneous Linear Systems (EV7)</title>
+<title>TBIL-LA Vector Spaces (AT5)</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
@@ -85,19 +85,7 @@ window.MathJax = {
     )}
   }
 };
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script>// Make *any* div with class 'sagecell-octave' an executable Sage cell
-// Their results will be linked, only within language type
-sagecell.makeSagecell({
-  "inputLocation": "div.sagecell-octave",
-  "linked": true,
-  "linkKey": "linked-octave",
-  "autoeval": false,
-  "languages": [
-    "octave"
-  ],
-  "evalButtonText": "Evaluate (Octave)"
-});
-</script><link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/themes/prism.css" rel="stylesheet">
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/themes/prism.css" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-numbers/prism-line-numbers.min.js" integrity="sha512-dubtf8xMHSQlExGRQ5R7toxHLgSDZ0K7AunqPWHXmJQ8XyVIG19S1T95gBxlAeGOK02P4Da2RTnQz0Za0H0ebQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-numbers/prism-line-numbers.min.css" integrity="sha512-cbQXwDFK7lj2Fqfkuxbo5iD1dSbLlJGXGpfTDqbggqjHJeyzx88I3rfwjS38WJag/ihH7lzuGlGHpDBymLirZQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-highlight/prism-line-highlight.min.css" integrity="sha512-nXlJLUeqPMp1Q3+Bd8Qds8tXeRVQscMscwysJm821C++9w6WtsFbJjPenZ8cQVMXyqSAismveQJc0C1splFDCA==" crossorigin="anonymous" referrerpolicy="no-referrer">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-highlight/prism-line-highlight.min.js" integrity="sha512-93uCmm0q+qO5Lb1huDqr7tywS8A2TFA+1/WHvyiWaK6/pvsFl6USnILagntBx8JnVbQH5s3n0vQZY6xNthNfKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><link href="_static/pretext/css/pretext_search.css" rel="stylesheet" type="text/css">
@@ -760,7 +748,7 @@ sagecell.makeSagecell({
 <ol id="searchresults" class="searchresults"></ol>
 </div>
 </div>
-<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="EV6.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="EV.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="AT.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\markedPivot}[1]{\boxed{#1}}
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="AT4.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="AT.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="AT6.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\markedPivot}[1]{\boxed{#1}}
 \newcommand{\IR}{\mathbb{R}}
 \newcommand{\IC}{\mathbb{C}}
 \renewcommand{\P}{\mathcal{P}}
@@ -892,9 +880,9 @@ sagecell.makeSagecell({
 </li>
 </ul>
 </li>
-<li class="toc-item toc-chapter contains-active">
+<li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="EV.html" class="internal"><span class="codenumber">2</span> <span class="title">Euclidean Vectors (EV)</span></a></div>
-<ul class="structural toc-item-list contains-active">
+<ul class="structural toc-item-list">
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="EV1.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Linear Combinations (EV1)</span></a></div>
 <ul class="structural toc-item-list">
@@ -967,7 +955,7 @@ sagecell.makeSagecell({
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="EV6.html#EV6-9" class="internal"><span class="codenumber">2.6.7</span> <span class="title">Sample Problem and Solution</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section active">
+<li class="toc-item toc-section">
 <div class="toc-title-box"><a href="EV7.html" class="internal"><span class="codenumber">2.7</span> <span class="title">Homogeneous Linear Systems (EV7)</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="EV7.html#EV7-3" class="internal"><span class="codenumber">2.7.1</span> <span class="title">Warmup</span></a></div></li>
@@ -981,9 +969,9 @@ sagecell.makeSagecell({
 </li>
 </ul>
 </li>
-<li class="toc-item toc-chapter">
+<li class="toc-item toc-chapter contains-active">
 <div class="toc-title-box"><a href="AT.html" class="internal"><span class="codenumber">3</span> <span class="title">Algebraic Properties of Linear Maps (AT)</span></a></div>
-<ul class="structural toc-item-list">
+<ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="AT1.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Linear Transformations (AT1)</span></a></div>
 <ul class="structural toc-item-list">
@@ -1032,7 +1020,7 @@ sagecell.makeSagecell({
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AT4.html#AT4-9" class="internal"><span class="codenumber">3.4.6</span> <span class="title">Sample Problem and Solution</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section">
+<li class="toc-item toc-section active">
 <div class="toc-title-box"><a href="AT5.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Vector Spaces (AT5)</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AT5.html#AT5-3" class="internal"><span class="codenumber">3.5.1</span> <span class="title">Warm Up</span></a></div></li>
@@ -1202,264 +1190,400 @@ sagecell.makeSagecell({
 </ul>
 </li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="EV7"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">2.7</span><span class="space"> </span><span class="title">Homogeneous Linear Systems (EV7)</span>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="AT5"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">3.5</span><span class="space"> </span><span class="title">Vector Spaces (AT5)</span>
 </h2>
-<article class="objectives goal-like" id="EV7-2"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
-<ul class="disc" id="EV7-2-1"><li id="EV7-2-1-1"><div class="para" id="EV7-2-1-1-1">Find a basis for the solution set of a homogeneous system of equations.</div></li></ul></article><section class="subsection" id="EV7-3"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.7.1</span><span class="space"> </span><span class="title">Warmup</span>
+<article class="objectives goal-like" id="AT5-2"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
+<ul class="disc" id="AT5-2-1"><li id="AT5-2-1-1"><div class="para" id="AT5-2-1-1-1">Explain why a given set with defined addition and scalar multiplication does satisfy a given vector space property, but nonetheless isn’t a vector space.</div></li></ul></article><section class="subsection" id="AT5-3"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.5.1</span><span class="space"> </span><span class="title">Warm Up</span>
 </h3>
-<article class="remark remark-like" id="EV7-3-2"><h4 class="heading">
-<span class="type">Remark</span><span class="space"> </span><span class="codenumber">2.7.1</span><span class="period">.</span>
+<article class="activity project-like" id="AT5-3-2"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.5.1</span><span class="period">.</span>
 </h4>
-<div class="para logical" id="EV7-3-2-1">
-<div class="para">Recall from <a href="EV3.html" class="internal" title="Section 2.3: Subspaces (EV3)">Section 2.3</a> that a <dfn class="terminology">homogeneous</dfn> system of linear equations is one of the form:</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/EV3.html" id="EV7-3-2-1-4">
-\begin{alignat*}{5}
-a_{11}x_1 &amp;\,+\,&amp; a_{12}x_2 &amp;\,+\,&amp; \dots  &amp;\,+\,&amp; a_{1n}x_n &amp;\,=\,&amp; 0 \\
-a_{21}x_1 &amp;\,+\,&amp; a_{22}x_2 &amp;\,+\,&amp; \dots  &amp;\,+\,&amp; a_{2n}x_n &amp;\,=\,&amp; 0 \\
-\vdots&amp;  &amp;\vdots&amp;   &amp;&amp;  &amp;\vdots&amp;&amp;\vdots\\
-a_{m1}x_1 &amp;\,+\,&amp; a_{m2}x_2 &amp;\,+\,&amp; \dots  &amp;\,+\,&amp; a_{mn}x_n &amp;\,=\,&amp; 0
-\end{alignat*}
+<article class="task exercise-like" id="AT5-3-2-1"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="AT5-3-2-1-1-1">How would you describe a sandwich to someone who has never seen a sandwich before?</div></article><article class="task exercise-like" id="AT5-3-2-2"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="AT5-3-2-2-1-1">How would you describe to someone what a vector is?</div></article></article></section><section class="subsection" id="AT5-4"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.5.2</span><span class="space"> </span><span class="title">Class Activities</span>
+</h3>
+<article class="observation remark-like" id="AT5-4-2"><h4 class="heading">
+<span class="type">Observation</span><span class="space"> </span><span class="codenumber">3.5.2</span><span class="period">.</span>
+</h4>
+<div class="para" id="AT5-4-2-1">Consider the following applications of properties of the real numbers <span class="process-math">\(\mathbb R\text{:}\)</span>
+</div> <ol class="decimal" id="AT5-4-2-2">
+<li id="AT5-4-2-2-1"><div class="para" id="AT5-4-2-2-1-1"><span class="process-math">\(1+(2+3)=(1+2)+3\text{.}\)</span></div></li>
+<li id="AT5-4-2-2-2"><div class="para" id="AT5-4-2-2-2-1"><span class="process-math">\(7+4=4+7\text{.}\)</span></div></li>
+<li id="AT5-4-2-2-3"><div class="para" id="AT5-4-2-2-3-1">There exists some <span class="process-math">\(\unknown\)</span> where <span class="process-math">\(5+\unknown=5\text{.}\)</span>
+</div></li>
+<li id="AT5-4-2-2-4"><div class="para" id="AT5-4-2-2-4-1">There exists some <span class="process-math">\(\unknown\)</span> where <span class="process-math">\(9+\unknown=0\text{.}\)</span>
+</div></li>
+<li id="AT5-4-2-2-5"><div class="para" id="AT5-4-2-2-5-1">
+<span class="process-math">\(\frac{1}{2}(1+7)\)</span> is the only number that is equally distant from <span class="process-math">\(1\)</span> and <span class="process-math">\(7\text{.}\)</span>
+</div></li>
+</ol></article><article class="activity project-like" id="AT5-4-3"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.5.3</span><span class="period">.</span>
+</h4>
+<div class="para" id="AT5-4-3-1-1">Which of the following properties of <span class="process-math">\(\IR^2\)</span> Euclidean vectors is NOT true?</div> <ol class="upper-alpha" id="AT5-4-3-1-2">
+<li id="AT5-4-3-1-2-1"><div class="para" id="AT5-4-3-1-2-1-1"><span class="process-math">\(\left[\begin{array}{c} x_1\\x_2\end{array}\right]
++\left(\left[\begin{array}{c} y_1\\y_2\end{array}\right]
++\left[\begin{array}{c} z_1\\z_2\end{array}\right]\right)=
+\left(\left[\begin{array}{c} x_1\\x_2\end{array}\right]
++\left[\begin{array}{c} y_1\\y_2\end{array}\right]\right)
++\left[\begin{array}{c} z_1\\z_2\end{array}\right]\text{.}\)</span></div></li>
+<li id="AT5-4-3-1-2-2"><div class="para" id="AT5-4-3-1-2-2-1"><span class="process-math">\(\left[\begin{array}{c}x_1\\x_2\end{array}\right]
++
+\left[\begin{array}{c}y_1\\y_2\end{array}\right]
+=
+\left[\begin{array}{c}y_1\\y_2\end{array}\right]
++
+\left[\begin{array}{c}x_1\\x_2\end{array}\right]\text{.}\)</span></div></li>
+<li id="AT5-4-3-1-2-3"><div class="para" id="AT5-4-3-1-2-3-1">There exists some <span class="process-math">\(\left[\begin{array}{c}\unknown\\\unknown\end{array}\right]\)</span> where <span class="process-math">\(\left[\begin{array}{c}x_1\\x_2\end{array}\right] 
++\left[\begin{array}{c}\unknown\\\unknown\end{array}\right] 
+=\left[\begin{array}{c}x_1\\x_2\end{array}\right]\text{.}\)</span>
+</div></li>
+<li id="AT5-4-3-1-2-4"><div class="para" id="AT5-4-3-1-2-4-1">There exists some <span class="process-math">\(\left[\begin{array}{c}\unknown\\\unknown\end{array}\right]\)</span> where <span class="process-math">\(\left[\begin{array}{c}x_1\\x_2\end{array}\right]+
+\left[\begin{array}{c}\unknown\\\unknown\end{array}\right]=
+\left[\begin{array}{c}0\\0\end{array}\right]\text{.}\)</span>
+</div></li>
+<li id="AT5-4-3-1-2-5"><div class="para" id="AT5-4-3-1-2-5-1">
+<span class="process-math">\(\displaystyle\frac{1}{2}\left(\left[\begin{array}{c}x_1\\x_2\end{array}\right] +
+\left[\begin{array}{c}y_1\\y_2\end{array}\right] \right)\)</span> is the only vector whose endpoint is equally distant from the endpoints of <span class="process-math">\(\left[\begin{array}{c}x_1\\x_2\end{array}\right]\)</span> and <span class="process-math">\(\left[\begin{array}{c}y_1\\y_2\end{array}\right]\text{.}\)</span>
+</div></li>
+</ol></article><article class="observation remark-like" id="AT5-4-4"><h4 class="heading">
+<span class="type">Observation</span><span class="space"> </span><span class="codenumber">3.5.4</span><span class="period">.</span>
+</h4>
+<div class="para" id="AT5-4-4-1">Consider the following applications of properties of the real numbers <span class="process-math">\(\mathbb R\text{:}\)</span>
+</div> <ol class="decimal" id="AT5-4-4-2">
+<li id="AT5-4-4-2-1"><div class="para" id="AT5-4-4-2-1-1"><span class="process-math">\(3(2(7))=(3\cdot 2)(7)\text{.}\)</span></div></li>
+<li id="AT5-4-4-2-2"><div class="para" id="AT5-4-4-2-2-1"><span class="process-math">\(1(19)=19\text{.}\)</span></div></li>
+<li id="AT5-4-4-2-3"><div class="para" id="AT5-4-4-2-3-1">There exists some <span class="process-math">\(\unknown\)</span> such that <span class="process-math">\(\unknown \cdot 4=
+9\text{.}\)</span>
+</div></li>
+<li id="AT5-4-4-2-4"><div class="para" id="AT5-4-4-2-4-1"><span class="process-math">\(3\cdot (2+8)=3\cdot 2+3\cdot 8\text{.}\)</span></div></li>
+<li id="AT5-4-4-2-5"><div class="para" id="AT5-4-4-2-5-1"><span class="process-math">\((2+7)\cdot 4=2\cdot 4+7\cdot 4\text{.}\)</span></div></li>
+</ol></article><article class="activity project-like" id="AT5-4-5"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.5.5</span><span class="period">.</span>
+</h4>
+<div class="para" id="AT5-4-5-1-1">Which of the following properties of <span class="process-math">\(\IR^2\)</span> Euclidean vectors is NOT true?</div> <ol class="upper-alpha" id="AT5-4-5-1-2">
+<li id="AT5-4-5-1-2-1"><div class="para" id="AT5-4-5-1-2-1-1"><span class="process-math">\(a\left(b\left[\begin{array}{c}x_1\\x_2\end{array}\right]\right)=
+ab\left[\begin{array}{c}x_1\\x_2\end{array}\right]\text{.}\)</span></div></li>
+<li id="AT5-4-5-1-2-2"><div class="para" id="AT5-4-5-1-2-2-1"><span class="process-math">\(1\left[\begin{array}{c}x_1\\x_2\end{array}\right]=
+\left[\begin{array}{c}x_1\\x_2\end{array}\right]\text{.}\)</span></div></li>
+<li id="AT5-4-5-1-2-3"><div class="para" id="AT5-4-5-1-2-3-1">There exists some <span class="process-math">\(\unknown\)</span> such that <span class="process-math">\(\unknown\left[\begin{array}{c}x_1\\x_2\end{array}\right]=
+\left[\begin{array}{c}y_1\\y_2\end{array}\right]\text{.}\)</span>
+</div></li>
+<li id="AT5-4-5-1-2-4"><div class="para" id="AT5-4-5-1-2-4-1"><span class="process-math">\(a(\vec u+\vec v)=a\vec u+a\vec v\text{.}\)</span></div></li>
+<li id="AT5-4-5-1-2-5"><div class="para" id="AT5-4-5-1-2-5-1"><span class="process-math">\((a+b)\vec v=a\vec v+b\vec v\text{.}\)</span></div></li>
+</ol></article><article class="fact theorem-like" id="AT5-4-6"><h4 class="heading">
+<span class="type">Fact</span><span class="space"> </span><span class="codenumber">3.5.6</span><span class="period">.</span>
+</h4>
+<div class="para" id="AT5-4-6-1-1">Every Euclidean vector space <span class="process-math">\(\mathbb R^n\)</span> satisfies the following properties, where <span class="process-math">\(\vec u,\vec v,\vec w\)</span> are Euclidean vectors and <span class="process-math">\(a,b\)</span> are scalars.</div> <ol class="decimal" id="AT5-4-6-1-2">
+<li id="AT5-4-6-1-2-1"><div class="para" id="AT5-4-6-1-2-1-1">Vector addition is associative: <span class="process-math">\(\vec u +  (\vec v +  \vec w)=
+(\vec u +  \vec v) +  \vec w\text{.}\)</span>
+</div></li>
+<li id="AT5-4-6-1-2-2"><div class="para" id="AT5-4-6-1-2-2-1">Vector addition is commutative: <span class="process-math">\(\vec u +  \vec v=
+\vec v +  \vec u\text{.}\)</span>
+</div></li>
+<li id="AT5-4-6-1-2-3"><div class="para" id="AT5-4-6-1-2-3-1">An additive identity exists: There exists some <span class="process-math">\(\vec z\)</span> where <span class="process-math">\(\vec v +  \vec z=\vec v\text{.}\)</span>
+</div></li>
+<li id="AT5-4-6-1-2-4"><div class="para" id="AT5-4-6-1-2-4-1">Additive inverses exist: There exists some <span class="process-math">\(-\vec v\)</span> where <span class="process-math">\(\vec v +  (-\vec v)=\vec z\text{.}\)</span>
+</div></li>
+<li id="AT5-4-6-1-2-5"><div class="para" id="AT5-4-6-1-2-5-1">Scalar multiplication is associative: <span class="process-math">\(a (b \vec v)=(ab) \vec v\text{.}\)</span>
+</div></li>
+<li id="AT5-4-6-1-2-6"><div class="para" id="AT5-4-6-1-2-6-1">1 is a multiplicative identity: <span class="process-math">\(1 \vec v=\vec v\text{.}\)</span>
+</div></li>
+<li id="AT5-4-6-1-2-7"><div class="para" id="AT5-4-6-1-2-7-1">Scalar multiplication distributes over vector addition: <span class="process-math">\(a (\vec u +  \vec v)=(a \vec u) + (a \vec v)\text{.}\)</span>
+</div></li>
+<li id="AT5-4-6-1-2-8"><div class="para" id="AT5-4-6-1-2-8-1">Scalar multiplication distributes over scalar addition: <span class="process-math">\((a+ b) \vec v=(a \vec v) + (b  \vec v)\text{.}\)</span>
+</div></li>
+</ol></article><article class="definition definition-like" id="AT5-properties"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.5.7</span><span class="period">.</span>
+</h4>
+<div class="para" id="AT5-properties-1-1">A <dfn class="terminology">vector space</dfn> <span class="process-math">\(V\)</span> is any set of mathematical objects, called <dfn class="terminology">vectors</dfn>, and a set of numbers, called <dfn class="terminology">scalars</dfn>, with associated addition <span class="process-math">\(\oplus\)</span> and scalar multiplication <span class="process-math">\(\odot\)</span> operations that satisfy the following properties. Let <span class="process-math">\(\vec u,\vec v,\vec w\)</span> be vectors belonging to <span class="process-math">\(V\text{,}\)</span> and let <span class="process-math">\(a,b\)</span> be scalars.</div> <aside class="aside aside-like" id="AT5-properties-1-2"><div class="para" id="AT5-properties-1-2-1">We always assume the codomain of our operations is <span class="process-math">\(V\text{,}\)</span> i.e. that addition is a map <span class="process-math">\(V \times V \rightarrow V\)</span> and that scalar multiplication is a map <span class="process-math">\(\IR \times V \rightarrow V\text{.}\)</span>
 </div>
-</div> <div class="para logical" id="EV7-3-2-2">
-<div class="para">This system is equivalent to the vector equation:</div>
+<div class="para" id="AT5-properties-1-2-2">Likewise, we only consider “real” vector spaces, i.e. those whose scalars come from <span class="process-math">\(\IR\text{.}\)</span>  However, one can similarly define vector spaces with scalars from other fields like the complex or rational numbers.</div></aside> <ol class="decimal" id="AT5-properties-1-3">
+<li id="AT5-properties-1-3-1"><div class="para" id="AT5-properties-1-3-1-1">Vector addition is associative: <span class="process-math">\(\vec u\oplus (\vec v\oplus \vec w)=
+(\vec u\oplus \vec v)\oplus \vec w\text{.}\)</span>
+</div></li>
+<li id="AT5-properties-1-3-2"><div class="para" id="AT5-properties-1-3-2-1">Vector addition is commutative: <span class="process-math">\(\vec u\oplus \vec v=
+\vec v\oplus \vec u\text{.}\)</span>
+</div></li>
+<li id="AT5-properties-1-3-3"><div class="para" id="AT5-properties-1-3-3-1">An additive identity exists: There exists some <span class="process-math">\(\vec z\)</span> where <span class="process-math">\(\vec v\oplus \vec z=\vec v\text{.}\)</span>
+</div></li>
+<li id="AT5-properties-1-3-4"><div class="para" id="AT5-properties-1-3-4-1">Additive inverses exist: There exists some <span class="process-math">\(-\vec v\)</span> where <span class="process-math">\(\vec v\oplus (-\vec v)=\vec z\text{.}\)</span>
+</div></li>
+<li id="AT5-properties-1-3-5"><div class="para" id="AT5-properties-1-3-5-1">Scalar multiplication is associative: <span class="process-math">\(a\odot(b\odot\vec v)=(ab)\odot\vec v\text{.}\)</span>
+</div></li>
+<li id="AT5-properties-1-3-6"><div class="para" id="AT5-properties-1-3-6-1">1 is a multiplicative identity: <span class="process-math">\(1\odot\vec v=\vec v\text{.}\)</span>
+</div></li>
+<li id="AT5-properties-1-3-7"><div class="para" id="AT5-properties-1-3-7-1">Scalar multiplication distributes over vector addition: <span class="process-math">\(a\odot(\vec u\oplus \vec v)=(a\odot\vec u)\oplus(a\odot\vec v)\text{.}\)</span>
+</div></li>
+<li id="AT5-properties-1-3-8"><div class="para" id="AT5-properties-1-3-8-1">Scalar multiplication distributes over scalar addition: <span class="process-math">\((a+ b)\odot\vec v=(a\odot\vec v)\oplus(b\odot \vec v)\text{.}\)</span>
+</div></li>
+</ol></article><article class="remark remark-like" id="AT5-4-8"><h4 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">3.5.8</span><span class="period">.</span>
+</h4>
+<div class="para" id="AT5-4-8-1">Consider the set <span class="process-math">\(\IC\)</span> of complex numbers with the usual definition for addition: <span class="process-math">\((a+b\mathbf i)\oplus(c+d\mathbf i)=(a+c)+(b+d)\mathbf i\text{.}\)</span>
+</div> <div class="para logical" id="AT5-4-8-2">
+<div class="para">Let <span class="process-math">\(\vec u=a+b\mathbf{i}\text{,}\)</span> <span class="process-math">\(\vec v=c+d\mathbf{i}\text{,}\)</span> and <span class="process-math">\(\vec w=e+f\mathbf{i}\text{.}\)</span> Then</div>
+<div class="displaymath process-math" id="AT5-4-8-2-4">
+\begin{align*}
+\vec u\oplus(\vec v \oplus \vec w)
+&amp;=
+(a+b\mathbf{i})\oplus((c+d\mathbf{i})\oplus(e+f\mathbf{i}))\\
+&amp;=
+(a+b\mathbf{i})\oplus((c+e)+(d+f)\mathbf{i})\\
+&amp;=(a+c+e)+(b+d+f)\mathbf{i}
+\end{align*}
+</div>
+<div class="displaymath process-math" id="AT5-4-8-2-5">
+\begin{align*}
+(\vec u\oplus\vec v) \oplus \vec w
+&amp;=
+((a+b\mathbf{i})\oplus(c+d\mathbf{i}))\oplus(e+f\mathbf{i})\\
+&amp;=((a+c)+(b+d)\mathbf{i})\oplus(e+f\mathbf{i})\\
+&amp;=(a+c+e)+(b+d+f)\mathbf{i}
+\end{align*}
+</div>
+</div> <div class="para" id="AT5-4-8-3">This proves that complex addition is associative: <span class="process-math">\(\vec u\oplus(\vec v \oplus \vec w) = (\vec u\oplus\vec v) \oplus \vec w\text{.}\)</span> The seven other vector space properties may also be verified, so <span class="process-math">\(\IC\)</span> is an example of a vector space.</div></article><article class="remark remark-like" id="AT5-4-9"><h4 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">3.5.9</span><span class="period">.</span>
+</h4>
+<div class="para" id="AT5-4-9-1-1">The following sets are just a few examples of vector spaces, with the usual/natural operations for addition and scalar multiplication.</div> <ul class="disc" id="AT5-4-9-1-2">
+<li id="AT5-4-9-1-2-1"><div class="para" id="AT5-4-9-1-2-1-1">
+<span class="process-math">\(\IR^n\text{:}\)</span> Euclidean vectors with <span class="process-math">\(n\)</span> components.</div></li>
+<li id="AT5-4-9-1-2-2"><div class="para" id="AT5-4-9-1-2-2-1">
+<span class="process-math">\(\IC\text{:}\)</span> Complex numbers.</div></li>
+<li id="AT5-4-9-1-2-3"><div class="para" id="AT5-4-9-1-2-3-1">
+<span class="process-math">\(M_{m,n}\text{:}\)</span> Matrices of real numbers with <span class="process-math">\(m\)</span> rows and <span class="process-math">\(n\)</span> columns.</div></li>
+<li id="AT5-4-9-1-2-4"><div class="para" id="AT5-4-9-1-2-4-1">
+<span class="process-math">\(\P_n\text{:}\)</span> Polynomials of degree <span class="process-math">\(n\)</span> or less.</div></li>
+<li id="AT5-4-9-1-2-5"><div class="para" id="AT5-4-9-1-2-5-1">
+<span class="process-math">\(\P\text{:}\)</span> Polynomials of any degree.</div></li>
+<li id="AT5-4-9-1-2-6"><div class="para" id="AT5-4-9-1-2-6-1">
+<span class="process-math">\(C(\IR)\text{:}\)</span> Real-valued continuous functions.</div></li>
+</ul></article><article class="activity project-like" id="AT5-4-10"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.5.10</span><span class="period">.</span>
+</h4>
+<div class="para" id="AT5-4-10-1-1">Consider the set <span class="process-math">\(V=\setBuilder{(x,y)}{y=2^x}\text{.}\)</span>
+</div> <div class="para" id="AT5-4-10-1-2">Which of the following vectors is not in <span class="process-math">\(V\text{?}\)</span>
+</div> <ol class="upper-alpha cols2" id="AT5-4-10-1-3">
+<li id="AT5-4-10-1-3-1"><div class="para" id="AT5-4-10-1-3-1-1"><span class="process-math">\(\displaystyle (0, 0)\)</span></div></li>
+<li id="AT5-4-10-1-3-2"><div class="para" id="AT5-4-10-1-3-2-1"><span class="process-math">\(\displaystyle (1, 2)\)</span></div></li>
+<li id="AT5-4-10-1-3-3"><div class="para" id="AT5-4-10-1-3-3-1"><span class="process-math">\(\displaystyle (2, 4)\)</span></div></li>
+<li id="AT5-4-10-1-3-4"><div class="para" id="AT5-4-10-1-3-4-1"><span class="process-math">\(\displaystyle (3, 8)\)</span></div></li>
+</ol></article><article class="activity project-like" id="AT5-4-11"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.5.11</span><span class="period">.</span>
+</h4>
+<div class="para logical" id="AT5-4-11-1-1">
+<div class="para">Consider the set <span class="process-math">\(V=\setBuilder{(x,y)}{y=2^x}\)</span> with the operation <span class="process-math">\(\oplus\)</span> defined by</div>
 <div class="displaymath process-math">
 \begin{equation*}
-x_1 \vec{v}_1 + \cdots+x_n \vec{v}_n = \vec{0}
+(x_1,y_1)\oplus (x_2,y_2)=(x_1+x_2,y_1y_2)   \text{.}
 \end{equation*}
 </div>
-<div class="para">and the augmented matrix:</div>
+</div> <div class="para" id="AT5-4-11-1-2">Let <span class="process-math">\(\vec u, \vec v\)</span> be in <span class="process-math">\(V\)</span> with <span class="process-math">\(\vec u=(1, 2)\)</span> and <span class="process-math">\(\vec v=(2, 4)\text{.}\)</span> Using the operations defined for <span class="process-math">\(V\text{,}\)</span> which of the following is <span class="process-math">\(\vec u\oplus\vec v\text{?}\)</span>
+</div> <ol class="upper-alpha cols2" id="AT5-4-11-1-3">
+<li id="AT5-4-11-1-3-1"><div class="para" id="AT5-4-11-1-3-1-1"><span class="process-math">\(\displaystyle (2, 6)\)</span></div></li>
+<li id="AT5-4-11-1-3-2"><div class="para" id="AT5-4-11-1-3-2-1"><span class="process-math">\(\displaystyle (2, 8)\)</span></div></li>
+<li id="AT5-4-11-1-3-3"><div class="para" id="AT5-4-11-1-3-3-1"><span class="process-math">\(\displaystyle (3, 6)\)</span></div></li>
+<li id="AT5-4-11-1-3-4"><div class="para" id="AT5-4-11-1-3-4-1"><span class="process-math">\(\displaystyle (3, 8)\)</span></div></li>
+</ol></article><article class="activity project-like" id="AT5-4-12"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.5.12</span><span class="period">.</span>
+</h4>
+<div class="introduction" id="AT5-4-12-1">
+<div class="para logical" id="AT5-4-12-1-1">
+<div class="para">Consider the set <span class="process-math">\(V=\setBuilder{(x,y)}{y=2^x}\)</span> with operations <span class="process-math">\(\oplus,\odot\)</span> defined by</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\left[\begin{array}{cccc|c}
-a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n} &amp; 0\\
-a_{21} &amp; a_{22} &amp; \cdots &amp; a_{2n} &amp; 0\\
-\vdots &amp; \vdots &amp; \ddots &amp; \vdots &amp; \vdots\\
-a_{m1} &amp; a_{m2} &amp; \cdots &amp; a_{mn} &amp; 0
-\end{array}\right].
+(x_1,y_1)\oplus (x_2,y_2)=(x_1+x_2,y_1y_2)
+\hspace{3em}
+c\odot (x,y)=(cx,y^c)\text{.}
 \end{equation*}
 </div>
-</div></article><article class="activity project-like" id="EV7-3-3"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.7.2</span><span class="period">.</span>
-</h4>
-<div class="introduction" id="EV7-3-3-1"><div class="para logical" id="EV7-3-3-1-1">
-<div class="para">In <a href="EV3.html" class="internal" title="Section 2.3: Subspaces (EV3)">Section 2.3</a>, we observed that if</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/EV3.html">
+</div> <div class="para" id="AT5-4-12-1-2">Let <span class="process-math">\(a=2, b=-3\)</span> be scalars and <span class="process-math">\(\vec u=(1,2) \in V\text{.}\)</span>
+</div>
+</div>
+<article class="task exercise-like" id="AT5-4-12-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para logical" id="AT5-4-12-2-1">
+<div class="para">Verify that</div>
+<div class="displaymath process-math">
 \begin{equation*}
-x_1 \vec{v}_1 + \cdots+x_n \vec{v}_n = \vec{0}
+(a+b)\odot \vec u=\left(-1,\frac{1}{2}\right)\text{.}
 \end{equation*}
 </div>
-<div class="para">is a homogeneous vector equation, then:</div>
-<ul class="disc" id="EV7-3-3-1-1-3">
-<li id="EV7-3-3-1-1-3-1"><div class="para" id="EV7-3-3-1-1-3-1-1">The zero vector <span class="process-math">\(\vec{0}\)</span> is a solution;</div></li>
-<li id="EV7-3-3-1-1-3-2"><div class="para" id="EV7-3-3-1-1-3-2-1">The sum of any two solutions is again a solution;</div></li>
-<li id="EV7-3-3-1-1-3-3"><div class="para" id="EV7-3-3-1-1-3-3-1">Multiplying a solution by a scalar produces another solution.</div></li>
-</ul>
-</div></div> <div class="para logical" id="EV7-3-3-2">
-<div class="para">Based on this recollection, which of the following best describes the solution set to the homogeneous equation?</div>
-<ol class="upper-alpha" id="EV7-3-3-2-1">
-<li id="EV7-3-3-2-1-1"><div class="para" id="EV7-3-3-2-1-1-1">A basis for <span class="process-math">\(\IR^n\text{.}\)</span>
-</div></li>
-<li id="EV7-3-3-2-1-2"><div class="para" id="EV7-3-3-2-1-2-1">A subspace of <span class="process-math">\(\IR^n\text{.}\)</span>
-</div></li>
-<li id="EV7-3-3-2-1-3"><div class="para" id="EV7-3-3-2-1-3-1">All of <span class="process-math">\(\IR^n\text{.}\)</span>
-</div></li>
-<li id="EV7-3-3-2-1-4"><div class="para" id="EV7-3-3-2-1-4-1">The empty set.</div></li>
+</div></article><article class="task exercise-like" id="AT5-4-12-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para logical" id="AT5-4-12-3-1">
+<div class="para">Compute the value of</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\left(a\odot \vec u\right)\oplus \left(b\odot \vec u\right)\text{.}
+\end{equation*}
+</div>
+</div></article></article><article class="activity project-like" id="AT5-4-13"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.5.13</span><span class="period">.</span>
+</h4>
+<div class="introduction" id="AT5-4-13-1">
+<div class="para logical" id="AT5-4-13-1-1">
+<div class="para">Consider the set <span class="process-math">\(V=\setBuilder{(x,y)}{y=2^x}\)</span> with operations <span class="process-math">\(\oplus,\odot\)</span> defined by</div>
+<div class="displaymath process-math">
+\begin{equation*}
+(x_1,y_1)\oplus (x_2,y_2)=(x_1+x_2,y_1y_2)
+\hspace{3em}
+c\odot (x,y)=(cx,y^c)\text{.}
+\end{equation*}
+</div>
+</div> <div class="para" id="AT5-4-13-1-2">Let <span class="process-math">\(a, b\)</span> be unspecified scalars in <span class="process-math">\(\mathbb R\)</span> and <span class="process-math">\(\vec u = (x,y)\)</span> be an unspecified vector in <span class="process-math">\(V\text{.}\)</span>
+</div>
+</div>
+<article class="task exercise-like" id="AT5-4-13-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para logical" id="AT5-4-13-2-1">
+<div class="para">Show that both sides of the equation</div>
+<div class="displaymath process-math">
+\begin{equation*}
+(a+b)\odot (x,y)=
+\left(a\odot (x,y)\right)\oplus \left(b\odot (x,y)\right)
+\end{equation*}
+</div>
+<div class="para">simplify to the expression <span class="process-math">\((ax+bx,y^ay^b)\text{.}\)</span>
+</div>
+</div></article><article class="task exercise-like" id="AT5-4-13-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para logical" id="AT5-4-13-3-1">
+<div class="para">Show that <span class="process-math">\(V\)</span> contains an additive identity element <span class="process-math">\(\vec{z}=(\unknown,\unknown)\)</span> satisfying</div>
+<div class="displaymath process-math">
+\begin{equation*}
+(x,y)\oplus(\unknown,\unknown)=(x,y)
+\end{equation*}
+</div>
+<div class="para">for all <span class="process-math">\((x,y)\in V\text{.}\)</span>
+</div>
+</div>
+<div class="para" id="AT5-4-13-3-2">That is, pick appropriate values for <span class="process-math">\(\vec{z}=(\unknown,\unknown)\)</span> and then simplify <span class="process-math">\((x,y)\oplus(\unknown,\unknown)\)</span> into just <span class="process-math">\((x,y)\text{.}\)</span>
+</div></article><article class="task exercise-like" id="AT5-4-13-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para logical" id="AT5-4-13-4-1">
+<div class="para">Is <span class="process-math">\(V\)</span> a vector space?</div>
+<ol class="upper-alpha" id="AT5-4-13-4-1-2">
+<li id="AT5-4-13-4-1-2-1"><div class="para" id="AT5-4-13-4-1-2-1-1">Yes</div></li>
+<li id="AT5-4-13-4-1-2-2"><div class="para" id="AT5-4-13-4-1-2-2-1">No</div></li>
+<li id="AT5-4-13-4-1-2-3"><div class="para" id="AT5-4-13-4-1-2-3-1">More work is required</div></li>
 </ol>
-</div></article></section><section class="subsection" id="EV7-4"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.7.2</span><span class="space"> </span><span class="title">Class Activities</span>
-</h3>
-<article class="activity project-like" id="EV7-4-2"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.7.3</span><span class="period">.</span>
+</div></article></article><article class="remark remark-like" id="AT5-4-14"><h4 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">3.5.14</span><span class="period">.</span>
 </h4>
-<div class="introduction" id="EV7-4-2-1"><div class="para logical" id="EV7-4-2-1-1">
-<div class="para">Consider the homogeneous system of equations</div>
-<div class="displaymath process-math" id="EV7-4-2-1-1-1">
-\begin{alignat*}{5}
-x_1&amp;\,+\,&amp;2x_2&amp;\,\,&amp; &amp;\,+\,&amp; x_4 &amp;=&amp; 0\\
-2x_1&amp;\,+\,&amp;4x_2&amp;\,-\,&amp;x_3 &amp;\,-\,&amp;2 x_4 &amp;=&amp; 0\\
-3x_1&amp;\,+\,&amp;6x_2&amp;\,-\,&amp;x_3 &amp;\,-\,&amp; x_4 &amp;=&amp; 0
-\end{alignat*}
-</div>
-</div></div>
-<article class="task exercise-like" id="EV7-4-2-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="EV7-4-2-2-1">Find its solution set (a subspace of <span class="process-math">\(\IR^4\)</span>).</div></article><article class="task exercise-like" id="EV7-4-2-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para logical" id="EV7-4-2-3-1">
-<div class="para">Rewrite this solution space in the form</div>
-<div class="displaymath process-math">
+<div class="para logical" id="AT5-4-14-1-1">
+<div class="para">It turns out <span class="process-math">\(V=\setBuilder{(x,y)}{y=2^x}\)</span> with operations <span class="process-math">\(\oplus,\odot\)</span> defined by</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/AT5-properties.html">
 \begin{equation*}
-\setBuilder{ a \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\end{array}\right] + b \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown \end{array}\right] }{a,b \in \IR}.
+(x_1,y_1)\oplus (x_2,y_2)=(x_1+x_2,y_1y_2)
+\hspace{3em}
+c\odot (x,y)=(cx,y^c)
 \end{equation*}
 </div>
-</div></article><article class="task exercise-like" id="EV7-4-2-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para logical" id="EV7-4-2-4-1-1">
-<div class="para">Which of these choices best describes the set of two vectors <span class="process-math">\(\left\{\left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\end{array}\right], \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown \end{array}\right]\right\}\)</span> used in this solution space?</div>
-<ol class="upper-alpha" id="EV7-4-2-4-1-1-2">
-<li id="EV7-4-2-4-1-1-2-1"><div class="para" id="EV7-4-2-4-1-1-2-1-1">The set is linearly dependent.</div></li>
-<li id="EV7-4-2-4-1-1-2-2"><div class="para" id="EV7-4-2-4-1-1-2-2-1">The set is linearly independent.</div></li>
-<li id="EV7-4-2-4-1-1-2-3"><div class="para" id="EV7-4-2-4-1-1-2-3-1">The set spans the solution space.</div></li>
-<li id="EV7-4-2-4-1-1-2-4"><div class="para" id="EV7-4-2-4-1-1-2-4-1">The set is a basis of the solution space.</div></li>
+<div class="para">satisifes all eight properties from <a href="AT5.html#AT5-properties" class="internal" title="Definition 3.5.7">Definition 3.5.7</a>.</div>
+</div> <div class="para" id="AT5-4-14-1-2">Thus, <span class="process-math">\(V\)</span> is a vector space.</div></article><article class="activity project-like" id="AT5-4-15"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.5.15</span><span class="period">.</span>
+</h4>
+<div class="introduction" id="AT5-4-15-1"><div class="para logical" id="AT5-4-15-1-1">
+<div class="para">Let <span class="process-math">\(V=\setBuilder{(x,y)}{x,y\in\IR}\)</span> have operations defined by</div>
+<div class="displaymath process-math">
+\begin{equation*}
+(x_1,y_1)\oplus (x_2,y_2)=(x_1+y_1+x_2+y_2,x_1^2+x_2^2)
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+c\odot (x,y)=(x^c,y+c-1)\text{.}
+\end{equation*}
+</div>
+</div></div>
+<article class="task exercise-like" id="AT5-4-15-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="AT5-4-15-2-1">Show that <span class="process-math">\(1\)</span> is the scalar multiplication identity element by simplifying <span class="process-math">\(1\odot(x,y)\)</span> to <span class="process-math">\((x,y)\text{.}\)</span>
+</div></article><article class="task exercise-like" id="AT5-4-15-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="AT5-4-15-3-1">Show that <span class="process-math">\(V\)</span> does not have an additive identity element <span class="process-math">\(\vec z=(z,w)\)</span> by showing that <span class="process-math">\((0,-1)\oplus(z,w)\not=(0,-1)\)</span> no matter what the values of <span class="process-math">\(z,w\)</span> are.</div></article><article class="task exercise-like" id="AT5-4-15-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para logical" id="AT5-4-15-4-1">
+<div class="para">Is <span class="process-math">\(V\)</span> a vector space?</div>
+<ol class="upper-alpha" id="AT5-4-15-4-1-2">
+<li id="AT5-4-15-4-1-2-1"><div class="para" id="AT5-4-15-4-1-2-1-1">Yes</div></li>
+<li id="AT5-4-15-4-1-2-2"><div class="para" id="AT5-4-15-4-1-2-2-1">No</div></li>
+<li id="AT5-4-15-4-1-2-3"><div class="para" id="AT5-4-15-4-1-2-3-1">More work is required</div></li>
 </ol>
-</div>
-<div class="solutions"><details id="EV7-4-2-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="EV7-4-2-4-2-1">D.</div></div></details></div></article></article><div id="EV7-4-3" class="ptx-sagecell sagecell-octave"><script type="text/x-sage"></script></div>
-<article class="activity project-like" id="EV7-4-4"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.7.4</span><span class="period">.</span>
+</div></article></article><article class="activity project-like" id="AT5-4-16"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.5.16</span><span class="period">.</span>
 </h4>
-<div class="introduction" id="EV7-4-4-1"><div class="para logical" id="EV7-4-4-1-1">
-<div class="para">Consider the homogeneous system of equations</div>
-<div class="displaymath process-math" id="EV7-4-4-1-1-1">
-\begin{alignat*}{8}
-2x_1&amp;\,+\,&amp;4x_2&amp;\,+\,&amp;2x_3 &amp;\,-\,&amp;3 x_4 &amp;\,+\,&amp;31x_5&amp;\,+\,&amp;2x_6&amp;\,-\,&amp;16x_7&amp;=&amp; 0\\
--1x_1&amp;\,-\,&amp;2x_2&amp;\,+\,&amp;4x_3 &amp;\,-\,&amp;x_4 &amp;\,+\,&amp;2x_5&amp;\,+\,&amp;9x_6&amp;\,+\,&amp;3x_7&amp;=&amp; 0\\
-x_1&amp;\,+\,&amp;2x_2&amp;\,+\,&amp;x_3 &amp;\,+\,&amp; x_4 &amp;\,+\,&amp;3x_5&amp;\,+\,&amp;6x_7&amp;\,+\,&amp;7x_7&amp;=&amp; 0
-\end{alignat*}
-</div>
-</div></div>
-<article class="task exercise-like" id="EV7-4-4-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="EV7-4-4-2-1">Find its solution set (a subspace of <span class="process-math">\(\IR^7\)</span>).</div></article><article class="task exercise-like" id="EV7-4-4-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para logical" id="EV7-4-4-3-1">
-<div class="para">Rewrite this solution space in the form</div>
+<div class="introduction" id="AT5-4-16-1"><div class="para logical" id="AT5-4-16-1-1">
+<div class="para">Let <span class="process-math">\(V=\setBuilder{(x,y)}{x,y\in\IR}\)</span> have operations defined by</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\setBuilder{ a \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right] + b \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right]+c \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right]+d \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right] }{a,b,c,d \in \IR}.
+(x_1,y_1)\oplus (x_2,y_2)=(x_1+x_2,y_1+3y_2)
+\hspace{3em}
+c\odot (x,y)=(cx,cy)
+.
 \end{equation*}
 </div>
-</div></article><article class="task exercise-like" id="EV7-4-4-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para logical" id="EV7-4-4-4-1-1">
-<div class="para">Which of these choices best describes the set of two vectors <span class="process-math">\(\left\{\left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right], \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right],\left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right],\left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right]\right\}\)</span> used in this solution space?</div>
-<ol class="upper-alpha" id="EV7-4-4-4-1-1-2">
-<li id="EV7-4-4-4-1-1-2-1"><div class="para" id="EV7-4-4-4-1-1-2-1-1">The set is linearly dependent.</div></li>
-<li id="EV7-4-4-4-1-1-2-2"><div class="para" id="EV7-4-4-4-1-1-2-2-1">The set is linearly independent.</div></li>
-<li id="EV7-4-4-4-1-1-2-3"><div class="para" id="EV7-4-4-4-1-1-2-3-1">The set spans the solution space.</div></li>
-<li id="EV7-4-4-4-1-1-2-4"><div class="para" id="EV7-4-4-4-1-1-2-4-1">The set is a basis for the solution space.</div></li>
+</div></div>
+<article class="task exercise-like" id="AT5-4-16-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para logical" id="AT5-4-16-2-1">
+<div class="para">Show that scalar multiplication distributes over vector addition, i.e.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+c \odot \left( (x_1,y_1) \oplus (x_2,y_2) \right) = c\odot (x_1,y_1) \oplus c\odot (x_2,y_2)
+\end{equation*}
+</div>
+<div class="para">for <em class="emphasis">all</em> <span class="process-math">\(c\in \IR,\, (x_1,y_1),(x_2,y_2) \in V\text{.}\)</span>
+</div>
+</div></article><article class="task exercise-like" id="AT5-4-16-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para logical" id="AT5-4-16-3-1">
+<div class="para">Show that vector addition is not associative, i.e.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+(x_1,y_1) \oplus \left((x_2,y_2) \oplus (x_3,y_3)\right) \neq \left((x_1,y_1)\oplus (x_2,y_2)\right) \oplus (x_3,y_3)
+\end{equation*}
+</div>
+<div class="para">for <em class="emphasis">some</em> vectors <span class="process-math">\((x_1,y_1), (x_2,y_2), (x_3,y_3) \in V\text{.}\)</span>
+</div>
+</div></article><article class="task exercise-like" id="AT5-4-16-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para logical" id="AT5-4-16-4-1">
+<div class="para">Is <span class="process-math">\(V\)</span> a vector space?</div>
+<ol class="upper-alpha" id="AT5-4-16-4-1-2">
+<li id="AT5-4-16-4-1-2-1"><div class="para" id="AT5-4-16-4-1-2-1-1">Yes</div></li>
+<li id="AT5-4-16-4-1-2-2"><div class="para" id="AT5-4-16-4-1-2-2-1">No</div></li>
+<li id="AT5-4-16-4-1-2-3"><div class="para" id="AT5-4-16-4-1-2-3-1">More work is required</div></li>
 </ol>
-</div>
-<div class="solutions"><details id="EV7-4-4-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="EV7-4-4-4-2-1">D.</div></div></details></div></article></article><div id="EV7-4-5" class="ptx-sagecell sagecell-octave"><script type="text/x-sage">
-</script></div>
-<article class="fact theorem-like" id="fact-solution-space-basis"><h4 class="heading">
-<span class="type">Fact</span><span class="space"> </span><span class="codenumber">2.7.5</span><span class="period">.</span>
-</h4>
-<div class="para" id="fact-solution-space-basis-1-1">The coefficients of the free variables in the solution space of a linear system always yield linearly independent vectors that span the solution space.</div> <div class="para logical" id="fact-solution-space-basis-1-2">
-<div class="para">Thus if</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\setBuilder{
-a \left[\begin{array}{c} -2 \\ 1 \\ 0 \\ 0\\0\\0\\0\end{array}\right] +
-b \left[\begin{array}{c} -7 \\ 0 \\ -1 \\ 5\\1\\0\\0 \end{array}\right]+
-c \left[\begin{array}{c} -1 \\ 0 \\ -3 \\ -2\\0\\1\\0 \end{array}\right]+
-d \left[\begin{array}{c} 1 \\ 0 \\ -2 \\ -6\\0\\0\\1 \end{array}\right]
-}{
-a,b,c,d \in \IR
-} = \vspan\left\{ \left[\begin{array}{c} -2 \\ 1 \\ 0 \\ 0\\0\\0\\0\end{array}\right], 
-\left[\begin{array}{c} -7 \\ 0 \\ -1 \\ 5\\1\\0\\0 \end{array}\right],
-\left[\begin{array}{c} -1 \\ 0 \\ -3 \\ -2\\0\\1\\0 \end{array}\right],
-\left[\begin{array}{c} 1 \\ 0 \\ -2 \\ -6\\0\\0\\1 \end{array}\right] \right\}
-\end{equation*}
-</div>
-<div class="para">is the solution space for a homogeneous system, then</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\setList{
-\left[\begin{array}{c} -2 \\ \textcolor{blue}{1} \\ 0 \\ 0\\\textcolor{blue}{0}\\\textcolor{blue}{0}\\\textcolor{blue}{0}\end{array}\right], 
-\left[\begin{array}{c} -7 \\ \textcolor{blue}{0} \\ -1 \\ 5\\\textcolor{blue}{1}\\\textcolor{blue}{0}\\\textcolor{blue}{0} \end{array}\right],
-\left[\begin{array}{c} -1 \\ \textcolor{blue}{0} \\ -3 \\ -2\\\textcolor{blue}{0}\\\textcolor{blue}{1}\\\textcolor{blue}{0} \end{array}\right],
-\left[\begin{array}{c} 1 \\ \textcolor{blue}{0} \\ -2 \\ -6\\\textcolor{blue}{0}\\\textcolor{blue}{0}\\\textcolor{blue}{1} \end{array}\right]
-}
-\end{equation*}
-</div>
-<div class="para">is a basis for the solution space.</div>
-</div></article><article class="activity project-like" id="EV7-4-7"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.7.6</span><span class="period">.</span>
-</h4>
-<div class="introduction" id="EV7-4-7-1"><div class="para logical" id="EV7-4-7-1-1">
-<div class="para">Consider the homogeneous system of equations</div>
-<div class="displaymath process-math" id="EV7-4-7-1-1-1">
-\begin{alignat*}{5}
-x_1&amp;\,-\,&amp;3x_2&amp;\,+\,&amp; 2x_3  &amp;=&amp; 0\\
-2x_1&amp;\,+\,&amp;6x_2&amp;\,+\,&amp;4x_3  &amp;=&amp; 0\\
-x_1&amp;\,+\,&amp;6x_2&amp;\,-\,&amp;4x_3 &amp;=&amp; 0
-\end{alignat*}
-</div>
-</div></div>
-<article class="task exercise-like" id="EV7-4-7-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="EV7-4-7-2-1-1">Find its solution space.</div></article><article class="task exercise-like" id="EV7-4-7-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para logical" id="EV7-4-7-3-1-1">
-<div class="para">Which of these is the best choice of basis for this solution space?</div>
-<ol class="upper-alpha cols3" id="EV7-4-7-3-1-1-1">
-<li id="EV7-4-7-3-1-1-1-1"><div class="para" id="p-derived-EV7-4-7-3-1-1-1-1"><span class="process-math">\(\displaystyle \{\}\)</span></div></li>
-<li id="EV7-4-7-3-1-1-1-2"><div class="para" id="p-derived-EV7-4-7-3-1-1-1-2"><span class="process-math">\(\displaystyle \{\vec 0\}\)</span></div></li>
-<li id="EV7-4-7-3-1-1-1-3"><div class="para" id="p-derived-EV7-4-7-3-1-1-1-3">The basis does not exist</div></li>
-</ol>
-</div>
-<div class="solutions"><details id="EV7-4-7-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="EV7-4-7-3-2-1">A.</div></div></details></div></article></article><div id="EV7-4-8" class="ptx-sagecell sagecell-octave"><script type="text/x-sage"></script></div>
-<article class="activity project-like" id="EV7-4-9"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.7.7</span><span class="period">.</span>
-</h4>
-<div class="introduction" id="EV7-4-9-1"><div class="para" id="EV7-4-9-1-1">To create a computer-animated film, an animator first models a scene as a subset of <span class="process-math">\(\mathbb R^3\text{.}\)</span> Then to transform this three-dimensional visual data for display on a two-dimensional movie screen or television set, the computer could apply a linear transformation that maps visual information at the point <span class="process-math">\((x,y,z)\in\mathbb R^3\)</span> onto the pixel located at <span class="process-math">\((x+y,y-z)\in\mathbb R^2\text{.}\)</span>
-</div></div>
-<article class="task exercise-like" id="EV7-4-9-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="EV7-4-9-2-1-1">What homogeneous linear system describes the positions <span class="process-math">\((x,y,z)\)</span> within the original scene that would be aligned with the pixel <span class="process-math">\((0,0)\)</span> on the screen?</div></article><article class="task exercise-like" id="EV7-4-9-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="EV7-4-9-3-1-1">Solve this system to describe these locations.</div></article></article><div id="EV7-4-10" class="ptx-sagecell sagecell-octave"><script type="text/x-sage"></script></div></section><section class="subsection" id="EV7-5"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.7.3</span><span class="space"> </span><span class="title">Individual Practice</span>
+</div></article></article></section><section class="subsection" id="AT5-5"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.5.3</span><span class="space"> </span><span class="title">Cooldown</span>
 </h3>
-<article class="activity project-like" id="EV7-5-2"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.7.8</span><span class="period">.</span>
+<article class="activity project-like" id="AT5-5-2"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.5.17</span><span class="period">.</span>
 </h4>
-<div class="introduction" id="EV7-5-2-1"><div class="para logical" id="EV7-5-2-1-1">
-<div class="para">Let <span class="process-math">\(S=\setList{
-\left[\begin{array}{c} -2 \\ 1 \\ 0 \\ 0\end{array}\right],
-\left[\begin{array}{c} -1 \\ 0 \\ -4 \\ 1 \end{array}\right],
-\left[\begin{array}{c} 1 \\ 0 \\ -2 \\ 3 \end{array}\right]
-}\)</span> and <span class="process-math">\(A=\left[\begin{array}{ccc}
--2 &amp; -1 &amp;1\\
-1 &amp; 0 &amp;0\\
-0 &amp; -4 &amp;-2\\
-0 &amp; 1 &amp;3
-\end{array}\right];\)</span> note that</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\RREF(A)=\left[\begin{array}{ccc}
-1 &amp; 0 &amp;0\\
-0 &amp; 1 &amp;0\\
-0 &amp; 0 &amp;1\\
-0 &amp; 0 &amp;0
-\end{array}\right].
-\end{equation*}
-</div>
-<div class="para">The following statements are all <em class="emphasis">invalid</em> for at least one reason. Determine what makes them invalid and, suggest alternative <em class="emphasis">valid</em> statements that the author may have meant instead.</div>
-</div></div>
-<article class="task exercise-like" id="EV7-5-2-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="EV7-5-2-2-1-1">The matrix <span class="process-math">\(A\)</span> is linearly independent because <span class="process-math">\(\RREF(A)\)</span> has a pivot in each column.</div></article><article class="task exercise-like" id="EV7-5-2-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="EV7-5-2-3-1-1">The matrix <span class="process-math">\(A\)</span> does not span <span class="process-math">\(\IR^4\)</span> because <span class="process-math">\(\RREF(A)\)</span> has a row of zeroes.</div></article><article class="task exercise-like" id="EV7-5-2-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para" id="EV7-5-2-4-1-1">The set of vectors <span class="process-math">\(S\)</span> spans.</div></article><article class="task exercise-like" id="EV7-5-2-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
-<div class="para" id="EV7-5-2-5-1-1">The set of vectors <span class="process-math">\(S\)</span> is a basis.</div></article></article></section><section class="subsection" id="EV7-6"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.7.4</span><span class="space"> </span><span class="title">Videos</span>
+<article class="task exercise-like" id="AT5-5-2-1"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="AT5-5-2-1-1-1">What are some objects that are important to you personally, academically, or otherwise that appear vector-like to you? What makes them feel vector-like? Which axiom for vector spaces does not hold for these objects, if any?</div></article><article class="task exercise-like" id="AT5-5-2-2"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="AT5-5-2-2-1-1">Our vector space axioms have eight properties. While these eight properties are enough to capture vectors, the objects that we study in the real world often have additional structures not captured by these axioms. What are some structures that you have encountered in other classes, or in previous experiences, that are not captured by these eight axioms?</div></article></article></section><section class="subsection" id="AT5-6"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.5.4</span><span class="space"> </span><span class="title">Videos</span>
 </h3>
-<figure class="figure figure-like" id="EV7-6-2"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/TbN3lvLaNOw?&amp;modestbranding=1&amp;rel=0" id="video-EV7"></iframe></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">18<span class="period">.</span></span><span class="space"> </span>Video: Polynomial and matrix calculations</figcaption></figure></section><section class="exercises" id="EV7-7"><h3 class="heading hide-type">
-<span class="type">Exercises</span><span class="space"> </span><span class="codenumber">2.7.5</span><span class="space"> </span><span class="title">Exercises</span>
+<figure class="figure figure-like" id="AT5-6-2"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/7Qv5Sykdv0I?&amp;modestbranding=1&amp;rel=0" id="video-AT5-1"></iframe></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">37<span class="period">.</span></span><span class="space"> </span>Video: Verifying that a vector space property holds</figcaption></figure><figure class="figure figure-like" id="AT5-6-3"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/q6VSE54ogc4?&amp;modestbranding=1&amp;rel=0" id="video-AT5-2"></iframe></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">38<span class="period">.</span></span><span class="space"> </span>Video: Showing something is not a vector space</figcaption></figure></section><section class="exercises" id="AT5-7"><h3 class="heading hide-type">
+<span class="type">Exercises</span><span class="space"> </span><span class="codenumber">3.5.5</span><span class="space"> </span><span class="title">Exercises</span>
 </h3>
-<div class="para" id="EV7-7-1">Exercises available at <a class="external" href="https://tbil.org/preview/linear-algebra/exercises/#/bank/EV7/" target="_blank"><code class="code-inline tex2jax_ignore">https://tbil.org/preview/linear-algebra/exercises/#/bank/EV7/</code></a>.</div></section><section class="subsection" id="EV7-8"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.7.6</span><span class="space"> </span><span class="title">Mathematical Writing Explorations</span>
+<div class="para" id="AT5-7-1">Exercises available at <a class="external" href="https://tbil.org/preview/linear-algebra/exercises/#/bank/AT5/" target="_blank"><code class="code-inline tex2jax_ignore">https://tbil.org/preview/linear-algebra/exercises/#/bank/AT5/</code></a>.</div></section><section class="subsection" id="AT5-8"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.5.6</span><span class="space"> </span><span class="title">Mathematical Writing Explorations</span>
 </h3>
-<article class="exploration project-like" id="non-singular"><h4 class="heading">
-<span class="type">Exploration</span><span class="space"> </span><span class="codenumber">2.7.9</span><span class="period">.</span>
+<article class="exploration project-like" id="AT5-8-2"><h4 class="heading">
+<span class="type">Exploration</span><span class="space"> </span><span class="codenumber">3.5.18</span><span class="period">.</span>
 </h4>
-<div class="para" id="non-singular-1-1">An <span class="process-math">\(n \times n\)</span> matrix <span class="process-math">\(M\)</span> is <dfn class="terminology">non-singular</dfn> if the associated homogeneous system with coefficient matrix <span class="process-math">\(M\)</span> is consistent with one solution. Assume the matrices in the writing explorations in this section are all non-singular.</div> <ul class="disc" id="non-singular-1-2">
-<li id="non-singular-1-2-1"><div class="para" id="p-derived-non-singular-1-2-1">Prove that the reduced row echelon form of <span class="process-math">\(M\)</span> is the identity matrix.</div></li>
-<li id="non-singular-1-2-2"><div class="para" id="p-derived-non-singular-1-2-2">Prove that, for any column vector <span class="process-math">\(\vec{b} = \left[\begin{array}{c}b_1\\b_2\\ \vdots \\b_n \end{array}\right]\text{,}\)</span> the system of equations given by <span class="process-math">\(\left[\begin{array}{c|c}M &amp; \vec{b}\end{array}
-\right]\)</span> has a unique solution.</div></li>
-<li id="non-singular-1-2-3"><div class="para" id="p-derived-non-singular-1-2-3">Prove that the columns of <span class="process-math">\(M\)</span> form a basis for <span class="process-math">\(\mathbb{R}^n\text{.}\)</span>
+<div class="para logical" id="AT5-8-2-1-1"><ul class="disc" id="AT5-8-2-1-1-1">
+<li id="AT5-8-2-1-1-1-1"><div class="para" id="p-derived-AT5-8-2-1-1-1-1">Show that <span class="process-math">\(\mathbb{R}^+\text{,}\)</span> the set of positive real numbers, is a vector space, but where <span class="process-math">\(x\oplus y\)</span> really means the product (so <span class="process-math">\(2 \oplus 3 = 6\)</span>), and where scalar multiplication <span class="process-math">\(\alpha\odot x\)</span> really means <span class="process-math">\(x^\alpha\text{.}\)</span> Yes, you really do need to check all of the properties, but this is the only time I’ll make you do so. Remember, examples aren’t proofs, so you should start with arbitrary elements of <span class="process-math">\(\mathbb R^+\)</span> for your vectors. Make sure you’re careful about telling the reader what <span class="process-math">\(\alpha\)</span> means.</div></li>
+<li id="AT5-8-2-1-1-1-2"><div class="para" id="p-derived-AT5-8-2-1-1-1-2">Prove that the additive identity <span class="process-math">\(\vec{z}\)</span> in an arbitrary vector space is unique.</div></li>
+<li id="AT5-8-2-1-1-1-3"><div class="para" id="p-derived-AT5-8-2-1-1-1-3">Prove that additive inverses are unique. Assume you have a vector space <span class="process-math">\(V\)</span> and  some <span class="process-math">\(\vec{v} \in V\text{.}\)</span> Further, assume <span class="process-math">\(\vec{w_1},\vec{w_2} \in V\)</span> with <span class="process-math">\(\vec{v} \oplus \vec{w_1} = \vec{v} \oplus \vec{w_2} = \vec{z}\text{.}\)</span> Prove that <span class="process-math">\(\vec{w_1} = \vec{w_2}\text{.}\)</span>
 </div></li>
-<li id="non-singular-1-2-4"><div class="para" id="p-derived-non-singular-1-2-4">Prove that the rank of <span class="process-math">\(M\)</span> is <span class="process-math">\(n\text{.}\)</span>
-</div></li>
-</ul></article></section><section class="subsection" id="EV7-9"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.7.7</span><span class="space"> </span><span class="title">Sample Problem and Solution</span>
+</ul></div></article><article class="exploration project-like" id="AT5-8-3"><h4 class="heading">
+<span class="type">Exploration</span><span class="space"> </span><span class="codenumber">3.5.19</span><span class="period">.</span>
+</h4>
+<div class="para" id="AT5-8-3-1-1">Consider the vector space of polynomials, <span class="process-math">\(\P_n\text{.}\)</span> Suppose further that <span class="process-math">\(n= ab\text{,}\)</span> where <span class="process-math">\(a \mbox{ and } b\)</span> are each positive integers. Conjecture a relationship between <span class="process-math">\(M_{a,b}\)</span> and <span class="process-math">\(\P_n\text{.}\)</span> We will investigate this further in section <a href="AT6.html" class="internal" title="Section 3.6: Polynomial and Matrix Spaces (AT6)">Section 3.6</a>
+</div></article></section><section class="subsection" id="AT5-9"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.5.7</span><span class="space"> </span><span class="title">Sample Problem and Solution</span>
 </h3>
-<div class="para" id="EV7-9-2">Sample problem <a href="sample-exercises.html#sample-EV7" class="internal" title="Example B.1.11: EV7">Example B.1.11</a>.</div></section></section></div>
+<div class="para" id="AT5-9-2">Sample problem <a href="sample-exercises.html#sample-AT5" class="internal" title="Example B.1.16: AT5">Example B.1.16</a>.</div></section></section></div>
 <div class="ptx-content-footer">
-<a class="previous-button button" href="EV6.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="AT.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="AT4.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="AT6.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">

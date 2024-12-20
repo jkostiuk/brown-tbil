@@ -8,7 +8,7 @@
 <html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>TBIL-LA Homogeneous Linear Systems (EV7)</title>
+<title>TBIL-LA Solving Systems with Matrix Inverses (MX3)</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
@@ -760,7 +760,7 @@ sagecell.makeSagecell({
 <ol id="searchresults" class="searchresults"></ol>
 </div>
 </div>
-<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="EV6.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="EV.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="AT.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\markedPivot}[1]{\boxed{#1}}
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="MX2.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="MX.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="MX4.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\markedPivot}[1]{\boxed{#1}}
 \newcommand{\IR}{\mathbb{R}}
 \newcommand{\IC}{\mathbb{C}}
 \renewcommand{\P}{\mathcal{P}}
@@ -892,9 +892,9 @@ sagecell.makeSagecell({
 </li>
 </ul>
 </li>
-<li class="toc-item toc-chapter contains-active">
+<li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="EV.html" class="internal"><span class="codenumber">2</span> <span class="title">Euclidean Vectors (EV)</span></a></div>
-<ul class="structural toc-item-list contains-active">
+<ul class="structural toc-item-list">
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="EV1.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Linear Combinations (EV1)</span></a></div>
 <ul class="structural toc-item-list">
@@ -967,7 +967,7 @@ sagecell.makeSagecell({
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="EV6.html#EV6-9" class="internal"><span class="codenumber">2.6.7</span> <span class="title">Sample Problem and Solution</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section active">
+<li class="toc-item toc-section">
 <div class="toc-title-box"><a href="EV7.html" class="internal"><span class="codenumber">2.7</span> <span class="title">Homogeneous Linear Systems (EV7)</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="EV7.html#EV7-3" class="internal"><span class="codenumber">2.7.1</span> <span class="title">Warmup</span></a></div></li>
@@ -1058,9 +1058,9 @@ sagecell.makeSagecell({
 </li>
 </ul>
 </li>
-<li class="toc-item toc-chapter">
+<li class="toc-item toc-chapter contains-active">
 <div class="toc-title-box"><a href="MX.html" class="internal"><span class="codenumber">4</span> <span class="title">Matrices (MX)</span></a></div>
-<ul class="structural toc-item-list">
+<ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="MX1.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Matrices and Multiplication (MX1)</span></a></div>
 <ul class="structural toc-item-list">
@@ -1085,7 +1085,7 @@ sagecell.makeSagecell({
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="MX2.html#MX2-9" class="internal"><span class="codenumber">4.2.7</span> <span class="title">Sample Problem and Solution</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section">
+<li class="toc-item toc-section active">
 <div class="toc-title-box"><a href="MX3.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Solving Systems with Matrix Inverses (MX3)</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="MX3.html#MX3-3" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Warm Up</span></a></div></li>
@@ -1202,264 +1202,268 @@ sagecell.makeSagecell({
 </ul>
 </li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="EV7"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">2.7</span><span class="space"> </span><span class="title">Homogeneous Linear Systems (EV7)</span>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="MX3"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">4.3</span><span class="space"> </span><span class="title">Solving Systems with Matrix Inverses (MX3)</span>
 </h2>
-<article class="objectives goal-like" id="EV7-2"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
-<ul class="disc" id="EV7-2-1"><li id="EV7-2-1-1"><div class="para" id="EV7-2-1-1-1">Find a basis for the solution set of a homogeneous system of equations.</div></li></ul></article><section class="subsection" id="EV7-3"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.7.1</span><span class="space"> </span><span class="title">Warmup</span>
+<article class="objectives goal-like" id="MX3-2"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
+<ul class="disc" id="MX3-2-1"><li id="MX3-2-1-1"><div class="para" id="MX3-2-1-1-1">Invert an appropriate matrix to solve a system of linear equations.</div></li></ul></article><section class="subsection" id="MX3-3"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">4.3.1</span><span class="space"> </span><span class="title">Warm Up</span>
 </h3>
-<article class="remark remark-like" id="EV7-3-2"><h4 class="heading">
-<span class="type">Remark</span><span class="space"> </span><span class="codenumber">2.7.1</span><span class="period">.</span>
+<article class="activity project-like" id="MX3-3-2"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.3.1</span><span class="period">.</span>
 </h4>
-<div class="para logical" id="EV7-3-2-1">
-<div class="para">Recall from <a href="EV3.html" class="internal" title="Section 2.3: Subspaces (EV3)">Section 2.3</a> that a <dfn class="terminology">homogeneous</dfn> system of linear equations is one of the form:</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/EV3.html" id="EV7-3-2-1-4">
-\begin{alignat*}{5}
-a_{11}x_1 &amp;\,+\,&amp; a_{12}x_2 &amp;\,+\,&amp; \dots  &amp;\,+\,&amp; a_{1n}x_n &amp;\,=\,&amp; 0 \\
-a_{21}x_1 &amp;\,+\,&amp; a_{22}x_2 &amp;\,+\,&amp; \dots  &amp;\,+\,&amp; a_{2n}x_n &amp;\,=\,&amp; 0 \\
-\vdots&amp;  &amp;\vdots&amp;   &amp;&amp;  &amp;\vdots&amp;&amp;\vdots\\
-a_{m1}x_1 &amp;\,+\,&amp; a_{m2}x_2 &amp;\,+\,&amp; \dots  &amp;\,+\,&amp; a_{mn}x_n &amp;\,=\,&amp; 0
-\end{alignat*}
-</div>
-</div> <div class="para logical" id="EV7-3-2-2">
-<div class="para">This system is equivalent to the vector equation:</div>
-<div class="displaymath process-math">
-\begin{equation*}
-x_1 \vec{v}_1 + \cdots+x_n \vec{v}_n = \vec{0}
-\end{equation*}
-</div>
-<div class="para">and the augmented matrix:</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\left[\begin{array}{cccc|c}
-a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n} &amp; 0\\
-a_{21} &amp; a_{22} &amp; \cdots &amp; a_{2n} &amp; 0\\
-\vdots &amp; \vdots &amp; \ddots &amp; \vdots &amp; \vdots\\
-a_{m1} &amp; a_{m2} &amp; \cdots &amp; a_{mn} &amp; 0
-\end{array}\right].
-\end{equation*}
-</div>
-</div></article><article class="activity project-like" id="EV7-3-3"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.7.2</span><span class="period">.</span>
-</h4>
-<div class="introduction" id="EV7-3-3-1"><div class="para logical" id="EV7-3-3-1-1">
-<div class="para">In <a href="EV3.html" class="internal" title="Section 2.3: Subspaces (EV3)">Section 2.3</a>, we observed that if</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/EV3.html">
-\begin{equation*}
-x_1 \vec{v}_1 + \cdots+x_n \vec{v}_n = \vec{0}
-\end{equation*}
-</div>
-<div class="para">is a homogeneous vector equation, then:</div>
-<ul class="disc" id="EV7-3-3-1-1-3">
-<li id="EV7-3-3-1-1-3-1"><div class="para" id="EV7-3-3-1-1-3-1-1">The zero vector <span class="process-math">\(\vec{0}\)</span> is a solution;</div></li>
-<li id="EV7-3-3-1-1-3-2"><div class="para" id="EV7-3-3-1-1-3-2-1">The sum of any two solutions is again a solution;</div></li>
-<li id="EV7-3-3-1-1-3-3"><div class="para" id="EV7-3-3-1-1-3-3-1">Multiplying a solution by a scalar produces another solution.</div></li>
-</ul>
-</div></div> <div class="para logical" id="EV7-3-3-2">
-<div class="para">Based on this recollection, which of the following best describes the solution set to the homogeneous equation?</div>
-<ol class="upper-alpha" id="EV7-3-3-2-1">
-<li id="EV7-3-3-2-1-1"><div class="para" id="EV7-3-3-2-1-1-1">A basis for <span class="process-math">\(\IR^n\text{.}\)</span>
-</div></li>
-<li id="EV7-3-3-2-1-2"><div class="para" id="EV7-3-3-2-1-2-1">A subspace of <span class="process-math">\(\IR^n\text{.}\)</span>
-</div></li>
-<li id="EV7-3-3-2-1-3"><div class="para" id="EV7-3-3-2-1-3-1">All of <span class="process-math">\(\IR^n\text{.}\)</span>
-</div></li>
-<li id="EV7-3-3-2-1-4"><div class="para" id="EV7-3-3-2-1-4-1">The empty set.</div></li>
+<div class="introduction" id="MX3-3-2-1">
+<article class="task exercise-like" id="MX3-3-2-1-1"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para logical" id="MX3-3-2-1-1-1">
+<div class="para">Which of the following matrices is invertible? Find the inverse for the one that is invertible.</div>
+<ol class="upper-alpha" id="MX3-3-2-1-1-1-1">
+<li id="MX3-3-2-1-1-1-1-1"><div class="para" id="MX3-3-2-1-1-1-1-1-1"><span class="process-math">\(\displaystyle \left[\begin{matrix}1 &amp; -1 &amp; 0\\
+-1 &amp; 1 &amp; 0\\
+1 &amp; 0 &amp; 1\end{matrix}\right]\)</span></div></li>
+<li id="MX3-3-2-1-1-1-1-2"><div class="para" id="MX3-3-2-1-1-1-1-2-1"><span class="process-math">\(\displaystyle \left[\begin{matrix}1 &amp; -1 &amp; 3\\
+-1 &amp; 1 &amp; -1\\
+1 &amp; 0 &amp; -2\end{matrix}\right]\)</span></div></li>
 </ol>
-</div></article></section><section class="subsection" id="EV7-4"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.7.2</span><span class="space"> </span><span class="title">Class Activities</span>
+</div></article> <article class="task exercise-like" id="MX3-3-2-1-2"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="MX3-3-2-1-2-1">Check your work using technology. Read the examples carefully, and run them in the Octave cell below.</div>
+<div class="para" id="MX3-3-2-1-2-2">Recall the syntax for entering and multiplying matrices.</div>
+<pre class="code-display tex2jax_ignore">
+A = [1 -1 0 ; -1 1 0 ; 1 0 1]
+B = [1 -1 3 ; -1 1 -1  ; 1 0 2]
+A*B
+    </pre>
+<div class="para logical" id="MX3-3-2-1-2-4">
+<div class="para">To invert a matrix <span class="process-math">\(A\text{,}\)</span> the syntax is</div>
+<pre class="code-display tex2jax_ignore">
+inv(A)
+</pre>
+<div class="para">When you run this code, does it match your work from part (a)?</div>
+</div></article>
+</div></article><div id="MX3-3-3" class="ptx-sagecell sagecell-octave"><script type="text/x-sage">A = [1 -1 0 ; -1 1 0 ; 1 0 1]
+B = [1 -1 3 ; -1 1 -1  ; 1 0 2]
+A*B
+inv(A)
+inv(B)
+</script></div></section><section class="subsection" id="MX3-4"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">4.3.2</span><span class="space"> </span><span class="title">Class Activities</span>
 </h3>
-<article class="activity project-like" id="EV7-4-2"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.7.3</span><span class="period">.</span>
+<article class="activity project-like" id="MX3-4-2"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.3.2</span><span class="period">.</span>
 </h4>
-<div class="introduction" id="EV7-4-2-1"><div class="para logical" id="EV7-4-2-1-1">
-<div class="para">Consider the homogeneous system of equations</div>
-<div class="displaymath process-math" id="EV7-4-2-1-1-1">
-\begin{alignat*}{5}
-x_1&amp;\,+\,&amp;2x_2&amp;\,\,&amp; &amp;\,+\,&amp; x_4 &amp;=&amp; 0\\
-2x_1&amp;\,+\,&amp;4x_2&amp;\,-\,&amp;x_3 &amp;\,-\,&amp;2 x_4 &amp;=&amp; 0\\
-3x_1&amp;\,+\,&amp;6x_2&amp;\,-\,&amp;x_3 &amp;\,-\,&amp; x_4 &amp;=&amp; 0
-\end{alignat*}
-</div>
-</div></div>
-<article class="task exercise-like" id="EV7-4-2-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="EV7-4-2-2-1">Find its solution set (a subspace of <span class="process-math">\(\IR^4\)</span>).</div></article><article class="task exercise-like" id="EV7-4-2-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para logical" id="EV7-4-2-3-1">
-<div class="para">Rewrite this solution space in the form</div>
+<div class="introduction" id="MX3-4-2-1"><div class="para logical" id="MX3-4-2-1-1">
+<div class="para">Consider the following linear system with a unique solution:</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\setBuilder{ a \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\end{array}\right] + b \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown \end{array}\right] }{a,b \in \IR}.
+\begin{matrix}
+3x_{1} &amp; - &amp; 2x_{2} &amp; - &amp; 2x_{3} &amp; - &amp; 4x_{4} &amp; = &amp; -7 \\
+2x_{1} &amp; - &amp; x_{2}  &amp; - &amp;  x_{3} &amp; - &amp; x_{4} &amp; = &amp; -1 \\
+-x_{1} &amp;   &amp;        &amp; + &amp;  x_{3} &amp;   &amp;        &amp; = &amp; -1 \\
+&amp; - &amp; x_{2}  &amp;   &amp;        &amp; - &amp; 2x_{4} &amp; = &amp; -5 \\
+\end{matrix}
 \end{equation*}
-</div>
-</div></article><article class="task exercise-like" id="EV7-4-2-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para logical" id="EV7-4-2-4-1-1">
-<div class="para">Which of these choices best describes the set of two vectors <span class="process-math">\(\left\{\left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\end{array}\right], \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown \end{array}\right]\right\}\)</span> used in this solution space?</div>
-<ol class="upper-alpha" id="EV7-4-2-4-1-1-2">
-<li id="EV7-4-2-4-1-1-2-1"><div class="para" id="EV7-4-2-4-1-1-2-1-1">The set is linearly dependent.</div></li>
-<li id="EV7-4-2-4-1-1-2-2"><div class="para" id="EV7-4-2-4-1-1-2-2-1">The set is linearly independent.</div></li>
-<li id="EV7-4-2-4-1-1-2-3"><div class="para" id="EV7-4-2-4-1-1-2-3-1">The set spans the solution space.</div></li>
-<li id="EV7-4-2-4-1-1-2-4"><div class="para" id="EV7-4-2-4-1-1-2-4-1">The set is a basis of the solution space.</div></li>
-</ol>
-</div>
-<div class="solutions"><details id="EV7-4-2-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="EV7-4-2-4-2-1">D.</div></div></details></div></article></article><div id="EV7-4-3" class="ptx-sagecell sagecell-octave"><script type="text/x-sage"></script></div>
-<article class="activity project-like" id="EV7-4-4"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.7.4</span><span class="period">.</span>
-</h4>
-<div class="introduction" id="EV7-4-4-1"><div class="para logical" id="EV7-4-4-1-1">
-<div class="para">Consider the homogeneous system of equations</div>
-<div class="displaymath process-math" id="EV7-4-4-1-1-1">
-\begin{alignat*}{8}
-2x_1&amp;\,+\,&amp;4x_2&amp;\,+\,&amp;2x_3 &amp;\,-\,&amp;3 x_4 &amp;\,+\,&amp;31x_5&amp;\,+\,&amp;2x_6&amp;\,-\,&amp;16x_7&amp;=&amp; 0\\
--1x_1&amp;\,-\,&amp;2x_2&amp;\,+\,&amp;4x_3 &amp;\,-\,&amp;x_4 &amp;\,+\,&amp;2x_5&amp;\,+\,&amp;9x_6&amp;\,+\,&amp;3x_7&amp;=&amp; 0\\
-x_1&amp;\,+\,&amp;2x_2&amp;\,+\,&amp;x_3 &amp;\,+\,&amp; x_4 &amp;\,+\,&amp;3x_5&amp;\,+\,&amp;6x_7&amp;\,+\,&amp;7x_7&amp;=&amp; 0
-\end{alignat*}
 </div>
 </div></div>
-<article class="task exercise-like" id="EV7-4-4-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="EV7-4-4-2-1">Find its solution set (a subspace of <span class="process-math">\(\IR^7\)</span>).</div></article><article class="task exercise-like" id="EV7-4-4-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para logical" id="EV7-4-4-3-1">
-<div class="para">Rewrite this solution space in the form</div>
+<article class="task exercise-like" id="MX3-4-2-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para logical" id="MX3-4-2-2-1">
+<div class="para">Suppose we let</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\setBuilder{ a \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right] + b \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right]+c \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right]+d \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right] }{a,b,c,d \in \IR}.
+T\left(\left[\begin{matrix}x_1\\x_2\\x_3\\x_4\end{matrix}\right]\right)=
+\left[\begin{matrix}
+3x_{1} &amp; - &amp; 2x_{2} &amp; - &amp; 2x_{3} &amp; - &amp; 4x_{4} \\
+2x_{1} &amp; - &amp; x_{2}  &amp; - &amp;  x_{3} &amp; - &amp; x_{4} \\
+-x_{1} &amp;   &amp;        &amp; + &amp;  x_{3} &amp;   &amp;        \\
+&amp; - &amp; x_{2}  &amp;   &amp;        &amp; - &amp; 2x_{4} \\
+\end{matrix}\right]\text{.}
 \end{equation*}
 </div>
-</div></article><article class="task exercise-like" id="EV7-4-4-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para logical" id="EV7-4-4-4-1-1">
-<div class="para">Which of these choices best describes the set of two vectors <span class="process-math">\(\left\{\left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right], \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right],\left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right],\left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right]\right\}\)</span> used in this solution space?</div>
-<ol class="upper-alpha" id="EV7-4-4-4-1-1-2">
-<li id="EV7-4-4-4-1-1-2-1"><div class="para" id="EV7-4-4-4-1-1-2-1-1">The set is linearly dependent.</div></li>
-<li id="EV7-4-4-4-1-1-2-2"><div class="para" id="EV7-4-4-4-1-1-2-2-1">The set is linearly independent.</div></li>
-<li id="EV7-4-4-4-1-1-2-3"><div class="para" id="EV7-4-4-4-1-1-2-3-1">The set spans the solution space.</div></li>
-<li id="EV7-4-4-4-1-1-2-4"><div class="para" id="EV7-4-4-4-1-1-2-4-1">The set is a basis for the solution space.</div></li>
-</ol>
-</div>
-<div class="solutions"><details id="EV7-4-4-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="EV7-4-4-4-2-1">D.</div></div></details></div></article></article><div id="EV7-4-5" class="ptx-sagecell sagecell-octave"><script type="text/x-sage">
-</script></div>
-<article class="fact theorem-like" id="fact-solution-space-basis"><h4 class="heading">
-<span class="type">Fact</span><span class="space"> </span><span class="codenumber">2.7.5</span><span class="period">.</span>
-</h4>
-<div class="para" id="fact-solution-space-basis-1-1">The coefficients of the free variables in the solution space of a linear system always yield linearly independent vectors that span the solution space.</div> <div class="para logical" id="fact-solution-space-basis-1-2">
-<div class="para">Thus if</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\setBuilder{
-a \left[\begin{array}{c} -2 \\ 1 \\ 0 \\ 0\\0\\0\\0\end{array}\right] +
-b \left[\begin{array}{c} -7 \\ 0 \\ -1 \\ 5\\1\\0\\0 \end{array}\right]+
-c \left[\begin{array}{c} -1 \\ 0 \\ -3 \\ -2\\0\\1\\0 \end{array}\right]+
-d \left[\begin{array}{c} 1 \\ 0 \\ -2 \\ -6\\0\\0\\1 \end{array}\right]
-}{
-a,b,c,d \in \IR
-} = \vspan\left\{ \left[\begin{array}{c} -2 \\ 1 \\ 0 \\ 0\\0\\0\\0\end{array}\right], 
-\left[\begin{array}{c} -7 \\ 0 \\ -1 \\ 5\\1\\0\\0 \end{array}\right],
-\left[\begin{array}{c} -1 \\ 0 \\ -3 \\ -2\\0\\1\\0 \end{array}\right],
-\left[\begin{array}{c} 1 \\ 0 \\ -2 \\ -6\\0\\0\\1 \end{array}\right] \right\}
-\end{equation*}
-</div>
-<div class="para">is the solution space for a homogeneous system, then</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\setList{
-\left[\begin{array}{c} -2 \\ \textcolor{blue}{1} \\ 0 \\ 0\\\textcolor{blue}{0}\\\textcolor{blue}{0}\\\textcolor{blue}{0}\end{array}\right], 
-\left[\begin{array}{c} -7 \\ \textcolor{blue}{0} \\ -1 \\ 5\\\textcolor{blue}{1}\\\textcolor{blue}{0}\\\textcolor{blue}{0} \end{array}\right],
-\left[\begin{array}{c} -1 \\ \textcolor{blue}{0} \\ -3 \\ -2\\\textcolor{blue}{0}\\\textcolor{blue}{1}\\\textcolor{blue}{0} \end{array}\right],
-\left[\begin{array}{c} 1 \\ \textcolor{blue}{0} \\ -2 \\ -6\\\textcolor{blue}{0}\\\textcolor{blue}{0}\\\textcolor{blue}{1} \end{array}\right]
-}
-\end{equation*}
-</div>
-<div class="para">is a basis for the solution space.</div>
-</div></article><article class="activity project-like" id="EV7-4-7"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.7.6</span><span class="period">.</span>
-</h4>
-<div class="introduction" id="EV7-4-7-1"><div class="para logical" id="EV7-4-7-1-1">
-<div class="para">Consider the homogeneous system of equations</div>
-<div class="displaymath process-math" id="EV7-4-7-1-1-1">
-\begin{alignat*}{5}
-x_1&amp;\,-\,&amp;3x_2&amp;\,+\,&amp; 2x_3  &amp;=&amp; 0\\
-2x_1&amp;\,+\,&amp;6x_2&amp;\,+\,&amp;4x_3  &amp;=&amp; 0\\
-x_1&amp;\,+\,&amp;6x_2&amp;\,-\,&amp;4x_3 &amp;=&amp; 0
-\end{alignat*}
-</div>
-</div></div>
-<article class="task exercise-like" id="EV7-4-7-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="EV7-4-7-2-1-1">Find its solution space.</div></article><article class="task exercise-like" id="EV7-4-7-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para logical" id="EV7-4-7-3-1-1">
-<div class="para">Which of these is the best choice of basis for this solution space?</div>
-<ol class="upper-alpha cols3" id="EV7-4-7-3-1-1-1">
-<li id="EV7-4-7-3-1-1-1-1"><div class="para" id="p-derived-EV7-4-7-3-1-1-1-1"><span class="process-math">\(\displaystyle \{\}\)</span></div></li>
-<li id="EV7-4-7-3-1-1-1-2"><div class="para" id="p-derived-EV7-4-7-3-1-1-1-2"><span class="process-math">\(\displaystyle \{\vec 0\}\)</span></div></li>
-<li id="EV7-4-7-3-1-1-1-3"><div class="para" id="p-derived-EV7-4-7-3-1-1-1-3">The basis does not exist</div></li>
-</ol>
-</div>
-<div class="solutions"><details id="EV7-4-7-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="EV7-4-7-3-2-1">A.</div></div></details></div></article></article><div id="EV7-4-8" class="ptx-sagecell sagecell-octave"><script type="text/x-sage"></script></div>
-<article class="activity project-like" id="EV7-4-9"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.7.7</span><span class="period">.</span>
-</h4>
-<div class="introduction" id="EV7-4-9-1"><div class="para" id="EV7-4-9-1-1">To create a computer-animated film, an animator first models a scene as a subset of <span class="process-math">\(\mathbb R^3\text{.}\)</span> Then to transform this three-dimensional visual data for display on a two-dimensional movie screen or television set, the computer could apply a linear transformation that maps visual information at the point <span class="process-math">\((x,y,z)\in\mathbb R^3\)</span> onto the pixel located at <span class="process-math">\((x+y,y-z)\in\mathbb R^2\text{.}\)</span>
-</div></div>
-<article class="task exercise-like" id="EV7-4-9-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="EV7-4-9-2-1-1">What homogeneous linear system describes the positions <span class="process-math">\((x,y,z)\)</span> within the original scene that would be aligned with the pixel <span class="process-math">\((0,0)\)</span> on the screen?</div></article><article class="task exercise-like" id="EV7-4-9-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="EV7-4-9-3-1-1">Solve this system to describe these locations.</div></article></article><div id="EV7-4-10" class="ptx-sagecell sagecell-octave"><script type="text/x-sage"></script></div></section><section class="subsection" id="EV7-5"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.7.3</span><span class="space"> </span><span class="title">Individual Practice</span>
-</h3>
-<article class="activity project-like" id="EV7-5-2"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.7.8</span><span class="period">.</span>
-</h4>
-<div class="introduction" id="EV7-5-2-1"><div class="para logical" id="EV7-5-2-1-1">
-<div class="para">Let <span class="process-math">\(S=\setList{
-\left[\begin{array}{c} -2 \\ 1 \\ 0 \\ 0\end{array}\right],
-\left[\begin{array}{c} -1 \\ 0 \\ -4 \\ 1 \end{array}\right],
-\left[\begin{array}{c} 1 \\ 0 \\ -2 \\ 3 \end{array}\right]
-}\)</span> and <span class="process-math">\(A=\left[\begin{array}{ccc}
--2 &amp; -1 &amp;1\\
-1 &amp; 0 &amp;0\\
-0 &amp; -4 &amp;-2\\
-0 &amp; 1 &amp;3
-\end{array}\right];\)</span> note that</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\RREF(A)=\left[\begin{array}{ccc}
-1 &amp; 0 &amp;0\\
-0 &amp; 1 &amp;0\\
-0 &amp; 0 &amp;1\\
-0 &amp; 0 &amp;0
-\end{array}\right].
-\end{equation*}
-</div>
-<div class="para">The following statements are all <em class="emphasis">invalid</em> for at least one reason. Determine what makes them invalid and, suggest alternative <em class="emphasis">valid</em> statements that the author may have meant instead.</div>
-</div></div>
-<article class="task exercise-like" id="EV7-5-2-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="EV7-5-2-2-1-1">The matrix <span class="process-math">\(A\)</span> is linearly independent because <span class="process-math">\(\RREF(A)\)</span> has a pivot in each column.</div></article><article class="task exercise-like" id="EV7-5-2-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="EV7-5-2-3-1-1">The matrix <span class="process-math">\(A\)</span> does not span <span class="process-math">\(\IR^4\)</span> because <span class="process-math">\(\RREF(A)\)</span> has a row of zeroes.</div></article><article class="task exercise-like" id="EV7-5-2-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para" id="EV7-5-2-4-1-1">The set of vectors <span class="process-math">\(S\)</span> spans.</div></article><article class="task exercise-like" id="EV7-5-2-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
-<div class="para" id="EV7-5-2-5-1-1">The set of vectors <span class="process-math">\(S\)</span> is a basis.</div></article></article></section><section class="subsection" id="EV7-6"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.7.4</span><span class="space"> </span><span class="title">Videos</span>
-</h3>
-<figure class="figure figure-like" id="EV7-6-2"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/TbN3lvLaNOw?&amp;modestbranding=1&amp;rel=0" id="video-EV7"></iframe></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">18<span class="period">.</span></span><span class="space"> </span>Video: Polynomial and matrix calculations</figcaption></figure></section><section class="exercises" id="EV7-7"><h3 class="heading hide-type">
-<span class="type">Exercises</span><span class="space"> </span><span class="codenumber">2.7.5</span><span class="space"> </span><span class="title">Exercises</span>
-</h3>
-<div class="para" id="EV7-7-1">Exercises available at <a class="external" href="https://tbil.org/preview/linear-algebra/exercises/#/bank/EV7/" target="_blank"><code class="code-inline tex2jax_ignore">https://tbil.org/preview/linear-algebra/exercises/#/bank/EV7/</code></a>.</div></section><section class="subsection" id="EV7-8"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.7.6</span><span class="space"> </span><span class="title">Mathematical Writing Explorations</span>
-</h3>
-<article class="exploration project-like" id="non-singular"><h4 class="heading">
-<span class="type">Exploration</span><span class="space"> </span><span class="codenumber">2.7.9</span><span class="period">.</span>
-</h4>
-<div class="para" id="non-singular-1-1">An <span class="process-math">\(n \times n\)</span> matrix <span class="process-math">\(M\)</span> is <dfn class="terminology">non-singular</dfn> if the associated homogeneous system with coefficient matrix <span class="process-math">\(M\)</span> is consistent with one solution. Assume the matrices in the writing explorations in this section are all non-singular.</div> <ul class="disc" id="non-singular-1-2">
-<li id="non-singular-1-2-1"><div class="para" id="p-derived-non-singular-1-2-1">Prove that the reduced row echelon form of <span class="process-math">\(M\)</span> is the identity matrix.</div></li>
-<li id="non-singular-1-2-2"><div class="para" id="p-derived-non-singular-1-2-2">Prove that, for any column vector <span class="process-math">\(\vec{b} = \left[\begin{array}{c}b_1\\b_2\\ \vdots \\b_n \end{array}\right]\text{,}\)</span> the system of equations given by <span class="process-math">\(\left[\begin{array}{c|c}M &amp; \vec{b}\end{array}
-\right]\)</span> has a unique solution.</div></li>
-<li id="non-singular-1-2-3"><div class="para" id="p-derived-non-singular-1-2-3">Prove that the columns of <span class="process-math">\(M\)</span> form a basis for <span class="process-math">\(\mathbb{R}^n\text{.}\)</span>
+<div class="para">Which of these choices would help us solve the given system?</div>
+<ol class="upper-alpha" id="MX3-4-2-2-1-2">
+<li id="MX3-4-2-2-1-2-1"><div class="para" id="p-derived-MX3-4-2-2-1-2-1">Compute <span class="process-math">\(T\left(
+\left[\begin{matrix}
+-7 \\
+-1 \\
+-1 \\
+-5 \\
+\end{matrix}\right]\right)\)</span>
 </div></li>
-<li id="non-singular-1-2-4"><div class="para" id="p-derived-non-singular-1-2-4">Prove that the rank of <span class="process-math">\(M\)</span> is <span class="process-math">\(n\text{.}\)</span>
+<li id="MX3-4-2-2-1-2-2"><div class="para" id="p-derived-MX3-4-2-2-1-2-2">Find <span class="process-math">\(\left[\begin{matrix}x_1\\x_2\\x_3\\x_4\end{matrix}\right]\)</span> where <span class="process-math">\(T\left(\left[\begin{matrix}x_1\\x_2\\x_3\\x_4\end{matrix}\right]\right)=
+\left[\begin{matrix}
+-7 \\
+-1 \\
+-1 \\
+-5 \\
+\end{matrix}\right]\)</span>
 </div></li>
-</ul></article></section><section class="subsection" id="EV7-9"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.7.7</span><span class="space"> </span><span class="title">Sample Problem and Solution</span>
+</ol>
+</div></article><article class="task exercise-like" id="MX3-4-2-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="MX3-4-2-3-1">How can we express this in terms of matrix multiplication?</div>
+<ol class="upper-alpha" id="MX3-4-2-3-2">
+<li id="MX3-4-2-3-2-1"><div class="para" id="p-derived-MX3-4-2-3-2-1"><span class="process-math">\(\displaystyle \left[\begin{matrix}
+3 &amp; -2 &amp; -2 &amp; - 4 \\
+2 &amp; -1 &amp; -1 &amp; -1  \\
+-1 &amp; 0 &amp; 1 &amp; 0  \\
+0 &amp; -1 &amp; 0  &amp; -2 \\
+\end{matrix}\right]
+\left[\begin{matrix}x_1\\x_2\\x_3\\x_4\end{matrix}\right]
+=
+\left[\begin{matrix}
+-7 \\
+-1 \\
+-1 \\
+-5 \\
+\end{matrix}\right]\)</span></div></li>
+<li id="MX3-4-2-3-2-2"><div class="para" id="p-derived-MX3-4-2-3-2-2"><span class="process-math">\(\displaystyle \left[\begin{matrix}x_1\\x_2\\x_3\\x_4\end{matrix}\right]
+=
+\left[\begin{matrix}
+3 &amp; -2 &amp; -2 &amp; - 4 \\
+2 &amp; -1 &amp; -1 &amp; -1  \\
+-1 &amp; 0 &amp; 1 &amp; 0  \\
+0 &amp; -1 &amp; 0  &amp; -2 \\
+\end{matrix}\right]
+\left[\begin{matrix}
+-7 \\
+-1 \\
+-1 \\
+-5 \\
+\end{matrix}\right]\)</span></div></li>
+<li id="MX3-4-2-3-2-3"><div class="para" id="p-derived-MX3-4-2-3-2-3"><span class="process-math">\(\displaystyle \left[\begin{matrix}x_1\\x_2\\x_3\\x_4\end{matrix}\right]
+\left[\begin{matrix}
+3 &amp; -2 &amp; -2 &amp; - 4 \\
+2 &amp; -1 &amp; -1 &amp; -1  \\
+-1 &amp; 0 &amp; 1 &amp; 0  \\
+0 &amp; -1 &amp; 0  &amp; -2 \\
+\end{matrix}\right]
+=
+\left[\begin{matrix}
+-7 \\
+-1 \\
+-1 \\
+-5 \\
+\end{matrix}\right]\)</span></div></li>
+<li id="MX3-4-2-3-2-4"><div class="para" id="p-derived-MX3-4-2-3-2-4"><span class="process-math">\(\displaystyle \left[\begin{matrix}x_1\\x_2\\x_3\\x_4\end{matrix}\right]
+=
+\left[\begin{matrix}
+-7 \\
+-1 \\
+-1 \\
+-5 \\
+\end{matrix}\right]
+\left[\begin{matrix}
+3 &amp; -2 &amp; -2 &amp; - 4 \\
+2 &amp; -1 &amp; -1 &amp; -1  \\
+-1 &amp; 0 &amp; 1 &amp; 0  \\
+0 &amp; -1 &amp; 0  &amp; -2 \\
+\end{matrix}\right]\)</span></div></li>
+</ol></article><article class="task exercise-like" id="MX3-4-2-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para logical" id="MX3-4-2-4-1">
+<div class="para">How could a matrix equation of the form <span class="process-math">\(A\vec x=\vec b\)</span> be solved for <span class="process-math">\(\vec x\text{?}\)</span>
+</div>
+<ol class="upper-alpha" id="MX3-4-2-4-1-3">
+<li id="MX3-4-2-4-1-3-1"><div class="para" id="p-derived-MX3-4-2-4-1-3-1">Multiply: <span class="process-math">\((\RREF A)(A\vec x)=(\RREF A)\vec b\)</span>
+</div></li>
+<li id="MX3-4-2-4-1-3-2"><div class="para" id="p-derived-MX3-4-2-4-1-3-2">Add: <span class="process-math">\((\RREF A) + A\vec x=(\RREF A)+\vec b\)</span>
+</div></li>
+<li id="MX3-4-2-4-1-3-3"><div class="para" id="p-derived-MX3-4-2-4-1-3-3">Multiply: <span class="process-math">\((A^{-1})(A\vec x)=(A^{-1})\vec b\)</span>
+</div></li>
+<li id="MX3-4-2-4-1-3-4"><div class="para" id="p-derived-MX3-4-2-4-1-3-4">Add: <span class="process-math">\((A^{-1}) + A\vec x=(A^{-1})+\vec b\)</span>
+</div></li>
+</ol>
+</div></article><article class="task exercise-like" id="MX3-4-2-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="MX3-4-2-5-1">Find <span class="process-math">\(\left[\begin{matrix}x_1\\x_2\\x_3\\x_4\end{matrix}\right]\)</span> using the method you chose in (c).</div></article></article><article class="remark remark-like" id="MX3-4-3"><h4 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">4.3.3</span><span class="period">.</span>
+</h4>
+<div class="para" id="MX3-4-3-1">The linear system described by the augmented matrix <span class="process-math">\([A \mid \vec b]\)</span> has exactly the same solution set as the matrix equation <span class="process-math">\(A\vec x=\vec b\text{.}\)</span>
+</div> <div class="para logical" id="MX3-4-3-2">
+<div class="para">When <span class="process-math">\(A\)</span> is invertible, then we have both <span class="process-math">\([A \mid \vec b]\sim[I \mid \vec x]\)</span> and <span class="process-math">\(\vec x=A^{-1}\vec b\text{,}\)</span> which can be seen as</div>
+<div class="displaymath process-math" id="MX3-4-3-2-4">
+\begin{align*}
+&amp;&amp; A\vec x&amp;=\vec b\\
+&amp;\Rightarrow &amp; A^{-1}A\vec x&amp;=A^{-1}\vec b\\
+&amp;\Rightarrow &amp;\vec x&amp;=A^{-1}\vec b
+\end{align*}
+</div>
+</div></article><article class="activity project-like" id="MX3-4-4"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.3.4</span><span class="period">.</span>
+</h4>
+<div class="introduction" id="MX3-4-4-1"><div class="para logical" id="MX3-4-4-1-1">
+<div class="para">Consider the vector equation</div>
+<div class="displaymath process-math">
+\begin{equation*}
+x_{1} \left[\begin{array}{c} 1 \\ 2 \\ -2 \end{array}\right] + x_{2} \left[\begin{array}{c} -2 \\ -3 \\ 3 \end{array}\right] + x_{3} \left[\begin{array}{c} 1 \\ 4 \\ -3 \end{array}\right] = \left[\begin{array}{c} -3 \\ 5 \\ -1 \end{array}\right]
+\end{equation*}
+</div>
+<div class="para">with a unique solution.</div>
+</div></div>
+<article class="task exercise-like" id="MX3-4-4-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="MX3-4-4-2-1-1">Explain and demonstrate how this problem can be restated using matrix multiplication.</div></article><article class="task exercise-like" id="MX3-4-4-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="MX3-4-4-3-1-1">Use the properties of matrix multiplication to find the unique solution.</div></article></article></section><section class="subsection" id="MX3-5"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">4.3.3</span><span class="space"> </span><span class="title">Individual Practice</span>
 </h3>
-<div class="para" id="EV7-9-2">Sample problem <a href="sample-exercises.html#sample-EV7" class="internal" title="Example B.1.11: EV7">Example B.1.11</a>.</div></section></section></div>
+<article class="activity project-like" id="MX3-5-2"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.3.5</span><span class="period">.</span>
+</h4>
+<div class="introduction" id="MX3-5-2-1">
+<div class="para" id="MX3-5-2-1-1">Solving linear systems using matrix multiplication is most useful when we are working with one common coefficient matrix, and varying the right-hand side. That is, when we have <span class="process-math">\(A\vec{x}=\vec{b}\)</span> for several different values of <span class="process-math">\(\vec{b}\text{.}\)</span>
+</div> <div class="para" id="MX3-5-2-1-2">In the following, let <span class="process-math">\(A=\left[\begin{matrix}2 &amp; -1 &amp; -6\\ 2 &amp; 1 &amp; 3\\ 1 &amp; 1 &amp; 4\end{matrix}\right]\)</span> and consider the following questions about various equations of the form <span class="process-math">\(A\vec{x}=\vec{b}\text{?}\)</span>
+</div>
+</div>
+<article class="task exercise-like" id="MX3-5-2-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para logical" id="MX3-5-2-2-1-1">
+<div class="para">Suppose that <span class="process-math">\(\vec{b}=\left[\begin{matrix} 1\\1\\1\end{matrix}\right]\text{.}\)</span> If asked to solve the equation <span class="process-math">\(A\vec{x}=\vec{b}\text{,}\)</span> which of the following approaches do you prefer?</div>
+<ol class="upper-alpha" id="MX3-5-2-2-1-1-3">
+<li id="MX3-5-2-2-1-1-3-1"><div class="para" id="MX3-5-2-2-1-1-3-1-1">Calculate <span class="process-math">\(\RREF[A|\vec{b}]\text{.}\)</span>
+</div></li>
+<li id="MX3-5-2-2-1-1-3-2"><div class="para" id="MX3-5-2-2-1-1-3-2-1">Calculate <span class="process-math">\(A^{-1}\)</span> and then compute <span class="process-math">\(\vec{x}=A^{-1}\vec{b}\)</span>
+</div></li>
+</ol>
+</div></article><article class="task exercise-like" id="MX3-5-2-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para logical" id="MX3-5-2-3-1-1">
+<div class="para">Suppose that <span class="process-math">\(\vec{b}_1,\vec{b}_2,\vec{b}_3=\left[\begin{matrix} 1\\1\\1\end{matrix}\right],\left[\begin{matrix} 2\\1\\3\end{matrix}\right],\left[\begin{matrix} -1\\3\\5\end{matrix}\right]\text{.}\)</span> If asked to solve each of the equations <span class="process-math">\(A\vec{x}=\vec{b}_1, A\vec{x}=\vec{b}_2, A\vec{x}=\vec{b}_3\text{,}\)</span> which of the following approaches do you prefer?</div>
+<ol class="upper-alpha" id="MX3-5-2-3-1-1-3">
+<li id="MX3-5-2-3-1-1-3-1"><div class="para" id="MX3-5-2-3-1-1-3-1-1">Calculate <span class="process-math">\(\RREF[A|\vec{b}_1]\text{,}\)</span> <span class="process-math">\(\RREF[A|\vec{b}_2]\text{,}\)</span> and <span class="process-math">\(\RREF[A|\vec{b}_3]\)</span>
+</div></li>
+<li id="MX3-5-2-3-1-1-3-2"><div class="para" id="MX3-5-2-3-1-1-3-2-1">Calculate <span class="process-math">\(A^{-1}\)</span> and then compute <span class="process-math">\(\vec{x}=A^{-1}\vec{b}_1\text{,}\)</span> <span class="process-math">\(\vec{x}=A^{-1}\vec{b}_2\text{,}\)</span> and <span class="process-math">\(\vec{x}=A^{-1}\vec{b}_3\)</span>
+</div></li>
+</ol>
+</div></article><article class="task exercise-like" id="MX3-5-2-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para logical" id="MX3-5-2-4-1-1">
+<div class="para">Suppose that <span class="process-math">\(\vec{b}_1,\dots, \vec{b}_{10}\)</span> are 10 distinct vectors. If asked to solve each of the equations <span class="process-math">\(A\vec{x}=\vec{b}_1, \dots,  A\vec{x}=\vec{b}_{10}\text{,}\)</span> which of the following approaches do you prefer?</div>
+<ol class="upper-alpha" id="MX3-5-2-4-1-1-3">
+<li id="MX3-5-2-4-1-1-3-1"><div class="para" id="MX3-5-2-4-1-1-3-1-1">Calculate <span class="process-math">\(\RREF[A|\vec{b}_1]\text{,}\)</span> ... <span class="process-math">\(\RREF[A|\vec{b}_{10}]\text{.}\)</span>
+</div></li>
+<li id="MX3-5-2-4-1-1-3-2"><div class="para" id="MX3-5-2-4-1-1-3-2-1">Calculate <span class="process-math">\(A^{-1}\)</span> and then compute <span class="process-math">\(\vec{x}=A^{-1}\vec{b}_1\text{,}\)</span> ... <span class="process-math">\(\vec{x}=A^{-1}\vec{b}_{10}\text{.}\)</span>
+</div></li>
+</ol>
+</div></article></article></section><section class="subsection" id="MX3-6"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">4.3.4</span><span class="space"> </span><span class="title">Videos</span>
+</h3>
+<div class="para" id="MX3-6-2">Video coming soon to <a class="external" href="https://www.youtube.com/watch?v=kpOK7RhFEiQ&amp;list=PLwXCBkIf7xBMo3zMnD7WVt39rANLlSdmj" target="_blank">this YouTube playlist</a><details class="ptx-footnote" aria-live="polite" id="MX3-6-2-2"><summary class="ptx-footnote__number" title="Footnote 4.3.1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="MX3-6-2-2"><code class="code-inline tex2jax_ignore">www.youtube.com/watch?v=kpOK7RhFEiQ&amp;list=PLwXCBkIf7xBMo3zMnD7WVt39rANLlSdmj</code></div></details>.</div></section><section class="exercises" id="MX3-7"><h3 class="heading hide-type">
+<span class="type">Exercises</span><span class="space"> </span><span class="codenumber">4.3.5</span><span class="space"> </span><span class="title">Exercises</span>
+</h3>
+<div class="para" id="MX3-7-1">Exercises available at <a class="external" href="https://tbil.org/preview/linear-algebra/exercises/#/bank/MX3/" target="_blank"><code class="code-inline tex2jax_ignore">https://tbil.org/preview/linear-algebra/exercises/#/bank/MX3/</code></a>.</div></section><section class="subsection" id="MX3-8"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">4.3.6</span><span class="space"> </span><span class="title">Mathematical Writing Explorations</span>
+</h3>
+<article class="exploration project-like" id="MX3-8-2"><h4 class="heading">
+<span class="type">Exploration</span><span class="space"> </span><span class="codenumber">4.3.6</span><span class="period">.</span>
+</h4>Use row reduction to find the inverse of the following general matrix. Give conditions on which this inverse exists.<div class="displaymath process-math">
+\begin{equation*}
+\left[\begin{array}{ccc}1 &amp; b &amp; c \\ d &amp; e &amp; f \\ g &amp; h &amp; i \end{array}\right]
+\end{equation*}
+</div></article><article class="exploration project-like" id="MX3-8-3"><h4 class="heading">
+<span class="type">Exploration</span><span class="space"> </span><span class="codenumber">4.3.7</span><span class="period">.</span>
+</h4>Assume that <span class="process-math">\(H\)</span> is invertible, and that <span class="process-math">\(HG\)</span> is the zero matrix. Prove that <span class="process-math">\(G\)</span> must be the zero matrix. Would this still be true if <span class="process-math">\(H\)</span> were not invertible?</article><article class="exploration project-like" id="MX3-8-4"><h4 class="heading">
+<span class="type">Exploration</span><span class="space"> </span><span class="codenumber">4.3.8</span><span class="period">.</span>
+</h4>If <span class="process-math">\(H\)</span> is invertible and <span class="process-math">\(r \in \mathbb{R}\text{,}\)</span> what is the inverse of <span class="process-math">\(rH\text{?}\)</span></article><article class="exploration project-like" id="MX3-8-5"><h4 class="heading">
+<span class="type">Exploration</span><span class="space"> </span><span class="codenumber">4.3.9</span><span class="period">.</span>
+</h4>If <span class="process-math">\(H\)</span> and <span class="process-math">\(G\)</span> are invertible, is <span class="process-math">\(H^{-1} + G^{-1} = (H+G)^{-1}\text{?}\)</span></article><article class="exploration project-like" id="MX3-8-6"><h4 class="heading">
+<span class="type">Exploration</span><span class="space"> </span><span class="codenumber">4.3.10</span><span class="period">.</span>
+</h4>Prove that if <span class="process-math">\(A\text{,}\)</span> <span class="process-math">\(P\text{,}\)</span> and <span class="process-math">\(Q\)</span> are invertible with <span class="process-math">\(PAQ = I\text{,}\)</span> then <span class="process-math">\(A^{-1} = QP\text{.}\)</span></article></section><section class="subsection" id="MX3-9"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">4.3.7</span><span class="space"> </span><span class="title">Sample Problem and Solution</span>
+</h3>
+<div class="para" id="MX3-9-2">Sample problem <a href="sample-exercises.html#sample-MX3" class="internal" title="Example B.1.20: MX3">Example B.1.20</a>.</div></section></section></div>
 <div class="ptx-content-footer">
-<a class="previous-button button" href="EV6.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="AT.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="MX2.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="MX4.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">

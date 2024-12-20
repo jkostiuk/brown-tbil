@@ -8,7 +8,7 @@
 <html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>TBIL-LA Homogeneous Linear Systems (EV7)</title>
+<title>TBIL-LA Subspaces (EV3)</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
@@ -85,19 +85,7 @@ window.MathJax = {
     )}
   }
 };
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script>// Make *any* div with class 'sagecell-octave' an executable Sage cell
-// Their results will be linked, only within language type
-sagecell.makeSagecell({
-  "inputLocation": "div.sagecell-octave",
-  "linked": true,
-  "linkKey": "linked-octave",
-  "autoeval": false,
-  "languages": [
-    "octave"
-  ],
-  "evalButtonText": "Evaluate (Octave)"
-});
-</script><link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/themes/prism.css" rel="stylesheet">
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/themes/prism.css" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-core.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/autoloader/prism-autoloader.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-numbers/prism-line-numbers.min.js" integrity="sha512-dubtf8xMHSQlExGRQ5R7toxHLgSDZ0K7AunqPWHXmJQ8XyVIG19S1T95gBxlAeGOK02P4Da2RTnQz0Za0H0ebQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-numbers/prism-line-numbers.min.css" integrity="sha512-cbQXwDFK7lj2Fqfkuxbo5iD1dSbLlJGXGpfTDqbggqjHJeyzx88I3rfwjS38WJag/ihH7lzuGlGHpDBymLirZQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-highlight/prism-line-highlight.min.css" integrity="sha512-nXlJLUeqPMp1Q3+Bd8Qds8tXeRVQscMscwysJm821C++9w6WtsFbJjPenZ8cQVMXyqSAismveQJc0C1splFDCA==" crossorigin="anonymous" referrerpolicy="no-referrer">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/plugins/line-highlight/prism-line-highlight.min.js" integrity="sha512-93uCmm0q+qO5Lb1huDqr7tywS8A2TFA+1/WHvyiWaK6/pvsFl6USnILagntBx8JnVbQH5s3n0vQZY6xNthNfKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><link href="_static/pretext/css/pretext_search.css" rel="stylesheet" type="text/css">
@@ -760,7 +748,7 @@ sagecell.makeSagecell({
 <ol id="searchresults" class="searchresults"></ol>
 </div>
 </div>
-<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="EV6.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="EV.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="AT.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\markedPivot}[1]{\boxed{#1}}
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="EV2.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="EV.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="EV4.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\markedPivot}[1]{\boxed{#1}}
 \newcommand{\IR}{\mathbb{R}}
 \newcommand{\IC}{\mathbb{C}}
 \renewcommand{\P}{\mathcal{P}}
@@ -919,7 +907,7 @@ sagecell.makeSagecell({
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="EV2.html#EV2-9" class="internal"><span class="codenumber">2.2.7</span> <span class="title">Sample Problem and Solution</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section">
+<li class="toc-item toc-section active">
 <div class="toc-title-box"><a href="EV3.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Subspaces (EV3)</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="EV3.html#EV3-3" class="internal"><span class="codenumber">2.3.1</span> <span class="title">Warm Up</span></a></div></li>
@@ -967,7 +955,7 @@ sagecell.makeSagecell({
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="EV6.html#EV6-9" class="internal"><span class="codenumber">2.6.7</span> <span class="title">Sample Problem and Solution</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section active">
+<li class="toc-item toc-section">
 <div class="toc-title-box"><a href="EV7.html" class="internal"><span class="codenumber">2.7</span> <span class="title">Homogeneous Linear Systems (EV7)</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="EV7.html#EV7-3" class="internal"><span class="codenumber">2.7.1</span> <span class="title">Warmup</span></a></div></li>
@@ -1202,19 +1190,50 @@ sagecell.makeSagecell({
 </ul>
 </li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="EV7"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">2.7</span><span class="space"> </span><span class="title">Homogeneous Linear Systems (EV7)</span>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="EV3"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">2.3</span><span class="space"> </span><span class="title">Subspaces (EV3)</span>
 </h2>
-<article class="objectives goal-like" id="EV7-2"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
-<ul class="disc" id="EV7-2-1"><li id="EV7-2-1-1"><div class="para" id="EV7-2-1-1-1">Find a basis for the solution set of a homogeneous system of equations.</div></li></ul></article><section class="subsection" id="EV7-3"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.7.1</span><span class="space"> </span><span class="title">Warmup</span>
+<article class="objectives goal-like" id="EV3-2"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
+<ul class="disc" id="EV3-2-1"><li id="EV3-2-1-1"><div class="para" id="EV3-2-1-1-1">Determine if a subset of <span class="process-math">\(\IR^n\)</span> is a subspace or not.</div></li></ul></article><section class="subsection" id="EV3-3"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.3.1</span><span class="space"> </span><span class="title">Warm Up</span>
 </h3>
-<article class="remark remark-like" id="EV7-3-2"><h4 class="heading">
-<span class="type">Remark</span><span class="space"> </span><span class="codenumber">2.7.1</span><span class="period">.</span>
+<article class="activity project-like" id="EV3-3-2"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.3.1</span><span class="period">.</span>
 </h4>
-<div class="para logical" id="EV7-3-2-1">
-<div class="para">Recall from <a href="EV3.html" class="internal" title="Section 2.3: Subspaces (EV3)">Section 2.3</a> that a <dfn class="terminology">homogeneous</dfn> system of linear equations is one of the form:</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/EV3.html" id="EV7-3-2-1-4">
+<div class="introduction" id="EV3-3-2-1"><div class="para logical" id="EV3-3-2-1-1">
+<div class="para">Consider the linear equation</div>
+<div class="displaymath process-math">
+\begin{equation*}
+x+2y+z=0.
+\end{equation*}
+</div>
+</div></div>
+<article class="task exercise-like" id="EV3-3-2-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="EV3-3-2-2-1-1">Verify that both <span class="process-math">\(\vec{v}=\left[\begin{array}{c}1\\-1\\1\end{array}\right]\)</span> and <span class="process-math">\(\vec{w}=\left[\begin{array}{c}1\\0\\-1\end{array}\right]\)</span> are solutions.</div></article><article class="task exercise-like" id="EV3-3-2-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="EV3-3-2-3-1-1">Is the vector <span class="process-math">\(2\vec{v}-3\vec{w}\)</span> also a solution?</div></article></article></section><section class="subsection" id="EV3-4"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.3.2</span><span class="space"> </span><span class="title">Class Activities</span>
+</h3>
+<article class="observation remark-like" id="EV3-4-2"><h4 class="heading">
+<span class="type">Observation</span><span class="space"> </span><span class="codenumber">2.3.2</span><span class="period">.</span>
+</h4>
+<div class="para" id="EV3-4-2-1">Recall that if <span class="process-math">\(S=\left\{\vec{v}_1,\dots, \vec{v}_n\right\}\)</span> is subset of vectors in <span class="process-math">\(\IR^n\text{,}\)</span> then <span class="process-math">\(\vspan(S)\)</span> is the set of all linear combinations of vectors in <span class="process-math">\(S\text{.}\)</span> In EV2 (<a href="EV2.html" class="internal" title="Section 2.2: Spanning Sets (EV2)">Section 2.2</a>), we learned how to decide whether <span class="process-math">\(\vspan(S)\)</span> was equal to all of <span class="process-math">\(\IR^n\)</span> or something strictly smaller.</div></article><article class="activity project-like" id="EV3-4-3"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.3.3</span><span class="period">.</span>
+</h4>
+<div class="para logical" id="EV3-4-3-1-1">
+<div class="para">Let <span class="process-math">\(S\)</span> denote a set of vectors in <span class="process-math">\(\IR^n\)</span> and suppose that <span class="process-math">\(\vec{u},\vec{v}\in\vspan(S)\text{,}\)</span> <span class="process-math">\(c\in\IR\)</span> and that <span class="process-math">\(\vec{w}\in\IR^n\text{.}\)</span> Which of the following vectors might <em class="emphasis">not</em> belong to <span class="process-math">\(\vspan(S)\text{?}\)</span>
+</div>
+<ol class="upper-alpha" id="EV3-4-3-1-1-8">
+<li id="EV3-4-3-1-1-8-1"><div class="para" id="p-derived-EV3-4-3-1-1-8-1"><span class="process-math">\(\displaystyle \vec{0}\)</span></div></li>
+<li id="EV3-4-3-1-1-8-2"><div class="para" id="p-derived-EV3-4-3-1-1-8-2"><span class="process-math">\(\displaystyle \vec{u}+\vec{w}\)</span></div></li>
+<li id="EV3-4-3-1-1-8-3"><div class="para" id="p-derived-EV3-4-3-1-1-8-3"><span class="process-math">\(\displaystyle \vec{u}+\vec{v}\)</span></div></li>
+<li id="EV3-4-3-1-1-8-4"><div class="para" id="p-derived-EV3-4-3-1-1-8-4"><span class="process-math">\(\displaystyle c\vec{u}\)</span></div></li>
+</ol>
+</div></article><article class="definition definition-like" id="EV3-4-4"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.3.4</span><span class="period">.</span>
+</h4>
+<div class="para logical" id="EV3-4-4-1-1">
+<div class="para">A <dfn class="terminology">homogeneous</dfn> system of linear equations is one of the form:</div>
+<div class="displaymath process-math" id="EV3-4-4-1-1-3">
 \begin{alignat*}{5}
 a_{11}x_1 &amp;\,+\,&amp; a_{12}x_2 &amp;\,+\,&amp; \dots  &amp;\,+\,&amp; a_{1n}x_n &amp;\,=\,&amp; 0 \\
 a_{21}x_1 &amp;\,+\,&amp; a_{22}x_2 &amp;\,+\,&amp; \dots  &amp;\,+\,&amp; a_{2n}x_n &amp;\,=\,&amp; 0 \\
@@ -1222,7 +1241,7 @@ a_{21}x_1 &amp;\,+\,&amp; a_{22}x_2 &amp;\,+\,&amp; \dots  &amp;\,+\,&amp; a_{2n
 a_{m1}x_1 &amp;\,+\,&amp; a_{m2}x_2 &amp;\,+\,&amp; \dots  &amp;\,+\,&amp; a_{mn}x_n &amp;\,=\,&amp; 0
 \end{alignat*}
 </div>
-</div> <div class="para logical" id="EV7-3-2-2">
+</div> <div class="para logical" id="EV3-4-4-1-2">
 <div class="para">This system is equivalent to the vector equation:</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -1237,229 +1256,407 @@ a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n} &amp; 0\\
 a_{21} &amp; a_{22} &amp; \cdots &amp; a_{2n} &amp; 0\\
 \vdots &amp; \vdots &amp; \ddots &amp; \vdots &amp; \vdots\\
 a_{m1} &amp; a_{m2} &amp; \cdots &amp; a_{mn} &amp; 0
-\end{array}\right].
+\end{array}\right]
 \end{equation*}
 </div>
-</div></article><article class="activity project-like" id="EV7-3-3"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.7.2</span><span class="period">.</span>
+</div></article><article class="activity project-like" id="EV3-4-5"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.3.5</span><span class="period">.</span>
 </h4>
-<div class="introduction" id="EV7-3-3-1"><div class="para logical" id="EV7-3-3-1-1">
-<div class="para">In <a href="EV3.html" class="internal" title="Section 2.3: Subspaces (EV3)">Section 2.3</a>, we observed that if</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/EV3.html">
+<div class="introduction" id="EV3-4-5-1"><div class="para" id="EV3-4-5-1-1">Consider the homogeneous vector equation <span class="process-math">\(x_1 \vec{v}_1 + \cdots+x_n \vec{v}_n = \vec{0}\text{.}\)</span><abbr class="abbreviation"></abbr>
+</div></div>
+<article class="task exercise-like" id="EV3-4-5-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="EV3-4-5-2-1">Is this equation consistent?</div>
+<ol class="upper-alpha" id="EV3-4-5-2-2">
+<li id="EV3-4-5-2-2-1"><div class="para" id="EV3-4-5-2-2-1-1">no.</div></li>
+<li id="EV3-4-5-2-2-2"><div class="para" id="EV3-4-5-2-2-2-1">yes.</div></li>
+<li id="EV3-4-5-2-2-3"><div class="para" id="EV3-4-5-2-2-3-1">more information is required.</div></li>
+</ol></article><article class="task exercise-like" id="EV3-4-5-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para logical" id="EV3-4-5-3-1">
+<div class="para">Note that if <span class="process-math">\(\left[\begin{array}{c} a_1 \\ \vdots \\ a_n \end{array}\right] \)</span> and <span class="process-math">\(\left[\begin{array}{c} b_1 \\ \vdots \\ b_n \end{array}\right] \)</span> are both solutions, we know that</div>
+<div class="displaymath process-math">
 \begin{equation*}
-x_1 \vec{v}_1 + \cdots+x_n \vec{v}_n = \vec{0}
+a_1 \vec{v}_1+\cdots+a_n \vec{v}_n = \vec{0}
+\text{ and }
+b_1 \vec{v}_1+\cdots+b_n \vec{v}_n = \vec{0} \text{.}
 \end{equation*}
 </div>
-<div class="para">is a homogeneous vector equation, then:</div>
-<ul class="disc" id="EV7-3-3-1-1-3">
-<li id="EV7-3-3-1-1-3-1"><div class="para" id="EV7-3-3-1-1-3-1-1">The zero vector <span class="process-math">\(\vec{0}\)</span> is a solution;</div></li>
-<li id="EV7-3-3-1-1-3-2"><div class="para" id="EV7-3-3-1-1-3-2-1">The sum of any two solutions is again a solution;</div></li>
-<li id="EV7-3-3-1-1-3-3"><div class="para" id="EV7-3-3-1-1-3-3-1">Multiplying a solution by a scalar produces another solution.</div></li>
+<div class="para">Therefore by adding these equations:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+(a_1 + b_1) \vec{v}_1+\cdots+(a_n+b_n) \vec{v}_n = \vec{0},
+\end{equation*}
+</div>
+</div>
+<div class="para" id="EV3-4-5-3-2">we may conclude that the vector <span class="process-math">\(\left[\begin{array}{c} a_1+ b_1 \\ \vdots \\ a_n+b_n \end{array}\right] \)</span> is...</div>
+<ol class="upper-alpha" id="EV3-4-5-3-3">
+<li id="EV3-4-5-3-3-1"><div class="para" id="EV3-4-5-3-3-1-1">another solution.</div></li>
+<li id="EV3-4-5-3-3-2"><div class="para" id="EV3-4-5-3-3-2-1">not a solution.</div></li>
+<li id="EV3-4-5-3-3-3"><div class="para" id="EV3-4-5-3-3-3-1">is equal to <span class="process-math">\(\vec{0}\text{.}\)</span>
+</div></li>
+</ol></article><article class="task exercise-like" id="EV3-4-5-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para logical" id="EV3-4-5-4-1">
+<div class="para">Similarly, if <span class="process-math">\(c \in \IR\text{,}\)</span> then since multiplying by <span class="process-math">\(c\)</span> yields:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+(ca_1)\vec{v}_1+\cdots+(ca_n)\vec{v}_n=\vec{0},
+\end{equation*}
+</div>
+<div class="para">we may conclude that the vector <span class="process-math">\(\left[\begin{array}{c} ca_1 \\ \vdots \\ ca_n \end{array}\right] \)</span> is...</div>
+</div>
+<ol class="upper-alpha" id="EV3-4-5-4-2">
+<li id="EV3-4-5-4-2-1"><div class="para" id="EV3-4-5-4-2-1-1">another solution.</div></li>
+<li id="EV3-4-5-4-2-2"><div class="para" id="EV3-4-5-4-2-2-1">not a solution.</div></li>
+<li id="EV3-4-5-4-2-3"><div class="para" id="EV3-4-5-4-2-3-1">is equal to <span class="process-math">\(\vec{0}\text{.}\)</span>
+</div></li>
+<li id="EV3-4-5-4-2-4"><div class="para" id="EV3-4-5-4-2-4-1">The empty set.</div></li>
+</ol></article></article><article class="observation remark-like" id="EV3-4-6"><h4 class="heading">
+<span class="type">Observation</span><span class="space"> </span><span class="codenumber">2.3.6</span><span class="period">.</span>
+</h4>
+<div class="para logical" id="EV3-4-6-1">
+<div class="para">If <span class="process-math">\(S\)</span> is any set of vectors in <span class="process-math">\(\IR^n\text{,}\)</span> then the set <span class="process-math">\(\vspan(S)\)</span> has the following properties:</div>
+<ul class="disc" id="EV3-4-6-1-4">
+<li id="EV3-4-6-1-4-1"><div class="para" id="EV3-4-6-1-4-1-1">the set <span class="process-math">\(\vspan(S)\)</span> is non-empty.</div></li>
+<li id="EV3-4-6-1-4-2"><div class="para" id="EV3-4-6-1-4-2-1">the set <span class="process-math">\(\vspan(S)\)</span> is closed under addition: for any <span class="process-math">\(\vec{u},\vec{v}\in \vspan(S)\text{,}\)</span> the sum <span class="process-math">\(\vec{u}+\vec{v}\)</span> is also in <span class="process-math">\(\vspan(S)\text{.}\)</span>
+</div></li>
+<li id="EV3-4-6-1-4-3"><div class="para" id="EV3-4-6-1-4-3-1">the set <span class="process-math">\(\vspan(S)\)</span> is closed under scalar multiplication: for any <span class="process-math">\(\vec{u}\in\vspan(S)\)</span> and scalar <span class="process-math">\(c\in\IR\text{,}\)</span> the product <span class="process-math">\(c\vec{u}\)</span> is also in <span class="process-math">\(\vspan(S)\text{.}\)</span>
+</div></li>
 </ul>
-</div></div> <div class="para logical" id="EV7-3-3-2">
-<div class="para">Based on this recollection, which of the following best describes the solution set to the homogeneous equation?</div>
-<ol class="upper-alpha" id="EV7-3-3-2-1">
-<li id="EV7-3-3-2-1-1"><div class="para" id="EV7-3-3-2-1-1-1">A basis for <span class="process-math">\(\IR^n\text{.}\)</span>
+<div class="para">Likewise, if <span class="process-math">\(W\)</span> is the solution set to a homogenous vector equation, it too satisfies:</div>
+<ul class="disc" id="EV3-4-6-1-6">
+<li id="EV3-4-6-1-6-1"><div class="para" id="EV3-4-6-1-6-1-1">the set <span class="process-math">\(W\)</span> is non-empty.</div></li>
+<li id="EV3-4-6-1-6-2"><div class="para" id="EV3-4-6-1-6-2-1">the set <span class="process-math">\(W\)</span> is closed under addition: for any <span class="process-math">\(\vec{u},\vec{v}\in W\text{,}\)</span> the sum <span class="process-math">\(\vec{u}+\vec{v}\)</span> is also in <span class="process-math">\(W\text{.}\)</span>
 </div></li>
-<li id="EV7-3-3-2-1-2"><div class="para" id="EV7-3-3-2-1-2-1">A subspace of <span class="process-math">\(\IR^n\text{.}\)</span>
+<li id="EV3-4-6-1-6-3"><div class="para" id="EV3-4-6-1-6-3-1">the set <span class="process-math">\(\vspan(S)\)</span> is closed under scalar multiplication: for any <span class="process-math">\(\vec{u}\in W\)</span> and scalar <span class="process-math">\(c\in\IR\text{,}\)</span> the product <span class="process-math">\(c\vec{u}\)</span> is also in <span class="process-math">\(W\text{.}\)</span>
 </div></li>
-<li id="EV7-3-3-2-1-3"><div class="para" id="EV7-3-3-2-1-3-1">All of <span class="process-math">\(\IR^n\text{.}\)</span>
+</ul>
+</div></article><article class="definition definition-like" id="EV3-definition-subspace"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.3.7</span><span class="period">.</span>
+</h4>
+<div class="para logical" id="EV3-definition-subspace-1-1">
+<div class="para">A subset <span class="process-math">\(W\)</span> of a vector space is called a <dfn class="terminology">subspace</dfn> provided that it satisfies the following properties:</div>
+<ul class="disc" id="EV3-definition-subspace-1-1-4">
+<li id="EV3-definition-subspace-1-1-4-1"><div class="para" id="EV3-definition-subspace-1-1-4-1-1">the subset is non-empty.</div></li>
+<li id="EV3-definition-subspace-1-1-4-2"><div class="para" id="EV3-definition-subspace-1-1-4-2-1">the subset is <dfn class="terminology">closed under addition</dfn>: for any <span class="process-math">\(\vec{u},\vec{v} \in W\text{,}\)</span> the sum <span class="process-math">\(\vec{u}+\vec{v}\)</span> is also in <span class="process-math">\(W\text{.}\)</span>
 </div></li>
-<li id="EV7-3-3-2-1-4"><div class="para" id="EV7-3-3-2-1-4-1">The empty set.</div></li>
+<li id="EV3-definition-subspace-1-1-4-3"><div class="para" id="EV3-definition-subspace-1-1-4-3-1">the subset is <dfn class="terminology">closed under scalar multiplication</dfn>: for any <span class="process-math">\(\vec{u} \in W\)</span> and scalar <span class="process-math">\(c \in \IR\text{,}\)</span> the product <span class="process-math">\(c\vec{u}\)</span> is also in <span class="process-math">\(W\text{.}\)</span>
+</div></li>
+</ul>
+</div></article><article class="observation remark-like" id="EV3-4-8"><h4 class="heading">
+<span class="type">Observation</span><span class="space"> </span><span class="codenumber">2.3.8</span><span class="period">.</span>
+</h4>
+<div class="para" id="EV3-4-8-1">Note the similarities between a planar subspace spanned by two non-colinear vectors in <span class="process-math">\(\IR^3\text{,}\)</span> and the Euclidean plane <span class="process-math">\(\IR^2\text{.}\)</span> While they are not the same thing (and shouldn’t be referred to interchangably), algebraists call such similar spaces <dfn class="terminology">isomorphic</dfn>; we’ll learn what this means more carefully in a later chapter.</div> <figure class="figure figure-like" id="EV3-planar-subspace-vs-r2"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;">
+<img src="generated/latex-image/EV3-image-r2-in-r3.svg" role="img" class="contained" alt="described in detail following the image" aria-describedby="EV3-image-r2-in-r3-description"><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="EV3-image-r2-in-r3-description">A planar subset of <span class="process-math">\(\IR^3\)</span> compared with the plane <span class="process-math">\(\IR^2\text{.}\)</span>
+</div></details>
+</div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">11<span class="period">.</span></span><span class="space"> </span>A planar subset of <span class="process-math">\(\IR^3\)</span> compared with the plane <span class="process-math">\(\IR^2\text{.}\)</span></figcaption></figure></article><article class="activity project-like" id="EV3-4-9"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.3.9</span><span class="period">.</span>
+</h4>
+<div class="introduction" id="EV3-4-9-1"><div class="para" id="EV3-4-9-1-1">Let <span class="process-math">\(W=\setBuilder{\left[\begin{array}{c} x \\ y \\ z \end{array}\right]}{ x+2y+z=0}\text{.}\)</span>
+</div></div>
+<article class="task exercise-like" id="EV3-4-9-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="EV3-4-9-2-1-1">Is <span class="process-math">\(W\)</span> the empty set?</div></article><article class="task exercise-like" id="EV3-4-9-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para logical" id="EV3-4-9-3-1">
+<div class="para">Let’s assume that <span class="process-math">\(\vec{v}=\left[\begin{array}{c} x \\ y \\ z \end{array}\right]\)</span> and <span class="process-math">\(\vec{w} = \left[\begin{array}{c} a \\ b \\ c \end{array}\right] \)</span> are in <span class="process-math">\(W\text{.}\)</span> What are we allowed to assume?</div>
+<ol class="upper-alpha cols2" id="EV3-4-9-3-1-4">
+<li id="EV3-4-9-3-1-4-1"><div class="para" id="EV3-4-9-3-1-4-1-1"><span class="process-math">\(x+2y+z=0\text{.}\)</span></div></li>
+<li id="EV3-4-9-3-1-4-2"><div class="para" id="EV3-4-9-3-1-4-2-1"><span class="process-math">\(a+2b+c=0\text{.}\)</span></div></li>
+<li id="EV3-4-9-3-1-4-3"><div class="para" id="EV3-4-9-3-1-4-3-1">Both of these.</div></li>
+<li id="EV3-4-9-3-1-4-4"><div class="para" id="EV3-4-9-3-1-4-4-1">Neither of these.</div></li>
 </ol>
-</div></article></section><section class="subsection" id="EV7-4"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.7.2</span><span class="space"> </span><span class="title">Class Activities</span>
-</h3>
-<article class="activity project-like" id="EV7-4-2"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.7.3</span><span class="period">.</span>
-</h4>
-<div class="introduction" id="EV7-4-2-1"><div class="para logical" id="EV7-4-2-1-1">
-<div class="para">Consider the homogeneous system of equations</div>
-<div class="displaymath process-math" id="EV7-4-2-1-1-1">
-\begin{alignat*}{5}
-x_1&amp;\,+\,&amp;2x_2&amp;\,\,&amp; &amp;\,+\,&amp; x_4 &amp;=&amp; 0\\
-2x_1&amp;\,+\,&amp;4x_2&amp;\,-\,&amp;x_3 &amp;\,-\,&amp;2 x_4 &amp;=&amp; 0\\
-3x_1&amp;\,+\,&amp;6x_2&amp;\,-\,&amp;x_3 &amp;\,-\,&amp; x_4 &amp;=&amp; 0
-\end{alignat*}
+</div></article><article class="task exercise-like" id="EV3-4-9-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para logical" id="EV3-4-9-4-1">
+<div class="para">Which equation must be verified to show that <span class="process-math">\(\vec v+\vec w = \left[\begin{array}{c} x+a \\ y+b \\ z+c \end{array}\right]\)</span> also belongs to <span class="process-math">\(W\text{?}\)</span>
 </div>
-</div></div>
-<article class="task exercise-like" id="EV7-4-2-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="EV7-4-2-2-1">Find its solution set (a subspace of <span class="process-math">\(\IR^4\)</span>).</div></article><article class="task exercise-like" id="EV7-4-2-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para logical" id="EV7-4-2-3-1">
-<div class="para">Rewrite this solution space in the form</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\setBuilder{ a \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\end{array}\right] + b \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown \end{array}\right] }{a,b \in \IR}.
-\end{equation*}
-</div>
-</div></article><article class="task exercise-like" id="EV7-4-2-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para logical" id="EV7-4-2-4-1-1">
-<div class="para">Which of these choices best describes the set of two vectors <span class="process-math">\(\left\{\left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\end{array}\right], \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown \end{array}\right]\right\}\)</span> used in this solution space?</div>
-<ol class="upper-alpha" id="EV7-4-2-4-1-1-2">
-<li id="EV7-4-2-4-1-1-2-1"><div class="para" id="EV7-4-2-4-1-1-2-1-1">The set is linearly dependent.</div></li>
-<li id="EV7-4-2-4-1-1-2-2"><div class="para" id="EV7-4-2-4-1-1-2-2-1">The set is linearly independent.</div></li>
-<li id="EV7-4-2-4-1-1-2-3"><div class="para" id="EV7-4-2-4-1-1-2-3-1">The set spans the solution space.</div></li>
-<li id="EV7-4-2-4-1-1-2-4"><div class="para" id="EV7-4-2-4-1-1-2-4-1">The set is a basis of the solution space.</div></li>
+<ol class="upper-alpha" id="EV3-4-9-4-1-3">
+<li id="EV3-4-9-4-1-3-1"><div class="para" id="EV3-4-9-4-1-3-1-1"><span class="process-math">\((x+a)+2(y+b)+(z+c)=0\text{.}\)</span></div></li>
+<li id="EV3-4-9-4-1-3-2"><div class="para" id="EV3-4-9-4-1-3-2-1"><span class="process-math">\(x+a+2y+b+z+c=0\text{.}\)</span></div></li>
+<li id="EV3-4-9-4-1-3-3"><div class="para" id="EV3-4-9-4-1-3-3-1"><span class="process-math">\(x+2y+z=a+2b+c\text{.}\)</span></div></li>
 </ol>
+</div></article><article class="task exercise-like" id="EV3-4-9-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="EV3-4-9-5-1">Use the assumptions from (a) to verify the equation from (b).</div></article><article class="task exercise-like" id="EV3-4-9-6"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para logical" id="EV3-4-9-6-1">
+<div class="para">Is <span class="process-math">\(W\)</span> is a subspace of <span class="process-math">\(\IR^3\text{?}\)</span>
 </div>
-<div class="solutions"><details id="EV7-4-2-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="EV7-4-2-4-2-1">D.</div></div></details></div></article></article><div id="EV7-4-3" class="ptx-sagecell sagecell-octave"><script type="text/x-sage"></script></div>
-<article class="activity project-like" id="EV7-4-4"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.7.4</span><span class="period">.</span>
-</h4>
-<div class="introduction" id="EV7-4-4-1"><div class="para logical" id="EV7-4-4-1-1">
-<div class="para">Consider the homogeneous system of equations</div>
-<div class="displaymath process-math" id="EV7-4-4-1-1-1">
-\begin{alignat*}{8}
-2x_1&amp;\,+\,&amp;4x_2&amp;\,+\,&amp;2x_3 &amp;\,-\,&amp;3 x_4 &amp;\,+\,&amp;31x_5&amp;\,+\,&amp;2x_6&amp;\,-\,&amp;16x_7&amp;=&amp; 0\\
--1x_1&amp;\,-\,&amp;2x_2&amp;\,+\,&amp;4x_3 &amp;\,-\,&amp;x_4 &amp;\,+\,&amp;2x_5&amp;\,+\,&amp;9x_6&amp;\,+\,&amp;3x_7&amp;=&amp; 0\\
-x_1&amp;\,+\,&amp;2x_2&amp;\,+\,&amp;x_3 &amp;\,+\,&amp; x_4 &amp;\,+\,&amp;3x_5&amp;\,+\,&amp;6x_7&amp;\,+\,&amp;7x_7&amp;=&amp; 0
-\end{alignat*}
-</div>
-</div></div>
-<article class="task exercise-like" id="EV7-4-4-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="EV7-4-4-2-1">Find its solution set (a subspace of <span class="process-math">\(\IR^7\)</span>).</div></article><article class="task exercise-like" id="EV7-4-4-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para logical" id="EV7-4-4-3-1">
-<div class="para">Rewrite this solution space in the form</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\setBuilder{ a \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right] + b \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right]+c \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right]+d \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right] }{a,b,c,d \in \IR}.
-\end{equation*}
-</div>
-</div></article><article class="task exercise-like" id="EV7-4-4-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para logical" id="EV7-4-4-4-1-1">
-<div class="para">Which of these choices best describes the set of two vectors <span class="process-math">\(\left\{\left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right], \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right],\left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right],\left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right]\right\}\)</span> used in this solution space?</div>
-<ol class="upper-alpha" id="EV7-4-4-4-1-1-2">
-<li id="EV7-4-4-4-1-1-2-1"><div class="para" id="EV7-4-4-4-1-1-2-1-1">The set is linearly dependent.</div></li>
-<li id="EV7-4-4-4-1-1-2-2"><div class="para" id="EV7-4-4-4-1-1-2-2-1">The set is linearly independent.</div></li>
-<li id="EV7-4-4-4-1-1-2-3"><div class="para" id="EV7-4-4-4-1-1-2-3-1">The set spans the solution space.</div></li>
-<li id="EV7-4-4-4-1-1-2-4"><div class="para" id="EV7-4-4-4-1-1-2-4-1">The set is a basis for the solution space.</div></li>
+<ol class="upper-alpha cols3" id="EV3-4-9-6-1-3">
+<li id="EV3-4-9-6-1-3-1"><div class="para" id="EV3-4-9-6-1-3-1-1">Yes</div></li>
+<li id="EV3-4-9-6-1-3-2"><div class="para" id="EV3-4-9-6-1-3-2-1">No</div></li>
+<li id="EV3-4-9-6-1-3-3"><div class="para" id="EV3-4-9-6-1-3-3-1">Not enough information</div></li>
 </ol>
+</div></article><article class="task exercise-like" id="EV3-4-9-7"><h5 class="heading"><span class="codenumber">(f)</span></h5>
+<div class="para" id="EV3-4-9-7-1">Show that <span class="process-math">\(k\vec v=\left[\begin{array}{c}kx\\ky\\kz\end{array}\right]\)</span> also belongs to <span class="process-math">\(W\)</span> for any <span class="process-math">\(k\in\IR\)</span> by verifying <span class="process-math">\((kx)+2(ky)+(kz)=0\)</span> under these assumptions.</div></article><article class="task exercise-like" id="EV3-4-9-8"><h5 class="heading"><span class="codenumber">(g)</span></h5>
+<div class="para logical" id="EV3-4-9-8-1">
+<div class="para">Is <span class="process-math">\(W\)</span> is a subspace of <span class="process-math">\(\IR^3\text{?}\)</span>
 </div>
-<div class="solutions"><details id="EV7-4-4-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="EV7-4-4-4-2-1">D.</div></div></details></div></article></article><div id="EV7-4-5" class="ptx-sagecell sagecell-octave"><script type="text/x-sage">
-</script></div>
-<article class="fact theorem-like" id="fact-solution-space-basis"><h4 class="heading">
-<span class="type">Fact</span><span class="space"> </span><span class="codenumber">2.7.5</span><span class="period">.</span>
-</h4>
-<div class="para" id="fact-solution-space-basis-1-1">The coefficients of the free variables in the solution space of a linear system always yield linearly independent vectors that span the solution space.</div> <div class="para logical" id="fact-solution-space-basis-1-2">
-<div class="para">Thus if</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\setBuilder{
-a \left[\begin{array}{c} -2 \\ 1 \\ 0 \\ 0\\0\\0\\0\end{array}\right] +
-b \left[\begin{array}{c} -7 \\ 0 \\ -1 \\ 5\\1\\0\\0 \end{array}\right]+
-c \left[\begin{array}{c} -1 \\ 0 \\ -3 \\ -2\\0\\1\\0 \end{array}\right]+
-d \left[\begin{array}{c} 1 \\ 0 \\ -2 \\ -6\\0\\0\\1 \end{array}\right]
-}{
-a,b,c,d \in \IR
-} = \vspan\left\{ \left[\begin{array}{c} -2 \\ 1 \\ 0 \\ 0\\0\\0\\0\end{array}\right], 
-\left[\begin{array}{c} -7 \\ 0 \\ -1 \\ 5\\1\\0\\0 \end{array}\right],
-\left[\begin{array}{c} -1 \\ 0 \\ -3 \\ -2\\0\\1\\0 \end{array}\right],
-\left[\begin{array}{c} 1 \\ 0 \\ -2 \\ -6\\0\\0\\1 \end{array}\right] \right\}
-\end{equation*}
-</div>
-<div class="para">is the solution space for a homogeneous system, then</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\setList{
-\left[\begin{array}{c} -2 \\ \textcolor{blue}{1} \\ 0 \\ 0\\\textcolor{blue}{0}\\\textcolor{blue}{0}\\\textcolor{blue}{0}\end{array}\right], 
-\left[\begin{array}{c} -7 \\ \textcolor{blue}{0} \\ -1 \\ 5\\\textcolor{blue}{1}\\\textcolor{blue}{0}\\\textcolor{blue}{0} \end{array}\right],
-\left[\begin{array}{c} -1 \\ \textcolor{blue}{0} \\ -3 \\ -2\\\textcolor{blue}{0}\\\textcolor{blue}{1}\\\textcolor{blue}{0} \end{array}\right],
-\left[\begin{array}{c} 1 \\ \textcolor{blue}{0} \\ -2 \\ -6\\\textcolor{blue}{0}\\\textcolor{blue}{0}\\\textcolor{blue}{1} \end{array}\right]
-}
-\end{equation*}
-</div>
-<div class="para">is a basis for the solution space.</div>
-</div></article><article class="activity project-like" id="EV7-4-7"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.7.6</span><span class="period">.</span>
-</h4>
-<div class="introduction" id="EV7-4-7-1"><div class="para logical" id="EV7-4-7-1-1">
-<div class="para">Consider the homogeneous system of equations</div>
-<div class="displaymath process-math" id="EV7-4-7-1-1-1">
-\begin{alignat*}{5}
-x_1&amp;\,-\,&amp;3x_2&amp;\,+\,&amp; 2x_3  &amp;=&amp; 0\\
-2x_1&amp;\,+\,&amp;6x_2&amp;\,+\,&amp;4x_3  &amp;=&amp; 0\\
-x_1&amp;\,+\,&amp;6x_2&amp;\,-\,&amp;4x_3 &amp;=&amp; 0
-\end{alignat*}
-</div>
-</div></div>
-<article class="task exercise-like" id="EV7-4-7-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="EV7-4-7-2-1-1">Find its solution space.</div></article><article class="task exercise-like" id="EV7-4-7-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para logical" id="EV7-4-7-3-1-1">
-<div class="para">Which of these is the best choice of basis for this solution space?</div>
-<ol class="upper-alpha cols3" id="EV7-4-7-3-1-1-1">
-<li id="EV7-4-7-3-1-1-1-1"><div class="para" id="p-derived-EV7-4-7-3-1-1-1-1"><span class="process-math">\(\displaystyle \{\}\)</span></div></li>
-<li id="EV7-4-7-3-1-1-1-2"><div class="para" id="p-derived-EV7-4-7-3-1-1-1-2"><span class="process-math">\(\displaystyle \{\vec 0\}\)</span></div></li>
-<li id="EV7-4-7-3-1-1-1-3"><div class="para" id="p-derived-EV7-4-7-3-1-1-1-3">The basis does not exist</div></li>
+<ol class="upper-alpha cols3" id="EV3-4-9-8-1-3">
+<li id="EV3-4-9-8-1-3-1"><div class="para" id="EV3-4-9-8-1-3-1-1">Yes</div></li>
+<li id="EV3-4-9-8-1-3-2"><div class="para" id="EV3-4-9-8-1-3-2-1">No</div></li>
+<li id="EV3-4-9-8-1-3-3"><div class="para" id="EV3-4-9-8-1-3-3-1">Not enough information</div></li>
 </ol>
-</div>
-<div class="solutions"><details id="EV7-4-7-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="EV7-4-7-3-2-1">A.</div></div></details></div></article></article><div id="EV7-4-8" class="ptx-sagecell sagecell-octave"><script type="text/x-sage"></script></div>
-<article class="activity project-like" id="EV7-4-9"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.7.7</span><span class="period">.</span>
+</div></article></article><article class="activity project-like" id="EV3-4-10"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.3.10</span><span class="period">.</span>
 </h4>
-<div class="introduction" id="EV7-4-9-1"><div class="para" id="EV7-4-9-1-1">To create a computer-animated film, an animator first models a scene as a subset of <span class="process-math">\(\mathbb R^3\text{.}\)</span> Then to transform this three-dimensional visual data for display on a two-dimensional movie screen or television set, the computer could apply a linear transformation that maps visual information at the point <span class="process-math">\((x,y,z)\in\mathbb R^3\)</span> onto the pixel located at <span class="process-math">\((x+y,y-z)\in\mathbb R^2\text{.}\)</span>
+<div class="introduction" id="EV3-4-10-1"><div class="para" id="EV3-4-10-1-1">Let <span class="process-math">\(W=\setBuilder{\left[\begin{array}{c} x \\ y \\ z \end{array}\right]}{ x+2y+z=4}\text{.}\)</span>
 </div></div>
-<article class="task exercise-like" id="EV7-4-9-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="EV7-4-9-2-1-1">What homogeneous linear system describes the positions <span class="process-math">\((x,y,z)\)</span> within the original scene that would be aligned with the pixel <span class="process-math">\((0,0)\)</span> on the screen?</div></article><article class="task exercise-like" id="EV7-4-9-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="EV7-4-9-3-1-1">Solve this system to describe these locations.</div></article></article><div id="EV7-4-10" class="ptx-sagecell sagecell-octave"><script type="text/x-sage"></script></div></section><section class="subsection" id="EV7-5"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.7.3</span><span class="space"> </span><span class="title">Individual Practice</span>
-</h3>
-<article class="activity project-like" id="EV7-5-2"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.7.8</span><span class="period">.</span>
+<article class="task exercise-like" id="EV3-4-10-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="EV3-4-10-2-1-1">Is <span class="process-math">\(W\)</span> the empty set?</div></article><article class="task exercise-like" id="EV3-4-10-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para logical" id="EV3-4-10-3-1">
+<div class="para">Which of these statements is valid?</div>
+<ol class="upper-alpha" id="EV3-4-10-3-1-1">
+<li id="EV3-4-10-3-1-1-1"><div class="para" id="EV3-4-10-3-1-1-1-1">
+<span class="process-math">\(\left[\begin{array}{c} 1 \\ 1 \\ 1 \end{array}\right]\in W\text{,}\)</span> <em class="emphasis">and</em> <span class="process-math">\(\left[\begin{array}{c} 2 \\ 2 \\ 2 \end{array}\right]\in W\text{,}\)</span> so <span class="process-math">\(W\)</span> <em class="emphasis">is</em> a subspace.</div></li>
+<li id="EV3-4-10-3-1-1-2"><div class="para" id="EV3-4-10-3-1-1-2-1">
+<span class="process-math">\(\left[\begin{array}{c} 1 \\ 1 \\ 1 \end{array}\right]\in W\text{,}\)</span> <em class="emphasis">and</em> <span class="process-math">\(\left[\begin{array}{c} 2 \\ 2 \\ 2 \end{array}\right]\in W\text{,}\)</span> so <span class="process-math">\(W\)</span> <em class="emphasis">is not</em> a subspace.</div></li>
+<li id="EV3-4-10-3-1-1-3"><div class="para" id="EV3-4-10-3-1-1-3-1">
+<span class="process-math">\(\left[\begin{array}{c} 1 \\ 1 \\ 1 \end{array}\right]\in W\text{,}\)</span> <em class="emphasis">but</em> <span class="process-math">\(\left[\begin{array}{c} 2 \\ 2 \\ 2 \end{array}\right]\not\in W\text{,}\)</span> so <span class="process-math">\(W\)</span> <em class="emphasis">is</em> a subspace.</div></li>
+<li id="EV3-4-10-3-1-1-4"><div class="para" id="EV3-4-10-3-1-1-4-1">
+<span class="process-math">\(\left[\begin{array}{c} 1 \\ 1 \\ 1 \end{array}\right]\in W\text{,}\)</span> <em class="emphasis">but</em> <span class="process-math">\(\left[\begin{array}{c} 2 \\ 2 \\ 2 \end{array}\right]\not\in W\text{,}\)</span> so <span class="process-math">\(W\)</span> <em class="emphasis">is not</em> a subspace.</div></li>
+</ol>
+</div></article><article class="task exercise-like" id="EV3-4-10-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para logical" id="EV3-4-10-4-1">
+<div class="para">Which of these statements is valid?</div>
+<ol class="decimal" id="EV3-4-10-4-1-1">
+<li id="EV3-4-10-4-1-1-1"><div class="para" id="EV3-4-10-4-1-1-1-1">
+<span class="process-math">\(\left[\begin{array}{c} 1 \\ 1 \\ 1 \end{array}\right]\in W\text{,}\)</span> <em class="emphasis">and</em> <span class="process-math">\(\left[\begin{array}{c} 0 \\ 0 \\ 0 \end{array}\right]\in W\text{,}\)</span> so <span class="process-math">\(W\)</span> <em class="emphasis">is</em> a subspace.</div></li>
+<li id="EV3-4-10-4-1-1-2"><div class="para" id="EV3-4-10-4-1-1-2-1">
+<span class="process-math">\(\left[\begin{array}{c} 1 \\ 1 \\ 1 \end{array}\right]\in W\text{,}\)</span> <em class="emphasis">and</em> <span class="process-math">\(\left[\begin{array}{c} 0 \\ 0 \\ 0 \end{array}\right]\in W\text{,}\)</span> so <span class="process-math">\(W\)</span> <em class="emphasis">is not</em> a subspace.</div></li>
+<li id="EV3-4-10-4-1-1-3"><div class="para" id="EV3-4-10-4-1-1-3-1">
+<span class="process-math">\(\left[\begin{array}{c} 1 \\ 1 \\ 1 \end{array}\right]\in W\text{,}\)</span> <em class="emphasis">but</em> <span class="process-math">\(\left[\begin{array}{c} 0 \\ 0 \\ 0 \end{array}\right]\not\in W\text{,}\)</span> so <span class="process-math">\(W\)</span> <em class="emphasis">is</em> a subspace.</div></li>
+<li id="EV3-4-10-4-1-1-4"><div class="para" id="EV3-4-10-4-1-1-4-1">
+<span class="process-math">\(\left[\begin{array}{c} 1 \\ 1 \\ 1 \end{array}\right]\in W\text{,}\)</span> <em class="emphasis">but</em> <span class="process-math">\(\left[\begin{array}{c} 0 \\ 0 \\ 0 \end{array}\right]\not\in W\text{,}\)</span> so <span class="process-math">\(W\)</span> <em class="emphasis">is not</em> a subspace.</div></li>
+</ol>
+</div></article></article><article class="remark remark-like" id="EV3-subspace-check"><h4 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">2.3.11</span><span class="period">.</span>
 </h4>
-<div class="introduction" id="EV7-5-2-1"><div class="para logical" id="EV7-5-2-1-1">
-<div class="para">Let <span class="process-math">\(S=\setList{
-\left[\begin{array}{c} -2 \\ 1 \\ 0 \\ 0\end{array}\right],
-\left[\begin{array}{c} -1 \\ 0 \\ -4 \\ 1 \end{array}\right],
-\left[\begin{array}{c} 1 \\ 0 \\ -2 \\ 3 \end{array}\right]
-}\)</span> and <span class="process-math">\(A=\left[\begin{array}{ccc}
--2 &amp; -1 &amp;1\\
-1 &amp; 0 &amp;0\\
-0 &amp; -4 &amp;-2\\
-0 &amp; 1 &amp;3
-\end{array}\right];\)</span> note that</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\RREF(A)=\left[\begin{array}{ccc}
-1 &amp; 0 &amp;0\\
-0 &amp; 1 &amp;0\\
-0 &amp; 0 &amp;1\\
-0 &amp; 0 &amp;0
-\end{array}\right].
-\end{equation*}
-</div>
-<div class="para">The following statements are all <em class="emphasis">invalid</em> for at least one reason. Determine what makes them invalid and, suggest alternative <em class="emphasis">valid</em> statements that the author may have meant instead.</div>
-</div></div>
-<article class="task exercise-like" id="EV7-5-2-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="EV7-5-2-2-1-1">The matrix <span class="process-math">\(A\)</span> is linearly independent because <span class="process-math">\(\RREF(A)\)</span> has a pivot in each column.</div></article><article class="task exercise-like" id="EV7-5-2-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="EV7-5-2-3-1-1">The matrix <span class="process-math">\(A\)</span> does not span <span class="process-math">\(\IR^4\)</span> because <span class="process-math">\(\RREF(A)\)</span> has a row of zeroes.</div></article><article class="task exercise-like" id="EV7-5-2-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para" id="EV7-5-2-4-1-1">The set of vectors <span class="process-math">\(S\)</span> spans.</div></article><article class="task exercise-like" id="EV7-5-2-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
-<div class="para" id="EV7-5-2-5-1-1">The set of vectors <span class="process-math">\(S\)</span> is a basis.</div></article></article></section><section class="subsection" id="EV7-6"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.7.4</span><span class="space"> </span><span class="title">Videos</span>
-</h3>
-<figure class="figure figure-like" id="EV7-6-2"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/TbN3lvLaNOw?&amp;modestbranding=1&amp;rel=0" id="video-EV7"></iframe></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">18<span class="period">.</span></span><span class="space"> </span>Video: Polynomial and matrix calculations</figcaption></figure></section><section class="exercises" id="EV7-7"><h3 class="heading hide-type">
-<span class="type">Exercises</span><span class="space"> </span><span class="codenumber">2.7.5</span><span class="space"> </span><span class="title">Exercises</span>
-</h3>
-<div class="para" id="EV7-7-1">Exercises available at <a class="external" href="https://tbil.org/preview/linear-algebra/exercises/#/bank/EV7/" target="_blank"><code class="code-inline tex2jax_ignore">https://tbil.org/preview/linear-algebra/exercises/#/bank/EV7/</code></a>.</div></section><section class="subsection" id="EV7-8"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.7.6</span><span class="space"> </span><span class="title">Mathematical Writing Explorations</span>
-</h3>
-<article class="exploration project-like" id="non-singular"><h4 class="heading">
-<span class="type">Exploration</span><span class="space"> </span><span class="codenumber">2.7.9</span><span class="period">.</span>
-</h4>
-<div class="para" id="non-singular-1-1">An <span class="process-math">\(n \times n\)</span> matrix <span class="process-math">\(M\)</span> is <dfn class="terminology">non-singular</dfn> if the associated homogeneous system with coefficient matrix <span class="process-math">\(M\)</span> is consistent with one solution. Assume the matrices in the writing explorations in this section are all non-singular.</div> <ul class="disc" id="non-singular-1-2">
-<li id="non-singular-1-2-1"><div class="para" id="p-derived-non-singular-1-2-1">Prove that the reduced row echelon form of <span class="process-math">\(M\)</span> is the identity matrix.</div></li>
-<li id="non-singular-1-2-2"><div class="para" id="p-derived-non-singular-1-2-2">Prove that, for any column vector <span class="process-math">\(\vec{b} = \left[\begin{array}{c}b_1\\b_2\\ \vdots \\b_n \end{array}\right]\text{,}\)</span> the system of equations given by <span class="process-math">\(\left[\begin{array}{c|c}M &amp; \vec{b}\end{array}
-\right]\)</span> has a unique solution.</div></li>
-<li id="non-singular-1-2-3"><div class="para" id="p-derived-non-singular-1-2-3">Prove that the columns of <span class="process-math">\(M\)</span> form a basis for <span class="process-math">\(\mathbb{R}^n\text{.}\)</span>
+<div class="para logical" id="EV3-subspace-check-1">
+<div class="para">In summary, <em class="emphasis">any one</em> of the following is enough to prove that a nonempty subset <span class="process-math">\(W\)</span> is <em class="emphasis">not</em> a subspace:</div>
+<ul class="disc" id="EV3-subspace-check-1-4">
+<li id="EV3-subspace-check-1-4-1"><div class="para" id="EV3-subspace-check-1-4-1-1">Find specific values for <span class="process-math">\(\vec u,\vec v\in W\)</span> such that <span class="process-math">\(\vec u+\vec v\not\in W\text{.}\)</span>
 </div></li>
-<li id="non-singular-1-2-4"><div class="para" id="p-derived-non-singular-1-2-4">Prove that the rank of <span class="process-math">\(M\)</span> is <span class="process-math">\(n\text{.}\)</span>
+<li id="EV3-subspace-check-1-4-2"><div class="para" id="EV3-subspace-check-1-4-2-1">Find specific values for <span class="process-math">\(c\in\IR,\vec v\in W\)</span> such that <span class="process-math">\(c\vec v\not\in W\text{.}\)</span>
 </div></li>
-</ul></article></section><section class="subsection" id="EV7-9"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.7.7</span><span class="space"> </span><span class="title">Sample Problem and Solution</span>
+<li id="EV3-subspace-check-1-4-3"><div class="para" id="EV3-subspace-check-1-4-3-1">Show that <span class="process-math">\(\vec 0\not\in W\text{.}\)</span>
+</div></li>
+</ul>
+</div> <div class="para logical" id="EV3-subspace-check-2">
+<div class="para">If you cannot do any of these, then <span class="process-math">\(W\)</span> can be proven to be a subspace by doing <em class="emphasis">all</em> of the following:</div>
+<ol class="decimal" id="EV3-subspace-check-2-3">
+<li id="EV3-subspace-check-2-3-1"><div class="para" id="EV3-subspace-check-2-3-1-1">Show that <span class="process-math">\(W\)</span> is non-empty.</div></li>
+<li id="EV3-subspace-check-2-3-2"><div class="para" id="EV3-subspace-check-2-3-2-1">For all <span class="process-math">\(\vec v,\vec w\in W\)</span> (not just specific values), <span class="process-math">\(\vec u+\vec v\in W\text{.}\)</span>
+</div></li>
+<li id="EV3-subspace-check-2-3-3"><div class="para" id="EV3-subspace-check-2-3-3-1">For all <span class="process-math">\(\vec v\in W\)</span> and <span class="process-math">\(c\in \IR\)</span> (not just specific values), <span class="process-math">\(c\vec v\in W\text{.}\)</span>
+</div></li>
+</ol>
+</div></article><article class="activity project-like" id="EV3-4-12"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.3.12</span><span class="period">.</span>
+</h4>
+<div class="introduction" id="EV3-4-12-1"><div class="para logical" id="EV3-4-12-1-1">
+<div class="para">Consider these subsets of <span class="process-math">\(\IR^3\text{:}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+R=
+\setBuilder{ \left[\begin{array}{c}x\\y\\z\end{array}\right]}{y=z+1}
+\hspace{2em}
+S=
+\setBuilder{ \left[\begin{array}{c}x\\y\\z\end{array}\right]}{y=|z|}
+\hspace{2em}
+T=
+\setBuilder{ \left[\begin{array}{c}x\\y\\z\end{array}\right]}{z=xy}\text{.}
+\end{equation*}
+</div>
+</div></div>
+<article class="task exercise-like" id="EV3-4-12-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="EV3-4-12-2-1">Show <span class="process-math">\(R\)</span> isn’t a subspace by showing that <span class="process-math">\(\vec 0\not\in R\text{.}\)</span>
+</div></article><article class="task exercise-like" id="EV3-4-12-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="EV3-4-12-3-1">Show <span class="process-math">\(S\)</span> isn’t a subspace by finding two vectors <span class="process-math">\(\vec u,\vec v\in S\)</span> such that <span class="process-math">\(\vec u+\vec v\not\in S\text{.}\)</span>
+</div></article><article class="task exercise-like" id="EV3-4-12-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="EV3-4-12-4-1">Show <span class="process-math">\(T\)</span> isn’t a subspace by finding a vector <span class="process-math">\(\vec v\in T\)</span> such that <span class="process-math">\(2\vec v\not\in T\text{.}\)</span>
+</div></article></article><article class="activity project-like" id="EV3-4-13"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.3.13</span><span class="period">.</span>
+</h4>
+<div class="para logical" id="EV3-4-13-1-1">
+<div class="para">Consider the following two sets of Euclidean vectors:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+U=\left\{ \left[\begin{array}{c} x \\ y \end{array}\right] \middle|\,7 \, x + 4 \, y = 0\right\} \hspace{2em} W=\left\{ \left[\begin{array}{c} x \\ y \end{array}\right] \middle|\,3 \, x y^{2} = 0\right\}
+\end{equation*}
+</div>
+</div> <div class="para" id="EV3-4-13-1-2">Explain why one of these sets is a subspace of <span class="process-math">\(\mathbb{R}^2\)</span> and one is not.</div></article><article class="activity project-like" id="EV3-4-14"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.3.14</span><span class="period">.</span>
+</h4>
+<div class="para logical" id="EV3-4-14-1-1">
+<div class="para">Consider the following attempted proof that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+U=\left\{ \left[\begin{array}{c} x \\ y \end{array}\right] \middle| x+y=xy\right\}
+\end{equation*}
+</div>
+<div class="para">is closed under scalar multiplication.</div>
+</div> <blockquote class="blockquote" id="EV3-4-14-1-2"><div class="para logical" id="EV3-4-14-1-2-1">
+<div class="para">Let <span class="process-math">\(\left[\begin{array}{c} x \\ y \end{array}\right]\in U\text{,}\)</span> so we know that <span class="process-math">\(x+y=xy\text{.}\)</span> We want to show <span class="process-math">\(k\left[\begin{array}{c} x \\ y \end{array}\right]=\left[\begin{array}{c} kx \\ ky \end{array}\right]\in U\text{,}\)</span> that is, <span class="process-math">\((kx)+(ky)=(kx)(ky)\text{.}\)</span> This is verified by the following calculation:</div>
+<div class="displaymath process-math" id="EV3-4-14-1-2-1-5">
+\begin{align*}
+(kx)+(ky)&amp;=(kx)(ky)\\
+k(x+y)&amp;=k^2xy\\
+0[k(x+y)]&amp;=0[k^2xy]\\
+0&amp;=0
+\end{align*}
+</div>
+</div></blockquote> <div class="para logical" id="EV3-4-14-1-3">
+<div class="para">Is this reasoning valid?</div>
+<ol class="upper-alpha cols2" id="EV3-4-14-1-3-1">
+<li id="EV3-4-14-1-3-1-1"><div class="para" id="EV3-4-14-1-3-1-1-1">Yes</div></li>
+<li id="EV3-4-14-1-3-1-2"><div class="para" id="EV3-4-14-1-3-1-2-1">No</div></li>
+</ol>
+</div></article><article class="remark remark-like" id="EV3-4-15"><h4 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">2.3.15</span><span class="period">.</span>
+</h4>
+<div class="para logical" id="EV3-4-15-1">
+<div class="para">Proofs of an equality <span class="process-math">\(\mathrm{LEFT}=\mathrm{RIGHT}\)</span> should generally be of one of these forms:</div>
+<ol class="decimal" id="EV3-4-15-1-2">
+<li id="EV3-4-15-1-2-1"><div class="para logical" id="EV3-4-15-1-2-1-1">
+<div class="para">Using a chain of equalities:</div>
+<div class="displaymath process-math" id="EV3-4-15-1-2-1-1-1">
+\begin{align*}
+\mathrm{LEFT} &amp;= \cdots\\
+&amp;= \cdots\\
+&amp;= \cdots\\
+&amp;= \mathrm{RIGHT}
+\end{align*}
+</div>
+<div class="para">Alternatively:</div>
+<div class="displaymath process-math" id="EV3-4-15-1-2-1-1-2">
+\begin{align*}
+\mathrm{LEFT} &amp;= \cdots &amp; \mathrm{RIGHT} &amp;=\cdots\\
+&amp;= \cdots &amp; &amp;= \cdots\\
+&amp;= \cdots &amp; &amp;= \cdots\\
+&amp;= \mathrm{SAME}&amp; &amp;= \mathrm{SAME}
+\end{align*}
+</div>
+</div></li>
+<li id="EV3-4-15-1-2-2"><div class="para logical" id="EV3-4-15-1-2-2-1">
+<div class="para">When the assumption <span class="process-math">\(\mathrm{THIS}=\mathrm{THAT}\)</span> is already known or assumed to be true :</div>
+<div class="displaymath process-math" id="EV3-4-15-1-2-2-1-2">
+\begin{align*}
+&amp;&amp;    \mathrm{THIS} &amp;= \mathrm{THAT}\\
+&amp;  \Rightarrow&amp;  \cdots &amp;= \cdots\\
+&amp;  \Rightarrow&amp; \cdots &amp;= \cdots\\
+&amp;   \Rightarrow&amp; \mathrm{LEFT} &amp;= \mathrm{RIGHT}
+\end{align*}
+</div>
+</div></li>
+</ol>
+</div></article><article class="warning remark-like" id="EV3-4-16"><h4 class="heading">
+<span class="type">Warning</span><span class="space"> </span><span class="codenumber">2.3.16</span><span class="period">.</span>
+</h4>
+<div class="para logical" id="EV3-4-16-1">
+<div class="para">The following proof is <em class="emphasis">invalid</em>.</div>
+<div class="displaymath process-math" id="EV3-4-16-1-2">
+\begin{align*}
+&amp;&amp;    \mathrm{LEFT} &amp;= \mathrm{RIGHT}\\
+&amp;  \Rightarrow&amp;  \cdots &amp;= \cdots\\
+&amp;  \Rightarrow&amp; \cdots &amp;= \cdots\\
+&amp;   \Rightarrow&amp; 0 &amp;= 0\\
+&amp;   \Rightarrow&amp; \mathrm{ANYTHING} &amp;= \mathrm{ANYTHING}
+\end{align*}
+</div>
+<div class="para">Basically, you cannot prove something is true by assuming it’s true, and it’s not helpful to prove to someone that zero equals itself (they probably already know that).</div>
+</div></article></section><section class="subsection" id="EV3-5"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.3.3</span><span class="space"> </span><span class="title">Individual Practice</span>
 </h3>
-<div class="para" id="EV7-9-2">Sample problem <a href="sample-exercises.html#sample-EV7" class="internal" title="Example B.1.11: EV7">Example B.1.11</a>.</div></section></section></div>
+<article class="remark remark-like" id="EV3-5-2"><h4 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">2.3.17</span><span class="period">.</span>
+</h4>
+<div class="para" id="EV3-5-2-1">Recall that in <a href="EV2.html#EV2-Analogy" class="internal" title="Activity 2.2.1">Activity 2.2.1</a> we used the words <em class="emphasis">vector</em>, <em class="emphasis">linear combination</em>, and <em class="emphasis">span</em> to make an analogy with recipes, ingredients, and meals. In this analogy, a <em class="emphasis">recipe</em> was defined to be a list of amounts of each ingredient to build a particular meal.</div></article><article class="activity project-like" id="EV3-5-3"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.3.18</span><span class="period">.</span>
+</h4>
+<article class="task exercise-like" id="EV3-5-3-1"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="EV3-5-3-1-1-1">Given the set of ingredients <span class="process-math">\(S=\{\textrm{flour}, \textrm{yeast}, \textrm{salt}, \textrm{water}, \textrm{sugar}, \textrm{milk}\}\text{,}\)</span> how should we think of the subspace <span class="process-math">\(\vspan(S)\text{?}\)</span>
+</div></article><article class="task exercise-like" id="EV3-5-3-2"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="EV3-5-3-2-1-1">What is one meal that lives in the subspace <span class="process-math">\(\vspan(S)\text{?}\)</span>
+</div></article><article class="task exercise-like" id="EV3-5-3-3"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="EV3-5-3-3-1-1">What is one meal that does not live in the subspace <span class="process-math">\(\vspan(S)\text{?}\)</span>
+</div></article></article><article class="activity project-like" id="EV3-5-4"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.3.19</span><span class="period">.</span>
+</h4>
+<div class="introduction" id="EV3-5-4-1"><div class="para logical" id="EV3-5-4-1-1">
+<div class="para">Let</div>
+<div class="displaymath process-math">
+\begin{equation*}
+W=\left\{\left[\begin{array}{c}x\\y\\z\\w\end{array}\right]\middle|x+y=3z+2w\right\}.
+\end{equation*}
+</div>
+<div class="para">The set <span class="process-math">\(W\)</span> is a subspace. Below are two attempted proofs of the fact that <span class="process-math">\(W\)</span> is closed under vector addition. Both of them are invalid; explain why.</div>
+</div></div>
+<article class="task exercise-like" id="EV3-5-4-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para logical" id="EV3-5-4-2-1-1">
+<div class="para">Let <span class="process-math">\(\vec{u}=\left[\begin{array}{c}1\\4\\1\\1\end{array}\right],\vec{v}=\left[\begin{array}{c}2\\-1\\1\\-1\end{array}\right].\)</span> Then both <span class="process-math">\(\vec{u},\vec{v}\)</span> are elements of <span class="process-math">\(W\text{.}\)</span> Their sum is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\vec{w}=\left[\begin{array}{c}3\\3\\2\\0\end{array}\right]
+\end{equation*}
+</div>
+<div class="para">and since</div>
+<div class="displaymath process-math">
+\begin{equation*}
+3+3=3\cdot (2)+2\cdot (0),
+\end{equation*}
+</div>
+<div class="para">it follows that <span class="process-math">\(\vec{w}\)</span> is also in <span class="process-math">\(W\)</span> and so <span class="process-math">\(W\)</span> is closed under vector addition.</div>
+</div></article><article class="task exercise-like" id="EV3-5-4-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para logical" id="EV3-5-4-3-1-1">
+<div class="para">If <span class="process-math">\(\left[\begin{array}{c}x\\y\\z\\w\end{array}\right],\left[\begin{array}{c}a\\b\\c\\d\end{array}\right]\)</span> are in <span class="process-math">\(W\text{,}\)</span> we need to show that <span class="process-math">\(\left[\begin{array}{c}x+a\\y+b\\z+c\\w+d\end{array}\right]\)</span> is also in W. To be in <span class="process-math">\(W\text{,}\)</span> we need</div>
+<div class="displaymath process-math">
+\begin{equation*}
+(x+a)+(y+b)=3(z+c)+2(w+d).
+\end{equation*}
+</div>
+<div class="para">Well, if</div>
+<div class="displaymath process-math">
+\begin{equation*}
+(x+a)+(y+b)=3(z+c)+2(w+d),
+\end{equation*}
+</div>
+<div class="para">then we know that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+x+y-3z-2w+a+b-3c-2d=0
+\end{equation*}
+</div>
+<div class="para">by moving everything over to the left hand side. Since we are assumming that <span class="process-math">\(x+y-3z-2w=0\)</span> and <span class="process-math">\(a+b-3c-2d=0\text{,}\)</span> it follows that <span class="process-math">\(0=0\text{,}\)</span> which is true, which proves that vector addition is closed.</div>
+</div></article></article></section><section class="subsection" id="EV3-6"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.3.4</span><span class="space"> </span><span class="title">Videos</span>
+</h3>
+<figure class="figure figure-like" id="EV3-6-2"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/ccXgu4NIzSA?&amp;modestbranding=1&amp;rel=0" id="video-EV3-a"></iframe></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">12<span class="period">.</span></span><span class="space"> </span>Video: Showing that a subset of a vector space is a subspace</figcaption></figure><figure class="figure figure-like" id="EV3-6-3"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/7qv8-2GaE2A?&amp;modestbranding=1&amp;rel=0" id="video-EV3-b"></iframe></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">13<span class="period">.</span></span><span class="space"> </span>Video: Showing that a subset of a vector space is not a subspace</figcaption></figure></section><section class="exercises" id="EV3-7"><h3 class="heading hide-type">
+<span class="type">Exercises</span><span class="space"> </span><span class="codenumber">2.3.5</span><span class="space"> </span><span class="title">Exercises</span>
+</h3>
+<div class="para" id="EV3-7-1">Exercises available at <a class="external" href="https://tbil.org/preview/linear-algebra/exercises/#/bank/EV3/" target="_blank"><code class="code-inline tex2jax_ignore">https://tbil.org/preview/linear-algebra/exercises/#/bank/EV3/</code></a>.</div></section><section class="subsection" id="EV3-8"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.3.6</span><span class="space"> </span><span class="title">Mathematical Writing Explorations</span>
+</h3>
+<article class="exploration project-like" id="EV3-8-2"><h4 class="heading">
+<span class="type">Exploration</span><span class="space"> </span><span class="codenumber">2.3.20</span><span class="period">.</span>
+</h4>A square matrix <span class="process-math">\(M\)</span> is <dfn class="terminology">symmetric</dfn> if, for each index <span class="process-math">\(i,j\text{,}\)</span> the entries <span class="process-math">\(m_{ij} = m_{ji}\text{.}\)</span> That is, the matrix is itself when reflected over the diagonal from upper left to lower right. Prove that the set of <span class="process-math">\(n \times n\)</span> symmetric matrices is a subspace of <span class="process-math">\(M_{n \times n}\text{.}\)</span></article><article class="exploration project-like" id="EV3-8-3"><h4 class="heading">
+<span class="type">Exploration</span><span class="space"> </span><span class="codenumber">2.3.21</span><span class="period">.</span>
+</h4>The space of all real-valued function of one real variable is a vector space. First, define <span class="process-math">\(\oplus\)</span> and <span class="process-math">\(\odot\)</span> for this vector space. Check that you have closure (both kinds!) and show what the zero vector is under your chosen addition. Decide if each of the following is a subspace. If so, prove it. If not, provide the counterexample. <ul class="disc" id="EV3-8-3-1-3">
+<li id="EV3-8-3-1-3-1"><div class="para" id="p-derived-EV3-8-3-1-3-1">The set of even functions, <span class="process-math">\(\{f:\mathbb{R} \rightarrow \mathbb{R}: f(-x) = f(x) \mbox{ for all } x\}\text{.}\)</span>
+</div></li>
+<li id="EV3-8-3-1-3-2"><div class="para" id="p-derived-EV3-8-3-1-3-2">The set of odd functions, <span class="process-math">\(\{f:\mathbb{R} \rightarrow \mathbb{R}: f(-x) = -f(x) \mbox{ for all } x\}\text{.}\)</span>
+</div></li>
+</ul></article><article class="exploration project-like" id="EV3-8-4"><h4 class="heading">
+<span class="type">Exploration</span><span class="space"> </span><span class="codenumber">2.3.22</span><span class="period">.</span>
+</h4>Give an example of each of these, or explain why it’s not possible that such a thing would exist. <ul class="disc" id="EV3-8-4-1-1">
+<li id="EV3-8-4-1-1-1"><div class="para" id="p-derived-EV3-8-4-1-1-1">A nonempty subset of <span class="process-math">\(M_{2 \times 2}\)</span> that is not a subspace.</div></li>
+<li id="EV3-8-4-1-1-2"><div class="para" id="p-derived-EV3-8-4-1-1-2">A set of two vectors in <span class="process-math">\(\mathbb{R}^2\)</span> that is not a spanning set.</div></li>
+</ul></article><article class="exploration project-like" id="EV3-8-5"><h4 class="heading">
+<span class="type">Exploration</span><span class="space"> </span><span class="codenumber">2.3.23</span><span class="period">.</span>
+</h4>Let <span class="process-math">\(V\)</span> be a vector space and <span class="process-math">\(S = \{\vec{v}_1,\vec{v}_2,\ldots,\vec{v}_n\}\)</span> a subset of <span class="process-math">\(V\text{.}\)</span> Show that the span of <span class="process-math">\(S\)</span> is a subspace. Is it possible that there is a subset of <span class="process-math">\(V\)</span> containing fewer vectors than <span class="process-math">\(S\text{,}\)</span> but whose span contains all of the vectors in the span of <span class="process-math">\(S\text{?}\)</span></article></section><section class="subsection" id="EV3-9"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.3.7</span><span class="space"> </span><span class="title">Sample Problem and Solution</span>
+</h3>
+<div class="para" id="EV3-9-2">Sample problem <a href="sample-exercises.html#sample-EV3" class="internal" title="Example B.1.7: EV3">Example B.1.7</a>.</div></section></section></div>
 <div class="ptx-content-footer">
-<a class="previous-button button" href="EV6.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="AT.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="EV2.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="EV4.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">

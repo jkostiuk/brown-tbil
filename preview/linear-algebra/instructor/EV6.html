@@ -8,7 +8,7 @@
 <html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>TBIL-LA Homogeneous Linear Systems (EV7)</title>
+<title>TBIL-LA Subspace Basis and Dimension (EV6)</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
@@ -760,7 +760,7 @@ sagecell.makeSagecell({
 <ol id="searchresults" class="searchresults"></ol>
 </div>
 </div>
-<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="EV6.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="EV.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="AT.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\markedPivot}[1]{\boxed{#1}}
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="EV5.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="EV.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="EV7.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\markedPivot}[1]{\boxed{#1}}
 \newcommand{\IR}{\mathbb{R}}
 \newcommand{\IC}{\mathbb{C}}
 \renewcommand{\P}{\mathcal{P}}
@@ -955,7 +955,7 @@ sagecell.makeSagecell({
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="EV5.html#EV5-9" class="internal"><span class="codenumber">2.5.7</span> <span class="title">Sample Problem and Solution</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section">
+<li class="toc-item toc-section active">
 <div class="toc-title-box"><a href="EV6.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Subspace Basis and Dimension (EV6)</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="EV6.html#EV6-3" class="internal"><span class="codenumber">2.6.1</span> <span class="title">Warm Up</span></a></div></li>
@@ -967,7 +967,7 @@ sagecell.makeSagecell({
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="EV6.html#EV6-9" class="internal"><span class="codenumber">2.6.7</span> <span class="title">Sample Problem and Solution</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section active">
+<li class="toc-item toc-section">
 <div class="toc-title-box"><a href="EV7.html" class="internal"><span class="codenumber">2.7</span> <span class="title">Homogeneous Linear Systems (EV7)</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="EV7.html#EV7-3" class="internal"><span class="codenumber">2.7.1</span> <span class="title">Warmup</span></a></div></li>
@@ -1202,264 +1202,299 @@ sagecell.makeSagecell({
 </ul>
 </li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="EV7"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">2.7</span><span class="space"> </span><span class="title">Homogeneous Linear Systems (EV7)</span>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="EV6"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">2.6</span><span class="space"> </span><span class="title">Subspace Basis and Dimension (EV6)</span>
 </h2>
-<article class="objectives goal-like" id="EV7-2"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
-<ul class="disc" id="EV7-2-1"><li id="EV7-2-1-1"><div class="para" id="EV7-2-1-1-1">Find a basis for the solution set of a homogeneous system of equations.</div></li></ul></article><section class="subsection" id="EV7-3"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.7.1</span><span class="space"> </span><span class="title">Warmup</span>
+<article class="objectives goal-like" id="EV6-2"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
+<ul class="disc" id="EV6-2-1"><li id="EV6-2-1-1"><div class="para" id="EV6-2-1-1-1">Compute a basis for the subspace spanned by a given set of Euclidean vectors, and determine the dimension of the subspace.</div></li></ul></article><section class="subsection" id="EV6-3"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.6.1</span><span class="space"> </span><span class="title">Warm Up</span>
 </h3>
-<article class="remark remark-like" id="EV7-3-2"><h4 class="heading">
-<span class="type">Remark</span><span class="space"> </span><span class="codenumber">2.7.1</span><span class="period">.</span>
+<article class="activity project-like" id="EV6-3-2"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.6.1</span><span class="period">.</span>
 </h4>
-<div class="para logical" id="EV7-3-2-1">
-<div class="para">Recall from <a href="EV3.html" class="internal" title="Section 2.3: Subspaces (EV3)">Section 2.3</a> that a <dfn class="terminology">homogeneous</dfn> system of linear equations is one of the form:</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/EV3.html" id="EV7-3-2-1-4">
-\begin{alignat*}{5}
-a_{11}x_1 &amp;\,+\,&amp; a_{12}x_2 &amp;\,+\,&amp; \dots  &amp;\,+\,&amp; a_{1n}x_n &amp;\,=\,&amp; 0 \\
-a_{21}x_1 &amp;\,+\,&amp; a_{22}x_2 &amp;\,+\,&amp; \dots  &amp;\,+\,&amp; a_{2n}x_n &amp;\,=\,&amp; 0 \\
-\vdots&amp;  &amp;\vdots&amp;   &amp;&amp;  &amp;\vdots&amp;&amp;\vdots\\
-a_{m1}x_1 &amp;\,+\,&amp; a_{m2}x_2 &amp;\,+\,&amp; \dots  &amp;\,+\,&amp; a_{mn}x_n &amp;\,=\,&amp; 0
-\end{alignat*}
-</div>
-</div> <div class="para logical" id="EV7-3-2-2">
-<div class="para">This system is equivalent to the vector equation:</div>
+<div class="introduction" id="EV6-3-2-1"><div class="para logical" id="EV6-3-2-1-1">
+<div class="para">Consider the set <span class="process-math">\(S\)</span> of vectors in <span class="process-math">\(\IR^4\)</span> given by</div>
 <div class="displaymath process-math">
 \begin{equation*}
-x_1 \vec{v}_1 + \cdots+x_n \vec{v}_n = \vec{0}
+S=\left\{\left[\begin{array}{c}2\\3\\0\\1\end{array}\right],\left[\begin{array}{c}2\\0\\1\\-1\end{array}\right]\right\}
 \end{equation*}
-</div>
-<div class="para">and the augmented matrix:</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\left[\begin{array}{cccc|c}
-a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n} &amp; 0\\
-a_{21} &amp; a_{22} &amp; \cdots &amp; a_{2n} &amp; 0\\
-\vdots &amp; \vdots &amp; \ddots &amp; \vdots &amp; \vdots\\
-a_{m1} &amp; a_{m2} &amp; \cdots &amp; a_{mn} &amp; 0
-\end{array}\right].
-\end{equation*}
-</div>
-</div></article><article class="activity project-like" id="EV7-3-3"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.7.2</span><span class="period">.</span>
-</h4>
-<div class="introduction" id="EV7-3-3-1"><div class="para logical" id="EV7-3-3-1-1">
-<div class="para">In <a href="EV3.html" class="internal" title="Section 2.3: Subspaces (EV3)">Section 2.3</a>, we observed that if</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/EV3.html">
-\begin{equation*}
-x_1 \vec{v}_1 + \cdots+x_n \vec{v}_n = \vec{0}
-\end{equation*}
-</div>
-<div class="para">is a homogeneous vector equation, then:</div>
-<ul class="disc" id="EV7-3-3-1-1-3">
-<li id="EV7-3-3-1-1-3-1"><div class="para" id="EV7-3-3-1-1-3-1-1">The zero vector <span class="process-math">\(\vec{0}\)</span> is a solution;</div></li>
-<li id="EV7-3-3-1-1-3-2"><div class="para" id="EV7-3-3-1-1-3-2-1">The sum of any two solutions is again a solution;</div></li>
-<li id="EV7-3-3-1-1-3-3"><div class="para" id="EV7-3-3-1-1-3-3-1">Multiplying a solution by a scalar produces another solution.</div></li>
-</ul>
-</div></div> <div class="para logical" id="EV7-3-3-2">
-<div class="para">Based on this recollection, which of the following best describes the solution set to the homogeneous equation?</div>
-<ol class="upper-alpha" id="EV7-3-3-2-1">
-<li id="EV7-3-3-2-1-1"><div class="para" id="EV7-3-3-2-1-1-1">A basis for <span class="process-math">\(\IR^n\text{.}\)</span>
-</div></li>
-<li id="EV7-3-3-2-1-2"><div class="para" id="EV7-3-3-2-1-2-1">A subspace of <span class="process-math">\(\IR^n\text{.}\)</span>
-</div></li>
-<li id="EV7-3-3-2-1-3"><div class="para" id="EV7-3-3-2-1-3-1">All of <span class="process-math">\(\IR^n\text{.}\)</span>
-</div></li>
-<li id="EV7-3-3-2-1-4"><div class="para" id="EV7-3-3-2-1-4-1">The empty set.</div></li>
-</ol>
-</div></article></section><section class="subsection" id="EV7-4"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.7.2</span><span class="space"> </span><span class="title">Class Activities</span>
-</h3>
-<article class="activity project-like" id="EV7-4-2"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.7.3</span><span class="period">.</span>
-</h4>
-<div class="introduction" id="EV7-4-2-1"><div class="para logical" id="EV7-4-2-1-1">
-<div class="para">Consider the homogeneous system of equations</div>
-<div class="displaymath process-math" id="EV7-4-2-1-1-1">
-\begin{alignat*}{5}
-x_1&amp;\,+\,&amp;2x_2&amp;\,\,&amp; &amp;\,+\,&amp; x_4 &amp;=&amp; 0\\
-2x_1&amp;\,+\,&amp;4x_2&amp;\,-\,&amp;x_3 &amp;\,-\,&amp;2 x_4 &amp;=&amp; 0\\
-3x_1&amp;\,+\,&amp;6x_2&amp;\,-\,&amp;x_3 &amp;\,-\,&amp; x_4 &amp;=&amp; 0
-\end{alignat*}
 </div>
 </div></div>
-<article class="task exercise-like" id="EV7-4-2-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="EV7-4-2-2-1">Find its solution set (a subspace of <span class="process-math">\(\IR^4\)</span>).</div></article><article class="task exercise-like" id="EV7-4-2-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para logical" id="EV7-4-2-3-1">
-<div class="para">Rewrite this solution space in the form</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\setBuilder{ a \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\end{array}\right] + b \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown \end{array}\right] }{a,b \in \IR}.
-\end{equation*}
-</div>
-</div></article><article class="task exercise-like" id="EV7-4-2-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para logical" id="EV7-4-2-4-1-1">
-<div class="para">Which of these choices best describes the set of two vectors <span class="process-math">\(\left\{\left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\end{array}\right], \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown \end{array}\right]\right\}\)</span> used in this solution space?</div>
-<ol class="upper-alpha" id="EV7-4-2-4-1-1-2">
-<li id="EV7-4-2-4-1-1-2-1"><div class="para" id="EV7-4-2-4-1-1-2-1-1">The set is linearly dependent.</div></li>
-<li id="EV7-4-2-4-1-1-2-2"><div class="para" id="EV7-4-2-4-1-1-2-2-1">The set is linearly independent.</div></li>
-<li id="EV7-4-2-4-1-1-2-3"><div class="para" id="EV7-4-2-4-1-1-2-3-1">The set spans the solution space.</div></li>
-<li id="EV7-4-2-4-1-1-2-4"><div class="para" id="EV7-4-2-4-1-1-2-4-1">The set is a basis of the solution space.</div></li>
-</ol>
-</div>
-<div class="solutions"><details id="EV7-4-2-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="EV7-4-2-4-2-1">D.</div></div></details></div></article></article><div id="EV7-4-3" class="ptx-sagecell sagecell-octave"><script type="text/x-sage"></script></div>
-<article class="activity project-like" id="EV7-4-4"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.7.4</span><span class="period">.</span>
+<article class="task exercise-like" id="EV6-3-2-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="EV6-3-2-2-1-1">Is the set <span class="process-math">\(S\)</span> linearly independent or linearly dependent?</div></article><article class="task exercise-like" id="EV6-3-2-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="EV6-3-2-3-1-1">How would you describe the subspace <span class="process-math">\(\vspan{S}\)</span> geometrically?</div></article><article class="task exercise-like" id="EV6-3-2-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="EV6-3-2-4-1-1">What do the spaces <span class="process-math">\(\vspan{S}\)</span> and <span class="process-math">\(\IR^2\)</span> have in common? In what ways do they differ?</div></article></article></section><section class="subsection" id="EV6-4"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.6.2</span><span class="space"> </span><span class="title">Class Activities</span>
+</h3>
+<article class="observation remark-like" id="EV6-4-2"><h4 class="heading">
+<span class="type">Observation</span><span class="space"> </span><span class="codenumber">2.6.2</span><span class="period">.</span>
 </h4>
-<div class="introduction" id="EV7-4-4-1"><div class="para logical" id="EV7-4-4-1-1">
-<div class="para">Consider the homogeneous system of equations</div>
-<div class="displaymath process-math" id="EV7-4-4-1-1-1">
-\begin{alignat*}{8}
-2x_1&amp;\,+\,&amp;4x_2&amp;\,+\,&amp;2x_3 &amp;\,-\,&amp;3 x_4 &amp;\,+\,&amp;31x_5&amp;\,+\,&amp;2x_6&amp;\,-\,&amp;16x_7&amp;=&amp; 0\\
--1x_1&amp;\,-\,&amp;2x_2&amp;\,+\,&amp;4x_3 &amp;\,-\,&amp;x_4 &amp;\,+\,&amp;2x_5&amp;\,+\,&amp;9x_6&amp;\,+\,&amp;3x_7&amp;=&amp; 0\\
-x_1&amp;\,+\,&amp;2x_2&amp;\,+\,&amp;x_3 &amp;\,+\,&amp; x_4 &amp;\,+\,&amp;3x_5&amp;\,+\,&amp;6x_7&amp;\,+\,&amp;7x_7&amp;=&amp; 0
-\end{alignat*}
-</div>
+<div class="para" id="EV6-4-2-1">Recall from section <a href="EV3.html" class="internal" title="Section 2.3: Subspaces (EV3)">Section 2.3</a> that a <dfn class="terminology">subspace</dfn> of a vector space is the result of spanning a set of vectors from that vector space.</div> <div class="para" id="EV6-4-2-2">Recall also that a linearly dependent set contains “redundant” vectors. For example, only two of the three vectors in <a href="EV4.html#EV4-figure-linearly-dependent" class="internal" title="Figure 14">Figure 14</a> are needed to span the planar subspace.</div></article><article class="activity project-like" id="EV6-4-3"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.6.3</span><span class="period">.</span>
+</h4>
+<div class="introduction" id="EV6-4-3-1"><div class="para" id="EV6-4-3-1-1">Consider the subspace of <span class="process-math">\(\IR^4\)</span> given by <span class="process-math">\(W=\vspan\left\{
+\left[\begin{array}{c}2\\3\\0\\1\end{array}\right],
+\left[\begin{array}{c}2\\0\\1\\-1\end{array}\right],
+\left[\begin{array}{c}2\\-3\\2\\-3\end{array}\right],
+\left[\begin{array}{c}1\\5\\-1\\0\end{array}\right]
+\right\}
+\text{.}\)</span>
 </div></div>
-<article class="task exercise-like" id="EV7-4-4-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="EV7-4-4-2-1">Find its solution set (a subspace of <span class="process-math">\(\IR^7\)</span>).</div></article><article class="task exercise-like" id="EV7-4-4-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para logical" id="EV7-4-4-3-1">
-<div class="para">Rewrite this solution space in the form</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\setBuilder{ a \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right] + b \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right]+c \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right]+d \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right] }{a,b,c,d \in \IR}.
-\end{equation*}
-</div>
-</div></article><article class="task exercise-like" id="EV7-4-4-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para logical" id="EV7-4-4-4-1-1">
-<div class="para">Which of these choices best describes the set of two vectors <span class="process-math">\(\left\{\left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right], \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right],\left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right],\left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right]\right\}\)</span> used in this solution space?</div>
-<ol class="upper-alpha" id="EV7-4-4-4-1-1-2">
-<li id="EV7-4-4-4-1-1-2-1"><div class="para" id="EV7-4-4-4-1-1-2-1-1">The set is linearly dependent.</div></li>
-<li id="EV7-4-4-4-1-1-2-2"><div class="para" id="EV7-4-4-4-1-1-2-2-1">The set is linearly independent.</div></li>
-<li id="EV7-4-4-4-1-1-2-3"><div class="para" id="EV7-4-4-4-1-1-2-3-1">The set spans the solution space.</div></li>
-<li id="EV7-4-4-4-1-1-2-4"><div class="para" id="EV7-4-4-4-1-1-2-4-1">The set is a basis for the solution space.</div></li>
+<article class="task exercise-like" id="EV6-4-3-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="EV6-4-3-2-1">Mark the column of <span class="process-math">\(\RREF\left[\begin{array}{cccc}
+2&amp;2&amp;2&amp;1\\
+3&amp;0&amp;-3&amp;5\\
+0&amp;1&amp;2&amp;-1\\
+1&amp;-1&amp;-3&amp;0
+\end{array}\right]\)</span> that shows that <span class="process-math">\(W\)</span>’s spanning set is linearly dependent.</div></article><article class="task exercise-like" id="EV6-4-3-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para logical" id="EV6-4-3-3-1">
+<div class="para">What would be the result of removing the vector that gave us this column?</div>
+<ol class="upper-alpha" id="EV6-4-3-3-1-1">
+<li id="EV6-4-3-3-1-1-1"><div class="para" id="p-derived-EV6-4-3-3-1-1-1">The set still spans <span class="process-math">\(W\text{,}\)</span> and remains linearly dependent.</div></li>
+<li id="EV6-4-3-3-1-1-2"><div class="para" id="p-derived-EV6-4-3-3-1-1-2">The set still spans <span class="process-math">\(W\text{,}\)</span> but is now also linearly independent.</div></li>
+<li id="EV6-4-3-3-1-1-3"><div class="para" id="p-derived-EV6-4-3-3-1-1-3">The set no longer spans <span class="process-math">\(W\text{,}\)</span> and remains linearly dependent.</div></li>
+<li id="EV6-4-3-3-1-1-4"><div class="para" id="p-derived-EV6-4-3-3-1-1-4">The set no longer spans <span class="process-math">\(W\text{,}\)</span> but is now linearly independent.</div></li>
 </ol>
-</div>
-<div class="solutions"><details id="EV7-4-4-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="EV7-4-4-4-2-1">D.</div></div></details></div></article></article><div id="EV7-4-5" class="ptx-sagecell sagecell-octave"><script type="text/x-sage">
+</div></article></article><div id="EV6-4-4" class="ptx-sagecell sagecell-octave"><script type="text/x-sage">rref([2,2,2,1; 3,0,-3,5; 0,1,2,-1; 1,-1,-3,0])
 </script></div>
-<article class="fact theorem-like" id="fact-solution-space-basis"><h4 class="heading">
-<span class="type">Fact</span><span class="space"> </span><span class="codenumber">2.7.5</span><span class="period">.</span>
+<article class="definition definition-like" id="EV6-4-5"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.6.4</span><span class="period">.</span>
 </h4>
-<div class="para" id="fact-solution-space-basis-1-1">The coefficients of the free variables in the solution space of a linear system always yield linearly independent vectors that span the solution space.</div> <div class="para logical" id="fact-solution-space-basis-1-2">
-<div class="para">Thus if</div>
+<div class="para" id="EV6-4-5-1-1">Let <span class="process-math">\(W\)</span> be a subspace of a vector space. A <dfn class="terminology">basis</dfn> for <span class="process-math">\(W\)</span> is a linearly independent set of vectors that spans <span class="process-math">\(W\)</span> (but not necessarily the entire vector space).</div></article><article class="observation remark-like" id="observation-subspace-basis"><h4 class="heading">
+<span class="type">Observation</span><span class="space"> </span><span class="codenumber">2.6.5</span><span class="period">.</span>
+</h4>
+<div class="para logical" id="observation-subspace-basis-1">
+<div class="para">So given a set <span class="process-math">\(S=\{\vec v_1,\dots,\vec v_m\}\text{,}\)</span> to compute a basis for the subspace <span class="process-math">\(\vspan S\text{,}\)</span> simply remove the vectors corresponding to the non-pivot columns of <span class="process-math">\(\RREF[\vec v_1\,\dots\,\vec v_m]\text{.}\)</span> For example, since</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\setBuilder{
-a \left[\begin{array}{c} -2 \\ 1 \\ 0 \\ 0\\0\\0\\0\end{array}\right] +
-b \left[\begin{array}{c} -7 \\ 0 \\ -1 \\ 5\\1\\0\\0 \end{array}\right]+
-c \left[\begin{array}{c} -1 \\ 0 \\ -3 \\ -2\\0\\1\\0 \end{array}\right]+
-d \left[\begin{array}{c} 1 \\ 0 \\ -2 \\ -6\\0\\0\\1 \end{array}\right]
-}{
-a,b,c,d \in \IR
-} = \vspan\left\{ \left[\begin{array}{c} -2 \\ 1 \\ 0 \\ 0\\0\\0\\0\end{array}\right], 
-\left[\begin{array}{c} -7 \\ 0 \\ -1 \\ 5\\1\\0\\0 \end{array}\right],
-\left[\begin{array}{c} -1 \\ 0 \\ -3 \\ -2\\0\\1\\0 \end{array}\right],
-\left[\begin{array}{c} 1 \\ 0 \\ -2 \\ -6\\0\\0\\1 \end{array}\right] \right\}
+\RREF
+\left[\begin{array}{cccc}
+1 &amp; 2 &amp; 0 &amp; 1 \\
+2 &amp; 4 &amp; -2 &amp; 0 \\
+3 &amp; 6 &amp; -2 &amp; 1 \\
+\end{array}\right]
+=
+\left[\begin{array}{cccc}
+\markedPivot{1} &amp; 2 &amp; 0 &amp; 1 \\
+0 &amp; 0 &amp; \markedPivot{1} &amp; 1 \\
+0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right]
 \end{equation*}
 </div>
-<div class="para">is the solution space for a homogeneous system, then</div>
+<div class="para">the subspace <span class="process-math">\(W=\vspan\setList{
+\left[\begin{array}{c}1\\2\\3\end{array}\right],
+\left[\begin{array}{c}2\\4\\6\end{array}\right],
+\left[\begin{array}{c}0\\-2\\-2\end{array}\right],
+\left[\begin{array}{c}1\\0\\1\end{array}\right]
+}\)</span> has <span class="process-math">\(\setList{
+\left[\begin{array}{c}1\\2\\3\end{array}\right],
+\left[\begin{array}{c}0\\-2\\-2\end{array}\right]
+}\)</span> as a basis.</div>
+</div></article><article class="activity project-like" id="EV6-4-7"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.6.6</span><span class="period">.</span>
+</h4>
+<article class="task exercise-like" id="EV6-4-7-1"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para logical" id="EV6-4-7-1-1">
+<div class="para">Find a basis for <span class="process-math">\(\vspan S\)</span> where</div>
 <div class="displaymath process-math">
 \begin{equation*}
+S=\left\{
+\left[\begin{array}{c}2\\3\\0\\1\end{array}\right],
+\left[\begin{array}{c}2\\0\\1\\-1\end{array}\right],
+\left[\begin{array}{c}2\\-3\\2\\-3\end{array}\right],
+\left[\begin{array}{c}1\\5\\-1\\0\end{array}\right]
+\right\}\text{.}
+\end{equation*}
+</div>
+</div></article><article class="task exercise-like" id="EV6-4-7-2"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para logical" id="EV6-4-7-2-1">
+<div class="para">Find a basis for <span class="process-math">\(\vspan T\)</span> where</div>
+<div class="displaymath process-math">
+\begin{equation*}
+T=\left\{
+\left[\begin{array}{c}2\\0\\1\\-1\end{array}\right],
+\left[\begin{array}{c}2\\-3\\2\\-3\end{array}\right],
+\left[\begin{array}{c}1\\5\\-1\\0\end{array}\right],
+\left[\begin{array}{c}2\\3\\0\\1\end{array}\right]
+\right\}\text{.}
+\end{equation*}
+</div>
+</div></article></article><div id="EV6-4-8" class="ptx-sagecell sagecell-octave"><script type="text/x-sage"></script></div>
+<article class="observation remark-like" id="EV6-4-9"><h4 class="heading">
+<span class="type">Observation</span><span class="space"> </span><span class="codenumber">2.6.7</span><span class="period">.</span>
+</h4>
+<div class="para logical" id="EV6-4-9-1">
+<div class="para">Even though we found different bases for them, <span class="process-math">\(\vspan S\)</span> and <span class="process-math">\(\vspan T\)</span> are exactly the same subspace of <span class="process-math">\(\IR^4\text{,}\)</span> since</div>
+<div class="displaymath process-math">
+\begin{equation*}
+S=\left\{
+\left[\begin{array}{c}2\\3\\0\\1\end{array}\right],
+\left[\begin{array}{c}2\\0\\1\\-1\end{array}\right],
+\left[\begin{array}{c}2\\-3\\2\\-3\end{array}\right],
+\left[\begin{array}{c}1\\5\\-1\\0\end{array}\right]
+\right\}
+=
+\left\{
+\left[\begin{array}{c}2\\0\\1\\-1\end{array}\right],
+\left[\begin{array}{c}2\\-3\\2\\-3\end{array}\right],
+\left[\begin{array}{c}1\\5\\-1\\0\end{array}\right],
+\left[\begin{array}{c}2\\3\\0\\1\end{array}\right]
+\right\}=T\text{.}
+\end{equation*}
+</div>
+</div> <div class="para" id="EV6-4-9-2">Thus the basis for a subspace is not unique in general.</div></article><article class="fact theorem-like" id="EV6-4-10"><h4 class="heading">
+<span class="type">Fact</span><span class="space"> </span><span class="codenumber">2.6.8</span><span class="period">.</span>
+</h4>
+<div class="para" id="EV6-4-10-1-1">Any non-trivial real vector space has infinitely-many different bases, but all the bases for a given vector space are exactly the same size.</div> <div class="para logical" id="EV6-4-10-1-2">
+<div class="para">For example,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\setList{\vec e_1,\vec e_2,\vec e_3}
+\text{ and }
 \setList{
-\left[\begin{array}{c} -2 \\ \textcolor{blue}{1} \\ 0 \\ 0\\\textcolor{blue}{0}\\\textcolor{blue}{0}\\\textcolor{blue}{0}\end{array}\right], 
-\left[\begin{array}{c} -7 \\ \textcolor{blue}{0} \\ -1 \\ 5\\\textcolor{blue}{1}\\\textcolor{blue}{0}\\\textcolor{blue}{0} \end{array}\right],
-\left[\begin{array}{c} -1 \\ \textcolor{blue}{0} \\ -3 \\ -2\\\textcolor{blue}{0}\\\textcolor{blue}{1}\\\textcolor{blue}{0} \end{array}\right],
-\left[\begin{array}{c} 1 \\ \textcolor{blue}{0} \\ -2 \\ -6\\\textcolor{blue}{0}\\\textcolor{blue}{0}\\\textcolor{blue}{1} \end{array}\right]
+\left[\begin{array}{c}1\\0\\0\end{array}\right],
+\left[\begin{array}{c}0\\1\\0\end{array}\right],
+\left[\begin{array}{c}1\\1\\1\end{array}\right]
+}
+\text{ and }
+\setList{
+\left[\begin{array}{c}1\\0\\-3\end{array}\right],
+\left[\begin{array}{c}2\\-2\\1\end{array}\right],
+\left[\begin{array}{c}3\\-2\\5\end{array}\right]
 }
 \end{equation*}
 </div>
-<div class="para">is a basis for the solution space.</div>
-</div></article><article class="activity project-like" id="EV7-4-7"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.7.6</span><span class="period">.</span>
+<div class="para">are all valid bases for <span class="process-math">\(\IR^3\text{,}\)</span> and they all contain three vectors.</div>
+</div></article><article class="definition definition-like" id="EV6-4-11"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.6.9</span><span class="period">.</span>
 </h4>
-<div class="introduction" id="EV7-4-7-1"><div class="para logical" id="EV7-4-7-1-1">
-<div class="para">Consider the homogeneous system of equations</div>
-<div class="displaymath process-math" id="EV7-4-7-1-1-1">
-\begin{alignat*}{5}
-x_1&amp;\,-\,&amp;3x_2&amp;\,+\,&amp; 2x_3  &amp;=&amp; 0\\
-2x_1&amp;\,+\,&amp;6x_2&amp;\,+\,&amp;4x_3  &amp;=&amp; 0\\
-x_1&amp;\,+\,&amp;6x_2&amp;\,-\,&amp;4x_3 &amp;=&amp; 0
-\end{alignat*}
-</div>
-</div></div>
-<article class="task exercise-like" id="EV7-4-7-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="EV7-4-7-2-1-1">Find its solution space.</div></article><article class="task exercise-like" id="EV7-4-7-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para logical" id="EV7-4-7-3-1-1">
-<div class="para">Which of these is the best choice of basis for this solution space?</div>
-<ol class="upper-alpha cols3" id="EV7-4-7-3-1-1-1">
-<li id="EV7-4-7-3-1-1-1-1"><div class="para" id="p-derived-EV7-4-7-3-1-1-1-1"><span class="process-math">\(\displaystyle \{\}\)</span></div></li>
-<li id="EV7-4-7-3-1-1-1-2"><div class="para" id="p-derived-EV7-4-7-3-1-1-1-2"><span class="process-math">\(\displaystyle \{\vec 0\}\)</span></div></li>
-<li id="EV7-4-7-3-1-1-1-3"><div class="para" id="p-derived-EV7-4-7-3-1-1-1-3">The basis does not exist</div></li>
-</ol>
-</div>
-<div class="solutions"><details id="EV7-4-7-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="EV7-4-7-3-2-1">A.</div></div></details></div></article></article><div id="EV7-4-8" class="ptx-sagecell sagecell-octave"><script type="text/x-sage"></script></div>
-<article class="activity project-like" id="EV7-4-9"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.7.7</span><span class="period">.</span>
-</h4>
-<div class="introduction" id="EV7-4-9-1"><div class="para" id="EV7-4-9-1-1">To create a computer-animated film, an animator first models a scene as a subset of <span class="process-math">\(\mathbb R^3\text{.}\)</span> Then to transform this three-dimensional visual data for display on a two-dimensional movie screen or television set, the computer could apply a linear transformation that maps visual information at the point <span class="process-math">\((x,y,z)\in\mathbb R^3\)</span> onto the pixel located at <span class="process-math">\((x+y,y-z)\in\mathbb R^2\text{.}\)</span>
-</div></div>
-<article class="task exercise-like" id="EV7-4-9-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="EV7-4-9-2-1-1">What homogeneous linear system describes the positions <span class="process-math">\((x,y,z)\)</span> within the original scene that would be aligned with the pixel <span class="process-math">\((0,0)\)</span> on the screen?</div></article><article class="task exercise-like" id="EV7-4-9-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="EV7-4-9-3-1-1">Solve this system to describe these locations.</div></article></article><div id="EV7-4-10" class="ptx-sagecell sagecell-octave"><script type="text/x-sage"></script></div></section><section class="subsection" id="EV7-5"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.7.3</span><span class="space"> </span><span class="title">Individual Practice</span>
-</h3>
-<article class="activity project-like" id="EV7-5-2"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.7.8</span><span class="period">.</span>
-</h4>
-<div class="introduction" id="EV7-5-2-1"><div class="para logical" id="EV7-5-2-1-1">
-<div class="para">Let <span class="process-math">\(S=\setList{
-\left[\begin{array}{c} -2 \\ 1 \\ 0 \\ 0\end{array}\right],
-\left[\begin{array}{c} -1 \\ 0 \\ -4 \\ 1 \end{array}\right],
-\left[\begin{array}{c} 1 \\ 0 \\ -2 \\ 3 \end{array}\right]
-}\)</span> and <span class="process-math">\(A=\left[\begin{array}{ccc}
--2 &amp; -1 &amp;1\\
-1 &amp; 0 &amp;0\\
-0 &amp; -4 &amp;-2\\
-0 &amp; 1 &amp;3
-\end{array}\right];\)</span> note that</div>
+<div class="para" id="EV6-4-11-1-1">The <dfn class="terminology">dimension</dfn> of a vector space or subspace is equal to the size of any basis for the vector space.</div> <div class="para logical" id="EV6-4-11-1-2">
+<div class="para">As you’d expect, <span class="process-math">\(\IR^n\)</span> has dimension <span class="process-math">\(n\text{.}\)</span> For example, <span class="process-math">\(\IR^3\)</span> has dimension <span class="process-math">\(3\)</span> because any basis for <span class="process-math">\(\IR^3\)</span> such as</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\RREF(A)=\left[\begin{array}{ccc}
-1 &amp; 0 &amp;0\\
-0 &amp; 1 &amp;0\\
-0 &amp; 0 &amp;1\\
-0 &amp; 0 &amp;0
-\end{array}\right].
+\setList{\vec e_1,\vec e_2,\vec e_3}
+\text{ and }
+\setList{
+\left[\begin{array}{c}1\\0\\0\end{array}\right],
+\left[\begin{array}{c}0\\1\\0\end{array}\right],
+\left[\begin{array}{c}1\\1\\1\end{array}\right]
+}
+\text{ and }
+\setList{
+\left[\begin{array}{c}1\\0\\-3\end{array}\right],
+\left[\begin{array}{c}2\\-2\\1\end{array}\right],
+\left[\begin{array}{c}3\\-2\\5\end{array}\right]
+}
 \end{equation*}
 </div>
-<div class="para">The following statements are all <em class="emphasis">invalid</em> for at least one reason. Determine what makes them invalid and, suggest alternative <em class="emphasis">valid</em> statements that the author may have meant instead.</div>
-</div></div>
-<article class="task exercise-like" id="EV7-5-2-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="EV7-5-2-2-1-1">The matrix <span class="process-math">\(A\)</span> is linearly independent because <span class="process-math">\(\RREF(A)\)</span> has a pivot in each column.</div></article><article class="task exercise-like" id="EV7-5-2-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="EV7-5-2-3-1-1">The matrix <span class="process-math">\(A\)</span> does not span <span class="process-math">\(\IR^4\)</span> because <span class="process-math">\(\RREF(A)\)</span> has a row of zeroes.</div></article><article class="task exercise-like" id="EV7-5-2-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para" id="EV7-5-2-4-1-1">The set of vectors <span class="process-math">\(S\)</span> spans.</div></article><article class="task exercise-like" id="EV7-5-2-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
-<div class="para" id="EV7-5-2-5-1-1">The set of vectors <span class="process-math">\(S\)</span> is a basis.</div></article></article></section><section class="subsection" id="EV7-6"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.7.4</span><span class="space"> </span><span class="title">Videos</span>
-</h3>
-<figure class="figure figure-like" id="EV7-6-2"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/TbN3lvLaNOw?&amp;modestbranding=1&amp;rel=0" id="video-EV7"></iframe></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">18<span class="period">.</span></span><span class="space"> </span>Video: Polynomial and matrix calculations</figcaption></figure></section><section class="exercises" id="EV7-7"><h3 class="heading hide-type">
-<span class="type">Exercises</span><span class="space"> </span><span class="codenumber">2.7.5</span><span class="space"> </span><span class="title">Exercises</span>
-</h3>
-<div class="para" id="EV7-7-1">Exercises available at <a class="external" href="https://tbil.org/preview/linear-algebra/exercises/#/bank/EV7/" target="_blank"><code class="code-inline tex2jax_ignore">https://tbil.org/preview/linear-algebra/exercises/#/bank/EV7/</code></a>.</div></section><section class="subsection" id="EV7-8"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.7.6</span><span class="space"> </span><span class="title">Mathematical Writing Explorations</span>
-</h3>
-<article class="exploration project-like" id="non-singular"><h4 class="heading">
-<span class="type">Exploration</span><span class="space"> </span><span class="codenumber">2.7.9</span><span class="period">.</span>
+<div class="para">contains exactly three vectors.</div>
+</div></article><article class="activity project-like" id="EV6-4-12"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.6.10</span><span class="period">.</span>
 </h4>
-<div class="para" id="non-singular-1-1">An <span class="process-math">\(n \times n\)</span> matrix <span class="process-math">\(M\)</span> is <dfn class="terminology">non-singular</dfn> if the associated homogeneous system with coefficient matrix <span class="process-math">\(M\)</span> is consistent with one solution. Assume the matrices in the writing explorations in this section are all non-singular.</div> <ul class="disc" id="non-singular-1-2">
-<li id="non-singular-1-2-1"><div class="para" id="p-derived-non-singular-1-2-1">Prove that the reduced row echelon form of <span class="process-math">\(M\)</span> is the identity matrix.</div></li>
-<li id="non-singular-1-2-2"><div class="para" id="p-derived-non-singular-1-2-2">Prove that, for any column vector <span class="process-math">\(\vec{b} = \left[\begin{array}{c}b_1\\b_2\\ \vdots \\b_n \end{array}\right]\text{,}\)</span> the system of equations given by <span class="process-math">\(\left[\begin{array}{c|c}M &amp; \vec{b}\end{array}
-\right]\)</span> has a unique solution.</div></li>
-<li id="non-singular-1-2-3"><div class="para" id="p-derived-non-singular-1-2-3">Prove that the columns of <span class="process-math">\(M\)</span> form a basis for <span class="process-math">\(\mathbb{R}^n\text{.}\)</span>
-</div></li>
-<li id="non-singular-1-2-4"><div class="para" id="p-derived-non-singular-1-2-4">Prove that the rank of <span class="process-math">\(M\)</span> is <span class="process-math">\(n\text{.}\)</span>
-</div></li>
-</ul></article></section><section class="subsection" id="EV7-9"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.7.7</span><span class="space"> </span><span class="title">Sample Problem and Solution</span>
+<div class="introduction" id="EV6-4-12-1"><div class="para logical" id="EV6-4-12-1-1">
+<div class="para">Consider the following subspace <span class="process-math">\(W\)</span> of <span class="process-math">\(\mathbb R^4\text{:}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+W=\mathrm{span}\,\left\{ \left[\begin{array}{c} 1 \\ 0 \\ 0 \\ -1 \end{array}\right] , \left[\begin{array}{c} -2 \\ 0 \\ 0 \\ 2 \end{array}\right] , \left[\begin{array}{c} -3 \\ 1 \\ -5 \\ 5 \end{array}\right] , \left[\begin{array}{c} 12 \\ -3 \\ 15 \\ -18 \end{array}\right] \right\}.
+\end{equation*}
+</div>
+</div></div>
+<article class="task exercise-like" id="EV6-4-12-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="EV6-4-12-2-1-1">Explain and demonstrate how to find a basis of <span class="process-math">\(W\text{.}\)</span>
+</div></article><article class="task exercise-like" id="EV6-4-12-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="EV6-4-12-3-1-1">Explain and demonstrate how to find the dimension of <span class="process-math">\(W\text{.}\)</span>
+</div></article></article><article class="activity project-like" id="EV6-4-13"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.6.11</span><span class="period">.</span>
+</h4>
+<div class="para logical" id="EV6-4-13-1">
+<div class="para">The dimension of a subspace may be found by doing what with an appropriate RREF matrix?</div>
+<ol class="upper-alpha" id="EV6-4-13-1-1">
+<li id="EV6-4-13-1-1-1"><div class="para" id="p-derived-EV6-4-13-1-1-1">Count the rows.</div></li>
+<li id="EV6-4-13-1-1-2"><div class="para" id="p-derived-EV6-4-13-1-1-2">Count the non-pivot columns.</div></li>
+<li id="EV6-4-13-1-1-3"><div class="para" id="p-derived-EV6-4-13-1-1-3">Count the pivots.</div></li>
+<li id="EV6-4-13-1-1-4"><div class="para" id="p-derived-EV6-4-13-1-1-4">Add the number of pivot rows and pivot columns.</div></li>
+</ol>
+</div></article></section><section class="subsection" id="EV6-5"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.6.3</span><span class="space"> </span><span class="title">Individual Practice</span>
 </h3>
-<div class="para" id="EV7-9-2">Sample problem <a href="sample-exercises.html#sample-EV7" class="internal" title="Example B.1.11: EV7">Example B.1.11</a>.</div></section></section></div>
+<article class="activity project-like" id="EV6-5-2"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.6.12</span><span class="period">.</span>
+</h4>
+<div class="introduction" id="EV6-5-2-1"><div class="para logical" id="EV6-5-2-1-1">
+<div class="para">In <a href="EV6.html#observation-subspace-basis" class="internal" title="Observation 2.6.5">Observation 2.6.5</a>, we found a basis for the subspace</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/observation-subspace-basis.html">
+\begin{equation*}
+W=\vspan\setList{
+\left[\begin{array}{c}1\\2\\3\end{array}\right],
+\left[\begin{array}{c}2\\4\\6\end{array}\right],
+\left[\begin{array}{c}0\\-2\\-2\end{array}\right],
+\left[\begin{array}{c}1\\0\\1\end{array}\right]
+}.
+\end{equation*}
+</div>
+<div class="para">To do so, we use the results of the calculation:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/observation-subspace-basis.html">
+\begin{equation*}
+\RREF
+\left[\begin{array}{cccc}
+1 &amp; 2 &amp; 0 &amp; 1 \\
+2 &amp; 4 &amp; -2 &amp; 0 \\
+3 &amp; 6 &amp; -2 &amp; 1 \\
+\end{array}\right]
+=
+\left[\begin{array}{cccc}
+\markedPivot{1} &amp; 2 &amp; 0 &amp; 1 \\
+0 &amp; 0 &amp; \markedPivot{1} &amp; 1 \\
+0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right]
+\end{equation*}
+</div>
+<div class="para">to conclude that the set <span class="process-math">\(\setList{
+\left[\begin{array}{c}1\\2\\3\end{array}\right],
+\left[\begin{array}{c}0\\-2\\-2\end{array}\right]
+}\text{,}\)</span> the set of vectors <em class="emphasis">corresponding</em> to the pivot columns of the RREF, is a basis for <span class="process-math">\(W\text{.}\)</span>
+</div>
+</div></div>
+<article class="task exercise-like" id="EV6-5-2-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="EV6-5-2-2-1-1">Explain why neither of the vectors <span class="process-math">\(\left[\begin{array}{c}1\\0\\0\end{array}\right],
+\left[\begin{array}{c}0\\1\\0\end{array}\right]\)</span> are elements of <span class="process-math">\(W\text{.}\)</span>
+</div></article><article class="task exercise-like" id="EV6-5-2-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="EV6-5-2-3-1-1">Explain why this shows that, in general, when we calculate a basis for <span class="process-math">\(W=\vspan\{\vec{v}_1,\dots, \vec{v}_n\}\text{,}\)</span> the pivot columns of <span class="process-math">\(\RREF[\vec{v}_1\dots \vec{v}_n]\)</span> themselves do not form a basis for <span class="process-math">\(W\text{.}\)</span>
+</div></article></article></section><section class="subsection" id="EV6-6"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.6.4</span><span class="space"> </span><span class="title">Videos</span>
+</h3>
+<figure class="figure figure-like" id="EV6-6-2"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/iMYIbdtspyo?&amp;modestbranding=1&amp;rel=0" id="video-EV6"></iframe></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">17<span class="period">.</span></span><span class="space"> </span>Video: Finding a basis of a subspace and computing the dimension of a subspace</figcaption></figure></section><section class="exercises" id="EV6-7"><h3 class="heading hide-type">
+<span class="type">Exercises</span><span class="space"> </span><span class="codenumber">2.6.5</span><span class="space"> </span><span class="title">Exercises</span>
+</h3>
+<div class="para" id="EV6-7-1">Exercises available at <a class="external" href="https://tbil.org/preview/linear-algebra/exercises/#/bank/EV6/" target="_blank"><code class="code-inline tex2jax_ignore">https://tbil.org/preview/linear-algebra/exercises/#/bank/EV6/</code></a>.</div></section><section class="subsection" id="EV6-8"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.6.6</span><span class="space"> </span><span class="title">Mathematical Writing Explorations</span>
+</h3>
+<article class="exploration project-like" id="EV6-8-2"><h4 class="heading">
+<span class="type">Exploration</span><span class="space"> </span><span class="codenumber">2.6.13</span><span class="period">.</span>
+</h4>Prove each of the following statements is true. <ul class="disc" id="EV6-8-2-1-1">
+<li id="EV6-8-2-1-1-1"><div class="para" id="p-derived-EV6-8-2-1-1-1">If <span class="process-math">\(\{\vec{b}_1, \vec{b}_2,\ldots, \vec{b}_m\}\)</span> and <span class="process-math">\(\{\vec{c}_1,\vec{c}_2,\ldots,\vec{c}_n\}\)</span> are each a basis for a vector space <span class="process-math">\(V\text{,}\)</span> then <span class="process-math">\(m=n.\)</span>
+</div></li>
+<li id="EV6-8-2-1-1-2"><div class="para" id="p-derived-EV6-8-2-1-1-2">If <span class="process-math">\(\{\vec{v}_1,\vec{v}_2\ldots, \vec{v}_n\}\)</span> is linearly independent, then so is <span class="process-math">\(\{\vec{v}_1,\vec{v}_1 + \vec{v}_2, \ldots, \vec{v}_1 + \vec{v}_2 + \cdots + \vec{v}_n\}\text{.}\)</span>
+</div></li>
+<li id="EV6-8-2-1-1-3"><div class="para" id="p-derived-EV6-8-2-1-1-3">Let <span class="process-math">\(V\)</span> be a vector space of dimension <span class="process-math">\(n\text{,}\)</span> and <span class="process-math">\(\vec{v} \in V\text{.}\)</span> Then there exists a basis for <span class="process-math">\(V\)</span> which contains <span class="process-math">\(\vec{v}\text{.}\)</span>
+</div></li>
+</ul></article><article class="exploration project-like" id="EV6-8-3"><h4 class="heading">
+<span class="type">Exploration</span><span class="space"> </span><span class="codenumber">2.6.14</span><span class="period">.</span>
+</h4>Suppose we have the set of all function <span class="process-math">\(f:S \rightarrow \mathbb{R}\text{.}\)</span> We claim that this is a vector space under the usual operation of function addition and scalar multiplication. What is the dimension of this space for each choice of <span class="process-math">\(S\)</span> below: <ul class="disc" id="EV6-8-3-1-3">
+<li id="EV6-8-3-1-3-1"><div class="para" id="p-derived-EV6-8-3-1-3-1"><span class="process-math">\(\displaystyle S = \{1\}\)</span></div></li>
+<li id="EV6-8-3-1-3-2"><div class="para" id="p-derived-EV6-8-3-1-3-2"><span class="process-math">\(\displaystyle S = \{1,2\}\)</span></div></li>
+<li id="EV6-8-3-1-3-3"><div class="para" id="p-derived-EV6-8-3-1-3-3"><span class="process-math">\(\displaystyle S = \{1,2,\ldots ,n\}\)</span></div></li>
+<li id="EV6-8-3-1-3-4"><div class="para" id="p-derived-EV6-8-3-1-3-4"><span class="process-math">\(\displaystyle S = \mathbb{R}\)</span></div></li>
+</ul></article><article class="exploration project-like" id="EV6-8-4"><h4 class="heading">
+<span class="type">Exploration</span><span class="space"> </span><span class="codenumber">2.6.15</span><span class="period">.</span>
+</h4>Suppose you have the vector space <span class="process-math">\(V = \left\{\left(\begin{array}{c}x\\y\\z\end{array}\right)\in \mathbb{R}^3: x + y + z =  1\right\}\)</span> with the operations <span class="process-math">\(\left(\begin{array}{c}x_1\\y_1\\z_1\end{array}\right) \oplus \left(\begin{array}{c}x_2\\y_2\\z_2\end{array}\right) = \left(\begin{array}{c}x_1 + x_2 - 1\\y_1 + y_2\\z_1+z_2\end{array}\right) \mbox{ and } \alpha\odot\left(\begin{array}{c}x_1\\y_1\\z_1\end{array}\right) = \left(\begin{array}{c}\alpha x_1 - \alpha +1\\\alpha y_1\\\alpha z_1\end{array}\right).\)</span> Find a basis for <span class="process-math">\(V\)</span> and determine it’s dimension.</article></section><section class="subsection" id="EV6-9"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.6.7</span><span class="space"> </span><span class="title">Sample Problem and Solution</span>
+</h3>
+<div class="para" id="EV6-9-2">Sample problem <a href="sample-exercises.html#sample-EV6" class="internal" title="Example B.1.10: EV6">Example B.1.10</a>.</div></section></section></div>
 <div class="ptx-content-footer">
-<a class="previous-button button" href="EV6.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="AT.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="EV5.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="EV7.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">

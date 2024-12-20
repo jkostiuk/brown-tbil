@@ -8,7 +8,7 @@
 <html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>TBIL-LA Homogeneous Linear Systems (EV7)</title>
+<title>TBIL-LA Spanning Sets (EV2)</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
@@ -117,7 +117,7 @@ sagecell.makeSagecell({
 <link href="_static/pretext/css/toc_crc.css" rel="stylesheet" type="text/css">
 <link href="_static/pretext/css/knowls_default.css" rel="stylesheet" type="text/css">
 <link href="_static/pretext/css/style_default.css" rel="stylesheet" type="text/css">
-<link href="_static/pretext/css/colors_ruby_emerald.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/colors_green_blue.css" rel="stylesheet" type="text/css">
 <link href="_static/pretext/css/setcolors.css" rel="stylesheet" type="text/css">
 <style>
 #LE-2-2 { counter-set: LE-2-2 0; }
@@ -171,24 +171,24 @@ sagecell.makeSagecell({
 #LE2-4-10-1-2 { counter-set: LE2-4-10-1-2 0; }
 #LE2-4-10-1-2 > li::marker { content: ""counter(LE2-4-10-1-2,decimal)"."; }
 #LE2-4-10-1-2 > li { counter-increment: LE2-4-10-1-2; }
-#LE2-4-13-1-2 { counter-set: LE2-4-13-1-2 0; }
-#LE2-4-13-1-2 > li::marker { content: ""counter(LE2-4-13-1-2,upper-alpha)"."; }
-#LE2-4-13-1-2 > li { counter-increment: LE2-4-13-1-2; }
-#LE2-4-13-2-2 { counter-set: LE2-4-13-2-2 0; }
-#LE2-4-13-2-2 > li::marker { content: ""counter(LE2-4-13-2-2,upper-alpha)"."; }
-#LE2-4-13-2-2 > li { counter-increment: LE2-4-13-2-2; }
-#LE2-4-13-3-2 { counter-set: LE2-4-13-3-2 0; }
-#LE2-4-13-3-2 > li::marker { content: ""counter(LE2-4-13-3-2,upper-alpha)"."; }
-#LE2-4-13-3-2 > li { counter-increment: LE2-4-13-3-2; }
-#LE2-4-13-4-2 { counter-set: LE2-4-13-4-2 0; }
-#LE2-4-13-4-2 > li::marker { content: ""counter(LE2-4-13-4-2,upper-alpha)"."; }
-#LE2-4-13-4-2 > li { counter-increment: LE2-4-13-4-2; }
-#LE2-4-14-1-1 { counter-set: LE2-4-14-1-1 0; }
-#LE2-4-14-1-1 > li::marker { content: ""counter(LE2-4-14-1-1,decimal)"."; }
-#LE2-4-14-1-1 > li { counter-increment: LE2-4-14-1-1; }
-#LE2-4-17-1-2-3 { counter-set: LE2-4-17-1-2-3 0; }
-#LE2-4-17-1-2-3 > li::marker { content: ""counter(LE2-4-17-1-2-3,upper-alpha)"."; }
-#LE2-4-17-1-2-3 > li { counter-increment: LE2-4-17-1-2-3; }
+#LE2-4-12-1-2 { counter-set: LE2-4-12-1-2 0; }
+#LE2-4-12-1-2 > li::marker { content: ""counter(LE2-4-12-1-2,upper-alpha)"."; }
+#LE2-4-12-1-2 > li { counter-increment: LE2-4-12-1-2; }
+#LE2-4-12-2-2 { counter-set: LE2-4-12-2-2 0; }
+#LE2-4-12-2-2 > li::marker { content: ""counter(LE2-4-12-2-2,upper-alpha)"."; }
+#LE2-4-12-2-2 > li { counter-increment: LE2-4-12-2-2; }
+#LE2-4-12-3-2 { counter-set: LE2-4-12-3-2 0; }
+#LE2-4-12-3-2 > li::marker { content: ""counter(LE2-4-12-3-2,upper-alpha)"."; }
+#LE2-4-12-3-2 > li { counter-increment: LE2-4-12-3-2; }
+#LE2-4-12-4-2 { counter-set: LE2-4-12-4-2 0; }
+#LE2-4-12-4-2 > li::marker { content: ""counter(LE2-4-12-4-2,upper-alpha)"."; }
+#LE2-4-12-4-2 > li { counter-increment: LE2-4-12-4-2; }
+#LE2-4-13-1-1 { counter-set: LE2-4-13-1-1 0; }
+#LE2-4-13-1-1 > li::marker { content: ""counter(LE2-4-13-1-1,decimal)"."; }
+#LE2-4-13-1-1 > li { counter-increment: LE2-4-13-1-1; }
+#LE2-4-16-1-2-3 { counter-set: LE2-4-16-1-2-3 0; }
+#LE2-4-16-1-2-3 > li::marker { content: ""counter(LE2-4-16-1-2-3,upper-alpha)"."; }
+#LE2-4-16-1-2-3 > li { counter-increment: LE2-4-16-1-2-3; }
 #LE3-4-3-4-2 { counter-set: LE3-4-3-4-2 0; }
 #LE3-4-3-4-2 > li::marker { content: ""counter(LE3-4-3-4-2,upper-alpha)"."; }
 #LE3-4-3-4-2 > li { counter-increment: LE3-4-3-4-2; }
@@ -760,7 +760,7 @@ sagecell.makeSagecell({
 <ol id="searchresults" class="searchresults"></ol>
 </div>
 </div>
-<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="EV6.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="EV.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="AT.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\markedPivot}[1]{\boxed{#1}}
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="EV1.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="EV.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="EV3.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\markedPivot}[1]{\boxed{#1}}
 \newcommand{\IR}{\mathbb{R}}
 \newcommand{\IC}{\mathbb{C}}
 \renewcommand{\P}{\mathcal{P}}
@@ -907,7 +907,7 @@ sagecell.makeSagecell({
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="EV1.html#EV1-9" class="internal"><span class="codenumber">2.1.7</span> <span class="title">Sample Problem and Solution</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section">
+<li class="toc-item toc-section active">
 <div class="toc-title-box"><a href="EV2.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Spanning Sets (EV2)</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="EV2.html#EV2-3" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Warm Up</span></a></div></li>
@@ -967,7 +967,7 @@ sagecell.makeSagecell({
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="EV6.html#EV6-9" class="internal"><span class="codenumber">2.6.7</span> <span class="title">Sample Problem and Solution</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section active">
+<li class="toc-item toc-section">
 <div class="toc-title-box"><a href="EV7.html" class="internal"><span class="codenumber">2.7</span> <span class="title">Homogeneous Linear Systems (EV7)</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="EV7.html#EV7-3" class="internal"><span class="codenumber">2.7.1</span> <span class="title">Warmup</span></a></div></li>
@@ -1202,264 +1202,203 @@ sagecell.makeSagecell({
 </ul>
 </li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="EV7"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">2.7</span><span class="space"> </span><span class="title">Homogeneous Linear Systems (EV7)</span>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="EV2"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">2.2</span><span class="space"> </span><span class="title">Spanning Sets (EV2)</span>
 </h2>
-<article class="objectives goal-like" id="EV7-2"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
-<ul class="disc" id="EV7-2-1"><li id="EV7-2-1-1"><div class="para" id="EV7-2-1-1-1">Find a basis for the solution set of a homogeneous system of equations.</div></li></ul></article><section class="subsection" id="EV7-3"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.7.1</span><span class="space"> </span><span class="title">Warmup</span>
+<article class="objectives goal-like" id="EV2-2"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
+<ul class="disc" id="EV2-2-1"><li id="EV2-2-1-1"><div class="para" id="EV2-2-1-1-1">Determine if a set of Euclidean vectors spans <span class="process-math">\(\IR^n\)</span> by solving appropriate vector equations.</div></li></ul></article><section class="subsection" id="EV2-3"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.2.1</span><span class="space"> </span><span class="title">Warm Up</span>
 </h3>
-<article class="remark remark-like" id="EV7-3-2"><h4 class="heading">
-<span class="type">Remark</span><span class="space"> </span><span class="codenumber">2.7.1</span><span class="period">.</span>
+<article class="activity project-like" id="EV2-Analogy"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.2.1</span><span class="period">.</span>
 </h4>
-<div class="para logical" id="EV7-3-2-1">
-<div class="para">Recall from <a href="EV3.html" class="internal" title="Section 2.3: Subspaces (EV3)">Section 2.3</a> that a <dfn class="terminology">homogeneous</dfn> system of linear equations is one of the form:</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/EV3.html" id="EV7-3-2-1-4">
-\begin{alignat*}{5}
-a_{11}x_1 &amp;\,+\,&amp; a_{12}x_2 &amp;\,+\,&amp; \dots  &amp;\,+\,&amp; a_{1n}x_n &amp;\,=\,&amp; 0 \\
-a_{21}x_1 &amp;\,+\,&amp; a_{22}x_2 &amp;\,+\,&amp; \dots  &amp;\,+\,&amp; a_{2n}x_n &amp;\,=\,&amp; 0 \\
-\vdots&amp;  &amp;\vdots&amp;   &amp;&amp;  &amp;\vdots&amp;&amp;\vdots\\
-a_{m1}x_1 &amp;\,+\,&amp; a_{m2}x_2 &amp;\,+\,&amp; \dots  &amp;\,+\,&amp; a_{mn}x_n &amp;\,=\,&amp; 0
-\end{alignat*}
-</div>
-</div> <div class="para logical" id="EV7-3-2-2">
-<div class="para">This system is equivalent to the vector equation:</div>
+<div class="introduction" id="EV2-Analogy-1"><div class="para" id="EV2-Analogy-1-1">Given a set of ingredients and a meal, a recipe is a list of amounts of each ingredient required to prepare the given meal.</div></div>
+<article class="task exercise-like" id="EV2-Analogy-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="EV2-Analogy-2-1-1">Use the words <em class="emphasis">vector</em> and <em class="emphasis">linear combination</em> to create a new statement that is analogous to one above.</div></article><article class="task exercise-like" id="EV2-Analogy-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="EV2-Analogy-3-1-1">Building on your analogy, what role might the word <em class="emphasis">span</em> play?</div></article></article></section><section class="subsection" id="EV2-4"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.2.2</span><span class="space"> </span><span class="title">Class Activities</span>
+</h3>
+<article class="observation remark-like" id="EV2-4-2"><h4 class="heading">
+<span class="type">Observation</span><span class="space"> </span><span class="codenumber">2.2.2</span><span class="period">.</span>
+</h4>
+<div class="para" id="EV2-4-2-1-1">Any single non-zero vector/number <span class="process-math">\(x\)</span> in <span class="process-math">\(\IR^1\)</span> spans <span class="process-math">\(\IR^1\text{,}\)</span> since <span class="process-math">\(\IR^1=\setBuilder{cx}{c\in\IR}\text{.}\)</span>
+</div> <figure class="figure figure-like" id="EV2-4-2-1-2"><div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="generated/latex-image/EV2-image-scale-r1.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6<span class="period">.</span></span><span class="space"> </span>An <span class="process-math">\(\IR^1\)</span> vector</figcaption></figure></article><article class="activity project-like" id="EV2-4-3"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.2.3</span><span class="period">.</span>
+</h4>
+<div class="para" id="EV2-4-3-1-1">How many vectors are required to span <span class="process-math">\(\IR^2\text{?}\)</span> Sketch a drawing in the <span class="process-math">\(xy\)</span> plane to support your answer.</div> <figure class="figure figure-like" id="EV2-4-3-1-2"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/EV2-image-r2.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7<span class="period">.</span></span><span class="space"> </span>The <span class="process-math">\(xy\)</span> plane <span class="process-math">\(\IR^2\)</span></figcaption></figure> <ol class="upper-alpha cols2" id="EV2-4-3-1-3">
+<li id="EV2-4-3-1-3-1"><div class="para" id="EV2-4-3-1-3-1-1"><span class="process-math">\(\displaystyle 1\)</span></div></li>
+<li id="EV2-4-3-1-3-2"><div class="para" id="EV2-4-3-1-3-2-1"><span class="process-math">\(\displaystyle 2\)</span></div></li>
+<li id="EV2-4-3-1-3-3"><div class="para" id="EV2-4-3-1-3-3-1"><span class="process-math">\(\displaystyle 3\)</span></div></li>
+<li id="EV2-4-3-1-3-4"><div class="para" id="EV2-4-3-1-3-4-1"><span class="process-math">\(\displaystyle 4\)</span></div></li>
+<li id="EV2-4-3-1-3-5"><div class="para" id="EV2-4-3-1-3-5-1">Infinitely Many</div></li>
+</ol></article><article class="activity project-like" id="EV2-4-4"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.2.4</span><span class="period">.</span>
+</h4>
+<div class="para" id="EV2-4-4-1-1">How many vectors are required to span <span class="process-math">\(\IR^3\text{?}\)</span>
+</div> <figure class="figure figure-like" id="EV2-4-4-1-2"><div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="generated/latex-image/EV2-image-r3.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">8<span class="period">.</span></span><span class="space"> </span><span class="process-math">\(\IR^3\)</span> space</figcaption></figure> <ol class="upper-alpha cols2" id="EV2-4-4-1-3">
+<li id="EV2-4-4-1-3-1"><div class="para" id="EV2-4-4-1-3-1-1"><span class="process-math">\(\displaystyle 1\)</span></div></li>
+<li id="EV2-4-4-1-3-2"><div class="para" id="EV2-4-4-1-3-2-1"><span class="process-math">\(\displaystyle 2\)</span></div></li>
+<li id="EV2-4-4-1-3-3"><div class="para" id="EV2-4-4-1-3-3-1"><span class="process-math">\(\displaystyle 3\)</span></div></li>
+<li id="EV2-4-4-1-3-4"><div class="para" id="EV2-4-4-1-3-4-1"><span class="process-math">\(\displaystyle 4\)</span></div></li>
+<li id="EV2-4-4-1-3-5"><div class="para" id="EV2-4-4-1-3-5-1">Infinitely Many</div></li>
+</ol></article><article class="fact theorem-like" id="EV2-n-vectors-span"><h4 class="heading">
+<span class="type">Fact</span><span class="space"> </span><span class="codenumber">2.2.5</span><span class="period">.</span>
+</h4>
+<div class="para" id="EV2-n-vectors-span-1-1">At least <span class="process-math">\(n\)</span> vectors are required to span <span class="process-math">\(\IR^n\text{.}\)</span>
+</div> <figure class="figure figure-like" id="EV2-n-vectors-span-1-2"><div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="generated/latex-image/EV2-image-span-r3.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">9<span class="period">.</span></span><span class="space"> </span>Failed attempts to span <span class="process-math">\(\IR^n\)</span> by <span class="process-math">\(&lt;n\)</span> vectors</figcaption></figure></article><article class="activity project-like" id="EV2-activity-guess-check"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.2.6</span><span class="period">.</span>
+</h4>
+<div class="introduction" id="EV2-activity-guess-check-1"><div class="para" id="EV2-activity-guess-check-1-1">Consider the question: Does every vector in <span class="process-math">\(\IR^3\)</span> belong to <span class="process-math">\(\vspan\left\{\left[\begin{array}{c}1\\-1\\0\end{array}\right],
+\left[\begin{array}{c}-2\\0\\1\end{array}\right],\left[\begin{array}{c}-2\\-2\\2\end{array}\right]\right\}\text{?}\)</span>
+</div></div>
+<article class="task exercise-like" id="EV2-activity-guess-check-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="EV2-activity-guess-check-2-1-1">Determine if <span class="process-math">\(\left[\begin{array}{c} 7 \\ -3 \\ -2 \end{array}\right]\)</span> belongs to <span class="process-math">\(\vspan\left\{\left[\begin{array}{c}1\\-1\\0\end{array}\right],
+\left[\begin{array}{c}-2\\0\\1\end{array}\right],\left[\begin{array}{c}-2\\-2\\2\end{array}\right]\right\}\text{.}\)</span>
+</div></article><article class="task exercise-like" id="EV2-activity-guess-check-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="EV2-activity-guess-check-3-1-1">Determine if <span class="process-math">\(\left[\begin{array}{c} 0 \\ -4 \\ 3 \end{array}\right]\)</span> belongs to <span class="process-math">\(\vspan\left\{\left[\begin{array}{c}1\\-1\\0\end{array}\right],
+\left[\begin{array}{c}-2\\0\\1\end{array}\right],\left[\begin{array}{c}-2\\-2\\2\end{array}\right]\right\}\text{.}\)</span>
+</div></article><article class="task exercise-like" id="EV2-activity-guess-check-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="EV2-activity-guess-check-4-1-1">Determine if <span class="process-math">\(\left[\begin{array}{c} 2 \\ 5 \\ 7 \end{array}\right]\)</span> belongs to <span class="process-math">\(\vspan\left\{\left[\begin{array}{c}1\\-1\\0\end{array}\right],
+\left[\begin{array}{c}-2\\0\\1\end{array}\right],\left[\begin{array}{c}-2\\-2\\2\end{array}\right]\right\}\text{.}\)</span>
+</div></article></article><article class="activity project-like" id="EV2-4-7"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.2.7</span><span class="period">.</span>
+</h4>
+<div class="introduction" id="EV2-4-7-1"><div class="para" id="EV2-4-7-1-1">We’d prefer a more methodical method to decide if every vector in <span class="process-math">\(\IR^n\)</span> belongs to some spanning set, compared to the guess-and-check method we used in <a href="EV2.html#EV2-activity-guess-check" class="xref" data-knowl="./knowl/xref/EV2-activity-guess-check.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 2.2.6">Activity 2.2.6</a>.</div></div>
+<article class="task exercise-like" id="EV2-4-7-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para logical" id="EV2-4-7-2-1-1">
+<div class="para">An arbitrary vector <span class="process-math">\(\left[\begin{array}{c}\unknown\\\unknown\\\unknown\end{array}\right]\)</span> belongs to <span class="process-math">\(\vspan\left\{\left[\begin{array}{c}1\\-1\\0\end{array}\right],
+\left[\begin{array}{c}-2\\0\\1\end{array}\right],\left[\begin{array}{c}-2\\-2\\2\end{array}\right]\right\}\)</span> provided the equation</div>
 <div class="displaymath process-math">
 \begin{equation*}
-x_1 \vec{v}_1 + \cdots+x_n \vec{v}_n = \vec{0}
+x_1\left[\begin{array}{c}1\\-1\\0\end{array}\right]+
+x_2\left[\begin{array}{c}-2\\0\\1\end{array}\right]+
+x_3\left[\begin{array}{c}-2\\-2\\2\end{array}\right]=\left[\begin{array}{c}\unknown\\\unknown\\\unknown\end{array}\right]
 \end{equation*}
 </div>
-<div class="para">and the augmented matrix:</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\left[\begin{array}{cccc|c}
-a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n} &amp; 0\\
-a_{21} &amp; a_{22} &amp; \cdots &amp; a_{2n} &amp; 0\\
-\vdots &amp; \vdots &amp; \ddots &amp; \vdots &amp; \vdots\\
-a_{m1} &amp; a_{m2} &amp; \cdots &amp; a_{mn} &amp; 0
-\end{array}\right].
-\end{equation*}
-</div>
-</div></article><article class="activity project-like" id="EV7-3-3"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.7.2</span><span class="period">.</span>
-</h4>
-<div class="introduction" id="EV7-3-3-1"><div class="para logical" id="EV7-3-3-1-1">
-<div class="para">In <a href="EV3.html" class="internal" title="Section 2.3: Subspaces (EV3)">Section 2.3</a>, we observed that if</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/EV3.html">
-\begin{equation*}
-x_1 \vec{v}_1 + \cdots+x_n \vec{v}_n = \vec{0}
-\end{equation*}
-</div>
-<div class="para">is a homogeneous vector equation, then:</div>
-<ul class="disc" id="EV7-3-3-1-1-3">
-<li id="EV7-3-3-1-1-3-1"><div class="para" id="EV7-3-3-1-1-3-1-1">The zero vector <span class="process-math">\(\vec{0}\)</span> is a solution;</div></li>
-<li id="EV7-3-3-1-1-3-2"><div class="para" id="EV7-3-3-1-1-3-2-1">The sum of any two solutions is again a solution;</div></li>
-<li id="EV7-3-3-1-1-3-3"><div class="para" id="EV7-3-3-1-1-3-3-1">Multiplying a solution by a scalar produces another solution.</div></li>
-</ul>
-</div></div> <div class="para logical" id="EV7-3-3-2">
-<div class="para">Based on this recollection, which of the following best describes the solution set to the homogeneous equation?</div>
-<ol class="upper-alpha" id="EV7-3-3-2-1">
-<li id="EV7-3-3-2-1-1"><div class="para" id="EV7-3-3-2-1-1-1">A basis for <span class="process-math">\(\IR^n\text{.}\)</span>
-</div></li>
-<li id="EV7-3-3-2-1-2"><div class="para" id="EV7-3-3-2-1-2-1">A subspace of <span class="process-math">\(\IR^n\text{.}\)</span>
-</div></li>
-<li id="EV7-3-3-2-1-3"><div class="para" id="EV7-3-3-2-1-3-1">All of <span class="process-math">\(\IR^n\text{.}\)</span>
-</div></li>
-<li id="EV7-3-3-2-1-4"><div class="para" id="EV7-3-3-2-1-4-1">The empty set.</div></li>
+<div class="para">has...</div>
+<ol class="upper-alpha" id="EV2-4-7-2-1-1-4">
+<li id="EV2-4-7-2-1-1-4-1"><div class="para" id="p-derived-EV2-4-7-2-1-1-4-1">no solutions.</div></li>
+<li id="EV2-4-7-2-1-1-4-2"><div class="para" id="p-derived-EV2-4-7-2-1-1-4-2">exactly one solution.</div></li>
+<li id="EV2-4-7-2-1-1-4-3"><div class="para" id="p-derived-EV2-4-7-2-1-1-4-3">at least one solution.</div></li>
+<li id="EV2-4-7-2-1-1-4-4"><div class="para" id="p-derived-EV2-4-7-2-1-1-4-4">infinitely-many solutions.</div></li>
 </ol>
-</div></article></section><section class="subsection" id="EV7-4"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.7.2</span><span class="space"> </span><span class="title">Class Activities</span>
-</h3>
-<article class="activity project-like" id="EV7-4-2"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.7.3</span><span class="period">.</span>
-</h4>
-<div class="introduction" id="EV7-4-2-1"><div class="para logical" id="EV7-4-2-1-1">
-<div class="para">Consider the homogeneous system of equations</div>
-<div class="displaymath process-math" id="EV7-4-2-1-1-1">
-\begin{alignat*}{5}
-x_1&amp;\,+\,&amp;2x_2&amp;\,\,&amp; &amp;\,+\,&amp; x_4 &amp;=&amp; 0\\
-2x_1&amp;\,+\,&amp;4x_2&amp;\,-\,&amp;x_3 &amp;\,-\,&amp;2 x_4 &amp;=&amp; 0\\
-3x_1&amp;\,+\,&amp;6x_2&amp;\,-\,&amp;x_3 &amp;\,-\,&amp; x_4 &amp;=&amp; 0
-\end{alignat*}
-</div>
-</div></div>
-<article class="task exercise-like" id="EV7-4-2-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="EV7-4-2-2-1">Find its solution set (a subspace of <span class="process-math">\(\IR^4\)</span>).</div></article><article class="task exercise-like" id="EV7-4-2-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para logical" id="EV7-4-2-3-1">
-<div class="para">Rewrite this solution space in the form</div>
+</div></article><article class="task exercise-like" id="EV2-4-7-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para logical" id="EV2-4-7-3-1-1">
+<div class="para">We’re guaranteed at least one solution if the RREF of the corresponding augmented matrix has no contradictions; likewise, we have no solutions if the RREF corresponds to the contradiction <span class="process-math">\(0=1\text{.}\)</span> Given</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\setBuilder{ a \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\end{array}\right] + b \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown \end{array}\right] }{a,b \in \IR}.
+\left[\begin{array}{ccc|c}1&amp;-2&amp;-2&amp;\unknown\\-1&amp;0&amp;-2&amp;\unknown\\0&amp;1&amp;2&amp;\unknown\end{array}\right]\sim
+\left[\begin{array}{ccc|c}1&amp;0&amp;2&amp;\unknown\\0&amp;1&amp;2&amp;\unknown\\0&amp;0&amp;0&amp;\unknown\end{array}\right]
 \end{equation*}
 </div>
-</div></article><article class="task exercise-like" id="EV7-4-2-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para logical" id="EV7-4-2-4-1-1">
-<div class="para">Which of these choices best describes the set of two vectors <span class="process-math">\(\left\{\left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\end{array}\right], \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown \end{array}\right]\right\}\)</span> used in this solution space?</div>
-<ol class="upper-alpha" id="EV7-4-2-4-1-1-2">
-<li id="EV7-4-2-4-1-1-2-1"><div class="para" id="EV7-4-2-4-1-1-2-1-1">The set is linearly dependent.</div></li>
-<li id="EV7-4-2-4-1-1-2-2"><div class="para" id="EV7-4-2-4-1-1-2-2-1">The set is linearly independent.</div></li>
-<li id="EV7-4-2-4-1-1-2-3"><div class="para" id="EV7-4-2-4-1-1-2-3-1">The set spans the solution space.</div></li>
-<li id="EV7-4-2-4-1-1-2-4"><div class="para" id="EV7-4-2-4-1-1-2-4-1">The set is a basis of the solution space.</div></li>
+<div class="para">we may conclude that the set does not span all of <span class="process-math">\(\IR^3\)</span> because...</div>
+<ol class="upper-alpha" id="EV2-4-7-3-1-1-4">
+<li id="EV2-4-7-3-1-1-4-1"><div class="para" id="p-derived-EV2-4-7-3-1-1-4-1">the row <span class="process-math">\([0\,1\,2\,|\,\unknown]\)</span> prevents a contradiction.</div></li>
+<li id="EV2-4-7-3-1-1-4-2"><div class="para" id="p-derived-EV2-4-7-3-1-1-4-2">the row <span class="process-math">\([0\,1\,2\,|\,\unknown]\)</span> allows a contradiction.</div></li>
+<li id="EV2-4-7-3-1-1-4-3"><div class="para" id="p-derived-EV2-4-7-3-1-1-4-3">the row <span class="process-math">\([0\,0\,0\,|\,\unknown]\)</span> prevents a contradiction.</div></li>
+<li id="EV2-4-7-3-1-1-4-4"><div class="para" id="p-derived-EV2-4-7-3-1-1-4-4">the row <span class="process-math">\([0\,0\,0\,|\,\unknown]\)</span> allows a contradiction.</div></li>
 </ol>
-</div>
-<div class="solutions"><details id="EV7-4-2-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="EV7-4-2-4-2-1">D.</div></div></details></div></article></article><div id="EV7-4-3" class="ptx-sagecell sagecell-octave"><script type="text/x-sage"></script></div>
-<article class="activity project-like" id="EV7-4-4"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.7.4</span><span class="period">.</span>
+</div></article></article><article class="fact theorem-like" id="EV2-4-8"><h4 class="heading">
+<span class="type">Fact</span><span class="space"> </span><span class="codenumber">2.2.8</span><span class="period">.</span>
 </h4>
-<div class="introduction" id="EV7-4-4-1"><div class="para logical" id="EV7-4-4-1-1">
-<div class="para">Consider the homogeneous system of equations</div>
-<div class="displaymath process-math" id="EV7-4-4-1-1-1">
-\begin{alignat*}{8}
-2x_1&amp;\,+\,&amp;4x_2&amp;\,+\,&amp;2x_3 &amp;\,-\,&amp;3 x_4 &amp;\,+\,&amp;31x_5&amp;\,+\,&amp;2x_6&amp;\,-\,&amp;16x_7&amp;=&amp; 0\\
--1x_1&amp;\,-\,&amp;2x_2&amp;\,+\,&amp;4x_3 &amp;\,-\,&amp;x_4 &amp;\,+\,&amp;2x_5&amp;\,+\,&amp;9x_6&amp;\,+\,&amp;3x_7&amp;=&amp; 0\\
-x_1&amp;\,+\,&amp;2x_2&amp;\,+\,&amp;x_3 &amp;\,+\,&amp; x_4 &amp;\,+\,&amp;3x_5&amp;\,+\,&amp;6x_7&amp;\,+\,&amp;7x_7&amp;=&amp; 0
-\end{alignat*}
-</div>
-</div></div>
-<article class="task exercise-like" id="EV7-4-4-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="EV7-4-4-2-1">Find its solution set (a subspace of <span class="process-math">\(\IR^7\)</span>).</div></article><article class="task exercise-like" id="EV7-4-4-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para logical" id="EV7-4-4-3-1">
-<div class="para">Rewrite this solution space in the form</div>
+<div class="para logical" id="EV2-4-8-1-1">
+<div class="para">The set <span class="process-math">\(\{\vec v_1,\dots,\vec v_n\}\)</span> spans all of <span class="process-math">\(\IR^n\)</span> exactly when the vector equation</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\setBuilder{ a \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right] + b \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right]+c \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right]+d \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right] }{a,b,c,d \in \IR}.
+x_1 \vec{v}_1 + \cdots + x_n\vec{v}_n = \vec{w} 
 \end{equation*}
 </div>
-</div></article><article class="task exercise-like" id="EV7-4-4-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para logical" id="EV7-4-4-4-1-1">
-<div class="para">Which of these choices best describes the set of two vectors <span class="process-math">\(\left\{\left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right], \left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right],\left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right],\left[\begin{array}{c} \unknown \\ \unknown \\ \unknown \\ \unknown\\ \unknown\\ \unknown \\ \unknown\end{array}\right]\right\}\)</span> used in this solution space?</div>
-<ol class="upper-alpha" id="EV7-4-4-4-1-1-2">
-<li id="EV7-4-4-4-1-1-2-1"><div class="para" id="EV7-4-4-4-1-1-2-1-1">The set is linearly dependent.</div></li>
-<li id="EV7-4-4-4-1-1-2-2"><div class="para" id="EV7-4-4-4-1-1-2-2-1">The set is linearly independent.</div></li>
-<li id="EV7-4-4-4-1-1-2-3"><div class="para" id="EV7-4-4-4-1-1-2-3-1">The set spans the solution space.</div></li>
-<li id="EV7-4-4-4-1-1-2-4"><div class="para" id="EV7-4-4-4-1-1-2-4-1">The set is a basis for the solution space.</div></li>
-</ol>
+<div class="para">is consistent for <em class="emphasis">every</em> vector <span class="process-math">\(\vec{w}\text{.}\)</span>
 </div>
-<div class="solutions"><details id="EV7-4-4-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="EV7-4-4-4-2-1">D.</div></div></details></div></article></article><div id="EV7-4-5" class="ptx-sagecell sagecell-octave"><script type="text/x-sage">
-</script></div>
-<article class="fact theorem-like" id="fact-solution-space-basis"><h4 class="heading">
-<span class="type">Fact</span><span class="space"> </span><span class="codenumber">2.7.5</span><span class="period">.</span>
-</h4>
-<div class="para" id="fact-solution-space-basis-1-1">The coefficients of the free variables in the solution space of a linear system always yield linearly independent vectors that span the solution space.</div> <div class="para logical" id="fact-solution-space-basis-1-2">
-<div class="para">Thus if</div>
+</div> <div class="para logical" id="EV2-4-8-1-2">
+<div class="para">Likewise, the set <span class="process-math">\(\{\vec v_1,\dots,\vec v_n\}\)</span> fails to span all of <span class="process-math">\(\IR^n\)</span> exactly when the vector equation</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\setBuilder{
-a \left[\begin{array}{c} -2 \\ 1 \\ 0 \\ 0\\0\\0\\0\end{array}\right] +
-b \left[\begin{array}{c} -7 \\ 0 \\ -1 \\ 5\\1\\0\\0 \end{array}\right]+
-c \left[\begin{array}{c} -1 \\ 0 \\ -3 \\ -2\\0\\1\\0 \end{array}\right]+
-d \left[\begin{array}{c} 1 \\ 0 \\ -2 \\ -6\\0\\0\\1 \end{array}\right]
-}{
-a,b,c,d \in \IR
-} = \vspan\left\{ \left[\begin{array}{c} -2 \\ 1 \\ 0 \\ 0\\0\\0\\0\end{array}\right], 
-\left[\begin{array}{c} -7 \\ 0 \\ -1 \\ 5\\1\\0\\0 \end{array}\right],
-\left[\begin{array}{c} -1 \\ 0 \\ -3 \\ -2\\0\\1\\0 \end{array}\right],
-\left[\begin{array}{c} 1 \\ 0 \\ -2 \\ -6\\0\\0\\1 \end{array}\right] \right\}
+x_1 \vec{v}_1 + \cdots + x_n\vec{v}_n = \vec{w} 
 \end{equation*}
 </div>
-<div class="para">is the solution space for a homogeneous system, then</div>
+<div class="para">is inconsistent for <em class="emphasis">some</em> vector <span class="process-math">\(\vec{w}\text{.}\)</span>
+</div>
+</div> <div class="para logical" id="EV2-4-8-1-3">
+<div class="para">Note these two possibilities are decided based on whether or not the RREF of the vector equation’s coefficient matrix (that is, <span class="process-math">\(\RREF[\vec v_1\,\dots\,\vec v_n]\)</span>) has either all pivot rows, or at least one non-pivot row (a row of zeroes):</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\setList{
-\left[\begin{array}{c} -2 \\ \textcolor{blue}{1} \\ 0 \\ 0\\\textcolor{blue}{0}\\\textcolor{blue}{0}\\\textcolor{blue}{0}\end{array}\right], 
-\left[\begin{array}{c} -7 \\ \textcolor{blue}{0} \\ -1 \\ 5\\\textcolor{blue}{1}\\\textcolor{blue}{0}\\\textcolor{blue}{0} \end{array}\right],
-\left[\begin{array}{c} -1 \\ \textcolor{blue}{0} \\ -3 \\ -2\\\textcolor{blue}{0}\\\textcolor{blue}{1}\\\textcolor{blue}{0} \end{array}\right],
-\left[\begin{array}{c} 1 \\ \textcolor{blue}{0} \\ -2 \\ -6\\\textcolor{blue}{0}\\\textcolor{blue}{0}\\\textcolor{blue}{1} \end{array}\right]
-}
+\left[\begin{array}{ccc|c}1&amp;-2&amp;-2\\-1&amp;0&amp;-2\\0&amp;1&amp;2\end{array}\right]\sim
+\left[\begin{array}{ccc|c}1&amp;0&amp;2\\0&amp;1&amp;2\\0&amp;0&amp;0\end{array}\right]\text{.}
 \end{equation*}
 </div>
-<div class="para">is a basis for the solution space.</div>
-</div></article><article class="activity project-like" id="EV7-4-7"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.7.6</span><span class="period">.</span>
+</div></article><article class="activity project-like" id="EV2-4-9"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.2.9</span><span class="period">.</span>
 </h4>
-<div class="introduction" id="EV7-4-7-1"><div class="para logical" id="EV7-4-7-1-1">
-<div class="para">Consider the homogeneous system of equations</div>
-<div class="displaymath process-math" id="EV7-4-7-1-1-1">
-\begin{alignat*}{5}
-x_1&amp;\,-\,&amp;3x_2&amp;\,+\,&amp; 2x_3  &amp;=&amp; 0\\
-2x_1&amp;\,+\,&amp;6x_2&amp;\,+\,&amp;4x_3  &amp;=&amp; 0\\
-x_1&amp;\,+\,&amp;6x_2&amp;\,-\,&amp;4x_3 &amp;=&amp; 0
-\end{alignat*}
-</div>
-</div></div>
-<article class="task exercise-like" id="EV7-4-7-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="EV7-4-7-2-1-1">Find its solution space.</div></article><article class="task exercise-like" id="EV7-4-7-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para logical" id="EV7-4-7-3-1-1">
-<div class="para">Which of these is the best choice of basis for this solution space?</div>
-<ol class="upper-alpha cols3" id="EV7-4-7-3-1-1-1">
-<li id="EV7-4-7-3-1-1-1-1"><div class="para" id="p-derived-EV7-4-7-3-1-1-1-1"><span class="process-math">\(\displaystyle \{\}\)</span></div></li>
-<li id="EV7-4-7-3-1-1-1-2"><div class="para" id="p-derived-EV7-4-7-3-1-1-1-2"><span class="process-math">\(\displaystyle \{\vec 0\}\)</span></div></li>
-<li id="EV7-4-7-3-1-1-1-3"><div class="para" id="p-derived-EV7-4-7-3-1-1-1-3">The basis does not exist</div></li>
-</ol>
-</div>
-<div class="solutions"><details id="EV7-4-7-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="EV7-4-7-3-2-1">A.</div></div></details></div></article></article><div id="EV7-4-8" class="ptx-sagecell sagecell-octave"><script type="text/x-sage"></script></div>
-<article class="activity project-like" id="EV7-4-9"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.7.7</span><span class="period">.</span>
+<div class="introduction" id="EV2-4-9-1"><div class="para" id="EV2-4-9-1-1">Consider the set of vectors <span class="process-math">\(S=\left\{
+\left[\begin{array}{c}2\\3\\0\\-1\end{array}\right],
+\left[\begin{array}{c}1\\-4\\3\\0\end{array}\right],
+\left[\begin{array}{c}1\\7\\-3\\-1\end{array}\right],
+\left[\begin{array}{c}0\\3\\5\\7\end{array}\right],
+\left[\begin{array}{c}3\\13\\7\\16\end{array}\right]
+\right\}\)</span> and the question “Does <span class="process-math">\(\IR^4=\vspan S\text{?}\)</span>”</div></div>
+<article class="task exercise-like" id="EV2-4-9-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="EV2-4-9-2-1">Rewrite this question in terms of the solutions to a vector equation.</div></article><article class="task exercise-like" id="EV2-4-9-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="EV2-4-9-3-1">Answer your new question, and use this to answer the original question.</div></article></article><div id="EV2-4-10" class="ptx-sagecell sagecell-octave"><script type="text/x-sage"></script></div>
+<article class="activity project-like" id="EV2-4-11"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.2.10</span><span class="period">.</span>
 </h4>
-<div class="introduction" id="EV7-4-9-1"><div class="para" id="EV7-4-9-1-1">To create a computer-animated film, an animator first models a scene as a subset of <span class="process-math">\(\mathbb R^3\text{.}\)</span> Then to transform this three-dimensional visual data for display on a two-dimensional movie screen or television set, the computer could apply a linear transformation that maps visual information at the point <span class="process-math">\((x,y,z)\in\mathbb R^3\)</span> onto the pixel located at <span class="process-math">\((x+y,y-z)\in\mathbb R^2\text{.}\)</span>
-</div></div>
-<article class="task exercise-like" id="EV7-4-9-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="EV7-4-9-2-1-1">What homogeneous linear system describes the positions <span class="process-math">\((x,y,z)\)</span> within the original scene that would be aligned with the pixel <span class="process-math">\((0,0)\)</span> on the screen?</div></article><article class="task exercise-like" id="EV7-4-9-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="EV7-4-9-3-1-1">Solve this system to describe these locations.</div></article></article><div id="EV7-4-10" class="ptx-sagecell sagecell-octave"><script type="text/x-sage"></script></div></section><section class="subsection" id="EV7-5"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.7.3</span><span class="space"> </span><span class="title">Individual Practice</span>
-</h3>
-<article class="activity project-like" id="EV7-5-2"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.7.8</span><span class="period">.</span>
-</h4>
-<div class="introduction" id="EV7-5-2-1"><div class="para logical" id="EV7-5-2-1-1">
-<div class="para">Let <span class="process-math">\(S=\setList{
-\left[\begin{array}{c} -2 \\ 1 \\ 0 \\ 0\end{array}\right],
-\left[\begin{array}{c} -1 \\ 0 \\ -4 \\ 1 \end{array}\right],
-\left[\begin{array}{c} 1 \\ 0 \\ -2 \\ 3 \end{array}\right]
-}\)</span> and <span class="process-math">\(A=\left[\begin{array}{ccc}
--2 &amp; -1 &amp;1\\
-1 &amp; 0 &amp;0\\
-0 &amp; -4 &amp;-2\\
-0 &amp; 1 &amp;3
-\end{array}\right];\)</span> note that</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\RREF(A)=\left[\begin{array}{ccc}
-1 &amp; 0 &amp;0\\
-0 &amp; 1 &amp;0\\
-0 &amp; 0 &amp;1\\
-0 &amp; 0 &amp;0
-\end{array}\right].
-\end{equation*}
-</div>
-<div class="para">The following statements are all <em class="emphasis">invalid</em> for at least one reason. Determine what makes them invalid and, suggest alternative <em class="emphasis">valid</em> statements that the author may have meant instead.</div>
-</div></div>
-<article class="task exercise-like" id="EV7-5-2-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="EV7-5-2-2-1-1">The matrix <span class="process-math">\(A\)</span> is linearly independent because <span class="process-math">\(\RREF(A)\)</span> has a pivot in each column.</div></article><article class="task exercise-like" id="EV7-5-2-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="EV7-5-2-3-1-1">The matrix <span class="process-math">\(A\)</span> does not span <span class="process-math">\(\IR^4\)</span> because <span class="process-math">\(\RREF(A)\)</span> has a row of zeroes.</div></article><article class="task exercise-like" id="EV7-5-2-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para" id="EV7-5-2-4-1-1">The set of vectors <span class="process-math">\(S\)</span> spans.</div></article><article class="task exercise-like" id="EV7-5-2-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
-<div class="para" id="EV7-5-2-5-1-1">The set of vectors <span class="process-math">\(S\)</span> is a basis.</div></article></article></section><section class="subsection" id="EV7-6"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.7.4</span><span class="space"> </span><span class="title">Videos</span>
-</h3>
-<figure class="figure figure-like" id="EV7-6-2"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/TbN3lvLaNOw?&amp;modestbranding=1&amp;rel=0" id="video-EV7"></iframe></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">18<span class="period">.</span></span><span class="space"> </span>Video: Polynomial and matrix calculations</figcaption></figure></section><section class="exercises" id="EV7-7"><h3 class="heading hide-type">
-<span class="type">Exercises</span><span class="space"> </span><span class="codenumber">2.7.5</span><span class="space"> </span><span class="title">Exercises</span>
-</h3>
-<div class="para" id="EV7-7-1">Exercises available at <a class="external" href="https://tbil.org/preview/linear-algebra/exercises/#/bank/EV7/" target="_blank"><code class="code-inline tex2jax_ignore">https://tbil.org/preview/linear-algebra/exercises/#/bank/EV7/</code></a>.</div></section><section class="subsection" id="EV7-8"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.7.6</span><span class="space"> </span><span class="title">Mathematical Writing Explorations</span>
-</h3>
-<article class="exploration project-like" id="non-singular"><h4 class="heading">
-<span class="type">Exploration</span><span class="space"> </span><span class="codenumber">2.7.9</span><span class="period">.</span>
-</h4>
-<div class="para" id="non-singular-1-1">An <span class="process-math">\(n \times n\)</span> matrix <span class="process-math">\(M\)</span> is <dfn class="terminology">non-singular</dfn> if the associated homogeneous system with coefficient matrix <span class="process-math">\(M\)</span> is consistent with one solution. Assume the matrices in the writing explorations in this section are all non-singular.</div> <ul class="disc" id="non-singular-1-2">
-<li id="non-singular-1-2-1"><div class="para" id="p-derived-non-singular-1-2-1">Prove that the reduced row echelon form of <span class="process-math">\(M\)</span> is the identity matrix.</div></li>
-<li id="non-singular-1-2-2"><div class="para" id="p-derived-non-singular-1-2-2">Prove that, for any column vector <span class="process-math">\(\vec{b} = \left[\begin{array}{c}b_1\\b_2\\ \vdots \\b_n \end{array}\right]\text{,}\)</span> the system of equations given by <span class="process-math">\(\left[\begin{array}{c|c}M &amp; \vec{b}\end{array}
-\right]\)</span> has a unique solution.</div></li>
-<li id="non-singular-1-2-3"><div class="para" id="p-derived-non-singular-1-2-3">Prove that the columns of <span class="process-math">\(M\)</span> form a basis for <span class="process-math">\(\mathbb{R}^n\text{.}\)</span>
+<div class="para" id="EV2-4-11-1-1">Let <span class="process-math">\(\vec{v}_1, \vec{v}_2, \vec{v}_3 \in \IR^7\)</span> be three Euclidean vectors, and suppose <span class="process-math">\(\vec{w}\)</span> is another vector with <span class="process-math">\(\vec{w} \in \vspan \left\{ \vec{v}_1, \vec{v}_2, \vec{v}_3 \right\}\text{.}\)</span> What can you conclude about <span class="process-math">\(\vspan \left\{ \vec{w}, \vec{v}_1, \vec{v}_2, \vec{v}_3 \right\} \text{?}\)</span>
+</div> <ol class="upper-alpha" id="EV2-4-11-1-2">
+<li id="EV2-4-11-1-2-1"><div class="para" id="p-derived-EV2-4-11-1-2-1">
+<span class="process-math">\(\vspan \left\{ \vec{w}, \vec{v}_1, \vec{v}_2, \vec{v}_3 \right\} \)</span> is larger than <span class="process-math">\(\vspan \left\{ \vec{v}_1, \vec{v}_2, \vec{v}_3 \right\} \text{.}\)</span>
 </div></li>
-<li id="non-singular-1-2-4"><div class="para" id="p-derived-non-singular-1-2-4">Prove that the rank of <span class="process-math">\(M\)</span> is <span class="process-math">\(n\text{.}\)</span>
+<li id="EV2-4-11-1-2-2"><div class="para" id="p-derived-EV2-4-11-1-2-2">
+<span class="process-math">\(\vspan \left\{ \vec{w}, \vec{v}_1, \vec{v}_2, \vec{v}_3 \right\} \)</span> is the same as <span class="process-math">\(\vspan \left\{ \vec{v}_1, \vec{v}_2, \vec{v}_3 \right\} \text{.}\)</span>
 </div></li>
-</ul></article></section><section class="subsection" id="EV7-9"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.7.7</span><span class="space"> </span><span class="title">Sample Problem and Solution</span>
+<li id="EV2-4-11-1-2-3"><div class="para" id="p-derived-EV2-4-11-1-2-3">
+<span class="process-math">\(\vspan \left\{ \vec{w}, \vec{v}_1, \vec{v}_2, \vec{v}_3 \right\} \)</span> is smaller than <span class="process-math">\(\vspan \left\{ \vec{v}_1, \vec{v}_2, \vec{v}_3 \right\} \text{.}\)</span>
+</div></li>
+</ol></article></section><section class="subsection" id="EV2-5"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.2.3</span><span class="space"> </span><span class="title">Individual Practice</span>
 </h3>
-<div class="para" id="EV7-9-2">Sample problem <a href="sample-exercises.html#sample-EV7" class="internal" title="Example B.1.11: EV7">Example B.1.11</a>.</div></section></section></div>
+<article class="activity project-like" id="EV2-5-2"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.2.11</span><span class="period">.</span>
+</h4>
+<div class="introduction" id="EV2-5-2-1"><div class="para" id="EV2-5-2-1-1">One of our important results in this lesson is <a href="EV2.html#EV2-n-vectors-span" class="xref" data-knowl="./knowl/xref/EV2-n-vectors-span.html" data-reveal-label="Reveal" data-close-label="Close" title="Fact 2.2.5">Fact 2.2.5</a>, which states that a set of <span class="process-math">\(n\)</span> vectors is required to span <span class="process-math">\(\IR^n\text{.}\)</span> While we developed some geometric intuition for why this true, we did not prove it in class. Before coming to class next time, follow the steps outlined below to convince yourself of this fact using the concepts we learned in this lesson.</div></div>
+<article class="task exercise-like" id="EV2-5-2-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="EV2-5-2-2-1-1">Let <span class="process-math">\(\{\vec{v}_1,\dots, \vec{v}_m\}\)</span> be a set of vectors living in <span class="process-math">\(\IR^n\)</span> and assume that <span class="process-math">\(m &lt;n\text{.}\)</span> How many rows and how many columns will the matrix <span class="process-math">\([\vec{v}_1\cdots \vec{v}_m]\)</span> have?</div></article><article class="task exercise-like" id="EV2-5-2-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="EV2-5-2-3-1-1">Given no additional information about the vectors <span class="process-math">\(\vec{v}_1,\dots, \vec{v}_m\text{,}\)</span> what is the maximum possible number of pivots in <span class="process-math">\(\RREF[\vec v_1\,\dots\,\vec v_m]\text{?}\)</span>
+</div></article><article class="task exercise-like" id="EV2-5-2-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="EV2-5-2-4-1-1">Conclude that our given set of vector cannot span all of <span class="process-math">\(\IR^n\text{.}\)</span>
+</div></article></article></section><section class="subsection" id="EV2-6"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.2.4</span><span class="space"> </span><span class="title">Videos</span>
+</h3>
+<figure class="figure figure-like" id="EV2-6-2"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/Mr8LJAPwp1E?&amp;modestbranding=1&amp;rel=0" id="video-EV2"></iframe></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">10<span class="period">.</span></span><span class="space"> </span>Video: Determining if a set spans a Euclidean space</figcaption></figure></section><section class="exercises" id="EV2-7"><h3 class="heading hide-type">
+<span class="type">Exercises</span><span class="space"> </span><span class="codenumber">2.2.5</span><span class="space"> </span><span class="title">Exercises</span>
+</h3>
+<div class="para" id="EV2-7-1">Exercises available at <a class="external" href="https://tbil.org/preview/linear-algebra/exercises/#/bank/EV2/" target="_blank"><code class="code-inline tex2jax_ignore">https://tbil.org/preview/linear-algebra/exercises/#/bank/EV2/</code></a>.</div></section><section class="subsection" id="EV2-8"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.2.6</span><span class="space"> </span><span class="title">Mathematical Writing Explorations</span>
+</h3>
+<article class="exploration project-like" id="EV2-8-2"><h4 class="heading">
+<span class="type">Exploration</span><span class="space"> </span><span class="codenumber">2.2.12</span><span class="period">.</span>
+</h4>Construct each of the following, or show that it is impossible: <ul class="disc" id="EV2-8-2-1-1">
+<li id="EV2-8-2-1-1-1"><div class="para" id="p-derived-EV2-8-2-1-1-1">A set of 2 vectors that spans <span class="process-math">\(\mathbb{R}^3\)</span>
+</div></li>
+<li id="EV2-8-2-1-1-2"><div class="para" id="p-derived-EV2-8-2-1-1-2">A set of 3 vectors that spans <span class="process-math">\(\mathbb{R}^3\)</span>
+</div></li>
+<li id="EV2-8-2-1-1-3"><div class="para" id="p-derived-EV2-8-2-1-1-3">A set of 3 vectors that does not span <span class="process-math">\(\mathbb{R}^3\)</span>
+</div></li>
+<li id="EV2-8-2-1-1-4"><div class="para" id="p-derived-EV2-8-2-1-1-4">A set of 4 vectors that spans <span class="process-math">\(\mathbb{R}^3\)</span>
+</div></li>
+</ul> For any of the sets you constructed that did span the required vector space, are any of the vectors a linear combination of the others in your set?</article><article class="exploration project-like" id="EV2-8-3"><h4 class="heading">
+<span class="type">Exploration</span><span class="space"> </span><span class="codenumber">2.2.13</span><span class="period">.</span>
+</h4>Based on these results, generalize this a conjecture about how a set of <span class="process-math">\(n-1, n\)</span> and <span class="process-math">\(n+1\)</span> vectors would or would not span <span class="process-math">\(\mathbb{R}^n\text{.}\)</span></article></section><section class="subsection" id="EV2-9"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.2.7</span><span class="space"> </span><span class="title">Sample Problem and Solution</span>
+</h3>
+<div class="para" id="EV2-9-2">Sample problem <a href="sample-exercises.html#sample-EV2" class="xref" data-knowl="./knowl/xref/sample-EV2.html" data-reveal-label="Reveal" data-close-label="Close" title="Example B.1.6: EV2">Example B.1.6</a>.</div></section></section></div>
 <div class="ptx-content-footer">
-<a class="previous-button button" href="EV6.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="AT.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="EV1.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="EV3.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">
