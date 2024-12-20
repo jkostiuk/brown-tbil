@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="problem example-like"><h3 class="heading">
+<span class="type">Problem</span><span class="space"> </span><span class="codenumber">A.2.2</span><span class="period">.</span>
+</h3>
+<div class="introduction">
+<div class="para">This problem asks you to expand on the ideas in <a href="TI2.html#activity-partssinsquare" class="xref" data-knowl="./knowl/xref/activity-partssinsquare.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 5.2.14">Activity 5.2.14</a>.</div> <article class="task exercise-like"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para">Explain and demonstrate how to use integration by parts to show that <span class="process-math">\(\displaystyle \int\sin^2{x}dx=\frac{1}{2}(-\sin{x}\cos{x}+x)\text{.}\)</span>
+</div></article> <article class="task exercise-like"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para">Explain and demonstrate how to use a similar method to evaluate <span class="process-math">\(\displaystyle \int\cos^2{x}dx\text{.}\)</span>
+</div></article> <article class="task exercise-like"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para logical">
+<div class="para">More generally, let <span class="process-math">\(I_n=\displaystyle\int\sin^n{x}dx\text{,}\)</span> where <span class="process-math">\(n\)</span> a positive integer. Use integration by parts to explain why</div>
+<div class="displaymath process-math">
+\begin{equation*}
+I_n=\frac{-\sin^{n-1}{x}\cos{x}+(n-1)I_{n-2}}{n}.
+\end{equation*}
+</div>
+</div></article> <div class="para">While you do not need to turn it in, consider finding an analogous formula relating the integrals <span class="process-math">\(\int\cos^n{x}dx\text{.}\)</span>
+</div>
+</div> <details class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para">Follow the suggestions in <a href="TI2.html#activity-partssinsquare" class="xref" data-knowl="./knowl/xref/activity-partssinsquare.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 5.2.14">Activity 5.2.14</a> and be prepared to do some trial-and-error with your integration-by-parts. Consider borrowing an idea from <a href="TI2.html#activity-TI2ExtensionExpTrigStep2" class="xref" data-knowl="./knowl/xref/activity-TI2ExtensionExpTrigStep2.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 5.2.12">Activity 5.2.12</a>
+</div></div></details> <details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<article class="task exercise-like"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para logical">
+<div class="para">We begin by using integration by parts. For this, I chose <span class="process-math">\(u=\sin{x}\)</span> and <span class="process-math">\(dv=\sin{x}dx\text{.}\)</span> With these choices, we have <span class="process-math">\(du=\cos{x}dx\text{,}\)</span> <span class="process-math">\(v=-\cos{x}\text{,}\)</span> and applying the integration by parts formula yields:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/activity-partssinsquare.html">
+\begin{equation*}
+I=\displaystyle\int\sin^2{x}dx=\int\sin{x}\sin{x}dx=-\sin{x}\cos{x}+\int\cos^2{x}dx.
+\end{equation*}
+</div>
+<div class="para">Inspired by <a href="TI2.html#activity-partssinsquare" class="xref" data-knowl="./knowl/xref/activity-partssinsquare.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 5.2.14">Activity 5.2.14</a>, we use the identity <span class="process-math">\(\cos^2{x}=1-\sin^2{x}\)</span> to re-write the above equation as:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/activity-partssinsquare.html">
+\begin{align*}
+I \amp =\amp \sin{x}\cos{x}+\int dx-\int\sin^2{x}dx\\
+\amp =\amp -\sin{x}\cos{x}+x-I.
+\end{align*}
+</div>
+<div class="para">Moving <span class="process-math">\(I\)</span> to the left hand side allows us to solve:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/activity-partssinsquare.html">
+\begin{equation*}
+I=\frac{x-\sin{x}\cos{x}}{2}
+\end{equation*}
+</div>
+<div class="para">as desired.</div>
+</div></article> <article class="task exercise-like"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para logical">
+<div class="para">We imitate and modify the techniques we used above. Letting <span class="process-math">\(I=\int\cos^2{x}dx\text{,}\)</span> we use integration by parts as follows:</div>
+<div class="displaymath process-math">
+\begin{align*}
+I \amp =\amp \int\cos{x}\cos{x}dx \\
+\amp\amp u=\cos{x},\ \ dv=\cos{x}dx \\
+\amp\amp du=-\sin{x}dx,\ \ v=\sin{x} \\
+\amp =\amp \cos{x}\sin{x}+\int\sin^2{x}dx\\
+\amp =\amp \cos{x}\sin{x}+\int dx-\int\cos^2{x}dx\\
+\amp =\amp \cos{x}\sin{x}+x-I,
+\end{align*}
+</div>
+<div class="para">where, in the second last line, we used the identity <span class="process-math">\(\sin^2{x}=1-\cos^2{x}\text{.}\)</span>
+</div>
+</div>
+<div class="para logical">
+<div class="para">From here, we solve for <span class="process-math">\(I\text{:}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+I=\frac{x+\cos{x}\sin{x}}{2}.
+\end{equation*}
+</div>
+</div></article> <article class="task exercise-like"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para logical">
+<div class="para">While the algebra might look a little weird, let’s see if we can use what we’ve done to help us here. Start with <span class="process-math">\(I_n=\int\sin^n{x}dx\text{.}\)</span> If we let <span class="process-math">\(u=\sin^{n-1}{x}dx\)</span> and <span class="process-math">\(dv=\sin{x}dx\)</span> and apply the integration by parts formula, we get:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+I_n=-\sin^{n-1}{x}\cos{x}+\int(n-1)\sin^{n-2}{x}\cos^2{x}dx.
+\end{equation*}
+</div>
+<div class="para">Using the identity <span class="process-math">\(\cos^2{x}=1-\sin^2{x}\text{,}\)</span> we can continue as:</div>
+<div class="displaymath process-math">
+\begin{align*}
+I \amp =\amp -\sin^{n-1}{x}\cos{x}+\displaystyle\int (n-1)\sin^{n-2}{x}(1-\sin^2{x})dx\\
+\amp =\amp -\sin^{n-1}{x}\cos{x}+(n-1)\int\sin^{n-2}{x}dx-(n-1)\int\sin^n{x}dx\\
+\amp =\amp \sin^{n-1}{x}\cos{x}+(n-1)I_{n-2}-(n-1)I_n,
+\end{align*}
+</div>
+<div class="para">from which we can move the <span class="process-math">\(I_n\)</span> terms to the left to find:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+nI_n=-\sin^{n-1}{x}\cos{x}+(n-1)I_{n-2}.
+\end{equation*}
+</div>
+</div></article>
+</div></details></article><span class="incontext"><a class="internal" href="sec-pset1-calc.html#reducformula-motivation">in-context</a></span>
+</body>
+</html>
