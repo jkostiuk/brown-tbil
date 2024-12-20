@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">B.1.7</span><span class="period">.</span><span class="space"> </span><span class="title">EV3.</span>
+</h3>
+<div class="introduction"><div class="para">Answer the following questions about Euclidean subspaces.</div></div>
+<article class="task exercise-like"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para logical">
+<div class="para">Consider the following subsets of Euclidean space <span class="process-math">\(\mathbb R^4\)</span> defined by</div>
+<div class="displaymath process-math">
+\begin{equation*}
+U=\left\{ \left[\begin{array}{c} x \\ y \\ z \\ w \end{array}\right] \middle| 
+y^{2} - 7 \, z^{2} = x \right\} \hspace{1em} \text{and} 
+\hspace{1em} W=\left\{ \left[\begin{array}{c} x \\ y \\ z \\ w \end{array}\right] \middle| 
+-5 \, w - 7 \, x - y = -7 \, z \right\}
+\end{equation*}
+</div>
+<div class="para">Without writing a proof, explain why only one of these subsets is likely to be a subspace.</div>
+</div>
+<div class="solutions"><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para">
+<span class="process-math">\(W\)</span> appears to be a subspace as its equation is a linear combination of variables and constant scalars, and <span class="process-math">\(U\)</span> is likely not due to its equation having squared terms.</div></div></details></div></article><article class="task exercise-like"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para logical">
+<div class="para">Consider the following subset of Euclidean space <span class="process-math">\(\mathbb R^3\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+Q=\left\{ \left[\begin{array}{c} x \\ y \\ z \end{array}\right] \middle| 
+0 = 5 \, y^{2} - 5 \, x + 3 \, z \right\}
+\end{equation*}
+</div>
+<div class="para">Prove that <span class="process-math">\(Q\)</span> <em class="emphasis">is not</em> a subspace.</div>
+</div>
+<div class="solutions"><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical">
+<div class="para">Note that <span class="process-math">\(\left[\begin{array}{c} 0 \\ 3 \\ -15 \end{array}\right]\)</span> belongs to <span class="process-math">\(Q\text{,}\)</span> since</div>
+<div class="displaymath process-math">
+\begin{equation*}
+5(3)^2-5(0)+3(-15)=45-45=0\text{,}
+\end{equation*}
+</div>
+<div class="para">but <span class="process-math">\(2\left[\begin{array}{c} 0 \\ 3 \\ -15 \end{array}\right]=
+\left[\begin{array}{c} 0 \\ 6 \\ -30 \end{array}\right]\)</span> does not, since</div>
+<div class="displaymath process-math">
+\begin{equation*}
+5(6)^2-5(0)+3(-30)=180-90=90\not=0\text{.}
+\end{equation*}
+</div>
+</div></div></details></div></article><article class="task exercise-like"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para logical">
+<div class="para">Consider the following subset of Euclidean space <span class="process-math">\(\mathbb R^3\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+R=\left\{ \left[\begin{array}{c} x \\ y \\ z \end{array}\right] \middle| 
+5 \, x - 5 \, y = -4 \, z \right\}
+\end{equation*}
+</div>
+<div class="para">Prove that <span class="process-math">\(R\)</span> <em class="emphasis">is</em> a subspace.</div>
+</div>
+<div class="solutions"><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical"><ul class="disc" id="sample-EV3-5-2-1-1">
+<li><div class="para">First, note that <span class="process-math">\(\left[\begin{array}{c} 0 \\ 0 \\ 0 \end{array}\right]\in R\)</span> since <span class="process-math">\(5(0)-5(0)=0\)</span> and <span class="process-math">\(-4(0)=0\)</span> as well.</div></li>
+<li><div class="para logical">
+<div class="para">Let <span class="process-math">\(\left[\begin{array}{c} x \\ y \\ z \end{array}\right]\in R\)</span> so that <span class="process-math">\(5 \, x - 5 \, y = -4 \, z\text{,}\)</span> and let <span class="process-math">\(\left[\begin{array}{c} a \\ b \\ c \end{array}\right]\in R\)</span> so that <span class="process-math">\(5 \, a - 5 \, b = -4 \, c\text{.}\)</span> We may then compute</div>
+<div class="displaymath process-math">
+\begin{align*}
+5(x+a)-5(y+b) &amp;= 5x+5a-5y-5b\\
+&amp;= (5x-5y)+(5a-5b)\\
+&amp;= (-4z)+(-4c)\\
+&amp;= -4(z+c)
+\end{align*}
+</div>
+<div class="para">So <span class="process-math">\(5(x+a)-5(y+b) = -4(z+c)\)</span> and therefore <span class="process-math">\(\left[\begin{array}{c} x \\ y \\ z \end{array}\right]+
+\left[\begin{array}{c} a \\ b \\ c \end{array}\right]=
+\left[\begin{array}{c} x+a \\ y+b \\ z+c \end{array}\right]\in R\text{,}\)</span> showing <span class="process-math">\(R\)</span> is closed under addition.</div>
+</div></li>
+<li><div class="para logical">
+<div class="para">Let <span class="process-math">\(\left[\begin{array}{c} x \\ y \\ z \end{array}\right]\in R\)</span> so that <span class="process-math">\(5 \, x - 5 \, y = -4 \, z\text{,}\)</span> and let <span class="process-math">\(k\in\mathbb R\)</span> be a scalar. We may then compute</div>
+<div class="displaymath process-math">
+\begin{align*}
+5x - 5y &amp;= -4z\\
+\Rightarrow k[5x-5y]&amp;= k[-4z]\\
+\Rightarrow 5kx-5ky &amp;= -4kz\\
+\Rightarrow 5(kx)-5(ky)&amp;= -4(kz)
+\end{align*}
+</div>
+<div class="para">and therefore <span class="process-math">\(k\left[\begin{array}{c} x \\ y \\ z \end{array}\right]
+=\left[\begin{array}{c} kx \\ ky \\ kz \end{array}\right]\in R\text{,}\)</span> showing <span class="process-math">\(R\)</span> is closed under scalar multiplication.</div>
+</div></li>
+</ul></div></div></details></div></article></article><span class="incontext"><a class="internal" href="sample-exercises.html#sample-EV3">in-context</a></span>
+</body>
+</html>
