@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">B.1.4</span><span class="period">.</span><span class="space"> </span><span class="title">LE4.</span>
+</h3>
+<div class="introduction"><div class="para logical">
+<div class="para">Consider the following vector equation.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+x_{1} \left[\begin{array}{c} 1 \\ 0 \\ 1 \\ 1 \end{array}\right] + x_{2} \left[\begin{array}{c} -2 \\ 0 \\ -2 \\ -2 \end{array}\right] + x_{3} \left[\begin{array}{c} -5 \\ 1 \\ -5 \\ -2 \end{array}\right] + x_{4} \left[\begin{array}{c} 13 \\ -2 \\ 13 \\ 7 \end{array}\right] + x_{5} \left[\begin{array}{c} -14 \\ 3 \\ -14 \\ -5 \end{array}\right] = \left[\begin{array}{c} 18 \\ -3 \\ 18 \\ 9 \end{array}\right]
+\end{equation*}
+</div>
+</div></div>
+<article class="task exercise-like"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para">Explain how to find a simpler linear system that has the same solution set.</div>
+<div class="solutions"><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical">
+<div class="para">The given linear system is represented by this augmented matrix, which row reduces as follows:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\left[\begin{array}{ccccc|c} 
+1 &amp; -2 &amp; -5 &amp; 13 &amp; -14  &amp; 18\\ 
+0 &amp; 0 &amp; 1 &amp; -2 &amp;  3 &amp; -3\\ 
+1 &amp; -2 &amp; -5 &amp; 13 &amp; -14 &amp;18\\ 
+1 &amp; -2 &amp; -2 &amp; 7  &amp; -5 &amp;9\\ 
+\end{array}\right]
+\sim
+\left[\begin{array}{ccccc|c} 
+1 &amp; -2 &amp; 0 &amp; 3 &amp; 1  &amp; 3\\ 
+0 &amp; 0 &amp; 1 &amp; -2 &amp;  3 &amp; -3\\ 
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\ 
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\ 
+\end{array}\right]
+\end{equation*}
+</div>
+<div class="para">The RREF matrix then yields the following simplified linear system with the same solution set:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{matrix} x_{1} &amp; - &amp; 2 \, x_{2} &amp; &amp; &amp; + &amp; 3 \, x_{4} &amp; + &amp; x_{5} &amp; = &amp; 3 \\ &amp; &amp; &amp; &amp; x_{3} &amp; - &amp; 2 \, x_{4} &amp; + &amp; 3 \, x_{5} &amp; = &amp; -3 \\ &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; 0 &amp; = &amp; 0 \\ &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; 0 &amp; = &amp; 0 \\ \end{matrix}
+\end{equation*}
+</div>
+</div></div></details></div></article><article class="task exercise-like"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para">Explain how to describe this solution set using set notation.</div>
+<div class="solutions"><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical">
+<div class="para">We can assign free variables for each of the non-pivot columns: <span class="process-math">\(x_2=a\text{,}\)</span> <span class="process-math">\(x_4=b\text{,}\)</span> and <span class="process-math">\(x_5=c\text{:}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{matrix} x_{1} &amp; - &amp; 2 \, a &amp; &amp; &amp; + &amp; 3 \, b &amp; + &amp; c &amp; = &amp; 3 \\
+&amp; &amp; &amp; &amp; x_{3} &amp; - &amp; 2 \, b &amp; + &amp; 3 \, c &amp; = &amp; -3 \\ \end{matrix}
+\end{equation*}
+</div>
+</div>
+<div class="para logical">
+<div class="para">Then we may solve for the bound variables <span class="process-math">\(x_1\)</span> and <span class="process-math">\(x_3\text{:}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+x_1=2a-3b-c+3
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+x_3=2b-3c-3
+\end{equation*}
+</div>
+</div>
+<div class="para">Therefore, the solution set is <span class="process-math">\(\left\{ \left[\begin{array}{c} 2 \, a - 3 \, b - c + 3 \\ a \\ 2 \, b - 3 \, c - 3 \\ b \\ c \end{array}\right] \,\middle|\, a,b,c \in\mathbb R \right\}\text{.}\)</span>
+</div>
+</div></details></div></article></article><span class="incontext"><a class="internal" href="sample-exercises.html#sample-LE4">in-context</a></span>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="fact theorem-like"><h4 class="heading">
+<span class="type">Fact</span><span class="space"> </span><span class="codenumber">1.3.7</span><span class="period">.</span>
+</h4>
+<div class="para logical">
+<div class="para">By finding <span class="process-math">\(\RREF(A)\)</span> from a linear system’s corresponding augmented matrix <span class="process-math">\(A\text{,}\)</span> we can immediately tell how many solutions the system has.</div>
+<ul class="disc" id="LE3-fact-scenarios-1-1-3">
+<li><div class="para logical">
+<div class="para">If the linear system given by <span class="process-math">\(\RREF(A)\)</span> includes the contradiction</div>
+<div class="displaymath process-math">
+\begin{equation*}
+0=1\text{,}
+\end{equation*}
+</div>
+<div class="para">that is, the <span class="process-math">\(\RREF\)</span> matrix includes the row</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\left[\begin{array}{ccc|c}0&amp;\cdots&amp;0&amp;1\end{array}\right]\text{,}
+\end{equation*}
+</div>
+<div class="para">then the system is <em class="emphasis">inconsistent</em>, which means it has <em class="emphasis">zero</em> solutions and we may write</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{Solution set }=\{\}
+\hspace{2em}\text{or}\hspace{2em}
+\text{Solution set }=\emptyset.
+\end{equation*}
+</div>
+</div></li>
+<li><div class="para logical">
+<div class="para">If the linear system given by <span class="process-math">\(\RREF(A)\)</span> sets each variable of the system to a single value; that is we have:</div>
+<div class="displaymath process-math">
+\begin{alignat*}{2}
+x_1 &amp;= s_1\\
+x_2 &amp;= s_2\\
+&amp;\vdots\\
+x_n &amp;= s_n
+\end{alignat*}
+</div>
+<div class="para">(with some possible extra <span class="process-math">\(0=0\)</span> equations), then the system is <em class="emphasis">consistent</em> with exactly <em class="emphasis">one</em> solution, and we may write</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{Solution }=\left[\begin{array}{c}s_1\\s_2\\\vdots\\s_n\end{array}\right]
+\hspace{2em}\text{but}\hspace{2em}
+\text{Solution set }=
+\left\{\left[\begin{array}{c}s_1\\s_2\\\vdots\\s_n\end{array}\right]\right\}.
+\end{equation*}
+</div>
+</div></li>
+<li><div class="para">Otherwise, the system given by the <span class="process-math">\(\RREF\)</span> matrix must <em class="emphasis">not include a <span class="process-math">\(0=1\)</span> contradiction</em> while <em class="emphasis">including at least one equation with multiple variables</em>. This means it is <em class="emphasis">consistent</em> with <em class="emphasis">infinitely-many</em> different solutions. We’ll learn how to find such solution sets in <a href="LE4.html" class="internal" title="Section 1.4: Linear Systems with Infinitely-Many Solutions (LE4)">Section 1.4</a>.</div></li>
+</ul>
+</div></article><span class="incontext"><a class="internal" href="LE3.html#LE3-fact-scenarios">in-context</a></span>
+</body>
+</html>

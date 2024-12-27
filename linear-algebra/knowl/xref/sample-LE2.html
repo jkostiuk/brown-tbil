@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">B.1.2</span><span class="period">.</span><span class="space"> </span><span class="title">LE2.</span>
+</h3>
+<article class="task exercise-like"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="introduction"><div class="para">For each of the following matrices, explain why it is not in reduced row echelon form.</div></div>
+<article class="task exercise-like"><h5 class="heading"><span class="codenumber">(i)</span></h5>
+<div class="para logical"><div class="displaymath process-math">
+\begin{equation*}
+A = \left[\begin{array}{ccccc} 0 &amp; 0 &amp; 1 &amp; 0 &amp; -2 \\ 1 &amp; 5 &amp; 0 &amp; -2 &amp; 1 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \end{array}\right]
+\end{equation*}
+</div></div>
+<div class="solutions"><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para">
+<span class="process-math">\(A=\left[\begin{array}{ccccc} 0 &amp; 0 &amp; \markedPivot{\textcolor{red}{1}} &amp; 0 &amp; -2 \\
+\markedPivot{\textcolor{red}{1}} &amp; 5 &amp; 0 &amp; -2 &amp; 1 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \end{array}\right]\)</span> is not in reduced row echelon form because   the pivots are not descending to the right.</div></div></details></div></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(ii)</span></h5>
+<div class="para logical"><div class="displaymath process-math">
+\begin{equation*}
+B = \left[\begin{array}{ccccc} 1 &amp; -6 &amp; 3 &amp; 0 &amp; -1 \\ 0 &amp; 0 &amp; 0 &amp; 7 &amp; 14 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \end{array}\right]
+\end{equation*}
+</div></div>
+<div class="solutions"><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para">
+<span class="process-math">\(B=\left[\begin{array}{ccccc} \markedPivot 1 &amp; -6 &amp; 3 &amp; 0 &amp; -1 \\ 0 &amp; 0 &amp; 0 &amp; \markedPivot{\textcolor{red}{7}} &amp; 14 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \end{array}\right]\)</span> is not in reduced row echelon form because    a leading term has a value besides <span class="process-math">\(1\text{.}\)</span>
+</div></div></details></div></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(iii)</span></h5>
+<div class="para logical"><div class="displaymath process-math">
+\begin{equation*}
+C = \left[\begin{array}{ccccc} 1 &amp; 7 &amp; -4 &amp; 1 &amp; 12 \\ 0 &amp; 1 &amp; -1 &amp; 0 &amp; 2 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \end{array}\right]
+\end{equation*}
+</div></div>
+<div class="solutions"><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para">
+<span class="process-math">\(C=\left[\begin{array}{ccccc} \markedPivot 1 &amp; \textcolor{red}{7} &amp; -4 &amp; 1 &amp; 12 \\ 0 &amp; \markedPivot 1 &amp; -1 &amp; 0 &amp; 2 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \end{array}\right]\)</span> is not in reduced row echelon form because  there is a non-zero entry above or below a pivot.</div></div></details></div></article></article><article class="task exercise-like"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para logical">
+<div class="para">Show step by step why</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\operatorname{RREF}\left[\begin{array}{ccccc} 4 &amp; 4 &amp; 3 &amp; 18 &amp; -11 \\ -3 &amp; -3 &amp; 1 &amp; -7 &amp; 5 \\ 3 &amp; 3 &amp; 3 &amp; 15 &amp; -9 \end{array}\right] = \left[\begin{array}{ccccc} 1 &amp; 1 &amp; 0 &amp; 3 &amp; -2 \\ 0 &amp; 0 &amp; 1 &amp; 2 &amp; -1 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \end{array}\right]
+\end{equation*}
+</div>
+</div>
+<div class="solutions"><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical"><div class="displaymath process-math">
+\begin{align*}
+\left[\begin{array}{ccccc} 
+4 &amp; 4 &amp; 3 &amp; 18 &amp; -11 \\ 
+-3 &amp; -3 &amp; 1 &amp; -7 &amp; 5 \\ 
+3 &amp; 3 &amp; 3 &amp; 15 &amp; -9 
+\end{array}\right]
+\stackrel{R_1+R_2\to R_1}{\sim} &amp;
+\left[\begin{array}{ccccc} 
+\markedPivot 1 &amp; 1 &amp; 4 &amp; 11 &amp; -6 \\ 
+-3 &amp; -3 &amp; 1 &amp; -7 &amp; 5 \\ 
+3 &amp; 3 &amp; 3 &amp; 15 &amp; -9 
+\end{array}\right]\\
+\stackrel{R_2+3R_1\to R_2}{\stackrel{R_3-3R_1\to R_3}{\sim}}  &amp;
+\left[\begin{array}{ccccc} 
+\markedPivot 1 &amp; 1 &amp; 4 &amp; 11 &amp; -6 \\ 
+0 &amp; 0 &amp; 13 &amp; 26 &amp; -13 \\ 
+0 &amp; 0 &amp; -9 &amp; -18 &amp; 9
+\end{array}\right]\\
+\stackrel{\frac{1}{13}R_2\to R_2}{\stackrel{\frac{1}{9}R_3\to R_3}{\sim}}  &amp;
+\left[\begin{array}{ccccc} 
+\markedPivot 1 &amp; 1 &amp; 4 &amp; 11 &amp; -6 \\ 
+0 &amp; 0 &amp; \markedPivot 1 &amp; 2 &amp; -1 \\ 
+0 &amp; 0 &amp; -1 &amp; -2 &amp; 1 \\ 
+\end{array}\right]\\
+\stackrel{R_1-4R_2\to R_1}{\stackrel{R_3+R_1\to R_3}{\sim}}  &amp;
+\left[\begin{array}{ccccc} 
+\markedPivot 1 &amp; 1 &amp; 0 &amp; 3 &amp; -2 \\ 
+0 &amp; 0 &amp; \markedPivot 1 &amp; 2 &amp; -1 \\ 
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\ 
+\end{array}\right]
+\end{align*}
+</div></div></div></details></div></article></article><span class="incontext"><a class="internal" href="sample-exercises.html#sample-LE2">in-context</a></span>
+</body>
+</html>
