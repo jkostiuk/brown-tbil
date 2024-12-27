@@ -3,8 +3,8 @@
     <xi:include href="meta/docinfo.ptx"/>
     <book xml:id="linear-algebra-for-team-based-inquiry-learning">
         <title>Linear Algebra for Team-Based Inquiry Learning</title>
-        <subtitle component="main">Math 0520 Custom Edition</subtitle>
-        <subtitle component="instructor">Math 0520 Custom Edition</subtitle>
+        <subtitle component="main">Math 0520 Spring 2025 Custom Edition</subtitle>
+        <subtitle component="instructor">Math 0520 Spring 2025 Custom Edition</subtitle>
 
         <xi:include href="meta/frontmatter.ptx"/>
 
