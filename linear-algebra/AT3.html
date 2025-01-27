@@ -332,9 +332,9 @@ sagecell.makeSagecell({
 #EV6-4-3-3-1-1 { counter-set: EV6-4-3-3-1-1 0; }
 #EV6-4-3-3-1-1 > li::marker { content: ""counter(EV6-4-3-3-1-1,upper-alpha)"."; }
 #EV6-4-3-3-1-1 > li { counter-increment: EV6-4-3-3-1-1; }
-#EV6-4-13-1-1 { counter-set: EV6-4-13-1-1 0; }
-#EV6-4-13-1-1 > li::marker { content: ""counter(EV6-4-13-1-1,upper-alpha)"."; }
-#EV6-4-13-1-1 > li { counter-increment: EV6-4-13-1-1; }
+#EV6-4-15-1-1 { counter-set: EV6-4-15-1-1 0; }
+#EV6-4-15-1-1 > li::marker { content: ""counter(EV6-4-15-1-1,upper-alpha)"."; }
+#EV6-4-15-1-1 > li { counter-increment: EV6-4-15-1-1; }
 #EV7-3-3-2-1-1 { counter-set: EV7-3-3-2-1-1 0; }
 #EV7-3-3-2-1-1 > li::marker { content: ""counter(EV7-3-3-2-1-1,upper-alpha)"."; }
 #EV7-3-3-2-1-1 > li { counter-increment: EV7-3-3-2-1-1; }
@@ -1236,7 +1236,7 @@ T\left(\left[\begin{array}{c}x \\ y \end{array}\right] \right)
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.3.3</span><span class="period">.</span>
 </h4>
 <div class="para logical" id="AT3-definition-kernel-1-1">
-<div class="para">Let <span class="process-math">\(T: V \rightarrow W\)</span> be a linear transformation, and let <span class="process-math">\(\vec{z}\)</span> be the additive identity (the “zero vector”) of <span class="process-math">\(W\text{.}\)</span>  The <dfn class="terminology">kernel</dfn> of <span class="process-math">\(T\)</span> is an important subspace of <span class="process-math">\(V\)</span> defined by</div>
+<div class="para">Let <span class="process-math">\(T: V \rightarrow W\)</span> be a linear transformation, and let <span class="process-math">\(\vec{z}\)</span> be the additive identity (the “zero vector”) of <span class="process-math">\(W\text{.}\)</span>  The <dfn class="terminology">kernel</dfn> of <span class="process-math">\(T\)</span> (also known as the <dfn class="terminology">null space</dfn> of <span class="process-math">\(T\)</span>) is an important subspace of <span class="process-math">\(V\)</span> defined by</div>
 <div class="displaymath process-math">
 \begin{equation*}
 \ker T = \left\{ \vec{v} \in V\ \big|\ T(\vec{v})=\vec{z}\right\}
@@ -1428,6 +1428,8 @@ A
 }
 \end{equation*}
 </div>
+</div>
+<div class="para" id="AT3-4-13-3">Note that, if the transformation <span class="process-math">\(T\)</span> is represented by the matrix <span class="process-math">\(A\text{,}\)</span> then the image of <span class="process-math">\(T\)</span> is the <dfn class="terminology">column space</dfn> of <span class="process-math">\(A\text{.}\)</span>
 </div></article><article class="fact theorem-like" id="AT3-4-14"><h4 class="heading">
 <span class="type">Fact</span><span class="space"> </span><span class="codenumber">3.3.12</span><span class="period">.</span>
 </h4>
@@ -1436,7 +1438,7 @@ A
 </div>
 <ul class="disc" id="AT3-4-14-1-1-3">
 <li id="AT3-4-14-1-1-3-1"><div class="para" id="AT3-4-14-1-1-3-1-1">The kernel of <span class="process-math">\(T\)</span> is the solution set of the homogeneous system given by the augmented matrix <span class="process-math">\(\left[\begin{array}{c|c}A&amp;\vec 0\end{array}\right]\text{.}\)</span> Use the coefficients of its free variables to get a basis for the kernel (as in <a href="EV7.html#fact-solution-space-basis" class="xref" data-knowl="./knowl/xref/fact-solution-space-basis.html" data-reveal-label="Reveal" data-close-label="Close" title="Fact 2.7.5">Fact 2.7.5</a>).</div></li>
-<li id="AT3-4-14-1-1-3-2"><div class="para" id="AT3-4-14-1-1-3-2-1">The image of <span class="process-math">\(T\)</span> is the span of the columns of <span class="process-math">\(A\text{.}\)</span> Remove the vectors creating non-pivot columns in <span class="process-math">\(\RREF A\)</span> to get a basis for the image (as in <a href="EV6.html#observation-subspace-basis" class="xref" data-knowl="./knowl/xref/observation-subspace-basis.html" data-reveal-label="Reveal" data-close-label="Close" title="Observation 2.6.5">Observation 2.6.5</a>).</div></li>
+<li id="AT3-4-14-1-1-3-2"><div class="para" id="AT3-4-14-1-1-3-2-1">The image of <span class="process-math">\(T\)</span> is the span of the columns of <span class="process-math">\(A\text{.}\)</span> Remove the vectors creating non-pivot columns in <span class="process-math">\(\RREF A\)</span> to get a basis for the image (as in <a href="EV6.html#observation-subspace-basis" class="xref" data-knowl="./knowl/xref/observation-subspace-basis.html" data-reveal-label="Reveal" data-close-label="Close" title="Observation 2.6.7">Observation 2.6.7</a>).</div></li>
 </ul>
 </div></article><article class="activity project-like" id="AT3-4-15"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.3.13</span><span class="period">.</span>

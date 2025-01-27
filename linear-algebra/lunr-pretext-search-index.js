@@ -1618,7 +1618,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.6",
   "title": "Subspace Basis and Dimension (EV6)",
-  "body": " Subspace Basis and Dimension (EV6)     Compute a basis for the subspace spanned by a given set of Euclidean vectors, and determine the dimension of the subspace.      Warm Up    Consider the set of vectors in given by     Is the set linearly independent or linearly dependent?    How would you describe the subspace geometrically?    What do the spaces and have in common? In what ways do they differ?     Class Activities   Recall from section that a subspace of a vector space is the result of spanning a set of vectors from that vector space.  Recall also that a linearly dependent set contains redundant vectors. For example, only two of the three vectors in are needed to span the planar subspace.     Consider the subspace of given by .   Mark the column of that shows that 's spanning set is linearly dependent.  What would be the result of removing the vector that gave us this column?  The set still spans , and remains linearly dependent.  The set still spans , but is now also linearly independent.  The set no longer spans , and remains linearly dependent.  The set no longer spans , but is now linearly independent.        Let be a subspace of a vector space. A basis for is a linearly independent set of vectors that spans (but not necessarily the entire vector space).     So given a set , to compute a basis for the subspace , simply remove the vectors corresponding to the non-pivot columns of . For example, since the subspace has as a basis.        Find a basis for where .  Find a basis for where .     Even though we found different bases for them, and are exactly the same subspace of , since .  Thus the basis for a subspace is not unique in general.     Any non-trivial real vector space has infinitely-many different bases, but all the bases for a given vector space are exactly the same size.  For example, are all valid bases for , and they all contain three vectors.      The dimension of a vector space or subspace is equal to the size of any basis for the vector space.  As you'd expect, has dimension . For example, has dimension because any basis for such as contains exactly three vectors.      Consider the following subspace of :     Explain and demonstrate how to find a basis of .    Explain and demonstrate how to find the dimension of .      The dimension of a subspace may be found by doing what with an appropriate RREF matrix?  Count the rows.  Count the non-pivot columns.  Count the pivots.  Add the number of pivot rows and pivot columns.       Individual Practice    In , we found a basis for the subspace To do so, we use the results of the calculation: to conclude that the set , the set of vectors corresponding to the pivot columns of the RREF, is a basis for .    Explain why neither of the vectors are elements of .    Explain why this shows that, in general, when we calculate a basis for , the pivot columns of themselves do not form a basis for .      Videos   Video: Finding a basis of a subspace and computing the dimension of a subspace      Exercises  Exercises available at .    Mathematical Writing Explorations   Prove each of the following statements is true.  If and are each a basis for a vector space , then  If is linearly independent, then so is .  Let be a vector space of dimension , and . Then there exists a basis for which contains .      Suppose we have the set of all function . We claim that this is a vector space under the usual operation of function addition and scalar multiplication. What is the dimension of this space for each choice of below:            Suppose you have the vector space with the operations Find a basis for and determine it's dimension.    Sample Problem and Solution  Sample problem .   "
+  "body": " Subspace Basis and Dimension (EV6)     Compute a basis for the subspace spanned by a given set of Euclidean vectors, and determine the dimension of the subspace.      Warm Up    Consider the set of vectors in given by     Is the set linearly independent or linearly dependent?    How would you describe the subspace geometrically?    What do the spaces and have in common? In what ways do they differ?     Class Activities   Recall from section that a subspace of a vector space is the result of spanning a set of vectors from that vector space.  Recall also that a linearly dependent set contains redundant vectors. For example, only two of the three vectors in are needed to span the planar subspace.     Consider the subspace of given by .   Mark the column of that shows that 's spanning set is linearly dependent.  What would be the result of removing the vector that gave us this column?  The set still spans , and remains linearly dependent.  The set still spans , but is now also linearly independent.  The set no longer spans , and remains linearly dependent.  The set no longer spans , but is now linearly independent.       We can use our notation of span in relation to a matrix, not just in relation to a set of vectors. Given a matrix   the span of the set of all columns is the column space column space  the span of the set of all rows is the row space row space     Is in the column space of ? Is it in the row space of ?  Is in the column space of ? Is it in the row space of ?       Are the row space and column space of both equal to ?      Let be a subspace of a vector space. A basis for is a linearly independent set of vectors that spans (but not necessarily the entire vector space).     So given a set , to compute a basis for the subspace , simply remove the vectors corresponding to the non-pivot columns of . For example, since the subspace has as a basis.        Find a basis for where .  Find a basis for where .     Even though we found different bases for them, and are exactly the same subspace of , since .  Thus the basis for a subspace is not unique in general.     Any non-trivial real vector space has infinitely-many different bases, but all the bases for a given vector space are exactly the same size.  For example, are all valid bases for , and they all contain three vectors.      The dimension of a vector space or subspace is equal to the size of any basis for the vector space.  As you'd expect, has dimension . For example, has dimension because any basis for such as contains exactly three vectors.      Consider the following subspace of :     Explain and demonstrate how to find a basis of .    Explain and demonstrate how to find the dimension of .      The dimension of a subspace may be found by doing what with an appropriate RREF matrix?  Count the rows.  Count the non-pivot columns.  Count the pivots.  Add the number of pivot rows and pivot columns.       Individual Practice    In , we found a basis for the subspace To do so, we use the results of the calculation: to conclude that the set , the set of vectors corresponding to the pivot columns of the RREF, is a basis for .    Explain why neither of the vectors are elements of .    Explain why this shows that, in general, when we calculate a basis for , the pivot columns of themselves do not form a basis for .      Videos   Video: Finding a basis of a subspace and computing the dimension of a subspace      Exercises  Exercises available at .    Mathematical Writing Explorations   Prove each of the following statements is true.  If and are each a basis for a vector space , then  If is linearly independent, then so is .  Let be a vector space of dimension , and . Then there exists a basis for which contains .      Suppose we have the set of all function . We claim that this is a vector space under the usual operation of function addition and scalar multiplication. What is the dimension of this space for each choice of below:            Suppose you have the vector space with the operations Find a basis for and determine it's dimension.    Sample Problem and Solution  Sample problem .   "
 },
 {
   "id": "EV6-2",
@@ -1660,8 +1660,26 @@ var ptx_lunr_docs = [
   "id": "EV6-4-5",
   "level": "2",
   "url": "EV6.html#EV6-4-5",
-  "type": "Definition",
+  "type": "Activity",
   "number": "2.6.4",
+  "title": "",
+  "body": " We can use our notation of span in relation to a matrix, not just in relation to a set of vectors. Given a matrix   the span of the set of all columns is the column space column space  the span of the set of all rows is the row space row space     Is in the column space of ? Is it in the row space of ?  Is in the column space of ? Is it in the row space of ?    "
+},
+{
+  "id": "EV6-4-6",
+  "level": "2",
+  "url": "EV6.html#EV6-4-6",
+  "type": "Activity",
+  "number": "2.6.5",
+  "title": "",
+  "body": "  Are the row space and column space of both equal to ?   "
+},
+{
+  "id": "EV6-4-7",
+  "level": "2",
+  "url": "EV6.html#EV6-4-7",
+  "type": "Definition",
+  "number": "2.6.6",
   "title": "",
   "body": "  Let be a subspace of a vector space. A basis for is a linearly independent set of vectors that spans (but not necessarily the entire vector space).   "
 },
@@ -1670,61 +1688,61 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "EV6.html#observation-subspace-basis",
   "type": "Observation",
-  "number": "2.6.5",
+  "number": "2.6.7",
   "title": "",
   "body": " So given a set , to compute a basis for the subspace , simply remove the vectors corresponding to the non-pivot columns of . For example, since the subspace has as a basis.  "
-},
-{
-  "id": "EV6-4-7",
-  "level": "2",
-  "url": "EV6.html#EV6-4-7",
-  "type": "Activity",
-  "number": "2.6.6",
-  "title": "",
-  "body": " Find a basis for where .  Find a basis for where .  "
 },
 {
   "id": "EV6-4-9",
   "level": "2",
   "url": "EV6.html#EV6-4-9",
-  "type": "Observation",
-  "number": "2.6.7",
-  "title": "",
-  "body": " Even though we found different bases for them, and are exactly the same subspace of , since .  Thus the basis for a subspace is not unique in general.  "
-},
-{
-  "id": "EV6-4-10",
-  "level": "2",
-  "url": "EV6.html#EV6-4-10",
-  "type": "Fact",
+  "type": "Activity",
   "number": "2.6.8",
   "title": "",
-  "body": "  Any non-trivial real vector space has infinitely-many different bases, but all the bases for a given vector space are exactly the same size.  For example, are all valid bases for , and they all contain three vectors.   "
+  "body": " Find a basis for where .  Find a basis for where .  "
 },
 {
   "id": "EV6-4-11",
   "level": "2",
   "url": "EV6.html#EV6-4-11",
-  "type": "Definition",
+  "type": "Observation",
   "number": "2.6.9",
   "title": "",
-  "body": "  The dimension of a vector space or subspace is equal to the size of any basis for the vector space.  As you'd expect, has dimension . For example, has dimension because any basis for such as contains exactly three vectors.   "
+  "body": " Even though we found different bases for them, and are exactly the same subspace of , since .  Thus the basis for a subspace is not unique in general.  "
 },
 {
   "id": "EV6-4-12",
   "level": "2",
   "url": "EV6.html#EV6-4-12",
-  "type": "Activity",
+  "type": "Fact",
   "number": "2.6.10",
   "title": "",
-  "body": "  Consider the following subspace of :     Explain and demonstrate how to find a basis of .    Explain and demonstrate how to find the dimension of .   "
+  "body": "  Any non-trivial real vector space has infinitely-many different bases, but all the bases for a given vector space are exactly the same size.  For example, are all valid bases for , and they all contain three vectors.   "
 },
 {
   "id": "EV6-4-13",
   "level": "2",
   "url": "EV6.html#EV6-4-13",
-  "type": "Activity",
+  "type": "Definition",
   "number": "2.6.11",
+  "title": "",
+  "body": "  The dimension of a vector space or subspace is equal to the size of any basis for the vector space.  As you'd expect, has dimension . For example, has dimension because any basis for such as contains exactly three vectors.   "
+},
+{
+  "id": "EV6-4-14",
+  "level": "2",
+  "url": "EV6.html#EV6-4-14",
+  "type": "Activity",
+  "number": "2.6.12",
+  "title": "",
+  "body": "  Consider the following subspace of :     Explain and demonstrate how to find a basis of .    Explain and demonstrate how to find the dimension of .   "
+},
+{
+  "id": "EV6-4-15",
+  "level": "2",
+  "url": "EV6.html#EV6-4-15",
+  "type": "Activity",
+  "number": "2.6.13",
   "title": "",
   "body": " The dimension of a subspace may be found by doing what with an appropriate RREF matrix?  Count the rows.  Count the non-pivot columns.  Count the pivots.  Add the number of pivot rows and pivot columns.    "
 },
@@ -1733,7 +1751,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "EV6.html#EV6-5-2",
   "type": "Activity",
-  "number": "2.6.12",
+  "number": "2.6.14",
   "title": "",
   "body": "  In , we found a basis for the subspace To do so, we use the results of the calculation: to conclude that the set , the set of vectors corresponding to the pivot columns of the RREF, is a basis for .    Explain why neither of the vectors are elements of .    Explain why this shows that, in general, when we calculate a basis for , the pivot columns of themselves do not form a basis for .   "
 },
@@ -1751,7 +1769,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "EV6.html#EV6-8-2",
   "type": "Exploration",
-  "number": "2.6.13",
+  "number": "2.6.15",
   "title": "",
   "body": " Prove each of the following statements is true.  If and are each a basis for a vector space , then  If is linearly independent, then so is .  Let be a vector space of dimension , and . Then there exists a basis for which contains .    "
 },
@@ -1760,7 +1778,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "EV6.html#EV6-8-3",
   "type": "Exploration",
-  "number": "2.6.14",
+  "number": "2.6.16",
   "title": "",
   "body": " Suppose we have the set of all function . We claim that this is a vector space under the usual operation of function addition and scalar multiplication. What is the dimension of this space for each choice of below:          "
 },
@@ -1769,7 +1787,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "EV6.html#EV6-8-4",
   "type": "Exploration",
-  "number": "2.6.15",
+  "number": "2.6.17",
   "title": "",
   "body": " Suppose you have the vector space with the operations Find a basis for and determine it's dimension. "
 },
@@ -2284,7 +2302,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.3",
   "title": "Image and Kernel (AT3)",
-  "body": " Image and Kernel (AT3)     Compute a basis for the kernel and a basis for the image of a linear map, and verify that the rank-nullity theorem holds for a given linear map.      Warm Up    Consider the matrix     The matrix is the standard matrix of a linear transformation . What is the domain and the codomain of the transformation ?    Describe how transforms the standard basis vectors of the domain that you found above.     Class Activities    Let be given by Which of these subspaces of describes the set of all vectors that transform into ?                            Let be a linear transformation, and let be the additive identity (the zero vector ) of . The kernel kernel of is an important subspace of defined by    The kernel of a linear transformation          Let be given by Which of these subspaces of describes , the set of all vectors that transform into ?                            Let be the linear transformation given by the standard matrix    Set to find a linear system of equations whose solution set is the kernel.  Use to solve this homogeneous system of equations and find a basis for the kernel of .      Let be the linear transformation given by   Find a basis for the kernel of .       Let be given by Which of these subspaces of describes the set of all vectors that are the result of using to transform vectors?                            Let be a linear transformation. The image of is an important subspace of defined by   In the examples below, the left example's image is all of , but the right example's image is a planar subspace of .   The image of a linear transformation          Let be given by Which of these subspaces of describes , the set of all vectors that are the result of using to transform vectors?                            Let be the linear transformation given by the standard matrix   Consider the question: Which vectors in belong to ?    Determine if belongs to .    Determine if belongs to .    An arbitrary vector belongs to provided the equation has...  no solutions.  exactly one solution.  at least one solution.  infinitely-many solutions.      Based on this, how do and relate to each other?  The set contains but is not equal to it.  The set contains but is not equal to it.  The set and are equal to each other.  There is no relation between these two sets.       Let be the linear transformation given by the standard matrix   Since the set spans , we can obtain a basis for by finding and only using the vectors corresponding to pivot columns:      Let be a linear transformation with standard matrix .   The kernel of is the solution set of the homogeneous system given by the augmented matrix . Use the coefficients of its free variables to get a basis for the kernel (as in ).    The image of is the span of the columns of . Remove the vectors creating non-pivot columns in to get a basis for the image (as in ).         Let be the linear transformation given by the standard matrix   Find a basis for the kernel and a basis for the image of .       Let be a linear transformation with standard matrix . Which of the following is equal to the dimension of the kernel of ?    The number of pivot columns    The number of non-pivot columns    The number of pivot rows    The number of non-pivot rows        Let be a linear transformation with standard matrix . Which of the following is equal to the dimension of the image of ?    The number of pivot columns    The number of non-pivot columns    The number of pivot rows    The number of non-pivot rows       Combining these with the observation that the number of columns is the dimension of the domain of , we have the rank-nullity theorem :   The dimension of the domain of equals .   The dimension of the image is called the rank of (or ) and the dimension of the kernel is called the nullity .    Let be the linear transformation given by     Explain and demonstrate how to find the image of and a basis for that image.    Explain and demonstrate how to find the kernel of and a basis for that kernel.    Explain and demonstrate how to find the rank and nullity of , and why the rank-nullity theorem holds for .       Individual Practice    In this section, we've introduced two important subspaces that are associated with a linear transformation , namely: , the image of , and , the kernel of . The following sequence is designed to help you internalize these definitions. Try to complete them without referring to your Activity Book, and then check your answers.    One of and is a subspace of the domain and the other is a subspace of the codomain. Which is which?    Write down the precise definitions of these subspaces.    How would you describe these definitions to a layperson?    What picture, or other study strategy would be helpful to you in conceptualizing how these definitions fit together?      Videos   Video: The kernel and image of a linear transformation. Note that there is a typo: if you're following along, you should find that .     Video: Finding a basis of the image of a linear transformation     Video: Finding a basis of the kernel of a linear transformation     Video: The rank-nullity theorem      Exercises  Exercises available at .    Mathematical Writing Explorations    Assume is a linear map. Let be a set of vectors in , and set .  If the set is linearly independent, must the set also be linearly independent?  If the set is linearly independent, must the set also be linearly independent?  If the set spans , must the set also span ?  If the set spans , must the set also span ?  In light of this, is the image of the basis of a vector space always a basis for the codomain?      Prove the Rank-Nullity Theorem. Use the steps below to help you.  The theorem states that, given a linear map , with and vector spaces, the rank of , plus the nullity of , equals the dimension of the domain . Assume that the dimension of is .  For simplicity, denote the rank of by , and the nullity by .  Recall that is the dimension of the range space of . State the precise definition.  Recall that is the dimension of the null space of . State the precise definition.  Begin with a basis for the null space, denoted . Show how this can be extended to a basis for , with In this portion, you should assume , and construct additional vectors which are not linear combinations of vectors in . Prove that you can always do this until you have total linearly independent vectors.  Show that is a basis for the range space. Start by showing that it is linearly independent, and be sure you prove that each element of the range space can be written as a linear combination of .  Show that spans the range space.  State your conclusion.       Sample Problem and Solution  Sample problem .   "
+  "body": " Image and Kernel (AT3)     Compute a basis for the kernel and a basis for the image of a linear map, and verify that the rank-nullity theorem holds for a given linear map.      Warm Up    Consider the matrix     The matrix is the standard matrix of a linear transformation . What is the domain and the codomain of the transformation ?    Describe how transforms the standard basis vectors of the domain that you found above.     Class Activities    Let be given by Which of these subspaces of describes the set of all vectors that transform into ?                            Let be a linear transformation, and let be the additive identity (the zero vector ) of . The kernel kernel of (also known as the null space null space of ) is an important subspace of defined by    The kernel of a linear transformation          Let be given by Which of these subspaces of describes , the set of all vectors that transform into ?                            Let be the linear transformation given by the standard matrix    Set to find a linear system of equations whose solution set is the kernel.  Use to solve this homogeneous system of equations and find a basis for the kernel of .      Let be the linear transformation given by   Find a basis for the kernel of .       Let be given by Which of these subspaces of describes the set of all vectors that are the result of using to transform vectors?                            Let be a linear transformation. The image image of is an important subspace of defined by   In the examples below, the left example's image is all of , but the right example's image is a planar subspace of .   The image of a linear transformation          Let be given by Which of these subspaces of describes , the set of all vectors that are the result of using to transform vectors?                            Let be the linear transformation given by the standard matrix   Consider the question: Which vectors in belong to ?    Determine if belongs to .    Determine if belongs to .    An arbitrary vector belongs to provided the equation has...  no solutions.  exactly one solution.  at least one solution.  infinitely-many solutions.      Based on this, how do and relate to each other?  The set contains but is not equal to it.  The set contains but is not equal to it.  The set and are equal to each other.  There is no relation between these two sets.       Let be the linear transformation given by the standard matrix   Since the set spans , we can obtain a basis for by finding and only using the vectors corresponding to pivot columns:   Note that, if the transformation is represented by the matrix , then the image of is the column space column space of .     Let be a linear transformation with standard matrix .   The kernel of is the solution set of the homogeneous system given by the augmented matrix . Use the coefficients of its free variables to get a basis for the kernel (as in ).    The image of is the span of the columns of . Remove the vectors creating non-pivot columns in to get a basis for the image (as in ).         Let be the linear transformation given by the standard matrix   Find a basis for the kernel and a basis for the image of .       Let be a linear transformation with standard matrix . Which of the following is equal to the dimension of the kernel of ?    The number of pivot columns    The number of non-pivot columns    The number of pivot rows    The number of non-pivot rows        Let be a linear transformation with standard matrix . Which of the following is equal to the dimension of the image of ?    The number of pivot columns    The number of non-pivot columns    The number of pivot rows    The number of non-pivot rows       Combining these with the observation that the number of columns is the dimension of the domain of , we have the rank-nullity theorem :   The dimension of the domain of equals .   The dimension of the image is called the rank of (or ) and the dimension of the kernel is called the nullity .    Let be the linear transformation given by     Explain and demonstrate how to find the image of and a basis for that image.    Explain and demonstrate how to find the kernel of and a basis for that kernel.    Explain and demonstrate how to find the rank and nullity of , and why the rank-nullity theorem holds for .       Individual Practice    In this section, we've introduced two important subspaces that are associated with a linear transformation , namely: , the image of , and , the kernel of . The following sequence is designed to help you internalize these definitions. Try to complete them without referring to your Activity Book, and then check your answers.    One of and is a subspace of the domain and the other is a subspace of the codomain. Which is which?    Write down the precise definitions of these subspaces.    How would you describe these definitions to a layperson?    What picture, or other study strategy would be helpful to you in conceptualizing how these definitions fit together?      Videos   Video: The kernel and image of a linear transformation. Note that there is a typo: if you're following along, you should find that .     Video: Finding a basis of the image of a linear transformation     Video: Finding a basis of the kernel of a linear transformation     Video: The rank-nullity theorem      Exercises  Exercises available at .    Mathematical Writing Explorations    Assume is a linear map. Let be a set of vectors in , and set .  If the set is linearly independent, must the set also be linearly independent?  If the set is linearly independent, must the set also be linearly independent?  If the set spans , must the set also span ?  If the set spans , must the set also span ?  In light of this, is the image of the basis of a vector space always a basis for the codomain?      Prove the Rank-Nullity Theorem. Use the steps below to help you.  The theorem states that, given a linear map , with and vector spaces, the rank of , plus the nullity of , equals the dimension of the domain . Assume that the dimension of is .  For simplicity, denote the rank of by , and the nullity by .  Recall that is the dimension of the range space of . State the precise definition.  Recall that is the dimension of the null space of . State the precise definition.  Begin with a basis for the null space, denoted . Show how this can be extended to a basis for , with In this portion, you should assume , and construct additional vectors which are not linear combinations of vectors in . Prove that you can always do this until you have total linearly independent vectors.  Show that is a basis for the range space. Start by showing that it is linearly independent, and be sure you prove that each element of the range space can be written as a linear combination of .  Show that spans the range space.  State your conclusion.       Sample Problem and Solution  Sample problem .   "
 },
 {
   "id": "AT3-2",
@@ -2320,7 +2338,7 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "3.3.3",
   "title": "",
-  "body": "  Let be a linear transformation, and let be the additive identity (the zero vector ) of . The kernel kernel of is an important subspace of defined by    The kernel of a linear transformation       "
+  "body": "  Let be a linear transformation, and let be the additive identity (the zero vector ) of . The kernel kernel of (also known as the null space null space of ) is an important subspace of defined by    The kernel of a linear transformation       "
 },
 {
   "id": "AT3-4-4",
@@ -2365,7 +2383,7 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "3.3.8",
   "title": "",
-  "body": "  Let be a linear transformation. The image of is an important subspace of defined by   In the examples below, the left example's image is all of , but the right example's image is a planar subspace of .   The image of a linear transformation       "
+  "body": "  Let be a linear transformation. The image image of is an important subspace of defined by   In the examples below, the left example's image is all of , but the right example's image is a planar subspace of .   The image of a linear transformation       "
 },
 {
   "id": "AT3-4-11",
@@ -2392,7 +2410,7 @@ var ptx_lunr_docs = [
   "type": "Observation",
   "number": "3.3.11",
   "title": "",
-  "body": " Let be the linear transformation given by the standard matrix   Since the set spans , we can obtain a basis for by finding and only using the vectors corresponding to pivot columns:   "
+  "body": " Let be the linear transformation given by the standard matrix   Since the set spans , we can obtain a basis for by finding and only using the vectors corresponding to pivot columns:   Note that, if the transformation is represented by the matrix , then the image of is the column space column space of .  "
 },
 {
   "id": "AT3-4-14",
@@ -3040,7 +3058,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.6",
   "title": "Polynomial and Matrix Spaces (AT6)",
-  "body": " Polynomial and Matrix Spaces (AT6)     Answer questions about vector spaces of polynomials or matrices.      Warm Up    Consider the following vector equation and statements about it:    The above vector equation is consistent for every choice of .    When the right hand is equal to , the equation has a unique solution.    The given equation always has a unique solution, no matter what is.     Which, if any, of these statements make sense if we no longer assume that the vectors are Euclidean vectors, but rather elements of a vector space?     Class Activities   Nearly every term we've defined for Euclidean vector spaces was actually defined for all kinds of vector spaces:                                                                   Let be a vector space with the basis . Which of these completes the following definition for a bijective linear map ?            Every vector space with finite dimension, that is, every vector space with a basis of the form has a linear bijection with Euclidean space that simply swaps its basis with the standard basis for : This transformation (in fact, any linear bijection between vector spaces) is called an isomorphism isomorphism , and is said to be isomorphic isomorphic to .  Note, in particular, that every vector space of dimension is isomorphic to .      Consider the matrix space and the following set of matrices:     Does the set span ?   No; the matrix is not a linear combination of the matrices in .    No; the matrix is not a linear combination of the matrices in .    No; the matrix is not a linear combination of the matrices in .    Yes, every matrix in is a linear combination of the matrices in .       Is the set linearly independent?   No; the matrix is a linear combination of the other matrices in .    No; the matrix is a linear combination of the other matrices in .    No; the matrix is a linear combination of the other matrices in .    Yes; no matrix in is a linear combination of the other matrices in .       What statement do you think best describes the set   is linearly independent  spans  is a basis of  is a basis of      What is the dimension of ?  2  3  4  5      Which Euclidean space is isomorphic to?          Describe an isomorphism :       Consider polynomial space and the following set:     Does the set span ?   No; the polynomial is not a linear combination of the polynomials in .    No; the polynomial is not a linear combination of the polynomials in .    No; the polynomial is not a linear combination of the polynomials in .    Yes; every polynomial in is a linear combination of the polynomials in .       Is the set linearly independent?   No; the polynomial is a linear combination of the other polynomials in .    No; the polynomial is a linear combination of the other polynomials in .    No; the polynomial is a linear combination of the other polynomials in .    Yes; no polynomial in is a linear combination of the other polynomials in .       What statement do you think best describes the set   is linearly independent  spans  is a basis of      What is the dimension of ?  2  3  4  5      Which Euclidean space is isomorphic to?          Describe an isomorphism :      Since any finite-dimensional vector space is isomorphic to a Euclidean space , one approach to answering questions about such spaces is to answer the corresponding question about .     Consider how to construct the polynomial as a linear combination of polynomials from the set .    Describe the vector space involved in this problem, and an isomorphic Euclidean space, and relevant Euclidean vectors that can be used to solve this problem.    Show how to construct an appropriate Euclidean vector from an appropriate set of Euclidean vectors.    Use this result to answer the original question.     The space of polynomials (of any degree) has the basis , so it is a natural example of an infinite-dimensional vector space.  Since and other infinite-dimensional vector spaces cannot be treated as an isomorphic finite-dimensional Euclidean space , vectors in such vector spaces cannot be studied by converting them into Euclidean vectors. Fortunately, most of the examples we will be interested in for this course will be finite-dimensional.     Individual Practice    Let and let denote the corresponding linear transformation. Note that The following statements are all invalid for at least one reason. Determine what makes them invalid and, suggest alternative valid statements that the author may have meant instead.    The matrix is injective because has a pivot in each column.    The matrix does not span because has a row of zeroes.    The transformation does not span .    The transformation is linearly independent.      Videos   Video: Polynomial and matrix calculations      Exercises  Exercises available at .    Mathematical Writing Explorations   Given a matrix   the span of the set of all columns is the column space column space  the span of the set of all rows is the row space row space  the rank rank of a matrix is the dimension of the column space.  Calculate the rank of these matrices.              Calculate a basis for the row space and a basis for the column space of the matrix .    If you are given the values of and , what value of will cause the matrix to have rank 1?     Sample Problem and Solution  Sample problem .   "
+  "body": " Polynomial and Matrix Spaces (AT6)     Answer questions about vector spaces of polynomials or matrices.      Warm Up    Consider the following vector equation and statements about it:    The above vector equation is consistent for every choice of .    When the right hand is equal to , the equation has a unique solution.    The given equation always has a unique solution, no matter what is.     Which, if any, of these statements make sense if we no longer assume that the vectors are Euclidean vectors, but rather elements of a vector space?     Class Activities   Nearly every term we've defined for Euclidean vector spaces was actually defined for all kinds of vector spaces:                                                                   Let be a vector space with the basis . Which of these completes the following definition for a bijective linear map ?            Every vector space with finite dimension, that is, every vector space with a basis of the form has a linear bijection with Euclidean space that simply swaps its basis with the standard basis for : This transformation (in fact, any linear bijection between vector spaces) is called an isomorphism isomorphism , and is said to be isomorphic isomorphic to .  Note, in particular, that every vector space of dimension is isomorphic to .      Consider the matrix space and the following set of matrices:     Does the set span ?   No; the matrix is not a linear combination of the matrices in .    No; the matrix is not a linear combination of the matrices in .    No; the matrix is not a linear combination of the matrices in .    Yes, every matrix in is a linear combination of the matrices in .       Is the set linearly independent?   No; the matrix is a linear combination of the other matrices in .    No; the matrix is a linear combination of the other matrices in .    No; the matrix is a linear combination of the other matrices in .    Yes; no matrix in is a linear combination of the other matrices in .       What statement do you think best describes the set   is linearly independent  spans  is a basis of  is a basis of      What is the dimension of ?  2  3  4  5      Which Euclidean space is isomorphic to?          Describe an isomorphism :       Consider polynomial space and the following set:     Does the set span ?   No; the polynomial is not a linear combination of the polynomials in .    No; the polynomial is not a linear combination of the polynomials in .    No; the polynomial is not a linear combination of the polynomials in .    Yes; every polynomial in is a linear combination of the polynomials in .       Is the set linearly independent?   No; the polynomial is a linear combination of the other polynomials in .    No; the polynomial is a linear combination of the other polynomials in .    No; the polynomial is a linear combination of the other polynomials in .    Yes; no polynomial in is a linear combination of the other polynomials in .       What statement do you think best describes the set   is linearly independent  spans  is a basis of      What is the dimension of ?  2  3  4  5      Which Euclidean space is isomorphic to?          Describe an isomorphism :      Since any finite-dimensional vector space is isomorphic to a Euclidean space , one approach to answering questions about such spaces is to answer the corresponding question about .     Consider how to construct the polynomial as a linear combination of polynomials from the set .    Describe the vector space involved in this problem, and an isomorphic Euclidean space, and relevant Euclidean vectors that can be used to solve this problem.    Show how to construct an appropriate Euclidean vector from an appropriate set of Euclidean vectors.    Use this result to answer the original question.     The space of polynomials (of any degree) has the basis , so it is a natural example of an infinite-dimensional vector space.  Since and other infinite-dimensional vector spaces cannot be treated as an isomorphic finite-dimensional Euclidean space , vectors in such vector spaces cannot be studied by converting them into Euclidean vectors. Fortunately, most of the examples we will be interested in for this course will be finite-dimensional.     Individual Practice    Let and let denote the corresponding linear transformation. Note that The following statements are all invalid for at least one reason. Determine what makes them invalid and, suggest alternative valid statements that the author may have meant instead.    The matrix is injective because has a pivot in each column.    The matrix does not span because has a row of zeroes.    The transformation does not span .    The transformation is linearly independent.      Videos   Video: Polynomial and matrix calculations      Exercises  Exercises available at .    Mathematical Writing Explorations    Given a matrix the rank rank of a matrix is the dimension of the column space. Calculate the rank of these matrices.               Calculate a basis for the row space and a basis for the column space of the matrix .    If you are given the values of and , what value of will cause the matrix to have rank 1?     Sample Problem and Solution  Sample problem .   "
 },
 {
   "id": "AT6-2",
@@ -3157,7 +3175,7 @@ var ptx_lunr_docs = [
   "type": "Exploration",
   "number": "3.6.11",
   "title": "",
-  "body": " Given a matrix   the span of the set of all columns is the column space column space  the span of the set of all rows is the row space row space  the rank rank of a matrix is the dimension of the column space.  Calculate the rank of these matrices.            "
+  "body": "  Given a matrix the rank rank of a matrix is the dimension of the column space. Calculate the rank of these matrices.             "
 },
 {
   "id": "AT6-8-3",
