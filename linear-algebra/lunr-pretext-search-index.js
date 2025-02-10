@@ -907,7 +907,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.2",
   "title": "Spanning Sets (EV2)",
-  "body": " Spanning Sets (EV2)     Determine if a set of Euclidean vectors spans by solving appropriate vector equations.      Warm Up    Given a set of ingredients and a meal, a recipe is a list of amounts of each ingredient required to prepare the given meal.    Use the words vector and linear combination to create a new statement that is analogous to one above.    Building on your analogy, what role might the word span play?     Class Activities   Any single non-zero vector\/number in spans , since .   An vector         How many vectors are required to span ? Sketch a drawing in the plane to support your answer.   The plane                            Infinitely Many        How many vectors are required to span ?   space                            Infinitely Many        At least vectors are required to span .   Failed attempts to span by vectors          Consider the question: Does every vector in belong to ?    Determine if belongs to .   The vector belongs to the span.    Determine if belongs to .   The vector belongs to the span.    Determine if belongs to .   The vector does not belong to the span.      We'd prefer a more methodical method to decide if every vector in belongs to some spanning set, compared to the guess-and-check method we used in .    An arbitrary vector belongs to provided the equation has...  no solutions.  exactly one solution.  at least one solution.  infinitely-many solutions.     A.    We're guaranteed at least one solution if the RREF of the corresponding augmented matrix has no contradictions; likewise, we have no solutions if the RREF corresponds to the contradiction . Given we may conclude that the set does not span all of because...  the row prevents a contradiction.  the row allows a contradiction.  the row prevents a contradiction.  the row allows a contradiction.     D.      The set spans all of exactly when the vector equation is consistent for every vector .  Likewise, the set fails to span all of exactly when the vector equation is inconsistent for some vector .  Note these two possibilities are decided based on whether or not the RREF of the vector equation's coefficient matrix (that is, ) has either all pivot rows, or at least one non-pivot row (a row of zeroes): .      Consider the set of vectors and the question Does ?    Rewrite this question in terms of the solutions to a vector equation.  Answer your new question, and use this to answer the original question.       Let be three Euclidean vectors, and suppose is another vector with . What can you conclude about ?    is larger than .   is the same as .   is smaller than .       Individual Practice    One of our important results in this lesson is , which states that a set of vectors is required to span . While we developed some geometric intuition for why this true, we did not prove it in class. Before coming to class next time, follow the steps outlined below to convince yourself of this fact using the concepts we learned in this lesson.    Let be a set of vectors living in and assume that . How many rows and how many columns will the matrix have?    Given no additional information about the vectors , what is the maximum possible number of pivots in ?    Conclude that our given set of vector cannot span all of .      Videos   Video: Determining if a set spans a Euclidean space      Exercises  Exercises available at .    Mathematical Writing Explorations   Construct each of the following, or show that it is impossible:  A set of 2 vectors that spans  A set of 3 vectors that spans  A set of 3 vectors that does not span  A set of 4 vectors that spans  For any of the sets you constructed that did span the required vector space, are any of the vectors a linear combination of the others in your set?    Based on these results, generalize this a conjecture about how a set of and vectors would or would not span .     Sample Problem and Solution  Sample problem .   "
+  "body": " Spanning Sets (EV2)     Determine if a set of Euclidean vectors spans by solving appropriate vector equations.      Warm Up    Given a set of ingredients and a meal, a recipe is a list of amounts of each ingredient required to prepare the given meal.    Use the words vector and linear combination to create a new statement that is analogous to one above.    Building on your analogy, what role might the word span play?     Class Activities   Any single non-zero vector\/number in spans , since .   An vector         How many vectors are required to span ? Sketch a drawing in the plane to support your answer.   The plane                            Infinitely Many        How many vectors are required to span ?   space                            Infinitely Many        At least vectors are required to span .   Failed attempts to span by vectors          Consider the question: Does every vector in belong to ?    Determine if belongs to .   The vector belongs to the span.    Given this result, do we now know whether every vector in belongs to ?   No; we've checked one vector, but that doesn't mean some other vector can't fail to belong.    Determine if belongs to .   The vector belongs to the span.    Determine if belongs to .   The vector does not belong to the span.    Fix the SageMath code below to visualize .     v2 = vector([-2,0,1]) v3 = vector([-2,-2,2]) # ... linear_combo = a*v1 + b*v2 + c*v3       We'd prefer a more methodical method to decide if every vector in belongs to some spanning set, compared to the guess-and-check methods we used in .    An arbitrary vector belongs to provided the equation has...  no solutions.  exactly one solution.  at least one solution.  infinitely-many solutions.     A.    We're guaranteed at least one solution if the RREF of the corresponding augmented matrix has no contradictions; likewise, we have no solutions if the RREF corresponds to the contradiction . Given we may conclude that the set does not span all of because...  the row prevents a contradiction.  the row allows a contradiction.  the row prevents a contradiction.  the row allows a contradiction.     D.      The set spans all of exactly when the vector equation is consistent for every vector .  Likewise, the set fails to span all of exactly when the vector equation is inconsistent for some vector .  Note these two possibilities are decided based on whether or not the RREF of the vector equation's coefficient matrix (that is, ) has either all pivot rows, or at least one non-pivot row (a row of zeroes): .      Consider the set of vectors and the question Does ?    Rewrite this question in terms of the solutions to a vector equation.  Answer your new question, and use this to answer the original question.       Let be three Euclidean vectors, and suppose is another vector with . What can you conclude about ?    is larger than .   is the same as .   is smaller than .       Individual Practice    One of our important results in this lesson is , which states that a set of vectors is required to span . While we developed some geometric intuition for why this true, we did not prove it in class. Before coming to class next time, follow the steps outlined below to convince yourself of this fact using the concepts we learned in this lesson.    Let be a set of vectors living in and assume that . How many rows and how many columns will the matrix have?    Given no additional information about the vectors , what is the maximum possible number of pivots in ?    Conclude that our given set of vector cannot span all of .      Videos   Video: Determining if a set spans a Euclidean space      Exercises  Exercises available at .    Mathematical Writing Explorations   Construct each of the following, or show that it is impossible:  A set of 2 vectors that spans  A set of 3 vectors that spans  A set of 3 vectors that does not span  A set of 4 vectors that spans  For any of the sets you constructed that did span the required vector space, are any of the vectors a linear combination of the others in your set?    Based on these results, generalize this a conjecture about how a set of and vectors would or would not span .     Sample Problem and Solution  Sample problem .   "
 },
 {
   "id": "EV2-2",
@@ -970,7 +970,7 @@ var ptx_lunr_docs = [
   "type": "Activity",
   "number": "2.2.6",
   "title": "",
-  "body": "  Consider the question: Does every vector in belong to ?    Determine if belongs to .   The vector belongs to the span.    Determine if belongs to .   The vector belongs to the span.    Determine if belongs to .   The vector does not belong to the span.   "
+  "body": "  Consider the question: Does every vector in belong to ?    Determine if belongs to .   The vector belongs to the span.    Given this result, do we now know whether every vector in belongs to ?   No; we've checked one vector, but that doesn't mean some other vector can't fail to belong.    Determine if belongs to .   The vector belongs to the span.    Determine if belongs to .   The vector does not belong to the span.    Fix the SageMath code below to visualize .     v2 = vector([-2,0,1]) v3 = vector([-2,-2,2]) # ... linear_combo = a*v1 + b*v2 + c*v3    "
 },
 {
   "id": "EV2-4-7",
@@ -979,7 +979,7 @@ var ptx_lunr_docs = [
   "type": "Activity",
   "number": "2.2.7",
   "title": "",
-  "body": "  We'd prefer a more methodical method to decide if every vector in belongs to some spanning set, compared to the guess-and-check method we used in .    An arbitrary vector belongs to provided the equation has...  no solutions.  exactly one solution.  at least one solution.  infinitely-many solutions.     A.    We're guaranteed at least one solution if the RREF of the corresponding augmented matrix has no contradictions; likewise, we have no solutions if the RREF corresponds to the contradiction . Given we may conclude that the set does not span all of because...  the row prevents a contradiction.  the row allows a contradiction.  the row prevents a contradiction.  the row allows a contradiction.     D.   "
+  "body": "  We'd prefer a more methodical method to decide if every vector in belongs to some spanning set, compared to the guess-and-check methods we used in .    An arbitrary vector belongs to provided the equation has...  no solutions.  exactly one solution.  at least one solution.  infinitely-many solutions.     A.    We're guaranteed at least one solution if the RREF of the corresponding augmented matrix has no contradictions; likewise, we have no solutions if the RREF corresponds to the contradiction . Given we may conclude that the set does not span all of because...  the row prevents a contradiction.  the row allows a contradiction.  the row prevents a contradiction.  the row allows a contradiction.     D.   "
 },
 {
   "id": "EV2-4-8",
@@ -1051,7 +1051,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.3",
   "title": "Subspaces (EV3)",
-  "body": " Subspaces (EV3)     Determine if a subset of is a subspace or not.      Warm Up    Consider the linear equation     Verify that both and are solutions.    Is the vector also a solution?     Class Activities   Recall that if is subset of vectors in , then is the set of all linear combinations of vectors in . In EV2 ( ), we learned how to decide whether was equal to all of or something strictly smaller.     Let denote a set of vectors in and suppose that , and that . Which of the following vectors might not belong to ?            A homogeneous homogeneous system of linear equations is one of the form:   This system is equivalent to the vector equation: and the augmented matrix:       Consider the homogeneous vector equation .   Is this equation consistent?   no.    yes.    more information is required.     Note that if and are both solutions, we know that . Therefore by adding these equations:  we may conclude that the vector is...   another solution.    not a solution.    is equal to .     Similarly, if , then since multiplying by yields: we may conclude that the vector is...   another solution.    not a solution.    is equal to .    The empty set.       If is any set of vectors in , then the set has the following properties:   the set is non-empty.    the set is closed under addition: for any , the sum is also in .    the set is closed under scalar multiplication: for any and scalar , the product is also in .   Likewise, if is the solution set to a homogenous vector equation, it too satisfies:   the set is non-empty.    the set is closed under addition: for any , the sum is also in .    the set is closed under scalar multiplication: for any and scalar , the product is also in .        A subset of a vector space is called a subspace subspace provided that it satisfies the following properties:   the subset is non-empty.    the subset is closed under addition vector space closed under addition : for any , the sum is also in .    the subset is closed under scalar multiplication vector space closed under scalar multiplication : for any and scalar , the product is also in .        Note the similarities between a planar subspace spanned by two non-colinear vectors in , and the Euclidean plane . While they are not the same thing (and shouldn't be referred to interchangeably), algebraists call such similar spaces isomorphic isomorphic ; we'll learn what this means more carefully in a later chapter.   A planar subset of compared with the plane .   A planar subset of compared with the plane .        Let .    Is the empty set?   Let's assume that and are in . What are we allowed to assume?    .     .    Both of these.    Neither of these.     Which equation must be verified to show that also belongs to ?    .     .     .     Use the assumptions from (a) to verify the equation from (b).  Is is a subspace of ?   Yes    No    Not enough information     Show that also belongs to for any by verifying under these assumptions.  Is is a subspace of ?   Yes    No    Not enough information        Let .    Is the empty set?   Which of these statements is valid?    , and  , so  is a subspace.     , and  , so  is not a subspace.     , but  , so  is a subspace.     , but  , so  is not a subspace.     Which of these statements is valid?    , and  , so  is a subspace.     , and  , so  is not a subspace.     , but  , so  is a subspace.     , but  , so  is not a subspace.       In summary, any one of the following is enough to prove that a nonempty subset is not a subspace:   Find specific values for such that .    Find specific values for such that .    Show that .     If you cannot do any of these, then can be proven to be a subspace by doing all of the following:   Show that is non-empty.    For all (not just specific values), .    For all and (not just specific values), .        Consider these subsets of : .   Show isn't a subspace by showing that .  Show isn't a subspace by finding two vectors such that .  Show isn't a subspace by finding a vector such that .     Consider the following two sets of Euclidean vectors:   Explain why one of these sets is a subspace of and one is not.      Consider the following attempted proof that is closed under scalar multiplication.   Let , so we know that . We want to show , that is, . This is verified by the following calculation:    Is this reasoning valid?   Yes    No        Proofs of an equality should generally be of one of these forms:   Using a chain of equalities: Alternatively:     When the assumption is already known or assumed to be true :        The following proof is invalid . Basically, you cannot prove something is true by assuming it's true, and it's not helpful to prove to someone that zero equals itself (they probably already know that).     Individual Practice   Recall that in we used the words vector , linear combination , and span to make an analogy with recipes, ingredients, and meals. In this analogy, a recipe was defined to be a list of amounts of each ingredient to build a particular meal.     Given the set of ingredients , how should we think of the subspace ?    What is one meal that lives in the subspace ?    What is one meal that does not live in the subspace ?      Let The set is a subspace. Below are two attempted proofs of the fact that is closed under vector addition. Both of them are invalid; explain why.    Let Then both are elements of . Their sum is and since it follows that is also in and so is closed under vector addition.    If are in , we need to show that is also in W. To be in , we need Well, if then we know that by moving everything over to the left hand side. Since we are assuming that and , it follows that , which is true, which proves that vector addition is closed.      Videos   Video: Showing that a subset of a vector space is a subspace     Video: Showing that a subset of a vector space is not a subspace      Exercises  Exercises available at .    Mathematical Writing Explorations   A square matrix is symmetric symmetric matrix if, for each index , the entries . That is, the matrix is itself when reflected over the diagonal from upper left to lower right. Prove that the set of symmetric matrices is a subspace of .    The space of all real-valued function of one real variable is a vector space. First, define and for this vector space. Check that you have closure (both kinds!) and show what the zero vector is under your chosen addition. Decide if each of the following is a subspace. If so, prove it. If not, provide the counterexample.  The set of even functions, .  The set of odd functions, .     Give an example of each of these, or explain why it's not possible that such a thing would exist.  A nonempty subset of that is not a subspace.  A set of two vectors in that is not a spanning set.     Let be a vector space and a subset of . Show that the span of is a subspace. Is it possible that there is a subset of containing fewer vectors than , but whose span contains all of the vectors in the span of ?    Sample Problem and Solution  Sample problem .   "
+  "body": " Subspaces (EV3)     Determine if a subset of is a subspace or not.      Warm Up    Consider the linear equation     Verify that both and are solutions.    Is the vector also a solution?     Class Activities   Recall that if is subset of vectors in , then is the set of all linear combinations of vectors in . In EV2 ( ), we learned how to decide whether was equal to all of or something strictly smaller.     Let's consider the relationship between vectors within a spanning set.    Let denote a set of vectors in and suppose that . Which of the following vectors might not belong to ?         C    More generally, let denote a set of vectors in and suppose that and . Which of the following vectors must belong to ?     All of these     D      A homogeneous homogeneous system of linear equations is one of the form:   This system is equivalent to the vector equation: and the augmented matrix:       Consider an arbitrary homogeneous vector equation .   Is this equation consistent?   No, it has no solutions.    Yes, it is guaranteed to have at least one solution.    More information is required.     Suppose that and are both solutions to the homogeneous vector equation . This means that . Therefore by adding these equations:  we may conclude that the vector is...   another solution.    not a solution.    is equal to .     More generally, if and are both solutions to , we know that . Therefore by adding these equations:  we may conclude that the vector is...   another solution.    not a solution.    is equal to .     Similarly, if is a solution and , we know first that and by multiplying both sides by we also know Thus we may conclude that the vector is...   another solution.    not a solution.    is equal to .       If is any set of vectors in , then the set has the following properties:   the set is non-empty.    the set is closed under addition : for any , the sum is also in .    the set is closed under scalar multiplication : for any and scalar , the product is also in .   Likewise, if is the solution set to a homogenous vector equation, it too satisfies:   the set is non-empty.    the set is closed under addition : for any , the sum is also in .    the set is closed under scalar multiplication : for any and scalar , the product is also in .        A subset of a vector space is called a subspace subspace provided that it satisfies the following properties:   the subset is non-empty.    the subset is closed under addition vector space closed under addition : for any , the sum is also in .    the subset is closed under scalar multiplication vector space closed under scalar multiplication : for any and scalar , the product is also in .        Note the similarities between a planar subspace spanned by two non-colinear vectors in , and the Euclidean plane . While they are not the same thing (and shouldn't be referred to interchangeably), algebraists call such similar spaces isomorphic isomorphic ; we'll learn what this means more carefully in a later chapter.   A planar subset of compared with the plane .   A planar subset of compared with the plane .        To show that sets of Euclidean vectors form subspaces, we will need to prove that certain equalities hold.  Consider the following argument that :   Is this reasoning valid?   Yes    No        Proofs of an equality should generally be of one of these forms:   Using a chain of equalities: Alternatively:     When the assumption is already known or assumed to be true :        The following proof of is invalid . This is instead a proof that , assuming that is true in the first place. But the fact that doesn't need a proof, and this work fails to guarantee that will be true, as we saw in .     Let .    Is the empty set?   Let's assume that and are in . What are we allowed to assume?    .     .    Both of these.    Neither of these.     Which equation must be verified to show that also belongs to ?    .     .     .     Use the assumptions from (a) to verify the equation from (b).  Is is a subspace of ?   Yes    No    Not enough information     Show that also belongs to for any by verifying under these assumptions.  Is is a subspace of ?   Yes    No    Not enough information        Let .    Is the empty set?   Which of these statements is valid?    , and  , so  is a subspace.     , and  , so  is not a subspace.     , but  , so  is a subspace.     , but  , so  is not a subspace.     Which of these statements is valid?    , and  , so  is a subspace.     , and  , so  is not a subspace.     , but  , so  is a subspace.     , but  , so  is not a subspace.       In summary, any one of the following is enough to prove that a nonempty subset is not a subspace:   Find specific values for such that .    Find specific values for such that .    Show that .     If you cannot do any of these, then can be proven to be a subspace by doing all of the following:   Show that is non-empty.    For all (not just specific values), .    For all and (not just specific values), .        Consider these subsets of : .   Show isn't a subspace by showing that .  Show isn't a subspace by finding two vectors such that .  Show isn't a subspace by finding a vector such that .     Consider the following two sets of Euclidean vectors:   Explain why one of these sets is a subspace of and one is not.      Consider the following attempted proof that is closed under scalar multiplication.   Let , so we know that . We want to show , that is, . This is verified by the following calculation:    Is this reasoning valid?   Yes    No         Individual Practice   Recall that in we used the words vector , linear combination , and span to make an analogy with recipes, ingredients, and meals. In this analogy, a recipe was defined to be a list of amounts of each ingredient to build a particular meal.     Given the set of ingredients , how should we think of the subspace ?    What is one meal that lives in the subspace ?    What is one meal that does not live in the subspace ?      Let The set is a subspace. Below are two attempted proofs of the fact that is closed under vector addition. Both of them are invalid; explain why.    Let Then both are elements of . Their sum is and since it follows that is also in and so is closed under vector addition.    If are in , we need to show that is also in W. To be in , we need Well, if then we know that by moving everything over to the left hand side. Since we are assuming that and , it follows that , which is true, which proves that vector addition is closed.      Videos   Video: Showing that a subset of a vector space is a subspace     Video: Showing that a subset of a vector space is not a subspace      Exercises  Exercises available at .    Mathematical Writing Explorations   A square matrix is symmetric symmetric matrix if, for each index , the entries . That is, the matrix is itself when reflected over the diagonal from upper left to lower right. Prove that the set of symmetric matrices is a subspace of .    The space of all real-valued function of one real variable is a vector space. First, define and for this vector space. Check that you have closure (both kinds!) and show what the zero vector is under your chosen addition. Decide if each of the following is a subspace. If so, prove it. If not, provide the counterexample.  The set of even functions, .  The set of odd functions, .     Give an example of each of these, or explain why it's not possible that such a thing would exist.  A nonempty subset of that is not a subspace.  A set of two vectors in that is not a spanning set.     Let be a vector space and a subset of . Show that the span of is a subspace. Is it possible that there is a subset of containing fewer vectors than , but whose span contains all of the vectors in the span of ?    Sample Problem and Solution  Sample problem .   "
 },
 {
   "id": "EV3-2",
@@ -1087,7 +1087,7 @@ var ptx_lunr_docs = [
   "type": "Activity",
   "number": "2.3.3",
   "title": "",
-  "body": "  Let denote a set of vectors in and suppose that , and that . Which of the following vectors might not belong to ?         "
+  "body": "  Let's consider the relationship between vectors within a spanning set.    Let denote a set of vectors in and suppose that . Which of the following vectors might not belong to ?         C    More generally, let denote a set of vectors in and suppose that and . Which of the following vectors must belong to ?     All of these     D   "
 },
 {
   "id": "EV3-4-4",
@@ -1105,7 +1105,7 @@ var ptx_lunr_docs = [
   "type": "Activity",
   "number": "2.3.5",
   "title": "",
-  "body": "  Consider the homogeneous vector equation .   Is this equation consistent?   no.    yes.    more information is required.     Note that if and are both solutions, we know that . Therefore by adding these equations:  we may conclude that the vector is...   another solution.    not a solution.    is equal to .     Similarly, if , then since multiplying by yields: we may conclude that the vector is...   another solution.    not a solution.    is equal to .    The empty set.     "
+  "body": "  Consider an arbitrary homogeneous vector equation .   Is this equation consistent?   No, it has no solutions.    Yes, it is guaranteed to have at least one solution.    More information is required.     Suppose that and are both solutions to the homogeneous vector equation . This means that . Therefore by adding these equations:  we may conclude that the vector is...   another solution.    not a solution.    is equal to .     More generally, if and are both solutions to , we know that . Therefore by adding these equations:  we may conclude that the vector is...   another solution.    not a solution.    is equal to .     Similarly, if is a solution and , we know first that and by multiplying both sides by we also know Thus we may conclude that the vector is...   another solution.    not a solution.    is equal to .     "
 },
 {
   "id": "EV3-4-6",
@@ -1114,7 +1114,7 @@ var ptx_lunr_docs = [
   "type": "Observation",
   "number": "2.3.6",
   "title": "",
-  "body": " If is any set of vectors in , then the set has the following properties:   the set is non-empty.    the set is closed under addition: for any , the sum is also in .    the set is closed under scalar multiplication: for any and scalar , the product is also in .   Likewise, if is the solution set to a homogenous vector equation, it too satisfies:   the set is non-empty.    the set is closed under addition: for any , the sum is also in .    the set is closed under scalar multiplication: for any and scalar , the product is also in .     "
+  "body": " If is any set of vectors in , then the set has the following properties:   the set is non-empty.    the set is closed under addition : for any , the sum is also in .    the set is closed under scalar multiplication : for any and scalar , the product is also in .   Likewise, if is the solution set to a homogenous vector equation, it too satisfies:   the set is non-empty.    the set is closed under addition : for any , the sum is also in .    the set is closed under scalar multiplication : for any and scalar , the product is also in .     "
 },
 {
   "id": "EV3-definition-subspace",
@@ -1135,31 +1135,31 @@ var ptx_lunr_docs = [
   "body": " Note the similarities between a planar subspace spanned by two non-colinear vectors in , and the Euclidean plane . While they are not the same thing (and shouldn't be referred to interchangeably), algebraists call such similar spaces isomorphic isomorphic ; we'll learn what this means more carefully in a later chapter.   A planar subset of compared with the plane .   A planar subset of compared with the plane .     "
 },
 {
-  "id": "EV3-4-9",
+  "id": "EV3-invalid-proof",
   "level": "2",
-  "url": "EV3.html#EV3-4-9",
+  "url": "EV3.html#EV3-invalid-proof",
   "type": "Activity",
   "number": "2.3.9",
   "title": "",
-  "body": "  Let .    Is the empty set?   Let's assume that and are in . What are we allowed to assume?    .     .    Both of these.    Neither of these.     Which equation must be verified to show that also belongs to ?    .     .     .     Use the assumptions from (a) to verify the equation from (b).  Is is a subspace of ?   Yes    No    Not enough information     Show that also belongs to for any by verifying under these assumptions.  Is is a subspace of ?   Yes    No    Not enough information     "
+  "body": "  To show that sets of Euclidean vectors form subspaces, we will need to prove that certain equalities hold.  Consider the following argument that :   Is this reasoning valid?   Yes    No      "
 },
 {
   "id": "EV3-4-10",
   "level": "2",
   "url": "EV3.html#EV3-4-10",
-  "type": "Activity",
+  "type": "Remark",
   "number": "2.3.10",
   "title": "",
-  "body": "  Let .    Is the empty set?   Which of these statements is valid?    , and  , so  is a subspace.     , and  , so  is not a subspace.     , but  , so  is a subspace.     , but  , so  is not a subspace.     Which of these statements is valid?    , and  , so  is a subspace.     , and  , so  is not a subspace.     , but  , so  is a subspace.     , but  , so  is not a subspace.     "
+  "body": " Proofs of an equality should generally be of one of these forms:   Using a chain of equalities: Alternatively:     When the assumption is already known or assumed to be true :      "
 },
 {
-  "id": "EV3-subspace-check",
+  "id": "EV3-4-11",
   "level": "2",
-  "url": "EV3.html#EV3-subspace-check",
-  "type": "Remark",
+  "url": "EV3.html#EV3-4-11",
+  "type": "Warning",
   "number": "2.3.11",
   "title": "",
-  "body": " In summary, any one of the following is enough to prove that a nonempty subset is not a subspace:   Find specific values for such that .    Find specific values for such that .    Show that .     If you cannot do any of these, then can be proven to be a subspace by doing all of the following:   Show that is non-empty.    For all (not just specific values), .    For all and (not just specific values), .     "
+  "body": " The following proof of is invalid . This is instead a proof that , assuming that is true in the first place. But the fact that doesn't need a proof, and this work fails to guarantee that will be true, as we saw in .  "
 },
 {
   "id": "EV3-4-12",
@@ -1168,7 +1168,7 @@ var ptx_lunr_docs = [
   "type": "Activity",
   "number": "2.3.12",
   "title": "",
-  "body": "  Consider these subsets of : .   Show isn't a subspace by showing that .  Show isn't a subspace by finding two vectors such that .  Show isn't a subspace by finding a vector such that .  "
+  "body": "  Let .    Is the empty set?   Let's assume that and are in . What are we allowed to assume?    .     .    Both of these.    Neither of these.     Which equation must be verified to show that also belongs to ?    .     .     .     Use the assumptions from (a) to verify the equation from (b).  Is is a subspace of ?   Yes    No    Not enough information     Show that also belongs to for any by verifying under these assumptions.  Is is a subspace of ?   Yes    No    Not enough information     "
 },
 {
   "id": "EV3-4-13",
@@ -1177,41 +1177,50 @@ var ptx_lunr_docs = [
   "type": "Activity",
   "number": "2.3.13",
   "title": "",
-  "body": "  Consider the following two sets of Euclidean vectors:   Explain why one of these sets is a subspace of and one is not.   "
+  "body": "  Let .    Is the empty set?   Which of these statements is valid?    , and  , so  is a subspace.     , and  , so  is not a subspace.     , but  , so  is a subspace.     , but  , so  is not a subspace.     Which of these statements is valid?    , and  , so  is a subspace.     , and  , so  is not a subspace.     , but  , so  is a subspace.     , but  , so  is not a subspace.     "
 },
 {
-  "id": "EV3-4-14",
+  "id": "EV3-subspace-check",
   "level": "2",
-  "url": "EV3.html#EV3-4-14",
-  "type": "Activity",
+  "url": "EV3.html#EV3-subspace-check",
+  "type": "Remark",
   "number": "2.3.14",
   "title": "",
-  "body": "  Consider the following attempted proof that is closed under scalar multiplication.   Let , so we know that . We want to show , that is, . This is verified by the following calculation:    Is this reasoning valid?   Yes    No      "
+  "body": " In summary, any one of the following is enough to prove that a nonempty subset is not a subspace:   Find specific values for such that .    Find specific values for such that .    Show that .     If you cannot do any of these, then can be proven to be a subspace by doing all of the following:   Show that is non-empty.    For all (not just specific values), .    For all and (not just specific values), .     "
 },
 {
   "id": "EV3-4-15",
   "level": "2",
   "url": "EV3.html#EV3-4-15",
-  "type": "Remark",
+  "type": "Activity",
   "number": "2.3.15",
   "title": "",
-  "body": " Proofs of an equality should generally be of one of these forms:   Using a chain of equalities: Alternatively:     When the assumption is already known or assumed to be true :      "
+  "body": "  Consider these subsets of : .   Show isn't a subspace by showing that .  Show isn't a subspace by finding two vectors such that .  Show isn't a subspace by finding a vector such that .  "
 },
 {
   "id": "EV3-4-16",
   "level": "2",
   "url": "EV3.html#EV3-4-16",
-  "type": "Warning",
+  "type": "Activity",
   "number": "2.3.16",
   "title": "",
-  "body": " The following proof is invalid . Basically, you cannot prove something is true by assuming it's true, and it's not helpful to prove to someone that zero equals itself (they probably already know that).  "
+  "body": "  Consider the following two sets of Euclidean vectors:   Explain why one of these sets is a subspace of and one is not.   "
+},
+{
+  "id": "EV3-invalid-proof-2",
+  "level": "2",
+  "url": "EV3.html#EV3-invalid-proof-2",
+  "type": "Activity",
+  "number": "2.3.17",
+  "title": "",
+  "body": "  Consider the following attempted proof that is closed under scalar multiplication.   Let , so we know that . We want to show , that is, . This is verified by the following calculation:    Is this reasoning valid?   Yes    No      "
 },
 {
   "id": "EV3-5-2",
   "level": "2",
   "url": "EV3.html#EV3-5-2",
   "type": "Remark",
-  "number": "2.3.17",
+  "number": "2.3.18",
   "title": "",
   "body": " Recall that in we used the words vector , linear combination , and span to make an analogy with recipes, ingredients, and meals. In this analogy, a recipe was defined to be a list of amounts of each ingredient to build a particular meal.  "
 },
@@ -1220,7 +1229,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "EV3.html#EV3-5-3",
   "type": "Activity",
-  "number": "2.3.18",
+  "number": "2.3.19",
   "title": "",
   "body": "  Given the set of ingredients , how should we think of the subspace ?    What is one meal that lives in the subspace ?    What is one meal that does not live in the subspace ?   "
 },
@@ -1229,7 +1238,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "EV3.html#EV3-5-4",
   "type": "Activity",
-  "number": "2.3.19",
+  "number": "2.3.20",
   "title": "",
   "body": "  Let The set is a subspace. Below are two attempted proofs of the fact that is closed under vector addition. Both of them are invalid; explain why.    Let Then both are elements of . Their sum is and since it follows that is also in and so is closed under vector addition.    If are in , we need to show that is also in W. To be in , we need Well, if then we know that by moving everything over to the left hand side. Since we are assuming that and , it follows that , which is true, which proves that vector addition is closed.   "
 },
@@ -1256,7 +1265,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "EV3.html#EV3-8-2",
   "type": "Exploration",
-  "number": "2.3.20",
+  "number": "2.3.21",
   "title": "",
   "body": " A square matrix is symmetric symmetric matrix if, for each index , the entries . That is, the matrix is itself when reflected over the diagonal from upper left to lower right. Prove that the set of symmetric matrices is a subspace of .  "
 },
@@ -1265,7 +1274,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "EV3.html#EV3-8-3",
   "type": "Exploration",
-  "number": "2.3.21",
+  "number": "2.3.22",
   "title": "",
   "body": " The space of all real-valued function of one real variable is a vector space. First, define and for this vector space. Check that you have closure (both kinds!) and show what the zero vector is under your chosen addition. Decide if each of the following is a subspace. If so, prove it. If not, provide the counterexample.  The set of even functions, .  The set of odd functions, .   "
 },
@@ -1274,7 +1283,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "EV3.html#EV3-8-4",
   "type": "Exploration",
-  "number": "2.3.22",
+  "number": "2.3.23",
   "title": "",
   "body": " Give an example of each of these, or explain why it's not possible that such a thing would exist.  A nonempty subset of that is not a subspace.  A set of two vectors in that is not a spanning set.   "
 },
@@ -1283,7 +1292,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "EV3.html#EV3-8-5",
   "type": "Exploration",
-  "number": "2.3.23",
+  "number": "2.3.24",
   "title": "",
   "body": " Let be a vector space and a subset of . Show that the span of is a subspace. Is it possible that there is a subset of containing fewer vectors than , but whose span contains all of the vectors in the span of ? "
 },
