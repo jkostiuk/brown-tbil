@@ -12,7 +12,7 @@
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
-<meta property="og:image" content="https://tbil.org/external/logo.png">
+<meta property="og:image" content="https://tbil.org/external/learning.png">
 <meta property="book:title" content="Linear Algebra for Team-Based Inquiry Learning">
 <meta property="book:author" content="Steven Clontz">
 <meta property="book:author" content="Drew Lewis">
@@ -114,13 +114,13 @@ sagecell.makeSagecell({
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
 <link href="_static/pretext/css/pretext.css" rel="stylesheet" type="text/css">
 <link href="_static/pretext/css/pretext_add_on.css" rel="stylesheet" type="text/css">
-<link href="_static/pretext/css/shell_crc.css" rel="stylesheet" type="text/css">
-<link href="_static/pretext/css/banner_crc.css" rel="stylesheet" type="text/css">
-<link href="_static/pretext/css/navbar_crc.css" rel="stylesheet" type="text/css">
-<link href="_static/pretext/css/toc_crc.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/shell_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/banner_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/navbar_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/toc_default.css" rel="stylesheet" type="text/css">
 <link href="_static/pretext/css/knowls_default.css" rel="stylesheet" type="text/css">
 <link href="_static/pretext/css/style_default.css" rel="stylesheet" type="text/css">
-<link href="_static/pretext/css/colors_green_blue.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/colors_default.css" rel="stylesheet" type="text/css">
 <link href="_static/pretext/css/setcolors.css" rel="stylesheet" type="text/css">
 <style>
 #LE-2-2 { counter-set: LE-2-2 0; }
@@ -306,24 +306,27 @@ sagecell.makeSagecell({
 #EV3-invalid-proof-2-2-3-1 { counter-set: EV3-invalid-proof-2-2-3-1 0; }
 #EV3-invalid-proof-2-2-3-1 > li::marker { content: ""counter(EV3-invalid-proof-2-2-3-1,upper-alpha)"."; }
 #EV3-invalid-proof-2-2-3-1 > li { counter-increment: EV3-invalid-proof-2-2-3-1; }
-#EV4-4-2-1-2 { counter-set: EV4-4-2-1-2 0; }
-#EV4-4-2-1-2 > li::marker { content: ""counter(EV4-4-2-1-2,upper-alpha)"."; }
-#EV4-4-2-1-2 > li { counter-increment: EV4-4-2-1-2; }
-#EV4-4-4-2-1-3 { counter-set: EV4-4-4-2-1-3 0; }
-#EV4-4-4-2-1-3 > li::marker { content: ""counter(EV4-4-4-2-1-3,upper-alpha)"."; }
-#EV4-4-4-2-1-3 > li { counter-increment: EV4-4-4-2-1-3; }
-#EV4-4-4-3-2-2 { counter-set: EV4-4-4-3-2-2 0; }
-#EV4-4-4-3-2-2 > li::marker { content: ""counter(EV4-4-4-3-2-2,upper-alpha)"."; }
-#EV4-4-4-3-2-2 > li { counter-increment: EV4-4-4-3-2-2; }
-#EV4-4-4-4-1-1 { counter-set: EV4-4-4-4-1-1 0; }
-#EV4-4-4-4-1-1 > li::marker { content: ""counter(EV4-4-4-4-1-1,upper-alpha)"."; }
-#EV4-4-4-4-1-1 > li { counter-increment: EV4-4-4-4-1-1; }
-#EV4-4-12-1-2 { counter-set: EV4-4-12-1-2 0; }
-#EV4-4-12-1-2 > li::marker { content: ""counter(EV4-4-12-1-2,upper-alpha)"."; }
-#EV4-4-12-1-2 > li { counter-increment: EV4-4-12-1-2; }
-#EV4-4-13-1-1-2 { counter-set: EV4-4-13-1-1-2 0; }
-#EV4-4-13-1-1-2 > li::marker { content: ""counter(EV4-4-13-1-1-2,upper-alpha)"."; }
-#EV4-4-13-1-1-2 > li { counter-increment: EV4-4-13-1-1-2; }
+#EV4-motivation-1-2 { counter-set: EV4-motivation-1-2 0; }
+#EV4-motivation-1-2 > li::marker { content: ""counter(EV4-motivation-1-2,upper-alpha)"."; }
+#EV4-motivation-1-2 > li { counter-increment: EV4-motivation-1-2; }
+#EV4-4-5-2-1-3 { counter-set: EV4-4-5-2-1-3 0; }
+#EV4-4-5-2-1-3 > li::marker { content: ""counter(EV4-4-5-2-1-3,upper-alpha)"."; }
+#EV4-4-5-2-1-3 > li { counter-increment: EV4-4-5-2-1-3; }
+#EV4-4-5-3-2-2 { counter-set: EV4-4-5-3-2-2 0; }
+#EV4-4-5-3-2-2 > li::marker { content: ""counter(EV4-4-5-3-2-2,upper-alpha)"."; }
+#EV4-4-5-3-2-2 > li { counter-increment: EV4-4-5-3-2-2; }
+#EV4-4-5-4-2-2 { counter-set: EV4-4-5-4-2-2 0; }
+#EV4-4-5-4-2-2 > li::marker { content: ""counter(EV4-4-5-4-2-2,upper-alpha)"."; }
+#EV4-4-5-4-2-2 > li { counter-increment: EV4-4-5-4-2-2; }
+#EV4-4-5-5-1-2 { counter-set: EV4-4-5-5-1-2 0; }
+#EV4-4-5-5-1-2 > li::marker { content: ""counter(EV4-4-5-5-1-2,upper-alpha)"."; }
+#EV4-4-5-5-1-2 > li { counter-increment: EV4-4-5-5-1-2; }
+#EV4-4-13-1-2 { counter-set: EV4-4-13-1-2 0; }
+#EV4-4-13-1-2 > li::marker { content: ""counter(EV4-4-13-1-2,upper-alpha)"."; }
+#EV4-4-13-1-2 > li { counter-increment: EV4-4-13-1-2; }
+#EV4-4-14-1-1-2 { counter-set: EV4-4-14-1-1-2 0; }
+#EV4-4-14-1-1-2 > li::marker { content: ""counter(EV4-4-14-1-1-2,upper-alpha)"."; }
+#EV4-4-14-1-1-2 > li { counter-increment: EV4-4-14-1-1-2; }
 #activity-EV5-intro-4-1-1-3 { counter-set: activity-EV5-intro-4-1-1-3 0; }
 #activity-EV5-intro-4-1-1-3 > li::marker { content: ""counter(activity-EV5-intro-4-1-1-3,upper-alpha)"."; }
 #activity-EV5-intro-4-1-1-3 > li { counter-increment: activity-EV5-intro-4-1-1-3; }
@@ -360,6 +363,15 @@ sagecell.makeSagecell({
 #EV6-4-3-3-1-1 { counter-set: EV6-4-3-3-1-1 0; }
 #EV6-4-3-3-1-1 > li::marker { content: ""counter(EV6-4-3-3-1-1,upper-alpha)"."; }
 #EV6-4-3-3-1-1 > li { counter-increment: EV6-4-3-3-1-1; }
+#EV6-4-5-1-2-2-2 { counter-set: EV6-4-5-1-2-2-2 0; }
+#EV6-4-5-1-2-2-2 > li::marker { content: ""counter(EV6-4-5-1-2-2-2,upper-alpha)"."; }
+#EV6-4-5-1-2-2-2 > li { counter-increment: EV6-4-5-1-2-2-2; }
+#EV6-4-5-1-2-3-2 { counter-set: EV6-4-5-1-2-3-2 0; }
+#EV6-4-5-1-2-3-2 > li::marker { content: ""counter(EV6-4-5-1-2-3-2,upper-alpha)"."; }
+#EV6-4-5-1-2-3-2 > li { counter-increment: EV6-4-5-1-2-3-2; }
+#EV6-4-6-1-2 { counter-set: EV6-4-6-1-2 0; }
+#EV6-4-6-1-2 > li::marker { content: ""counter(EV6-4-6-1-2,upper-alpha)"."; }
+#EV6-4-6-1-2 > li { counter-increment: EV6-4-6-1-2; }
 #EV6-4-15-1-1 { counter-set: EV6-4-15-1-1 0; }
 #EV6-4-15-1-1 > li::marker { content: ""counter(EV6-4-15-1-1,upper-alpha)"."; }
 #EV6-4-15-1-1 > li { counter-increment: EV6-4-15-1-1; }
@@ -763,7 +775,7 @@ sagecell.makeSagecell({
 </head>
 <body id="tbilla" class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
-<a id="logo-link" class="logo-link" target="_blank" href=""><img src="external/logo.png" alt="Logo image"></a><div class="title-container">
+<a id="logo-link" class="logo-link" target="_blank" href=""><img src="external/learning.png" alt="Logo image"></a><div class="title-container">
 <h1 class="heading"><a href="linear-algebra-for-team-based-inquiry-learning.html"><span class="title">Linear Algebra for Team-Based Inquiry Learning:</span> <span class="subtitle">Math 0520 Spring 2025 Custom Edition</span></a></h1>
 <p class="byline">Steven Clontz, Drew Lewis</p>
 </div>
@@ -1252,10 +1264,10 @@ y_1\left[\begin{array}{c}1\\1\\1\end{array}\right]+y_2\left[\begin{array}{c}2\\0
 <div class="para" id="EV4-3-2-4-1-1">Use the solution vector you found in part (a) to construct a solution vector to this new equation.</div></article></article></section><section class="subsection" id="EV4-4"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.4.2</span><span class="space"> </span><span class="title">Class Activities</span>
 </h3>
-<article class="activity project-like" id="EV4-4-2"><h4 class="heading">
+<article class="activity project-like" id="EV4-motivation"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.4.2</span><span class="period">.</span>
 </h4>
-<div class="para logical" id="EV4-4-2-1-1">
+<div class="para logical" id="EV4-motivation-1-1">
 <div class="para">Consider the two sets</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -1267,27 +1279,73 @@ T=\left\{
 \left[\begin{array}{c}2\\3\\1\end{array}\right],
 \left[\begin{array}{c}1\\1\\4\end{array}\right],
 \left[\begin{array}{c}-1\\0\\-11\end{array}\right]
-\right\}\text{.}
+\right\}
 \end{equation*}
 </div>
-<div class="para">Which of the following is true?</div>
-</div> <ol class="upper-alpha" id="EV4-4-2-1-2">
-<li id="EV4-4-2-1-2-1"><div class="para" id="p-derived-EV4-4-2-1-2-1">
-<span class="process-math">\(\vspan S\)</span> is bigger than <span class="process-math">\(\vspan T\text{.}\)</span>
+<div class="para">where <span class="process-math">\(T\)</span> contains a vector missing from <span class="process-math">\(S\text{.}\)</span> Which of the following is true?</div>
+</div> <ol class="upper-alpha" id="EV4-motivation-1-2">
+<li id="EV4-motivation-1-2-1"><div class="para" id="p-derived-EV4-motivation-1-2-1">
+<span class="process-math">\(\vspan S\)</span> contains a vector missing from <span class="process-math">\(\vspan T\text{.}\)</span>
 </div></li>
-<li id="EV4-4-2-1-2-2"><div class="para" id="p-derived-EV4-4-2-1-2-2">
-<span class="process-math">\(\vspan S\)</span> and <span class="process-math">\(\vspan T\)</span> are the same size.</div></li>
-<li id="EV4-4-2-1-2-3"><div class="para" id="p-derived-EV4-4-2-1-2-3">
-<span class="process-math">\(\vspan S\)</span> is smaller than <span class="process-math">\(\vspan T\text{.}\)</span>
+<li id="EV4-motivation-1-2-2"><div class="para" id="p-derived-EV4-motivation-1-2-2">
+<span class="process-math">\(\vspan T\)</span> contains a vector missing from <span class="process-math">\(\vspan S\text{.}\)</span>
 </div></li>
+<li id="EV4-motivation-1-2-3"><div class="para" id="p-derived-EV4-motivation-1-2-3">
+<span class="process-math">\(\vspan S\)</span> and <span class="process-math">\(\vspan T\)</span> contain the same vectors.</div></li>
 </ol></article><article class="definition definition-like" id="EV4-definition-independence"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.4.3</span><span class="period">.</span>
 </h4>
 <div class="para" id="EV4-definition-independence-1-1">We say that a set of vectors is <dfn class="terminology">linearly dependent</dfn> if one vector in the set belongs to the span of the others. Otherwise, we say the set is <dfn class="terminology">linearly independent</dfn>.</div> <figure class="figure figure-like" id="EV4-figure-linearly-dependent"><div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="generated/latex-image/EV4-image-linearly-dependent.svg" role="img" class="contained"></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">14<span class="period">.</span></span><span class="space"> </span>A linearly dependent set of three vectors</figcaption></figure> <div class="para" id="EV4-definition-independence-1-3">You can think of linearly dependent sets as containing a redundant vector, in the sense that you can drop a vector out without reducing the span of the set. In the above image, all three vectors lay in the same planar subspace, but only two vectors are needed to span the plane, so the set is linearly dependent.</div></article><article class="activity project-like" id="EV4-4-4"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.4.4</span><span class="period">.</span>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">14<span class="period">.</span></span><span class="space"> </span>A linearly dependent set of three vectors</figcaption></figure> <div class="para" id="EV4-definition-independence-1-3">You can think of linearly dependent sets as containing a redundant vector, in the sense that you can drop a vector out without reducing the span of the set. In the above image, all three vectors lay in the same planar subspace, but only two vectors are needed to span the plane, so the set is linearly dependent.</div></article><article class="remark remark-like" id="EV4-4-4"><h4 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">2.4.4</span><span class="period">.</span>
 </h4>
-<div class="introduction" id="EV4-4-4-1"><div class="para logical" id="EV4-4-4-1-1">
+<div class="para logical" id="EV4-4-4-1">
+<div class="para">In <a href="EV4.html#EV4-motivation" class="xref" data-knowl="./knowl/xref/EV4-motivation.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 2.4.2">Activity 2.4.2</a> we had</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/EV4-motivation.html">
+\begin{equation*}
+S=\left\{
+\left[\begin{array}{c}2\\3\\1\end{array}\right],
+\left[\begin{array}{c}1\\1\\4\end{array}\right]
+\right\} \hspace{1em} \not= \hspace{1em}
+T=\left\{
+\left[\begin{array}{c}2\\3\\1\end{array}\right],
+\left[\begin{array}{c}1\\1\\4\end{array}\right],
+\left[\begin{array}{c}-1\\0\\-11\end{array}\right]
+\right\}
+\end{equation*}
+</div>
+<div class="para">different, while</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/EV4-motivation.html">
+\begin{equation*}
+\vspan S=\left\{
+a\left[\begin{array}{c}2\\3\\1\end{array}\right]+
+b\left[\begin{array}{c}1\\1\\4\end{array}\right] \middle|
+a,b\in\mathbb R
+\right\} =
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/EV4-motivation.html">
+\begin{equation*}
+\vspan T=\left\{
+a\left[\begin{array}{c}2\\3\\1\end{array}\right]+
+b\left[\begin{array}{c}1\\1\\4\end{array}\right]+
+c\left[\begin{array}{c}-1\\0\\-11\end{array}\right]\middle|
+a,b,c\in\mathbb R
+\right\}
+\end{equation*}
+</div>
+<div class="para">were the same. This is possible because while <span class="process-math">\(S\)</span> is linearly independent, <span class="process-math">\(T\)</span>’s third vector made it linearly dependent:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/EV4-motivation.html">
+\begin{equation*}
+1\left[\begin{array}{c}2\\3\\1\end{array}\right]
+-3\left[\begin{array}{c}1\\1\\4\end{array}\right]=
+\left[\begin{array}{c}-1\\0\\-11\end{array}\right]
+\end{equation*}
+</div>
+</div></article><article class="activity project-like" id="EV4-4-5"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.4.5</span><span class="period">.</span>
+</h4>
+<div class="introduction" id="EV4-4-5-1"><div class="para logical" id="EV4-4-5-1-1">
 <div class="para">Consider the following three vectors in <span class="process-math">\(\IR^3\text{:}\)</span>
 </div>
 <div class="displaymath process-math">
@@ -1299,22 +1357,22 @@ T=\left\{
 \end{equation*}
 </div>
 </div></div>
-<article class="task exercise-like" id="EV4-4-4-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para logical" id="EV4-4-4-2-1">
+<article class="task exercise-like" id="EV4-4-5-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para logical" id="EV4-4-5-2-1">
 <div class="para">Let <span class="process-math">\(\vec w = 3\vec v_1 - \vec v_2 - 5 \vec v_3 = \left[\begin{array}{c}\unknown \\ \unknown \\ \unknown\end{array}\right]\text{.}\)</span> The set <span class="process-math">\(\{\vec v_1,\vec v_2,\vec v_3,\vec w\}\)</span> is...</div>
-<ol class="upper-alpha" id="EV4-4-4-2-1-3">
-<li id="EV4-4-4-2-1-3-1"><div class="para" id="EV4-4-4-2-1-3-1-1">linearly dependent: at least one vector is a linear combination of others</div></li>
-<li id="EV4-4-4-2-1-3-2"><div class="para" id="EV4-4-4-2-1-3-2-1">linearly independent: no vector is a linear combination of others</div></li>
+<ol class="upper-alpha" id="EV4-4-5-2-1-3">
+<li id="EV4-4-5-2-1-3-1"><div class="para" id="EV4-4-5-2-1-3-1-1">linearly dependent: at least one vector is a linear combination of others</div></li>
+<li id="EV4-4-5-2-1-3-2"><div class="para" id="EV4-4-5-2-1-3-2-1">linearly independent: no vector is a linear combination of others</div></li>
 </ol>
-</div></article><article class="task exercise-like" id="EV4-4-4-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para logical" id="EV4-4-4-3-1">
+</div></article><article class="task exercise-like" id="EV4-4-5-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para logical" id="EV4-4-5-3-1">
 <div class="para">Find</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\RREF \left[\begin{array}{cccc}
+\RREF \left[\begin{array}{ccc|c}
 \vec v_1 &amp; \vec v_2  &amp; \vec v_3  &amp; \vec w \\
 \end{array}\right]= 
-\RREF \left[\begin{array}{cccc}
+\RREF \left[\begin{array}{ccc|c}
 -2 &amp; 1 &amp;-2 &amp; \unknown \\
 0 &amp; 3  &amp; 5 &amp; \unknown  \\
 0 &amp;0 &amp;4 &amp; \unknown 
@@ -1322,28 +1380,61 @@ T=\left\{
 \end{equation*}
 </div>
 </div>
-<div class="para logical" id="EV4-4-4-3-2">
+<div class="para logical" id="EV4-4-5-3-2">
+<div class="para">What does this tell you about solution set for the vector equation <span class="process-math">\(x_1\vec{v}_1+x_2\vec{v}_2+x_3\vec{v}_3 =\vec w\text{?}\)</span>
+</div>
+<ol class="upper-alpha" id="EV4-4-5-3-2-2">
+<li id="EV4-4-5-3-2-2-1"><div class="para" id="EV4-4-5-3-2-2-1-1">It is inconsistent.</div></li>
+<li id="EV4-4-5-3-2-2-2"><div class="para" id="EV4-4-5-3-2-2-2-1">It is consistent with one solution.</div></li>
+<li id="EV4-4-5-3-2-2-3"><div class="para" id="EV4-4-5-3-2-2-3-1">It is consistent with infinitely many solutions.</div></li>
+</ol>
+</div></article><article class="task exercise-like" id="EV4-4-5-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para logical" id="EV4-4-5-4-1">
+<div class="para">Find</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\RREF \left[\begin{array}{cccc|c}
+\vec v_1 &amp; \vec v_2  &amp; \vec v_3  &amp; \vec w  &amp; \vec 0\\
+\end{array}\right]= 
+\RREF \left[\begin{array}{cccc|c}
+-2 &amp; 1 &amp;-2 &amp; \unknown  &amp; 0\\
+0 &amp; 3  &amp; 5 &amp; \unknown   &amp; 0 \\
+0 &amp;0 &amp;4 &amp; \unknown   &amp; 0
+\end{array}\right]=  \unknown .
+\end{equation*}
+</div>
+</div>
+<div class="para logical" id="EV4-4-5-4-2">
 <div class="para">What does this tell you about solution set for the vector equation <span class="process-math">\(x_1\vec{v}_1+x_2\vec{v}_2+x_3\vec{v}_3 + x_4\vec w=\vec{0}\text{?}\)</span>
 </div>
-<ol class="upper-alpha" id="EV4-4-4-3-2-2">
-<li id="EV4-4-4-3-2-2-1"><div class="para" id="EV4-4-4-3-2-2-1-1">It is inconsistent.</div></li>
-<li id="EV4-4-4-3-2-2-2"><div class="para" id="EV4-4-4-3-2-2-2-1">It is consistent with one solution.</div></li>
-<li id="EV4-4-4-3-2-2-3"><div class="para" id="EV4-4-4-3-2-2-3-1">It is consistent with infinitely many solutions.</div></li>
+<ol class="upper-alpha" id="EV4-4-5-4-2-2">
+<li id="EV4-4-5-4-2-2-1"><div class="para" id="EV4-4-5-4-2-2-1-1">It is inconsistent.</div></li>
+<li id="EV4-4-5-4-2-2-2"><div class="para" id="EV4-4-5-4-2-2-2-1">It is consistent with one solution.</div></li>
+<li id="EV4-4-5-4-2-2-3"><div class="para" id="EV4-4-5-4-2-2-3-1">It is consistent with infinitely many solutions.</div></li>
 </ol>
-</div></article><article class="task exercise-like" id="EV4-4-4-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para logical" id="EV4-4-4-4-1">
-<div class="para">Which of these might explain the connection?</div>
-<ol class="upper-alpha" id="EV4-4-4-4-1-1">
-<li id="EV4-4-4-4-1-1-1"><div class="para" id="EV4-4-4-4-1-1-1-1">A pivot column establishes linear independence and creates a contradiction.</div></li>
-<li id="EV4-4-4-4-1-1-2"><div class="para" id="EV4-4-4-4-1-1-2-1">A non-pivot column both describes a linear combination and reveals the number of solutions.</div></li>
-<li id="EV4-4-4-4-1-1-3"><div class="para" id="EV4-4-4-4-1-1-3-1">A pivot row describes the bound variables and prevents a contradiction.</div></li>
-<li id="EV4-4-4-4-1-1-4"><div class="para" id="EV4-4-4-4-1-1-4-1">A non-pivot row prevents contradictions and makes the vector equation solvable.</div></li>
+</div></article><article class="task exercise-like" id="EV4-4-5-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para logical" id="EV4-4-5-5-1">
+<div class="para">Which of the following is the best conclusion obtained when we solved <span class="process-math">\(x_1\vec{v}_1+x_2\vec{v}_2+x_3\vec{v}_3 + x_4\vec w=\vec{0}\text{?}\)</span>
+</div>
+<ol class="upper-alpha" id="EV4-4-5-5-1-2">
+<li id="EV4-4-5-5-1-2-1"><div class="para" id="EV4-4-5-5-1-2-1-1">A pivot column in the <em class="emphasis">augmented</em> matrix <span class="process-math">\(\RREF \left[\begin{array}{cccc|c}
+\vec v_1 &amp; \vec v_2  &amp; \vec v_3 &amp; \vec w &amp; \vec 0 \\
+\end{array}\right]\)</span> guarantees the linear independence of <span class="process-math">\(\{\vec v_1,\vec v_2,\vec v_3,\vec w\}\)</span> by preventing contradictions.</div></li>
+<li id="EV4-4-5-5-1-2-2"><div class="para" id="EV4-4-5-5-1-2-2-1">A pivot column in the <em class="emphasis">coefficient</em>  <span class="process-math">\(\RREF \left[\begin{array}{cccc}
+\vec v_1 &amp; \vec v_2  &amp; \vec v_3  &amp; \vec w \\
+\end{array}\right]\)</span>matrix guarantees the linear independence of <span class="process-math">\(\{\vec v_1,\vec v_2,\vec v_3,\vec w\}\)</span> by preventing contradictions.</div></li>
+<li id="EV4-4-5-5-1-2-3"><div class="para" id="EV4-4-5-5-1-2-3-1">A non-pivot column in the <em class="emphasis">augmented</em> <span class="process-math">\(\RREF \left[\begin{array}{cccc|c}
+\vec v_1 &amp; \vec v_2  &amp; \vec v_3 &amp; \vec w &amp; \vec 0 \\
+\end{array}\right]\)</span> matrix guarantees the linear dependence of <span class="process-math">\(\{\vec v_1,\vec v_2,\vec v_3,\vec w\}\)</span> by describing a linear combination of one vector in terms of the others.</div></li>
+<li id="EV4-4-5-5-1-2-4"><div class="para" id="EV4-4-5-5-1-2-4-1">A non-pivot column in the <em class="emphasis">coefficient</em> <span class="process-math">\(\RREF \left[\begin{array}{cccc}
+\vec v_1 &amp; \vec v_2  &amp; \vec v_3 &amp; \vec w  \\
+\end{array}\right]\)</span> matrix guarantees the linear dependence of <span class="process-math">\(\{\vec v_1,\vec v_2,\vec v_3,\vec w\}\)</span> by describing a linear combination of one vector in terms of the others.</div></li>
 </ol>
-</div></article></article><div id="EV4-4-5" class="ptx-sagecell sagecell-octave"><script type="text/x-sage"></script></div>
-<article class="fact theorem-like" id="EV4-4-6"><h4 class="heading">
-<span class="type">Fact</span><span class="space"> </span><span class="codenumber">2.4.5</span><span class="period">.</span>
+</div></article></article><div id="EV4-4-6" class="ptx-sagecell sagecell-octave"><script type="text/x-sage"></script></div>
+<article class="fact theorem-like" id="EV4-4-7"><h4 class="heading">
+<span class="type">Fact</span><span class="space"> </span><span class="codenumber">2.4.6</span><span class="period">.</span>
 </h4>
-<div class="para" id="EV4-4-6-1-1">For any vector space, the set <span class="process-math">\(\{\vec v_1,\dots\vec v_n\}\)</span> is linearly dependent if and only if the vector equation <span class="process-math">\(x_1\vec v_1+ x_2 \vec v_2+\dots+x_n\vec v_n=\vec{0}\)</span> is consistent with infinitely many solutions.</div> <div class="para logical" id="EV4-4-6-1-2">
+<div class="para" id="EV4-4-7-1-1">For any vector space, the set <span class="process-math">\(\{\vec v_1,\dots\vec v_n\}\)</span> is linearly dependent if and only if the vector equation <span class="process-math">\(x_1\vec v_1+ x_2 \vec v_2+\dots+x_n\vec v_n=\vec{0}\)</span> is consistent with infinitely many solutions.</div> <div class="para logical" id="EV4-4-7-1-2">
 <div class="para">Likewise, the set of vectors <span class="process-math">\(\{\vec v_1,\dots\vec v_n\}\)</span> is linearly independent if and only the vector equation</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -1356,10 +1447,10 @@ x_1 \\ \vdots  \\ x_n
 0 \\ \vdots  \\ 0
 \end{array}\right]\text{.}\)</span>
 </div>
-</div></article><article class="activity project-like" id="EV4-4-7"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.4.6</span><span class="period">.</span>
+</div></article><article class="activity project-like" id="EV4-4-8"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.4.7</span><span class="period">.</span>
 </h4>
-<div class="para logical" id="EV4-4-7-1-1">
+<div class="para logical" id="EV4-4-8-1-1">
 <div class="para">Find</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -1384,14 +1475,14 @@ S=\left\{
 \end{equation*}
 </div>
 <div class="para">is linearly dependent (the part that shows its linear system has infinitely many solutions).</div>
-</div></article><div id="EV4-4-8" class="ptx-sagecell sagecell-octave"><script type="text/x-sage"></script></div>
-<article class="activity project-like" id="EV4-4-9"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.4.7</span><span class="period">.</span>
+</div></article><div id="EV4-4-9" class="ptx-sagecell sagecell-octave"><script type="text/x-sage"></script></div>
+<article class="activity project-like" id="EV4-4-10"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.4.8</span><span class="period">.</span>
 </h4>
-<article class="task exercise-like" id="EV4-4-9-1"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="introduction" id="EV4-4-9-1-1"><div class="para" id="EV4-4-9-1-1-1">Write a statement involving the solutions of a vector equation that’s equivalent to each claim:</div></div>
-<article class="task exercise-like" id="EV4-4-9-1-2"><h6 class="heading"><span class="codenumber">(i)</span></h6>
-<div class="para" id="EV4-4-9-1-2-1-1">“The set of vectors <span class="process-math">\(\left\{ \left[\begin{array}{c}
+<article class="task exercise-like" id="EV4-4-10-1"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="introduction" id="EV4-4-10-1-1"><div class="para" id="EV4-4-10-1-1-1">Write a statement involving the solutions of a vector equation that’s equivalent to each claim:</div></div>
+<article class="task exercise-like" id="EV4-4-10-1-2"><h6 class="heading"><span class="codenumber">(i)</span></h6>
+<div class="para" id="EV4-4-10-1-2-1-1">“The set of vectors <span class="process-math">\(\left\{ \left[\begin{array}{c}
 1 \\
 -1 \\
 0 \\
@@ -1406,8 +1497,8 @@ S=\left\{
 11 \\
 6 \\
 2
-\end{array}\right] \right\}\)</span> is linearly <em class="emphasis">independent</em>.”</div></article><article class="task exercise-like" id="EV4-4-9-1-3"><h6 class="heading"><span class="codenumber">(ii)</span></h6>
-<div class="para" id="EV4-4-9-1-3-1-1">“The set of vectors <span class="process-math">\(\left\{ \left[\begin{array}{c}
+\end{array}\right] \right\}\)</span> is linearly <em class="emphasis">independent</em>.”</div></article><article class="task exercise-like" id="EV4-4-10-1-3"><h6 class="heading"><span class="codenumber">(ii)</span></h6>
+<div class="para" id="EV4-4-10-1-3-1-1">“The set of vectors <span class="process-math">\(\left\{ \left[\begin{array}{c}
 1 \\
 -1 \\
 0 \\
@@ -1422,10 +1513,10 @@ S=\left\{
 11 \\
 6 \\
 2
-\end{array}\right] \right\}\)</span> is linearly <em class="emphasis">dependent</em>.”</div></article></article><article class="task exercise-like" id="EV4-4-9-2"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="EV4-4-9-2-1-1">Explain how to determine which of these statements is true.</div></article></article><div id="EV4-4-10" class="ptx-sagecell sagecell-octave"><script type="text/x-sage"></script></div>
+\end{array}\right] \right\}\)</span> is linearly <em class="emphasis">dependent</em>.”</div></article></article><article class="task exercise-like" id="EV4-4-10-2"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="EV4-4-10-2-1-1">Explain how to determine which of these statements is true.</div></article></article><div id="EV4-4-11" class="ptx-sagecell sagecell-octave"><script type="text/x-sage"></script></div>
 <article class="observation remark-like" id="def_of_LI"><h4 class="heading">
-<span class="type">Observation</span><span class="space"> </span><span class="codenumber">2.4.8</span><span class="period">.</span>
+<span class="type">Observation</span><span class="space"> </span><span class="codenumber">2.4.9</span><span class="period">.</span>
 </h4>
 <div class="para logical" id="def_of_LI-1">
 <div class="para">Compare the following results:</div>
@@ -1435,34 +1526,34 @@ S=\left\{
 <li id="def_of_LI-1-1-3"><div class="para" id="def_of_LI-1-1-3-1">A set of <span class="process-math">\(\IR^m\)</span> vectors <span class="process-math">\(\{\vec v_1,\dots\vec v_n\}\)</span> spans <span class="process-math">\(\IR^m\)</span> if and only if <span class="process-math">\(\RREF\left[\begin{array}{ccc}\vec v_1&amp;\dots&amp;\vec v_n\end{array}\right]\)</span> has all pivot <em class="emphasis">rows</em>.</div></li>
 <li id="def_of_LI-1-1-4"><div class="para" id="def_of_LI-1-1-4-1">A set of <span class="process-math">\(\IR^m\)</span> vectors <span class="process-math">\(\{\vec v_1,\dots\vec v_n\}\)</span> fails to span <span class="process-math">\(\IR^m\)</span> if and only if <span class="process-math">\(\RREF\left[\begin{array}{ccc}\vec v_1&amp;\dots&amp;\vec v_n\end{array}\right]\)</span> has at least one non-pivot <em class="emphasis">row</em>.</div></li>
 </ul>
-</div></article><article class="activity project-like" id="EV4-4-12"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.4.9</span><span class="period">.</span>
-</h4>
-<div class="para" id="EV4-4-12-1-1">What is the largest number of <span class="process-math">\(\IR^4\)</span> vectors that can form a linearly independent set?</div> <ol class="upper-alpha cols2" id="EV4-4-12-1-2">
-<li id="EV4-4-12-1-2-1"><div class="para" id="EV4-4-12-1-2-1-1"><span class="process-math">\(\displaystyle 3\)</span></div></li>
-<li id="EV4-4-12-1-2-2"><div class="para" id="EV4-4-12-1-2-2-1"><span class="process-math">\(\displaystyle 4\)</span></div></li>
-<li id="EV4-4-12-1-2-3"><div class="para" id="EV4-4-12-1-2-3-1"><span class="process-math">\(\displaystyle 5\)</span></div></li>
-<li id="EV4-4-12-1-2-4"><div class="para" id="EV4-4-12-1-2-4-1">You can have infinitely many vectors and still be linearly independent.</div></li>
-</ol></article><article class="activity project-like" id="EV4-4-13"><h4 class="heading">
+</div></article><article class="activity project-like" id="EV4-4-13"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.4.10</span><span class="period">.</span>
 </h4>
-<div class="para logical" id="EV4-4-13-1-1">
+<div class="para" id="EV4-4-13-1-1">What is the largest number of <span class="process-math">\(\IR^4\)</span> vectors that can form a linearly independent set?</div> <ol class="upper-alpha cols2" id="EV4-4-13-1-2">
+<li id="EV4-4-13-1-2-1"><div class="para" id="EV4-4-13-1-2-1-1"><span class="process-math">\(\displaystyle 3\)</span></div></li>
+<li id="EV4-4-13-1-2-2"><div class="para" id="EV4-4-13-1-2-2-1"><span class="process-math">\(\displaystyle 4\)</span></div></li>
+<li id="EV4-4-13-1-2-3"><div class="para" id="EV4-4-13-1-2-3-1"><span class="process-math">\(\displaystyle 5\)</span></div></li>
+<li id="EV4-4-13-1-2-4"><div class="para" id="EV4-4-13-1-2-4-1">You can have infinitely many vectors and still be linearly independent.</div></li>
+</ol></article><article class="activity project-like" id="EV4-4-14"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.4.11</span><span class="period">.</span>
+</h4>
+<div class="para logical" id="EV4-4-14-1-1">
 <div class="para">Is it possible for the set of Euclidean vectors <span class="process-math">\(\{\vec v_1, \vec v_2,\ldots, \vec v_n, \vec 0\}\)</span> to be linearly independent?</div>
-<ol class="upper-alpha cols2" id="EV4-4-13-1-1-2">
-<li id="EV4-4-13-1-1-2-1"><div class="para" id="EV4-4-13-1-1-2-1-1">Yes</div></li>
-<li id="EV4-4-13-1-1-2-2"><div class="para" id="EV4-4-13-1-1-2-2-1">No</div></li>
+<ol class="upper-alpha cols2" id="EV4-4-14-1-1-2">
+<li id="EV4-4-14-1-1-2-1"><div class="para" id="EV4-4-14-1-1-2-1-1">Yes</div></li>
+<li id="EV4-4-14-1-1-2-2"><div class="para" id="EV4-4-14-1-1-2-2-1">No</div></li>
 </ol>
 </div></article></section><section class="subsection" id="EV4-5"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.4.3</span><span class="space"> </span><span class="title">Individual Practice</span>
 </h3>
 <article class="remark remark-like" id="EV4-5-2"><h4 class="heading">
-<span class="type">Remark</span><span class="space"> </span><span class="codenumber">2.4.11</span><span class="period">.</span>
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">2.4.12</span><span class="period">.</span>
 </h4>
 <div class="para" id="EV4-5-2-1">Recall that in <a href="EV2.html#EV2-Analogy" class="xref" data-knowl="./knowl/xref/EV2-Analogy.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 2.2.1">Activity 2.2.1</a> we used the words <em class="emphasis">vector</em>, <em class="emphasis">linear combination</em>, and <em class="emphasis">span</em> to make an analogy with recipes, ingredients, and meals. In this analogy, a <em class="emphasis">recipe</em> was defined to be a list of amounts of each ingredient to build a particular meal.</div></article><article class="activity project-like" id="EV4-5-3"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.4.12</span><span class="period">.</span>
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.4.13</span><span class="period">.</span>
 </h4>
 <div class="para" id="EV4-5-3-1-1">Consider the statement: The set of vectors <span class="process-math">\(\left\{\vec{v}_1,\vec{v}_2,\vec{v}_3\right\}\)</span> is linearly dependent because the vector <span class="process-math">\(\vec{v}_3\)</span> is a linear combination of <span class="process-math">\(\vec{v_1}\)</span> and <span class="process-math">\(\vec{v}_2\text{.}\)</span> Construct an analogous statement involving ingredients, meals, and recipes, using the terms <em class="emphasis">linearly (in)dependent</em> and <em class="emphasis">linear combination</em>.</div></article><article class="activity project-like" id="EV4-5-4"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.4.13</span><span class="period">.</span>
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.4.14</span><span class="period">.</span>
 </h4>
 <div class="introduction" id="EV4-5-4-1"><div class="para" id="EV4-5-4-1-1">The following exercises are designed to help develop your geometric intuition around linear dependence.</div></div>
 <article class="task exercise-like" id="EV4-5-4-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
@@ -1486,9 +1577,9 @@ S=\left\{
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.4.6</span><span class="space"> </span><span class="title">Mathematical Writing Explorations</span>
 </h3>
 <article class="exploration project-like" id="EV4-8-2"><h4 class="heading">
-<span class="type">Exploration</span><span class="space"> </span><span class="codenumber">2.4.14</span><span class="period">.</span>
+<span class="type">Exploration</span><span class="space"> </span><span class="codenumber">2.4.15</span><span class="period">.</span>
 </h4>
-<div class="para" id="EV4-8-2-1">Prove the result of <a href="EV4.html#def_of_LI" class="xref" data-knowl="./knowl/xref/def_of_LI.html" data-reveal-label="Reveal" data-close-label="Close" title="Observation 2.4.8">Observation 2.4.8</a>, by showing that, given a set <span class="process-math">\(S = \{\vec{v}_1,\vec{v}_2,\ldots,\vec{v}_n\}\)</span> of vectors, <span class="process-math">\(S\)</span> is linearly independent iff the equation <span class="process-math">\(x_1\vec{v}_1 + x_2\vec{v}_2 + \ldots\ + x_n\vec{v}_n = \vec{0}\)</span> is only true when <span class="process-math">\(x_1 = x_2 = \cdots = x_n = 0\text{.}\)</span>
+<div class="para" id="EV4-8-2-1">Prove the result of <a href="EV4.html#def_of_LI" class="xref" data-knowl="./knowl/xref/def_of_LI.html" data-reveal-label="Reveal" data-close-label="Close" title="Observation 2.4.9">Observation 2.4.9</a>, by showing that, given a set <span class="process-math">\(S = \{\vec{v}_1,\vec{v}_2,\ldots,\vec{v}_n\}\)</span> of vectors, <span class="process-math">\(S\)</span> is linearly independent iff the equation <span class="process-math">\(x_1\vec{v}_1 + x_2\vec{v}_2 + \ldots\ + x_n\vec{v}_n = \vec{0}\)</span> is only true when <span class="process-math">\(x_1 = x_2 = \cdots = x_n = 0\text{.}\)</span>
 </div></article></section><section class="subsection" id="EV4-9"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.4.7</span><span class="space"> </span><span class="title">Sample Problem and Solution</span>
 </h3>

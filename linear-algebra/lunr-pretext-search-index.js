@@ -1303,7 +1303,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.4",
   "title": "Linear Independence (EV4)",
-  "body": " Linear Independence (EV4)     Determine if a set of Euclidean vectors is linearly dependent or independent by solving an appropriate vector equation.      Warm Up    Consider the vector equation     Decide which of or is a solution vector.    Consider now the following vector equation: How is this vector equation related to the original one?    Use the solution vector you found in part (a) to construct a solution vector to this new equation.     Class Activities    Consider the two sets . Which of the following is true?    is bigger than .   and are the same size.   is smaller than .       We say that a set of vectors is linearly dependent linearly dependent if one vector in the set belongs to the span of the others. Otherwise, we say the set is linearly independent . linearly independent    A linearly dependent set of three vectors      You can think of linearly dependent sets as containing a redundant vector, in the sense that you can drop a vector out without reducing the span of the set. In the above image, all three vectors lay in the same planar subspace, but only two vectors are needed to span the plane, so the set is linearly dependent.      Consider the following three vectors in : .   Let . The set is...  linearly dependent: at least one vector is a linear combination of others  linearly independent: no vector is a linear combination of others    Find  What does this tell you about solution set for the vector equation ?   It is inconsistent.    It is consistent with one solution.    It is consistent with infinitely many solutions.     Which of these might explain the connection?   A pivot column establishes linear independence and creates a contradiction.    A non-pivot column both describes a linear combination and reveals the number of solutions.    A pivot row describes the bound variables and prevents a contradiction.    A non-pivot row prevents contradictions and makes the vector equation solvable.         For any vector space, the set is linearly dependent if and only if the vector equation is consistent with infinitely many solutions.  Likewise, the set of vectors is linearly independent if and only the vector equation has exactly one solution: .      Find and mark the part of the matrix that demonstrates that is linearly dependent (the part that shows its linear system has infinitely many solutions).       Write a statement involving the solutions of a vector equation that's equivalent to each claim:    The set of vectors is linearly independent .     The set of vectors is linearly dependent .     Explain how to determine which of these statements is true.      Compare the following results:   A set of vectors is linearly independent if and only if has all pivot columns .    A set of vectors is linearly dependent if and only if has at least one non-pivot column .    A set of vectors spans if and only if has all pivot rows .    A set of vectors fails to span if and only if has at least one non-pivot row .         What is the largest number of vectors that can form a linearly independent set?                   You can have infinitely many vectors and still be linearly independent.          Is it possible for the set of Euclidean vectors to be linearly independent?   Yes    No         Individual Practice   Recall that in we used the words vector , linear combination , and span to make an analogy with recipes, ingredients, and meals. In this analogy, a recipe was defined to be a list of amounts of each ingredient to build a particular meal.     Consider the statement: The set of vectors is linearly dependent because the vector is a linear combination of and . Construct an analogous statement involving ingredients, meals, and recipes, using the terms linearly (in)dependent and linear combination .      The following exercises are designed to help develop your geometric intuition around linear dependence.    Draw sketches that depict the following:   Three linearly independent vectors in .    Three linearly dependent vectors in .       If you have three linearly dependent vectors, is it necessarily the case that one of the vectors is a multiple of the other?      Videos   Video: Linear independence      Exercises  Exercises available at .    Mathematical Writing Explorations   Prove the result of , by showing that, given a set of vectors, is linearly independent iff the equation is only true when .     Sample Problem and Solution  Sample problem .   "
+  "body": " Linear Independence (EV4)     Determine if a set of Euclidean vectors is linearly dependent or independent by solving an appropriate vector equation.      Warm Up    Consider the vector equation     Decide which of or is a solution vector.    Consider now the following vector equation: How is this vector equation related to the original one?    Use the solution vector you found in part (a) to construct a solution vector to this new equation.     Class Activities    Consider the two sets where contains a vector missing from . Which of the following is true?    contains a vector missing from .   contains a vector missing from .   and contain the same vectors.       We say that a set of vectors is linearly dependent linearly dependent if one vector in the set belongs to the span of the others. Otherwise, we say the set is linearly independent . linearly independent    A linearly dependent set of three vectors      You can think of linearly dependent sets as containing a redundant vector, in the sense that you can drop a vector out without reducing the span of the set. In the above image, all three vectors lay in the same planar subspace, but only two vectors are needed to span the plane, so the set is linearly dependent.     In we had different, while  were the same. This is possible because while is linearly independent, 's third vector made it linearly dependent:      Consider the following three vectors in : .   Let . The set is...  linearly dependent: at least one vector is a linear combination of others  linearly independent: no vector is a linear combination of others    Find  What does this tell you about solution set for the vector equation ?   It is inconsistent.    It is consistent with one solution.    It is consistent with infinitely many solutions.     Find  What does this tell you about solution set for the vector equation ?   It is inconsistent.    It is consistent with one solution.    It is consistent with infinitely many solutions.     Which of the following is the best conclusion obtained when we solved ?   A pivot column in the augmented matrix guarantees the linear independence of by preventing contradictions.    A pivot column in the coefficient  matrix guarantees the linear independence of by preventing contradictions.    A non-pivot column in the augmented  matrix guarantees the linear dependence of by describing a linear combination of one vector in terms of the others.    A non-pivot column in the coefficient  matrix guarantees the linear dependence of by describing a linear combination of one vector in terms of the others.         For any vector space, the set is linearly dependent if and only if the vector equation is consistent with infinitely many solutions.  Likewise, the set of vectors is linearly independent if and only the vector equation has exactly one solution: .      Find and mark the part of the matrix that demonstrates that is linearly dependent (the part that shows its linear system has infinitely many solutions).       Write a statement involving the solutions of a vector equation that's equivalent to each claim:    The set of vectors is linearly independent .     The set of vectors is linearly dependent .     Explain how to determine which of these statements is true.      Compare the following results:   A set of vectors is linearly independent if and only if has all pivot columns .    A set of vectors is linearly dependent if and only if has at least one non-pivot column .    A set of vectors spans if and only if has all pivot rows .    A set of vectors fails to span if and only if has at least one non-pivot row .         What is the largest number of vectors that can form a linearly independent set?                   You can have infinitely many vectors and still be linearly independent.          Is it possible for the set of Euclidean vectors to be linearly independent?   Yes    No         Individual Practice   Recall that in we used the words vector , linear combination , and span to make an analogy with recipes, ingredients, and meals. In this analogy, a recipe was defined to be a list of amounts of each ingredient to build a particular meal.     Consider the statement: The set of vectors is linearly dependent because the vector is a linear combination of and . Construct an analogous statement involving ingredients, meals, and recipes, using the terms linearly (in)dependent and linear combination .      The following exercises are designed to help develop your geometric intuition around linear dependence.    Draw sketches that depict the following:   Three linearly independent vectors in .    Three linearly dependent vectors in .       If you have three linearly dependent vectors, is it necessarily the case that one of the vectors is a multiple of the other?      Videos   Video: Linear independence      Exercises  Exercises available at .    Mathematical Writing Explorations   Prove the result of , by showing that, given a set of vectors, is linearly independent iff the equation is only true when .     Sample Problem and Solution  Sample problem .   "
 },
 {
   "id": "EV4-2",
@@ -1324,13 +1324,13 @@ var ptx_lunr_docs = [
   "body": "  Consider the vector equation     Decide which of or is a solution vector.    Consider now the following vector equation: How is this vector equation related to the original one?    Use the solution vector you found in part (a) to construct a solution vector to this new equation.   "
 },
 {
-  "id": "EV4-4-2",
+  "id": "EV4-motivation",
   "level": "2",
-  "url": "EV4.html#EV4-4-2",
+  "url": "EV4.html#EV4-motivation",
   "type": "Activity",
   "number": "2.4.2",
   "title": "",
-  "body": "  Consider the two sets . Which of the following is true?    is bigger than .   and are the same size.   is smaller than .    "
+  "body": "  Consider the two sets where contains a vector missing from . Which of the following is true?    contains a vector missing from .   contains a vector missing from .   and contain the same vectors.    "
 },
 {
   "id": "EV4-definition-independence",
@@ -1345,35 +1345,44 @@ var ptx_lunr_docs = [
   "id": "EV4-4-4",
   "level": "2",
   "url": "EV4.html#EV4-4-4",
-  "type": "Activity",
+  "type": "Remark",
   "number": "2.4.4",
   "title": "",
-  "body": "  Consider the following three vectors in : .   Let . The set is...  linearly dependent: at least one vector is a linear combination of others  linearly independent: no vector is a linear combination of others    Find  What does this tell you about solution set for the vector equation ?   It is inconsistent.    It is consistent with one solution.    It is consistent with infinitely many solutions.     Which of these might explain the connection?   A pivot column establishes linear independence and creates a contradiction.    A non-pivot column both describes a linear combination and reveals the number of solutions.    A pivot row describes the bound variables and prevents a contradiction.    A non-pivot row prevents contradictions and makes the vector equation solvable.     "
+  "body": " In we had different, while  were the same. This is possible because while is linearly independent, 's third vector made it linearly dependent:   "
 },
 {
-  "id": "EV4-4-6",
+  "id": "EV4-4-5",
   "level": "2",
-  "url": "EV4.html#EV4-4-6",
-  "type": "Fact",
+  "url": "EV4.html#EV4-4-5",
+  "type": "Activity",
   "number": "2.4.5",
   "title": "",
-  "body": "  For any vector space, the set is linearly dependent if and only if the vector equation is consistent with infinitely many solutions.  Likewise, the set of vectors is linearly independent if and only the vector equation has exactly one solution: .   "
+  "body": "  Consider the following three vectors in : .   Let . The set is...  linearly dependent: at least one vector is a linear combination of others  linearly independent: no vector is a linear combination of others    Find  What does this tell you about solution set for the vector equation ?   It is inconsistent.    It is consistent with one solution.    It is consistent with infinitely many solutions.     Find  What does this tell you about solution set for the vector equation ?   It is inconsistent.    It is consistent with one solution.    It is consistent with infinitely many solutions.     Which of the following is the best conclusion obtained when we solved ?   A pivot column in the augmented matrix guarantees the linear independence of by preventing contradictions.    A pivot column in the coefficient  matrix guarantees the linear independence of by preventing contradictions.    A non-pivot column in the augmented  matrix guarantees the linear dependence of by describing a linear combination of one vector in terms of the others.    A non-pivot column in the coefficient  matrix guarantees the linear dependence of by describing a linear combination of one vector in terms of the others.     "
 },
 {
   "id": "EV4-4-7",
   "level": "2",
   "url": "EV4.html#EV4-4-7",
-  "type": "Activity",
+  "type": "Fact",
   "number": "2.4.6",
+  "title": "",
+  "body": "  For any vector space, the set is linearly dependent if and only if the vector equation is consistent with infinitely many solutions.  Likewise, the set of vectors is linearly independent if and only the vector equation has exactly one solution: .   "
+},
+{
+  "id": "EV4-4-8",
+  "level": "2",
+  "url": "EV4.html#EV4-4-8",
+  "type": "Activity",
+  "number": "2.4.7",
   "title": "",
   "body": "  Find and mark the part of the matrix that demonstrates that is linearly dependent (the part that shows its linear system has infinitely many solutions).   "
 },
 {
-  "id": "EV4-4-9",
+  "id": "EV4-4-10",
   "level": "2",
-  "url": "EV4.html#EV4-4-9",
+  "url": "EV4.html#EV4-4-10",
   "type": "Activity",
-  "number": "2.4.7",
+  "number": "2.4.8",
   "title": "",
   "body": "  Write a statement involving the solutions of a vector equation that's equivalent to each claim:    The set of vectors is linearly independent .     The set of vectors is linearly dependent .     Explain how to determine which of these statements is true.   "
 },
@@ -1382,18 +1391,9 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "EV4.html#def_of_LI",
   "type": "Observation",
-  "number": "2.4.8",
-  "title": "",
-  "body": " Compare the following results:   A set of vectors is linearly independent if and only if has all pivot columns .    A set of vectors is linearly dependent if and only if has at least one non-pivot column .    A set of vectors spans if and only if has all pivot rows .    A set of vectors fails to span if and only if has at least one non-pivot row .     "
-},
-{
-  "id": "EV4-4-12",
-  "level": "2",
-  "url": "EV4.html#EV4-4-12",
-  "type": "Activity",
   "number": "2.4.9",
   "title": "",
-  "body": "  What is the largest number of vectors that can form a linearly independent set?                   You can have infinitely many vectors and still be linearly independent.     "
+  "body": " Compare the following results:   A set of vectors is linearly independent if and only if has all pivot columns .    A set of vectors is linearly dependent if and only if has at least one non-pivot column .    A set of vectors spans if and only if has all pivot rows .    A set of vectors fails to span if and only if has at least one non-pivot row .     "
 },
 {
   "id": "EV4-4-13",
@@ -1402,6 +1402,15 @@ var ptx_lunr_docs = [
   "type": "Activity",
   "number": "2.4.10",
   "title": "",
+  "body": "  What is the largest number of vectors that can form a linearly independent set?                   You can have infinitely many vectors and still be linearly independent.     "
+},
+{
+  "id": "EV4-4-14",
+  "level": "2",
+  "url": "EV4.html#EV4-4-14",
+  "type": "Activity",
+  "number": "2.4.11",
+  "title": "",
   "body": "  Is it possible for the set of Euclidean vectors to be linearly independent?   Yes    No      "
 },
 {
@@ -1409,7 +1418,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "EV4.html#EV4-5-2",
   "type": "Remark",
-  "number": "2.4.11",
+  "number": "2.4.12",
   "title": "",
   "body": " Recall that in we used the words vector , linear combination , and span to make an analogy with recipes, ingredients, and meals. In this analogy, a recipe was defined to be a list of amounts of each ingredient to build a particular meal.  "
 },
@@ -1418,7 +1427,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "EV4.html#EV4-5-3",
   "type": "Activity",
-  "number": "2.4.12",
+  "number": "2.4.13",
   "title": "",
   "body": "  Consider the statement: The set of vectors is linearly dependent because the vector is a linear combination of and . Construct an analogous statement involving ingredients, meals, and recipes, using the terms linearly (in)dependent and linear combination .   "
 },
@@ -1427,7 +1436,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "EV4.html#EV4-5-4",
   "type": "Activity",
-  "number": "2.4.13",
+  "number": "2.4.14",
   "title": "",
   "body": "  The following exercises are designed to help develop your geometric intuition around linear dependence.    Draw sketches that depict the following:   Three linearly independent vectors in .    Three linearly dependent vectors in .       If you have three linearly dependent vectors, is it necessarily the case that one of the vectors is a multiple of the other?   "
 },
@@ -1445,7 +1454,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "EV4.html#EV4-8-2",
   "type": "Exploration",
-  "number": "2.4.14",
+  "number": "2.4.15",
   "title": "",
   "body": " Prove the result of , by showing that, given a set of vectors, is linearly independent iff the equation is only true when .  "
 },
@@ -1636,7 +1645,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.6",
   "title": "Subspace Basis and Dimension (EV6)",
-  "body": " Subspace Basis and Dimension (EV6)     Compute a basis for the subspace spanned by a given set of Euclidean vectors, and determine the dimension of the subspace.      Warm Up    Consider the set of vectors in given by     Is the set linearly independent or linearly dependent?    How would you describe the subspace geometrically?    What do the spaces and have in common? In what ways do they differ?     Class Activities   Recall from section that a subspace of a vector space is the result of spanning a set of vectors from that vector space.  Recall also that a linearly dependent set contains redundant vectors. For example, only two of the three vectors in are needed to span the planar subspace.     Consider the subspace of given by .   Mark the column of that shows that 's spanning set is linearly dependent.  What would be the result of removing the vector that gave us this column?  The set still spans , and remains linearly dependent.  The set still spans , but is now also linearly independent.  The set no longer spans , and remains linearly dependent.  The set no longer spans , but is now linearly independent.       We can use our notation of span in relation to a matrix, not just in relation to a set of vectors. Given a matrix   the span of the set of all columns is the column space column space  the span of the set of all rows is the row space row space     Is in the column space of ? Is it in the row space of ?  Is in the column space of ? Is it in the row space of ?       Are the row space and column space of both equal to ?      Let be a subspace of a vector space. A basis for is a linearly independent set of vectors that spans (but not necessarily the entire vector space).     So given a set , to compute a basis for the subspace , simply remove the vectors corresponding to the non-pivot columns of . For example, since the subspace has as a basis.        Find a basis for where .  Find a basis for where .     Even though we found different bases for them, and are exactly the same subspace of , since .  Thus the basis for a subspace is not unique in general.     Any non-trivial real vector space has infinitely-many different bases, but all the bases for a given vector space are exactly the same size.  For example, are all valid bases for , and they all contain three vectors.      The dimension of a vector space or subspace is equal to the size of any basis for the vector space.  As you'd expect, has dimension . For example, has dimension because any basis for such as contains exactly three vectors.      Consider the following subspace of :     Explain and demonstrate how to find a basis of .    Explain and demonstrate how to find the dimension of .      The dimension of a subspace may be found by doing what with an appropriate RREF matrix?  Count the rows.  Count the non-pivot columns.  Count the pivots.  Add the number of pivot rows and pivot columns.       Individual Practice    In , we found a basis for the subspace To do so, we use the results of the calculation: to conclude that the set , the set of vectors corresponding to the pivot columns of the RREF, is a basis for .    Explain why neither of the vectors are elements of .    Explain why this shows that, in general, when we calculate a basis for , the pivot columns of themselves do not form a basis for .      Videos   Video: Finding a basis of a subspace and computing the dimension of a subspace      Exercises  Exercises available at .    Mathematical Writing Explorations   Prove each of the following statements is true.  If and are each a basis for a vector space , then  If is linearly independent, then so is .  Let be a vector space of dimension , and . Then there exists a basis for which contains .      Suppose we have the set of all function . We claim that this is a vector space under the usual operation of function addition and scalar multiplication. What is the dimension of this space for each choice of below:            Suppose you have the vector space with the operations Find a basis for and determine it's dimension.    Sample Problem and Solution  Sample problem .   "
+  "body": " Subspace Basis and Dimension (EV6)     Compute a basis for the subspace spanned by a given set of Euclidean vectors, and determine the dimension of the subspace.      Warm Up    Consider the set of vectors in given by     Is the set linearly independent or linearly dependent?    How would you describe the subspace geometrically?    What do the spaces and have in common? In what ways do they differ?     Class Activities   Recall from section that a subspace of a vector space is the result of spanning a set of vectors from that vector space.  Recall also that a linearly dependent set contains redundant vectors. For example, only two of the three vectors in are needed to span the planar subspace.     Consider the subspace of given by .   Mark the column of that shows that 's spanning set is linearly dependent.  What would be the result of removing the vector that gave us this column?  The set still spans , and remains linearly dependent.  The set still spans , but is now also linearly independent.  The set no longer spans , and remains linearly dependent.  The set no longer spans , but is now linearly independent.       We can use our notation of span in relation to a matrix, not just in relation to a set of vectors. Given a matrix   the span of the set of all columns is the column space column space  the span of the set of all rows is the row space row space     Is in the column space of ? Is it in the row space of ?   Yes.    No.    Is in the column space of ? Is it in the row space of ?   Yes.    No.         Are the row space and column space of both equal to ?    Yes.    No.         Let be a subspace of a vector space. A basis for is a linearly independent set of vectors that spans (but not necessarily the entire vector space).     So given a set , to compute a basis for the subspace , simply remove the vectors corresponding to the non-pivot columns of . For example, since the subspace has as a basis.        Find a basis for where .  Find a basis for where .     Even though we found different bases for them, and are exactly the same subspace of , since .  Thus the basis for a subspace is not unique in general.     Any non-trivial real vector space has infinitely-many different bases, but all the bases for a given vector space are exactly the same size.  For example, are all valid bases for , and they all contain three vectors.      The dimension of a vector space or subspace is equal to the size of any basis for the vector space.  As you'd expect, has dimension . For example, has dimension because any basis for such as contains exactly three vectors.      Consider the following subspace of :     Explain and demonstrate how to find a basis of .    Explain and demonstrate how to find the dimension of .      The dimension of a subspace may be found by doing what with an appropriate RREF matrix?  Count the rows.  Count the non-pivot columns.  Count the pivots.  Add the number of pivot rows and pivot columns.       Individual Practice    In , we found a basis for the subspace To do so, we use the results of the calculation: to conclude that the set , the set of vectors corresponding to the pivot columns of the RREF, is a basis for .    Explain why neither of the vectors are elements of .    Explain why this shows that, in general, when we calculate a basis for , the pivot columns of themselves do not form a basis for .      Videos   Video: Finding a basis of a subspace and computing the dimension of a subspace      Exercises  Exercises available at .    Mathematical Writing Explorations   Prove each of the following statements is true.  If and are each a basis for a vector space , then  If is linearly independent, then so is .  Let be a vector space of dimension , and . Then there exists a basis for which contains .      Suppose we have the set of all function . We claim that this is a vector space under the usual operation of function addition and scalar multiplication. What is the dimension of this space for each choice of below:            Suppose you have the vector space with the operations Find a basis for and determine it's dimension.    Sample Problem and Solution  Sample problem .   "
 },
 {
   "id": "EV6-2",
@@ -1681,7 +1690,7 @@ var ptx_lunr_docs = [
   "type": "Activity",
   "number": "2.6.4",
   "title": "",
-  "body": " We can use our notation of span in relation to a matrix, not just in relation to a set of vectors. Given a matrix   the span of the set of all columns is the column space column space  the span of the set of all rows is the row space row space     Is in the column space of ? Is it in the row space of ?  Is in the column space of ? Is it in the row space of ?    "
+  "body": " We can use our notation of span in relation to a matrix, not just in relation to a set of vectors. Given a matrix   the span of the set of all columns is the column space column space  the span of the set of all rows is the row space row space     Is in the column space of ? Is it in the row space of ?   Yes.    No.    Is in the column space of ? Is it in the row space of ?   Yes.    No.      "
 },
 {
   "id": "EV6-4-6",
@@ -1690,7 +1699,7 @@ var ptx_lunr_docs = [
   "type": "Activity",
   "number": "2.6.5",
   "title": "",
-  "body": "  Are the row space and column space of both equal to ?   "
+  "body": "  Are the row space and column space of both equal to ?    Yes.    No.      "
 },
 {
   "id": "EV6-4-7",
