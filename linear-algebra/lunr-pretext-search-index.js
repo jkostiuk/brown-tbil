@@ -955,9 +955,9 @@ var ptx_lunr_docs = [
   "body": "  How many vectors are required to span ?   space                            Infinitely Many     "
 },
 {
-  "id": "EV2-n-vectors-span",
+  "id": "EV2-m-vectors-span",
   "level": "2",
-  "url": "EV2.html#EV2-n-vectors-span",
+  "url": "EV2.html#EV2-m-vectors-span",
   "type": "Fact",
   "number": "2.2.5",
   "title": "",
@@ -1465,7 +1465,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.5",
   "title": "Identifying a Basis (EV5)",
-  "body": " Identifying a Basis (EV5)     Explain why a set of Euclidean vectors is or is not a basis of .      Warm Up   Recall that in we used the words vector , linear combination , and span to make an analogy with recipes, ingredients, and meals. In this analogy, a recipe was defined to be a list of amounts of each ingredient to build a particular meal.     Consider the following set of ingredients:     Does \"pizza\" live inside of ?    Identify which ingredients in make the set linearly dependent.    Can you think of a subset of that is linearly independent and for which \"pizza\" is still in ?     Class Activities    Consider the set of vectors .    Express the vector as a linear combination of the vectors in , i.e. find scalars such that .    Find a different way to express the vector as a linear combination of the vectors in .    Consider another vector . Without computing the RREF of another matrix, how many ways can this vector be written as a linear combination of the vectors in ?  Zero.  One.  Infinitely-many.  Computing a new matrix RREF is necessary.         Let's review some of the terminology we've been dealing with...   If every vector in a vector space can be constructed as one or more linear combinations of vectors in a set , we can say...  the set spans the vector space.  the set fails to span the vector space.  the set is linearly independent.  the set is linearly dependent.    If the zero vector can be constructed as a unique linear combination of vectors in a set (the combination multiplying every vector by the scalar value ), we can say...  the set spans the vector space.  the set fails to span the vector space.  the set is linearly independent.  the set is linearly dependent.    If every vector of a vector space can either be constructed as a unique linear combination of vectors in a set , or not at all, we can say...  the set spans the vector space.  the set fails to span the vector space.  the set is linearly independent.  the set is linearly dependent.       A basis basis of a vector space is a set of vectors contained in for which    Every vector in the vector space can be expressed as a linear combination of the vectors in .    For each vector in the vector space, there is only one way to write it as a linear combination of the vectors in .   These two properties may be expressed more succinctly as the statement \"Every vector in can be expressed uniquely as a linear combination of the vectors in \".     In terms of a vector equation, a set is a basis of a vector space if the vector equation has a unique solution for every vector in the vector space.  Put another way, a basis may be thought of as a minimal set of building blocks that can be used to construct any other vector of the vector space.    Let be a basis ( ) for a vector space. Then...  the set must both span the vector space and be linearly independent.  the set must span the vector space but could be linearly dependent.  the set must be linearly independent but could fail to span the vector space.  the set could fail to span the vector space and could be linearly dependent.      The vectors form a basis used frequently in multivariable calculus.  Find the unique linear combination of these vectors that equals the vector in space.     The standard basis basis standard of is the set where .  In particular, the standard basis for is .      Use technology to find the RREF of an appropriate matrix and determine if each of the following sets is a basis for . (Don't forget to use format rat to nicely format Octave's output.)       A basis, because it both spans and is linearly independent.    Not a basis, because while it spans , it is linearly dependent.    Not a basis, because while it is linearly independent, it fails to span .    Not a basis, because not only does it fail to span , it's also linearly dependent.         A basis, because it both spans and is linearly independent.    Not a basis, because while it spans , it is linearly dependent.    Not a basis, because while it is linearly independent, it fails to span .    Not a basis, because not only does it fail to span , it's also linearly dependent.         A basis, because it both spans and is linearly independent.    Not a basis, because while it spans , it is linearly dependent.    Not a basis, because while it is linearly independent, it fails to span .    Not a basis, because not only does it fail to span , it's also linearly dependent.         A basis, because it both spans and is linearly independent.    Not a basis, because while it spans , it is linearly dependent.    Not a basis, because while it is linearly independent, it fails to span .    Not a basis, because not only does it fail to span , it's also linearly dependent.         A basis, because it both spans and is linearly independent.    Not a basis, because while it spans , it is linearly dependent.    Not a basis, because while it is linearly independent, it fails to span .    Not a basis, because not only does it fail to span , it's also linearly dependent.         If is a basis for , that means has a pivot in every row (because it spans), and has a pivot in every column (because it's linearly independent).  What is ?       The set is a basis for if and only if and .  That is, a basis for must have exactly vectors and its square matrix must row-reduce to the so-called identity matrix identity matrix containing all zeros except for a downward diagonal of ones. (We will learn where the identity matrix gets its name in a later module.)      Individual Practice    Let denote a set of vectors in . Without referring to your Activity Book, write down:    The definition of what it means for to be linearly independent.    The definition of what it means for to span .    The definition of what it means for to be a basis for .      You are going on a trip and need to pack. Let denote the set of items that you are packing in your suitcase.    Give an example of such a set of items that you would say \"spans\" everything you need, but is linearly dependent.    Give an example of such a set of items that is linearly independent, but does not \"span\" everything you need.    Give an example of such a set that you might reasonably consider to be a \"basis\" for what you need?      Videos   Video: Verifying that a set of vectors is a basis of a vector space      Exercises  Exercises available at .    Mathematical Writing Explorations     What is a basis for ?  What about ?  Could we write each of these in a way that looks like the standard basis vectors in for some ? Make a conjecture about the relationship between these spaces of matrices and standard Euclidean space.      Recall our earlier definition of symmetric matrices. Find a basis for each of the following:  The space of symmetric matrices.  The space of symmetric matrices.  The space of symmetric matrices.      Must a basis for the space , the space of all quadratic polynomials, contain a polynomial of each degree less than or equal to 2? Generalize your result to polynomials of arbitrary degree.     Sample Problem and Solution  Sample problem .   "
+  "body": " Identifying a Basis (EV5)     Explain why a set of Euclidean vectors is or is not a basis of .      Warm Up   Recall that in we used the words vector , linear combination , and span to make an analogy with recipes, ingredients, and meals. In this analogy, a recipe was defined to be a list of amounts of each ingredient to build a particular meal.     Consider the following set of ingredients:     Does \"pizza\" live inside of ?    Identify which ingredients in make the set linearly dependent.    Can you think of a subset of that is linearly independent and for which \"pizza\" is still in ?     Class Activities    Consider the set of vectors .    Given Express the vector as a linear combination of the vectors in , i.e. find scalars such that .    Find a different way to express the vector as a linear combination of the vectors in : .    Consider another vector . Without computing the RREF of another matrix, do we already know how many ways can this vector be written as a linear combination of the vectors in ?  Yes, zero.  Yes, one.  Yes, infinitely-many.  No, computing a new matrix RREF is necessary.        Let's review some of the terminology we've been dealing with...   If every vector in a vector space can be constructed as one or more linear combinations of vectors in a set , we can say...  the set spans the vector space.  the set fails to span the vector space.  the set is linearly independent.  the set is linearly dependent.    If the zero vector can be constructed as a unique linear combination of vectors in a set (the combination multiplying every vector by the scalar value ), we can say...  the set spans the vector space.  the set fails to span the vector space.  the set is linearly independent.  the set is linearly dependent.    If every vector of a vector space can either be constructed as a unique linear combination of vectors in a set , or not at all, we can say...  the set spans the vector space.  the set fails to span the vector space.  the set is linearly independent.  the set is linearly dependent.       A basis basis of a vector space is a set of vectors contained in for which    Every vector in the vector space can be expressed as a linear combination of the vectors in .    For each vector in the vector space, there is only one way to write it as a linear combination of the vectors in .   These two properties may be expressed more succinctly as the statement \"Every vector in can be expressed uniquely as a linear combination of the vectors in \".     In terms of a vector equation, a set is a basis of a vector space if the vector equation has a unique solution for every vector in the vector space.  Put another way, a basis may be thought of as a minimal set of building blocks that can be used to construct any other vector of the vector space.    Let be a basis ( ) for a vector space. Then...  the set must both span the vector space and be linearly independent.  the set must span the vector space but could be linearly dependent.  the set must be linearly independent but could fail to span the vector space.  the set could fail to span the vector space and could be linearly dependent.      The vectors form a basis used frequently in multivariable calculus.  Find the unique linear combination of these vectors that equals the vector in space.     The standard basis basis standard of is the set where .  In particular, the standard basis for is .      Use technology to find the RREF of an appropriate matrix and determine if each of the following sets is a basis for . (Don't forget to use format rat to nicely format Octave's output.)       A basis, because it both spans and is linearly independent.    Not a basis, because while it spans , it is linearly dependent.    Not a basis, because while it is linearly independent, it fails to span .    Not a basis, because not only does it fail to span , it's also linearly dependent.         A basis, because it both spans and is linearly independent.    Not a basis, because while it spans , it is linearly dependent.    Not a basis, because while it is linearly independent, it fails to span .    Not a basis, because not only does it fail to span , it's also linearly dependent.         A basis, because it both spans and is linearly independent.    Not a basis, because while it spans , it is linearly dependent.    Not a basis, because while it is linearly independent, it fails to span .    Not a basis, because not only does it fail to span , it's also linearly dependent.         A basis, because it both spans and is linearly independent.    Not a basis, because while it spans , it is linearly dependent.    Not a basis, because while it is linearly independent, it fails to span .    Not a basis, because not only does it fail to span , it's also linearly dependent.         A basis, because it both spans and is linearly independent.    Not a basis, because while it spans , it is linearly dependent.    Not a basis, because while it is linearly independent, it fails to span .    Not a basis, because not only does it fail to span , it's also linearly dependent.         If is a basis for , that means has a pivot in every row (because it spans), and has a pivot in every column (because it's linearly independent).  What is ?       The set is a basis for if and only if and .  That is, a basis for must have exactly vectors and its square matrix must row-reduce to the so-called identity matrix identity matrix containing all zeros except for a downward diagonal of ones. (We will learn where the identity matrix gets its name in a later module.)      Individual Practice    Let denote a set of vectors in . Without referring to your Activity Book, write down:    The definition of what it means for to be linearly independent.    The definition of what it means for to span .    The definition of what it means for to be a basis for .      You are going on a trip and need to pack. Let denote the set of items that you are packing in your suitcase.    Give an example of such a set of items that you would say \"spans\" everything you need, but is linearly dependent.    Give an example of such a set of items that is linearly independent, but does not \"span\" everything you need.    Give an example of such a set that you might reasonably consider to be a \"basis\" for what you need?      Videos   Video: Verifying that a set of vectors is a basis of a vector space      Exercises  Exercises available at .    Mathematical Writing Explorations     What is a basis for ?  What about ?  Could we write each of these in a way that looks like the standard basis vectors in for some ? Make a conjecture about the relationship between these spaces of matrices and standard Euclidean space.      Recall our earlier definition of symmetric matrices. Find a basis for each of the following:  The space of symmetric matrices.  The space of symmetric matrices.  The space of symmetric matrices.      Must a basis for the space , the space of all quadratic polynomials, contain a polynomial of each degree less than or equal to 2? Generalize your result to polynomials of arbitrary degree.     Sample Problem and Solution  Sample problem .   "
 },
 {
   "id": "EV5-2",
@@ -1501,12 +1501,12 @@ var ptx_lunr_docs = [
   "type": "Activity",
   "number": "2.5.3",
   "title": "",
-  "body": "  Consider the set of vectors .    Express the vector as a linear combination of the vectors in , i.e. find scalars such that .    Find a different way to express the vector as a linear combination of the vectors in .    Consider another vector . Without computing the RREF of another matrix, how many ways can this vector be written as a linear combination of the vectors in ?  Zero.  One.  Infinitely-many.  Computing a new matrix RREF is necessary.     "
+  "body": "  Consider the set of vectors .    Given Express the vector as a linear combination of the vectors in , i.e. find scalars such that .    Find a different way to express the vector as a linear combination of the vectors in : .    Consider another vector . Without computing the RREF of another matrix, do we already know how many ways can this vector be written as a linear combination of the vectors in ?  Yes, zero.  Yes, one.  Yes, infinitely-many.  No, computing a new matrix RREF is necessary.     "
 },
 {
-  "id": "EV5-4-4",
+  "id": "EV5-4-3",
   "level": "2",
-  "url": "EV5.html#EV5-4-4",
+  "url": "EV5.html#EV5-4-3",
   "type": "Activity",
   "number": "2.5.4",
   "title": "",
@@ -1522,63 +1522,63 @@ var ptx_lunr_docs = [
   "body": "  A basis basis of a vector space is a set of vectors contained in for which    Every vector in the vector space can be expressed as a linear combination of the vectors in .    For each vector in the vector space, there is only one way to write it as a linear combination of the vectors in .   These two properties may be expressed more succinctly as the statement \"Every vector in can be expressed uniquely as a linear combination of the vectors in \".   "
 },
 {
-  "id": "EV5-4-6",
+  "id": "EV5-4-5",
   "level": "2",
-  "url": "EV5.html#EV5-4-6",
+  "url": "EV5.html#EV5-4-5",
   "type": "Observation",
   "number": "2.5.6",
   "title": "",
   "body": " In terms of a vector equation, a set is a basis of a vector space if the vector equation has a unique solution for every vector in the vector space.  Put another way, a basis may be thought of as a minimal set of building blocks that can be used to construct any other vector of the vector space.  "
 },
 {
-  "id": "EV5-4-7",
+  "id": "EV5-4-6",
   "level": "2",
-  "url": "EV5.html#EV5-4-7",
+  "url": "EV5.html#EV5-4-6",
   "type": "Activity",
   "number": "2.5.7",
   "title": "",
   "body": " Let be a basis ( ) for a vector space. Then...  the set must both span the vector space and be linearly independent.  the set must span the vector space but could be linearly dependent.  the set must be linearly independent but could fail to span the vector space.  the set could fail to span the vector space and could be linearly dependent.    "
 },
 {
-  "id": "EV5-4-8",
+  "id": "EV5-4-7",
   "level": "2",
-  "url": "EV5.html#EV5-4-8",
+  "url": "EV5.html#EV5-4-7",
   "type": "Activity",
   "number": "2.5.8",
   "title": "",
   "body": " The vectors form a basis used frequently in multivariable calculus.  Find the unique linear combination of these vectors that equals the vector in space.  "
 },
 {
-  "id": "EV5-4-9",
+  "id": "EV5-4-8",
   "level": "2",
-  "url": "EV5.html#EV5-4-9",
+  "url": "EV5.html#EV5-4-8",
   "type": "Definition",
   "number": "2.5.9",
   "title": "",
   "body": "  The standard basis basis standard of is the set where .  In particular, the standard basis for is .   "
 },
 {
-  "id": "EV5-4-10",
+  "id": "EV5-4-9",
   "level": "2",
-  "url": "EV5.html#EV5-4-10",
+  "url": "EV5.html#EV5-4-9",
   "type": "Activity",
   "number": "2.5.10",
   "title": "",
   "body": "  Use technology to find the RREF of an appropriate matrix and determine if each of the following sets is a basis for . (Don't forget to use format rat to nicely format Octave's output.)       A basis, because it both spans and is linearly independent.    Not a basis, because while it spans , it is linearly dependent.    Not a basis, because while it is linearly independent, it fails to span .    Not a basis, because not only does it fail to span , it's also linearly dependent.         A basis, because it both spans and is linearly independent.    Not a basis, because while it spans , it is linearly dependent.    Not a basis, because while it is linearly independent, it fails to span .    Not a basis, because not only does it fail to span , it's also linearly dependent.         A basis, because it both spans and is linearly independent.    Not a basis, because while it spans , it is linearly dependent.    Not a basis, because while it is linearly independent, it fails to span .    Not a basis, because not only does it fail to span , it's also linearly dependent.         A basis, because it both spans and is linearly independent.    Not a basis, because while it spans , it is linearly dependent.    Not a basis, because while it is linearly independent, it fails to span .    Not a basis, because not only does it fail to span , it's also linearly dependent.         A basis, because it both spans and is linearly independent.    Not a basis, because while it spans , it is linearly dependent.    Not a basis, because while it is linearly independent, it fails to span .    Not a basis, because not only does it fail to span , it's also linearly dependent.     "
 },
 {
-  "id": "EV5-4-12",
+  "id": "EV5-4-11",
   "level": "2",
-  "url": "EV5.html#EV5-4-12",
+  "url": "EV5.html#EV5-4-11",
   "type": "Activity",
   "number": "2.5.11",
   "title": "",
   "body": "  If is a basis for , that means has a pivot in every row (because it spans), and has a pivot in every column (because it's linearly independent).  What is ?    "
 },
 {
-  "id": "EV5-4-13",
+  "id": "EV5-4-12",
   "level": "2",
-  "url": "EV5.html#EV5-4-13",
+  "url": "EV5.html#EV5-4-12",
   "type": "Fact",
   "number": "2.5.12",
   "title": "",
