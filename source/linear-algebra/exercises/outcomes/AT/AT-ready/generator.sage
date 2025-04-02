@@ -1,5 +1,4 @@
-load("../../../source/common/sagemath/library.sage")
-TBIL.config_matrix_typesetting()
+load("../sage/common.sage")
 
 class Generator(BaseGenerator):
     def data(self):
@@ -27,7 +26,7 @@ class Generator(BaseGenerator):
         questions.append({
             "LE3-4": True,
             "system": system,
-            "choices": TBIL.choices_from_list([
+            "choices": choices_from_list([
                 "\\left\\{"+latex(solution)+"\\right\\}",
                 "\\left\\{"+latex(distrctor1)+"\\right\\}",
                 "\\left\\{"+latex(distrctor2)+"\\right\\}",
@@ -50,10 +49,10 @@ class Generator(BaseGenerator):
         questions.append({
             "EV7": True,
             "system": CheckIt.latex_system_from_matrix(A),
-            "choices": TBIL.choices_from_list([
-                TBIL.VectorSet(basisA),
-                TBIL.VectorSet(basisB),
-                TBIL.VectorSet(basisC),
+            "choices": choices_from_list([
+                vectorSet(basisA),
+                vectorSet(basisB),
+                vectorSet(basisC),
             ]),
         })
 
@@ -64,7 +63,7 @@ class Generator(BaseGenerator):
         questions.append({
             "EVstuff": True,
             "independent": True,
-            "vecset": TBIL.VectorSet(A.columns()),
+            "vecset": vectorSet(A.columns()),
         })
 
         #Obviously dependent
@@ -73,7 +72,7 @@ class Generator(BaseGenerator):
         questions.append({
             "EVstuff": True,
             "spans": True,
-            "vecset": TBIL.VectorSet(A.columns()),
+            "vecset": vectorSet(A.columns()),
         })
 
         #Basis
@@ -82,7 +81,7 @@ class Generator(BaseGenerator):
         questions.append({
             "EVstuff": True,
             "basis": True,
-            "vecset": TBIL.VectorSet(A.columns()),
+            "vecset": vectorSet(A.columns()),
         })
 
         #Neither
@@ -91,7 +90,7 @@ class Generator(BaseGenerator):
         questions.append({
             "EVstuff": True,
             "neither": True,
-            "vecset": TBIL.VectorSet(A.columns()),
+            "vecset": vectorSet(A.columns()),
         })
 
         dims = sample(range(4,10),4)

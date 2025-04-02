@@ -1,5 +1,4 @@
-load("../../../source/common/sagemath/library.sage")
-TBIL.config_matrix_typesetting()
+load("../sage/common.sage")
 
 class Generator(BaseGenerator):
     def data(self):
@@ -14,7 +13,7 @@ class Generator(BaseGenerator):
         return {
             "matrix": B,
             "eigenvalue": l,
-            "basis": TBIL.VectorSet(basis), 
+            "basis": vectorSet(basis), 
             "matrix_minus_lambda":A,
             "rref": A.rref(),
             "eigenvector": column_matrix(basis[0]),

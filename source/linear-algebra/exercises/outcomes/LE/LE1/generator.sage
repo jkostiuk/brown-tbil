@@ -1,5 +1,4 @@
-load("../../../source/common/sagemath/library.sage")
-TBIL.config_matrix_typesetting()
+load("../sage/common.sage")
 
 class Generator(BaseGenerator):
     def data(self):
@@ -29,6 +28,6 @@ class Generator(BaseGenerator):
             "system": CheckIt.latex_system_from_matrix(A,variable_list=xs),
             "alignCols": A.ncols(),
             "matrix": A, 
-            "vectorequation": TBIL.VectorEquation(A),
+            "vectorequation": vectorEquation(A),
             "prompt": prompt
         }

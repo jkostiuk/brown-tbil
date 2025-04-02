@@ -1,5 +1,4 @@
-load("../../../source/common/sagemath/library.sage")
-TBIL.config_matrix_typesetting()
+load("../sage/common.sage")
 
 class Generator(BaseGenerator):
     def data(self):
@@ -19,20 +18,20 @@ class Generator(BaseGenerator):
             # random row scaling
             randrow = randrange(0,4)
             scale = randrange(2,6)*choice([-1,1])
-            op = TBIL.RowOp("diagonal",randrow+1,randrow+1,scale)
+            op = rowOp("diagonal",randrow+1,randrow+1,scale)
             newdet = det*scale
         elif roll == 1:
             # random row swapping
             randrows = sample([0,1,2,3],2)
             shuffle(randrows)
-            op = TBIL.RowOp("permutation",randrows[0]+1, randrows[1]+1)
+            op = rowOp("permutation",randrows[0]+1, randrows[1]+1)
             newdet = det*(-1)
         else:
             # random row adding 
             randrows = sample([0,1,2,3],2)
             shuffle(randrows)
             scale = randrange(2,6)*choice([-1,1])
-            op = TBIL.RowOp("elementary",randrows[0]+1,randrows[1]+1,scale)
+            op = rowOp("elementary",randrows[0]+1,randrows[1]+1,scale)
             newdet = det
 
         l = choice([-1,1])*randrange(1,5)
@@ -48,12 +47,12 @@ class Generator(BaseGenerator):
             "matrix": A,
             "rref": A.rref(),
             "system": CheckIt.latex_system_from_matrix(A),
-            "columns": TBIL.VectorSet(A.columns()),
+            "columns": vectorSet(A.columns()),
             "kernel": CheckIt.latex_solution_set_from_matrix(A),
             "surj": len(A.pivots())==rows,
-            "image_basis": TBIL.VectorSet([A.column(n) for n in A.pivots()]),
-            "kernel_basis": TBIL.VectorSet(A.right_kernel(basis='pivot').basis()),
-            "polys": TBIL.BracedSet(
+            "image_basis": vectorSet([A.column(n) for n in A.pivots()]),
+            "kernel_basis": vectorSet(A.right_kernel(basis='pivot').basis()),
+            "polys": bracedSet(
                 [ sum([v[i]*x^(len(v)-i-1) for i in range(len(v))]) for v in A.columns() ]
             ),
             "det": det,

@@ -1,5 +1,4 @@
-load("../../../source/common/sagemath/library.sage")
-TBIL.config_matrix_typesetting()
+load("../sage/common.sage")
 
 class Generator(BaseGenerator):
     def data(self):
@@ -23,7 +22,7 @@ class Generator(BaseGenerator):
             "b": b,
             "v": v,
             "w": w,
-            "choices": TBIL.choices_from_list([
+            "choices": choices_from_list([
                 a*v+b*w,
                 a*v+b*w+offsets[0],
                 a*v+b*w+offsets[1],
@@ -47,7 +46,7 @@ class Generator(BaseGenerator):
             "a": a,
             "v": v,
             "w": w,
-            "choices": TBIL.choices_from_list([
+            "choices": choices_from_list([
                 a*v+a*w,
                 a*v+a*w+offsets[0],
                 a*v+a*w+offsets[1],
@@ -79,7 +78,7 @@ class Generator(BaseGenerator):
             "vec_in_set": True,
             "vec": v,
             "equation": equation,
-            "choices": TBIL.choices_from_list(candidates),
+            "choices": choices_from_list(candidates),
         })
         nums = [n for n in range(-6,7) if abs(n)>1]
         shuffle(nums)
@@ -104,7 +103,7 @@ class Generator(BaseGenerator):
             "vec_in_set": True,
             "vec": v,
             "equation": equation,
-            "choices": TBIL.choices_from_list(candidates),
+            "choices": choices_from_list(candidates),
         })
 
 
@@ -126,7 +125,7 @@ class Generator(BaseGenerator):
         questions.append({
             "LE1": True,
             "system": CheckIt.latex_system_from_matrix(A),
-            "choices": TBIL.choices_from_list([A,B,C,D]),
+            "choices": choices_from_list([A,B,C,D]),
         })
 
 
@@ -157,7 +156,7 @@ class Generator(BaseGenerator):
         questions.append({
             "equivalent_matrix": True,
             "A": A,
-            "choices": TBIL.choices_from_list([A.rref(),B.rref(),C.rref(),D.rref()]),
+            "choices": choices_from_list([A.rref(),B.rref(),C.rref(),D.rref()]),
         })
 
 
@@ -169,7 +168,7 @@ class Generator(BaseGenerator):
         questions.append({
             "LE2": True,
             "A": A,
-            "choices": TBIL.choices_from_list([A.rref(),B.rref(),C.rref(),D.rref()]),
+            "choices": choices_from_list([A.rref(),B.rref(),C.rref(),D.rref()]),
         })
 
         # single solution
@@ -192,7 +191,7 @@ class Generator(BaseGenerator):
         questions.append({
             "LE3-4": True,
             "system": system,
-            "choices": TBIL.choices_from_list([
+            "choices": choices_from_list([
                 "\\left\\{"+latex(solution)+"\\right\\}",
                 "\\left\\{"+latex(distrctor1)+"\\right\\}",
                 "\\left\\{"+latex(distrctor2)+"\\right\\}",
@@ -230,7 +229,7 @@ class Generator(BaseGenerator):
         questions.append({
             "LE3empty": True,
             "system": system,
-            "choices": TBIL.choices_from_list([
+            "choices": choices_from_list([
                 "\\left\\{"+latex(solution)+"\\right\\}",
                 "\\left\\{"+latex(distrctor1)+"\\right\\}",
                 "\\left\\{"+latex(distrctor2)+"\\right\\}",
@@ -288,7 +287,7 @@ class Generator(BaseGenerator):
         questions.append({
             "LE3-4": True,
             "system": system,
-            "choices": TBIL.choices_from_list([
+            "choices": choices_from_list([
                 solset1,
                 solset2,
                 solset3,
