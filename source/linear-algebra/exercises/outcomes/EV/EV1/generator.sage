@@ -1,5 +1,4 @@
-load("../../../source/common/sagemath/library.sage")
-TBIL.config_matrix_typesetting()
+load("../sage/common.sage")
 
 class Generator(BaseGenerator):
     def data(self):
@@ -22,7 +21,7 @@ class Generator(BaseGenerator):
             coeffs[p]*A.column(p)
             for p in A.pivots()
         ])
-        lin_combo_exp = TBIL.LinearCombination(
+        lin_combo_exp = linearCombination(
             [
                 coeffs[A.pivots()[i]]
                 for i in range(number_of_pivots)
@@ -67,11 +66,11 @@ class Generator(BaseGenerator):
 
         return {
             "ls": ls,
-            "veclist": TBIL.VectorList(A.columns()),
+            "veclist": vectorList(A.columns()),
             "vectors": vectors,
             # "combovector": column_matrix(A.column(-1)),
             # "statement": choice([True,False]),
-            # "veceq": TBIL.VectorEquation(A),
+            # "veceq": vectorEquation(A),
             # "matrix": A,
             # "rref": A.rref(),
             # "pivots": A.pivots(),

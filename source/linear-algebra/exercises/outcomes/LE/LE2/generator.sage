@@ -1,5 +1,4 @@
-load("../../../source/common/sagemath/library.sage")
-TBIL.config_matrix_typesetting()
+load("../sage/common.sage")
 
 class Generator(BaseGenerator):
     def data(self):

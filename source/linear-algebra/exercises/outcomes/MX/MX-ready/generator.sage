@@ -1,5 +1,4 @@
-load("../../../source/common/sagemath/library.sage")
-TBIL.config_matrix_typesetting()
+load("../sage/common.sage")
 
 class Generator(BaseGenerator):
     def data(self):
@@ -47,7 +46,7 @@ class Generator(BaseGenerator):
             "comp_real": True,
             "eqs_latex": eqs_latex,
             "comp_string": comp_string,
-            "choices": TBIL.choices_from_list([
+            "choices": choices_from_list([
                 comp_output,
                 distractor,
                 values[1],
@@ -82,7 +81,7 @@ class Generator(BaseGenerator):
             version: True,
             "f": f,
             "g": g,
-            "choices": TBIL.choices_from_list(choices),
+            "choices": choices_from_list(choices),
         })
 
 
@@ -99,7 +98,7 @@ class Generator(BaseGenerator):
         questions.append({
             "find_std_mx": True,
             "Tv": A*xs,
-            "choices": TBIL.choices_from_list([
+            "choices": choices_from_list([
                 A,
                 A.transpose(),
                 B,
@@ -127,7 +126,7 @@ class Generator(BaseGenerator):
             "codom_dim": 2,
             "A": A,
             "v": v,
-            "choices": TBIL.choices_from_list([
+            "choices": choices_from_list([
                 A*v,
                 A*v+w,
                 B*v,
@@ -155,7 +154,7 @@ class Generator(BaseGenerator):
             "codom_dim": 3,
             "A": A,
             "v": v,
-            "choices": TBIL.choices_from_list([
+            "choices": choices_from_list([
                 A*v,
                 A*v+w,
                 B*v,
@@ -175,7 +174,7 @@ class Generator(BaseGenerator):
         questions.append({
             "dom_cdom": True,
             "A": A,
-            "choices": TBIL.choices_from_list([
+            "choices": choices_from_list([
                 {"dom":dom, "cdom":cdom},
                 {"dom":cdom, "cdom":dom},
                 {"dom":dom, "cdom":dom},
@@ -220,7 +219,7 @@ class Generator(BaseGenerator):
             questions.append({
                 "inj_surj_def": True,
                 "term": "injective",
-                "choices": TBIL.choices_from_list([
+                "choices": choices_from_list([
                     {f"inj{versions[0]}":True},
                     {f"ninj{versions[1]}":True},
                     {f"sur{versions[2]}":True},
@@ -231,7 +230,7 @@ class Generator(BaseGenerator):
             questions.append({
                 "inj_surj_def": True,
                 "term": "not injective",
-                "choices": TBIL.choices_from_list([
+                "choices": choices_from_list([
                     {f"ninj{versions[0]}":True},
                     {f"inj{versions[1]}":True},
                     {f"sur{versions[2]}":True},
@@ -242,7 +241,7 @@ class Generator(BaseGenerator):
             questions.append({
                 "inj_surj_def": True,
                 "term": "surjective",
-                "choices": TBIL.choices_from_list([
+                "choices": choices_from_list([
                     {f"sur{versions[0]}":True},
                     {f"ninj{versions[1]}":True},
                     {f"inj{versions[2]}":True},
@@ -253,7 +252,7 @@ class Generator(BaseGenerator):
             questions.append({
                 "inj_surj_def": True,
                 "term": "not surjective",
-                "choices": TBIL.choices_from_list([
+                "choices": choices_from_list([
                     {f"nsur{versions[0]}":True},
                     {f"ninj{versions[1]}":True},
                     {f"sur{versions[2]}":True},

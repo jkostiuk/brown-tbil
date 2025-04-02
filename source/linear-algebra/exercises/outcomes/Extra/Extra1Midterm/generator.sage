@@ -1,5 +1,4 @@
-load("../../../source/common/sagemath/library.sage")
-TBIL.config_matrix_typesetting()
+load("../sage/common.sage")
 
 class Generator(BaseGenerator):
     def data(self):
@@ -25,7 +24,7 @@ class Generator(BaseGenerator):
         questions.append({
             "LE1": True,
             "system": CheckIt.latex_system_from_matrix(A),
-            "choices": TBIL.choices_from_list([A,B,C,D]),
+            "choices": choices_from_list([A,B,C,D]),
         })
 
 
@@ -56,7 +55,7 @@ class Generator(BaseGenerator):
         questions.append({
             "equivalent_matrix": True,
             "A": A,
-            "choices": TBIL.choices_from_list([A.rref(),B.rref(),C.rref(),D.rref()]),
+            "choices": choices_from_list([A.rref(),B.rref(),C.rref(),D.rref()]),
         })
 
 
@@ -68,7 +67,7 @@ class Generator(BaseGenerator):
         questions.append({
             "LE2": True,
             "A": A,
-            "choices": TBIL.choices_from_list([A.rref(),B.rref(),C.rref(),D.rref()]),
+            "choices": choices_from_list([A.rref(),B.rref(),C.rref(),D.rref()]),
         })
 
         # single solution
@@ -91,7 +90,7 @@ class Generator(BaseGenerator):
         questions.append({
             "LE3-4": True,
             "system": system,
-            "choices": TBIL.choices_from_list([
+            "choices": choices_from_list([
                 "\\left\\{"+latex(solution)+"\\right\\}",
                 "\\left\\{"+latex(distrctor1)+"\\right\\}",
                 "\\left\\{"+latex(distrctor2)+"\\right\\}",
@@ -129,7 +128,7 @@ class Generator(BaseGenerator):
         questions.append({
             "LE3empty": True,
             "system": system,
-            "choices": TBIL.choices_from_list([
+            "choices": choices_from_list([
                 "\\left\\{"+latex(solution)+"\\right\\}",
                 "\\left\\{"+latex(distrctor1)+"\\right\\}",
                 "\\left\\{"+latex(distrctor2)+"\\right\\}",
@@ -187,7 +186,7 @@ class Generator(BaseGenerator):
         questions.append({
             "LE3-4": True,
             "system": system,
-            "choices": TBIL.choices_from_list([
+            "choices": choices_from_list([
                 solset1,
                 solset2,
                 solset3,
@@ -229,7 +228,7 @@ class Generator(BaseGenerator):
 
         questions.append({
             "EV1": True,
-            "veclist": TBIL.VectorList(A.columns()),
+            "veclist": vectorList(A.columns()),
             "v": column_matrix(v),
             "lin_combo": lin_combo,
             "A": m,
@@ -248,7 +247,7 @@ class Generator(BaseGenerator):
         questions.append({
             "EV2": True,
             "spans": span,
-            "vecset": TBIL.VectorSet(A.columns()),
+            "vecset": vectorSet(A.columns()),
             "matrix": A,
             "rref": A.rref(),
         })
@@ -279,8 +278,8 @@ class Generator(BaseGenerator):
 
         questions.append({
             "EV3": True,
-            "U": TBIL.SetBuilder(column_matrix(v),[predicates[0]]),
-            "W": TBIL.SetBuilder(column_matrix(v),[predicates[1]]),
+            "U": setBuilder(column_matrix(v),[predicates[0]]),
+            "W": setBuilder(column_matrix(v),[predicates[1]]),
             X_is_subspace: True,
         })
 
@@ -300,8 +299,8 @@ class Generator(BaseGenerator):
         questions.append({
             "EV4": True,
             "independent": independent,
-            "vecset": TBIL.VectorSet(A.columns()),
-            #   "veceq": TBIL.VectorEquation(A.augment(zero_vector(ZZ,5),subdivide=true)),
+            "vecset": vectorSet(A.columns()),
+            #   "veceq": vectorEquation(A.augment(zero_vector(ZZ,5),subdivide=true)),
             "matrix": A,
             "rref":A.rref(),
         })

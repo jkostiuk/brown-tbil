@@ -1,5 +1,4 @@
-load("../../../source/common/sagemath/library.sage")
-TBIL.config_matrix_typesetting()
+load("../sage/common.sage")
 
 class Generator(BaseGenerator):
     def data(self):
@@ -10,8 +9,8 @@ class Generator(BaseGenerator):
         basis=[A.column(i) for i in A.pivots()]
 
         return {
-            "vlist": TBIL.VectorSet(A.columns()),
-            "basis": TBIL.VectorSet(basis),
+            "vlist": vectorSet(A.columns()),
+            "basis": vectorSet(basis),
             "dimension": dim,
             "matrix": A,
             "rref": A.rref(),

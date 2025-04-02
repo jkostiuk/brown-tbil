@@ -1,4 +1,4 @@
-load("../../../source/common/sagemath/library.sage")
+load("../sage/common.sage")
 
 class Generator(BaseGenerator):
     def data(self):
@@ -69,15 +69,15 @@ class Generator(BaseGenerator):
 
     @provide_data
     def graphics(data):
-        P = TBIL.numberline_plot()
+        P = TBILPrecal.numberline_plot()
         if data["direction"] == "left":
-            P += TBIL.inequality_plot(
+            P += TBILPrecal.inequality_plot(
                 end=data["solution_ineq"],
                 strict_end=data["strict"],
                 label_endpoints=True,
             )
         else:
-            P += TBIL.inequality_plot(
+            P += TBILPrecal.inequality_plot(
                 start=data["solution_ineq"],
                 strict_start=data["strict"],
                 label_endpoints=True,

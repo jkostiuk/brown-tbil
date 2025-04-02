@@ -1,5 +1,4 @@
-load("../../../source/common/sagemath/library.sage")
-TBIL.config_matrix_typesetting()
+load("../sage/common.sage")
 
 class Generator(BaseGenerator):
     def data(self):
@@ -7,7 +6,7 @@ class Generator(BaseGenerator):
  
         tasks =  [{
             "spans": False,
-            "vecset": TBIL.VectorSet(A.columns()),
+            "vecset": vectorSet(A.columns()),
             "matrix": A,
             "rref": A.rref(),
         }]
@@ -21,7 +20,7 @@ class Generator(BaseGenerator):
  
         tasks +=  [{
             "spans": spans,
-            "vecset": TBIL.VectorSet(A.columns()),
+            "vecset": vectorSet(A.columns()),
             "matrix": A,
             "rref": A.rref(),
         }]
@@ -35,7 +34,7 @@ class Generator(BaseGenerator):
  
         tasks +=  [{
             "spans": spans,
-            "vecset": TBIL.VectorSet(A.columns()),
+            "vecset": vectorSet(A.columns()),
             "matrix": A,
             "rref": A.rref(),
         }]

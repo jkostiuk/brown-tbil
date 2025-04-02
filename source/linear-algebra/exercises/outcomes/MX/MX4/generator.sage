@@ -1,5 +1,4 @@
-load("../../../source/common/sagemath/library.sage")
-TBIL.config_matrix_typesetting()
+load("../sage/common.sage")
 
 class Generator(BaseGenerator):
     def data(self):
@@ -9,7 +8,7 @@ class Generator(BaseGenerator):
 
         tasks.append({
             "permutation": True,
-            "row_op": TBIL.RowOp("permutation",rows[0]+1, rows[1]+1),
+            "row_op": rowOp("permutation",rows[0]+1, rows[1]+1),
             "mat": identity_matrix(4).with_swapped_rows(rows[0],rows[1]),
             "name": names[0]
         })
@@ -17,7 +16,7 @@ class Generator(BaseGenerator):
         scale = randrange(2,6)*choice([-1,1])
         tasks.append({
             "elementary": True,
-            "row_op": TBIL.RowOp("elementary",rows[1]+1,rows[2]+1,scale),
+            "row_op": rowOp("elementary",rows[1]+1,rows[2]+1,scale),
             "mat": identity_matrix(4).with_added_multiple_of_row(rows[1],rows[2],scale),
             "name": names[1]
         })
@@ -25,7 +24,7 @@ class Generator(BaseGenerator):
         scale = randrange(2,6)*choice([-1,1])
         tasks.append({
             "diagonal": True,
-            "row_op": TBIL.RowOp("diagonal",rows[0]+1,rows[0]+1,scale),
+            "row_op": rowOp("diagonal",rows[0]+1,rows[0]+1,scale),
             "mat": identity_matrix(4).with_rescaled_row(rows[0],scale),
             "name": names[2]
         })
