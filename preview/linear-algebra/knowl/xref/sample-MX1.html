@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: denver                         *-->
+<!--*  Palette: leaves                       *-->
+<!--******************************************-->
+
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+<script>// Make *any* div with class 'sagecell-octave' an executable Sage cell
+// Their results will be linked, only within language type
+sagecell.makeSagecell({
+  "inputLocation": "div.sagecell-octave",
+  "linked": true,
+  "linkKey": "linked-octave",
+  "autoeval": false,
+  "languages": [
+    "octave"
+  ],
+  "evalButtonText": "Evaluate (Octave)"
+});
+</script>
+</head>
+<body class="ignore-math">
+<article class="exercise exercise-like"><h3 class="heading">
+<span class="type">Exercise</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">MX1.</span>
+</h3>
+<div class="introduction"><div class="para logical">
+<div class="para">Of the following three matrices, only two may be multiplied.</div>
+<div class="displaymath process-math">
+\begin{align*}
+A=\left[\begin{array}{cccc} -1 &amp; 3 &amp; -2 &amp; -3 \\ 1 &amp; -4 &amp; 2 &amp; 3 \end{array}\right] 
+\amp \amp \amp B=\left[\begin{array}{ccc} 1 &amp; -6 &amp; -1 \\ 0 &amp; 1 &amp; 0 \end{array}\right] 
+\end{align*}
+</div>
+<div class="displaymath process-math">
+\begin{align*}
+C=\left[\begin{array}{ccc} 1 &amp; -1 &amp; -1 \\ 0 &amp; 1 &amp; -2 \\ -2 &amp; 4 &amp; -1 \\ -2 &amp; 3 &amp; -1 \end{array}\right]
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sample-MX1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<article class="task exercise-like"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para">Explain which two can be multiplied and why.<div class="autopermalink" data-description="Paragraph"><a href="#sample-MX1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para">
+<span class="process-math">\(C\)</span> is the <span class="process-math">\(4\times 3\)</span> standard matrix for a transformation of <span class="process-math">\(\mathbb R^3\)</span> vectors into <span class="process-math">\(\mathbb R^4\)</span> vectors, and <span class="process-math">\(A\)</span> is the <span class="process-math">\(2\times 4\)</span> matrix for a transformation of <span class="process-math">\(\mathbb R^4\)</span> vectors into <span class="process-math">\(\mathbb R^2\)</span> vectors, so <span class="process-math">\(AC\)</span> will be the <span class="process-math">\(2\times 3\)</span> standard matrix for their composition, a transformation of <span class="process-math">\(\mathbb R^3\)</span> vectors into <span class="process-math">\(\mathbb R^2\)</span> vectors.<div class="autopermalink" data-description="Paragraph"><a href="#sample-MX1-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution B.1.a.1"><a href="#sample-MX1-3-2" title="Copy heading and permalink for Solution B.1.a.1" aria-label="Copy heading and permalink for Solution B.1.a.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task B.1.a"><a href="#sample-MX1-3" title="Copy heading and permalink for Task B.1.a" aria-label="Copy heading and permalink for Task B.1.a">🔗</a></div></article><article class="task exercise-like"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para">Find their product using technology.<div class="autopermalink" data-description="Paragraph"><a href="#sample-MX1-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div id="sample-MX1-4-2-1" class="ptx-sagecell sagecell-octave"><script type="text/x-sage">A = [
+-1 3 -2 -3
+1  4  2  3
+]
+C = [
+1 -1 -1
+0  1 -2
+-2 4 -1
+-2 3 -1
+]
+A*C
+</script></div>
+<div class="autopermalink" data-description="Solution B.1.b.1"><a href="#sample-MX1-4-2" title="Copy heading and permalink for Solution B.1.b.1" aria-label="Copy heading and permalink for Solution B.1.b.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task B.1.b"><a href="#sample-MX1-4" title="Copy heading and permalink for Task B.1.b" aria-label="Copy heading and permalink for Task B.1.b">🔗</a></div></article><article class="task exercise-like"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para">Show how to find this product without technology.<div class="autopermalink" data-description="Paragraph"><a href="#sample-MX1-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical">
+<div class="para">We may compute each <span class="process-math">\(AC\vec e_i\)</span> to obtain each column of <span class="process-math">\(AC\text{:}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{align*}
+AC\vec e_1 =
+A\left[\begin{array}{c}1\\0\\-2\\-2\end{array}\right] \amp=
+1 \left[\begin{array}{c}-1\\1\end{array}\right] + 0 \left[\begin{array}{c}-1\\1\end{array}\right]
+-2 \left[\begin{array}{c}-1\\1\end{array}\right] - 2 \left[\begin{array}{c}-1\\1\end{array}\right] \\
+\amp= \left[\begin{array}{c} 9 \\ -9 \end{array}\right]\\
+AC\vec e_2 =
+A\left[\begin{array}{c}-1\\1\\4\\3\end{array}\right] \amp=
+-1 \left[\begin{array}{c}-1\\1\end{array}\right] + 1 \left[\begin{array}{c}-1\\1\end{array}\right]
++4 \left[\begin{array}{c}-1\\1\end{array}\right] + 3 \left[\begin{array}{c}-1\\1\end{array}\right] \\
+\amp =
+\left[\begin{array}{c} -13 \\ 12 \end{array}\right]\\
+AC\vec e_3 =
+A\left[\begin{array}{c}-1\\-2\\-1\\-1\end{array}\right] \amp =
+-1 \left[\begin{array}{c}-1\\1\end{array}\right] - 1 \left[\begin{array}{c}-1\\1\end{array}\right]
+-2 \left[\begin{array}{c}-1\\1\end{array}\right] - 1 \left[\begin{array}{c}-1\\1\end{array}\right] \\
+\amp =
+\left[\begin{array}{c} 0 \\ 2 \end{array}\right]
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sample-MX1-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution B.1.c.1"><a href="#sample-MX1-5-2" title="Copy heading and permalink for Solution B.1.c.1" aria-label="Copy heading and permalink for Solution B.1.c.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task B.1.c"><a href="#sample-MX1-5" title="Copy heading and permalink for Task B.1.c" aria-label="Copy heading and permalink for Task B.1.c">🔗</a></div></article><div class="autopermalink" data-description="Exercise B.1: MX1"><a href="#sample-MX1" title="Copy heading and permalink for Exercise B.1: MX1" aria-label="Copy heading and permalink for Exercise B.1: MX1">🔗</a></div></article><span class="incontext"><a class="internal" href="sample-exercises-6.html#sample-MX1">in-context</a></span>
+</body>
+</html>
