@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefigure-MX1-graph-figure" width="610" height="310" viewBox="0 0 610 310">
+  <defs>
+    <clipPath id="prefigure-MX1-graph-clipPath-0">
+      <rect x="5.0" y="5.0" width="600.0" height="300.0"/>
+    </clipPath>
+    <clipPath id="prefigure-MX1-graph-clipPath-1">
+      <rect x="5.0" y="5.0" width="600.0" height="300.0"/>
+    </clipPath>
+    <clipPath id="prefigure-MX1-graph-clipPath-2">
+      <rect x="5.0" y="5.0" width="600.0" height="300.0"/>
+    </clipPath>
+  </defs>
+  <g id="prefigure-MX1-graph-group-0">
+    <path id="prefigure-MX1-graph-edge-0-1" d="M 65.0 155.0 Q 105.0 155.0 145.0 155.0 Q 185.0 155.0 225.0 155.0" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#prefigure-MX1-graph-clipPath-2)"/>
+    <path id="prefigure-MX1-graph-edge-1-2" d="M 225.0 155.0 Q 265.0 155.0 305.0 155.0 Q 345.0 155.0 385.0 155.0" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#prefigure-MX1-graph-clipPath-2)"/>
+    <path id="prefigure-MX1-graph-edge-2-3" d="M 385.0 155.0 Q 425.0 185.0 465.0 215.0 Q 505.0 245.0 545.0 275.0" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#prefigure-MX1-graph-clipPath-2)"/>
+    <path id="prefigure-MX1-graph-edge-2-4" d="M 385.0 155.0 Q 425.0 125.0 465.0 95.0 Q 505.0 65.0 545.0 35.0" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#prefigure-MX1-graph-clipPath-2)"/>
+    <path id="prefigure-MX1-graph-edge-3-4" d="M 545.0 275.0 Q 545.0 215.0 545.0 155.0 Q 545.0 95.0 545.0 35.0" stroke="black" stroke-width="2" stroke-dasharray="none" fill="none" clip-path="url(#prefigure-MX1-graph-clipPath-2)"/>
+  </g>
+  <g id="prefigure-MX1-graph-group-1">
+    <circle id="prefigure-MX1-graph-node-0" cx="65.0" cy="155.0" r="12" stroke="black" stroke-width="1" fill="#ccf"/>
+    <g id="prefigure-MX1-graph-0" transform="translate(65.0,155.0) translate(-4.8,-5.1)">
+      <g id="prefigure-MX1-graph-g-0">
+        <text font-family="sans-serif" font-size="14" x="0.0" y="10.2">A</text>
+      </g>
+    </g>
+    <circle id="prefigure-MX1-graph-node-1" cx="225.0" cy="155.0" r="12" stroke="black" stroke-width="1" fill="#ccf"/>
+    <g id="prefigure-MX1-graph-1" transform="translate(225.0,155.0) translate(-4.8,-5.1)">
+      <g id="prefigure-MX1-graph-g-1">
+        <text font-family="sans-serif" font-size="14" x="0.0" y="10.2">B</text>
+      </g>
+    </g>
+    <circle id="prefigure-MX1-graph-node-2" cx="385.0" cy="155.0" r="12" stroke="black" stroke-width="1" fill="#ccf"/>
+    <g id="prefigure-MX1-graph-2" transform="translate(385.0,155.0) translate(-4.9,-5.3)">
+      <g id="prefigure-MX1-graph-g-2">
+        <text font-family="sans-serif" font-size="14" x="0.0" y="10.4">C</text>
+      </g>
+    </g>
+    <circle id="prefigure-MX1-graph-node-3" cx="545.0" cy="275.0" r="12" stroke="black" stroke-width="1" fill="#ccf"/>
+    <g id="prefigure-MX1-graph-3" transform="translate(545.0,275.0) translate(-5.4,-5.1)">
+      <g id="prefigure-MX1-graph-g-3">
+        <text font-family="sans-serif" font-size="14" x="0.0" y="10.2">D</text>
+      </g>
+    </g>
+    <circle id="prefigure-MX1-graph-node-4" cx="545.0" cy="35.0" r="12" stroke="black" stroke-width="1" fill="#ccf"/>
+    <g id="prefigure-MX1-graph-4" transform="translate(545.0,35.0) translate(-4.4,-5.1)">
+      <g id="prefigure-MX1-graph-g-4">
+        <text font-family="sans-serif" font-size="14" x="0.0" y="10.2">E</text>
+      </g>
+    </g>
+  </g>
+</svg>
