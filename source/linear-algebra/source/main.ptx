@@ -5,7 +5,7 @@
         <title>Linear Algebra for Team-Based Inquiry Learning</title>
         <subtitle component="main">2026 Edition</subtitle>
         <subtitle component="instructor-nonpreview">2025 Edition &#x2014; Instructor Version</subtitle>
-        <subtitle component="preview">PREVIEW Edition</subtitle>
+        <subtitle component="preview">Math 0520 Custom Edition</subtitle>
 
         <xi:include href="meta/frontmatter.ptx"/>
 
