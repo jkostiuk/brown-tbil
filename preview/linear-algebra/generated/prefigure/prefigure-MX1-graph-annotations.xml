@@ -1,0 +1,118 @@
+<diagram>
+  <annotations>
+    <annotation id="prefigure-MX1-graph-figure" speech2="A network with five vertices">
+      <grouped>prefigure-MX1-graph-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-MX1-graph-node-0</active>
+        <active>prefigure-MX1-graph-node-1</active>
+        <active>prefigure-MX1-graph-node-2</active>
+        <active>prefigure-MX1-graph-node-3</active>
+        <active>prefigure-MX1-graph-node-4</active>
+      </children>
+      <components>
+        <active>prefigure-MX1-graph-node-0</active>
+        <active>prefigure-MX1-graph-node-1</active>
+        <active>prefigure-MX1-graph-node-2</active>
+        <active>prefigure-MX1-graph-node-3</active>
+        <active>prefigure-MX1-graph-node-4</active>
+      </components>
+    </annotation>
+    <annotation id="prefigure-MX1-graph-node-0" speech2="The node labeled A">
+      <grouped>prefigure-MX1-graph-node-0</grouped>
+      <position>1</position>
+      <children>
+        <active>prefigure-MX1-graph-edge-0-1</active>
+      </children>
+      <components>
+        <active>prefigure-MX1-graph-edge-0-1</active>
+      </components>
+      <parents>
+        <grouped>prefigure-MX1-graph-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-MX1-graph-edge-0-1" speech2="An edge connecting A and B">
+      <active>prefigure-MX1-graph-edge-0-1</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-MX1-graph-node-0</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-MX1-graph-node-1" speech2="The node labeled B">
+      <grouped>prefigure-MX1-graph-node-1</grouped>
+      <position>2</position>
+      <children>
+        <active>prefigure-MX1-graph-edge-1-2</active>
+      </children>
+      <components>
+        <active>prefigure-MX1-graph-edge-1-2</active>
+      </components>
+      <parents>
+        <grouped>prefigure-MX1-graph-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-MX1-graph-edge-1-2" speech2="An edge connecting B and C">
+      <active>prefigure-MX1-graph-edge-1-2</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-MX1-graph-node-1</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-MX1-graph-node-2" speech2="The node labeled C">
+      <grouped>prefigure-MX1-graph-node-2</grouped>
+      <position>3</position>
+      <children>
+        <active>prefigure-MX1-graph-edge-2-3</active>
+        <active>prefigure-MX1-graph-edge-2-4</active>
+      </children>
+      <components>
+        <active>prefigure-MX1-graph-edge-2-3</active>
+        <active>prefigure-MX1-graph-edge-2-4</active>
+      </components>
+      <parents>
+        <grouped>prefigure-MX1-graph-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-MX1-graph-edge-2-3" speech2="An edge connecting C and D">
+      <active>prefigure-MX1-graph-edge-2-3</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-MX1-graph-node-2</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-MX1-graph-edge-2-4" speech2="An edge connecting C and E">
+      <active>prefigure-MX1-graph-edge-2-4</active>
+      <position>2</position>
+      <parents>
+        <grouped>prefigure-MX1-graph-node-2</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-MX1-graph-node-3" speech2="The node labeled D">
+      <grouped>prefigure-MX1-graph-node-3</grouped>
+      <position>4</position>
+      <children>
+        <active>prefigure-MX1-graph-edge-3-4</active>
+      </children>
+      <components>
+        <active>prefigure-MX1-graph-edge-3-4</active>
+      </components>
+      <parents>
+        <grouped>prefigure-MX1-graph-figure</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-MX1-graph-edge-3-4" speech2="An edge connecting D and E">
+      <active>prefigure-MX1-graph-edge-3-4</active>
+      <position>1</position>
+      <parents>
+        <grouped>prefigure-MX1-graph-node-3</grouped>
+      </parents>
+    </annotation>
+    <annotation id="prefigure-MX1-graph-node-4" speech2="The node labeled E">
+      <active>prefigure-MX1-graph-node-4</active>
+      <position>5</position>
+      <parents>
+        <grouped>prefigure-MX1-graph-figure</grouped>
+      </parents>
+    </annotation>
+  </annotations>
+</diagram>
