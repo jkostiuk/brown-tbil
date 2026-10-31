@@ -141,6 +141,8 @@
       </answer>
     </task>
 </activity>
+<sage language="octave" component="html">
+</sage>
 
 <definition xml:id="def-change-of-basis">
     <statement>
@@ -221,6 +223,8 @@
         </p>
     </task>
 </activity>
+<sage language="octave" component="html">
+</sage>
 
 <activity>
     <introduction>
